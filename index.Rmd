@@ -1,0 +1,212 @@
+
+This is the landing page for <span style="color:blue">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com)  in Fall 2018. This landing page is used for posting of regular announcements and information for students of the class. 
+
+# Announcements
+
+<!--- 
+### 12/14/17 - Final Exam. 8-10am. Tehama 108
+
+<span style="color:red">**Office Hours for Finals Week**</span> 
+
+* Tuesday 2-4pm, Holt 155
+* Wednesday 1-3pm, Holt 202
+* Wednesday 8-9pm, Online Google Hangouts. Over now. Apparently >10 people causes it to crash. I will find another method next time. Much apologies to those who came early but got cut out. 
+
+<span style="color:red">**Allowed Exam Materials**</span> 
+All exam materials (except course notes) will be turned in with the exam. Make sure your name is on everything.  
+
+* The [[OFFICIAL]](https://norcalbiostat.github.io/MATH615/FinalDocs/FinalExam_Fall17_Supplemental.pdf) supplemental information and analyses for the Outlook on Life Survey. 
+    - Print these pages. Ensure that you understand what models are being fit and how to read the output. You are allowed to write notes on these pages.
+    - Be prepared to answer questions about modeling and interpreting these analyses. 
+* A calculator
+* Your course notes
+* An additional 1 page of notes
+
+
+    
+Additional information on this new survey, such as full wording of the question on how the variables were coded can be found in the [[codebook]](https://norcalbiostat.github.io/MATH615/FinalDocs/OOL%20Codebook.pdf) and [[survey questionnaire]](https://norcalbiostat.github.io/MATH615/FinalDocs/OOL%20Questionnaire.pdf). **Do not bring these to the final**. They are for you to use as reference material while you are learning to understand this survey.   
+
+<span style="color:red">**Review List**</span> 
+This final exam is comprehensive in that everything in this class builds upon previous topics. 
+Here are a list of topics to review. All topics have equal importance, regardless of the time that was spent on each topic during class. 
+
+* Probability
+* Creating and interpreting confidence intervals
+* Assumptions for statistical methods to be valid
+* Generalizability, representativeness, bias, sampling frame
+* Statistical Analysis Procedures: 
+    - Two-sample T-tests for means and proportions
+    - ANOVA and $\chi^{2}$ for multiple samples
+    - Linear and Logistic regression.
+* Identifying confounders, moderators and covariates. 
+* Interpreting regression coefficients and making predictions using models. 
+    - from linear and logistic models
+    - using continuous and categorical variables
+
+
+### 12/4/17 - Week 15
+* Fill out [This google form](https://goo.gl/forms/o3O43feULJFDGUun2) to provide input as to when I should hold OH during finals week. 
+* Poster presentations MW
+    - Your poster must be printed and ready for class on Monday. 
+    - We will randomly choose people to present on Monday, the rest will present on Wednesday. (I can hold your posters in my office until Wednesday.)
+* Build your own [exam questions](hw/roll_your_own.html) - **Due Wednesday**
+
+### 11/27/17 - Week 14
+* All Data Camp and Problem set Blackboard learn quizzes due this Friday. No extensions given. 
+* Poster building week! See the project page for instructions. 
+    - Drafts are due Wednesday, reviews due Friday
+    - Suggestions on how to make a nice plot for multivariable models has been added to the project page. 
+* Citation information has been updated to Project page (slide 16) on how to cite addhealth, R, and R studio
+* See [this abstract](http://www.cpc.unc.edu/projects/addhealth/publications/database/6893) for a demonstration on how to describe using the Add Health data set in an analysis.  
+
+
+
+### 11/13/17 - [Week 13](https://norcalbiostat.github.io/MATH315/wk13.html)
+* RAT on Logistic Regression - Monday
+    - Review the last part of PDS Video 17
+    - Read Open Intro 8.4: Intro to Logistic Regression
+* Model building
+    - Read Open Intro 8.2: Model Selection
+* Friday Statistics Seminar. Extra credit opportunity. 
+    - Robert Weiss, UCLA Biostatistics. 
+    - Talk on comparing the efficacy between two biologic compounds for FDA approval
+    - Friday 3:30, refreshments at 3, Holt 175. 
+* R Cheat sheets have been added to the FAQ page
+
+
+
+### 11/6/17 - [Week 12](https://norcalbiostat.github.io/MATH315/wk12.html)
+* Identifying confounders
+* Adding and interpreting categorical predictors
+* Poster updates
+    - Start testing the relationship for your RQ for moderators and confounders. 
+    - Homework $\neq$ poster. Don't go overboard, but you are likely to need to do additional analyses for your poster. 
+    - Keep your RQ in mind - focus on answering a single RQ. One outcome. 
+* **Class Attendance Required**: Due to a large number of people missing class lately, for the rest of the semester I will be taking attendance. You cannot work as a team if you don't bother to show up to class at the same time. 
+    - We only have a few weeks left in the semester. This is a critical time in your project development. 
+
+
+### 10/30/17 - [Week 11](https://norcalbiostat.github.io/MATH315/wk11.html)
+
+* What happens if we add a third variable to the mix? 
+* How can we tell if a third variable changes our bivariate relationship in question? 
+* What's the difference between an Observational study and an Experiment? 
+* Examples of publication bias
+    - https://twitter.com/eturnermd1/status/737436322344927232
+    - http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001189#s4 
+    
+
+### 10/23/17 - [Week 10](https://norcalbiostat.github.io/MATH315/wk10.html)
+
+* Finishing Bivariate Inference
+* RAT on Linear Regression on **Wednesday**
+* Open work day on Friday. Finish those assignments! 
+
+<span style="color:red">**IMPORTANT POSTER PREP REMINDERS**</span>
+
+* Use Google Slides
+* Peer reviews are assigned per team, each team member is responsible for a review. 
+    - Teams of 3 need to find another team to review. 
+    - Write your review direcly in Google Slides as comments. 
+* Use the submission link in Blackboard to drop a note saying you are done with your review. 
+    - Do not upload your presentation to this link
+
+
+
+### 10/15/17 - [Week 9](https://norcalbiostat.github.io/MATH315/wk09.html)
+
+* This week is all about dat Bivariate inference.
+* RAT on Wednesday (not Monday) 
+* BIG assignment! Has multiple parts. Procrastinate and be doomed. 
+* Add Health analysis all week. Minimal lecture (<15 min). Must read & watch videos before class. 
+    - If it is clear you haven't done the prep work you will get little help from me. 
+* Exams returned Wednesday. [Error Assessment available](https://norcalbiostat.github.io/MATH315/wk06.html#wednesday:_exam_1)
+
+### 10/6/17 - [Week 8](https://norcalbiostat.github.io/MATH315/wk08.html)
+
+* <span style="color:red">**Office Hours**</span>: 
+    - Mon, Tue, Thu 2pm in Holt 202
+    - Tue, Thu 10am in Holt 155 
+    - Eduardo should still be in Holt 155 MW at 3pm. 
+* Computers will be used Monday & Wednesday. 
+* Conducting 1 sample analyses in R. 
+    - There are data and code files to prep before Monday. **Do not wait until class to do this.** 
+* Upcoming Assignments
+    - Research plan outline (10/8)
+    - Poster prep stage 1 (10/15)
+* Exam on Friday: Foundations for Inference. Course notes Ch 4-5. 
+
+### 9/28/17 - [Week 7](https://norcalbiostat.github.io/MATH315/wk07.html)
+* Week 7 notes have been posted. 
+* An Error assessment assignment has been posted to [Week 6:Wed](https://norcalbiostat.github.io/MATH315/wk06.html#wednesday:_exam_1)
+* The project page has been completed. Details about the poster prep assignments are linked there. 
+* The bivariate graphics assignment has been posted and ready for review. 
+* Blackboard learn and the schedule on this website have been cleaned up to remove old/closed assignments. 
+
+
+### 9/21/17 - [Week 6](https://norcalbiostat.github.io/MATH315/wk06.html)
+I have gone through the gradebook and entered in 0's for missing assignments to date. This is done to provide you a better idea of where you stand grade-wise, going into this exam. Quizzes will remain open available up until the test on the 27th. So if you got a 0 on a Problem set or Data Camp quiz you have time to make up those points. This is also a good way to study for the exam. 
+
+
+* Monday: Writing your research plan. Make sure you are paying attention to the research question spreadsheet. I'm leaving feedback and questions for you there!
+* Wednesday: Exam 1. The weekly overview has details on how to prepare and a sample exam. 
+* Friday: Probability. If it's been a while since you've had stats class you will have to spend some significant time preparing. 
+
+### 9/18/17 - [Week 5](https://norcalbiostat.github.io/MATH315/wk05.html)
+* Recap the DM assignment template/instructions. 
+* Univariate graphics assignment due this week. This is a peer reviewed assignment. Example template posted on [week 4](https://norcalbiostat.github.io/MATH315/wk04.html).
+* Peer review instructions have been added to the project page. 
+* Monday we will lecture on how to interpret bivariate comparisons. The rest of the week you will work on creating them. 
+
+
+
+### 9/11/17 - [Week 4](https://norcalbiostat.github.io/MATH315/wk04.html)
+* Data Management, Graphing and Research Question Sharing, Oh My!
+* You should have been watching and following along with the PDS videos for about a week now. If you are not, do this ASAP or you will fall behind. Think of these as lecture, and in class as practice time. 
+* You Research questions are posted on [[THIS GOOGLE SPREADSHEET]](https://docs.google.com/a/mail.csuchico.edu/spreadsheets/d/17KyM74omyRXPa322ieiU0iv-hjiO7THhAD5TVkI1qgo/edit?usp=sharing)
+    - You must log in with your @mail.csuchico.edu email address to view and edit this file. 
+    - I have copied your RQ's as stated in your personal codebook assignment, and demonstrated how to take the variables chosen in the codebook, and align them with specific RQ's. 
+    - **I need you to help finish and/or adjust your entry!** 
+    - This is your opportunity to 
+        - see what others are doing
+        - find out who is using the same variables as you
+        - Align your RQ with actual variables in the codebook. 
+* The Project information page has been started. The link to the spreadsheet above is the first piece of info there. 
+    
+
+### 9/3/17 - [Week 3](https://norcalbiostat.github.io/MATH315/wk03.html)
+* Have a great three day weekend!
+* We're going to be learning how to describe the distribution of data using words, summary statistics and appropriate graphics.
+* This is your last chance to get all your R/R Studio bugs resolved. Next week we're hitting the coding ground hard. 
+* Be sure you're watching the PDS Videos. They contain lecture material directly related to your project. 
+
+### 8/27/17 - [Week 2](https://norcalbiostat.github.io/MATH315/wk02.html)
+
+This week we're going to be talking about data, doing some data entry and importing data into R.
+You'll start to choose specific variables to address your research questions, conduct a literature review, and learn how to properly cite your sources. 
+
+Here are the highlights for the week. 
+
+* Monday
+    - RAT on data types (CN 2.1)
+    - Practice recording raw data and creating a codebook
+    - Two (2) Data camp lessons
+* Wednesday
+    - Getting the Add Health data into R
+    - Start to choose the variables you want to analyze
+* Friday
+    - Conducting a literature review
+    - Using proper citation styles
+
+**Housekeeping**
+* Syllabus has been updated to include office hours: MW: 3-4pm, TR: 10-11am Holt 155
+    - Tuesday OH this week (8/29) are cancelled. I'm getting my braces off!!! :D  
+
+    
+--->
+
+### 8/27/18 - [Week 1](https://norcalbiostat.github.io/MATH315/wk/wk01.html)
+
+Day 1 announcement here 
+
+

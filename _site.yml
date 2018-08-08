@@ -1,0 +1,35 @@
+name: "Robin Donatello"
+output_dir: "."
+navbar:
+  title: "MATH 315"
+  left:
+    - text: "Schedule"
+      icon: fa-book
+      href: schedule.html
+    - text: "Data"
+      icon: fa-database
+      href: http://www.norcalbiostat.com/data/
+    - text: "Projects"
+      icon: fa-bar-chart
+      href: project.html
+    
+  right:
+    - text: "Syllabus"
+      icon: fa-info-circle
+      href: docs/syllabus_f17.html
+    - text: "Help/FAQ"
+      icon: fa-question
+      href: faq.html
+    - text: "Contact"
+      icon: fa-envelope-o
+      href: mailto:rdonatello@csuchico.edu
+    - text: "Dr. D's website"
+      icon: fa-paw
+      href: http://www.norcalbiostat.com/
+      
+output:
+  html_document:
+    theme: cerulean
+    highlight: tango
+
+ 

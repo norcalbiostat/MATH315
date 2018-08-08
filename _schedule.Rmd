@@ -1,0 +1,48 @@
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(kableExtra);library(stringr)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+```
+<br>
+
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+<br>
+```{r , echo=FALSE, message=FALSE, warning=FALSE}
+rawdat <- read_excel("schedule_615.xlsx")
+
+cdat   <- rawdat %>% select(-SLO, -Tuesday, -Thursday) %>% 
+                     mutate(wknum = str_pad(wk, width=2, side="left", pad="0"),
+                            link = paste0("wk/wk", wknum, ".html"), 
+                            Week = paste0("Week ", wknum, ": ",format(Date, format="%b %d")), 
+                            Link = sprintf("[%s](%s)",Week, link))
+
+cdat$Link[c(13,17)] <- c("Fall Break", "Finals")
+
+
+# parse topics
+topiclist <- which(!is.na(cdat$Topics))
+cdat$Topics[topiclist] <- paste0("<ul><li>", cdat$Topics[topiclist], "</li></ul>")
+cdat$Topics[topiclist] <- gsub("\r\n", "</li><li>", cdat$Topics[topiclist])
+
+# parse notes
+mats <- which(!is.na(cdat$Materials))
+cdat$Materials[mats] <- paste0("<ul><li>", cdat$Materials[mats], "</li></ul>")
+cdat$Materials[mats] <- gsub("\r\n", "</li><li>", cdat$Materials[mats])
+
+# parse assignments
+evallist <- which(!is.na(cdat$Assignments))
+cdat$Assignments[evallist] <- paste0("<ul><li>", cdat$Assignments[evallist], "</li></ul>")
+cdat$Assignments[evallist] <- gsub("\r\n", "</li><li>", cdat$Assignments[evallist])
+cdat$Assignments[evallist] <- gsub(" (", " (<b>", cdat$Assignments[evallist], fixed=TRUE)
+cdat$Assignments[evallist] <- gsub(" )", "</b>)", cdat$Assignments[evallist], fixed=TRUE)
+
+```
+
+```{r results='asis', echo=FALSE}
+out <- select(cdat, Link, Topics, Materials, Assignments)
+
+knitr::kable(out, align="l", escape=FALSE) %>% 
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
+  column_spec(1, width="10%") %>% column_spec(2, width="20%") %>% 
+  column_spec(3, width="30%") %>% column_spec(4, width="30%")
+```
+
