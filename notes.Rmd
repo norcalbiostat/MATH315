@@ -1,0 +1,52 @@
+---
+output:
+  html_document:
+    highlight: tango
+    theme: cerulean
+css: ../css/customh5.css
+---
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(stringr); library(dplyr); library(reshape2)
+library(knitr); library(kableExtra)
+
+lec  <- data.frame(filenames = paste0('lecture/', list.files("lecture", pattern='*.pdf|*.html')))
+read <- data.frame(filenames = paste0('reading/', list.files("reading", pattern='*.pdf|*.html')))
+
+out.lec <- lec %>% mutate(name = gsub("lecture/",  "", filenames), 
+                          type = str_extract(lec$filenames,"\\.[a-z]{3}"),
+                          nam = gsub(".html|.pdf", "", name), 
+                          link = sprintf("[%s](%s)",type, filenames))
+
+out.read <- read %>% mutate(name = gsub("reading/",  "", filenames), 
+                            link = sprintf("[%s](%s)",name, filenames))
+```
+
+## Lecture Notes
+The [Applied Statistics Notebook](https://norcalbiostat.github.io/AppliedStatistics_notes/index.html) (Abbreviated as **AS Notebook**) is a general set of notes that span multiple topics from 315, 615 and 456.  
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+x = out.lec %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>% 
+    kable(format="html") %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive", "bordered"), 
+                  full_width=FALSE,  position = "left")
+gsub("<thead>.*</thead>", "", x)
+```
+
+## Reading Materials
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+x = out.read %>% select(link) %>% kable(format="html") %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive" ,"bordered"), 
+                  full_width=FALSE,  position = "left")
+gsub("<thead>.*</thead>", "", x)
+```
+
+## Videos
+
+
+
+## Homework
+
+
+
+

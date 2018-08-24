@@ -4,32 +4,48 @@ navbar:
   title: "MATH 315"
   left:
     - text: "Schedule"
-      icon: fa-book
+      icon: fa-calendar
       href: schedule.html
+    - text: Notes
+      icon: fa-book
+      href: notes.html
     - text: "Data"
       icon: fa-database
       href: http://www.norcalbiostat.com/data/
     - text: "Projects"
       icon: fa-bar-chart
       href: project.html
+    - text: Tools
+      icon: fa-wrench
+      menu:
+      - text: Google Drive
+        icon: fa-google
+        href: https://drive.google.com/drive/folders/13tBCpQye1UJLFcIFfPIhL5uMxrLWnTKk?usp=sharing
+      - text: Slack (class discussions)
+        icon: fa-slack
+        href: https://math315.slack.com/
+      - text: Zoom (video conference)
+        icon: fa-video-camera
+        href: https://csuchico.zoom.us/
+      - text: Data Camp (Learn to code)
+        icon: fa-institution
+        href: https://www.datacamp.com/
     
   right:
     - text: "Syllabus"
       icon: fa-info-circle
-      href: docs/syllabus_f17.html
+      href: syllabus_315.html
     - text: "Help/FAQ"
       icon: fa-question
       href: faq.html
-    - text: "Contact"
-      icon: fa-envelope-o
-      href: mailto:rdonatello@csuchico.edu
     - text: "Dr. D's website"
       icon: fa-paw
       href: http://www.norcalbiostat.com/
-      
 output:
   html_document:
     theme: cerulean
     highlight: tango
+    lib_dir: site_libs
+    self_contained: no
 
  

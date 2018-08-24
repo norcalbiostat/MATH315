@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Project Information</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/customh5.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 315</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="schedule.html">
+    <span class="fa fa-calendar"></span>
+     
+    Schedule
+  </a>
+</li>
+<li>
+  <a href="notes.html">
+    <span class="fa fa-book"></span>
+     
+    Notes
+  </a>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/data/">
+    <span class="fa fa-database"></span>
+     
+    Data
+  </a>
+</li>
+<li>
+  <a href="project.html">
+    <span class="fa fa-bar-chart"></span>
+     
+    Projects
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Google Drive</li>
+    <li>
+      <a href="https://math315.slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.datacamp.com/">
+        <span class="fa fa-institution"></span>
+         
+        Data Camp (Learn to code)
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="syllabus_315_f18.html">
+    <span class="fa fa-info-circle"></span>
+     
+    Syllabus
+  </a>
+</li>
+<li>
+  <a href="faq.html">
+    <span class="fa fa-question"></span>
+     
+    Help/FAQ
+  </a>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's website
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Project Information</h1>
+<h4 class="date"><em>Last Updated 2018-08-08 09:49:24</em></h4>
+
+</div>
+
+
+<div id="overview" class="section level1">
+<h1>Overview</h1>
+<p>Throughout the entire semester you will be analyzing a data set with the end goal of creating a poster presentation to present your research. Often your homework serves as a first draft of exploration into your research questions, and helps you build your story. Homework assignments alone will not be sufficient for a good analysis.</p>
+</div>
+<div id="poster-preparation" class="section level1">
+<h1>Poster preparation</h1>
+<p>You will organize your research in stages by building a “powerpoint” type presentation. This will help you concicely explain your research topic and findings in a way that you can more easily translate (fit) onto a poster.</p>
+<div id="instructions" class="section level3">
+<h3>Instructions</h3>
+<ul>
+<li>Create a Google Slides presentation directly into the Project Slides folder in our Google Drive.</li>
+<li>Name your file using <code>first_last</code> name only.</li>
+<li>The required contents for each slide are listed below under <strong>Stages</strong></li>
+</ul>
+</div>
+<div id="stages" class="section level3">
+<h3>Stages</h3>
+<ul>
+<li>At each stage you should update anything you need to change, such as correctly making graphics, writing results correctly etc.</li>
+<li>This includes reviewing the current set of feedback and mak the appropriate corrections.
+<ul>
+<li>Once you have addressed a particular piece of feedback mark it as “resolved” in Google Slides.</li>
+</ul></li>
+</ul>
+</div>
+<div id="list-of-slide-contents" class="section level3">
+<h3>List of slide contents</h3>
+<p>Your presentation should be limited to approximately 16 slides. The contents of each slide are listed below.</p>
+<div id="stage-1" class="section level4">
+<h4><span style="color:blue"><strong>Stage 1</strong></span></h4>
+<ol style="list-style-type: decimal">
+<li>Title</li>
+<li>Introduction</li>
+<li>Background &amp; lit review.</li>
+<li>Explain the research problem</li>
+<li>State your Research Question.</li>
+<li>Sample characteristics: How many people are in your analysis sample, what is the % female, average (SD) age, and ethnicity breakdown.</li>
+<li>Description of measures (variables) being used. Explain any recoding and/or altering that was done.
+<ul>
+<li>This refers to changes to the data that are above and beyond setting missing codes such as 98 and 99 to <code>NA</code>.</li>
+<li>Do not use variable names.</li>
+<li>Restrict this list to only the variables you are using in your analysis. This is likely not to be more than 4-6.</li>
+</ul></li>
+<li>Univariate graphic and description of main explanatory variable.</li>
+<li>Univariate graphic and description of at least one response variable.</li>
+</ol>
+</div>
+<div id="stage-2" class="section level4">
+<h4><span style="color:blue"><strong>Stage 2</strong></span></h4>
+<p>Slide 10-11: Bivariate graphics and analysis.</p>
+<p>Each slide should contain the following:</p>
+<ol style="list-style-type: decimal">
+<li>A fully labeled and cleaned up plot demonstrating the bivariate relationship under consideration.</li>
+<li>The results of an appropriate bivariate analysis. This should be a conclusion written in english, includes a confidence interval and a p-value. You also need to state the name of the test you used.</li>
+</ol>
+<p>Refer to the <a href="hw/Bivariate_Inference.html">Bivariate Inference</a> assignment on how to conduct and interpret these bivariate analyses.</p>
+</div>
+<div id="stage-3" class="section level4">
+<h4><span style="color:blue"><strong>Stage 3</strong></span></h4>
+<p>Slide 12-13: Multivariate Analysis</p>
+<p>You are trying to understand the relationship between your explanatory and response variable, in presenece of information contained in other variables.</p>
+<p><strong>Testing for moderators, and confounders</strong></p>
+<ul>
+<li>Moderation:
+<ul>
+<li>If you found a moderator: Remove the bivariate graph and write up from your poster and replace with explanation of moderator and graph of significant bivariate at the 3rd variable level.</li>
+<li>If you did NOT find a moderator: Include a slide stating what relationships you tested for moderation and with what variable to see if it was a moderator, explaining that it was not a moderator. No graphs needed</li>
+</ul></li>
+<li>Confounding:
+<ul>
+<li>If you found a confounder: on slide with bivariate relationship that was confounded put a bullet point that explains what variable confounded the relationship and put the written results that are shown in the confounding assignment on how to write results. Make sure to explain if it helped improve prediction of response variable.</li>
+<li>If you did NOT find a confounder: Include a slide stating what relationships you tested for confounds and with what variable to see if it was a confound, explaining that it was not a moderator. Make sure to explain if it helped improve prediction of response variable.</li>
+</ul></li>
+</ul>
+<p><strong>Building a Multivariable Model</strong></p>
+<ul>
+<li>If no confounders or modifiers were found, you should build a multivariable model.</li>
+<li>Include any third variables that were found to be significantly associated with the outcome (but not modifiers or confounders)</li>
+<li>A table or a graphic of coefficients must be presented.
+<ul>
+<li>The <code>coefplot()</code> function in the <code>arm</code> package is an excellent way of displaying the results of a multivariable model. Here is a <a href="https://druedin.com/2015/02/28/how-to-create-coefficient-plots-in-r-the-easy-way/">blog post on coefplot</a>, and <a href="https://www.r-bloggers.com/coefplot-new-package-for-plotting-model-coefficients/">another one</a>. It’s pretty straightforward to create: <code>my.model &lt;- lm(your model here)</code> then call <code>coefplot(my.model)</code>,</li>
+<li>At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem.</li>
+</ul></li>
+</ul>
+<p>Slide 14. <strong>Discussion</strong></p>
+<ul>
+<li>Here you will explain what your graphical and inferential results tell you about your topic.</li>
+<li>Discuss if your research hypothesis was supported, if it was not, why you think that might be</li>
+<li>Explain the overall story/trend/what you learned when you consider your univariate, bivariate &amp; multivariate results about your topic.</li>
+<li>Compare your results to previous research results. Do they agree or disagree?</li>
+</ul>
+<p>Slide 15. <strong>Implications</strong></p>
+<ul>
+<li>What are the practical implications of your results?</li>
+<li>What could others do with your findings?</li>
+<li>What future research needs to be conducted?
+<ul>
+<li>This needs to be more specific than “other variables could be explored”. Which variables and why? What other research articles indicate that those other variables are relevant?</li>
+</ul></li>
+</ul>
+<p>Slide 16. <strong>References</strong></p>
+<ul>
+<li>You can use smaller font to get all references on one slide.</li>
+<li>Use references from research plan, and any additional references gathered along the way.</li>
+<li>Make sure these are correctly done in APA format.</li>
+<li>Proper citations for
+<ul>
+<li><a href="http://www.cpc.unc.edu/projects/addhealth/faqs/addhealth#how-do-i-cite-the-add-health-contractual-data-">Add Health</a></li>
+<li><em>R</em>: Type <code>citation()</code></li>
+<li><a href="https://support.rstudio.com/hc/en-us/articles/206212048-Citing-RStudio">R Studio</a></li>
+<li><a href="http://www-01.ibm.com/support/docview.wss?uid=swg21476197">SPSS</a></li>
+<li><a href="http://blog.apastyle.org/apastyle/2015/01/how-to-cite-software-in-apa-style.html">How to cite software in Text</a></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<div id="final-posters" class="section level1">
+<h1>Final Posters</h1>
+<ul>
+<li>You will transfer all findings into a research poster, and then present your research to your classmates.
+<ul>
+<li>We will split the class in half. When not presneting, you will be scoring the other half of the class’s posters.</li>
+</ul></li>
+<li>All posters must be built in Powerpoint. No exceptions.</li>
+<li>Use these <a href="https://norcalbiostat.netlify.com/lec/poster_guidelines/">poster guidelines</a> to see templates and develop your poster.</li>
+</ul>
+<div id="draft-version" class="section level2">
+<h2>Draft version</h2>
+<ul>
+<li>This draft is graded on how complete the poster is. You should consider this a draft that you would circulate to your colleagues for final review and comments.</li>
+<li>Use the <a href="https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria">evaluation criteria</a> as a guide for what I am looking for.<br />
+</li>
+<li><strong>Submit your poster draft</strong> to <a href="https://www.dropbox.com/request/7pWvRwRGM1wRqCAl3jCB">this Dropbox folder</a>.</li>
+<li><strong>Peer Review</strong>
+<ul>
+<li>Download your <a href="https://docs.google.com/spreadsheets/d/1njtZX4tv_3G7OgbJA5KFyHF3ecU4KPV7qdnGxSGMbVA/edit#gid=0">Assigned</a> poster to review.
+<button data-toggle="collapse" data-target="#draft">
+Show/Hide Drafts for Review
+</button></li>
+<li>Write the comments directly into the poster file itself.</li>
+<li>provide at least two specific comments for each
+<ul>
+<li>something that can be improved</li>
+<li>something that is good</li>
+</ul></li>
+<li>Save this file with your initials at the end of the file name.</li>
+</ul></li>
+<li><strong>Upload your revision</strong> to <a href="https://drive.google.com/drive/folders/1_CWqJt0L9QUguxWwcaNaH84ctkLTQlS7?usp=sharing">this Google folder</a>.</li>
+</ul>
+<div id="draft" class="collapse">
+<h4 id="poster-drafts-to-review.">Poster drafts to review.</h4>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(stringr); <span class="kw">library</span>(dplyr)
+<span class="kw">library</span>(knitr); <span class="kw">library</span>(kableExtra)
+
+dta &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">filenames =</span> <span class="kw">paste0</span>(<span class="st">&#39;PosterDraft/&#39;</span>, <span class="kw">list.files</span>(<span class="st">&quot;PosterDraft/&quot;</span>)))
+
+out &lt;-<span class="st"> </span>dta <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">name =</span> <span class="kw">gsub</span>(<span class="st">&quot;PosterDraft/&quot;</span>,  <span class="st">&quot;&quot;</span>, filenames),
+                      <span class="dt">link =</span> <span class="kw">sprintf</span>(<span class="st">&quot;[%s](%s)&quot;</span>,name, filenames)) <span class="op">%&gt;%</span>
+<span class="st">               </span><span class="kw">select</span>(link)
+
+x =<span class="st"> </span><span class="kw">kable</span>(out, <span class="dt">format=</span><span class="st">&quot;html&quot;</span>) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">kable_styling</span>(<span class="dt">bootstrap_options =</span> <span class="kw">c</span>(<span class="st">&quot;striped&quot;</span>, <span class="st">&quot;hover&quot;</span>, <span class="st">&quot;condensed&quot;</span>, <span class="st">&quot;responsive&quot;</span>), 
+                  <span class="dt">full_width=</span><span class="ot">FALSE</span>,  <span class="dt">position =</span> <span class="st">&quot;left&quot;</span>)
+<span class="kw">gsub</span>(<span class="st">&quot;&lt;thead&gt;.*&lt;/thead&gt;&quot;</span>, <span class="st">&quot;&quot;</span>, x)</code></pre></div>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="PosterDraft/"></a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br><br></p>
+</div>
+<div id="final-poster" class="section level2">
+<h2>Final poster</h2>
+<ul>
+<li>Upload your final poster to <a href="https://www.dropbox.com/request/NtC88NHRbo5oIyRcSxoD">this Dropbox folder</a>. PDF preferred. PPTX ok.</li>
+<li>Scoring will be done via <a href="https://goo.gl/forms/QORgO0jjqNzp3T5i2">Google Forms</a>. It looks exactly like the <a href="https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria">evaluation criteria</a>.
+<ul>
+<li>When not presenting, you will walk around and learn about others research. Ask them questions, fill out the evaluation on your phone as you go. Printed copies will be available upon request.</li>
+</ul></li>
+<li>The final grade will be determined by
+<ul>
+<li>Base score = <strong>30%</strong> student score + <strong>70%</strong> instructor score <strong>+ bonus pts</strong> for best in show awards <strong>- 1</strong> point penalty for each day late.</li>
+</ul></li>
+</ul>
+<button data-toggle="collapse" data-target="#final">
+Show/Hide Final Versions
+</button>
+<div id="final" class="collapse">
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="FinalPoster/"></a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+---
+title: "Syllabus for Applied Statistical Methods I"
+author: "Dr. Robin Donatello"
+date: "MATH 315-03, Fall 2018"
+output:
+  pdf_document: default
+  html_document: default
+geometry: margin=0.75in
+urlcolor: blue
+---
+
+# Logistics
+* **Instructor:** Dr. Robin Donatello  
+* **Office Location:** Holt 202  
+* **Phone Number:** 898-5767  
+* **E-mail:** rdonatello@csuchico.edu 
+* **website:** https://norcalbiostat.github.io/MATH315/ 
+* **Prerequisites:** Basic computer literacy. Recent statistics course such as Math 105. 
+* **Meeting Days and Times:**  MWF 8-9am, HOLT 155
+* **Office Hours:** TBD. Please fill out the following survey during week 1 to help me find a good time https://goo.gl/forms/bwF35ogx5mqWec2t1 
+
+    
+You can download the Syllabus in PDF form by clicking [this link](syllabus_315_f18.pdf).
+
+
+## Learning Outcomes
+
+By the end of the semester students will be able to 
+
+* Develop a testable research question. 
+* Create and Understand how to use a codebook to identify data relevant to that question. 
+* Process, screen, recode, transform, and clean data.
+* Describe data using visualizations and words. 
+* Select and carry out an appropriate statistical analysis.
+* Explain study results and limitations to a non-technical audience. 
+* Understand and implement a reproducible research pipeline. 
+* Become a data nerd (Optional, but recommended).
+
+
+## Required Materials
+
+* **Textbook**: Open Intro Statistics https://www.openintro.org/stat/textbook.php?stat_book=os 
+* **Course Notes**: Purchase from Chico Packet Pro for ~$15. You will write directly into this inside and outside of class. 
+    - Chico Packet Pro store hours TBD 
+    - 230 Salem Street and our entrance is on the city parking lot side of the building. We accept cash, debit and credit cards.
+    - Online at https://squareup.com/store/chico-packet-pro/item/math-course-notes-prof-donatello
+    - A color [PDF](RAD_course_notes.pdf) version available as supplementary material. **The hard copy still must be purchased.** We will be working directly out of it during class. You will be able to have the course materials on exams.
+* **Reliable Laptop with internet connectivity**: Required to bring every day. Contact me if this poses a problem or concern for you. 
+* **Headphones:** In case you forget to watch a required video before class you may be asked to do so in class. 
+* **Computer Software:** All required software is free. Instructions on how to download and install can be found at this link: https://norcalbiostat.netlify.com/post/software-overview/
+    - You are expected to have this installed by the second class meeting. Make sure you reach out to me if you need help with this part. 
+    
+## Online accounts and materials
+* **Blackboard Learn Use:** I will use Blackboard learn for
+    - Due Dates
+    - Assignments that are automatically graded (called "quizzes" in BBL)
+    - Grades
+* **Google Drive** I will use Google Drive for
+    - surveys/data collection
+    - Written assignment submission, peer review and return
+* **Accounts** 
+    - Slack: http://math-315.slack.com. Use the link in Blackboard to join our workspace. 
+        - Download either the desktop app or the phone app. 
+        - Turn on notifications (they are not on automatically)
+        - This is where I will make announcements and share assignment files as needed. 
+    - Data Camp: Sign up with your campus email using the link in Blackboard to join our classroom. 
+        - If you already have a DataCamp account email me to let me know and I will manually add you to our classroom. 
+
+
+\newpage
+
+## Coursework
+
+There are a variety types of assignments that I use to help you learn, and to assess how well you have
+learned the material and can synthesize information. These categories are listed below, somewhat 
+ordered in roughly how prompt the feedback is (Top:immediate, Bottom: could take over a week)
+
+1. **Attendance**: Daily attendance is mandatory unless you talk to me ahead of time. 
+    - On days where we have open work day, you are still expected to stay and work. 
+        - Leaving early will result in being marked as absent. 
+    - 1-2 days absent no penalty, 3-5 days absent 10% penalty, 5-10 days absent 50% penalty.
+    - More than 10 days absent you earn no points for attendance. 
+2. **Participation**: 
+    - You will be conducting peer reviews for nearly every assignment throughout the semester. 
+    - Regular participation in Slack conversations. By asking and answering questions you can contribute to quality class-wide generation. Helping each other is more valuable than waiting for a response from me.
+3. **BBLearn (BBL)**: These are a random set of questions from a pool of questions.
+    - Assigned as specific problem sets from the course notes. 
+    - Typically conceptual, sometimes computational.
+    - Designed to reinforce concepts we covered in class. 
+    - You have unlimited attempts to earn the score you desire. 
+    - Late submissions are accepted at 50% penalty until EOD of the day before the upcoming exam. 
+4. **Data Camp (DC)**: We will primarily use Data Camp to learn R outside of class. 
+    - You must be logged in to the Data Camp classroom to get access to the lessons. 
+    - You must use the link emailed to you to join this classroom. 
+    - There will be a corresponding BBLearn learn quiz associated with each lesson. 
+    - You will have multiple (but not unlimited) attempts at these quizzes. 
+    - Questions can be conceptual, interpreting results, and asking you to write code to demonstrate a task that was covered in the lesson. 
+5. **Learning**: These types of assignments are all designed to help you become aware of how you learn and how you can become a more active learner. 
+    - Learning assignments take the form of readiness assurance tests (RAT), Exam error assessments and meta-cognition assessments and reading. 
+6. **Written**: Written assignments are methods to demonstrate you have learned the material covered in class that day or that week. 
+    - These can be worksheets or labs that we do together as a class. 
+7. **Exams:** There will be 3 exams. 
+    - An Error Analysis can be conducted on Exam 1 and 2 to earn back up to half the credit missed. 
+    - This is where you get back your exam, fix your mistakes, and explain your corrections verbally to either me or a tutor. 
+8. **Project:** You will be working in pairs on a project throughout the term. 
+    - Written assignments throughout the semester are specifically geared towards progressing your analysis project. 
+    - You will present your work as a poster at the end of the semester. 
+  
+
+**Late work:** 
+
+* Unless otherwise specified, you have roughly a week to do each assignment. 
+    - Recall the due dates can be found in the BBL Calendar, or on the main schedule page. 
+* **Late work is not accepted** (with the exception of BBL quizzes)
+ 
+
+## Grading
+
+* Your final grade will be a straight sum of points earned and will be displayed as a running total in Blackboard Learn.  
+* The approximate contributions per category are: Participation, BBLearn, Reading, Learning and R are combined worth about 25\%, Written assignments 10\%, Exams 30\%, and the Project 30\%.   
+* I use a standard grade cutoff of 100-90\%: A, 89-80\%: B, 79-70\%: C, 69-60\%: D, 0-59\%: F Plusses and minuses will be as displayed on Blackboard Learn. 
+
+# Topic Overview
+
+* Data Collection and recording
+* Preparing data for analysis
+* Data Visualization
+* Foundations for Inference: Random variables, Parameters vs. Statistic, Confidence Intervals, Hypothesis Testing
+* Inference for a single sample (t-tests, $\chi^{2}$ tests)
+* Inference comparing multiple samples (t-tests, ANOVA, $\chi^{2}$ tests)
+* Linear regression analysis (Simple and Multiple, Categorical predictors and contrasts)
+* Logistic Regression analysis
+
+
+----
+
+# Policies
+
+## Adding and Dropping the course
+
+This course only runs for a few weeks and all materials are available on the course website. It will be difficult to get caught up if you add the class after the first week. The last day to add or drop classes without special permission by the instructor is 9/7/18. No adds or drops are allowed after 9/21/18 without a serious and compelling reason approved by the instructor, department chair, and college dean.
+
+
+## Americans with Disabilities Act
+
+If you need course adaptations or accommodations because of a disability or chronic illness,  or if you need to make special arrangements in case the building must be evacuated, please make an appointment with me as soon as possible, or see me during office hours. Please also contact Accessibility Resource Center (ARC) as they are the designated department responsible for approving and coordinating reasonable accommodations and services for students with disabilities. ARC will help you understand your rights and responsibilities under the Americans with Disabilities Act and provide you further assistance with requesting and arranging accommodations.
+
+Accessibility Resource Center  
+530-898-5959   
+Student Services Center 170  
+arcdept@csuchico.edu  
+
+
+## Chico State Basic Needs Project
+
+The **Hungry Wildcat Food Pantry** provides supplemental food, fresh produce, CalFresh application assistance and basic needs referral services for students experiencing food and housing insecurity.
+
+All students are welcomed to visit the Pantry located in the Student Service Center 196, open Monday-Friday, 11am-4pm or call 530-898-4098. 
+
+Please visit the Chico State Basic Needs website http://www.csuchico.edu/basic-needs for more information.
+
+ 
+
+_Last updated: `r format(Sys.time(), "%a %b %d %Y %X")`_
+
