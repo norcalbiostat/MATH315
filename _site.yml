@@ -11,7 +11,7 @@ navbar:
       href: notes.html
     - text: "Data"
       icon: fa-database
-      href: http://www.norcalbiostat.com/data/
+      href: data.html
     - text: "Projects"
       icon: fa-bar-chart
       href: project.html
@@ -21,6 +21,9 @@ navbar:
       - text: Google Drive
         icon: fa-google
         href: https://drive.google.com/drive/folders/13tBCpQye1UJLFcIFfPIhL5uMxrLWnTKk?usp=sharing
+      - text: Hack-MD (code sharing)
+        icon: fa-code
+        href: https://hackmd.io/
       - text: Slack (class discussions)
         icon: fa-slack
         href: https://math315.slack.com/
@@ -34,7 +37,7 @@ navbar:
   right:
     - text: "Syllabus"
       icon: fa-info-circle
-      href: syllabus_315.html
+      href: syllabus_315_f18.html
     - text: "Help/FAQ"
       icon: fa-question
       href: faq.html
@@ -43,7 +46,7 @@ navbar:
       href: http://www.norcalbiostat.com/
 output:
   html_document:
-    theme: cerulean
+    theme: readable
     highlight: tango
     lib_dir: site_libs
     self_contained: no

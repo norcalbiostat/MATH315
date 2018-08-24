@@ -2,7 +2,7 @@
 output:
   html_document:
     highlight: tango
-    theme: cerulean
+    theme: readable
 css: ../css/customh5.css
 ---
 
@@ -10,8 +10,10 @@ css: ../css/customh5.css
 library(stringr); library(dplyr); library(reshape2)
 library(knitr); library(kableExtra)
 
-lec  <- data.frame(filenames = paste0('lecture/', list.files("lecture", pattern='*.pdf|*.html')))
+
+lec <- data.frame(filenames = paste0('lecture/', list.files("lecture", pattern='*.pdf|*.html')))
 read <- data.frame(filenames = paste0('reading/', list.files("reading", pattern='*.pdf|*.html')))
+hw <- data.frame(filenames = paste0('hw/', list.files("hw", pattern='*.pdf|*.html')))
 
 out.lec <- lec %>% mutate(name = gsub("lecture/",  "", filenames), 
                           type = str_extract(lec$filenames,"\\.[a-z]{3}"),
@@ -20,6 +22,11 @@ out.lec <- lec %>% mutate(name = gsub("lecture/",  "", filenames),
 
 out.read <- read %>% mutate(name = gsub("reading/",  "", filenames), 
                             link = sprintf("[%s](%s)",name, filenames))
+
+out.hw <- hw %>% mutate(name = gsub("hw/",  "", filenames), 
+                          type = str_extract(hw$filenames,"\\.[a-z]{3}"),
+                          nam = gsub(".html|.pdf", "", name), 
+                          link = sprintf("[%s](%s)",type, filenames))
 ```
 
 ## Lecture Notes
@@ -43,10 +50,36 @@ gsub("<thead>.*</thead>", "", x)
 
 ## Videos
 
+### Passion Driven Stats
+
+* Chapter 01 Course Introduction http://passiondrivenstatistics.com/2015/05/20/chapter-01-course-introduction/
+* Chapter 02 http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/
+* Chapter 04 http://passiondrivenstatistics.com/2015/09/16/chapter-04/ 
+* Chapter 06 http://passiondrivenstatistics.com/2015/12/18/r-chapter-6/
+* Chapter 07 http://passiondrivenstatistics.com/2016/01/08/r-chapter-7/
+* Chapter 08 http://passiondrivenstatistics.com/2016/01/20/r-chapter-8/
+* Chapter 09 http://passiondrivenstatistics.com/2016/03/28/r-chapter-9/
+* Chapter 10 Probability http://passiondrivenstatistics.com/2015/07/15/chapter-10/ 
+* Chapter 11 http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/
+* Chapter 12 http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/
+* Chapter 14 http://passiondrivenstatistics.com/2016/08/20/r-chapter-14/
+* Chapter 17 http://passiondrivenstatistics.com/2016/10/06/r-chapter-17/
+* Chapter 18 Writing for your poster http://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/
+
+
 
 
 ## Homework
+Always **right click** and **save as** when saving RMD templates to your computer. 
 
+* Homework 01 template [[RMD]](hw/hw01_template.Rmd)
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+x = out.hw %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>% 
+    kable(format="html") %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive" ,"bordered"), 
+                  full_width=FALSE,  position = "left")
+gsub("<thead>.*</thead>", "", x)
+```
 
 
 

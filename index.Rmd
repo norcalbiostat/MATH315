@@ -1,6 +1,13 @@
 
 This is the landing page for <span style="color:blue">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com)  in Fall 2018. This landing page is used for posting of regular announcements and information for students of the class. 
 
+```{r runallwks, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+#source("_render_all_wks.R")
+#source("_render_all_lec.R")
+#source("_render_all_hw.R")
+#rmarkdown::render(notes.Rmd, output_format='html_document')
+```
+
 # Announcements
 
 <!--- 
@@ -205,8 +212,11 @@ Here are the highlights for the week.
     
 --->
 
-### 8/27/18 - [Week 1](https://norcalbiostat.github.io/MATH315/wk/wk01.html)
+### 8/27/18 - [Week 1](https://norcalbiostat.github.io/MATH315/wk/wk01.html) Welcome to Fall 18!
+* This course website contains all materials except the textbook for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.
+* Specifically click on and explore items in the top navigation bar.  
+* Take this survey to help choose when I should hold Office Hours https://goo.gl/forms/qLBv2jMF6fBv3BTR2 
+* Check Blackboard for links to the required course materials (also available on the syllabus) 
 
-Day 1 announcement here 
 
 

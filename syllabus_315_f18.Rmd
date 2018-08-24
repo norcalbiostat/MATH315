@@ -40,21 +40,22 @@ By the end of the semester students will be able to
 ## Required Materials
 
 * **Textbook**: Open Intro Statistics https://www.openintro.org/stat/textbook.php?stat_book=os 
-* **Course Notes**: Purchase from Chico Packet Pro for ~$15. You will write directly into this inside and outside of class. 
-    - Chico Packet Pro store hours TBD 
-    - 230 Salem Street and our entrance is on the city parking lot side of the building. We accept cash, debit and credit cards.
-    - Online at https://squareup.com/store/chico-packet-pro/item/math-course-notes-prof-donatello
-    - A color [PDF](RAD_course_notes.pdf) version available as supplementary material. **The hard copy still must be purchased.** We will be working directly out of it during class. You will be able to have the course materials on exams.
+    - Free PDF or $15 hard copy
+* **Course Notes**: Purchase from Chico Packet Pro for $17. Hours and locations in Blackboard. 
+    - You will write directly into this inside and outside of class. You will be allowed to have this packet on the exam. 
+    - A color [PDF](RAD_course_notes.pdf) version available as supplementary material. 
 * **Reliable Laptop with internet connectivity**: Required to bring every day. Contact me if this poses a problem or concern for you. 
 * **Headphones:** In case you forget to watch a required video before class you may be asked to do so in class. 
 * **Computer Software:** All required software is free. Instructions on how to download and install can be found at this link: https://norcalbiostat.netlify.com/post/software-overview/
     - You are expected to have this installed by the second class meeting. Make sure you reach out to me if you need help with this part. 
     
 ## Online accounts and materials
+* **Course Website:** Everything! Schedule, syllabus, lecture and notes, links to readings, homework etc. 
 * **Blackboard Learn Use:** I will use Blackboard learn for
+    - Grades
     - Due Dates
     - Assignments that are automatically graded (called "quizzes" in BBL)
-    - Grades
+    - Many written assignments
 * **Google Drive** I will use Google Drive for
     - surveys/data collection
     - Written assignment submission, peer review and return
@@ -72,22 +73,21 @@ By the end of the semester students will be able to
 ## Coursework
 
 There are a variety types of assignments that I use to help you learn, and to assess how well you have
-learned the material and can synthesize information. These categories are listed below, somewhat 
-ordered in roughly how prompt the feedback is (Top:immediate, Bottom: could take over a week)
+learned the material and can synthesize information. 
 
-1. **Attendance**: Daily attendance is mandatory unless you talk to me ahead of time. 
+1. **Attendance**: Daily attendance is mandatory unless you talk to me ahead of time. You cannot take advantage of the learning time if you are not present. 
     - On days where we have open work day, you are still expected to stay and work. 
-        - Leaving early will result in being marked as absent. 
     - 1-2 days absent no penalty, 3-5 days absent 10% penalty, 5-10 days absent 50% penalty.
-    - More than 10 days absent you earn no points for attendance. 
-2. **Participation**: 
+    - More than 10 days absent you earn no credit for attendance. 
+2. **Participation & learning**: These activities are designed to foster peer learning and collaboration in and outside the classroom. 
+    - Readiness assurance tests (RAT), Exam error assessments and meta-cognition assessments and reading. 
     - You will be conducting peer reviews for nearly every assignment throughout the semester. 
     - Regular participation in Slack conversations. By asking and answering questions you can contribute to quality class-wide generation. Helping each other is more valuable than waiting for a response from me.
 3. **BBLearn (BBL)**: These are a random set of questions from a pool of questions.
     - Assigned as specific problem sets from the course notes. 
     - Typically conceptual, sometimes computational.
     - Designed to reinforce concepts we covered in class. 
-    - You have unlimited attempts to earn the score you desire. 
+    - You have unlimited attempts to earn the score you desire 
     - Late submissions are accepted at 50% penalty until EOD of the day before the upcoming exam. 
 4. **Data Camp (DC)**: We will primarily use Data Camp to learn R outside of class. 
     - You must be logged in to the Data Camp classroom to get access to the lessons. 
@@ -95,8 +95,6 @@ ordered in roughly how prompt the feedback is (Top:immediate, Bottom: could take
     - There will be a corresponding BBLearn learn quiz associated with each lesson. 
     - You will have multiple (but not unlimited) attempts at these quizzes. 
     - Questions can be conceptual, interpreting results, and asking you to write code to demonstrate a task that was covered in the lesson. 
-5. **Learning**: These types of assignments are all designed to help you become aware of how you learn and how you can become a more active learner. 
-    - Learning assignments take the form of readiness assurance tests (RAT), Exam error assessments and meta-cognition assessments and reading. 
 6. **Written**: Written assignments are methods to demonstrate you have learned the material covered in class that day or that week. 
     - These can be worksheets or labs that we do together as a class. 
 7. **Exams:** There will be 3 exams. 
@@ -117,7 +115,7 @@ ordered in roughly how prompt the feedback is (Top:immediate, Bottom: could take
 ## Grading
 
 * Your final grade will be a straight sum of points earned and will be displayed as a running total in Blackboard Learn.  
-* The approximate contributions per category are: Participation, BBLearn, Reading, Learning and R are combined worth about 25\%, Written assignments 10\%, Exams 30\%, and the Project 30\%.   
+* The approximate contributions per category are: Participation and learning 18%, BBLearn quizzes (conceptual and on R) 9\%, Written assignments 13\%, Exams 30\%, and the Project 30\%.   
 * I use a standard grade cutoff of 100-90\%: A, 89-80\%: B, 79-70\%: C, 69-60\%: D, 0-59\%: F Plusses and minuses will be as displayed on Blackboard Learn. 
 
 # Topic Overview
