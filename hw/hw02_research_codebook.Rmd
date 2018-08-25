@@ -3,7 +3,7 @@ title: "Research Question and personal codebook assignment"
 output:
   html_document:
     highlight: tango
-    theme: flatly
+    theme: readable
   pdf_document: default
 css: ../css/customh5.css
 ---
@@ -16,7 +16,7 @@ Now it is time for you to formulate your own Research Question. This will guide 
 2. Choose variables that relate to your topic
 3. Formulate a Research Question
 
-The specific details for each step are described below. You will conduct the work in a word document, then save as PDF and submit through Blackboard Learn.  
+The specific details for each step are described below. You will write the assignment in a Google document. 
 
 ## Step 1: Topic area statement: 
 Thoroughly review the codebook for your dataset of choice and make note of topics that interest you. Use this as a brainstorming session and identify as much as you can. Write a statement similar to the one below regarding what topic(s) you are interested in. You should also explain WHY you are interested in your topic. 
@@ -46,10 +46,13 @@ Now that you have a few topics and picked out variables for each topic, what que
 
 # Submission
 
+* This is a team assignment (one submission per analysis pair)
 * Use header formats to clearly denote steps 1-3.
-* Save your file as a PDF. 
-* Name this file `rq_` 
-* Upload to Blackboard Learn by the due date AND place a copy in our shared Google Folder
+* Write your assignment directly in Google Docs in the `Incoming/02 Research Question` folder. 
+* Name this file `rq_pairname` i.e. `rq_donatello_coia.pdf` 
+* Download a copy as PDF and upload to the corresponding assignment in Blackboard Learn
+* This assignment will be peer reviewed. 
+    - Be sure to use the "project pairs" sheet of the [Peer Review Assignment](https://docs.google.com/spreadsheets/d/15BXa0Xx-utXAFUE5wlZDD-Z6ywV2ffLMiY4TThSnDJM/edit?usp=sharing) to find your assignments 
 
 
 

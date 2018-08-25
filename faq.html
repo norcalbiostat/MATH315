@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
 <script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
@@ -54,6 +57,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="../css/customh5.css" type="text/css" />
 
 </head>
 
@@ -150,6 +154,101 @@ $(document).ready(function () {
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -273,14 +372,19 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Frequently Asked Questions</h1>
-<h4 class="date"><em>Last Updated 2018-08-24 17:03:19</em></h4>
+<h4 class="date"><em>Last Updated 2018-08-24 22:46:55</em></h4>
 
 </div>
 
 
 <p><em>page in development</em></p>
-<div id="where-can-i-get-help-using-r-outside-of-class-time" class="section level1">
-<h1>Where can I get help using R outside of class time?</h1>
+<div id="class-logistics" class="section level1">
+<h1>Class Logistics</h1>
+</div>
+<div id="r-programming" class="section level1">
+<h1>R Programming</h1>
+<div id="where-can-i-get-help-using-r-outside-of-class-time" class="section level2">
+<h2>Where can I get help using R outside of class time?</h2>
 <div id="online" class="section level3">
 <h3>Online</h3>
 <ul>
@@ -315,8 +419,9 @@ $(document).ready(function () {
 <li><strong><a href="https://www.meetup.com/Chico-R-Users-Group">R Meetup group</a></strong> Coding over coffee (or adult beverages) anyone?</li>
 </ul>
 </div>
-<div id="pds-helpful-files-for-programming-in-r." class="section level3">
-<h3>PDS Helpful files for programming in R.</h3>
+</div>
+<div id="pds-helpful-files-for-programming-in-r." class="section level2">
+<h2>PDS Helpful files for programming in R.</h2>
 <ul>
 <li>Common errors <a href="R_Resources/Common%20Errors%20in%20R.docx">[DOCX]</a></li>
 <li>Useful functions <a href="R_Resources/Useful%20functions%20in%20R.docx">[DOCX]</a></li>
@@ -324,20 +429,94 @@ $(document).ready(function () {
 <li>Graphing <a href="R_Resources/QC201_Rgraphing.pdf">[PDF]</a></li>
 </ul>
 </div>
-</div>
-<div id="helpful-r-code-snippits" class="section level1">
-<h1>Helpful R code snippits</h1>
+<div id="helpful-r-code-snippits" class="section level2">
+<h2>Helpful R code snippits</h2>
 <p>Here is a collection of helpful R <a href="snippits.html">code snippits</a> for plotting, subsetting, handling missing values and so forth.</p>
 </div>
-<div id="what-other-computers-on-campus-have-r" class="section level1">
-<h1>What other computers on campus have R?</h1>
+<div id="what-other-computers-on-campus-have-r" class="section level2">
+<h2>What other computers on campus have R?</h2>
 <ul>
 <li>The three reserve computers in the first floor library. You have to ask to use these. (Confirmed 8/25/17)</li>
 <li>Butte 211 has an open computer lab.</li>
 </ul>
 </div>
-<div id="class-logistics-to-be-filled-in-during-week-1" class="section level1">
-<h1>Class Logistics – To be filled in during week 1</h1>
+</div>
+<div id="submitting-assignments" class="section level1">
+<h1>Submitting Assignments</h1>
+<div id="how-do-i-complete-the-assignments" class="section level2">
+<h2>How do I complete the assignments?</h2>
+<ul>
+<li>Most homework assignments will come with a R markdown (<code>*.Rmd</code>) template file to use.
+<ul>
+<li>Right click on the link to download this file and <code>save as</code> or <code>save target as</code>. Opening this file in your HTML browser will not work.</li>
+</ul></li>
+<li>Write your code and answers directly into the Rmd file. Spellcheck and knit to PDF before submission.</li>
+<li>Links to the templates can be found in the homework assignment itself. A list of all assignment files can be found on the <a href="notes.html">notes</a> page.</li>
+</ul>
+</div>
+<div id="howwhere-do-i-turn-in-homework" class="section level2">
+<h2>How/Where do I turn in Homework?</h2>
+<p><strong>Standard Assignments</strong></p>
+<p>Unless explicitly stated otherwise,</p>
+<ul>
+<li>The file should be clearly named using this format: <code>assignment_userid.pdf</code>. E.g. <code>univ_graphics_rdonatello.pdf</code></li>
+<li>It should be in PDF format.</li>
+<li>Uploaded to the corresponding assignment in Blackboard learn.</li>
+<li>I will download these files, write comments and corrections on the PDF electronically, and assign grade points rubric built into BBL. My marked up assignment file will be returned to you via BBL.</li>
+</ul>
+<p><strong>Project Assignments</strong></p>
+<ul>
+<li>Project assignments are completed directly in Google Docs.</li>
+<li>Drop a note in the corresponding assignment in Blackboard Learn saying your assignment is ready for review.</li>
+<li>Project assignments should be considered quality work and such refined, reviewed, and absolutely spellchecked before submission.</li>
+</ul>
+</div>
+<div id="what-are-you-looking-for-when-you-grade" class="section level2">
+<h2>What are you looking for when you grade?</h2>
+<ul>
+<li>Most assignments include model examples directly in the assignment file itself.</li>
+<li>Correct english grammer, spelling, formatting.</li>
+<li>Concice, clear and complete answers.</li>
+<li>Correct statistical methods used</li>
+<li>That you answered the question posed.</li>
+<li>No extreneous output or code</li>
+</ul>
+</div>
+</div>
+<div id="peer-review" class="section level1">
+<h1>Peer Review</h1>
+<div id="why-do-we-do-peer-review-instead-of-just-getting-feedback-from-you" class="section level2">
+<h2>Why do we do peer review instead of just getting feedback from you?</h2>
+<ul>
+<li>Everyone has different thought processes and may have approached the question from a different perspective that can help you learn the material.</li>
+<li>Co-authoring and reviewing your peers work is part of a professional research position.</li>
+<li>Learning how to provide good feedback will make you a better collaborator</li>
+<li>This is a delayed version of paired programming - another set of eyeballs can typically help you find your mistake.</li>
+<li>I have 10fold more assignments to review than you do. You’ll get your peer’s reviews back faster than I can get yours back.</li>
+<li>I will be looking for different things than your peers will be. This is a good thing. They are looking from “untrained eyes”, which can be very critical to make sure you are explaining yourself clearly. I can better “figure out” what you are meaning to say - they are the ones that will best tell you when/where you need to explain your findings better.</li>
+</ul>
+</div>
+<div id="how-do-i-conduct-a-peer-review" class="section level2">
+<h2>How do I conduct a Peer Review</h2>
+<ol style="list-style-type: decimal">
+<li>Check the <a href="https://docs.google.com/spreadsheets/d/15BXa0Xx-utXAFUE5wlZDD-Z6ywV2ffLMiY4TThSnDJM/edit?usp=sharing">Peer Review Rotation</a> spreadsheet to see who you are scheduled to review.</li>
+<li>Open the assignment file in Google Drive directly.</li>
+<li>Change from “editing” to “suggesting” in the top right.</li>
+<li>By editing the veribiage directly, or using comment bubbles, provide feedback to your peers.
+<ul>
+<li>Be specific. Give the type of feedback that you want to recieve.</li>
+<li>Minimum four positive comments about what they did well, or should continue to do.</li>
+<li>Minimum four corrections or suggestions for improvement. If it is reworking/grammer make these edits directly in the document.</li>
+</ul></li>
+</ol>
+</div>
+<div id="grading-of-peer-reviews" class="section level2">
+<h2>Grading of peer reviews</h2>
+<p>As I do my reviews on the same document, I will be reading and assessing your peer review. If I find your review is not providing quality feedback to the author you will not recieve credit for that review. You may see the cells in the peer review spreadsheet changing color as I check off your review.</p>
+</div>
+</div>
+<div id="class-logistics-1" class="section level1">
+<h1>Class Logistics</h1>
 <p>There was a survey done in Week 1 where I asked you to tell me what more you wanted to know regarding how this class is run and what is expected out of you? Here is a compilation of those responses. As more come in I will add to this list.</p>
 <!--
 ### R / Programming
@@ -483,6 +662,8 @@ How often homework is due?
 
 
 
+</div>
+</div>
 
 </div>
 

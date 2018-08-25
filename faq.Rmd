@@ -1,12 +1,24 @@
 ---
 title: "Frequently Asked Questions"
 date: "Last Updated `r Sys.time()`"
-output: html_document
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    highlight: tango
+    theme: readable
+    toc: yes
+    toc_float: yes
+css: ../css/customh5.css
 ---
 
 _page in development_
 
-# Where can I get help using R outside of class time? 
+# Class Logistics
+
+# R Programming
+
+## Where can I get help using R outside of class time? 
 
 ### Online
 * Chico [R User Group](https://groups.google.com/forum/#!forum/chico-rug)
@@ -33,25 +45,90 @@ _Times TBD for Fall 18_
 * **Math Learning Lab (MLIB 4th floor)** [[Tutor Schedule]](https://docs.google.com/spreadsheets/d/1xNQMfxpnIiS5bUCS9jB2_EE1Sc4C06JRaw6jyEO3nVE/edit#gid=0)
 * **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
 
-### PDS Helpful files for programming in R. 
+## PDS Helpful files for programming in R. 
 
 * Common errors [[DOCX]](R_Resources/Common Errors in R.docx)
 * Useful functions [[DOCX]](R_Resources/Useful functions in R.docx)
 * Navigataing data sets [[DOCX]](R_Resources/Navigating datasets in R.docx)
 * Graphing [[PDF]](R_Resources/QC201_Rgraphing.pdf)
 
-# Helpful R code snippits
+## Helpful R code snippits
 
 Here is a collection of helpful R [code snippits](snippits.html) for plotting, subsetting, handling missing values and so forth. 
 
-# What other computers on campus have R? 
+## What other computers on campus have R? 
 
 * The three reserve computers in the first floor library. You have to ask to use these. (Confirmed 8/25/17)
 * Butte 211 has an open computer lab. 
     
+# Submitting Assignments
 
 
-# Class Logistics -- To be filled in during week 1
+## How do I complete the assignments? 
+
+* Most homework assignments will come with a R markdown (`*.Rmd`)  template file to use.
+    - Right click on the link to download this file and `save as` or `save target as`. Opening this file in your HTML browser will not work. 
+* Write your code and answers directly into the Rmd file. Spellcheck and knit to PDF before submission. 
+* Links to the templates can be found in the homework assignment itself. A list of all assignment files can be found on the [notes](notes.html) page. 
+
+## How/Where do I turn in Homework?
+
+**Standard Assignments**
+
+Unless explicitly stated otherwise, 
+
+* The file should be clearly named using this format: `assignment_userid.pdf`. E.g. `univ_graphics_rdonatello.pdf`
+* It should be in PDF format. 
+* Uploaded to the corresponding assignment in Blackboard learn. 
+* I will download these files, write comments and corrections on the PDF electronically, and assign grade points rubric built into BBL. My marked up assignment file will be returned to you via BBL. 
+
+**Project Assignments**
+
+* Project assignments are completed directly in Google Docs. 
+* Drop a note in the corresponding assignment in Blackboard Learn saying your assignment is ready for review. 
+* Project assignments should be considered quality work and such refined, reviewed, and absolutely spellchecked before submission. 
+
+
+## What are you looking for when you grade? 
+
+* Most assignments include model examples directly in the assignment file itself. 
+* Correct english grammer, spelling, formatting. 
+* Concice, clear and complete answers. 
+* Correct statistical methods used
+* That you answered the question posed. 
+* No extreneous output or code
+
+
+# Peer Review
+
+
+## Why do we do peer review instead of just getting feedback from you? 
+
+* Everyone has different thought processes and may have approached the question from a different perspective that can help you learn the material. 
+* Co-authoring and reviewing your peers work is part of a professional research position. 
+* Learning how to provide good feedback will make you a better collaborator
+* This is a delayed version of paired programming - another set of eyeballs can typically help you find your mistake. 
+* I have 10fold more assignments to review than you do. You'll get your peer's reviews back faster than I can get yours back.
+* I will be looking for different things than your peers will be. This is a good thing. They are looking from "untrained eyes", which can be very critical to make sure you are explaining yourself clearly. I can better "figure out" what you are meaning to say  - they are the ones that will best tell you when/where you need to explain your findings better. 
+
+
+## How do I conduct a Peer Review
+
+1. Check the [Peer Review Rotation](https://docs.google.com/spreadsheets/d/15BXa0Xx-utXAFUE5wlZDD-Z6ywV2ffLMiY4TThSnDJM/edit?usp=sharing) spreadsheet to see who you are scheduled to review. 
+2. Open the assignment file in Google Drive directly. 
+3. Change from "editing" to "suggesting" in the top right. 
+4. By editing the veribiage directly, or using comment bubbles, provide feedback to your peers. 
+    - Be specific. Give the type of feedback that you want to recieve. 
+    - Minimum four positive comments about what they did well, or should continue to do.
+    - Minimum four corrections or suggestions for improvement. If it is reworking/grammer make these edits directly in the document. 
+
+## Grading of peer reviews
+
+As I do my reviews on the same document, I will be reading and assessing your peer review. If I find your review is not providing quality feedback to the author you will not recieve credit for that review. You may see the cells in the peer review spreadsheet changing color as I check off your review. 
+
+
+# Class Logistics
+
 There was a survey done in Week 1 where I asked you to tell me what more you wanted to know regarding how this class is run and what is expected out of you? Here is a compilation of those responses. As more come in I will add to this list. 
 
 <!--

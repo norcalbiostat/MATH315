@@ -2,7 +2,7 @@
 This is the landing page for <span style="color:teal">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com)  in Fall 2018. This landing page is used for posting of regular announcements and information for students of the class. 
 
 ```{r runallwks, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
-#source("_render_all_wks.R")
+source("_render_all_wks.R")
 #source("_render_all_lec.R")
 #source("_render_all_hw.R")
 #rmarkdown::render(notes.Rmd, output_format='html_document')
