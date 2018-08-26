@@ -1,13 +1,11 @@
 ---
 title: "Research Question and personal codebook assignment"
 output:
-  pdf_document: default
   html_document:
-    highlight: tango
-    theme: readable
+    theme: journal
     toc: yes
     toc_float: yes
-css: ../css/customh5.css
+  pdf_document: default
 ---
 
 # Overview
@@ -18,7 +16,9 @@ Now it is time for you to formulate your own Research Question. This will guide 
 2. Choose variables that relate to your topic
 3. Formulate a Research Question
 
-## Submission
+
+# Instructions
+The specific details for each step are described below. You will write the assignment in a Google document. 
 
 * This is a peer-reivewed team assignment. 
 * Use header formats to clearly denote steps 1-3.
@@ -27,9 +27,6 @@ Now it is time for you to formulate your own Research Question. This will guide 
 * Drop a note in Blackboard to say that your file is ready for grading. 
 
 
-
-# Instructions
-The specific details for each step are described below. You will write the assignment in a Google document. 
 
 ## Step 1: Topic area statement: 
 Thoroughly review the codebook for your dataset of choice and make note of topics that interest you. Use this as a brainstorming session and identify as much as you can. Write a statement similar to the one below regarding what topic(s) you are interested in. You should also explain WHY you are interested in your topic. 

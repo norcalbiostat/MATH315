@@ -1,30 +1,28 @@
 ---
 title: "Citation Assignment"
 output:
-  pdf_document: default
   html_document:
-    highlight: tango
-    theme: readable
+    theme: journal
     toc: yes
     toc_float: yes
-css: ../css/customh5.css
+  pdf_document: default
 ---
 
 # Overview
 
+To refine your research question you need to know what has been studied in recent years. Before you start this assignment be sure to have read the article on "how to read a journal article", and the lecture notes on "how to conduct a literature review". This assignment will help you identify gaps in the current literature regarding your research topic, and refine your research question and set of potential variables substantially. 
+
+# Instructions
+
 You need at least 4 primary source references that are directly related to your topic that were published in 2006 or more recent.
 
 For each article, you will complete steps 1-3, in other words 4 times. Then complete steps 5-7. There is an example at the bottom of this document.
-
-## Submission
 
 * This is a peer-reivewed team assignment. 
 * Write your assignment directly in Google Docs in the `Incoming/03 Citation Assignment` folder. 
 * Name this file `citation_pairname` i.e. `citation_donatello_coia.pdf` 
 * Drop a note in Blackboard to say that your file is ready for grading. 
 
-
-# Instructions
 
 ## Step 1: 
 * Put the reference for the article in APA style. Here is a link to Purdue Owl APA style references that will guide you. https://owl.english.purdue.edu/owl/resource/560/05/ 
