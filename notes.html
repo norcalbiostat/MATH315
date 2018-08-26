@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
@@ -154,6 +157,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -175,26 +273,61 @@ $(document).ready(function () {
     Schedule
   </a>
 </li>
-<li>
-  <a href="notes.html">
-    <span class="fa fa-book"></span>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
      
-    Notes
-  </a>
-</li>
-<li>
-  <a href="data.html">
-    <span class="fa fa-database"></span>
+    Materials
      
-    Data
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="notes.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Lecture Notes/Homework/Reading
+      </a>
+    </li>
+    <li>
+      <a href="reading/RAD_course_notes.pdf">
+        <span class="fa fa-file-code"></span>
+         
+        Course Packet
+      </a>
+    </li>
+    <li>
+      <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/">
+        <span class="fa fa-book-open"></span>
+         
+        Applied Stats Notebook
+      </a>
+    </li>
+    <li>
+      <a href="https://norcalbiostat.netlify.com/data/">
+        <span class="fa fa-database"></span>
+         
+        Data
+      </a>
+    </li>
+  </ul>
 </li>
-<li>
-  <a href="project.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-bar-chart"></span>
      
     Projects
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Project Data (Google Drive)</a>
+    </li>
+    <li>
+      <a href="project.html">Project Instructions</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -255,7 +388,7 @@ $(document).ready(function () {
   <a href="faq.html">
     <span class="fa fa-question"></span>
      
-    Help/FAQ
+    Help
   </a>
 </li>
 <li>
@@ -299,6 +432,41 @@ $(document).ready(function () {
 <tbody>
 <tr>
 <td style="text-align:left;">
+<a href="reading/Adventures%20in%20R%20(Tippmann%202015).pdf">Adventures in R (Tippmann 2015).pdf</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="reading/How%20to%20Read%20a%20Journal%20Article.pdf">How to Read a Journal Article.pdf</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="reading/Importance%20of%20sharing%20code%20(Nature%202014).pdf">Importance of sharing code (Nature 2014).pdf</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="reading/Journals%20unite%20for%20reproducibility%20(Nature%202014).pdf">Journals unite for reproducibility (Nature 2014).pdf</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="reading/Learning%20Your%20First%20Job%20(Leamnson%202002).pdf">Learning Your First Job (Leamnson 2002).pdf</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="reading/MAI%20and%20academic%20achievement%20in%20college%20students%20(Young,%20Fry,%202008).pdf">MAI and academic achievement in college students (Young, Fry, 2008).pdf</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="reading/Metacognition%20Awareness%20Inventory.pdf">Metacognition Awareness Inventory.pdf</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 <a href="reading/PDS_Intro_Stat.pdf">PDS_Intro_Stat.pdf</a>
 </td>
 </tr>
@@ -307,13 +475,26 @@ $(document).ready(function () {
 <a href="reading/RAD_course_notes.pdf">RAD_course_notes.pdf</a>
 </td>
 </tr>
+<tr>
+<td style="text-align:left;">
+<a href="reading/Self%20Regulated%20Learning%20Questions%20(Neilson).pdf">Self Regulated Learning Questions (Neilson).pdf</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="reading/Thou%20Shalt%20Be%20Reproducible%20in%20Psychology%20(Mair%202016).pdf">Thou Shalt Be Reproducible in Psychology (Mair 2016).pdf</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="reading/Why%20you%20should%20care%20about%20reproducible%20research%20(Blog%20post%20Revolution%20R%202011).pdf">Why you should care about reproducible research (Blog post Revolution R 2011).pdf</a>
+</td>
+</tr>
 </tbody>
 </table>
 </div>
-<div id="videos" class="section level2">
-<h2>Videos</h2>
-<div id="passion-driven-stats" class="section level3">
-<h3>Passion Driven Stats</h3>
+<div id="pds-videos" class="section level2">
+<h2>PDS Videos</h2>
 <ul>
 <li>Chapter 01 Course Introduction <a href="http://passiondrivenstatistics.com/2015/05/20/chapter-01-course-introduction/" class="uri">http://passiondrivenstatistics.com/2015/05/20/chapter-01-course-introduction/</a></li>
 <li>Chapter 02 <a href="http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/" class="uri">http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/</a></li>
@@ -329,7 +510,6 @@ $(document).ready(function () {
 <li>Chapter 17 <a href="http://passiondrivenstatistics.com/2016/10/06/r-chapter-17/" class="uri">http://passiondrivenstatistics.com/2016/10/06/r-chapter-17/</a></li>
 <li>Chapter 18 Writing for your poster <a href="http://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/" class="uri">http://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/</a></li>
 </ul>
-</div>
 </div>
 <div id="homework" class="section level2">
 <h2>Homework</h2>
@@ -357,12 +537,25 @@ hw02_research_codebook
 <a href="hw/hw02_research_codebook.pdf">.pdf</a>
 </td>
 </tr>
+<tr>
+<td style="text-align:left;">
+hw03_citation
+</td>
+<td style="text-align:left;">
+<a href="hw/hw03_citation.html">.htm</a>
+</td>
+<td style="text-align:left;">
+<a href="hw/hw03_citation.pdf">.pdf</a>
+</td>
+</tr>
 </tbody>
 </table>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 

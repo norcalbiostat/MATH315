@@ -3,6 +3,8 @@ output:
   html_document:
     highlight: tango
     theme: readable
+    toc: yes
+    toc_float: yes
 css: ../css/customh5.css
 ---
 
@@ -48,9 +50,7 @@ x = out.read %>% select(link) %>% kable(format="html") %>%
 gsub("<thead>.*</thead>", "", x)
 ```
 
-## Videos
-
-### Passion Driven Stats
+## PDS Videos
 
 * Chapter 01 Course Introduction http://passiondrivenstatistics.com/2015/05/20/chapter-01-course-introduction/
 * Chapter 02 http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/

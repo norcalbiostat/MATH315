@@ -6,37 +6,44 @@ navbar:
     - text: "Schedule"
       icon: fa-calendar
       href: schedule.html
-    - text: Notes
-      icon: fa-folder
+    - text: "Materials"
+      icon: fa-folder-open
       menu:
-      - text: Lecture notes
-        icon: fa-book
+      - text: "Lecture Notes/Homework/Reading"
+        icon: fa-file-alt
         href: notes.html
-      - text: Applied Stats Notebook
+      - text: "Course Packet"
+        icon: fa-file-code
+        href: reading/RAD_course_notes.pdf
+      - text: "Applied Stats Notebook"
         icon: fa-book-open
         href: https://norcalbiostat.github.io/AppliedStatistics_notes/
-    - text: "Data"
-      icon: fa-database
-      href: data.html
+      - text: "Data"
+        icon: fa-database
+        href: https://norcalbiostat.netlify.com/data/
     - text: "Projects"
       icon: fa-bar-chart
-      href: project.html
-    - text: Tools
+      menu:
+      - text: "Project Data (Google Drive)"
+        href: https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY
+      - text: "Project Instructions"  
+        href: project.html
+    - text: "Tools"
       icon: fa-wrench
       menu:
-      - text: Google Drive
+      - text: "Google Drive"
         icon: fa-google
         href: https://drive.google.com/drive/folders/13tBCpQye1UJLFcIFfPIhL5uMxrLWnTKk?usp=sharing
-      - text: Hack-MD (code sharing)
+      - text: "Hack-MD (code sharing)"
         icon: fa-code
         href: https://hackmd.io/
-      - text: Slack (class discussions)
+      - text: "Slack (class discussions)"
         icon: fa-slack
         href: https://math315.slack.com/
-      - text: Zoom (video conference)
+      - text: "Zoom (video conference)"
         icon: fa-video-camera
         href: https://csuchico.zoom.us/
-      - text: Data Camp (Learn to code)
+      - text: "Data Camp (Learn to code)"
         icon: fa-institution
         href: https://www.datacamp.com/
     
@@ -44,7 +51,7 @@ navbar:
     - text: "Syllabus"
       icon: fa-info-circle
       href: syllabus_315_f18.html
-    - text: "Help/FAQ"
+    - text: "Help"
       icon: fa-question
       href: faq.html
     - text: "Dr. D's website"

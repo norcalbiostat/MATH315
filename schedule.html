@@ -174,26 +174,61 @@ $(document).ready(function () {
     Schedule
   </a>
 </li>
-<li>
-  <a href="notes.html">
-    <span class="fa fa-book"></span>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
      
-    Notes
-  </a>
-</li>
-<li>
-  <a href="data.html">
-    <span class="fa fa-database"></span>
+    Materials
      
-    Data
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="notes.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Lecture Notes/Homework/Reading
+      </a>
+    </li>
+    <li>
+      <a href="reading/RAD_course_notes.pdf">
+        <span class="fa fa-file-code"></span>
+         
+        Course Packet
+      </a>
+    </li>
+    <li>
+      <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/">
+        <span class="fa fa-book-open"></span>
+         
+        Applied Stats Notebook
+      </a>
+    </li>
+    <li>
+      <a href="https://norcalbiostat.netlify.com/data/">
+        <span class="fa fa-database"></span>
+         
+        Data
+      </a>
+    </li>
+  </ul>
 </li>
-<li>
-  <a href="project.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-bar-chart"></span>
      
     Projects
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Project Data (Google Drive)</a>
+    </li>
+    <li>
+      <a href="project.html">Project Instructions</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -254,7 +289,7 @@ $(document).ready(function () {
   <a href="faq.html">
     <span class="fa fa-question"></span>
      
-    Help/FAQ
+    Help
   </a>
 </li>
 <li>
@@ -278,7 +313,7 @@ $(document).ready(function () {
 
 
 <p><br></p>
-<p><em>Last Updated: Sat Aug 25 12:48:09 PM </em> <br></p>
+<p><em>Last Updated: Sat Aug 25 8:53:55 PM </em> <br></p>
 <table class="table table-hover table-striped table-responsive table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -328,6 +363,9 @@ Data analysis life cycle
 <li>
 <a href="http://passiondrivenstatistics.com/2015/05/20/chapter-01-course-introduction/">PDS video 1</a>
 </li>
+<li>
+Applied Stats Course Notes <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/data-prep.html">Chapter 1.0.1</a>
+</li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
@@ -376,13 +414,10 @@ Creating research questions
 <a href="http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/">PDS video 2</a>
 </li>
 <li>
-Course Notes (CN) section 2.1
+Course Packet (CP) section 2.1
 </li>
 <li>
 Open Intro (OI) Section 1.2
-</li>
-<li>
-<a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Research data</a>
 </li>
 </ul>
 </td>
@@ -410,16 +445,49 @@ Peer review of research question (<b>Due Tue 9/11</b>)
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Preparing your data for analysis
+Refining your research question
 </li>
 <li>
-Recoding, data editing and transformations
+Describing univariate numerical data
+</li>
+<li>
+Describing univariate categorical data
+</li>
+<li>
 </li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+<a href="http://passiondrivenstatistics.com/2015/09/16/chapter-04/">PDS Video 4</a>
+</li>
+<li>
+<a href="http://passiondrivenstatistics.com/2015/12/18/r-chapter-6/">PDS Video 6</a>
+</li>
+<li>
+Course packet section 2.2, 2.3
+</li>
+<li>
+Lecture notes on conducting a <a href="">literature review</a>
+</li>
+</ul>
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+hw03 Citation Assignment <a href="hw/hw03_citation.html">[HTML]</a> <a href="hw/hw03_citation.pdf">[PDF]</a> (<b>Due Sun 9/16</b>)
+</li>
+<li>
+PS 2.4, 2.5, 2.7 [BBL] (<b>Due Sun 9/16</b>)
+</li>
+<li>
+Data Camp: Intro to ggplot (<b>Due Sun 9/16)</b>
+</li>
+<li>
+Data management prep questions
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -429,13 +497,35 @@ Recoding, data editing and transformations
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Exploring bivariate relationships
+Data cleaning
+</li>
+<li>
+Data visualization
+</li>
+<li>
+Open work day
 </li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+<a href="http://passiondrivenstatistics.com/2016/01/08/r-chapter-7/">PDS Video 7</a>
+</li>
+<li>
+Week 2-4 from <a href="https://norcalbiostat.github.io/MATH130/">[Math 130]</a>
+</li>
+</ul>
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Data Management Assignment (<b>Due Sun 9/23</b>)
+</li>
+<li>
+Univariate Graphing Assignment (<b>Due Sun 9/23</b>)
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -445,16 +535,29 @@ Exploring bivariate relationships
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Writing about empirical research
+Describing bivariate relationships
 </li>
 <li>
-Research proposal preparation
+Creating bivariate graphics
+</li>
+<li>
+Open work time
 </li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Week 3 &amp; 4 from <a href="https://norcalbiostat.github.io/MATH130/">[Math 130]</a>
+</li>
+</ul>
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Bivariate Graphics Assignment (<b>Due Sun 9/30</b>)
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -464,16 +567,32 @@ Research proposal preparation
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Probability &amp; Confidence Intervals
+Writing about empirical research
 </li>
 <li>
-Foundations for inference
+Exam 1 Descriptive Statistics
+</li>
+<li>
+Probability
 </li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+(Optional) Error Assessment [PDF]
+</li>
+</ul>
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Research Proposal (<b>Due Sun 10/7</b>)
+</li>
+<li>
+Peer Review Research Proposal (<b>Due Tue 10/9</b>)
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -483,16 +602,24 @@ Foundations for inference
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Midterm
+Foundations for Inference
 </li>
 <li>
-Normality and Hypothesis Testing
+Confidence Intervals
+</li>
+<li>
+Hypothesis Testing
 </li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Foundations Worksheet (<b>Due Tue 10/16</b>)
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -502,18 +629,24 @@ Normality and Hypothesis Testing
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Two sample tests
+Conducting Inference using R
 </li>
 <li>
-ANOVA
+Bivariate inference: T-tests
 </li>
 <li>
+Bivariate inference: ANOVA
 </li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Bivariate Inference Assignment (<b>Due Mon 10/29</b>)
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -523,10 +656,13 @@ ANOVA
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Chi-squared analysis
+Bivariate inference: Chi-squared
 </li>
 <li>
-Correlation and Regression
+Bivariate Inference - Correlation
+</li>
+<li>
+Bivariate Infernece - Linear Regression
 </li>
 </ul>
 </td>
@@ -542,13 +678,27 @@ Correlation and Regression
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Moderation
+Open work day - Finish Bivariate inference
+</li>
+<li>
+Open work day - poster prep
+</li>
+<li>
+Exam 2
 </li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Poster prep stage II (<b>Due Sun 11/4</b>)
+</li>
+<li>
+Peer Review poster prep stage II (<b>Due Tue 11/6</b>)
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -557,6 +707,9 @@ Moderation
 </td>
 <td style="text-align:left;width: 20%; ">
 <ul>
+<li>
+Moderation
+</li>
 <li>
 Study Design
 </li>
@@ -568,6 +721,11 @@ Multiple Regression
 <td style="text-align:left;width: 30%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Moderation assignment (<b>Sun 11/11)</b>
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -583,13 +741,18 @@ No School
 Categorical Predictors
 </li>
 <li>
-Log and logit transformations
+Confounders
 </li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Regression Assignment (<b>Fri 11/30)</b>
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -610,26 +773,10 @@ Fall Break
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Model building
-</li>
-</ul>
-</td>
-<td style="text-align:left;width: 30%; ">
-</td>
-<td style="text-align:left;width: 30%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 10%; ">
-<a href="wk/wk14.html">Week 14: Dec 03</a>
-</td>
-<td style="text-align:left;width: 20%; ">
-<ul>
-<li>
-Model building
+Logistic Regression
 </li>
 <li>
-Poster Design
+Model building
 </li>
 <li>
 Open work day
@@ -639,6 +786,41 @@ Open work day
 <td style="text-align:left;width: 30%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Poster Prep Stage III (<b>Due</b>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 10%; ">
+<a href="wk/wk14.html">Week 14: Dec 03</a>
+</td>
+<td style="text-align:left;width: 20%; ">
+<ul>
+<li>
+Poster Design
+</li>
+<li>
+Open work day
+</li>
+<li>
+Open work day
+</li>
+</ul>
+</td>
+<td style="text-align:left;width: 30%; ">
+</td>
+<td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Poster Draft (<b>Due Thu 12/6</b>)
+</li>
+<li>
+Peer Review Poster Draft (<b>Due Sat 12/8</b>)
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -648,19 +830,27 @@ Open work day
 <td style="text-align:left;width: 20%; ">
 <ul>
 <li>
-Poster Presentations
-</li>
-<li>
-Poster Presentations
-</li>
-<li>
 Final Review
+</li>
+<li>
+Poster Presentations
+</li>
+<li>
+Poster Presentations
 </li>
 </ul>
 </td>
 <td style="text-align:left;width: 30%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
+<ul>
+<li>
+Final posters as printed (<b>Due Tue 12/11</b>)
+</li>
+<li>
+Final poster scoring [Link] (<b>Due Sun 12/16</b>)
+</li>
+</ul>
 </td>
 </tr>
 <tr>
