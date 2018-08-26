@@ -70,9 +70,7 @@ gsub("<thead>.*</thead>", "", x)
 
 
 ## Homework
-Always **right click** and **save as** when saving RMD templates to your computer. 
 
-* Homework 01 template [[RMD]](hw/hw01_template.Rmd)
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 x = out.hw %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>% 
     kable(format="html") %>%

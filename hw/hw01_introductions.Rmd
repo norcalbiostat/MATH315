@@ -1,5 +1,5 @@
 ---
-title: 'HW 1: Team Formation & Self Regulated Learning'
+title: 'HW 01: Team Formation & Self Regulated Learning'
 author: "Course Number - STUDENT NAME"
 date: "Date"
 output:
@@ -9,9 +9,18 @@ output:
   word_document: default
 ---
 
+# Prepare
+0. Download the [RMD](hw01_intro_template.Rmd) template file to use for this assignment. 
+1. Replace `template` in the file name with your userid (i.e. `hw01_introductions_rdonatello`). 
+2. Replace the course number with section, your name and date in the YAML header. 
+3. You will compile this document to a PDF format and submit to Blackboard learn by the due date. 
+    - You must have LaTeX installed to compile to PDF. 
+
+This is an individual assignment. 
+
 # Part I: Team Formation
 
-The [University of Minnesota](http://teamwork.umn.edu/) has a fantastic website devoted to surviving group projects. 
+The [University of Minnesota](http://teamwork.umn.edu/) has a fantastic website devoted to surviving group projects.
 You will have a group for immediate support in this class, but the project will be done in pairs. 
 I highly recommend you use this site as a resource for not just this, but other classes. 
 
@@ -36,8 +45,7 @@ Now pick a name for your team! Be as creative as you want, but do something othe
 
 From the [articles](http://www.norcalbiostat.com/articles/articles.html) page, download and read the "Learning (Your First Job)" article. 
 
-* Answer at least _3_ of the following questions in this document. 
-* Post one of your answers to the Blackboard discussion board under homework 1. 
+* Answer at least _4_ of the following questions in this document. 
 
 
 1. **What was the most important insight you gained from the reading? **
@@ -65,6 +73,4 @@ From the [articles](http://www.norcalbiostat.com/articles/articles.html) page, d
 # PART III: Analysis Data Set
 
 **State what sections and what data set you are interested in learning more about**
-
-
 

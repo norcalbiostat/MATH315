@@ -7,8 +7,14 @@ navbar:
       icon: fa-calendar
       href: schedule.html
     - text: Notes
-      icon: fa-book
-      href: notes.html
+      icon: fa-folder
+      menu:
+      - text: Lecture notes
+        icon: fa-book
+        href: notes.html
+      - text: Applied Stats Notebook
+        icon: fa-book-open
+        href: https://norcalbiostat.github.io/AppliedStatistics_notes/
     - text: "Data"
       icon: fa-database
       href: data.html

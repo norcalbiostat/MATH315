@@ -1,14 +1,16 @@
 ---
 title: "Research Question and personal codebook assignment"
 output:
+  pdf_document: default
   html_document:
     highlight: tango
     theme: readable
-  pdf_document: default
+    toc: yes
+    toc_float: yes
 css: ../css/customh5.css
 ---
 
-## Purpose
+# Overview
 
 Now it is time for you to formulate your own Research Question. This will guide your focus for the rest of the semester. In this assignment you will
 
@@ -16,6 +18,17 @@ Now it is time for you to formulate your own Research Question. This will guide 
 2. Choose variables that relate to your topic
 3. Formulate a Research Question
 
+## Submission
+
+* This is a peer-reivewed team assignment. 
+* Use header formats to clearly denote steps 1-3.
+* Write your assignment directly in Google Docs in the `Incoming/02 Research Question` folder. 
+* Name this file `rq_pairname` i.e. `rq_donatello_coia.pdf` 
+* Drop a note in Blackboard to say that your file is ready for grading. 
+
+
+
+# Instructions
 The specific details for each step are described below. You will write the assignment in a Google document. 
 
 ## Step 1: Topic area statement: 
@@ -43,16 +56,6 @@ Now that you have a few topics and picked out variables for each topic, what que
 > b) Is there a relationship between smoking frequency and suicide?  
 > c) Does a smoker have more suicidal behaviors than a non-smoker?  
 
-
-# Submission
-
-* This is a team assignment (one submission per analysis pair)
-* Use header formats to clearly denote steps 1-3.
-* Write your assignment directly in Google Docs in the `Incoming/02 Research Question` folder. 
-* Name this file `rq_pairname` i.e. `rq_donatello_coia.pdf` 
-* Download a copy as PDF and upload to the corresponding assignment in Blackboard Learn
-* This assignment will be peer reviewed. 
-    - Be sure to use the "project pairs" sheet of the [Peer Review Assignment](https://docs.google.com/spreadsheets/d/15BXa0Xx-utXAFUE5wlZDD-Z6ywV2ffLMiY4TThSnDJM/edit?usp=sharing) to find your assignments 
 
 
 
