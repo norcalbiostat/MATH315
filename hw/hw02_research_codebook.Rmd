@@ -2,7 +2,8 @@
 title: "Research Question and personal codebook assignment"
 output:
   html_document:
-    theme: journal
+    theme: readable
+    highlight: tango
     toc: yes
     toc_float: yes
   pdf_document: default

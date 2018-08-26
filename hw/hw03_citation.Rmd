@@ -1,11 +1,12 @@
 ---
 title: "Citation Assignment"
 output:
+  pdf_document: default
   html_document:
-    theme: journal
+    theme: readable
+    highlight: tango
     toc: yes
     toc_float: yes
-  pdf_document: default
 ---
 
 # Overview
@@ -20,6 +21,7 @@ For each article, you will complete steps 1-3, in other words 4 times. Then comp
 
 * This is a peer-reivewed team assignment. 
 * Write your assignment directly in Google Docs in the `Incoming/03 Citation Assignment` folder. 
+* Use the template file located in this folder. 
 * Name this file `citation_pairname` i.e. `citation_donatello_coia.pdf` 
 * Drop a note in Blackboard to say that your file is ready for grading. 
 

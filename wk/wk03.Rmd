@@ -94,3 +94,13 @@ kable(fri) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
 
+##### IT IS HIGHLY ADVISED YOU LOOK AHEAD TO NEXT WEEK. 
+We are starting data management which is a difficult coding topic. 
+Your best chance of success with minimal strife is to follow along with the coding shown in PDS Video 7, replicate what they do in the video on your computer, and understand what the code means that you are writing. 
+
+Some of these techniques I will show you on how to clean data take a different approach than what you will see in the PDS Video 7. That is fine! There are many different ways to approach and solve a problem. Being exposed to multiple ways of how to do things may seem confusing, but not everyone thinks the same. Some approaches may work better for some than for others. As you grow in being a scientist in charge of your own data you will find your own style of coding. 
+
+
+
+
+

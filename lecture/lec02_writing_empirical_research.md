@@ -2,8 +2,10 @@
 title: "Writing about empirical research"
 date: '2017-09-04'
 output:
+  html_document: 
+      theme: readable
+      highlight: tango
   pdf_document: default
-  html_document: default
 ---
 
 _Taken from Passion Driven Statistics 2014 ibook_

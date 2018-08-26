@@ -1,0 +1,246 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Preparation questions for Data Management},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Preparation questions for Data Management}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{}
+    \preauthor{}\postauthor{}
+    \date{}
+    \predate{}\postdate{}
+  
+
+\begin{document}
+\maketitle
+
+You know what variables you want to use, and you've looked over the
+codebook enough now that you have an idea of some potential data issues
+that you will have to address.
+
+Here are some questions for you to think about in preparation for doing
+data management on your own set of variables.
+
+Answer the following questions in prepartion to learn how to tackle
+problems such as missing data and recoding variables in the next week.
+Some of these items guide you to updating your personal codebook. For
+each variable that you have to modify, write a note in your codebook
+what you plan to do and why. You will include these notes into your data
+management script file as a record of your changes.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Do you understand what each variable is actually measuring?}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  In your codebook, give labels to All your variables. This includes
+  adding in a note for each variable identifying if it is Quantitative
+  or Categorical, and Level of Measurement (i.e., Nominal, Ordinal,
+  Interval, and Ratio).
+\item
+  Does your SPC recognize these variables as such: If not, note down
+  that you'll have to change this later.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \textbf{Do you need to code out missing data?}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Go through your codebook for each variable and treat ALL variables for
+  missing data. If there are no missing values then write that.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{Are you going to only look at a subset of individuals?}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  What value of which variable specifically are you going to filter on?
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\item
+  \textbf{Do you need to code out skip patterns?} Are you looking at
+  questions that only pertain to a specific subpopulation? (i.e.~number
+  of packs smoked per week only applies to smokers). Responses to the \#
+  of packs question should be set to missing for non-smokers.
+\item
+  \textbf{Do you need to make response codes more logical?} Some
+  examples include:
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Think about how the ``yes''" and ``no''" variables are coded
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Does NO = 0 and YES = 1?\\
+  \end{itemize}
+\item
+  Think about how the ``strongly agree'' to ``strongly disagree''
+  variables are coded
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Do the numbers make sense?\\
+  \end{itemize}
+\item
+  Consider recoding a quantitative variable into a categorical
+  variable\\
+\item
+  Consider collapsing across categories
+
+  \begin{itemize}
+  \tightlist
+  \item
+    maybe going from 5 categories for strongly agree, agree, neutral,
+    disagree, strongly disagree to 3 categories that represent strongly
+    agree and agree as one category, disagree and strongly disagree as
+    another, then neutral still in the middle.\\
+  \end{itemize}
+\item
+  Consider collapsing a quantitative variable into categories based on
+  percentages of the data you find after examining the frequency table.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    (i.e.~BMI: \textless{}16: underweight, 16-18.5 normal, 18.5-25
+    overweight, 30+ obese)
+  \end{itemize}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \textbf{Do you need to create secondary variables?} If necessary,
+  create secondary variables from continuous variables. If you are
+  working with a number of items that represent a single construct, it
+  may be useful to create a composite variable/score.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    For example, I want to use a list of nicotine dependence symptoms
+    meant to address the presence or absence of nicotine dependence
+    (i.e., tolerance, withdrawal, craving, etc.). Rather than using a
+    dichotomous variable (i.e., nicotine dependence present/absent), I
+    want to examine the construct as a dimensional scale (i.e., number
+    of nicotine dependence symptoms). In this case, I would want to
+    recode each symptom variable so that YES = 1 and NO = 0 and then sum
+    the items so that they represent one composite score. In the code
+    below, the nd\_sum is the new variable I am creating and the
+    variables after of are the variables I am totaling up.
+  \item
+    nd\_sum=sum (of nd\_symptom1 nd\_symptom2 nd\_symptom3
+    nd\_symptom4); (\emph{SAS})
+  \end{itemize}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Don't forget when creating secondary variables, you need to visually
+  check your new variables to ensure what you thought you did actually
+  did what you wanted to.
+\end{itemize}
+
+
+\end{document}
