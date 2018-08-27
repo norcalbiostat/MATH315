@@ -47,7 +47,7 @@ Call out specific variable names. For example
 * Upload your RMD file to the `hw04 Data Management` assignment in Blackboard Learn. 
     - I will download this file and run it on my computer.
     - It must run for credit. If it compiles to PDF for you then this should be no problem for me. 
-* Upload the PDF file to the `Incoming/04 Data Management` folder in Google Drive. 
+* Upload the PDF file to the `04 Data Management` folder in Google Drive. 
     - Manually change the file name of your PDF to include your user name before you upload to Google Drive.
     - E.g. `dm_addhealth.pdf` becomes `dm_addhealth_DonatelloCoia.pdf` before upload. 
     - If you forget to do this your file WILL be overwritten in Google Drive by the next person who forgets.
