@@ -40,8 +40,10 @@ _Times TBD for Fall 18_
 
 * **Robin Donatello** - Stat professor. Holt 202
 * **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu
-* **Victoria Coia** - peer mentor 
-    - Occasionally during class
+* **Peer Mentors**. Possibly available for private tutoring also. 
+    - **Victoria Coia** Occasionally will be in class. You can also ping her on Slack.
+    - **Mariby Cruz** Find her in the Math Tutor lab (4th floor of library). 
+    - **Ricardo Aguilar** raguilar11@mail.csuchico.edu 
 * **Math Learning Lab (MLIB 4th floor)** [[Tutor Schedule]](https://docs.google.com/spreadsheets/d/1xNQMfxpnIiS5bUCS9jB2_EE1Sc4C06JRaw6jyEO3nVE/edit#gid=0)
 * **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
 
@@ -52,9 +54,7 @@ _Times TBD for Fall 18_
 * Navigataing data sets [[DOCX]](R_Resources/Navigating datasets in R.docx)
 * Graphing [[PDF]](R_Resources/QC201_Rgraphing.pdf)
 
-## Helpful R code snippits
-
-Here is a collection of helpful R [code snippits](snippits.html) for plotting, subsetting, handling missing values and so forth. 
+## Collaborative Notes on R https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg
 
 ## What other computers on campus have R? 
 
