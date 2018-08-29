@@ -29,9 +29,9 @@ raw <- read_excel("../schedule_315.xlsx")
 week.w <- filter(raw, wk==params$w)
 
 # update relative paths
-week.w[,6:10] <- gsub("reading/", "../reading/", week.w[,6:10]) 
-week.w[,6:10] <- gsub("lecture/", "../lecture/", week.w[,6:10]) 
-week.w[,6:10] <- gsub("hw/", "../hw/", week.w[,6:10]) 
+week.w[,5:10] <- gsub("reading/", "../reading/", week.w[,5:10]) 
+week.w[,5:10] <- gsub("lecture/", "../lecture/", week.w[,5:10]) 
+week.w[,5:10] <- gsub("hw/", "../hw/", week.w[,5:10]) 
 
   
 # strip columns into separate data sets
