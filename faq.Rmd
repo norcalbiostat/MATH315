@@ -41,8 +41,8 @@ _Times TBD for Fall 18_
 * **Robin Donatello** - Stat professor. Holt 202
 * **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu
 * **Peer Mentors**. Possibly available for private tutoring also. 
-    - **Victoria Coia** Occasionally will be in class. You can also ping her on Slack.
-    - **Mariby Cruz** Find her in the Math Tutor lab (4th floor of library). 
+    - **Victoria Coia** vcoia@mail.csuchico.edu Occasionally will be in class. You can also ping her on Slack.
+    - **Mariby Cruz** mcruz27@mail.csuchico.edu Find her in the Math Tutor lab (4th floor of library). 
     - **Ricardo Aguilar** raguilar11@mail.csuchico.edu 
 * **Math Learning Lab (MLIB 4th floor)** [[Tutor Schedule]](https://docs.google.com/spreadsheets/d/1xNQMfxpnIiS5bUCS9jB2_EE1Sc4C06JRaw6jyEO3nVE/edit#gid=0)
 * **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
@@ -54,7 +54,9 @@ _Times TBD for Fall 18_
 * Navigataing data sets [[DOCX]](R_Resources/Navigating datasets in R.docx)
 * Graphing [[PDF]](R_Resources/QC201_Rgraphing.pdf)
 
-## Collaborative Notes on R https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg
+## Collaborative Notes on R 
+A collection of student generated notes on how to do things in R. 
+https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg
 
 ## What other computers on campus have R? 
 
@@ -67,7 +69,8 @@ _Times TBD for Fall 18_
 ## How do I complete the assignments? 
 
 * Most homework assignments will come with a R markdown (`*.Rmd`)  template file to use.
-    - Right click on the link to download this file and `save as` or `save target as`. Opening this file in your HTML browser will not work. 
+    - If you left click on the link and it opens in a HTML browser window, it will not work this way.
+    - Right click on the link to download this file and `save as` or `save target as`. 
 * Write your code and answers directly into the Rmd file. Spellcheck and knit to PDF before submission. 
 * Links to the templates can be found in the homework assignment itself. A list of all assignment files can be found on the [notes](notes.html) page. 
 
