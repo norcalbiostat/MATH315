@@ -3,12 +3,12 @@ title: 'HW 01: Team Formation & Self Regulated Learning'
 author: "Course Number - STUDENT NAME"
 date: "Date"
 output:
+  pdf_document: default
   html_document:
     theme: readable
     highlight: tango
     toc: yes
     toc_float: yes
-  pdf_document: default
 ---
 
 # Instructions
@@ -46,7 +46,7 @@ Now pick a name for your team! Be as creative as you want, but do something othe
 
 # Part II: Self Regulated Learning
 
-From the [articles](http://www.norcalbiostat.com/articles/articles.html) page, download and read the "Learning (Your First Job)" article. 
+From the [articles](https://norcalbiostat.github.io/MATH315/notes.html) page on the course website, download and read the "Learning (Your First Job)" article. 
 
 * Answer at least _4_ of the following questions in this document. 
 
