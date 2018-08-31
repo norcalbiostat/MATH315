@@ -17,7 +17,7 @@ urlcolor: blue
 * **website:** https://norcalbiostat.github.io/MATH315/ 
 * **Prerequisites:** Basic computer literacy. Recent statistics course such as Math 105. 
 * **Meeting Days and Times:**  MWF 8-9am, HOLT 155
-* **Office Hours:** TBD. Please fill out the following survey during week 1 to help me find a good time https://goo.gl/forms/bwF35ogx5mqWec2t1 
+* **Office Hours:** Holt 202: M-3pm, W-1pm, R-10am
 
     
 You can download the Syllabus in PDF form by clicking [this link](syllabus_315_f18.pdf).
