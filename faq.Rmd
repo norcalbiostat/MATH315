@@ -14,8 +14,6 @@ css: ../css/customh5.css
 
 _page in development_
 
-# Class Logistics
-
 # R Programming
 
 ## Where can I get help using R outside of class time? 
@@ -36,15 +34,14 @@ _page in development_
 Translations into non-English languages are available. See [main cheatsheet page](https://www.rstudio.com/resources/cheatsheets/). 
 
 ### In Person: 
-_Times TBD for Fall 18_
-
+* **Community Coding** - MLIB 442, Tuesday & Thursday 2-4pm
 * **Robin Donatello** - Stat professor. Holt 202 Office Hours: M-3pm, W-1pm, R-10am
-* **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu
+* **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
 * **Peer Mentors**. Possibly available for private tutoring also. 
     - **Victoria Coia** vcoia@mail.csuchico.edu Occasionally will be in class. You can also ping her on Slack.
     - **Mariby Cruz** mcruz27@mail.csuchico.edu Find her in the Math Tutor lab (4th floor of library). 
     - **Ricardo Aguilar** raguilar11@mail.csuchico.edu 
-* **Math Learning Lab (MLIB 4th floor)** [[Tutor Schedule]](https://docs.google.com/spreadsheets/d/1xNQMfxpnIiS5bUCS9jB2_EE1Sc4C06JRaw6jyEO3nVE/edit#gid=0)
+* **Math Learning Lab (MLIB 4th floor)** List of tutors TBD
 * **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
 
 ## PDS Helpful files for programming in R. 
@@ -132,7 +129,7 @@ As I do my reviews on the same document, I will be reading and assessing your pe
 
 # Class Logistics
 
-There was a survey done in Week 1 where I asked you to tell me what more you wanted to know regarding how this class is run and what is expected out of you? Here is a compilation of those responses. As more come in I will add to this list. 
+Anything else? 
 
 <!--
 ### R / Programming

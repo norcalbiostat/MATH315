@@ -186,31 +186,17 @@ I have gone through the gradebook and entered in 0's for missing assignments to 
 * We're going to be learning how to describe the distribution of data using words, summary statistics and appropriate graphics.
 * This is your last chance to get all your R/R Studio bugs resolved. Next week we're hitting the coding ground hard. 
 * Be sure you're watching the PDS Videos. They contain lecture material directly related to your project. 
-
-### 8/27/17 - [Week 2](https://norcalbiostat.github.io/MATH315/wk02.html)
-
-This week we're going to be talking about data, doing some data entry and importing data into R.
-You'll start to choose specific variables to address your research questions, conduct a literature review, and learn how to properly cite your sources. 
-
-Here are the highlights for the week. 
-
-* Monday
-    - RAT on data types (CN 2.1)
-    - Practice recording raw data and creating a codebook
-    - Two (2) Data camp lessons
-* Wednesday
-    - Getting the Add Health data into R
-    - Start to choose the variables you want to analyze
-* Friday
-    - Conducting a literature review
-    - Using proper citation styles
-
-**Housekeeping**
-* Syllabus has been updated to include office hours: MW: 3-4pm, TR: 10-11am Holt 155
-    - Tuesday OH this week (8/29) are cancelled. I'm getting my braces off!!! :D  
-
     
 --->
+
+### 9/04/18 - [Week 2](https://norcalbiostat.github.io/MATH315/wk02.html)
+
+Office hours (Holt 202) M: 3p-4m, W: 1-2pm, R: 10-11am
+
+This week we're going to be talking about data, doing some data entry and importing data into R.
+You'll start to choose specific variables to address your research questions, create your own team mini-codebook and participate in our first project based assignment that comes with a peer review. 
+
+Be sure to check the weekly schedule (linked above) for details on how to prepare and what assignments are coming due. 
 
 ### 8/27/18 - [Week 1](https://norcalbiostat.github.io/MATH315/wk/wk01.html) Welcome to Fall 18!
 * This course website contains all materials except the textbook for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.
