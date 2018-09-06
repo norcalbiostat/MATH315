@@ -3,8 +3,8 @@ title: "Syllabus for Applied Statistical Methods I"
 author: "Dr. Robin Donatello"
 date: "MATH 315-03, Fall 2018"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 geometry: margin=0.75in
 urlcolor: blue
 ---

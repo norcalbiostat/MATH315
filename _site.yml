@@ -27,10 +27,12 @@ navbar:
     - text: "Projects"
       icon: fa-bar-chart
       menu:
-      - text: "Project Data (Google Drive)"
-        href: https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY
       - text: "Project Instructions"  
         href: project.html
+      - text: "Peer Review Assignment"  
+        href: https://docs.google.com/spreadsheets/d/15BXa0Xx-utXAFUE5wlZDD-Z6ywV2ffLMiY4TThSnDJM/edit#gid=143363767
+      - text: "Project Data (Google Drive)"
+        href: https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY
     - text: "Tools"
       icon: fa-wrench
       menu:
