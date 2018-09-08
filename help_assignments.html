@@ -1,108 +1,481 @@
----
-title: "Frequently Asked Questions"
-date: "Last Updated `r Sys.time()`"
-output:
-  html_document:
-    highlight: tango
-    theme: readable
-    toc: yes
-    toc_float: yes
-  pdf_document:
-    toc: yes
-css: ../css/customh5.css
----
+<!DOCTYPE html>
 
-_page in development_
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-# R Programming
+<head>
 
-## Where can I get help using R outside of class time? 
-
-### Online
-* Chico [R User Group](https://groups.google.com/forum/#!forum/chico-rug)
-* UCLA IDRE https://stats.idre.ucla.edu/r/ 
-* Cookbook for R http://www.cookbook-r.com/
-* R Examples repository http://dwoll.de/rexrepos/index.html 
-
-### [R Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/) - brought to you by the awesome folks at R Studio
-* [R Studio](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)
-* [R Markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
-* [Base R](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
-* [Data Transformation using dplyr](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
-* [Data Visualization using ggplot](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
-
-Translations into non-English languages are available. See [main cheatsheet page](https://www.rstudio.com/resources/cheatsheets/). 
-
-### In Person: 
-* **Community Coding** - MLIB 442, Tuesday & Thursday 2-4pm
-* **Robin Donatello** - Stat professor. Holt 202 Office Hours: M-3pm, W-1pm, R-10am
-* **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
-* **Peer Mentors**. Possibly available for private tutoring also. 
-    - **Victoria Coia** vcoia@mail.csuchico.edu Occasionally will be in class. You can also ping her on Slack.
-    - **Mariby Cruz** mcruz27@mail.csuchico.edu Find her in the Math Tutor lab (4th floor of library). 
-    - **Ricardo Aguilar** raguilar11@mail.csuchico.edu 
-* **Math Learning Lab (MLIB 4th floor)** List of tutors TBD
-* **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
-
-## PDS Helpful files for programming in R. 
-
-* Common errors [[DOCX]](R_Resources/Common Errors in R.docx)
-* Useful functions [[DOCX]](R_Resources/Useful functions in R.docx)
-* Navigataing data sets [[DOCX]](R_Resources/Navigating datasets in R.docx)
-* Graphing [[PDF]](R_Resources/QC201_Rgraphing.pdf)
-
-## Collaborative Notes on R 
-A collection of student generated notes on how to do things in R. 
-https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg
-
-## What other computers on campus have R? 
-
-* The three reserve computers in the first floor library. You have to ask to use these. (Confirmed 8/25/17)
-* Butte 211 has an open computer lab. 
-    
-# Submitting Assignments
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
 
 
-## How do I complete the assignments? 
-
-* Most homework assignments will come with a R markdown (`*.Rmd`)  template file to use.
-    - If you left click on the link and it opens in a HTML browser window, it will not work this way.
-    - Right click on the link to download this file and `save as` or `save target as`. 
-* Write your code and answers directly into the Rmd file. Spellcheck and knit to PDF before submission. 
-* Links to the templates can be found in the homework assignment itself. A list of all assignment files can be found on the [notes](notes.html) page. 
-
-## How/Where do I turn in Homework?
-
-**Standard Assignments**
-
-Unless explicitly stated otherwise, 
-
-* The file should be clearly named using this format: `assignment_userid.pdf`. E.g. `univ_graphics_rdonatello.pdf`
-* It should be in PDF format. 
-* Uploaded to the corresponding assignment in Blackboard learn. 
-* I will download these files, write comments and corrections on the PDF electronically, and assign grade points rubric built into BBL. My marked up assignment file will be returned to you via BBL. 
-
-**Project Assignments**
-
-* Project assignments are completed directly in Google Docs. 
-* Drop a note in the corresponding assignment in Blackboard Learn saying your assignment is ready for review. 
-* Project assignments should be considered quality work and such refined, reviewed, and absolutely spellchecked before submission. 
 
 
-## What are you looking for when you grade? 
+<title>Frequently Asked Questions</title>
 
-* Most assignments include model examples directly in the assignment file itself. 
-* Correct english grammer, spelling, formatting. 
-* Concice, clear and complete answers. 
-* Correct statistical methods used
-* That you answered the question posed. 
-* No extreneous output or code
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
-# Class Logistics
 
-Anything else? 
 
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="../css/customh5.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 315</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="schedule.html">
+    <span class="fa fa-calendar"></span>
+     
+    Schedule
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Materials
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="notes.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Lecture Notes/Homework/Reading
+      </a>
+    </li>
+    <li>
+      <a href="reading/RAD_course_notes.pdf">
+        <span class="fa fa-file-code"></span>
+         
+        Course Packet
+      </a>
+    </li>
+    <li>
+      <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/">
+        <span class="fa fa-book-open"></span>
+         
+        Applied Stats Notebook
+      </a>
+    </li>
+    <li>
+      <a href="https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg">
+        <span class="fa fa-code"></span>
+         
+        Collaborative notes: R
+      </a>
+    </li>
+    <li>
+      <a href="https://norcalbiostat.netlify.com/data/">
+        <span class="fa fa-database"></span>
+         
+        Data
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-bar-chart"></span>
+     
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="project.html">Project Instructions</a>
+    </li>
+    <li>
+      <a href="https://docs.google.com/spreadsheets/d/15BXa0Xx-utXAFUE5wlZDD-Z6ywV2ffLMiY4TThSnDJM/edit#gid=143363767">Peer Review Assignment</a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Project Data (Google Drive)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://drive.google.com/drive/folders/13tBCpQye1UJLFcIFfPIhL5uMxrLWnTKk?usp=sharing">
+        <span class="fa fa-google"></span>
+         
+        Google Drive
+      </a>
+    </li>
+    <li>
+      <a href="https://hackmd.io/">
+        <span class="fa fa-code"></span>
+         
+        Hack-MD (code sharing)
+      </a>
+    </li>
+    <li>
+      <a href="https://math315.slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.datacamp.com/">
+        <span class="fa fa-institution"></span>
+         
+        Data Camp (Learn to code)
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="syllabus_315_f18.html">
+    <span class="fa fa-info-circle"></span>
+     
+    Syllabus
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="help_assignments.html">Submitting homework</a>
+    </li>
+    <li>
+      <a href="help_R.html">R programming</a>
+    </li>
+    <li>
+      <a href="https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg">
+        <span class="fa fa-code"></span>
+         
+        Collaborative notes: R
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's website
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Frequently Asked Questions</h1>
+<h4 class="date"><em>Last Updated 2018-09-08 04:54:06</em></h4>
+
+</div>
+
+
+<div id="how-do-i-complete-the-assignments" class="section level1">
+<h1>How do I complete the assignments?</h1>
+<ul>
+<li>Most homework assignments will come with a R markdown (<code>*.Rmd</code>) template file to use.
+<ul>
+<li>If you left click on the link and it opens in a HTML browser window, it will not work this way.</li>
+<li>Right click on the link to download this file and <code>save as</code> or <code>save target as</code>.</li>
+</ul></li>
+<li>Write your code and answers directly into the Rmd file. Spellcheck and knit to PDF before submission.</li>
+<li>Links to the templates can be found in the homework assignment itself. A list of all assignment files can be found on the <a href="notes.html">notes</a> page.</li>
+</ul>
+</div>
+<div id="howwhere-do-i-turn-in-homework" class="section level1">
+<h1>How/Where do I turn in Homework?</h1>
+<div id="standard-assignments" class="section level2">
+<h2>Standard Assignments</h2>
+<p>Unless explicitly stated otherwise,</p>
+<ul>
+<li>The file should be clearly named using this format: <code>assignment_userid.pdf</code>. E.g. <code>univ_graphics_rdonatello.pdf</code></li>
+<li>It should be in PDF format.</li>
+<li>Uploaded to the corresponding assignment in Blackboard learn.</li>
+<li>I will download these files, write comments and corrections on the PDF electronically, and assign grade points rubric built into BBL. My marked up assignment file will be returned to you via BBL.</li>
+</ul>
+</div>
+<div id="project-assignments" class="section level2">
+<h2>Project Assignments</h2>
+<ul>
+<li>Project assignments are completed directly in Google Docs.</li>
+<li>Drop a note in the corresponding assignment in Blackboard Learn saying your assignment is ready for review.</li>
+<li>Project assignments should be considered quality work and such refined, reviewed, and absolutely spellchecked before submission.</li>
+</ul>
+</div>
+<div id="what-are-you-looking-for-when-you-grade" class="section level2">
+<h2>What are you looking for when you grade?</h2>
+<ul>
+<li>Most assignments include model examples directly in the assignment file itself.</li>
+<li>Correct english grammer, spelling, formatting.</li>
+<li>Concice, clear and complete answers.</li>
+<li>Correct statistical methods used</li>
+<li>That you answered the question posed.</li>
+<li>No extreneous output or code</li>
+</ul>
 <!--
 ### R / Programming
 
@@ -243,6 +616,38 @@ How often homework is due?
     
     
 --->
+</div>
+</div>
 
-    
-    
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

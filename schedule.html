@@ -20,10 +20,7 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
 
@@ -76,9 +73,6 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -295,12 +289,29 @@ $(document).ready(function () {
     Syllabus
   </a>
 </li>
-<li>
-  <a href="faq.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-question"></span>
      
     Help
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="help_assignments.html">Submitting homework</a>
+    </li>
+    <li>
+      <a href="help_R.html">R programming</a>
+    </li>
+    <li>
+      <a href="https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg">
+        <span class="fa fa-code"></span>
+         
+        Collaborative notes: R
+      </a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="http://www.norcalbiostat.com/">
@@ -323,7 +334,7 @@ $(document).ready(function () {
 
 
 <p><br></p>
-<p><em>Last Updated: Wed Sep 05 8:58:06 PM </em> <br></p>
+<p><em>Last Updated: Sat Sep 08 04:54:10 </em> <br></p>
 <table class="table table-hover table-striped table-responsive table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>

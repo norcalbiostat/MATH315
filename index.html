@@ -20,9 +20,7 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
 
@@ -75,9 +73,6 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -287,19 +282,28 @@ $(document).ready(function () {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="syllabus_315_f18.html">
-    <span class="fa fa-info-circle"></span>
-     
-    Syllabus
-  </a>
-</li>
-<li>
-  <a href="faq.html">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-question"></span>
      
     Help
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="syllabus_315_f18.html">Syllabus</a>
+    </li>
+    <li>
+      <a href="help_assignments.html">Submitting homework</a>
+    </li>
+    <li>
+      <a href="help_R.html">R programming</a>
+    </li>
+    <li>
+      <a href="https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg">Hack MD Notes for F18</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="http://www.norcalbiostat.com/">
