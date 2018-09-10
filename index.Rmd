@@ -169,7 +169,7 @@ I have gone through the gradebook and entered in 0's for missing assignments to 
 
 ### 9/11/17 - [Week 4](https://norcalbiostat.github.io/MATH315/wk/wk04.html)
 * Data Management, Graphing and Research Question Sharing, Oh My!
-* You should have been watching and following along with the PDS videos for about a week now. If you are not, do this ASAP or you will fall behind. Think of these as lecture, and in class as practice time. 
+
 * You Research questions are posted on [[THIS GOOGLE SPREADSHEET]](https://docs.google.com/a/mail.csuchico.edu/spreadsheets/d/17KyM74omyRXPa322ieiU0iv-hjiO7THhAD5TVkI1qgo/edit?usp=sharing)
     - You must log in with your @mail.csuchico.edu email address to view and edit this file. 
     - I have copied your RQ's as stated in your personal codebook assignment, and demonstrated how to take the variables chosen in the codebook, and align them with specific RQ's. 
@@ -180,14 +180,16 @@ I have gone through the gradebook and entered in 0's for missing assignments to 
         - Align your RQ with actual variables in the codebook. 
 * The Project information page has been started. The link to the spreadsheet above is the first piece of info there. 
     
-
-### 9/3/17 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html)
-* Have a great three day weekend!
-* We're going to be learning how to describe the distribution of data using words, summary statistics and appropriate graphics.
-* This is your last chance to get all your R/R Studio bugs resolved. Next week we're hitting the coding ground hard. 
-* Be sure you're watching the PDS Videos. They contain lecture material directly related to your project. 
-    
 --->
+
+### 9/3/18 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html)
+* You should have been watching and following along with the PDS videos for about a week now. If you are not, do this ASAP or you will fall behind. Think of these as lecture, and in class as practice time. 
+* You're going to be refining your research questions this week by conducting a literature review to see what the current state of knowledge is about your project. 
+* Then we'll spend some time in the course notes learning how to describe the distribution of data using words, summary statistics and appropriate graphics.
+* This is your last chance to get all your R/R Studio bugs resolved. Next week we're hitting the coding ground hard. 
+
+_Note about EC: If you attended a seminar I need some sort of writeup from you to demonstrate that you payed some attention to the statistical or data analysis content of the talk._
+
 
 ### 9/04/18 - [Week 2](https://norcalbiostat.github.io/MATH315/wk/wk02.html) Data entry and import
 
