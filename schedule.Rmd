@@ -7,7 +7,7 @@ options(knitr.table.format = "html", knitr.kable.NA = '')
 _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 <br>
 ```{r , echo=FALSE, message=FALSE, warning=FALSE}
-rawdat <- read_excel("schedule_315.xlsx")
+rawdat <- read_xlsx("schedule_315.xlsx")
 
 cdat   <- rawdat %>% select(-SLO, -Monday, -Wednesday, -Friday) %>% 
                      mutate(wknum = str_pad(wk, width=2, side="left", pad="0"),

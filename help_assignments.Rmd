@@ -28,13 +28,17 @@ Unless explicitly stated otherwise,
 * The file should be clearly named using this format: `assignment_userid.pdf`. E.g. `univ_graphics_rdonatello.pdf`
 * It should be in PDF format. 
 * Uploaded to the corresponding assignment in Blackboard learn. 
-* I will download these files, write comments and corrections on the PDF electronically, and assign grade points rubric built into BBL. My marked up assignment file will be returned to you via BBL. 
 
 ## Project Assignments
 
-* Project assignments are completed directly in Google Docs. 
-* Drop a note in the corresponding assignment in Blackboard Learn saying your assignment is ready for review. 
-* Project assignments should be considered quality work and such refined, reviewed, and absolutely spellchecked before submission. 
+* Write the assignment as a team (analysis pair), directly in Google Docs. Due dates are typically Sunday.
+* During Mon & Tue, your assignment will be reviewed by 2 of your peers. 
+* During Wed & Thu, you have the _option_ of revising your assignment. 
+* By Friday you should drop a note in the corresponding assignment in Blackboard Learn saying your assignment is ready for review. 
+    - You can upload to Blackboard learn the revised assignment, OR you can simply say "Done, see google drive"
+
+
+Project assignments should be considered quality work and such refined, reviewed, and absolutely spellchecked before submission. 
 
 
 ## What are you looking for when you grade? 
