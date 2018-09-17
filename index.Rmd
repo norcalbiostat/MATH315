@@ -180,6 +180,11 @@ You also need to identify exactly what variable in the data set you are going to
 
 > Is there an association between current age and binge drinking (more than 4 drinks for women and 5 for men in a 2 hour span) in the past month?
 
+**Codebook**
+
+Copy/paste the questions you want to analyze directly from the full codebook into your google doc.   
+You need the specific information such as how gender is coded (1/2/9, what is a gender of 9?)  
+This will help you from having to hunt through the full codebook when trying to find a specific variable. 
 
 
 **Data Management, Graphing and R errors Oh My!**
