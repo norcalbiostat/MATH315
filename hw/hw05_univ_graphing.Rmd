@@ -2,10 +2,12 @@
 title: "Describing distributions of data"
 output:
   html_document:
-    theme: readable
     highlight: tango
+    theme: readable
     toc: yes
     toc_float: yes
+  word_document:
+    toc: yes
   pdf_document: default
 css: ../css/customh5.css
 ---
@@ -18,9 +20,6 @@ knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 
 There are a variety of conventional ways to visualize data - tables, histograms, bar graphs, etc. The purpose is always to examine the distribution of variables related to your research question. You will create a plot, follow up each graphic with a table of summary statistics (for quantitative variables) or frequency and proportion table (for categorical), and then a summary paragraph that brings it all together. 
 
- 
-**<span style="color:red">Do not worry about your data being "messy" at this point. Some of your graphics may look odd or "not right". You may have bars for NA values, or a huge spike of data at some odd value of 999. Address these oddities in your writeup. Fix them if you know how to. Data cleaning is the topic of week 3.</span>**
-
 # Instructions
 
 * Use the template provided: [[RMD]](hw05_graphing_template.Rmd). 
@@ -28,13 +27,10 @@ There are a variety of conventional ways to visualize data - tables, histograms,
     - A table of summary statistics,
     - An appropriate plot with titles and axes labels, 
     - A short paragraph description in full complete English sentences. 
-* Upload the final PDF to `05 Univariate Graphing` folder in Google Drive with the file name: `univ_graphing_userid.pdf`
 
-
-To guide your description of this distribution try to include the following information:
+## Guidiance
 
 * What is the trend in the data? What exactly does the chart show? (Use the chart title to help you answer this question)
-* What are the axes and what are the units?
 * Describe the shape:
     - Symmetry/Skewness - Is it symmetric, skewed right, or skewed left?
     - Modality - Is it uniform, unimodal, or bimodal?             
@@ -45,6 +41,13 @@ To guide your description of this distribution try to include the following info
 * Describe the outliers (note: there may not be any for every graph):
     - Are there any outliers for the variable?
     - If yes, are these true outliers or false (due to data management or input error) outliers?
+* Reread your explanation for context grammer, spelling and common sense. 
+
+# Submission
+
+1. Upload the final PDF to `05 Univariate Graphing` folder in Google Drive with the file name: `univ_graphing_userid.pdf` by Sunday EOD
+2. Review your peer's work by Tuesday EOD by commenting in the PDF directly in Google Drive
+3. Revise (optional) your work and submit the final PDF to BBL by Thursday EOD
 
 \newpage 
 

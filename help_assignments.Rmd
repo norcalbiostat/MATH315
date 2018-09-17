@@ -14,12 +14,11 @@ css: ../css/customh5.css
 # How do I complete the assignments? 
 
 * Most homework assignments will come with a R markdown (`*.Rmd`)  template file to use.
-    - If you left click on the link and it opens in a HTML browser window, it will not work this way.
-    - Right click on the link to download this file and `save as` or `save target as`. 
 * Write your code and answers directly into the Rmd file. Spellcheck and knit to PDF before submission. 
 * Links to the templates can be found in the homework assignment itself. A list of all assignment files can be found on the [notes](notes.html) page. 
 
 # How/Where do I turn in Homework?
+Always carefully read the assignment instructions for specific submission instructions. 
 
 ## Standard Assignments
 
@@ -32,8 +31,10 @@ Unless explicitly stated otherwise,
 
 ## Project Assignments
 
-* Project assignments are completed directly in Google Docs. 
-* Drop a note in the corresponding assignment in Blackboard Learn saying your assignment is ready for review. 
+* Project assignments are either completed directly in Google Docs, or the compiled PDF is uploaded to Google Docs. Each assignment has it's own folder. 
+* Project assignments are peer reviewed. 
+* You have the option to revise your work based on the reviews you have recieved. 
+* Use Blackboard learn to submit the final version either as PDF or as a note saying to look at Google Drive. This will depend on the assignment.
 * Project assignments should be considered quality work and such refined, reviewed, and absolutely spellchecked before submission. 
 
 

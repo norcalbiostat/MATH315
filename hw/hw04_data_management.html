@@ -211,6 +211,7 @@ div.tocify {
 <h1>Purpose</h1>
 <p>By now you should know what variables you want to use, and you’ve looked over the codebook enough now that you have an idea of some potential problems that you will encounter. This assignment uses your chosen research data, and the variables that you chose in the last assignment when you created a personal research codebook. You will thoughtfully review the variables you are interested in, document which ones will need changed and how.</p>
 <p>All raw data needs to stay raw, and all changes need to be documented. You will create a script/code file that will make all changes to the data in a programatically and reproducible way. You will create a single code file that imports your raw data, performs some data cleaning steps, and saves out an analysis ready data set that you will use throughout the semester.</p>
+<p>You are <strong>not</strong> expected to have completed data management for every one of your variables under consideration by the submission date. At minimum you must have cleaned the 4 variables you are going to visualize in the 05 graphing assignment.</p>
 </div>
 <div id="coding-instructions" class="section level1">
 <h1>Coding instructions</h1>
@@ -237,47 +238,25 @@ div.tocify {
 <ul>
 <li>This is a peer-reviewed team assignment</li>
 <li>You will compile your RMD code to create a PDF file (knit to PDF)</li>
-<li>Upload your RMD file to the <code>hw04 Data Management</code> assignment in Blackboard Learn.
+</ul>
+<p><strong>Draft - Google Drive</strong></p>
 <ul>
-<li>I will download this file and run it on my computer.</li>
-<li>It must run for credit. If it compiles to PDF for you then this should be no problem for me.</li>
-</ul></li>
-<li>Upload the PDF file to the <code>04 Data Management</code> folder in Google Drive.
+<li>Knit to PDF</li>
+<li>Manually change the file name of your PDF to include your user name
 <ul>
-<li>Manually change the file name of your PDF to include your user name before you upload to Google Drive.</li>
 <li>E.g. <code>dm_addhealth.pdf</code> becomes <code>dm_addhealth_DonatelloCoia.pdf</code> before upload.</li>
 <li>If you forget to do this your file WILL be overwritten in Google Drive by the next person who forgets.</li>
 <li>Don’t forget that if you knit the code file again (i.e. you forgot to add something) you will have to manually rename your file before uploading again.</li>
 </ul></li>
+<li>Upload the PDF file to the <code>04 Data Management</code> folder in Google Drive.</li>
 </ul>
-<p>You are not expected to have completed data management for every one of your variables under consideration by the submission date. I want to see a VERY good effort has been made (raw data read in, a half-dozen or so variables dealt with, analysis data saved out.)</p>
-</div>
-<div id="questions-to-ask" class="section level1">
-<h1>Questions to ask</h1>
-<p>Ask yourself and your partner these questions as you go through this exercise:</p>
+<p><strong>Peer Review</strong></p>
+<p>If there is not 4+/4- things to comment on, write 1 thing you learned and provide help on 1 thing. (renaming a variable, using headers, turning variables to lower case, organization, coding for a new variable etc.)</p>
+<p><strong>Final - Blackboard</strong></p>
 <ul>
-<li>Do you need to restrict the data to only one subgroup? (i.e., if you plan to use only participants of a certain age or sex or ethnicity, etc.).</li>
-<li>Do you need to code out missing data? (i.e. was 99 entered as a missing code?)</li>
-<li>Do you need to code out skip patterns? (i.e. are certain codes entered in for questions that won’t make sense for a particular group? For example non-smokers may have a response code of <code>-1: I don't smoke</code> to a question of “How many cigarettes in the past month have you smoked?”)</li>
-<li>Do you need to make response codes more logical?
-<ul>
-<li>Think about how the “yes” and “no” variables are coded. Does <code>NO = 0</code> and <code>YES = 1</code>?</li>
-<li>Think about how the “strongly agree” to “strongly disagree” variables are coded. Do the numbers make sense?</li>
-</ul></li>
-<li>Consider collapsing a quantitative variable into categories based on percentages of the data you find after examining the frequency table</li>
-<li>Consider collapsing across categories - maybe going from 5 dummy codes for strongly agree, agree, neutral, disagree, strongly disagree to 2 dummy codes that represent strongly agree and agree as one dummy code and disagree and strongly disagree as another code, then neutral coded as missing</li>
-<li>Do you need to create secondary variables? I.e. If you are working with a number of items that represent a single construct, it may be useful to create a composite variable/score.
-<ul>
-<li>For example, I want to use a list of nicotine dependence symptoms meant to address the presence or absence of nicotine dependence (i.e., tolerance, withdrawal, craving, etc.). Rather than using a dichotomous variable (i.e., nicotine dependence present/absent), I want to examine the construct as a dimensional scale (i.e., number of nicotine dependence symptoms). In this case, I would want to recode each symptom variable so that <code>YES = 1</code> and <code>NO = 0</code> and then sum the items so that they represent one composite score. In the code below, the <code>nd_sum</code> is the new variable I am creating and the variables after of are the variables I am totaling up.
-<ul>
-<li><code>nd_sum=sum (of nd_symptom1 nd_symptom2 nd_symptom3 nd_symptom4)</code> [THIS IS SAS CODE DO NOT USE]</li>
-</ul></li>
-</ul></li>
-</ul>
-<p>Quite often you need to peek at the <code>head()</code> of the data set or to do a <code>table()</code> to check that what you thought you did actually did what you wanted to.</p>
-<p>Call out specific variable names. For example</p>
-<ul>
-<li>I am going to use gender in my analysis, and the variable <code>BIO_SEX</code> currently is <code>=1</code> for males and <code>=2</code> for females, and <code>=6</code> for unknown. I want an indicator of female so I will create a new variable <code>female</code> where <code>female==1</code> when <code>BIO_SEX==2</code>, <code>female==0</code> when <code>BIO_SEX==1</code> and <code>female==NA</code> when <code>BIO_SEX==6</code>.</li>
+<li>Upload your RMD file to the <code>hw04 Data Management</code> assignment in Blackboard Learn.</li>
+<li>I will download this file, change the path and run it on my computer.</li>
+<li>It must run for credit. If it compiles to PDF for you then this should be no problem for me.</li>
 </ul>
 </div>
 <div id="example" class="section level1">
@@ -286,13 +265,6 @@ div.tocify {
 <ul>
 <li>Any of the Data Management files listed here: <a href="https://norcalbiostat.netlify.com/data/raw_data/" class="uri">https://norcalbiostat.netlify.com/data/raw_data/</a></li>
 <li>Data set on depression <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/import-data.html" class="uri">https://norcalbiostat.github.io/AppliedStatistics_notes/import-data.html</a></li>
-</ul>
-</div>
-<div id="other-resources" class="section level1">
-<h1>Other resources</h1>
-<ul>
-<li>R Cookbook <a href="http://www.cookbook-r.com/" class="uri">http://www.cookbook-r.com/</a></li>
-<li>Quick-R <a href="http://www.statmethods.net/" class="uri">http://www.statmethods.net/</a></li>
 </ul>
 </div>
 
