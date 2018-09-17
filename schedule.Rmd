@@ -1,7 +1,5 @@
 ---
-output:
-  pdf_document: default
-  html_document: default
+output: html_document
 ---
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(dplyr);library(readxl); library(kableExtra);library(stringr)
