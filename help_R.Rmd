@@ -33,13 +33,12 @@ css: ../css/customh5.css
 # Help with...
 
 ## General R Programming
-* Base R Cheatsheet ttp://github.com/rstudio/cheatsheets/raw/master/base-r.pdf
+* Base R Cheatsheet http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf
 * PDS Common errors [[DOCX]](R_Resources/Common Errors in R.docx)
 * PDS Useful functions [[DOCX]](R_Resources/Useful functions in R.docx)
 * PDS Navigataing data sets [[DOCX]](R_Resources/Navigating datasets in R.docx)
 * R Cookbook http://www.cookbook-r.com/
 * Quick-R http://www.statmethods.net/
-
 
 
 ## R Studio & R Markdown
@@ -49,7 +48,8 @@ css: ../css/customh5.css
 
 ## Graphics
 * Data Visualization using ggplot https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf
-* PDS Graphing [[PDF]](R_Resources/QC201_Rgraphing.pdf)
+* PDS Graphing in GGplot [[PDF]](R_Resources/QC201_Rgraphing.pdf)
+* PDS Bivariate graphing [[PDF]](R_Resources/R_Bivariate_Graphing_Handout.pdf)
 * Math 130 https://norcalbiostat.github.io/MATH130/full_data_viz_tutorial.html 
 * R Graphics Cookbook http://www.cookbook-r.com/Graphs/
 * Quick R https://www.statmethods.net/graphs/index.html
