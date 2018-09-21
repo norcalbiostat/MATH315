@@ -17,15 +17,7 @@ css: ../css/customh5.css
 * UCLA IDRE https://stats.idre.ucla.edu/r/ 
 * Cookbook for R http://www.cookbook-r.com/
 * R Examples repository http://dwoll.de/rexrepos/index.html 
-
-## [R Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/) - brought to you by the awesome folks at R Studio
-* [R Studio](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)
-* [R Markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
-* [Base R](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
-* [Data Transformation using dplyr](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
-* [Data Visualization using ggplot](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
-
-Translations into non-English languages are available. See [main cheatsheet page](https://www.rstudio.com/resources/cheatsheets/). 
+* R Cheat Sheets https://www.rstudio.com/resources/cheatsheets/
 
 ## In Person: 
 * **Community Coding** - MLIB 442, Tuesday & Thursday 2-4pm
@@ -38,12 +30,40 @@ Translations into non-English languages are available. See [main cheatsheet page
 * **Math Learning Lab (MLIB 4th floor)** List of tutors TBD
 * **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
 
-## PDS Helpful files for programming in R. 
+# Help with...
 
-* Common errors [[DOCX]](R_Resources/Common Errors in R.docx)
-* Useful functions [[DOCX]](R_Resources/Useful functions in R.docx)
-* Navigataing data sets [[DOCX]](R_Resources/Navigating datasets in R.docx)
-* Graphing [[PDF]](R_Resources/QC201_Rgraphing.pdf)
+## General R Programming
+* Base R Cheatsheet http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf
+* PDS Common errors [[DOCX]](R_Resources/Common Errors in R.docx)
+* PDS Useful functions [[DOCX]](R_Resources/Useful functions in R.docx)
+* PDS Navigataing data sets [[DOCX]](R_Resources/Navigating datasets in R.docx)
+* R Cookbook http://www.cookbook-r.com/
+* Quick-R http://www.statmethods.net/
+
+
+## R Studio & R Markdown
+* R Studio Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
+* R Markdown Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
+
+
+## Graphics
+* Data Visualization using ggplot https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf
+* PDS Graphing in GGplot [[PDF]](R_Resources/QC201_Rgraphing.pdf)
+* PDS Bivariate graphing [[PDF]](R_Resources/R_Bivariate_Graphing_Handout.pdf)
+* Math 130 https://norcalbiostat.github.io/MATH130/full_data_viz_tutorial.html 
+* R Graphics Cookbook http://www.cookbook-r.com/Graphs/
+* Quick R https://www.statmethods.net/graphs/index.html
+* STHDA http://www.sthda.com/english/wiki/data-visualization
+* Data Camp  https://www.datacamp.com/courses/data-visualization-with-ggplot2-1 
+* R Graph Gallery https://www.r-graph-gallery.com/ 
+
+## Data Cleaning
+* Data Transformation using dplyr https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
+* Data Camp https://www.datacamp.com/courses/cleaning-data-in-r 
+* Applied Stats Notes Chapter 1 https://norcalbiostat.github.io/AppliedStatistics_notes/index.html 
+
+
+
 
 ----
 

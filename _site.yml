@@ -18,7 +18,7 @@ navbar:
     - text: Applied Stats Notebook
       icon: fa-book-open
       href: https://norcalbiostat.github.io/AppliedStatistics_notes/
-    - text: Collaborative notes in R
+    - text: Collaborative notes for R
       icon: fa-code
       href: https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg
     - text: Data

@@ -1,0 +1,90 @@
+---
+title: "Research Plan Outline"
+output:
+  pdf_document: default
+  html_document:
+    highlight: tango
+    theme: flatly
+css: ../css/customh5.css
+---
+
+# Overview
+Your research proposal is an important component of your final research project. You will spend the next several weeks writing your research plan. Use the outline template below to structure your proposal.
+
+In preparation for writing the introduction section, you should have found and read at least 25 primary source articles, although only those that help provide important background and allow you to make an argument in support of your proposed research should be cited.
+
+# Instructions
+
+* Write your paper directly as a google doc in the `06 Research Proposal` folder in Google Drive with the file name: `proposal_userid`
+* Drop a note in Blackboard learn when your file is ready for grading. 
+* This assignment will be peer reviewed in a slightly different manner. See below for instructions. 
+    
+    
+# Writing Template
+## Title
+Using what you know now about your project and the model title in the reading, develop a working title fully knowing it is going to probably change. 
+
+* Your title should summarize the main idea of your research question.
+* Must include the variables under investigation.
+* Must be fully explanatory when standing alone. 
+* Include the terms "association between" or "relationship between" in your title to join your variables of interest.  
+ 
+
+## Introduction (Rational, background and literature review)
+* Write an opening statement or questions to grab the reader. This statement introduces your topic and gives your rationale for the study. 
+* Why should we care about this topic? 
+* What is known about its association with your second topic of interest? Use proper in-text citations here to connect your points to prior research. Use specific examples and major findings.
+    - As you have been reading you should have been seeing some of the same topics/findings/themes reappearing, these would be good topics to discuss.
+* What is not known? Are there any gaps in the literature? What will your analyses contribute to filling this gap? 
+* State in detail your research question. 
+
+## Methods 
+* Sample Description
+    - Name the data set and discuss at least 3 key features of the sample or way data were collected.
+    - The three key features should have supporting data.
+    - Describe the specific characteristics of the sample. This should come from your poster prep stage 1. 
+* Measures
+    - What variables are you using (do not use variable names here)
+    - How were they measured (what was the question text and what data type (yes/no, likert etc))
+    - Any necessary data transformations (make new variables, dichotomizing etc). Don't use code speak here. 
+    - What % of the data on this variable is missing? 
+
+ 
+## Predicted Results & Implications
+* At paragraph or two stating how you think your variables will be related/associated. 
+    - Look back to your research question and think about "answering" it.
+    - Use findings from your bivariate graphing assignment to help here. 
+* What are the implications if your suspected associations are true? What if they're not? 
+    - What could someone do with your findings? 
+    - Tie this back into _why do we care_. 
+
+
+## Citations
+* Any findings that you mention in your literature review/background must be cited. 
+* You need at least 5 primary source references that are directly related to your topic that were published in the past decade (since 2007/08). 5 minimum, but you probably will end up near 10. 
+* Put the reference for the article in APA style. Here is a link to Purdue Owl APA style references that will guide you. https://owl.english.purdue.edu/owl/resource/560/05/ 
+
+
+
+# Peer Review Guidelines
+_The comments are meant to help students meaningfully engage with the material, and the following questions guide students in providing more concrete feedback to the writer._
+
+What do look for...
+
+* Spelling and grammar, content and clarity (as always). 
+* Note the names of the constructs/variables each time they are referenced. Make sure they are in the title, introduction, methods, and implications section
+* What is known from the literature review about the association of interest. 
+* Is the gap or next steps identified in the existing literature that this research project is intended to bridge clear? 
+* Use what is written in the whole introduction section and make an outline of what is said. Do the points go from general to specific? Does it makes sense why this research is needed?
+* Check/confirm citations. 
+* Comment on what if any details may be missing from the methods section. 
+* Mark down any use of code or variable names. 
+* Note the presence or absence of an implications section and provide ideas for how to better describe or consider implications of the proposed research.
+
+Answer the following questions with as much detail as possible. **Write this in document itself after the citations / end of paper** 
+
+1. Does this seem like a feasible project? What are the potential problems that you can see the writer running into? 
+2. What are the best parts of this research plan? Which sections need more work?
+
+
+
