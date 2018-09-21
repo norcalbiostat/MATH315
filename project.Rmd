@@ -88,13 +88,15 @@ You will organize your research in stages by building a "powerpoint" type presen
 3. Background & lit review. 
 4. Explain the research problem
 5. State your Research Question. 
-6. Sample characteristics: How many people are in your analysis sample, what is the % female, average (SD) age, and ethnicity breakdown.
+6. Introduce the data. Where does it come from, how was it collected. How many records? 
 7. Description of measures (variables) being used. Explain any recoding and/or altering that was done. 
-    - This refers to changes to the data that are above and beyond setting missing codes such as 98 and 99 to `NA`. 
-    - Do not use variable names. 
+    - This refers to significant changes to the data (making new variables, dichotomizing or categorizing existing variables)
+    - Do NOT discuss setting missing codes such as 98 and 99 to `NA`. 
+    - Do NOT talk about applying labels
+    - Do NOT use variable names. 
     - Restrict this list to only the variables you are using in your analysis. This is likely not to be more than 4-6. 
-8. Univariate graphic and description of main explanatory variable. 
-9. Univariate graphic and description of at least one response variable.
+8. Fully describe your main explanatory variable univariately using summary statistics and graphics. 
+9. Fully describe your main response variable univariately using summary statistics and graphics. 
 
 ## <span style="color:blue">**Stage 2**</span>
 Slide 10-11: Bivariate graphics and analysis. 
