@@ -1,0 +1,12 @@
+---
+title: "Data Visualization"
+output:
+  html_document:
+    theme: readable
+    highlight: tango
+  pdf_document: default
+---
+
+See the help file for resources on how to create graphics in R. 
+
+https://norcalbiostat.github.io/MATH315/help_R.html#graphics 
