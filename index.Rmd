@@ -171,7 +171,6 @@ I have gone through the gradebook and entered in 0's for missing assignments to 
 
 The optional revision period to your peer review assignments has been added to the submission instructions on the [[Help page]](help_assignments.html). 
 
-
 **Writing Research questions**
 
 Your RQ's need to be explicit, and very simple. Is there an association between X and Y? How does X affect Y?

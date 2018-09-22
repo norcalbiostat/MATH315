@@ -1,0 +1,109 @@
+---
+title: "Citation Assignment"
+output:
+  pdf_document: default
+  html_document:
+    theme: readable
+    highlight: tango
+    toc: yes
+    toc_float: yes
+---
+
+# Overview
+
+To refine your research question you need to know what has been studied in recent years. Before you start this assignment be sure to have read the article on "how to read a journal article", and the lecture notes on "how to conduct a literature review". This assignment will help you identify gaps in the current literature regarding your research topic, and refine your research question and set of potential variables substantially. 
+
+# Instructions
+
+You need at least 4 primary source references that are directly related to your topic that were published in 2006 or more recent.
+
+For each article, you will complete steps 1-3, in other words 4 times. Then complete steps 5-7. There is an example at the bottom of this document.
+
+* This is a peer-reivewed team assignment. 
+* Write your assignment directly in Google Docs in the `03 Citation Assignment` folder. 
+* Use the template file located in this folder. 
+* Name this file `citation_pairname` i.e. `citation_donatello_coia.pdf` 
+* Drop a note in Blackboard to say that your file is ready for grading. 
+
+
+## Step 1: 
+* Put the reference for the article in APA style. Here is a link to Purdue Owl APA style references that will guide you. https://owl.english.purdue.edu/owl/resource/560/05/ 
+* NOTE: If you use a citation creator you still need to compare each part of all your references to make sure it was done correctly. The citation creator usually messes up on something.
+* Good/suggested bibliography managers
+    - BibDesk (Mac) http://bibdesk.sourceforge.net/ 
+    - Zotero (in browser) https://www.zotero.org/
+    - Mendeley (download) https://www.mendeley.com/ 
+* Using reference managers such as zotero and *.bib files with R Markdown
+    - https://tclavelle.github.io/blog/reference_tips/
+    - http://svmiller.com/blog/2016/02/svm-r-markdown-manuscript/
+    - http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#citations_for_pdf_output
+
+    
+
+## Step 2: 
+Read an article, type up a brief summary (a few sentences) of what you learned about your topic from introduction/lit review and the discussion. This summary should convey the main themes and findings overall for the literature review and discussion in your own words.
+
+## Step 3: 
+Then explain how the article is going to help you with writing up your project. This is an explanation of what the article contributes to your project, not a restating of the summary. For example, is it going to help explain one or both of your topics, does it explain a key theory, what argument does it help you build for your project?
+
+## Step 4: 
+Based on reading this article, discuss what variables you are thinking of adding or deleting from your personal codebook? You would include these if you believe, based on your reading, that it will help you better understand the association/relationship you are going to test. If there are not any you want to add, then put that there are not any variables you want to add.
+Remember to do steps 1-4 for each of your articles.
+
+## Step 5: 
+Read over your summaries and develop one summary of information based on what you learned as overall themes and findings from the articles about your topics. Essentially, when pulling the 4 articles together, what do you now know about your topic, what do you still not know about your topic, what is unclear or not agreed upon in the articles, and so on?
+
+## Step 6: 
+Restate association/relationship you are interested in examining. It might be more specific based on the research articles you have been reading, or it could be the same as discussed previously.
+
+## Step 7: 
+Review the variables you considered adding and deleting based on what you read, then edit your personal codebook accordingly. This is not a step that should be overlooked. You will be referring to your personal codebook frequently throughout the semster. Keeping it organized and free of extreneous variables will make it easier to navigate later. 
+
+
+-----
+# Example
+
+My research question is: Is self-efficacy associated with parent relations and academic performance?
+
+**Weiser, D. A., & Riggio, H. R. (2010). Family background and academic achievement: Does self-efficacy mediate outcomes? Social Psychology of Education: An International Journal, 13(3), 367-383.**
+
+2. This article discusses whether self-efficacy mediates the relationship between family background and academic achievement. This is very similar to my topic but I feel that the component of mediation changes it slightly. I found that family predictors did not correlate with academic achievement as much as self-efficacy correlates with parent’s expectation of academic success. Self-efficacy is linked to grade point average and academic success expectations.
+3. This information will be vital to understanding the extent to which self-efficacy is related to academic performance. With the correlation being weak for family background and academic performance, it will do less to determine the connection of parental relations to self-efficacy.
+4. My codebook has a few variables from parental relations, academic behaviors, and self-efficacy so I will keep most of those. I will remove H1WP17A as well as H1WP18A, which determines which activities the subject engaged in with their parent in the last 4 weeks. Although I think the information is important and relevant, it simply does not add to my research question.
+
+**Rivers, J., Mullis, A. K., Fortner, L. A., & Mullis, R. L. (2012). Relationships between parenting styles and the academic performance of adolescents. Journal of Family Social Work, 15(3), 202-216.**
+
+2. This article is similar to the previous article, but they utilized all the parenting styles. A Parental Involvement Questionnaire, student’s selected their parent’s parenting styles, and an Intrinsic/Extrinsic Orientation Scale was used to measure the student’s motivations. The results were that students who indicated that their parents had more authoritative parents were more intrinsically motivated in their academic pursuits. What I can use from this article is how all parenting styles translate to academic and intrinsically/extrinsically motivated students are.
+3. This article isn’t as helpful in explaining the self-efficacy aspect of my paper, but it will be valuable in determining parenting and academic motivations. I think self-efficacy and intrinsically motivated individuals have a few things in common so I think that contributes as well.
+4. After reading this article, I don’t think I will add or remove anything from my personal codebook. It does solidify several variables I already have.
+
+**Turner, E. A., Chandler, M., & Heffer, R. W. (2009). The influence of parenting styles, achievement motivation, and self-efficacy on academic performance in college students. Journal of College Student Development, 50(3), 337-346.**
+
+2. This study looks at how parenting styles, authoritative in particular, relate to academic performance, self-efficacy, and intrinsic motivation in college students. It claims that all factors, academic performance, self-efficacy, and intrinsic motivation, are all influenced by authoritative parenting. What I learned about my topic is this study did find that self-efficacy was not significantly linked to authoritative parenting.
+3. This article will help explain how this specific type of parenting, authoritative, has little affect of self-efficacy. It does not however, claim that
+parenting, as a whole has not effect on self-efficacy. This study does confirm that parenting does reflect on academic performance.
+4. There are no variables I would like to add or remove from my personal codebook because of this article. It does solidify several variables in the parental relations section that I currently have.
+
+
+**Junttila, N., Vauras, M., & Laakkonen, E. (2007). The role of parenting self-efficacy in children's social and academic behavior. European Journal of Psychology of Education, 22(1), 41-61.**
+
+2. This article looks at parenting self-efficacy. This is a little different from my topic but there are aspects of it that will be useful. It tested Finnish mothers and fathers to test for loneliness, parent self-efficacy, their child’s peer evaluated social competence, self-evaluated loneliness and academic skills. It found that parents loneliness reflected in their self-efficacy. The relationship between parent self-efficacy and the child’s academic achievement were evaluated through the child’s social competence. What I learned from this article that I can use is that parent’s self-efficacy can be reflected in the children.
+3. This article is gong to help me tie in influences in the parent relations with the children to determine self-efficacy. This is an interesting perspective that wasn’t originally in my research question but I believe it will give valuable insight.
+4. Some of the variables I am going to remove are H1EE1, H1EE43, H1EE4, H1EE5, H1EE6, H1EE7, H1EE8, H1EE12, H1EE13, H1EE14, H1EE15 from expectations, employment, and income. I think my topic is narrowing down to only involve parental relations, academics, and self-efficacy. Although I think employment would contribute to self-efficacy, there is not connection to tie in.  
+
+**Fan, W., Williams, C. M., & Wolters, C. A. (2012). Parental involvement in predicting school motivation: Similar and differential effects across ethnic groups. Journal of Educational Research, 105(1), 21-35.**
+
+2. This article reviews parent involvement across ethnic groups and how they are similar or different in subjects of school motivation. It also looks at parent’s involvement in school functions. Results showed that parental aspirations for their children’s education positively related to their children’s school motivational constructs.
+3. This article will be valuable in proving the connection between parental relations having an impact on adolescent’s academic behaviors and motivations. This has not really discussed self-efficacy so this article will not be useful for that variable.
+4. Based on this article I would remove H1ED24, which determines if the student felt safe. The majority of the students said yes or were neutral, so I don’t think it is very relevant.
+
+
+
+#### Step 5.
+
+Of the articles I have compiled, The overall theme is a resounding: yes, parental relations are connected to academic achievement. All of the articles agree that parent relations are a contributing factor to academic performance, but I wanted to know if self-efficacy is related to this connection. Self-efficacy is derived from parental relations and academic performance seems to follow suit. I chose articles that supported what I already suspected and many of the articles point to the same thing. Self-efficacy is indeed derived from parental relations and academic performance is derived from those two.
+
+#### Step 6.
+I maintain that I am still interested in self-efficacy and if it correlates with parental relations and academic performance. I have information to determine that parent relations do promote self-efficacy, as well as academic performance. I also have information on parental self-efficacy.
+
+

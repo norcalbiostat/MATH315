@@ -1,12 +1,12 @@
 ---
 title: "Data Management Assignment"
 output:
+  pdf_document: default
   html_document:
     theme: readable
     highlight: tango
     toc: yes
     toc_float: yes
-  pdf_document: default
 css: ../css/customh5.css
 ---
 
