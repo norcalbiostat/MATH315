@@ -152,20 +152,22 @@ Here are a list of topics to review. All topics have equal importance, regardles
 
 
 ### 9/21/17 - [Week 6](https://norcalbiostat.github.io/MATH315/wk/wk06.html)
-I have gone through the gradebook and entered in 0's for missing assignments to date. This is done to provide you a better idea of where you stand grade-wise, going into this exam. Quizzes will remain open available up until the test on the 27th. So if you got a 0 on a Problem set or Data Camp quiz you have time to make up those points. This is also a good way to study for the exam. 
 
 
 * Monday: Writing your research plan. Make sure you are paying attention to the research question spreadsheet. I'm leaving feedback and questions for you there!
 * Wednesday: Exam 1. The weekly overview has details on how to prepare and a sample exam. 
 * Friday: Probability. If it's been a while since you've had stats class you will have to spend some significant time preparing. 
+--->
 
 ### 9/18/17 - [Week 5](https://norcalbiostat.github.io/MATH315/wk/wk05.html)
-* Recap the DM assignment template/instructions. 
-* Univariate graphics assignment due this week. This is a peer reviewed assignment. Example template posted on [week 4](https://norcalbiostat.github.io/MATH315/wk04.html).
-* Peer review instructions have been added to the project page. 
-* Monday we will lecture on how to interpret bivariate comparisons. The rest of the week you will work on creating them. 
+* This week we will discuss how to create visualizations to assess the relationship between two variables. 
+* Open work days are not optional, your attendance is expected. 
+* The bivariate graphing assignment is an individual submission that is peer reviewed- but you do **NOT** get a chance to revise your assignment. This is so I can get it graded and back to you in time for the exam. 
+* You should also be working on your project poster preparation slides. The homework assignments are training grounds for you to practice how to create and interpret graphics to explore your research question. The graphs you make for the homework may or may not be directly related to your research question. 
 
---->
+
+**Reminder**: I have gone through the gradebook and entered in 0's for missing assignments to date. This is done to provide you a better idea of where you stand grade-wise, going into this exam. Quizzes will remain open available up until the test on October 3rd. So if you got a 0 on a Problem set or Data Camp quiz you have time to make up those points. This is also a good way to study for the exam. 
+
 
 ### 9/17/18 - [Week 4](https://norcalbiostat.github.io/MATH315/wk/wk04.html)
 

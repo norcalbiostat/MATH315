@@ -3,7 +3,11 @@ title: "Graphing Bivariate Relationships"
 output:
   html_document:
     highlight: tango
-    theme: flatly
+    theme: readable
+    toc: yes
+    toc_float: yes
+  word_document:
+    toc: yes
   pdf_document: default
 css: ../css/customh5.css
 ---
@@ -31,7 +35,8 @@ Before you start,
 
 # Instructions
 
-0. Use the template provided: [[RMD]](bivariate_graphing_template.Rmd) for R users, and [[Word]](bivariate_graphing_template.docx) for SPSS users. 
+0. Use the template provided: [[RMD]](bivariate_graphing_template.Rmd). Rename this file name to: _biv_graph_userid.pdf_
+
 
 For each bivariate relationship under consideration you will do the following: 
 
@@ -57,14 +62,62 @@ For each bivariate relationship under consideration you will do the following:
         - Does one combination of categorical levels (C~C) seem to hold most the data? 
         - Are there any outlying data points? Don't list off each one, just state if there is and where approximately it's at. 
 
-5. Upload the final PDF to the **05 Bivariate Graphics** folder in Google Drive. Use the file name: _biv_graph_userid.pdf_
-
+5. Submit your knitted PDF to the **05 Bivariate Graphics** folder in Google Drive, **AND** to the corresponding Blackboard learn assignment. 
 
 ## Example
-In this example I use `ggplot2` for plotting, `dplyr` for data management, and `knitr` to create the tables. (You do not need to report this information in your assignment. This is for your knowledge only.)
+In these examples I use `ggplot2` for plotting, `dplyr` for data management and to create summary statistics, `knitr` to create nice tables, `gridExtra` to put plots side by side, and `scales` to format the y axis with percentages. (You do not need to report this information in your assignment. This is for your knowledge only.) I also explain what I'm doing in code here for you to learn. you do not need to explain your own code. 
 ```{r, message=FALSE, warning=FALSE}
-library(ggplot2); library(dplyr); library(knitr)
+library(ggplot2); library(dplyr); library(knitr); library(scales); library(gridExtra)
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 ```
+
+### C ~ C Association
+For this example I am using the `NC Births` data set, data on 1000 births in 2004 from North Carolina. 
+This example explores the association between the smoking status of the mother (`habit`) and whether or not the baby was born prematurely (`premie`). 
+
+```{r}
+nc <- read.csv("https://norcalbiostat.netlify.com/data/NCbirths.csv", header=TRUE)
+```
+
+Frequency tables to get counts, and _row_ percents because I specifically want to compare of premie babies within the smoking and non-smoking groups. 
+```{r}
+kable(addmargins(table(nc$habit, nc$premie)))
+kable(prop.table(table(nc$habit, nc$premie), margin=1)*100, digits=1)
+```
+
+I then create a new data set `nc.nomiss` that contains only the variables I want to plot, and then call `na.omit()` on it to remove any records with missing data. 
+```{r}
+nc.nomiss <- nc %>% select(habit, premie) %>% na.omit() # remove missing data before plotting
+```
+
+And I use `dplyr` to create the grouped percentages seen above as output from `prop.table`, so that I can create a barchart with proportions on it. 
+```{r}
+calc.props <- nc.nomiss %>% group_by(habit, premie) %>%
+              summarise(count=n()) %>%
+              mutate(pct=round(count/sum(count),3))
+calc.props
+```
+
+Now I will create two bar charts, one for counts and one for percentages. I can put them side by side using the `grid.arrange()` function contained with the `gridExtra` package. 
+
+Notice for the barplot of percents I'm using `geom_col()`, and specifying `y=pct`, which is the variable from the data set above that contains the desired percentages.
+
+```{r, fig.height=3}
+barplot.counts <- ggplot(nc.nomiss, aes(x=habit, fill=premie)) + 
+                  geom_bar(position="dodge") + theme_bw() + 
+                  scale_fill_brewer(palette="Set1")
+barplot.pcts   <- ggplot(calc.props, aes(x=habit, fill=premie, y=pct)) +
+                  geom_col(position="dodge") + theme_bw() + 
+                  scale_fill_brewer(palette="Set1", guide=FALSE) + 
+                  geom_text(aes(label = paste(pct*100, "%")), 
+                                position = position_dodge(0.9), vjust=-.5) + 
+                  scale_y_continuous(limits=c(0,1), labels=percent)
+                  
+grid.arrange(barplot.counts, barplot.pcts, ncol=2)
+```
+
+
+Contrary to what I was expecting, there is equal proportion of prematurely born babies to non-smokers compared to babies born to smokers (about 15% for each group). There is no association between the smoking status of the mother and the likelihood of the baby being born prematurely. 
 
 
 ### Q ~ C Association
@@ -84,7 +137,7 @@ ggplot(iris, aes(x=Species, y=Petal.Length, fill=Species)) +
     position=position_dodge(width=0.75)) + theme_bw()
 ```
 
-There are 50 iris plants within each species. There is clear difference in the average Petal length across the pecies. _Setosa_ has the smallest average petal length of 1.46 cm and the smallest variation with a standard deviation of 0.17cm.  _Veriscolor_ has an average petal length of 4.26cm with SD of 0.47cm, and _Virginica_ has the largest average petal length of 5.55cm and the largest variation with a standard deviation of 0.55cm.  
+There are 50 iris plants within each species. There is clear difference in the average Petal length across the species. _Setosa_ has the smallest average petal length of 1.46 cm and the smallest variation with a standard deviation of 0.17cm.  _Veriscolor_ has an average petal length of 4.26cm with SD of 0.47cm, and _Virginica_ has the largest average petal length of 5.55cm and the largest variation with a standard deviation of 0.55cm.  
 
 ### Q ~ Q Association
 
