@@ -150,14 +150,17 @@ Here are a list of topics to review. All topics have equal importance, regardles
 * The bivariate graphics assignment has been posted and ready for review. 
 * Blackboard learn and the schedule on this website have been cleaned up to remove old/closed assignments. 
 
-
-### 9/21/17 - [Week 6](https://norcalbiostat.github.io/MATH315/wk/wk06.html)
-
-
-* Monday: Writing your research plan. Make sure you are paying attention to the research question spreadsheet. I'm leaving feedback and questions for you there!
-* Wednesday: Exam 1. The weekly overview has details on how to prepare and a sample exam. 
-* Friday: Probability. If it's been a while since you've had stats class you will have to spend some significant time preparing. 
 --->
+
+### 10/1/18 - [Week 6](https://norcalbiostat.github.io/MATH315/wk/wk06.html)
+
+* Monday: Next steps for the project - starting your poster slides. 
+* Wednesday: Exam 1. A sample exam is linked on the materials, and posted in Slack over the weekend. 
+* Friday: Probability. This is a very brief overview, refer to the OpenIntro textbook and PDS videos for more learning. 
+
+There has been some modifications to the assignments. The research propsal assignment has been cancelled, and the weight of the individual homework assignments has been increased. Be mindful of due dates, and peer review problems. 
+
+If you haven't done so in a while, you might want to check Slack. Especially the #assignments channel. I share important information on there. 
 
 ### 9/18/17 - [Week 5](https://norcalbiostat.github.io/MATH315/wk/wk05.html)
 * This week we will discuss how to create visualizations to assess the relationship between two variables. 
