@@ -1,0 +1,454 @@
+---
+title: "Bivariate Inference"
+output:
+  pdf_document: default
+  html_document:
+    highlight: tango
+    theme: readable
+    toc: true
+    toc_float: true
+---
+
+# Overview
+We've been visually exploring relationships between two variables by creating appropriate plots to assess how the distribution of a primary outcome (response/dependent) variable changes according to the level of a predictor (explanatory/independent/covariate) variable. We can learn a lot by conducting exploratory data analysis, and if description is the goal then this is where your work can stop. 
+
+However, if you want to make conclusions or **inference** about a relationship, then formal statistical analysis techniques are needed. We start here by formally testing if relationships or associations between *two* measures exist, then later will see how additional third variables can potentially disrupt or enhance any association that you may find. 
+
+## Assignment Instructions
+In this assignment you will practice <span style="color:blue">**FIVE(5)**</span> different types of bivariate analysis: 
+
+1. (Q~B) Quantitative Outcome ~ Binary Categorical Explanatory == Two-sample t-tests for a difference in means
+2. (Q~C) Quantitative Outcome ~ Categorical Explanatory == ANOVA
+3. (B~C) Binary Outcome ~ Categorical (or Binary) Explanatory ==  $\chi^{2}$ test of Association.
+4. (Q~Q) Quantitative Outcome ~ Quantitative Explanatory == Correlation analysis 
+5. (Q~Q) Quantitative Outcome ~ Quantitative Explanatory == Linear regression analysis
+
+For each analysis you will do the following steps: 
+
+1. State which variable (including the variable name from your codebook) will be your explanatory variable and which will be your response variable. 
+    - Remember, you have some variables in your codebook that can act as both categorical and quantitative. 
+    - Decide which of those variables makes sense to “explain” the other. Don’t just blindly pick a bunch of variables. 
+    - Think about the relationship among your variables, keeping in mind your original research questions. You may use gender as your categorical explanatory variable if you are struggling to find an explanatory and response relationship that makes sense. 
+2. Create an appropriate bivariate plot to visualize the relationship you are exploring. Summarize the relationship between the explanatory and outcome variables in short paragraph form. 
+3. Write the relationship you want to examine in the form of a research question. 
+    - State the null and alternative hypotheses as sentences. 
+4. Perform an appropriate statistical analysis using the full five step method as outlined in class and described below. 
+    - Define the parameters being tested. ($\rho$, $p_{1}$, $\mu_{1}$, $\beta_{1}$ etc)
+    - Translate the null and alternative hypotheses into $H_{0}$ and $H_{A}$ with symbols. 
+    - State and verify assumptions of the test. Even if these assumptions are potentially violated, for the purposes of this assignment, acknowledge this limitation and continue with the prescribed analysis.
+    - Conduct the analysis using your software program of choice. Make a decision whether or not to reject the null hypothesis. State your p-value. 
+5. Write a conclusion in context of the problem. 
+
+
+## Submission Instructions:  
+
+* This is a team assignment, but NOT peer reviewed.
+* Use [this template](hw08_bivariate_inference_template.Rmd) to answer the questions. 
+    - Save the file as `team_name_bivariate.Rmd`
+* After each completed question - upload your document (word or pdf) to the assignment folder in Google Drive
+    - This assignment is *not* officially peer reviewed, but allows others who may be struggling to see what you have done. 
+    - Everyone is encouraged to leave comments and questions on your peers' submission. 
+    - You have access to a large learning community - contribute to it and use it!
+* Submit the final version as a PDF to Blackboard Learn by the due date. 
+
+
+```{r, warning=FALSE, message=FALSE}
+library(knitr)
+opts_chunk$set(warning=FALSE, message=FALSE) 
+library(dplyr)
+library(ggplot2)
+
+
+load("C:/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
+```
+
+----
+
+
+# (Q~B) Two sample T-Test for Independent Groups
+We would like to know, is there convincing evidence that the average BMI differs between men and women? 
+
+##### Example
+
+1. **Identify response and explanatory variables**
+
+* Gender = binary explanatory variable (variable `female_c`)
+* BMI = quantitative response variable (variable `BMI`)
+
+2. **Visualize and summarise bivariate relationship** 
+
+```{r, fig.align='center', fig.width=4, fig.height=4}
+plot.bmi.gender <- addhealth %>% select(female_c, BMI) %>% na.omit()
+
+ggplot(plot.bmi.gender, aes(x=female_c, y=BMI, fill=female_c)) + 
+      geom_boxplot(width=.3) + geom_violin(alpha=.4) + theme_bw() + 
+      labs(x="Gender") + 
+      scale_fill_manual(values=c("firebrick", "goldenrod"), name="Gender") + 
+      stat_summary(fun.y="mean", geom="point", size=3, pch=17, 
+      position=position_dodge(width=0.75))
+
+addhealth %>% group_by(female_c) %>% 
+              summarise(mean=mean(BMI, na.rm=TRUE), 
+                        var = var(BMI, na.rm=TRUE))
+```
+
+Males have on average a BMI of 28.9, a little smaller than the average BMI of women at 29.3. Females have more variation in their weights, but the distributions both look normal, if slightly skewed right. 
+
+
+3. **Write the relationship you want to examine in the form of a research question.**
+
+* Null Hypothesis: There is no difference in the average BMI between males and females.  
+* Alternate Hypothesis: There is a difference in the average BMI between males and females.
+
+4. **Perform an appropriate statistical analysis.**
+ 
+    I. Let $\mu_{1}$ be the average BMI for males, and $\mu_{2}$ be the average BMI for females. 
+
+    II.  
+$H_{0}: \mu_{1} - \mu_{2} = 0$  
+$H_{A}: \mu_{1} - \mu_{2} \neq 0$ 
+
+
+    III. We are comparing the means between two independent samples. A Two-Sample T-Test for a difference in means will be conducted. The assumptions that the groups are independent is upheld because each individual can only be one gender at a time. The difference in sample means $\bar{x}_{1}-\bar{x}_{2}$ is normally distributed - this is a valid assumption due to the large sample size and that differences typically are normally distributed. The observations are independent, and the variances are roughly equal (67/44 = 1.5 is smaller than 2). 
+
+
+  IV. Do not reject the null hypothesis: p-value = 0.06.
+```{r}
+t.test(BMI ~ female_c, data=addhealth)
+```
+
+5. **Write a conclusion in context of the problem.**
+
+Males, on average, have a slightly lower 0.4 (-0.9, 0.03) BMI compared to females. This is a non-significant difference with a p-value of 0.06. 
+
+----
+
+# (Q~C) Analysis of Variance
+
+Analysis of variance assesses whether the means of two or more groups are statistically different from each other. This analysis is appropriate whenever you want to compare the means (quantitative variables) of groups (categorical variables). The null hypothesis is that there is no difference in the mean of the quantitative variable across groups (categorical variable), while the alternative is that there is a difference.
+
+**Post-Hoc Analysis** 
+
+Run Post Hoc tests ("Tukeys HSD", or "Duncan"), if your ANOVA is significant. 
+
+* We only do post hoc tests if the following 2 requirements are met
+    - You have a statistically significant difference
+    - Your explanatory variable has more than 2 levels
+* The overall ANOVA can be significant and NOT have any significant differences when you look at the post hoc results. The reason is that the two analyses ask two different questions.
+    - The ANOVA is testing the overall pattern of the data and asking if as a whole the explanatory variable has a relationship (or lack thereof) with the response variable. 
+    - The post hoc is asking if one level of the explanatory variable is significantly different than another for the response variable. The post hoc is not as sensitive to differences as the ANOVA. 
+* Differences in group means can be non-significant at the post hoc level, but significant at the ANOVA level.
+
+
+##### Example
+
+1. **Identify response and explanatory variables**
+
+* Species of flower = categorical explanatory variable (variable `Species`)
+* Length of the Petal = quantitative response variable (variable `Petal.Length`) 
+
+2. **Visualize and summarise bivariate relationship** 
+
+```{r, fig.width=5, fig.height=3, fig.align='center'}
+iris %>% group_by(Species) %>% 
+         summarise(mean=mean(Petal.Length), 
+                   sd=sd(Petal.Length), 
+                   n=n()) %>% 
+         kable()
+
+ggplot(iris, aes(x=Species, y=Petal.Length, fill=Species)) + 
+  geom_boxplot(width=.4) + geom_violin(alpha=.3) + 
+  stat_summary(fun.y="mean", geom="point", size=3, pch=17, 
+    position=position_dodge(width=0.75)) + theme_bw()
+```
+
+There is clear difference in the average Petal length across iris Species. _Setosa_ has an average petal length of 1.5 (sd 0.17), _Veriscolor_ has an average petal length of 4.3 (sd 0.50), and _Virginica_ has the largest average petal length of 5.6 (sd 0.55). 
+
+3. **Write the relationship you want to examine in the form of a research question.**
+
+Is there a relationship between the Petal length of an iris flower and the species of flower?
+
+* Null Hypothesis: There is no relationship between Petal length and Species.  
+* Alternate Hypothesis: There is a relationship between petal length and Species. 
+
+4. **Perform an appropriate statistical analysis.**
+ 
+    I. 
+Let $\mu_{1}$ be the true mean petal length for _Setosa_
+Let $\mu_{2}$ be the true mean petal length for _Versicolor_
+Let $\mu_{3}$ be the true mean petal length for _Virginica_
+
+
+    II. 
+$H_{0}: \mu_{1} = \mu_{2} = \mu_{3}$   
+$H_{A}:$ At least one group mean is different. 
+
+
+    III. I will conduct an analysis of variance using ANOVA. The distribution of petal length looks approximately normal within each species group. We can assume that the group means are normally distributed due to the sample size within each group $n=50$ being large enough for the CLT to hold. The assumption of equal variances may be violated here; the sd of _setosa_ is less than half that of the other two species. 
+
+
+    IV. Reject the null, the p-value is <.0001. 
+```{r}
+summary(aov(Petal.Length ~ Species, data=iris))
+```
+
+Since the ANOVA was significant, I need to conduct a post-hoc test to identify which pairs are different. 
+```{r}
+TukeyHSD(aov(Petal.Length ~ Species, data=iris))
+```
+All pairs are significantly different from each other. The p-value for all post-hoc tests are all less than .0001. 
+
+
+_The code below is just an example of how to make a better looking table_
+```{r}
+kable(TukeyHSD(aov(Petal.Length ~ Species, data=iris))$Species, digits=3) 
+```
+
+5. **Write a conclusion in context of the problem.**
+
+There is sufficient evidence to conclude that the average petal length of an iris flower is associated with the species of the Iris (p<.0001). Specifically the length of the petal for species  _Virginica_ is 4.1 (95% CI 3.9, 4.3) cm longer than _Setosa_, and 1.3 (95%CI 1.1, 1.5) cm longer than _Versicolor_. _Versicolor_ is also significantly longer than _Setosa_ (2.8, 95% CI 2.6, 3.0) cm. All pairwise comparisons were significant at the .0001 level. 
+
+
+---- 
+ 
+# (B ~ C) Chi-Square Test of Association
+
+A chi square ($\chi^{2}$) test of association (independence) compares frequencies of one categorical variable for different values of a second categorical variable. The null hypothesis is that the relative proportions (values) of one variable are “independent” of the second variable; in other words, the proportions of one variable are the same for different values of the second variable. The alternate hypothesis is that the relative proportions of one variable are associated with the second variable
+
+Although it is possible to run large chi square tables (i.e., 5 x 5, 4 x 6, etc.), the test is most easily interpretable when your response variable has only 2 levels. Therefore, if your chosen response variable has more than 2 levels, you must collapse it down to two levels like you did with the bivariate graphing assignment
+
+**Post hoc Analysis**
+
+The `RVAideMemoire` package provides the `fisher.multcomp` function to conduct post-hoc pairwise comparisons after a significant chi-squared test of association. See the [RVAideMemoire Package reference](https://rdrr.io/cran/RVAideMemoire/) for more information on how to use this function. There are many methods to control for multiple comparisons, the default is to use the _fdr_ or "false discovery rate". 
+
+
+##### Example
+
+1. **Identify response and explanatory variables**
+
+* Gender = binary explanatory variable (variable `female`)
+* General Health = categorical response variable (variable `genhealth`)
+
+2. **Visualize and summarise bivariate relationship** 
+```{r}
+crosstab.gender.genhealth <- table(addhealth$female_c, addhealth$genhealth) 
+kable(crosstab.gender.genhealth)
+
+proptab.gender.genhealth <- prop.table(crosstab.gender.genhealth, margin=2)
+kable(proptab.gender.genhealth, digits=3)
+```
+
+```{r, fig.align='center', fig.width=6, fig.height=4}
+plot.crostab <- data.frame(proptab.gender.genhealth)
+
+ggplot(plot.crostab, aes(x=Var2, y=Freq, fill=Var1)) + 
+        geom_col(position = position_dodge()) + theme_bw() + 
+        geom_text(aes(y=Freq+.02, label=round(Freq,2)), position = position_dodge(width=1)) + 
+        labs(x="General health", y="Proportion") + 
+         scale_fill_manual(name="Gender", values=c("firebrick", "goldenrod")) +
+        scale_y_continuous(limits=c(0,1))
+```
+
+The distribution of gender appears to be different across the levels of general health categories. Females make up 48% of those reporting excellent health, and 69% of those reporting poor health
+
+
+If your categorical variable is binary as in this example, what we're really interested in is the proportion of "yes" responses (here it's female). This is the group that we identify specifically in our hypothesis generation. To simplify the graph then, you can plot only the % of the group that you're interested in. Again, this only holds for binary categorical variables since within each categorical grouping variable (along the x axis) the proportions of the outcome variable will sum to 1. Note that I have to better specify what the proportion is along the Y axis now (i.e. _proportion of females_ instead of simply _proportion_). 
+
+```{r, fig.align='center', fig.width=6, fig.height=4}
+plot.crostab.female <- filter(plot.crostab, Var1=="Female")
+
+ggplot(plot.crostab.female, aes(x=Var2, y=Freq)) + 
+        geom_col(position = position_dodge()) + theme_bw() + 
+        geom_text(aes(y=Freq+.02, label=round(Freq,2)), position = position_dodge(width=1)) + 
+        labs(x="General health", y="Proportion of Females") + 
+        scale_y_continuous(limits=c(0,1))
+```
+
+3. **Write the relationship you want to examine in the form of a research question.**
+
+Is the gender distribution equal across all levels of general health? 
+
+* Null Hypothesis: The proportion of females in each general health category is the same. 
+* Alternate Hypothesis: At least one proportion is different.
+
+
+4. **Perform an appropriate statistical analysis.**
+
+    I. 
+Let $p_{i}$ be the true proportion of females in general health category $i$. 
+
+    II. 
+$H_{0}: p_{1} = p_{2} = p_{3}$   
+$H_{A}:$ At least one proportion is different. 
+
+
+    III. I will conduct a Chi-squared test of association. There is at least 5 observations in each combination of gender and general health. 
+
+
+    IV. Reject the null, the p-value is <.0001. 
+```{r}
+chisq.test(addhealth$genhealth, addhealth$female_c)
+```
+
+Since the test was significant, I will conduct a post-hoc test to identify which pairs are different. 
+
+```{r}
+RVAideMemoire::fisher.multcomp(crosstab.gender.genhealth, p.method="fdr")
+```
+
+The p-values for all tests comparing Excellent to other groups are all significant at $<.01$, Very good vs fair, and vs poor, and good vs poor are all marginally significant with p-values around 0.07. 
+
+5. **Write a conclusion in context of the problem.**
+
+We can conclude that there is an association between gender and perceived general health (X2 = 26.4, df=4, p<.0001). The proportion of females in the Excellent health group (48%) is significantly lower than any other group 54%  for Very Good to 69% for Poor). Furthermore there may be indiciation that there is a higher proportion of females in the Very good health group (54%) compared to the Fair (60%) and poor (69%) groups (p-values = .075). 
+
+
+---- 
+
+# (Q~Q) Correlation analysis
+A correlation coefficient assesses the degree of linear relationship between two variables. It ranges from +1 to -1. A correlation of +1 means that there is a perfect, positive, linear relationship between the two variables. A correlation of -1 means there is a perfect, negative linear relationship between the two variables. In both cases, knowing the value of one variable, you can perfectly predict the value of the second.
+
+Explain your results for each correlation in terms of strength (actual number value) and direction (using the sign and scatter plot) within the context of the relationship you are examining. Then discuss the r-squared value. Please put each explanation after the appropriate results.
+
+**Writing correlation values (replace highlighted words with numbers):**
+
+* $`r` (`N`) = `correlation coefficient`, p = `p-value` 
+
+Below are rough estimates for interpreting strengths of correlations (to be used in write up):
+
+If $r$ is ... 
+
+> * +.70 and up  Very strong positive relationship   
+> * +.40 to +.69 Strong positive relationship   
+> * +.30 to +.39 Moderate positive relationship 
+> * +.20 to +.29 Weak positive relationship 
+> * +.01 to +.19 No or negligible relationship 
+> * -.01 to -.19 No or negligible relationship 
+> * -.20 to -.29 Weak negative relationship 
+> * -.30 to -.39 Moderate negative relationship 
+> * -.40 to -.69 Strong negative relationship 
+> * -.70 or below Very strong negative relationship
+ 
+**Correlation as a measure of model fit.**
+When we square $r$ (i.e. $R^{2}$), it tells us what proportion of the variability in one variable that is described by variation in the second variable.
+
+##### Example
+
+
+1. **Identify response and explanatory variables**
+
+* Sepal Length = quantitative explanatory variable (variable `Sepal.Length`)
+* Petal Length = categorical response variable (variable `Petal.Length`)
+
+2. **Visualize and summarise bivariate relationship** 
+
+```{r, fig.align='center', fig.width=4, fig.height=4}
+ggplot(iris, aes(x=Sepal.Length, y=Petal.Length)) + geom_point() + 
+      geom_smooth(se=FALSE, col="red") + 
+      geom_smooth(method="lm", col="blue", se=FALSE) + 
+      theme_bw()
+cor(iris$Sepal.Length, iris$Petal.Length)
+```
+
+There is a strong, positive, linear relationship between the sepal length of the flower and the petal length (r=0.87). 
+
+
+3. **Write the relationship you want to examine in the form of a research question.**
+
+
+* Null Hypothesis: There is no correlation between length of sepal and petal.
+* Alternate Hypothesis: Sepal and petal lengths are correlated
+
+4. **Perform an appropriate statistical analysis.**
+ 
+    I. Let $\rho$ be the true correlation between sepal and petal length. 
+
+    II. 
+$H_{0}: \rho=0$  
+$H_{A}: \rho \neq 0$ 
+
+
+    III. Both variables are quantitative, a correlation analysis will be conducted.  
+    
+```{r}
+cor.test(iris$Petal.Length, iris$Sepal.Length)
+```
+
+    IV. Reject the null hypothesis: p-value for $\rho$ is <.0001.
+
+
+5. **Write a conclusion in context of the problem.**
+
+There was a statistically significant and very strong correlation between the sepal length of an iris and the petal length, r (148) = 0.87, p < .0001. The significant positive correlation shows that as the sepal length increases so does the petal length. These results suggest that 76% (95% CI: 68.9-82.8) of the variance in petal length can be explained by the length of the sepal. 
+
+
+
+ 
+# (Q~Q) Linear Regression Analysis
+
+Linear regression models can be used to evaluate whether there is a linear relationship between two numerical variables. When only one explanatory variable x is considered, this is termed simple linear regression (SLR). The basic idea of SLR is to use data to fit a straight line that relates the response Y to the predictor X.  The mathematical relationship between x and y is written as 
+
+$$ y_{i} \sim \beta_{0} + \beta_{1}x_{i} + \epsilon_{i} \qquad \epsilon_{i} \sim \mathcal{N}(0, \sigma^{2})$$
+
+Using a sample of data we can calculate point estimates $b_{0}$ and $b_{1}$ to estimate the population parameter values $\beta_{0}$ and $\beta_{1}$ respectively. Calculating these estimates uses a procedure called Least Squares Regression.  
+
+A linear regression analysis tests the hypothesis that there is no linear relationship between x and y ($\beta_{1}=0$) versus there is a linear relationship ($\beta_{1} \neq 0$) 
+
+
+##### Example
+
+1. **Identify response and explanatory variables**
+
+* Sepal Length = quantitative explanatory variable (variable `Sepal.Length`)
+* Petal Length = categorical response variable (variable `Petal.Length`)
+
+2. **Visualize and summarise bivariate relationship** 
+
+```{r, fig.align='center', fig.width=4, fig.height=4}
+ggplot(iris, aes(x=Sepal.Length, y=Petal.Length)) + geom_point() + 
+      geom_smooth(se=FALSE, col="red") + 
+      geom_smooth(method="lm", col="blue", se=FALSE) + 
+      theme_bw()
+cor(iris$Sepal.Length, iris$Petal.Length)
+```
+
+There is a strong, positive, linear relationship between the sepal length of the flower and the petal length (r=0.87). 
+
+
+3. **Write the relationship you want to examine in the form of a research question.**
+
+Does the length of the flower's sepal linearly correlate with the length of the flower's petal? 
+
+* Null Hypothesis: There is no linear relationship between length of sepal and petal.
+* Alternate Hypothesis: Sepal and petal lengths are linearly related. 
+
+4. **Perform an appropriate statistical analysis.**
+ 
+    I. Let $\beta_{1}$ be the true measure of linear association between sepal and petal length. 
+
+    II. 
+$H_{0}: \beta_{1}=0$  
+$H_{A}: \beta_{1} \neq 0$ 
+
+
+    III. Both variables are quantitative, a linear regression analysis will be conducted. The first assumption that the relationship is linear is verified using the scatterplot in part 2. Further assumptions are that the residuals are normally distributed, centered around zero and have constant variance. All assumptions are checked after the model has been fit. 
+
+    IV. Reject the null hypothesis: p-value for $\beta_{1}$ is <.0001.
+
+```{r}
+iris.linear.model <- lm(Petal.Length ~ Sepal.Length, data=iris)
+summary(iris.linear.model)
+par(mfrow=c(2,2))
+plot(iris.linear.model)
+```
+
+The model assumptions appear to be upheld. The normal Q-Q plot indicate that the residuals are normally distributed, the residuals vs fitted plot indicate that the residuals are centered around zero. There might be a slight violation of the assumption of homoscedascitiy (constant variance), the variance of the residuals appears to decrease as the fitted values increase. 
+
+```{r}
+confint(iris.linear.model)
+```
+
+
+5. **Write a conclusion in context of the problem.**
+
+The length of a petal and sepal on an iris flower are linearly correlated. For every 1 cm longer the sepal of the flower is, the petal length is increased by 1.85cm (95% CI 1.69, 2.03, p<.0001). 
