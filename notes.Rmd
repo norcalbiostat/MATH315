@@ -60,10 +60,10 @@ gsub("<thead>.*</thead>", "", x)
 * Chapter 08 http://passiondrivenstatistics.com/2016/01/20/r-chapter-8/
 * Chapter 09 http://passiondrivenstatistics.com/2016/03/28/r-chapter-9/
 * Chapter 10 Probability http://passiondrivenstatistics.com/2015/07/15/chapter-10/ 
-* Chapter 11 http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/
-* Chapter 12 http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/
-* Chapter 14 http://passiondrivenstatistics.com/2016/08/20/r-chapter-14/
-* Chapter 17 http://passiondrivenstatistics.com/2016/10/06/r-chapter-17/
+* Chapter 11 ANOVA http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/
+* Chapter 12 Test of Proportions http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/
+* Chapter 14 Moderating http://passiondrivenstatistics.com/2016/08/20/r-chapter-14/
+* Chapter 17 Multiple Linear Regression and Logistic Regression http://passiondrivenstatistics.com/2016/10/06/r-chapter-17/
 * Chapter 18 Writing for your poster http://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/
 
 

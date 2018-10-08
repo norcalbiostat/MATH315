@@ -1,0 +1,312 @@
+---
+title: "Regression Assignment"
+output:
+  pdf_document: default
+  html_document:
+    highlight: tango
+    theme: readable
+    toc: yes
+    toc_float: yes
+---
+
+# Assignment Overview
+
+You will perform <span style="color:blue">2</span> regression analyses in this assignment. For each you will interpret the regression coefficients, and test for a potential confounder $Z$.
+
+1. Multiple Linear Regression: $Q \sim X + Z$
+    - For this assignment choose a quantitative $X$ and a binary confounder $Z$, where the bivariate $Q \sim Q$ relationship is significant.
+2. Logistic Regression: $logit(B) \sim X + Z$
+    - Your binary response variable $Y$ must be coded as 1 (event) and 0 (non-event).
+    - For this assignment, choose a binary $X$ and a binary confounder $Z$. 
+
+You will then take one of the above analyses (or a new model) and 
+
+4. Add a third categorical (more than 2 levels) variable e.g.: $Q \sim Q + C$.
+
+
+#### Submission Guidelines
+
+* Use the template provided: [[RMD]](hw10_regression_template.Rmd)
+* This is an individual assignment. I expect you to work with your team/partner on this, but each person must submit their own work, and own writing. 
+* Upload to the corresponding assignment on Blackboard by the due date. 
+    - A copy of your assignment will be uploaded to the corresponding graded Google Drive Folder for you to see and learn from the work of other classmates. 
+
+# Instructions
+1. Identify variables under consideration
+    - Determine a third variable $Z$ that you want to test as a potential confounder.  
+    - Consider the relationship and ask yourself: "_If I had to predict a future persons response based on the Predictor/Explanatory variable and some other variable(s), what would they be?_"
+    - <span style="color:red">For the purposes of this assignment your potential confounder $Z$ must be binary</span>. In reality, confounders, covariates, mediators, and moderators can come in all data types. 
+2. Write out the null, alternative, and confounder Hypotheses statements.
+    - **Null** - that there is no relationship between response and explanatory variables
+    - **Alternative** - that there is a relationship between response and explanatory variables. 
+    - **Confounder** - that there is a relationship between response and explanatory variables after controlling for the confounding variable. 
+3. Fit the simple model
+    - Model the response variable on the explanatory variable `y ~ x`
+    - Determine if you are going to reject the null in favor of the alternative.
+4. Fit the multivariable model. 
+    - Only do this if you rejected the null.
+    - Model the response variable on the explanatory variable and the third variable. `y ~ x + z`
+    - Determine if $Z$ is a confounder by looking at the p-value for the explanatory variable. 
+        - If it is still significant, the third variable is not a confounding variable. 
+        - If it is no longer significant, the third variable is a confounding variable. This means that the third variable is explaining the relationship between the explanatory variable and the response variable.
+5. Interpret all regression coefficients except the intercept. 
+6. Write a conclusion. A structured response template is provided. 
+
+```{r, warning=FALSE, message=FALSE}
+library(knitr)
+opts_chunk$set(warning=FALSE, message=FALSE) 
+library(dplyr)
+library(ggplot2); library(gridExtra)
+library(pander) # Used for printing nice linear model tables
+panderOptions("digits", 3)
+load("C:/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
+```
+
+# Multiple Linear Regression
+
+## 1. Identify variables
+
+If you have a “Strongly Agree” to “Strongly Disagree” variable that you have kept all 5 levels, you can treat it as a Quantitative Variable.
+
+* Quantitative outcome: Income (variable `income`). 
+* Quantitative predictor: Time you wake up in the morning (variable `wakeup`)
+* Binary confounder: Gender (variable `female_c`)
+ 
+
+## 2. State the research Hypothesis
+
+* Null: There is no relationship between the time you wake up and your personal earnings
+* Alternative: There is a relationship between the time you wake up and your personal earnings
+* Confounder:  There is still a relationship between the time you wake up and your personal earnings, after controlling for gender. 
+
+
+## 3. Fit the simple model
+Is there a relationship between income and time a person wakes up? 
+```{r}
+lm.mod1 <- lm(income ~ wakeup, data=addhealth) 
+pander(summary(lm.mod1), digits=2)
+```
+
+The estimate of the regression coefficient for `wakeup` is significant (b1=-488, p= 0.001). There is reason to believe that the time you wakeup is associated with your income. 
+
+
+## 4. Fit the multivariable model
+
+Fit the same multiple linear regression model and include the potential confounding variable. Determine if the third variable is a confounder. 
+
+```{r}
+lm.mod2 <- lm(income ~ wakeup + female_c, data=addhealth) 
+pander(summary(lm.mod2), digits=2)
+```
+
+
+The relationship between income and wake up time is still significant after controlling for gender. Gender is not a confounder. 
+
+## 5. Interpret the regression coefficients.
+
+* $b_{1}$: Holding gender constant, for every hour later a person wakes up, their predicted average income drops by $611. 
+* $b_{2}$: Controlling for the time someone wakes up in the morning, the predicted average income for females is $8,527 lower than for males. 
+
+
+## 6. Conclusion
+
+* Use the numerical results from the multivariable model to fill in the values in the conclusion below. 
+* Look at the Adjusted $R^{2}$ to see how much of the variance in the response you are accounting for with the predictor.
+* To get the confidence intervals for the regression coefficients you will use the function `confint()`
+
+```{r}
+kable(confint(lm.mod2), digits=2)
+```
+
+Replace the **bold** words with your variables, the `highlighted` words with data from your analysis, and choose between _conclusion options_. 
+
+
+After adjusting for the potential confounding factor of **third variable**, **explanatory variable** (b1 = `parameter estimate, CI confidence interval range, p = significance value`) was ***significantly/not significantly** and **positively/negatively** associated with **response variable**. Approximately `R-Square*100` of the variance of **response** can be accounted for by **explanatory** after controlling for **third variable**. Based on these analyses, **third variable** _is not/is_ a confounding factor because the association between **explanatory** and **response** _is still/is no longer_ significant after accounting for **third variable**. 
+
+So the conclusion for this analysis reads: 
+
+> After adjusting for the potential confounding factor of **gender**, **wake up time** ($b_{1}$ = `-611, 95% CI: (-904, -318), p<.0001`) was **significantly** and **negatively** associated with **income**. Approximately `3.2%` of the variance of **income** can be accounted for by **wake up time** after controlling for **gender**. Based on these analyses, **gender** _is not_ a confounding factor because the association between **wake up time** and **income** _is still_ significant after accounting for **gender**.
+
+Additional example interpretation
+
+> After adjusting for the potential confounding factor of gender, an adolescent’s weight (Beta = 1.34, 95% CI -0.53, 3.21, p = .1558) was not significantly associated with the number of cigarettes smoked in the past 30 days. Approximately 0.78% of the variance in cigarettes smoked can be accounted for by weight after controlling for gender. Based on these analyses, gender is a confounding factor because the association between weight and cigarettes smoked is no longer significant after accounting for gender. 
+
+
+# Logistic Regression
+
+Your outcome variable must be coded as 1 (event) and 0 (non-event). Recoding this way ensures you are predicting the presence of your categorical variable and not the absence of it. 
+
+## 1. Identify variables
+
+* Binary outcome: Poverty (variable `poverty`). This is an indicator if reported personal income is below $10,210. 
+* Binary predictor: Ever smoked a cigarette (variable `eversmoke_c`)
+* Binary confounder: Gender (variable `female_c`)
+ 
+
+## 2. State hypotheses
+
+* Null hypothesis: There is no relationship between the probability of living below the poverty level ever being a smoker.
+* Alternative hypothesis: There is a relationship between the probability of living below the poverty level and ever being a smoker. 
+* Confounding hypothesis: There _still is_ a relationship between the probability of living below the poverty level and ever being a smoker, after controlling for gender. 
+
+## 3. Fit the simple model
+Fit the logistic regression model (a.k.a generalized linear model) of the explanatory variable on the response variable. Decide to reject the null hypothesis in favor of the alternative. 
+
+```{r}
+log.mod.1 <- glm(poverty~eversmoke_c, data=addhealth, family='binomial')
+summary(log.mod.1)
+```
+
+The p-value for the b1 estimate of the regression coefficient for `eversmoke_c` is significant at 0.0002. There is reason to believe that smoking status is associated with the probability of living below the poverty level. 
+
+ 
+## 4. Fit the multivariable model
+Fit the same logistic regression model and include the potential confounding variable. **This is only done if there is a significant relationship between the explanatory and response variable.** Determine if the third variable is a confounder. 
+
+```{r}
+log.mod.2 <- glm(poverty~eversmoke_c + female_c, data=addhealth, family='binomial')
+summary(log.mod.2)
+```
+
+The p-value for the regression coefficient estimate of `eversmoke_c` is still significant at <.0001 after controlling for gender. Thus gender is **not** a confounder. 
+
+
+## 5. Interpret the Odds Ratio estimates
+
+The regression coefficients $b_{p}$ from a logistic regression must be _exponentiated_ before interpretation. This is done by raising the constant $e$ to the value of the coefficient. So, $OR = e^{b}$. Below I create a table containing the odds ratio estimates and 95% CI for those estimates using the confounding model. You will see one of three things: 
+
+```{r}   
+# For your assignment - replace the saved model object `log.mod.2` with whatever YOU named this model. 
+kable(
+  data.frame(
+    OR = exp(coef(log.mod.2)), 
+    LCL = exp(confint(log.mod.2))[,1], 
+    UCL = exp(confint(log.mod.2))[,2]
+  ),
+digits=2, align = 'ccc')
+
+# Try to figure out what the functions coef() and confint() do? 
+# Type coef(log.mod.2) and conf(log.mod.2) into the console and make sure you understand what output it is giving you. Compare it to the output you receive when typing summary(log.mod.2)
+```
+
+* **OR = 1** = equal chance of response variable being YES given any explanatory variable value. You are not able to predict participants’ responses by knowing their explanatory variable value. This would be a non significant model when looking at the p-value for the explanatory variable in the parameter estimate table.
+* **OR > 1** = as the explanatory variable value increases, the presence of a YES response is more likely. We can say that when a participant’s response to the explanatory variable is YES (1), they are more likely to have a response that is a YES (1). 
+* **OR <1** = as the explanatory variable value increases, the presence of a YES response is less likely. We can say that when a participant’s response to the explanatory variable is YES (1) they are less likely to have a response that is a YES (1). 
+
+
+> For this example, the OR for the explanatory variable of eversmoker is 1.47 and the OR for gender is 2.40. 
+
+**Interpreting confidence intervals for Odds Ratios**
+
+* Confidence intervals are a range for the population’s predicted odds ratio based on the sample data. We are 95% confident that any given population’s odds ratio would range between those two values. 
+* When the confidence intervals for the explanatory variables and third variables do not overlap, the variable with the higher values we can interpret as being more strongly associated with our response variable.
+* For both the odds ratio and confidence interval interpretation, when you add in third variables it is explained in the same way except that you are controlling for the third variable or explanatory variable.
+* When you add a third variable to the logistic regression, if you determine one is a confound then you do not interpret the variable that becomes non significant in the odds ratio.
+
+
+
+> After controlling for gender, smokers have 1.47 times the odds of reporting making below the federal poverty level compared to non smokers. After controlling for smoking status, females have 2.4 time the odds of reporting annual earned wages below the federal poverty level compared to males. Gender is a stronger predictor of earning a lower wage than smoking status. 
+
+## 6. Conclusion
+
+Replace the **bold** words with your variables, the `highlighted` words with data from your analysis, and choose between _conclusion options_. 
+
+
+After adjusting for the potential confounding factor of **third variable**, **explanatory variable** (`OR odds ratio estimate, CI confidence interval range, p = significance value`) was _significantly/not significantly_ and _positively/negatively_ associated with the likelihood of **response variable**. In this analysis, the odds ratio tells us that those who are **[describe what dummy code 1 of your explanatory variable means here]** are `0.05` times _more (if OR greater than 1)/less (if OR less than 1)_ likely to **[describe what dummy code 1 of your response variable means here]**.  Based on these analyses, **third variable** _is not/is_ a confounding factor because the association between **explanatory** and **response** _is still/is no longer_ significant after accounting for **third variable**. 
+
+So the conclusion for this analysis reads:
+
+After adjusting for the potential confounding factor of **gender**, **smoking status** (`1.47, CI 1.26-1.72, p <.0001`) was _significantly_ and _positively_ associated with the likelihood of **earning under the poverty level**. In this analysis, the odds ratio tells us that those who **have ever smoked** are `1.47` times _more_ likely to **earn income below the federal poverty level**.  Based on these analyses, **gender** _is not_ a confounding factor because the association between **smoking** and **poverty status** _is still_ significant after accounting for **gender**. 
+
+
+Additional example interpretation
+
+> * After adjusting for the potential confounding factor of gender, being overweight (OR 0.920, CI 0.822 – 1.028, p = .1420) was not significantly associated with the likelihood of participating in an active sport. In this analysis, the odds ratio tells us that those adolescents who are overweight are 0.920 times less likely to participate in an active sport. Based on these analyses, gender is a confounding factor because the association between being overweight and active sport participation is no longer significant after accounting for gender.
+> * After adjusting for the potential confounding factor of gender, being overweight (OR 3.65, CI 1.573 – 4.891, p = .0001) was significantly and positively associated with the likelihood of participating in an active sport. In this analysis, the odds ratio tells us that those adolescents who are overweight are 3.65 times more likely to participate in an active sport. Based on these analyses, gender is not a confounding factor because the association between being overweight and active sport participation is still significant after accounting for gender. 
+ 
+
+
+
+
+# Categorical predictors
+
+For any of the regression models above, or a new model if you choose, add a categorical variable with more than 2 levels.
+* If the confounder was significant, use the multivariable model including confounder. 
+* If the confounder was not significant, use the bivariate model without the confounder. 
+* Interpret the regression coefficients for at least two levels of the categorical variable.  
+
+## 1. Identify variables and their data type
+* Outcome: BMI (variable `BMI`). This is a quantitiative measure. 
+* Predictor: Income (variable `income`). This is a quantitative measure. 
+* Predictor: general health (variable `genhealth`). This is a categorical measure. 
+ 
+## 2. Write the mathematical model. 
+Define what each $x$ is, and write the mathematical model. State what group is the reference group. 
+
+* Let $x_{1}$ be `income`
+* Let $x_{2}=1$ when `genhealth='Very good'`, and 0 otherwise,  
+* let $x_{3}=1$ when `genhealth='Good'`, and 0 otherwise,  
+* let $x_{4}=1$ when `genhealth='Fair'`, and 0 otherwise,  
+* let $x_{5}=1$ when `genhealth='Poor'`, and 0 otherwise. 
+
+The reference group for `genhealth` is `Excellent`. 
+
+The mathematical model would look like: 
+
+$$ Y \sim \beta_{0} + \beta_{1}*x_{1} + \beta_{2}x_{2} + \beta_{3}x_{3} + \beta_{4}x_{4} + \beta_{5}x_{5} $$
+
+
+## 3. State hypothesis in words and symbols
+
+* Null: General health is not associated with BMI after controlling for income. All levels of general health have the same relationship with income. 
+* Alternative: General health is associated with BMI after controlling for income - at least one level of General health has a different association with income. 
+ 
+
+$H_{0}: \beta_{2}=\beta_{3}=\beta_{4}=\beta_{5}=0$
+
+$H_{A}:$ at least one $\beta_{j}$ is not 0
+
+ 
+ 
+ 
+## 3. Visualize this relationship
+
+Create a graphic to explore the relationship between the categorical variable and the response variable. 
+
+* If your outcome is quantitative, this will be a side by side boxplot
+* If your outcome is binary, this will be side by side barcharts
+
+```{r}
+toplot <- addhealth %>% select(BMI, genhealth) %>% na.omit()
+ggplot(toplot, aes(y=BMI, x=genhealth, fill=genhealth)) + geom_boxplot() + 
+    stat_summary(fun.y="mean", geom="point", size=3, position=position_dodge(width=0.75))
+```
+
+I would expect that the average BMI differs significantly across general health category. 
+
+## 4. Fit the multivariable model with both predictors. 
+
+Print out the coefficients and 95% CI's. 
+
+```{r}
+gh.model <- lm(BMI~income + genhealth, data=addhealth)
+summary(gh.model)
+round(confint(gh.model),1)
+```
+
+## 5. Interpret the regression coefficients. 
+
+* $b_{1}$: After controlling for general health, for every additional $1 a person makes annually, their BMI decreases .0000047. This is not a significant relationship. A more meaningful interpretation would be to look at a $1000 increase in annual income. For every additional $1,000,000 in income a person makes annually, their BMI decreases by 4.7.
+* $b_{2}$: Those reporting very good health have 1.6 (0.99, 2.2, p<.0001) higher BMI compared to those reporting excellent health. 
+* $b_{3}$:Those reporting good health have 4.8 (4.1, 5.4, p<.0001) higher BMI compared to those reporting excellent health. 
+* $b_{4}$: Those reporting fair health have 6.9 (5.9, 7.9, p<.0001) higher BMI compared to those reporting excellent health. 
+* $b_{5}$: Those reporting poor health have 9.4 (6.6, 12.1, p<.0001) higher BMI compared to those reporting excellent health. 
+
+
+## 6. Conclusion
+
+After controlling for general health, income is not significantly associated with BMI. General health is significantly associated with BMI, the average BMI increases as reported general health decreases. 
+
+
+
+

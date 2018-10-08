@@ -1,0 +1,119 @@
+---
+title: "Regression Assignment"
+author: "YOUR NAME HERE"
+date: "Last Updated `r Sys.time()`"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(knitr)
+opts_chunk$set(warning=FALSE, message=FALSE, fig.width=8, fig.height=4, fig.align='center')) 
+library(dplyr)
+library(ggplot2); library(gridExtra)
+library(pander) # Used for printing nice linear model tables
+panderOptions("digits", 3)
+# load your data here
+```
+
+# Multiple Linear Regression
+
+## 1. Identify variables
+* Quantitative outcome: 
+* Quantitative predictor: 
+* Binary confounder: 
+ 
+
+## 2. State the research Hypothesis
+
+
+* Null hypothesis: 
+* Alternative hypothesis:
+* Confounding hypothesis: 
+
+## 3. Fit the simple model
+
+
+## 4. Fit the multivariable model
+
+## 5. Interpret the regression coefficients.
+
+## 6. Conclusion
+
+# Logistic Regression
+
+
+## 1. Identify variables
+
+* Binary outcome:  
+* Binary predictor: 
+* Binary confounder: 
+ 
+
+
+## 2. State hypotheses
+
+* Null hypothesis: 
+* Alternative hypothesis:
+* Confounding hypothesis: 
+
+## 3. Fit the simple model
+
+
+
+## 4. Fit the multivariable model
+
+
+## 5. Interpret the Odds Ratio estimates
+
+## 6. Conclusion
+
+# Categorical predictors
+
+
+## 1. Identify variables and their data type
+* Outcome:
+* Predictor: 
+* Predictor: 
+ 
+## 2. Write the mathematical model. 
+Define what each $x$ is, and write the mathematical model. State what group is the reference group. 
+
+* Let $x_{1}$ be 
+* Let $x_{2}=1$ when  
+* let $x_{3}=1$ when  
+
+
+The reference group 
+
+The mathematical model would look like: 
+
+$$ Y \sim \beta_{0} + \beta_{1}*x_{1} + \beta_{2}x_{2} + \beta_{3}x_{3} + \beta_{4}x_{4} + \beta_{5}x_{5} $$
+
+
+## 3. State hypothesis in words and symbols
+
+* Null: 
+* Alternative:
+ 
+
+$H_{0}: \beta_{2}=\beta_{3} ... =0$
+
+$H_{A}:$ at least one $\beta_{j}$ is not 0
+
+ 
+ 
+ 
+## 3. Visualize this relationship
+
+## 4. Fit the multivariable model with both predictors. 
+
+
+## 5. Interpret the regression coefficients. 
+
+* $b_{1}$: 
+* $b_{2}$: 
+* $b_{3}$:
+
+## 6. Conclusion

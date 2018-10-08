@@ -148,10 +148,10 @@ Here are a list of topics to review. All topics have equal importance, regardles
 
 ### 10/8/18 - [Week 7](https://norcalbiostat.github.io/MATH315/wk/wk07.html)
 
+* Exam 1 handed back on Monday - after some brief comments we'll start talking about point estimates. 
 * This week is a lot of "book work". You will learn by reading and participating in class, your assignments are all assigned through Blackboard Learn. 
 * Problem set 3.1 and 3.2 should have been officially assigned last week, they are set for being due EOD on Monday. 
     - Reminder: These due dates are so YOU are keeping up with the class. They will stay open until Exam 2, but the sooner you do them the better off you will be in class. 
-* We are starting back up some DataCamp assignments as well. 
 * The rest of the schedule for the semester has been set. Plan your time accordingly. These assignments will take longer than one evening to complete.
     - I will be working over the next few days to open the rest of the assignments in Blackboard Learn so that they show up on the calendar. 
 * There will be no more required peer review of normal assignments directly, you will be reviewing the team's project analysis work. 
