@@ -1,12 +1,12 @@
 ---
 title: "Bivariate Inference"
 output:
-  pdf_document: default
   html_document:
     highlight: tango
     theme: readable
     toc: true
     toc_float: true
+  pdf_document: default
 ---
 
 # Overview
@@ -44,8 +44,11 @@ For each analysis you will do the following steps:
 
 * This is a team assignment, but NOT peer reviewed.
 * Use [this template](hw08_bivariate_inference_template.Rmd) to answer the questions. 
-    - Save the file as `team_name_bivariate.Rmd`
-* After each completed question - upload your document (word or pdf) to the assignment folder in Google Drive
+    - Save the file as `userid_bivariate.Rmd`
+* As you complete each question 
+    - upload your document (word or pdf) to the assignment folder in Google Drive
+    - Add your code to HackMD to help others. If code is already there, add comments, correct or
+      clarify the instructions, make the code generic. 
     - This assignment is *not* officially peer reviewed, but allows others who may be struggling to see what you have done. 
     - Everyone is encouraged to leave comments and questions on your peers' submission. 
     - You have access to a large learning community - contribute to it and use it!
@@ -57,13 +60,14 @@ library(knitr)
 opts_chunk$set(warning=FALSE, message=FALSE) 
 library(dplyr)
 library(ggplot2)
-
+library(pander)
 
 load("C:/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
 ```
 
 ----
 
+\newpage
 
 # (Q~B) Two sample T-Test for Independent Groups
 We would like to know, is there convincing evidence that the average BMI differs between men and women? 
@@ -77,7 +81,7 @@ We would like to know, is there convincing evidence that the average BMI differs
 
 2. **Visualize and summarise bivariate relationship** 
 
-```{r, fig.align='center', fig.width=4, fig.height=4}
+```{r, fig.align='center', fig.width=4, fig.height=3}
 plot.bmi.gender <- addhealth %>% select(female_c, BMI) %>% na.omit()
 
 ggplot(plot.bmi.gender, aes(x=female_c, y=BMI, fill=female_c)) + 
@@ -89,7 +93,8 @@ ggplot(plot.bmi.gender, aes(x=female_c, y=BMI, fill=female_c)) +
 
 addhealth %>% group_by(female_c) %>% 
               summarise(mean=mean(BMI, na.rm=TRUE), 
-                        var = var(BMI, na.rm=TRUE))
+                        var = var(BMI, na.rm=TRUE)) %>%
+              kable()
 ```
 
 Males have on average a BMI of 28.9, a little smaller than the average BMI of women at 29.3. Females have more variation in their weights, but the distributions both look normal, if slightly skewed right. 
@@ -122,6 +127,8 @@ t.test(BMI ~ female_c, data=addhealth)
 Males, on average, have a slightly lower 0.4 (-0.9, 0.03) BMI compared to females. This is a non-significant difference with a p-value of 0.06. 
 
 ----
+
+\newpage
 
 # (Q~C) Analysis of Variance
 
@@ -189,7 +196,7 @@ $H_{A}:$ At least one group mean is different.
 
     IV. Reject the null, the p-value is <.0001. 
 ```{r}
-summary(aov(Petal.Length ~ Species, data=iris))
+pander(summary(aov(Petal.Length ~ Species, data=iris)))
 ```
 
 Since the ANOVA was significant, I need to conduct a post-hoc test to identify which pairs are different. 
@@ -210,7 +217,9 @@ There is sufficient evidence to conclude that the average petal length of an iri
 
 
 ---- 
- 
+
+\newpage
+
 # (B ~ C) Chi-Square Test of Association
 
 A chi square ($\chi^{2}$) test of association (independence) compares frequencies of one categorical variable for different values of a second categorical variable. The null hypothesis is that the relative proportions (values) of one variable are “independent” of the second variable; in other words, the proportions of one variable are the same for different values of the second variable. The alternate hypothesis is that the relative proportions of one variable are associated with the second variable
@@ -238,12 +247,12 @@ proptab.gender.genhealth <- prop.table(crosstab.gender.genhealth, margin=2)
 kable(proptab.gender.genhealth, digits=3)
 ```
 
-```{r, fig.align='center', fig.width=6, fig.height=4}
+```{r, fig.align='center', fig.width=6, fig.height=3}
 plot.crostab <- data.frame(proptab.gender.genhealth)
 
 ggplot(plot.crostab, aes(x=Var2, y=Freq, fill=Var1)) + 
         geom_col(position = position_dodge()) + theme_bw() + 
-        geom_text(aes(y=Freq+.02, label=round(Freq,2)), position = position_dodge(width=1)) + 
+        geom_text(aes(y=Freq+.04, label=round(Freq,2)), position = position_dodge(width=1)) + 
         labs(x="General health", y="Proportion") + 
          scale_fill_manual(name="Gender", values=c("firebrick", "goldenrod")) +
         scale_y_continuous(limits=c(0,1))
@@ -254,12 +263,12 @@ The distribution of gender appears to be different across the levels of general 
 
 If your categorical variable is binary as in this example, what we're really interested in is the proportion of "yes" responses (here it's female). This is the group that we identify specifically in our hypothesis generation. To simplify the graph then, you can plot only the % of the group that you're interested in. Again, this only holds for binary categorical variables since within each categorical grouping variable (along the x axis) the proportions of the outcome variable will sum to 1. Note that I have to better specify what the proportion is along the Y axis now (i.e. _proportion of females_ instead of simply _proportion_). 
 
-```{r, fig.align='center', fig.width=6, fig.height=4}
+```{r, fig.align='center', fig.width=6, fig.height=3}
 plot.crostab.female <- filter(plot.crostab, Var1=="Female")
 
 ggplot(plot.crostab.female, aes(x=Var2, y=Freq)) + 
         geom_col(position = position_dodge()) + theme_bw() + 
-        geom_text(aes(y=Freq+.02, label=round(Freq,2)), position = position_dodge(width=1)) + 
+        geom_text(aes(y=Freq+.04, label=round(Freq,2)), position = position_dodge(width=1)) + 
         labs(x="General health", y="Proportion of Females") + 
         scale_y_continuous(limits=c(0,1))
 ```
@@ -310,25 +319,14 @@ A correlation coefficient assesses the degree of linear relationship between two
 
 Explain your results for each correlation in terms of strength (actual number value) and direction (using the sign and scatter plot) within the context of the relationship you are examining. Then discuss the r-squared value. Please put each explanation after the appropriate results.
 
-**Writing correlation values (replace highlighted words with numbers):**
+Below are rough estimates for interpreting strengths of correlations (to be used in write up): If the magnitude of $r$ is ... 
 
-* $`r` (`N`) = `correlation coefficient`, p = `p-value` 
+> * .70 and larger  Very strong relationship  
+> * .40 to .69 Strong relationship 
+> * .30 to .39 Moderate relationship 
+> * .20 to .29 Weak relationship 
+> * .19 and below No or negligible relationship 
 
-Below are rough estimates for interpreting strengths of correlations (to be used in write up):
-
-If $r$ is ... 
-
-> * +.70 and up  Very strong positive relationship   
-> * +.40 to +.69 Strong positive relationship   
-> * +.30 to +.39 Moderate positive relationship 
-> * +.20 to +.29 Weak positive relationship 
-> * +.01 to +.19 No or negligible relationship 
-> * -.01 to -.19 No or negligible relationship 
-> * -.20 to -.29 Weak negative relationship 
-> * -.30 to -.39 Moderate negative relationship 
-> * -.40 to -.69 Strong negative relationship 
-> * -.70 or below Very strong negative relationship
- 
 **Correlation as a measure of model fit.**
 When we square $r$ (i.e. $R^{2}$), it tells us what proportion of the variability in one variable that is described by variation in the second variable.
 
@@ -342,7 +340,7 @@ When we square $r$ (i.e. $R^{2}$), it tells us what proportion of the variabilit
 
 2. **Visualize and summarise bivariate relationship** 
 
-```{r, fig.align='center', fig.width=4, fig.height=4}
+```{r, fig.align='center', fig.width=3, fig.height=3}
 ggplot(iris, aes(x=Sepal.Length, y=Petal.Length)) + geom_point() + 
       geom_smooth(se=FALSE, col="red") + 
       geom_smooth(method="lm", col="blue", se=FALSE) + 
@@ -382,8 +380,10 @@ cor.test(iris$Petal.Length, iris$Sepal.Length)
 There was a statistically significant and very strong correlation between the sepal length of an iris and the petal length, r (148) = 0.87, p < .0001. The significant positive correlation shows that as the sepal length increases so does the petal length. These results suggest that 76% (95% CI: 68.9-82.8) of the variance in petal length can be explained by the length of the sepal. 
 
 
+----
 
- 
+\newpage
+
 # (Q~Q) Linear Regression Analysis
 
 Linear regression models can be used to evaluate whether there is a linear relationship between two numerical variables. When only one explanatory variable x is considered, this is termed simple linear regression (SLR). The basic idea of SLR is to use data to fit a straight line that relates the response Y to the predictor X.  The mathematical relationship between x and y is written as 
@@ -404,7 +404,7 @@ A linear regression analysis tests the hypothesis that there is no linear relati
 
 2. **Visualize and summarise bivariate relationship** 
 
-```{r, fig.align='center', fig.width=4, fig.height=4}
+```{r, fig.align='center', fig.width=3, fig.height=3}
 ggplot(iris, aes(x=Sepal.Length, y=Petal.Length)) + geom_point() + 
       geom_smooth(se=FALSE, col="red") + 
       geom_smooth(method="lm", col="blue", se=FALSE) + 
@@ -437,7 +437,7 @@ $H_{A}: \beta_{1} \neq 0$
 
 ```{r}
 iris.linear.model <- lm(Petal.Length ~ Sepal.Length, data=iris)
-summary(iris.linear.model)
+pander(summary(iris.linear.model))
 par(mfrow=c(2,2))
 plot(iris.linear.model)
 ```
@@ -445,7 +445,7 @@ plot(iris.linear.model)
 The model assumptions appear to be upheld. The normal Q-Q plot indicate that the residuals are normally distributed, the residuals vs fitted plot indicate that the residuals are centered around zero. There might be a slight violation of the assumption of homoscedascitiy (constant variance), the variance of the residuals appears to decrease as the fitted values increase. 
 
 ```{r}
-confint(iris.linear.model)
+pander(confint(iris.linear.model))
 ```
 
 
