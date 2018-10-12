@@ -1,12 +1,12 @@
 ---
 title: "Bivariate Inference"
 output:
+  pdf_document: default
   html_document:
     highlight: tango
     theme: readable
     toc: true
     toc_float: true
-  pdf_document: default
 ---
 
 # Overview
@@ -61,8 +61,9 @@ opts_chunk$set(warning=FALSE, message=FALSE)
 library(dplyr)
 library(ggplot2)
 library(pander)
+library(scales)
 
-load("~/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
+load("C:/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
 ```
 
 ----
@@ -235,15 +236,12 @@ The `RVAideMemoire` package provides the `fisher.multcomp` function to conduct p
 
 1. **Identify response and explanatory variables**
 
-
-* Ever smoker = binary explanatory variable (variable `eversmoke_c`)
+* Ever smoked an entire cigarette in their life = binary explanatory variable (variable `eversmoke_c`)
 * General Health = categorical response variable (variable `genhealth`)
 
 2. **Visualize and summarise bivariate relationship** 
 ```{r}
-addhealth$pov_c <- factor(addhealth$poverty, 
-                             labels=c("Above poverty line", "Below poverty line"))
-crosstab.pov.genhealth <- table(addhealth$pov_c, addhealth$genhealth) 
+crosstab.smoke.genhealth <- table(addhealth$eversmoke_c, addhealth$genhealth) 
 kable(crosstab.smoke.genhealth)
 
 proptab.smoke.genhealth <- prop.table(crosstab.smoke.genhealth, margin=2)
@@ -262,58 +260,62 @@ ggplot(plot.crostab, aes(x=Var2, y=Freq, fill=Var1)) +
         theme(legend.position="bottom")
 ```
 
-The percentage of smokers seems to increase as the general health status decreases. Smokers make up 73% of those reporting poor health compared to 59%  make up 48% of those reporting excellent health, and 69% of those reporting poor health
+The percentage of smokers seems to increase as the general health status decreases. Almost three-quarters (73%) of those reporting poor health have smoked an entire cigarette at least once in their life compared to 59% of those reporting excellent health. 
 
 
-If your categorical variable is binary as in this example, what we're really interested in is the proportion of "yes" responses (here it's female). This is the group that we identify specifically in our hypothesis generation. To simplify the graph then, you can plot only the % of the group that you're interested in. Again, this only holds for binary categorical variables since within each categorical grouping variable (along the x axis) the proportions of the outcome variable will sum to 1. Note that I have to better specify what the proportion is along the Y axis now (i.e. _proportion of females_ instead of simply _proportion_). 
+If your categorical variable is binary as in this example, what we're really interested in is the proportion of "yes" responses (here it's ever smoked). This is the group that we identify specifically in our hypothesis generation. To simplify the graph then, you can plot only the % of the group that you're interested in. Again, this only holds for binary categorical variables since within each categorical grouping variable (along the x axis) the proportions of the outcome variable will sum to 1. Note that I have to better specify what the proportion is along the Y axis now (i.e. _proportion of those who have ever smoked_ instead of simply _proportion_). 
 
 ```{r, fig.align='center', fig.width=6, fig.height=3}
-plot.crostab.female <- filter(plot.crostab, Var1=="Female")
+plot.crostab.smoke <- filter(plot.crostab, Var1=="Smoked at least once")
 
-ggplot(plot.crostab.female, aes(x=Var2, y=Freq)) + 
+ggplot(plot.crostab.smoke, aes(x=Var2, y=Freq)) + 
         geom_col(position = position_dodge()) + theme_bw() + 
-        geom_text(aes(y=Freq+.04, label=round(Freq,2)), position = position_dodge(width=1)) + 
-        labs(x="General health", y="Proportion of Females") + 
-        scale_y_continuous(limits=c(0,1))
+        geom_text(aes(y=Freq+.04, label=paste0(round(Freq,2)*100, "%")), 
+                      position = position_dodge(width=1)) + 
+        labs(x="General health", y="%", 
+             title="Proportion of those who have smoked at least once in their life") + 
+        scale_y_continuous(limits=c(0,1), labels=percent)
 ```
 
 3. **Write the relationship you want to examine in the form of a research question.**
 
-Is the gender distribution equal across all levels of general health? 
+Is the proportion of those who have ever smoked equal across all levels of general health? 
 
-* Null Hypothesis: The proportion of females in each general health category is the same. 
+* Null Hypothesis: The proportion in each general health category is the same. 
 * Alternate Hypothesis: At least one proportion is different.
 
 
 4. **Perform an appropriate statistical analysis.**
 
     I. 
-Let $p_{i}$ be the true proportion of females in general health category $i$. 
+Let $p_{i}$ be the true proportion of those who have ever smoked in general health category $i$. 
 
     II. 
 $H_{0}: p_{1} = p_{2} = p_{3}$   
 $H_{A}:$ At least one proportion is different. 
 
 
-    III. I will conduct a Chi-squared test of association. There is at least 5 observations in each combination of gender and general health. 
+    III. I will conduct a Chi-squared test of association. There is at least 5 observations in each combination of smoking status and general health. 
 
 
     IV. Reject the null, the p-value is <.0001. 
 ```{r}
-chisq.test(addhealth$genhealth, addhealth$female_c)
+chisq.test(addhealth$genhealth, addhealth$eversmoke_c)
 ```
 
 Since the test was significant, I will conduct a post-hoc test to identify which pairs are different. 
 
 ```{r}
-RVAideMemoire::fisher.multcomp(crosstab.gender.genhealth, p.method="fdr")
+RVAideMemoire::fisher.multcomp(table(addhealth$genhealth, addhealth$eversmoke_c), p.method="fdr")
 ```
 
-The p-values for all tests comparing Excellent to other groups are all significant at $<.01$, Very good vs fair, and vs poor, and good vs poor are all marginally significant with p-values around 0.07. 
+_Hint: Put the categorical variable first in the table_
+
+The p-values for all tests comparing Excellent to other groups are all significant at $<.01$. The p-value comparing ery good to good is also =.02.  
 
 5. **Write a conclusion in context of the problem.**
 
-We can conclude that there is an association between gender and perceived general health (X2 = 26.4, df=4, p<.0001). The proportion of females in the Excellent health group (48%) is significantly lower than any other group 54%  for Very Good to 69% for Poor). Furthermore there may be indiciation that there is a higher proportion of females in the Very good health group (54%) compared to the Fair (60%) and poor (69%) groups (p-values = .075). 
+We can conclude that there is an association between ever smoking a cigarette in their life and perceived general health (X2 = 30.8, df=4, p<.0001). The proportion of those who have smoked at least one cigarette in their life in the Excellent health group (59%) is significantly lower than any other group (65% for Very Good to 73% for Poor). 
 
 
 ---- 
