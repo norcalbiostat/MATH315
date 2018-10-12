@@ -62,7 +62,7 @@ library(dplyr)
 library(ggplot2)
 library(pander)
 
-load("C:/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
+load("~/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
 ```
 
 ----
@@ -76,55 +76,55 @@ We would like to know, is there convincing evidence that the average BMI differs
 
 1. **Identify response and explanatory variables**
 
-* Gender = binary explanatory variable (variable `female_c`)
+* Ever smoker = binary explanatory variable (variable `eversmoke_c`)
 * BMI = quantitative response variable (variable `BMI`)
 
 2. **Visualize and summarise bivariate relationship** 
 
 ```{r, fig.align='center', fig.width=4, fig.height=3}
-plot.bmi.gender <- addhealth %>% select(female_c, BMI) %>% na.omit()
+plot.bmi.smoke <- addhealth %>% select(eversmoke_c, BMI) %>% na.omit()
 
-ggplot(plot.bmi.gender, aes(x=female_c, y=BMI, fill=female_c)) + 
+ggplot(plot.bmi.smoke, aes(x=eversmoke_c, y=BMI, fill=eversmoke_c)) + 
       geom_boxplot(width=.3) + geom_violin(alpha=.4) + theme_bw() + 
-      labs(x="Gender") + 
-      scale_fill_manual(values=c("firebrick", "goldenrod"), name="Gender") + 
+      labs(x="Smoking status") + 
+      scale_fill_manual(values=c("skyblue", "orange"), name="Smoking status") + 
       stat_summary(fun.y="mean", geom="point", size=3, pch=17, 
       position=position_dodge(width=0.75))
 
-addhealth %>% group_by(female_c) %>% 
+plot.bmi.smoke %>% group_by(eversmoke_c) %>% 
               summarise(mean=mean(BMI, na.rm=TRUE), 
-                        var = var(BMI, na.rm=TRUE)) %>%
+                        sd = sd(BMI, na.rm=TRUE)) %>%
               kable()
 ```
 
-Males have on average a BMI of 28.9, a little smaller than the average BMI of women at 29.3. Females have more variation in their weights, but the distributions both look normal, if slightly skewed right. 
+Smokers have on average BMI of 28.8, smaller than the average BMI of non-smokers at 29.7. Non-smokers have more variation in their weights (7.8 vs 7.3lbs), but the distributions both look normal, if slightly skewed right. 
 
 
 3. **Write the relationship you want to examine in the form of a research question.**
 
-* Null Hypothesis: There is no difference in the average BMI between males and females.  
-* Alternate Hypothesis: There is a difference in the average BMI between males and females.
+* Null Hypothesis: There is no difference in the average BMI between smokers and non-smokers.  
+* Alternate Hypothesis: There is a difference in the average BMI between smokers and non-smokers.
 
 4. **Perform an appropriate statistical analysis.**
  
-    I. Let $\mu_{1}$ be the average BMI for males, and $\mu_{2}$ be the average BMI for females. 
+    I. Let $\mu_{1}$ be the average BMI for smokers, and $\mu_{2}$ be the average BMI for non-smokers 
 
     II.  
 $H_{0}: \mu_{1} - \mu_{2} = 0$  
 $H_{A}: \mu_{1} - \mu_{2} \neq 0$ 
 
 
-    III. We are comparing the means between two independent samples. A Two-Sample T-Test for a difference in means will be conducted. The assumptions that the groups are independent is upheld because each individual can only be one gender at a time. The difference in sample means $\bar{x}_{1}-\bar{x}_{2}$ is normally distributed - this is a valid assumption due to the large sample size and that differences typically are normally distributed. The observations are independent, and the variances are roughly equal (67/44 = 1.5 is smaller than 2). 
+    III. We are comparing the means between two independent samples. A Two-Sample T-Test for a difference in means will be conducted. The assumptions that the groups are independent is upheld because each individual can only be either a smoker or non smoker. The difference in sample means $\bar{x}_{1}-\bar{x}_{2}$ is normally distributed - this is a valid assumption due to the large sample size and that differences typically are normally distributed. The observations are independent, and the variances are roughly equal (67/44 = 1.5 is smaller than 2). 
 
 
   IV. Do not reject the null hypothesis: p-value = 0.06.
 ```{r}
-t.test(BMI ~ female_c, data=addhealth)
+t.test(BMI ~ eversmoke_c, data=addhealth)
 ```
 
 5. **Write a conclusion in context of the problem.**
 
-Males, on average, have a slightly lower 0.4 (-0.9, 0.03) BMI compared to females. This is a non-significant difference with a p-value of 0.06. 
+On average, non-smokers have a significantly higher 0.82 (0.39, 1.27) BMI compared to smokers (p=.0002). 
 
 ----
 
@@ -235,30 +235,34 @@ The `RVAideMemoire` package provides the `fisher.multcomp` function to conduct p
 
 1. **Identify response and explanatory variables**
 
-* Gender = binary explanatory variable (variable `female`)
+
+* Ever smoker = binary explanatory variable (variable `eversmoke_c`)
 * General Health = categorical response variable (variable `genhealth`)
 
 2. **Visualize and summarise bivariate relationship** 
 ```{r}
-crosstab.gender.genhealth <- table(addhealth$female_c, addhealth$genhealth) 
-kable(crosstab.gender.genhealth)
+addhealth$pov_c <- factor(addhealth$poverty, 
+                             labels=c("Above poverty line", "Below poverty line"))
+crosstab.pov.genhealth <- table(addhealth$pov_c, addhealth$genhealth) 
+kable(crosstab.smoke.genhealth)
 
-proptab.gender.genhealth <- prop.table(crosstab.gender.genhealth, margin=2)
-kable(proptab.gender.genhealth, digits=3)
+proptab.smoke.genhealth <- prop.table(crosstab.smoke.genhealth, margin=2)
+kable(proptab.smoke.genhealth, digits=3)
 ```
 
 ```{r, fig.align='center', fig.width=6, fig.height=3}
-plot.crostab <- data.frame(proptab.gender.genhealth)
+plot.crostab <- data.frame(proptab.smoke.genhealth)
 
 ggplot(plot.crostab, aes(x=Var2, y=Freq, fill=Var1)) + 
         geom_col(position = position_dodge()) + theme_bw() + 
         geom_text(aes(y=Freq+.04, label=round(Freq,2)), position = position_dodge(width=1)) + 
         labs(x="General health", y="Proportion") + 
-         scale_fill_manual(name="Gender", values=c("firebrick", "goldenrod")) +
-        scale_y_continuous(limits=c(0,1))
+        scale_fill_manual(name="Smoking Status", values=c("skyblue", "orange")) +
+        scale_y_continuous(limits=c(0,1)) + 
+        theme(legend.position="bottom")
 ```
 
-The distribution of gender appears to be different across the levels of general health categories. Females make up 48% of those reporting excellent health, and 69% of those reporting poor health
+The percentage of smokers seems to increase as the general health status decreases. Smokers make up 73% of those reporting poor health compared to 59%  make up 48% of those reporting excellent health, and 69% of those reporting poor health
 
 
 If your categorical variable is binary as in this example, what we're really interested in is the proportion of "yes" responses (here it's female). This is the group that we identify specifically in our hypothesis generation. To simplify the graph then, you can plot only the % of the group that you're interested in. Again, this only holds for binary categorical variables since within each categorical grouping variable (along the x axis) the proportions of the outcome variable will sum to 1. Note that I have to better specify what the proportion is along the Y axis now (i.e. _proportion of females_ instead of simply _proportion_). 
