@@ -1,12 +1,12 @@
 ---
 title: "Bivariate Inference"
 output:
-  pdf_document: default
   html_document:
     highlight: tango
     theme: readable
     toc: true
     toc_float: true
+  pdf_document: default
 ---
 
 # Overview
@@ -71,7 +71,7 @@ load("C:/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
 \newpage
 
 # (Q~B) Two sample T-Test for Independent Groups
-We would like to know, is there convincing evidence that the average BMI differs between men and women? 
+We would like to know, is there convincing evidence that the average BMI differs between those who have ever smoked a cigarette in their life compared to those who have never smoked? 
 
 ##### Example
 
