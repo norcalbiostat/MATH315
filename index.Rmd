@@ -118,33 +118,31 @@ Here are a list of topics to review. All topics have equal importance, regardles
 * Use the submission link in Blackboard to drop a note saying you are done with your review. 
     - Do not upload your presentation to this link
 
+--->
 
 
-### 10/15/17 - [Week 9](https://norcalbiostat.github.io/MATH315/wk/wk09.html)
+### 10/22/18 - [Week 9](https://norcalbiostat.github.io/MATH315/wk/wk09.html)
+* Continuing with Bivariate analysis
+    - Chi squared test of independence on Monday
+    - Correlation on Wednesday (**PDS Video**)
+    - Linear regression on Friday (**RAT**)
+* Be sure to watch the PDS videos so we can spend most of class time working on the assignment. 
+* Additional lecture materials are available for regression
+    - Applied Stats Notesbook Chapter 5
+* Exam 2 on Statistical Inference next Friday. 
 
-* This week is all about dat Bivariate inference.
+
+### 10/15/18 - [Week 8](https://norcalbiostat.github.io/MATH315/wk/wk08.html)
+* This week is all about Bivariate inference.
+    - Hypothesis testing with R on Monday
+    - Two sample t-test on Wednesday
+    - ANOVA on Friday -- Corresponding PDS video
 * RAT on Wednesday (not Monday) 
 * BIG assignment! Has multiple parts. Procrastinate and be doomed. 
-* Add Health analysis all week. Minimal lecture (<15 min). Must read & watch videos before class. 
-    - If it is clear you haven't done the prep work you will get little help from me. 
-* Exams returned Wednesday. [Error Assessment available](https://norcalbiostat.github.io/MATH315/wk06.html#wednesday:_exam_1)
-
-### 10/6/17 - [Week 8](https://norcalbiostat.github.io/MATH315/wk/wk08.html)
-
-* <span style="color:red">**Office Hours**</span>: 
-    - Mon, Tue, Thu 2pm in Holt 202
-    - Tue, Thu 10am in Holt 155 
-    - Eduardo should still be in Holt 155 MW at 3pm. 
-* Computers will be used Monday & Wednesday. 
-* Conducting 1 sample analyses in R. 
-    - There are data and code files to prep before Monday. **Do not wait until class to do this.** 
-* Upcoming Assignments
-    - Research plan outline (10/8)
-    - Poster prep stage 1 (10/15)
-* Exam on Friday: Foundations for Inference. Course notes Ch 4-5. 
+* Majority of learning statistical content will come from PDS videos. 
+    - In class is a recap, highlights, and open work time
 
 
---->
 
 ### 10/8/18 - [Week 7](https://norcalbiostat.github.io/MATH315/wk/wk07.html)
 
