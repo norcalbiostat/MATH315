@@ -1,12 +1,12 @@
 ---
 title: "Bivariate Inference"
 output:
+  pdf_document: default
   html_document:
     highlight: tango
     theme: readable
     toc: true
     toc_float: true
-  pdf_document: default
 ---
 
 # Overview
@@ -342,7 +342,7 @@ When we square $r$ (i.e. $R^{2}$), it tells us what proportion of the variabilit
 1. **Identify response and explanatory variables**
 
 * Sepal Length = quantitative explanatory variable (variable `Sepal.Length`)
-* Petal Length = categorical response variable (variable `Petal.Length`)
+* Petal Length = quantitative response variable (variable `Petal.Length`)
 
 2. **Visualize and summarise bivariate relationship** 
 
