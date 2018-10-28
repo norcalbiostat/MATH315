@@ -102,16 +102,18 @@ Here are a list of topics to review. All topics have equal importance, regardles
     - https://twitter.com/eturnermd1/status/737436322344927232
     - http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001189#s4 
     
-
 --->
 
 ### 10/29/18 - [Week 10](https://norcalbiostat.github.io/MATH315/wk/wk10.html)
 
 * Open work day on Monday. Finish those assignments! 
-* Lecture on Moderation on Wednesday - watch the PDS Video ahead of time. 
+* Lecture on Moderation on Wednesday - watch the PDS Video 14 ahead of time. 
 * Exam 2 on Friday: Foundations for inference (probability, sampling distribution, confidence intervals, hypothesis testing, choosing appropriate analyses, setting up testable hypothesis, conducting and interpreting hypotheses tests)
-  - No sample exam provided, practice problems are possible. 
-  - Virtual OH/Review session will be scheduled, recorded and the link posted in Slack for viewing. A review session is only as good as the people who attend make it. I will be answering questions and expanding on topics. I won't be doing an entire recap of what we've covered since Exam 1. 
+    - Practice problems have been posted in Slack. 
+    - Virtual OH/Review session is Tuesday 8pm via Zoom. Meeting ID: 306 187 300
+        * Connect by computer: https://csuchico.zoom.us/j/306187300
+        * Connect by telephone: +1 646 558 8656  or +1 669 900 6833
+    - A review session is only as good as the people who attend make it. I will be answering questions and expanding on topics. I won't go through the answer to _every_ question on the practice exam, you have to have tried the problems first. 
 
 
 ### 10/22/18 - [Week 9](https://norcalbiostat.github.io/MATH315/wk/wk09.html)
