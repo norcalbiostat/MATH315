@@ -1,12 +1,12 @@
 ---
 title: "Bivariate Inference"
 output:
-  pdf_document: default
   html_document:
     highlight: tango
     theme: readable
     toc: true
     toc_float: true
+  pdf_document: default
 ---
 
 # Overview
@@ -42,7 +42,6 @@ For each analysis you will do the following steps:
 
 ## Submission Instructions:  
 
-* This is a team assignment, but NOT peer reviewed.
 * Use [this template](hw08_bivariate_inference_template.Rmd) to answer the questions. 
     - Save the file as `userid_bivariate.Rmd`
 * As you complete each question 
@@ -63,7 +62,7 @@ library(ggplot2)
 library(pander)
 library(scales)
 
-load("C:/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
+load("~/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
 ```
 
 ----
