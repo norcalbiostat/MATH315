@@ -92,17 +92,20 @@ Here are a list of topics to review. All topics have equal importance, regardles
 * **Class Attendance Required**: Due to a large number of people missing class lately, for the rest of the semester I will be taking attendance. You cannot work as a team if you don't bother to show up to class at the same time. 
     - We only have a few weeks left in the semester. This is a critical time in your project development. 
 
+--->
 
 ### 10/30/17 - [Week 11](https://norcalbiostat.github.io/MATH315/wk/wk11.html)
 
-* What happens if we add a third variable to the mix? 
-* How can we tell if a third variable changes our bivariate relationship in question? 
+* Some final thoughts about regression models
+    - explanatory vs predictive
+    - how to measure model fit - coefficient of determination $R^2$
+    - how outliers can affect the model
 * What's the difference between an Observational study and an Experiment? 
-* Examples of publication bias
-    - https://twitter.com/eturnermd1/status/737436322344927232
-    - http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001189#s4 
-    
---->
+    - why can't we make causal statements on observational studies? 
+* Buliding multiple variable models 
+    - how adding additional measures into a regression model acts as a "control"
+    - expressing multiple regression models mathematically
+* Confounding variables - how a third variable can "explain" the relationship between two other variables
 
 ### 10/29/18 - [Week 10](https://norcalbiostat.github.io/MATH315/wk/wk10.html)
 

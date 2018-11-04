@@ -21,15 +21,7 @@ You will perform <span style="color:blue">2</span> regression analyses in this a
 
 You will then take one of the above analyses (or a new model) and 
 
-4. Add a third categorical (more than 2 levels) variable e.g.: $Q \sim Q + C$.
-
-
-#### Submission Guidelines
-
-* Use the template provided: [[RMD]](hw10_regression_template.Rmd)
-* This is an individual assignment. I expect you to work with your team/partner on this, but each person must submit their own work, and own writing. 
-* Upload to the corresponding assignment on Blackboard by the due date. 
-    - A copy of your assignment will be uploaded to the corresponding graded Google Drive Folder for you to see and learn from the work of other classmates. 
+3. Add a third categorical (more than 2 levels) variable e.g.: $Q \sim Q + C$.
 
 # Instructions
 1. Identify variables under consideration
@@ -50,9 +42,17 @@ You will then take one of the above analyses (or a new model) and
         - If it is still significant, the third variable is not a confounding variable. 
         - If it is no longer significant, the third variable is a confounding variable. This means that the third variable is explaining the relationship between the explanatory variable and the response variable.
 5. Interpret all regression coefficients except the intercept. 
-6. Write a conclusion. A structured response template is provided. 
+6. Write a conclusion using the template provided. 
 
-```{r, warning=FALSE, message=FALSE}
+
+#### Submission Guidelines
+
+* Use the template provided: [[RMD]](hw10_regression_template.Rmd)
+* This is an individual assignment. I expect you to work with your team/partner on this, but each person must submit their own work, and own writing. 
+* Upload to the corresponding assignment on Blackboard by the due date. 
+    - A copy of your assignment will be uploaded to the corresponding graded Google Drive Folder for you to see and learn from the work of other classmates. 
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
 library(knitr)
 opts_chunk$set(warning=FALSE, message=FALSE) 
 library(dplyr)
@@ -70,14 +70,14 @@ If you have a “Strongly Agree” to “Strongly Disagree” variable that you 
 
 * Quantitative outcome: Income (variable `income`). 
 * Quantitative predictor: Time you wake up in the morning (variable `wakeup`)
-* Binary confounder: Gender (variable `female_c`)
+* Binary confounder: Gender as an indicator of being female(variable `female_c`)
  
 
 ## 2. State the research Hypothesis
 
 * Null: There is no relationship between the time you wake up and your personal earnings
 * Alternative: There is a relationship between the time you wake up and your personal earnings
-* Confounder:  There is still a relationship between the time you wake up and your personal earnings, after controlling for gender. 
+* Confounder:  There is still a relationship between the time you wake up and your personal earnings, after controlling for gender
 
 
 ## 3. Fit the simple model
@@ -97,26 +97,30 @@ Fit the same multiple linear regression model and include the potential confound
 ```{r}
 lm.mod2 <- lm(income ~ wakeup + female_c, data=addhealth) 
 pander(summary(lm.mod2), digits=2)
+kable(confint(lm.mod2), digits=2)
 ```
 
+The relationship between income and wake up time is still significant after controlling for gender. Gender is not a confounder. Don't forget to calculate the confidence interval for each coefficient to use in your conclusion. 
 
-The relationship between income and wake up time is still significant after controlling for gender. Gender is not a confounder. 
+
+> Optional new package `stargazer` for printing regression models as columns. Great for comparisons, looks like journal articles. Your R code chunk header must look like this: ` ```{r, results='asis'}` and be sure to use the correct output format: `type='html'` or `type='latex'`. Vignette found at: https://www.jakeruss.com/cheatsheets/stargazer/ 
+
+```{r, results='asis'}
+library(stargazer) 
+stargazer(lm.mod1, lm.mod2,  type='latex', ci=TRUE, single.row=TRUE, digits=1, 
+          omit.stat="rsq", column.labels=c("SLR", "MLR"), model.numbers=FALSE)
+```
 
 ## 5. Interpret the regression coefficients.
 
-* $b_{1}$: Holding gender constant, for every hour later a person wakes up, their predicted average income drops by $611. 
-* $b_{2}$: Controlling for the time someone wakes up in the morning, the predicted average income for females is $8,527 lower than for males. 
+* $b_{1}$: Holding gender constant, for every hour later a person wakes up, their predicted average income drops by $611 ($318.5, $904.2). 
+* $b_{2}$: Controlling for the time someone wakes up in the morning, the predicted average income for females is $8,527 ($6,980, $10,074) lower than for males. 
 
 
 ## 6. Conclusion
 
 * Use the numerical results from the multivariable model to fill in the values in the conclusion below. 
 * Look at the Adjusted $R^{2}$ to see how much of the variance in the response you are accounting for with the predictor.
-* To get the confidence intervals for the regression coefficients you will use the function `confint()`
-
-```{r}
-kable(confint(lm.mod2), digits=2)
-```
 
 Replace the **bold** words with your variables, the `highlighted` words with data from your analysis, and choose between _conclusion options_. 
 
@@ -127,7 +131,7 @@ So the conclusion for this analysis reads:
 
 > After adjusting for the potential confounding factor of **gender**, **wake up time** ($b_{1}$ = `-611, 95% CI: (-904, -318), p<.0001`) was **significantly** and **negatively** associated with **income**. Approximately `3.2%` of the variance of **income** can be accounted for by **wake up time** after controlling for **gender**. Based on these analyses, **gender** _is not_ a confounding factor because the association between **wake up time** and **income** _is still_ significant after accounting for **gender**.
 
-Additional example interpretation
+Another example of how to write an interpretation from a different model
 
 > After adjusting for the potential confounding factor of gender, an adolescent’s weight (Beta = 1.34, 95% CI -0.53, 3.21, p = .1558) was not significantly associated with the number of cigarettes smoked in the past 30 days. Approximately 0.78% of the variance in cigarettes smoked can be accounted for by weight after controlling for gender. Based on these analyses, gender is a confounding factor because the association between weight and cigarettes smoked is no longer significant after accounting for gender. 
 
@@ -185,8 +189,8 @@ kable(
   ),
 digits=2, align = 'ccc')
 
-# Try to figure out what the functions coef() and confint() do? 
-# Type coef(log.mod.2) and conf(log.mod.2) into the console and make sure you understand what output it is giving you. Compare it to the output you receive when typing summary(log.mod.2)
+# Try to figure out what the function coef() does.
+# Type coef(log.mod.2) into the console and make sure you understand what output it is giving you. Compare it to the output you receive when typing summary(log.mod.2)
 ```
 
 * **OR = 1** = equal chance of response variable being YES given any explanatory variable value. You are not able to predict participants’ responses by knowing their explanatory variable value. This would be a non significant model when looking at the p-value for the explanatory variable in the parameter estimate table.
@@ -230,7 +234,7 @@ Additional example interpretation
 
 # Categorical predictors
 
-For any of the regression models above, or a new model if you choose, add a categorical variable with more than 2 levels.
+For any of the regression models above, or a new model if you choose, add a categorical variable with more than 2 levels.  
 * If the confounder was significant, use the multivariable model including confounder. 
 * If the confounder was not significant, use the bivariate model without the confounder. 
 * Interpret the regression coefficients for at least two levels of the categorical variable.  

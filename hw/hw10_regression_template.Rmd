@@ -9,11 +9,11 @@ output:
 
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
 library(knitr)
-opts_chunk$set(warning=FALSE, message=FALSE, fig.width=8, fig.height=4, fig.align='center')) 
+opts_chunk$set(warning=FALSE, message=FALSE, fig.width=8, fig.height=4, fig.align='center') 
 library(dplyr)
 library(ggplot2); library(gridExtra)
-library(pander) # Used for printing nice linear model tables
-panderOptions("digits", 3)
+
+# Load either pander, stargazer, or both for printing nice linear model tables
 # load your data here
 ```
 

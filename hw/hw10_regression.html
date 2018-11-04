@@ -264,20 +264,9 @@ div.tocify {
 </ul></li>
 </ol>
 <p>You will then take one of the above analyses (or a new model) and</p>
-<ol start="4" style="list-style-type: decimal">
+<ol start="3" style="list-style-type: decimal">
 <li>Add a third categorical (more than 2 levels) variable e.g.: <span class="math inline">\(Q \sim Q + C\)</span>.</li>
 </ol>
-<div id="submission-guidelines" class="section level4">
-<h4>Submission Guidelines</h4>
-<ul>
-<li>Use the template provided: <a href="hw10_regression_template.Rmd">[RMD]</a></li>
-<li>This is an individual assignment. I expect you to work with your team/partner on this, but each person must submit their own work, and own writing.</li>
-<li>Upload to the corresponding assignment on Blackboard by the due date.
-<ul>
-<li>A copy of your assignment will be uploaded to the corresponding graded Google Drive Folder for you to see and learn from the work of other classmates.</li>
-</ul></li>
-</ul>
-</div>
 </div>
 <div id="instructions" class="section level1">
 <h1>Instructions</h1>
@@ -311,15 +300,19 @@ div.tocify {
 </ul></li>
 </ul></li>
 <li>Interpret all regression coefficients except the intercept.</li>
-<li>Write a conclusion. A structured response template is provided.</li>
+<li>Write a conclusion using the template provided.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(knitr)
-opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">warning=</span><span class="ot">FALSE</span>, <span class="dt">message=</span><span class="ot">FALSE</span>) 
-<span class="kw">library</span>(dplyr)
-<span class="kw">library</span>(ggplot2); <span class="kw">library</span>(gridExtra)
-<span class="kw">library</span>(pander) <span class="co"># Used for printing nice linear model tables</span>
-<span class="kw">panderOptions</span>(<span class="st">&quot;digits&quot;</span>, <span class="dv">3</span>)
-<span class="kw">load</span>(<span class="st">&quot;C:/Box Sync/Data/AddHealth/addhealth_clean.Rdata&quot;</span>)</code></pre></div>
+<div id="submission-guidelines" class="section level4">
+<h4>Submission Guidelines</h4>
+<ul>
+<li>Use the template provided: <a href="hw10_regression_template.Rmd">[RMD]</a></li>
+<li>This is an individual assignment. I expect you to work with your team/partner on this, but each person must submit their own work, and own writing.</li>
+<li>Upload to the corresponding assignment on Blackboard by the due date.
+<ul>
+<li>A copy of your assignment will be uploaded to the corresponding graded Google Drive Folder for you to see and learn from the work of other classmates.</li>
+</ul></li>
+</ul>
+</div>
 </div>
 <div id="multiple-linear-regression" class="section level1">
 <h1>Multiple Linear Regression</h1>
@@ -329,7 +322,7 @@ opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">
 <ul>
 <li>Quantitative outcome: Income (variable <code>income</code>).</li>
 <li>Quantitative predictor: Time you wake up in the morning (variable <code>wakeup</code>)</li>
-<li>Binary confounder: Gender (variable <code>female_c</code>)</li>
+<li>Binary confounder: Gender as an indicator of being female(variable <code>female_c</code>)</li>
 </ul>
 </div>
 <div id="state-the-research-hypothesis" class="section level2">
@@ -337,7 +330,7 @@ opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">
 <ul>
 <li>Null: There is no relationship between the time you wake up and your personal earnings</li>
 <li>Alternative: There is a relationship between the time you wake up and your personal earnings</li>
-<li>Confounder: There is still a relationship between the time you wake up and your personal earnings, after controlling for gender.</li>
+<li>Confounder: There is still a relationship between the time you wake up and your personal earnings, after controlling for gender</li>
 </ul>
 </div>
 <div id="fit-the-simple-model" class="section level2">
@@ -477,22 +470,6 @@ opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">
 </tr>
 </tbody>
 </table>
-<p>The relationship between income and wake up time is still significant after controlling for gender. Gender is not a confounder.</p>
-</div>
-<div id="interpret-the-regression-coefficients." class="section level2">
-<h2>5. Interpret the regression coefficients.</h2>
-<ul>
-<li><span class="math inline">\(b_{1}\)</span>: Holding gender constant, for every hour later a person wakes up, their predicted average income drops by $611.</li>
-<li><span class="math inline">\(b_{2}\)</span>: Controlling for the time someone wakes up in the morning, the predicted average income for females is $8,527 lower than for males.</li>
-</ul>
-</div>
-<div id="conclusion" class="section level2">
-<h2>6. Conclusion</h2>
-<ul>
-<li>Use the numerical results from the multivariable model to fill in the values in the conclusion below.</li>
-<li>Look at the Adjusted <span class="math inline">\(R^{2}\)</span> to see how much of the variance in the response you are accounting for with the predictor.</li>
-<li>To get the confidence intervals for the regression coefficients you will use the function <code>confint()</code></li>
-</ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(<span class="kw">confint</span>(lm.mod2), <span class="dt">digits=</span><span class="dv">2</span>)</code></pre></div>
 <table>
 <thead>
@@ -520,13 +497,166 @@ opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">
 </tr>
 </tbody>
 </table>
+<p>The relationship between income and wake up time is still significant after controlling for gender. Gender is not a confounder. Don’t forget to calculate the confidence interval for each coefficient to use in your conclusion.</p>
+<blockquote>
+<p>Optional new package <code>stargazer</code> for printing regression models as columns. Great for comparisons, looks like journal articles. Your R code chunk header must look like this: <code>```{r, results='asis'}</code> and be sure to use the correct output format: <code>type='html'</code> or <code>type='latex'</code>. Vignette found at: <a href="https://www.jakeruss.com/cheatsheets/stargazer/" class="uri">https://www.jakeruss.com/cheatsheets/stargazer/</a></p>
+</blockquote>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(stargazer) 
+<span class="kw">stargazer</span>(lm.mod1, lm.mod2,  <span class="dt">type=</span><span class="st">'html'</span>, <span class="dt">ci=</span><span class="ot">TRUE</span>, <span class="dt">single.row=</span><span class="ot">TRUE</span>, <span class="dt">digits=</span><span class="dv">1</span>, 
+          <span class="dt">omit.stat=</span><span class="st">&quot;rsq&quot;</span>, <span class="dt">column.labels=</span><span class="kw">c</span>(<span class="st">&quot;SLR&quot;</span>, <span class="st">&quot;MLR&quot;</span>), <span class="dt">model.numbers=</span><span class="ot">FALSE</span>)</code></pre></div>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+income
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+SLR
+</td>
+<td>
+MLR
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+wakeup
+</td>
+<td>
+-487.7<sup>***</sup> (-784.1, -191.3)
+</td>
+<td>
+-611.3<sup>***</sup> (-904.2, -318.5)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+female_cFemale
+</td>
+<td>
+</td>
+<td>
+-8,527.1<sup>***</sup> (-10,074.1, -6,980.1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+43,548.4<sup>***</sup> (41,341.0, 45,755.8)
+</td>
+<td>
+48,669.4<sup>***</sup> (46,303.9, 51,035.0)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+3,814
+</td>
+<td>
+3,813
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.002
+</td>
+<td>
+0.03
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+24,666.5 (df = 3812)
+</td>
+<td>
+24,297.2 (df = 3810)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+10.4<sup>***</sup> (df = 1; 3812)
+</td>
+<td>
+63.7<sup>***</sup> (df = 2; 3810)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+</div>
+<div id="interpret-the-regression-coefficients." class="section level2">
+<h2>5. Interpret the regression coefficients.</h2>
+<ul>
+<li><span class="math inline">\(b_{1}\)</span>: Holding gender constant, for every hour later a person wakes up, their predicted average income drops by $611 ($318.5, $904.2).</li>
+<li><span class="math inline">\(b_{2}\)</span>: Controlling for the time someone wakes up in the morning, the predicted average income for females is $8,527 ($6,980, $10,074) lower than for males.</li>
+</ul>
+</div>
+<div id="conclusion" class="section level2">
+<h2>6. Conclusion</h2>
+<ul>
+<li>Use the numerical results from the multivariable model to fill in the values in the conclusion below.</li>
+<li>Look at the Adjusted <span class="math inline">\(R^{2}\)</span> to see how much of the variance in the response you are accounting for with the predictor.</li>
+</ul>
 <p>Replace the <strong>bold</strong> words with your variables, the <code>highlighted</code> words with data from your analysis, and choose between <em>conclusion options</em>.</p>
 <p>After adjusting for the potential confounding factor of <strong>third variable</strong>, <strong>explanatory variable</strong> (b1 = <code>parameter estimate, CI confidence interval range, p = significance value</code>) was *<strong>significantly/not significantly</strong> and <strong>positively/negatively</strong> associated with <strong>response variable</strong>. Approximately <code>R-Square*100</code> of the variance of <strong>response</strong> can be accounted for by <strong>explanatory</strong> after controlling for <strong>third variable</strong>. Based on these analyses, <strong>third variable</strong> <em>is not/is</em> a confounding factor because the association between <strong>explanatory</strong> and <strong>response</strong> <em>is still/is no longer</em> significant after accounting for <strong>third variable</strong>.</p>
 <p>So the conclusion for this analysis reads:</p>
 <blockquote>
 <p>After adjusting for the potential confounding factor of <strong>gender</strong>, <strong>wake up time</strong> (<span class="math inline">\(b_{1}\)</span> = <code>-611, 95% CI: (-904, -318), p&lt;.0001</code>) was <strong>significantly</strong> and <strong>negatively</strong> associated with <strong>income</strong>. Approximately <code>3.2%</code> of the variance of <strong>income</strong> can be accounted for by <strong>wake up time</strong> after controlling for <strong>gender</strong>. Based on these analyses, <strong>gender</strong> <em>is not</em> a confounding factor because the association between <strong>wake up time</strong> and <strong>income</strong> <em>is still</em> significant after accounting for <strong>gender</strong>.</p>
 </blockquote>
-<p>Additional example interpretation</p>
+<p>Another example of how to write an interpretation from a different model</p>
 <blockquote>
 <p>After adjusting for the potential confounding factor of gender, an adolescent’s weight (Beta = 1.34, 95% CI -0.53, 3.21, p = .1558) was not significantly associated with the number of cigarettes smoked in the past 30 days. Approximately 0.78% of the variance in cigarettes smoked can be accounted for by weight after controlling for gender. Based on these analyses, gender is a confounding factor because the association between weight and cigarettes smoked is no longer significant after accounting for gender.</p>
 </blockquote>
@@ -565,9 +695,9 @@ opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">
 ## -0.7064  -0.7064  -0.7064  -0.6210   1.8659  
 ## 
 ## Coefficients:
-##                   Estimate Std. Error z value Pr(&gt;|z|)    
-## (Intercept)       -1.54800    0.06444 -24.021  &lt; 2e-16 ***
-## eversmoke_cSmoker  0.28711    0.07737   3.711 0.000207 ***
+##                                 Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)                     -1.54800    0.06444 -24.021  &lt; 2e-16 ***
+## eversmoke_cSmoked at least once  0.28711    0.07737   3.711 0.000207 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
@@ -596,10 +726,10 @@ opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">
 ## -0.8335  -0.7048  -0.5652  -0.4716   2.1221  
 ## 
 ## Coefficients:
-##                   Estimate Std. Error z value Pr(&gt;|z|)    
-## (Intercept)       -2.14045    0.08662  -24.71  &lt; 2e-16 ***
-## eversmoke_cSmoker  0.38725    0.07886    4.91 9.09e-07 ***
-## female_cFemale     0.87450    0.07690   11.37  &lt; 2e-16 ***
+##                                 Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)                     -2.14045    0.08662  -24.71  &lt; 2e-16 ***
+## eversmoke_cSmoked at least once  0.38725    0.07886    4.91 9.09e-07 ***
+## female_cFemale                   0.87450    0.07690   11.37  &lt; 2e-16 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
@@ -641,7 +771,7 @@ opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">
 <td align="center">0.14</td>
 </tr>
 <tr class="even">
-<td>eversmoke_cSmoker</td>
+<td>eversmoke_cSmoked at least once</td>
 <td align="center">1.47</td>
 <td align="center">1.26</td>
 <td align="center">1.72</td>
@@ -654,8 +784,8 @@ opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">
 </tr>
 </tbody>
 </table>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Try to figure out what the functions coef() and confint() do? </span>
-<span class="co"># Type coef(log.mod.2) and conf(log.mod.2) into the console and make sure you understand what output it is giving you. Compare it to the output you receive when typing summary(log.mod.2)</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Try to figure out what the function coef() does.</span>
+<span class="co"># Type coef(log.mod.2) into the console and make sure you understand what output it is giving you. Compare it to the output you receive when typing summary(log.mod.2)</span></code></pre></div>
 <ul>
 <li><strong>OR = 1</strong> = equal chance of response variable being YES given any explanatory variable value. You are not able to predict participants’ responses by knowing their explanatory variable value. This would be a non significant model when looking at the p-value for the explanatory variable in the parameter estimate table.</li>
 <li><strong>OR &gt; 1</strong> = as the explanatory variable value increases, the presence of a YES response is more likely. We can say that when a participant’s response to the explanatory variable is YES (1), they are more likely to have a response that is a YES (1).</li>
@@ -692,7 +822,8 @@ opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">
 </div>
 <div id="categorical-predictors" class="section level1">
 <h1>Categorical predictors</h1>
-<p>For any of the regression models above, or a new model if you choose, add a categorical variable with more than 2 levels. * If the confounder was significant, use the multivariable model including confounder. * If the confounder was not significant, use the bivariate model without the confounder. * Interpret the regression coefficients for at least two levels of the categorical variable.</p>
+<p>For any of the regression models above, or a new model if you choose, add a categorical variable with more than 2 levels.<br />
+* If the confounder was significant, use the multivariable model including confounder. * If the confounder was not significant, use the bivariate model without the confounder. * Interpret the regression coefficients for at least two levels of the categorical variable.</p>
 <div id="identify-variables-and-their-data-type" class="section level2">
 <h2>1. Identify variables and their data type</h2>
 <ul>
