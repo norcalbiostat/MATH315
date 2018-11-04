@@ -94,7 +94,7 @@ Here are a list of topics to review. All topics have equal importance, regardles
 
 --->
 
-### 10/30/17 - [Week 11](https://norcalbiostat.github.io/MATH315/wk/wk11.html)
+### 11/5/18 - [Week 11](https://norcalbiostat.github.io/MATH315/wk/wk11.html)
 
 * Some final thoughts about regression models
     - explanatory vs predictive
