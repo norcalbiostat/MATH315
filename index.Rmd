@@ -74,25 +74,33 @@ Here are a list of topics to review. All topics have equal importance, regardles
     - Read Open Intro 8.4: Intro to Logistic Regression
 * Model building
     - Read Open Intro 8.2: Model Selection
-* Friday Statistics Seminar. Extra credit opportunity. 
-    - Robert Weiss, UCLA Biostatistics. 
-    - Talk on comparing the efficacy between two biologic compounds for FDA approval
-    - Friday 3:30, refreshments at 3, Holt 175. 
-* R Cheat sheets have been added to the FAQ page
-
-
-
-### 11/6/17 - [Week 12](https://norcalbiostat.github.io/MATH315/wk/wk12.html)
-* Identifying confounders
-* Adding and interpreting categorical predictors
-* Poster updates
-    - Start testing the relationship for your RQ for moderators and confounders. 
-    - Homework $\neq$ poster. Don't go overboard, but you are likely to need to do additional analyses for your poster. 
-    - Keep your RQ in mind - focus on answering a single RQ. One outcome. 
-* **Class Attendance Required**: Due to a large number of people missing class lately, for the rest of the semester I will be taking attendance. You cannot work as a team if you don't bother to show up to class at the same time. 
-    - We only have a few weeks left in the semester. This is a critical time in your project development. 
-
+*
 --->
+
+### 11/26/18 - [Week 13](https://norcalbiostat.github.io/MATH315/wk/wk13.html)
+<span style="color:red">**Summary of schedule updates**</span>   
+
+* [Regression assignment](hw/hw10_regression.html) has been re-written and cut down significantly. 
+* Poster prep stage III will not have a peer review
+* Final we be take home, poster presentations will occur during the 2 hour final period. 
+
+This week, let's ease back into things. Try to come back to "normal", when life is anything but normal.  
+
+* Monday- Section review, recap, reorient
+* Wednesday - Logistic Regression (**RAT** - be sure to watch PDS video ahead of time)
+* Friday - Building interaction models
+
+
+
+### 11/19/18 - Fall Break. 
+* Don't think about school, assignments or anything. 
+* Please take some time to be among your family and practice self care in this incredibly stressful time. 
+
+### 11/12/18 - Week 12 - Campus closed due to the Camp Fire
+* Please check in with me on Slack or email to let me know you're OK (or if you're not OK. I want to know that too!)
+* If you lived in the fire affected area please let me know. I want to support you in any way I can to finish the semester. Please check out campus resources: https://www.csuchico.edu/campfire/assistance.shtml 
+* If you were not affected, please consider volunteering to help out those that have been, and/or helping raise funds through the Wildcats Rise Fire recovery fund https://app.mobilecause.com/vf/WildcatsRise 
+
 
 ### 11/5/18 - [Week 11](https://norcalbiostat.github.io/MATH315/wk/wk11.html)
 
@@ -105,7 +113,7 @@ Here are a list of topics to review. All topics have equal importance, regardles
 * Buliding multiple variable models 
     - how adding additional measures into a regression model acts as a "control"
     - expressing multiple regression models mathematically
-* Confounding variables - how a third variable can "explain" the relationship between two other variables
+* Friday: Campus closed
 
 ### 10/29/18 - [Week 10](https://norcalbiostat.github.io/MATH315/wk/wk10.html)
 

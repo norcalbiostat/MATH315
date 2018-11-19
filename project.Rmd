@@ -82,12 +82,14 @@ You will organize your research in stages by building a "powerpoint" type presen
 * Your presentation should be limited to approximately 16-18 slides. The contents of each slide are listed below. 
 
 
-## <span style="color:blue">**Stage 1**</span>
+#### <span style="color:blue">**Stage 1: Background and sample characteristics**</span>
+Lecture notes on writing about empirical research: https://norcalbiostat.github.io/MATH615/lecture/lec02b_writing_em.html 
+
 1. Title 
 2. Introduction 
 3. Background & lit review. 
-4. Explain the research problem
-5. State your Research Question. 
+4. Explain the research problem / topic area
+5. State your Research Question as a testable hypothesis. 
 6. Introduce the data. Where does it come from, how was it collected. How many records? 
 7. Description of measures (variables) being used. Explain any recoding and/or altering that was done. 
     - This refers to significant changes to the data (making new variables, dichotomizing or categorizing existing variables)
@@ -98,55 +100,65 @@ You will organize your research in stages by building a "powerpoint" type presen
 8. Fully describe your main explanatory variable univariately using summary statistics and graphics. 
 9. Fully describe your main response variable univariately using summary statistics and graphics. 
 
-## <span style="color:blue">**Stage 2**</span>
-Slide 10-11: Bivariate graphics and analysis. 
+#### <span style="color:blue">**Stage 2: Bivariate analysis**</span>
 
-Each slide should contain the following:  
+Two analyses, one per slide. Each slide should contain the following:  
 
 1. A fully labeled and cleaned up plot demonstrating the bivariate relationship under consideration.
-2. The results of an appropriate bivariate analysis. This should be a conclusion written in english, includes a confidence interval and a p-value. You also need to state the name of the test you used. 
+2. The results of an appropriate bivariate analysis. 
+    - This should be a conclusion written in English, includes a confidence interval and a p-value. 
+    - You also need to state the name of the test you used. 
 
-Refer to the [Bivariate Inference](notes.html) assignment on how to conduct and interpret these bivariate analyses.
+#### <span style="color:blue">**Stage 3: Multivariable analysis**</span>
 
-## <span style="color:blue">**Stage 3**</span>
+You are trying to understand the relationship between your explanatory and response variable, in presence of information contained in other variables. 
 
-Slide 12-13:  Multivariate Analysis
-
-You are trying to understand the relationship between your explanatory and response variable, in presenece of information contained in other variables. 
-
-**Testing for moderators, and confounders**
+**Slide 12: Testing for moderators**
 
 * Moderation:
     - If you found a moderator: Remove the bivariate graph and write up from your poster and replace with explanation of moderator and graph of significant bivariate at the 3rd variable level.
     - If you did NOT find a moderator: Include a slide stating what relationships you tested for moderation and with what variable to see if it was a moderator, explaining that it was not a moderator. No graphs needed
+
+<!---
 * Confounding: 
     - If you found a confounder: on slide with bivariate relationship that was confounded put a bullet point that explains what variable confounded the relationship and put the written results that are shown in the confounding assignment on how to write results. Make sure to explain if it helped improve prediction of response variable. 
     - If you did NOT find a confounder: Include a slide stating what relationships you tested for confounds and with what variable to see if it was a confound, explaining that it was not a moderator. Make sure to explain if it helped improve prediction of response variable. 
+--->
 
-**Building a Multivariable Model**
+**Slide 13: Results from a Multivariable Model**
 
-* If no confounders or modifiers were found, you should build a multivariable model. 
-* Include any third variables that were found to be significantly associated with the outcome (but not modifiers or confounders)
-* A table or a graphic of coefficients must be presented. 
-    - The `coefplot()` function in the `arm` package is an excellent way of displaying the results of a multivariable model. Here is a [blog post on coefplot](https://druedin.com/2015/02/28/how-to-create-coefficient-plots-in-r-the-easy-way/), and [another one](https://www.r-bloggers.com/coefplot-new-package-for-plotting-model-coefficients/). It's pretty straightforward to create: `my.model <- lm(your model here)` then call `coefplot(my.model)`, 
-    - At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
+* Build a multivariable model by adding additional predictors to the model. 
+    - See the lecture notes on model building as guidance. 
+    - Include any variables that were found to be significantly associated with the outcome
+    - If you found a moderator, your model should include an interaction term with your moderating variable.
+* A table or a graphic of the regression coefficients (or Odds Ratios) must be presented. 
+    - Make tables in Excel or Powerpoint directly. Do not copy R output
+* At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
 
-Slide 14. **Discussion**
+
+**Slide 14. Discussion**
 
 * Here you will explain what your graphical and inferential results tell you about your topic.
 * Discuss if your research hypothesis was supported, if it was not, why you think that might be
 * Explain the overall story/trend/what you learned when you consider your univariate, bivariate & multivariate results about your topic.
 * Compare your results to previous research results. Do they agree or disagree? 
 
-Slide 15. **Implications**
+**Slide 15. Implications**
 
 * What are the practical implications of your results?
 * What could others do with your findings? 
 * What future research needs to be conducted?
     - This needs to be more specific than "other variables could be explored". Which variables and why? What other research articles indicate that those other variables are relevant? 
 
+**Slide 16. Limitations**
 
-Slide 16. **References**  
+* Who are the results of this study generalizable to? (i.e. a subset of individuals?)
+* Were there any model assumptions that were not upheld? 
+* If this is an observational study, you should make a statement about the findings are associations and not causal in nature
+* Are there other factors that could exlain your response variable that you did not include in your model? 
+
+
+**Slide 17. References**  
 
 * You can use smaller font to get all references on one slide.
 * Use references from research plan, and any additional references gathered along the way. 
@@ -159,75 +171,47 @@ Slide 16. **References**
     - [How to cite software in Text](http://blog.apastyle.org/apastyle/2015/01/how-to-cite-software-in-apa-style.html)
     
 
+----
 
-# Final Posters
-* You will transfer all findings into a research poster, and then present your research to your classmates. 
-    - We will split the class in half. When not presneting, you will be scoring the other half of the class's posters. 
+
+# Posters Presentations
+
+* You will transfer all findings into a research poster, print the poster, and then present your research to your classmates. 
+    - We will split the class in half. When not presenting, you will be scoring the other half of the class's posters. 
 * All posters must be built in Powerpoint. No exceptions.
-* Use these [poster guidelines](https://norcalbiostat.netlify.com/lec/poster_guidelines/) to see templates and develop your poster.
+* Use these [poster guidelines](https://norcalbiostat.netlify.com/lec/poster_guidelines/) to see templates and guidance on how to make an effective poster.
 
 
-## Draft version
+### Draft version
 * This draft is graded on how complete the poster is. You should consider this a draft that you would circulate to your colleagues for final review and comments. 
-* Use the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria) as a guide for what I am looking for.  
-* **Submit your poster draft** to [this Dropbox folder](https://www.dropbox.com/request/7pWvRwRGM1wRqCAl3jCB). 
-* **Peer Review** 
-    - Download your Assigned poster to review. 
-    - Write the comments directly into the poster file itself. 
+* Use the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria) as a guide for what I am looking for.
+* This assignment is graded in Blackboard using a rubric - be sure to look at this before you submit. 
+    - Points are awarded based off how close to presentation quality your poster is by the time the draft is due. 
+    - Basically the more work I think you need to put into your poster to make it presentable, the lower the points you get for the draft. 
+
+
+**Submission and Peer Review Instructions**
+
+* Upload your draft (PPTX or PDF) to the `Google Drive/Project Poster Drafts` folder
+    - Name this file `authorname_poster_draft.pptx`
+* Drop a note in Blackboard to say this assignment is complete.  
+* To conduct your peer review: 
+    - Download your assigned posters to review. 
+    - Use the comment  feature to write the comments directly into the poster file itself. 
     - provide at least two specific comments for each
         - something that can be improved
         - something that is good
-    - Save this file with your initials at the end of the file name. 
-* **Upload your revision** to [this Google folder](https://drive.google.com/drive/folders/1_CWqJt0L9QUguxWwcaNaH84ctkLTQlS7?usp=sharing). 
-
-<button data-toggle="collapse" data-target="#draft">Show/Hide Drafts for Review</button> 
-
-<div id="draft" class="collapse"> 
-#### Poster drafts to review. 
-```{r, message=FALSE, warning=FALSE}
-library(stringr); library(dplyr)
-library(knitr); library(kableExtra)
-
-dta <- data.frame(filenames = paste0('PosterDraft/', list.files("PosterDraft/")))
-
-out <- dta %>% mutate(name = gsub("PosterDraft/",  "", filenames),
-                      link = sprintf("[%s](%s)",name, filenames)) %>%
-               select(link)
-
-x = kable(out, format="html") %>%
-    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), 
-                  full_width=FALSE,  position = "left")
-gsub("<thead>.*</thead>", "", x)
-```
-
-</div>
+    - Save this file with your initials at the end of the file name.  `authorname_poster_draft_RAD.pptx` 
+* Upload your revision to the `Google Drive/Project Poster Drafts/Reviewed` folder
 
 
-<br><br>
 
-## Poster Presentations
-* Upload your final poster to [this Dropbox folder](https://www.dropbox.com/request/NtC88NHRbo5oIyRcSxoD). PDF preferred. PPTX ok.
-* Scoring will be done via [Google Forms](https://goo.gl/forms/QORgO0jjqNzp3T5i2). It looks exactly like the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria).
-    - When not presenting, you will walk around and learn about others research. Ask them questions, fill out the evaluation on your phone as you go. Printed copies will be available upon request. 
+### Final Version
+* Upload your final poster (as printed) to Blackboard Learn
+    - PDF preferred. PPTX ok.
+* Scoring will be done via [Google Forms](https://goo.gl/forms/FwFw06eKDrYG0t503). It looks exactly like the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria).
+    - When not presenting, you will walk around and learn about others research. Ask them questions, fill out the evaluation on your phone as you go. Printed copies will be available upon request so you can submit later. 
 * The final grade will be determined by
     - Base score = **30%** student score + **70%** instructor score **+ bonus pts** for best in show awards **- 1** point penalty for each day late. 
 
-<button data-toggle="collapse" data-target="#final">Show/Hide Final Versions</button>
-<div id="final" class="collapse">
-
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
-dta <- data.frame(filenames = paste0('FinalPoster/', list.files("FinalPoster/")))
-
-out <- dta %>% mutate(name = gsub("FinalPoster/",  "", filenames),
-                      link = sprintf("[%s](%s)",name, filenames)) %>%
-               select(link)
-
-x = kable(out, format="html") %>%
-    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), 
-                  full_width=FALSE,  position = "left")
-gsub("<thead>.*</thead>", "", x)
-
-```
-
-</div>
 

@@ -251,68 +251,29 @@ div.tocify {
 
 <div id="assignment-overview" class="section level1">
 <h1>Assignment Overview</h1>
-<p>You will perform <span style="color:blue">2</span> regression analyses in this assignment. For each you will interpret the regression coefficients, and test for a potential confounder <span class="math inline">\(Z\)</span>.</p>
+<p>You will perform <span style="color:blue">3</span> regression analyses in this assignment. The variable types for the coefficients are pre-specified so that you can practice interpretations of different types of variables. <strong>You must use the variable types listed here</strong></p>
 <ol style="list-style-type: decimal">
-<li>Multiple Linear Regression: <span class="math inline">\(Q \sim X + Z\)</span>
-<ul>
-<li>For this assignment choose a quantitative <span class="math inline">\(X\)</span> and a binary confounder <span class="math inline">\(Z\)</span>, where the bivariate <span class="math inline">\(Q \sim Q\)</span> relationship is significant.</li>
-</ul></li>
-<li>Logistic Regression: <span class="math inline">\(logit(B) \sim X + Z\)</span>
-<ul>
-<li>Your binary response variable <span class="math inline">\(Y\)</span> must be coded as 1 (event) and 0 (non-event).</li>
-<li>For this assignment, choose a binary <span class="math inline">\(X\)</span> and a binary confounder <span class="math inline">\(Z\)</span>.</li>
-</ul></li>
-</ol>
-<p>You will then take one of the above analyses (or a new model) and</p>
-<ol start="3" style="list-style-type: decimal">
-<li>Add a third categorical (more than 2 levels) variable e.g.: <span class="math inline">\(Q \sim Q + C\)</span>.</li>
+<li>Multiple Linear Regression: <span class="math inline">\(Q \sim Q + B\)</span> (one quantitative and one binary predictor)</li>
+<li>Logistic Regression: <span class="math inline">\(logit(B) \sim Q + B\)</span></li>
+<li>Either of the two above analyses (or a new model) add a third categorical (more than 2 levels) variable e.g.: <span class="math inline">\(Q \sim Q + B + C\)</span>. (one quantitative, one binary, one categorical)</li>
 </ol>
 </div>
 <div id="instructions" class="section level1">
 <h1>Instructions</h1>
-<ol style="list-style-type: decimal">
-<li>Identify variables under consideration
-<ul>
-<li>Determine a third variable <span class="math inline">\(Z\)</span> that you want to test as a potential confounder.<br />
-</li>
-<li>Consider the relationship and ask yourself: “<em>If I had to predict a future persons response based on the Predictor/Explanatory variable and some other variable(s), what would they be?</em>”</li>
-<li><span style="color:red">For the purposes of this assignment your potential confounder <span class="math inline">\(Z\)</span> must be binary</span>. In reality, confounders, covariates, mediators, and moderators can come in all data types.</li>
-</ul></li>
-<li>Write out the null, alternative, and confounder Hypotheses statements.
-<ul>
-<li><strong>Null</strong> - that there is no relationship between response and explanatory variables</li>
-<li><strong>Alternative</strong> - that there is a relationship between response and explanatory variables.</li>
-<li><strong>Confounder</strong> - that there is a relationship between response and explanatory variables after controlling for the confounding variable.</li>
-</ul></li>
-<li>Fit the simple model
-<ul>
-<li>Model the response variable on the explanatory variable <code>y ~ x</code></li>
-<li>Determine if you are going to reject the null in favor of the alternative.</li>
-</ul></li>
-<li>Fit the multivariable model.
-<ul>
-<li>Only do this if you rejected the null.</li>
-<li>Model the response variable on the explanatory variable and the third variable. <code>y ~ x + z</code></li>
-<li>Determine if <span class="math inline">\(Z\)</span> is a confounder by looking at the p-value for the explanatory variable.
-<ul>
-<li>If it is still significant, the third variable is not a confounding variable.</li>
-<li>If it is no longer significant, the third variable is a confounding variable. This means that the third variable is explaining the relationship between the explanatory variable and the response variable.</li>
-</ul></li>
-</ul></li>
-<li>Interpret all regression coefficients except the intercept.</li>
-<li>Write a conclusion using the template provided.</li>
+<ol start="0" style="list-style-type: decimal">
+<li>Use the template provided: <a href="10_MLR_template.Rmd">[RMD]</a> for R users, and <a href="10_MLR_template.docx">[Word]</a> for SPSS users.</li>
+<li>Identify variables under consideration.</li>
+<li>Write the mathematical model being fit by using LaTeX script (example below) directly in the Rmarkdown file. (Not in a code chunk, and yes the two dollar signs are necessary.)</li>
 </ol>
-<div id="submission-guidelines" class="section level4">
-<h4>Submission Guidelines</h4>
+<p><code>$$y_{i} \sim \beta_{0} + \beta_{1}x_{1i} + \beta_{2}x_{2i} + \epsilon_{i}$$</code></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Fit the model and calculate confidence intervals for the coefficients.</li>
+<li>Interpret all regression coefficients except the intercept.
 <ul>
-<li>Use the template provided: <a href="hw10_regression_template.Rmd">[RMD]</a></li>
-<li>This is an individual assignment. I expect you to work with your team/partner on this, but each person must submit their own work, and own writing.</li>
-<li>Upload to the corresponding assignment on Blackboard by the due date.
-<ul>
-<li>A copy of your assignment will be uploaded to the corresponding graded Google Drive Folder for you to see and learn from the work of other classmates.</li>
+<li>For logistic regression, calculate and interpret the Odds Ratios</li>
 </ul></li>
-</ul>
-</div>
+</ol>
+<hr />
 </div>
 <div id="multiple-linear-regression" class="section level1">
 <h1>Multiple Linear Regression</h1>
@@ -320,235 +281,82 @@ div.tocify {
 <h2>1. Identify variables</h2>
 <p>If you have a “Strongly Agree” to “Strongly Disagree” variable that you have kept all 5 levels, you can treat it as a Quantitative Variable.</p>
 <ul>
-<li>Quantitative outcome: Income (variable <code>income</code>).</li>
-<li>Quantitative predictor: Time you wake up in the morning (variable <code>wakeup</code>)</li>
-<li>Binary confounder: Gender as an indicator of being female(variable <code>female_c</code>)</li>
+<li>Quantitative outcome (<span class="math inline">\(y\)</span>): Income (variable <code>income</code>).</li>
+<li>Quantitative predictor (<span class="math inline">\(x_{1}\)</span>): Time you wake up in the morning (variable <code>wakeup</code>)</li>
+<li>Binary predictor (<span class="math inline">\(x_{2}\)</span>): Gender of individual as an indicator of being female (variable <code>gender</code>, 0=male, 1=female)</li>
 </ul>
 </div>
-<div id="state-the-research-hypothesis" class="section level2">
-<h2>2. State the research Hypothesis</h2>
-<ul>
-<li>Null: There is no relationship between the time you wake up and your personal earnings</li>
-<li>Alternative: There is a relationship between the time you wake up and your personal earnings</li>
-<li>Confounder: There is still a relationship between the time you wake up and your personal earnings, after controlling for gender</li>
-</ul>
-</div>
-<div id="fit-the-simple-model" class="section level2">
-<h2>3. Fit the simple model</h2>
-<p>Is there a relationship between income and time a person wakes up?</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">lm.mod1 &lt;-<span class="st"> </span><span class="kw">lm</span>(income <span class="op">~</span><span class="st"> </span>wakeup, <span class="dt">data=</span>addhealth) 
-<span class="kw">pander</span>(<span class="kw">summary</span>(lm.mod1), <span class="dt">digits=</span><span class="dv">2</span>)</code></pre></div>
-<table style="width:86%;">
-<colgroup>
-<col width="25%"></col>
-<col width="15%"></col>
-<col width="18%"></col>
-<col width="13%"></col>
-<col width="13%"></col>
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center"> </th>
-<th align="center">Estimate</th>
-<th align="center">Std. Error</th>
-<th align="center">t value</th>
-<th align="center">Pr(&gt;|t|)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><strong>(Intercept)</strong></td>
-<td align="center">43548</td>
-<td align="center">1126</td>
-<td align="center">39</td>
-<td align="center">3e-276</td>
-</tr>
-<tr class="even">
-<td align="center"><strong>wakeup</strong></td>
-<td align="center">-488</td>
-<td align="center">151</td>
-<td align="center">-3.2</td>
-<td align="center">0.0013</td>
-</tr>
-</tbody>
-</table>
-<table style="width:88%;">
-<caption>Fitting linear model: income ~ wakeup</caption>
-<colgroup>
-<col width="20%"></col>
-<col width="30%"></col>
-<col width="13%"></col>
-<col width="22%"></col>
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center">Observations</th>
-<th align="center">Residual Std. Error</th>
-<th align="center"><span class="math inline">\(R^2\)</span></th>
-<th align="center">Adjusted <span class="math inline">\(R^2\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">3814</td>
-<td align="center">24666</td>
-<td align="center">0.00272</td>
-<td align="center">0.00246</td>
-</tr>
-</tbody>
-</table>
-<p>The estimate of the regression coefficient for <code>wakeup</code> is significant (b1=-488, p= 0.001). There is reason to believe that the time you wakeup is associated with your income.</p>
+<div id="write-the-mathematical-model" class="section level2">
+<h2>2. Write the mathematical model</h2>
+<p><span class="math display">\[y_{i} \sim \beta_{0} + \beta_{1}x_{1i} + \beta_{2}x_{2i} + \epsilon_{i}\]</span></p>
 </div>
 <div id="fit-the-multivariable-model" class="section level2">
-<h2>4. Fit the multivariable model</h2>
-<p>Fit the same multiple linear regression model and include the potential confounding variable. Determine if the third variable is a confounder.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">lm.mod2 &lt;-<span class="st"> </span><span class="kw">lm</span>(income <span class="op">~</span><span class="st"> </span>wakeup <span class="op">+</span><span class="st"> </span>female_c, <span class="dt">data=</span>addhealth) 
-<span class="kw">pander</span>(<span class="kw">summary</span>(lm.mod2), <span class="dt">digits=</span><span class="dv">2</span>)</code></pre></div>
-<table style="width:90%;">
-<colgroup>
-<col width="29%"></col>
-<col width="15%"></col>
-<col width="18%"></col>
-<col width="13%"></col>
-<col width="13%"></col>
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center"> </th>
-<th align="center">Estimate</th>
-<th align="center">Std. Error</th>
-<th align="center">t value</th>
-<th align="center">Pr(&gt;|t|)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><strong>(Intercept)</strong></td>
-<td align="center">48669</td>
-<td align="center">1207</td>
-<td align="center">40</td>
-<td align="center">2.1e-296</td>
-</tr>
-<tr class="even">
-<td align="center"><strong>wakeup</strong></td>
-<td align="center">-611</td>
-<td align="center">149</td>
-<td align="center">-4.1</td>
-<td align="center">4.4e-05</td>
-</tr>
-<tr class="odd">
-<td align="center"><strong>female_cFemale</strong></td>
-<td align="center">-8527</td>
-<td align="center">789</td>
-<td align="center">-11</td>
-<td align="center">8.1e-27</td>
-</tr>
-</tbody>
-</table>
-<table style="width:86%;">
-<caption>Fitting linear model: income ~ wakeup + female_c</caption>
-<colgroup>
-<col width="20%"></col>
-<col width="30%"></col>
-<col width="12%"></col>
-<col width="22%"></col>
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center">Observations</th>
-<th align="center">Residual Std. Error</th>
-<th align="center"><span class="math inline">\(R^2\)</span></th>
-<th align="center">Adjusted <span class="math inline">\(R^2\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">3813</td>
-<td align="center">24297</td>
-<td align="center">0.0324</td>
-<td align="center">0.0318</td>
-</tr>
-</tbody>
-</table>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(<span class="kw">confint</span>(lm.mod2), <span class="dt">digits=</span><span class="dv">2</span>)</code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th></th>
-<th align="right">2.5 %</th>
-<th align="right">97.5 %</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>(Intercept)</td>
-<td align="right">46303.12</td>
-<td align="right">51035.72</td>
-</tr>
-<tr class="even">
-<td>wakeup</td>
-<td align="right">-904.24</td>
-<td align="right">-318.41</td>
-</tr>
-<tr class="odd">
-<td>female_cFemale</td>
-<td align="right">-10074.58</td>
-<td align="right">-6979.58</td>
-</tr>
-</tbody>
-</table>
-<p>The relationship between income and wake up time is still significant after controlling for gender. Gender is not a confounder. Don’t forget to calculate the confidence interval for each coefficient to use in your conclusion.</p>
+<h2>3. Fit the multivariable model</h2>
+<p>Don’t forget to calculate the confidence interval for each coefficient to use in your conclusion.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">lm.mod &lt;-<span class="st"> </span><span class="kw">lm</span>(income <span class="op">~</span><span class="st"> </span>wakeup <span class="op">+</span><span class="st"> </span>female_c, <span class="dt">data=</span>addhealth) 
+<span class="kw">summary</span>(lm.mod)</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = income ~ wakeup + female_c, data = addhealth)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -36047 -15141  -5252   8678 205610 
+## 
+## Coefficients:
+##                Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)     48669.4     1206.9  40.325  &lt; 2e-16 ***
+## wakeup           -611.3      149.4  -4.092 4.37e-05 ***
+## female_cFemale  -8527.1      789.3 -10.803  &lt; 2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 24300 on 3810 degrees of freedom
+##   (2691 observations deleted due to missingness)
+## Multiple R-squared:  0.03236,    Adjusted R-squared:  0.03185 
+## F-statistic:  63.7 on 2 and 3810 DF,  p-value: &lt; 2.2e-16</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">confint</span>(lm.mod)</code></pre></div>
+<pre><code>##                      2.5 %     97.5 %
+## (Intercept)     46303.1191 51035.7225
+## wakeup           -904.2448  -318.4088
+## female_cFemale -10074.5798 -6979.5823</code></pre>
 <blockquote>
 <p>Optional new package <code>stargazer</code> for printing regression models as columns. Great for comparisons, looks like journal articles. Your R code chunk header must look like this: <code>```{r, results='asis'}</code> and be sure to use the correct output format: <code>type='html'</code> or <code>type='latex'</code>. Vignette found at: <a href="https://www.jakeruss.com/cheatsheets/stargazer/" class="uri">https://www.jakeruss.com/cheatsheets/stargazer/</a></p>
 </blockquote>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(stargazer) 
-<span class="kw">stargazer</span>(lm.mod1, lm.mod2,  <span class="dt">type=</span><span class="st">'html'</span>, <span class="dt">ci=</span><span class="ot">TRUE</span>, <span class="dt">single.row=</span><span class="ot">TRUE</span>, <span class="dt">digits=</span><span class="dv">1</span>, 
-          <span class="dt">omit.stat=</span><span class="st">&quot;rsq&quot;</span>, <span class="dt">column.labels=</span><span class="kw">c</span>(<span class="st">&quot;SLR&quot;</span>, <span class="st">&quot;MLR&quot;</span>), <span class="dt">model.numbers=</span><span class="ot">FALSE</span>)</code></pre></div>
+<span class="kw">stargazer</span>(lm.mod, <span class="dt">type=</span><span class="st">'html'</span>, <span class="dt">ci=</span><span class="ot">TRUE</span>, <span class="dt">single.row=</span><span class="ot">TRUE</span>, <span class="dt">digits=</span><span class="dv">1</span>, <span class="dt">omit.stat=</span><span class="st">&quot;rsq&quot;</span>)</code></pre></div>
 <table style="text-align:center">
 <tr>
-<td colspan="3" style="border-bottom: 1px solid black">
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-</td>
-<td colspan="2">
-<em>Dependent variable:</em>
-</td>
-</tr>
-<tr>
-<td>
-</td>
 <td colspan="2" style="border-bottom: 1px solid black">
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
 </td>
-<td colspan="2">
-income
+<td>
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="1" style="border-bottom: 1px solid black">
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
 </td>
 <td>
-SLR
-</td>
-<td>
-MLR
+income
 </td>
 </tr>
 <tr>
-<td colspan="3" style="border-bottom: 1px solid black">
+<td colspan="2" style="border-bottom: 1px solid black">
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
 wakeup
-</td>
-<td>
--487.7<sup>***</sup> (-784.1, -191.3)
 </td>
 <td>
 -611.3<sup>***</sup> (-904.2, -318.5)
@@ -559,8 +367,6 @@ wakeup
 female_cFemale
 </td>
 <td>
-</td>
-<td>
 -8,527.1<sup>***</sup> (-10,074.1, -6,980.1)
 </td>
 </tr>
@@ -569,22 +375,16 @@ female_cFemale
 Constant
 </td>
 <td>
-43,548.4<sup>***</sup> (41,341.0, 45,755.8)
-</td>
-<td>
 48,669.4<sup>***</sup> (46,303.9, 51,035.0)
 </td>
 </tr>
 <tr>
-<td colspan="3" style="border-bottom: 1px solid black">
+<td colspan="2" style="border-bottom: 1px solid black">
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
 Observations
-</td>
-<td>
-3,814
 </td>
 <td>
 3,813
@@ -595,18 +395,12 @@ Observations
 Adjusted R<sup>2</sup>
 </td>
 <td>
-0.002
-</td>
-<td>
 0.03
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
 Residual Std. Error
-</td>
-<td>
-24,666.5 (df = 3812)
 </td>
 <td>
 24,297.2 (df = 3810)
@@ -617,49 +411,30 @@ Residual Std. Error
 F Statistic
 </td>
 <td>
-10.4<sup>***</sup> (df = 1; 3812)
-</td>
-<td>
 63.7<sup>***</sup> (df = 2; 3810)
 </td>
 </tr>
 <tr>
-<td colspan="3" style="border-bottom: 1px solid black">
+<td colspan="2" style="border-bottom: 1px solid black">
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
 <em>Note:</em>
 </td>
-<td colspan="2" style="text-align:right">
+<td style="text-align:right">
 <sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
 </td>
 </tr>
 </table>
 </div>
 <div id="interpret-the-regression-coefficients." class="section level2">
-<h2>5. Interpret the regression coefficients.</h2>
+<h2>4. Interpret the regression coefficients.</h2>
 <ul>
-<li><span class="math inline">\(b_{1}\)</span>: Holding gender constant, for every hour later a person wakes up, their predicted average income drops by $611 ($318.5, $904.2).</li>
-<li><span class="math inline">\(b_{2}\)</span>: Controlling for the time someone wakes up in the morning, the predicted average income for females is $8,527 ($6,980, $10,074) lower than for males.</li>
+<li><span class="math inline">\(b_{1}\)</span>: Holding gender constant, for every hour later a person wakes up, their predicted average income drops by 611 (318, 904) dollars. This is a significant association (<span class="math inline">\(p&lt;.01\)</span>).</li>
+<li><span class="math inline">\(b_{2}\)</span>: Controlling for the time someone wakes up in the morning, the predicted average income for females is 8,527 (6980, 10,074) dollars lower than for males. This is a significant association (<span class="math inline">\(p&lt;.01\)</span>).</li>
 </ul>
-</div>
-<div id="conclusion" class="section level2">
-<h2>6. Conclusion</h2>
-<ul>
-<li>Use the numerical results from the multivariable model to fill in the values in the conclusion below.</li>
-<li>Look at the Adjusted <span class="math inline">\(R^{2}\)</span> to see how much of the variance in the response you are accounting for with the predictor.</li>
-</ul>
-<p>Replace the <strong>bold</strong> words with your variables, the <code>highlighted</code> words with data from your analysis, and choose between <em>conclusion options</em>.</p>
-<p>After adjusting for the potential confounding factor of <strong>third variable</strong>, <strong>explanatory variable</strong> (b1 = <code>parameter estimate, CI confidence interval range, p = significance value</code>) was *<strong>significantly/not significantly</strong> and <strong>positively/negatively</strong> associated with <strong>response variable</strong>. Approximately <code>R-Square*100</code> of the variance of <strong>response</strong> can be accounted for by <strong>explanatory</strong> after controlling for <strong>third variable</strong>. Based on these analyses, <strong>third variable</strong> <em>is not/is</em> a confounding factor because the association between <strong>explanatory</strong> and <strong>response</strong> <em>is still/is no longer</em> significant after accounting for <strong>third variable</strong>.</p>
-<p>So the conclusion for this analysis reads:</p>
-<blockquote>
-<p>After adjusting for the potential confounding factor of <strong>gender</strong>, <strong>wake up time</strong> (<span class="math inline">\(b_{1}\)</span> = <code>-611, 95% CI: (-904, -318), p&lt;.0001</code>) was <strong>significantly</strong> and <strong>negatively</strong> associated with <strong>income</strong>. Approximately <code>3.2%</code> of the variance of <strong>income</strong> can be accounted for by <strong>wake up time</strong> after controlling for <strong>gender</strong>. Based on these analyses, <strong>gender</strong> <em>is not</em> a confounding factor because the association between <strong>wake up time</strong> and <strong>income</strong> <em>is still</em> significant after accounting for <strong>gender</strong>.</p>
-</blockquote>
-<p>Another example of how to write an interpretation from a different model</p>
-<blockquote>
-<p>After adjusting for the potential confounding factor of gender, an adolescent’s weight (Beta = 1.34, 95% CI -0.53, 3.21, p = .1558) was not significantly associated with the number of cigarettes smoked in the past 30 days. Approximately 0.78% of the variance in cigarettes smoked can be accounted for by weight after controlling for gender. Based on these analyses, gender is a confounding factor because the association between weight and cigarettes smoked is no longer significant after accounting for gender.</p>
-</blockquote>
+<hr />
 </div>
 </div>
 <div id="logistic-regression" class="section level1">
@@ -668,92 +443,55 @@ F Statistic
 <div id="identify-variables-1" class="section level2">
 <h2>1. Identify variables</h2>
 <ul>
-<li>Binary outcome: Poverty (variable <code>poverty</code>). This is an indicator if reported personal income is below $10,210.</li>
-<li>Binary predictor: Ever smoked a cigarette (variable <code>eversmoke_c</code>)</li>
-<li>Binary confounder: Gender (variable <code>female_c</code>)</li>
+<li>Binary outcome (<span class="math inline">\(y\)</span>): Poverty (variable <code>poverty</code>). This is an indicator if reported personal income is below $10,210.</li>
+<li>Quantitative predictor (<span class="math inline">\(x_{1}\)</span>): Time you wake up in the morning (variable <code>wakeup</code>)</li>
+<li>Binary predictor (<span class="math inline">\(x_{2}\)</span>): Gender (variable <code>female_c</code>)</li>
 </ul>
 </div>
-<div id="state-hypotheses" class="section level2">
-<h2>2. State hypotheses</h2>
-<ul>
-<li>Null hypothesis: There is no relationship between the probability of living below the poverty level ever being a smoker.</li>
-<li>Alternative hypothesis: There is a relationship between the probability of living below the poverty level and ever being a smoker.</li>
-<li>Confounding hypothesis: There <em>still is</em> a relationship between the probability of living below the poverty level and ever being a smoker, after controlling for gender.</li>
-</ul>
-</div>
-<div id="fit-the-simple-model-1" class="section level2">
-<h2>3. Fit the simple model</h2>
-<p>Fit the logistic regression model (a.k.a generalized linear model) of the explanatory variable on the response variable. Decide to reject the null hypothesis in favor of the alternative.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">log.mod.<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">glm</span>(poverty<span class="op">~</span>eversmoke_c, <span class="dt">data=</span>addhealth, <span class="dt">family=</span><span class="st">'binomial'</span>)
-<span class="kw">summary</span>(log.mod.<span class="dv">1</span>)</code></pre></div>
-<pre><code>## 
-## Call:
-## glm(formula = poverty ~ eversmoke_c, family = &quot;binomial&quot;, data = addhealth)
-## 
-## Deviance Residuals: 
-##     Min       1Q   Median       3Q      Max  
-## -0.7064  -0.7064  -0.7064  -0.6210   1.8659  
-## 
-## Coefficients:
-##                                 Estimate Std. Error z value Pr(&gt;|z|)    
-## (Intercept)                     -1.54800    0.06444 -24.021  &lt; 2e-16 ***
-## eversmoke_cSmoked at least once  0.28711    0.07737   3.711 0.000207 ***
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## (Dispersion parameter for binomial family taken to be 1)
-## 
-##     Null deviance: 4907.4  on 4834  degrees of freedom
-## Residual deviance: 4893.3  on 4833  degrees of freedom
-##   (1669 observations deleted due to missingness)
-## AIC: 4897.3
-## 
-## Number of Fisher Scoring iterations: 4</code></pre>
-<p>The p-value for the b1 estimate of the regression coefficient for <code>eversmoke_c</code> is significant at 0.0002. There is reason to believe that smoking status is associated with the probability of living below the poverty level.</p>
+<div id="write-the-mathematical-model-1" class="section level2">
+<h2>2. Write the mathematical model</h2>
+<p><span class="math display">\[logit(y_{i}) \sim \beta_{0} + \beta_{1}x_{1i} + \beta_{2}x_{2i} + \epsilon_{i}\]</span></p>
 </div>
 <div id="fit-the-multivariable-model-1" class="section level2">
-<h2>4. Fit the multivariable model</h2>
-<p>Fit the same logistic regression model and include the potential confounding variable. <strong>This is only done if there is a significant relationship between the explanatory and response variable.</strong> Determine if the third variable is a confounder.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">log.mod.<span class="dv">2</span> &lt;-<span class="st"> </span><span class="kw">glm</span>(poverty<span class="op">~</span>eversmoke_c <span class="op">+</span><span class="st"> </span>female_c, <span class="dt">data=</span>addhealth, <span class="dt">family=</span><span class="st">'binomial'</span>)
-<span class="kw">summary</span>(log.mod.<span class="dv">2</span>)</code></pre></div>
+<h2>3. Fit the multivariable model</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">log.mod &lt;-<span class="st"> </span><span class="kw">glm</span>(poverty<span class="op">~</span>wakeup <span class="op">+</span><span class="st"> </span>female_c, <span class="dt">data=</span>addhealth, <span class="dt">family=</span><span class="st">'binomial'</span>)
+<span class="kw">summary</span>(log.mod)</code></pre></div>
 <pre><code>## 
 ## Call:
-## glm(formula = poverty ~ eversmoke_c + female_c, family = &quot;binomial&quot;, 
+## glm(formula = poverty ~ wakeup + female_c, family = &quot;binomial&quot;, 
 ##     data = addhealth)
 ## 
 ## Deviance Residuals: 
 ##     Min       1Q   Median       3Q      Max  
-## -0.8335  -0.7048  -0.5652  -0.4716   2.1221  
+## -1.0597  -0.7703  -0.5423  -0.5141   2.1124  
 ## 
 ## Coefficients:
-##                                 Estimate Std. Error z value Pr(&gt;|z|)    
-## (Intercept)                     -2.14045    0.08662  -24.71  &lt; 2e-16 ***
-## eversmoke_cSmoked at least once  0.38725    0.07886    4.91 9.09e-07 ***
-## female_cFemale                   0.87450    0.07690   11.37  &lt; 2e-16 ***
+##                Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)    -2.18642    0.11857 -18.439  &lt; 2e-16 ***
+## wakeup          0.04587    0.01351   3.396 0.000683 ***
+## female_cFemale  0.84822    0.07660  11.074  &lt; 2e-16 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
 ## (Dispersion parameter for binomial family taken to be 1)
 ## 
-##     Null deviance: 4906.9  on 4833  degrees of freedom
-## Residual deviance: 4755.4  on 4831  degrees of freedom
-##   (1670 observations deleted due to missingness)
-## AIC: 4761.4
+##     Null deviance: 4909.2  on 4832  degrees of freedom
+## Residual deviance: 4772.7  on 4830  degrees of freedom
+##   (1671 observations deleted due to missingness)
+## AIC: 4778.7
 ## 
 ## Number of Fisher Scoring iterations: 4</code></pre>
-<p>The p-value for the regression coefficient estimate of <code>eversmoke_c</code> is still significant at &lt;.0001 after controlling for gender. Thus gender is <strong>not</strong> a confounder.</p>
 </div>
 <div id="interpret-the-odds-ratio-estimates" class="section level2">
-<h2>5. Interpret the Odds Ratio estimates</h2>
-<p>The regression coefficients <span class="math inline">\(b_{p}\)</span> from a logistic regression must be <em>exponentiated</em> before interpretation. This is done by raising the constant <span class="math inline">\(e\)</span> to the value of the coefficient. So, <span class="math inline">\(OR = e^{b}\)</span>. Below I create a table containing the odds ratio estimates and 95% CI for those estimates using the confounding model. You will see one of three things:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># For your assignment - replace the saved model object `log.mod.2` with whatever YOU named this model. </span>
-<span class="kw">kable</span>(
-  <span class="kw">data.frame</span>(
-    <span class="dt">OR =</span> <span class="kw">exp</span>(<span class="kw">coef</span>(log.mod.<span class="dv">2</span>)), 
-    <span class="dt">LCL =</span> <span class="kw">exp</span>(<span class="kw">confint</span>(log.mod.<span class="dv">2</span>))[,<span class="dv">1</span>], 
-    <span class="dt">UCL =</span> <span class="kw">exp</span>(<span class="kw">confint</span>(log.mod.<span class="dv">2</span>))[,<span class="dv">2</span>]
-  ),
-<span class="dt">digits=</span><span class="dv">2</span>, <span class="dt">align =</span> <span class="st">'ccc'</span>)</code></pre></div>
+<h2>4. Interpret the Odds Ratio estimates</h2>
+<p>The regression coefficients <span class="math inline">\(b_{p}\)</span> from a logistic regression must be <em>exponentiated</em> before interpretation. This is done by raising the constant <span class="math inline">\(e\)</span> to the value of the coefficient. So, <span class="math inline">\(OR = e^{b}\)</span>. Below I create a table containing the odds ratio estimates and 95% CI for those estimates using the confounding model.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># For your assignment - replace the saved model object `log.mod` with whatever YOU named this model. </span>
+<span class="kw">data.frame</span>(
+  <span class="dt">OR  =</span> <span class="kw">exp</span>(<span class="kw">coef</span>(log.mod)), 
+  <span class="dt">LCL =</span> <span class="kw">exp</span>(<span class="kw">confint</span>(log.mod))[,<span class="dv">1</span>], 
+  <span class="dt">UCL =</span> <span class="kw">exp</span>(<span class="kw">confint</span>(log.mod))[,<span class="dv">2</span>]
+  ) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">kable</span>(<span class="dt">digits=</span><span class="dv">2</span>, <span class="dt">align =</span> <span class="st">'ccc'</span>)</code></pre></div>
 <table>
 <thead>
 <tr class="header">
@@ -766,161 +504,109 @@ F Statistic
 <tbody>
 <tr class="odd">
 <td>(Intercept)</td>
-<td align="center">0.12</td>
-<td align="center">0.10</td>
+<td align="center">0.11</td>
+<td align="center">0.09</td>
 <td align="center">0.14</td>
 </tr>
 <tr class="even">
-<td>eversmoke_cSmoked at least once</td>
-<td align="center">1.47</td>
-<td align="center">1.26</td>
-<td align="center">1.72</td>
+<td>wakeup</td>
+<td align="center">1.05</td>
+<td align="center">1.02</td>
+<td align="center">1.07</td>
 </tr>
 <tr class="odd">
 <td>female_cFemale</td>
-<td align="center">2.40</td>
-<td align="center">2.06</td>
-<td align="center">2.79</td>
+<td align="center">2.34</td>
+<td align="center">2.01</td>
+<td align="center">2.72</td>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Try to figure out what the function coef() does.</span>
-<span class="co"># Type coef(log.mod.2) into the console and make sure you understand what output it is giving you. Compare it to the output you receive when typing summary(log.mod.2)</span></code></pre></div>
+<p>You will see one of three things:</p>
 <ul>
 <li><strong>OR = 1</strong> = equal chance of response variable being YES given any explanatory variable value. You are not able to predict participants’ responses by knowing their explanatory variable value. This would be a non significant model when looking at the p-value for the explanatory variable in the parameter estimate table.</li>
 <li><strong>OR &gt; 1</strong> = as the explanatory variable value increases, the presence of a YES response is more likely. We can say that when a participant’s response to the explanatory variable is YES (1), they are more likely to have a response that is a YES (1).</li>
-<li><strong>OR &lt;1</strong> = as the explanatory variable value increases, the presence of a YES response is less likely. We can say that when a participant’s response to the explanatory variable is YES (1) they are less likely to have a response that is a YES (1).</li>
+<li><p><strong>OR &lt;1</strong> = as the explanatory variable value increases, the presence of a YES response is less likely. We can say that when a participant’s response to the explanatory variable is YES (1) they are less likely to have a response that is a YES (1).</p></li>
+<li>After controlling for gender, those that wake up one hour later have 1.05 (1.02, 1.07) times the odds of reporting annual earned wages below the federal poverty level compared to someone waking up one hour earlier. This is a significant association (<span class="math inline">\(p&lt;.001\)</span>), but the magnitude of the increase is very small.</li>
+<li><p>After controlling for the time someone wakes up, females have 2.34 (2.01, 2.72) times the odds of reporting annual earned wages below the federal poverty level compared to males. This is a significant association (<span class="math inline">\(p&lt;.001\)</span>)</p></li>
 </ul>
-<blockquote>
-<p>For this example, the OR for the explanatory variable of eversmoker is 1.47 and the OR for gender is 2.40.</p>
-</blockquote>
-<p><strong>Interpreting confidence intervals for Odds Ratios</strong></p>
-<ul>
-<li>Confidence intervals are a range for the population’s predicted odds ratio based on the sample data. We are 95% confident that any given population’s odds ratio would range between those two values.</li>
-<li>When the confidence intervals for the explanatory variables and third variables do not overlap, the variable with the higher values we can interpret as being more strongly associated with our response variable.</li>
-<li>For both the odds ratio and confidence interval interpretation, when you add in third variables it is explained in the same way except that you are controlling for the third variable or explanatory variable.</li>
-<li>When you add a third variable to the logistic regression, if you determine one is a confound then you do not interpret the variable that becomes non significant in the odds ratio.</li>
-</ul>
-<blockquote>
-<p>After controlling for gender, smokers have 1.47 times the odds of reporting making below the federal poverty level compared to non smokers. After controlling for smoking status, females have 2.4 time the odds of reporting annual earned wages below the federal poverty level compared to males. Gender is a stronger predictor of earning a lower wage than smoking status.</p>
-</blockquote>
-</div>
-<div id="conclusion-1" class="section level2">
-<h2>6. Conclusion</h2>
-<p>Replace the <strong>bold</strong> words with your variables, the <code>highlighted</code> words with data from your analysis, and choose between <em>conclusion options</em>.</p>
-<p>After adjusting for the potential confounding factor of <strong>third variable</strong>, <strong>explanatory variable</strong> (<code>OR odds ratio estimate, CI confidence interval range, p = significance value</code>) was <em>significantly/not significantly</em> and <em>positively/negatively</em> associated with the likelihood of <strong>response variable</strong>. In this analysis, the odds ratio tells us that those who are <strong>[describe what dummy code 1 of your explanatory variable means here]</strong> are <code>0.05</code> times <em>more (if OR greater than 1)/less (if OR less than 1)</em> likely to <strong>[describe what dummy code 1 of your response variable means here]</strong>. Based on these analyses, <strong>third variable</strong> <em>is not/is</em> a confounding factor because the association between <strong>explanatory</strong> and <strong>response</strong> <em>is still/is no longer</em> significant after accounting for <strong>third variable</strong>.</p>
-<p>So the conclusion for this analysis reads:</p>
-<p>After adjusting for the potential confounding factor of <strong>gender</strong>, <strong>smoking status</strong> (<code>1.47, CI 1.26-1.72, p &lt;.0001</code>) was <em>significantly</em> and <em>positively</em> associated with the likelihood of <strong>earning under the poverty level</strong>. In this analysis, the odds ratio tells us that those who <strong>have ever smoked</strong> are <code>1.47</code> times <em>more</em> likely to <strong>earn income below the federal poverty level</strong>. Based on these analyses, <strong>gender</strong> <em>is not</em> a confounding factor because the association between <strong>smoking</strong> and <strong>poverty status</strong> <em>is still</em> significant after accounting for <strong>gender</strong>.</p>
-<p>Additional example interpretation</p>
-<blockquote>
-<ul>
-<li>After adjusting for the potential confounding factor of gender, being overweight (OR 0.920, CI 0.822 – 1.028, p = .1420) was not significantly associated with the likelihood of participating in an active sport. In this analysis, the odds ratio tells us that those adolescents who are overweight are 0.920 times less likely to participate in an active sport. Based on these analyses, gender is a confounding factor because the association between being overweight and active sport participation is no longer significant after accounting for gender.</li>
-<li>After adjusting for the potential confounding factor of gender, being overweight (OR 3.65, CI 1.573 – 4.891, p = .0001) was significantly and positively associated with the likelihood of participating in an active sport. In this analysis, the odds ratio tells us that those adolescents who are overweight are 3.65 times more likely to participate in an active sport. Based on these analyses, gender is not a confounding factor because the association between being overweight and active sport participation is still significant after accounting for gender.</li>
-</ul>
-</blockquote>
 </div>
 </div>
 <div id="categorical-predictors" class="section level1">
 <h1>Categorical predictors</h1>
-<p>For any of the regression models above, or a new model if you choose, add a categorical variable with more than 2 levels.<br />
-* If the confounder was significant, use the multivariable model including confounder. * If the confounder was not significant, use the bivariate model without the confounder. * Interpret the regression coefficients for at least two levels of the categorical variable.</p>
-<div id="identify-variables-and-their-data-type" class="section level2">
-<h2>1. Identify variables and their data type</h2>
+<p>For any of the regression models above, or a new model if you choose, add a categorical variable with more than 2 levels as a <em>third</em> predictor. Be sure to define EACH indicator variable for this categorical variable and state what the reference group is.</p>
+<div id="identify-variables-and-their-data-type" class="section level3">
+<h3>1. Identify variables and their data type</h3>
 <ul>
-<li>Outcome: BMI (variable <code>BMI</code>). This is a quantitiative measure.</li>
-<li>Predictor: Income (variable <code>income</code>). This is a quantitative measure.</li>
-<li>Predictor: general health (variable <code>genhealth</code>). This is a categorical measure.</li>
+<li>Response (<span class="math inline">\(y\)</span>): BMI (variable <code>BMI</code>). This is a quantitative measure.</li>
+<li>Predictor(<span class="math inline">\(x_{1}\)</span>): Income (variable <code>income</code>). This is a quantitative measure.</li>
+<li>Predictor(<span class="math inline">\(x_{2}\)</span>): Smoking status (variable <code>eversmoke_c</code>). This is a binary measure.</li>
+<li>Predictor: general health (variable <code>genhealth</code>). This is a categorical measure with 5 levels.</li>
 </ul>
 </div>
-<div id="write-the-mathematical-model." class="section level2">
-<h2>2. Write the mathematical model.</h2>
+<div id="write-the-mathematical-model." class="section level3">
+<h3>2. Write the mathematical model.</h3>
 <p>Define what each <span class="math inline">\(x\)</span> is, and write the mathematical model. State what group is the reference group.</p>
 <ul>
 <li>Let <span class="math inline">\(x_{1}\)</span> be <code>income</code></li>
-<li>Let <span class="math inline">\(x_{2}=1\)</span> when <code>genhealth='Very good'</code>, and 0 otherwise,<br />
-</li>
-<li>let <span class="math inline">\(x_{3}=1\)</span> when <code>genhealth='Good'</code>, and 0 otherwise,<br />
-</li>
-<li>let <span class="math inline">\(x_{4}=1\)</span> when <code>genhealth='Fair'</code>, and 0 otherwise,<br />
-</li>
-<li>let <span class="math inline">\(x_{5}=1\)</span> when <code>genhealth='Poor'</code>, and 0 otherwise.</li>
+<li>Let <span class="math inline">\(x_{2}\)</span> be <code>eversmoke_c</code>, an indicator of ever smoking.</li>
+<li>Let <span class="math inline">\(x_{3}=1\)</span> when <code>genhealth='Very good'</code>, and 0 otherwise,</li>
+<li>let <span class="math inline">\(x_{4}=1\)</span> when <code>genhealth='Good'</code>, and 0 otherwise,</li>
+<li>let <span class="math inline">\(x_{5}=1\)</span> when <code>genhealth='Fair'</code>, and 0 otherwise,</li>
+<li>let <span class="math inline">\(x_{6}=1\)</span> when <code>genhealth='Poor'</code>, and 0 otherwise.</li>
 </ul>
 <p>The reference group for <code>genhealth</code> is <code>Excellent</code>.</p>
 <p>The mathematical model would look like:</p>
-<p><span class="math display">\[ Y \sim \beta_{0} + \beta_{1}*x_{1} + \beta_{2}x_{2} + \beta_{3}x_{3} + \beta_{4}x_{4} + \beta_{5}x_{5} \]</span></p>
+<p><span class="math display">\[ y_{i} \sim \beta_{0} + \beta_{1}*x_{1i} + \beta_{2}x_{2i} + \beta_{3}x_{3i} + \beta_{4}x_{4i} + \beta_{5}x_{5i} + \beta_{6}x_{6i} + \epsilon_{i}\]</span></p>
 </div>
-<div id="state-hypothesis-in-words-and-symbols" class="section level2">
-<h2>3. State hypothesis in words and symbols</h2>
-<ul>
-<li>Null: General health is not associated with BMI after controlling for income. All levels of general health have the same relationship with income.</li>
-<li>Alternative: General health is associated with BMI after controlling for income - at least one level of General health has a different association with income.</li>
-</ul>
-<p><span class="math inline">\(H_{0}: \beta_{2}=\beta_{3}=\beta_{4}=\beta_{5}=0\)</span></p>
-<p><span class="math inline">\(H_{A}:\)</span> at least one <span class="math inline">\(\beta_{j}\)</span> is not 0</p>
-</div>
-<div id="visualize-this-relationship" class="section level2">
-<h2>3. Visualize this relationship</h2>
-<p>Create a graphic to explore the relationship between the categorical variable and the response variable.</p>
-<ul>
-<li>If your outcome is quantitative, this will be a side by side boxplot</li>
-<li>If your outcome is binary, this will be side by side barcharts</li>
-</ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">toplot &lt;-<span class="st"> </span>addhealth <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(BMI, genhealth) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">na.omit</span>()
-<span class="kw">ggplot</span>(toplot, <span class="kw">aes</span>(<span class="dt">y=</span>BMI, <span class="dt">x=</span>genhealth, <span class="dt">fill=</span>genhealth)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_boxplot</span>() <span class="op">+</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">stat_summary</span>(<span class="dt">fun.y=</span><span class="st">&quot;mean&quot;</span>, <span class="dt">geom=</span><span class="st">&quot;point&quot;</span>, <span class="dt">size=</span><span class="dv">3</span>, <span class="dt">position=</span><span class="kw">position_dodge</span>(<span class="dt">width=</span><span class="fl">0.75</span>))</code></pre></div>
-<p><img src="data:image/png;base64,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" width="672" /></p>
-<p>I would expect that the average BMI differs significantly across general health category.</p>
-</div>
-<div id="fit-the-multivariable-model-with-both-predictors." class="section level2">
-<h2>4. Fit the multivariable model with both predictors.</h2>
-<p>Print out the coefficients and 95% CI’s.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gh.model &lt;-<span class="st"> </span><span class="kw">lm</span>(BMI<span class="op">~</span>income <span class="op">+</span><span class="st"> </span>genhealth, <span class="dt">data=</span>addhealth)
+<div id="fit-the-multivariable-model." class="section level3">
+<h3>3. Fit the multivariable model.</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gh.model &lt;-<span class="st"> </span><span class="kw">lm</span>(BMI<span class="op">~</span>income <span class="op">+</span><span class="st"> </span>eversmoke_c <span class="op">+</span><span class="st"> </span>genhealth, <span class="dt">data=</span>addhealth)
 <span class="kw">summary</span>(gh.model)</code></pre></div>
 <pre><code>## 
 ## Call:
-## lm(formula = BMI ~ income + genhealth, data = addhealth)
+## lm(formula = BMI ~ income + eversmoke_c + genhealth, data = addhealth)
 ## 
 ## Residuals:
 ##     Min      1Q  Median      3Q     Max 
-## -16.837  -4.802  -1.091   3.441  39.132 
+## -16.620  -4.767  -0.988   3.508  39.448 
 ## 
 ## Coefficients:
-##                      Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)         2.652e+01  3.298e-01  80.409  &lt; 2e-16 ***
-## income             -4.735e-06  4.686e-06  -1.010    0.312    
-## genhealthVery good  1.602e+00  3.100e-01   5.166 2.52e-07 ***
-## genhealthGood       4.758e+00  3.245e-01  14.664  &lt; 2e-16 ***
-## genhealthFair       6.917e+00  5.039e-01  13.726  &lt; 2e-16 ***
-## genhealthPoor       9.350e+00  1.392e+00   6.717 2.13e-11 ***
+##                                   Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)                      2.712e+01  3.583e-01  75.681  &lt; 2e-16 ***
+## income                          -5.061e-06  4.678e-06  -1.082    0.279    
+## eversmoke_cSmoked at least once -1.016e+00  2.369e-01  -4.289 1.84e-05 ***
+## genhealthVery good               1.659e+00  3.099e-01   5.354 9.13e-08 ***
+## genhealthGood                    4.864e+00  3.249e-01  14.968  &lt; 2e-16 ***
+## genhealthFair                    7.041e+00  5.047e-01  13.950  &lt; 2e-16 ***
+## genhealthPoor                    9.461e+00  1.389e+00   6.810 1.13e-11 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
-## Residual standard error: 6.967 on 3771 degrees of freedom
-##   (2727 observations deleted due to missingness)
-## Multiple R-squared:  0.09217,    Adjusted R-squared:  0.09096 
-## F-statistic: 76.57 on 5 and 3771 DF,  p-value: &lt; 2.2e-16</code></pre>
+## Residual standard error: 6.952 on 3763 degrees of freedom
+##   (2734 observations deleted due to missingness)
+## Multiple R-squared:  0.09693,    Adjusted R-squared:  0.09549 
+## F-statistic: 67.32 on 6 and 3763 DF,  p-value: &lt; 2.2e-16</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">round</span>(<span class="kw">confint</span>(gh.model),<span class="dv">1</span>)</code></pre></div>
-<pre><code>##                    2.5 % 97.5 %
-## (Intercept)         25.9   27.2
-## income               0.0    0.0
-## genhealthVery good   1.0    2.2
-## genhealthGood        4.1    5.4
-## genhealthFair        5.9    7.9
-## genhealthPoor        6.6   12.1</code></pre>
+<pre><code>##                                 2.5 % 97.5 %
+## (Intercept)                      26.4   27.8
+## income                            0.0    0.0
+## eversmoke_cSmoked at least once  -1.5   -0.6
+## genhealthVery good                1.1    2.3
+## genhealthGood                     4.2    5.5
+## genhealthFair                     6.1    8.0
+## genhealthPoor                     6.7   12.2</code></pre>
 </div>
-<div id="interpret-the-regression-coefficients.-1" class="section level2">
-<h2>5. Interpret the regression coefficients.</h2>
+<div id="interpret-the-regression-coefficients.-1" class="section level3">
+<h3>4. Interpret the regression coefficients.</h3>
 <ul>
-<li><span class="math inline">\(b_{1}\)</span>: After controlling for general health, for every additional $1 a person makes annually, their BMI decreases .0000047. This is not a significant relationship. A more meaningful interpretation would be to look at a $1000 increase in annual income. For every additional $1,000,000 in income a person makes annually, their BMI decreases by 4.7.</li>
-<li><span class="math inline">\(b_{2}\)</span>: Those reporting very good health have 1.6 (0.99, 2.2, p&lt;.0001) higher BMI compared to those reporting excellent health.</li>
-<li><span class="math inline">\(b_{3}\)</span>:Those reporting good health have 4.8 (4.1, 5.4, p&lt;.0001) higher BMI compared to those reporting excellent health.</li>
-<li><span class="math inline">\(b_{4}\)</span>: Those reporting fair health have 6.9 (5.9, 7.9, p&lt;.0001) higher BMI compared to those reporting excellent health.</li>
-<li><span class="math inline">\(b_{5}\)</span>: Those reporting poor health have 9.4 (6.6, 12.1, p&lt;.0001) higher BMI compared to those reporting excellent health.</li>
+<li><p><span class="math inline">\(b_{1}\)</span>: After controlling for general health and smoking status, for every additional $1 a person makes annually, their BMI decreases .0000047. This is not a significant relationship. A more meaningful interpretation would be to look at a $1000 increase in annual income. For every additional $1,000,000 in income a person makes annually, their BMI decreases by 4.7.</p></li>
+<li><p><span class="math inline">\(b_{2}\)</span>: After controlling for income level and general health, those who have smoked at least once have on average 1.02 (0.6, 1.5, p&lt;.0001) lower BMI compared to those who have never smoked.</p></li>
+<li><p><span class="math inline">\(b_{3}\)</span>: After controlling for income level and smoking status, those reporting very good health have 1.7 (1.1, 2.3, p&lt;.0001) higher BMI compared to those reporting excellent health.</p></li>
+<li><p><span class="math inline">\(b_{4}\)</span>: After controlling for income level and smoking status, those reporting good health have 4.9 (4.2, 5.5, p&lt;.0001) higher BMI compared to those reporting excellent health.</p></li>
+<li><p><span class="math inline">\(b_{5}\)</span>: After controlling for income level and smoking status, those reporting fair health have 7.0 (6.1, 8.0 p&lt;.0001) higher BMI compared to those reporting excellent health.</p></li>
+<li><p><span class="math inline">\(b_{6}\)</span>: After controlling for income level and smoking status, those reporting poor health have 9.5 (6.7, 12.2, p&lt;.0001) higher BMI compared to those reporting excellent health.</p></li>
 </ul>
-</div>
-<div id="conclusion-2" class="section level2">
-<h2>6. Conclusion</h2>
-<p>After controlling for general health, income is not significantly associated with BMI. General health is significantly associated with BMI, the average BMI increases as reported general health decreases.</p>
 </div>
 </div>
 

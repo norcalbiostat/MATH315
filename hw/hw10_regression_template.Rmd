@@ -9,111 +9,82 @@ output:
 
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
 library(knitr)
-opts_chunk$set(warning=FALSE, message=FALSE, fig.width=8, fig.height=4, fig.align='center') 
+opts_chunk$set(warning=FALSE, message=FALSE) 
 library(dplyr)
 library(ggplot2); library(gridExtra)
-
-# Load either pander, stargazer, or both for printing nice linear model tables
-# load your data here
+library(pander) # Used for printing nice linear model tables
+panderOptions("digits", 3)
 ```
 
-# Multiple Linear Regression
+# Multiple Linear Regression (Q ~ Q + B)
 
 ## 1. Identify variables
-* Quantitative outcome: 
-* Quantitative predictor: 
-* Binary confounder: 
- 
+* Quantitative response variable ($y$): 
+* Quantitative explanatory variable ($x_{1}$):
+* Covariate (controlling variable) ($x_{2}$): 
 
-## 2. State the research Hypothesis
-
-
-* Null hypothesis: 
-* Alternative hypothesis:
-* Confounding hypothesis: 
-
-## 3. Fit the simple model
-
-
-## 4. Fit the multivariable model
-
-## 5. Interpret the regression coefficients.
-
-## 6. Conclusion
-
-# Logistic Regression
-
-
-## 1. Identify variables
-
-* Binary outcome:  
-* Binary predictor: 
-* Binary confounder: 
- 
-
-
-## 2. State hypotheses
-
-* Null hypothesis: 
-* Alternative hypothesis:
-* Confounding hypothesis: 
-
-## 3. Fit the simple model
+## 2. Write the mathematical model
 
 
 
-## 4. Fit the multivariable model
+## 3. Fit the multivariable model
 
 
-## 5. Interpret the Odds Ratio estimates
-
-## 6. Conclusion
-
-# Categorical predictors
-
-
-## 1. Identify variables and their data type
-* Outcome:
-* Predictor: 
-* Predictor: 
- 
-## 2. Write the mathematical model. 
-Define what each $x$ is, and write the mathematical model. State what group is the reference group. 
-
-* Let $x_{1}$ be 
-* Let $x_{2}=1$ when  
-* let $x_{3}=1$ when  
-
-
-The reference group 
-
-The mathematical model would look like: 
-
-$$ Y \sim \beta_{0} + \beta_{1}*x_{1} + \beta_{2}x_{2} + \beta_{3}x_{3} + \beta_{4}x_{4} + \beta_{5}x_{5} $$
-
-
-## 3. State hypothesis in words and symbols
-
-* Null: 
-* Alternative:
- 
-
-$H_{0}: \beta_{2}=\beta_{3} ... =0$
-
-$H_{A}:$ at least one $\beta_{j}$ is not 0
-
- 
- 
- 
-## 3. Visualize this relationship
-
-## 4. Fit the multivariable model with both predictors. 
-
-
-## 5. Interpret the regression coefficients. 
+## 4. Interpret each regression coefficient EXCEPT the intercept.
 
 * $b_{1}$: 
 * $b_{2}$: 
-* $b_{3}$:
 
-## 6. Conclusion
+
+
+----
+ 
+# Logistic Regression (logit(B) ~ Q + B)
+
+
+## 1. Identify variables
+
+* Binary response variable ($y$): 
+* Explanatory variable ($x_{1}$):
+* Covariate (controlling variable) ($x_{2}$): 
+
+## 2. Write the mathematical model
+> Since this is a binary outcome, make sure you use the correct logit transformation: $logit(y{i})$. 
+
+
+
+## 3. Fit the Logistic regression model
+
+
+
+## 4. Calculate and interpret the Odds Ratio estimates
+
+
+----
+
+# Categorical predictors (Q ~ Q + B + C)
+
+
+## 1. Identify variables and their data types. 
+* Response variable ($y$):
+* Categorical predictor (in words):
+ 
+Define each level of the categorical predictor: State what group is the reference group. 
+
+* Let $x_{1}$ be 
+* Let $x_{2}=1$ when
+* let $x_{3}=1$ when
+* The reference group is: 
+
+
+## 2. Write the mathematical model. 
+
+
+## 3. Fit the multivariable model. 
+
+
+## 4. Interpret each regression coefficient EXCEPT the intercept.
+
+* $b_{1}$: 
+* $b_{2}$: 
+* etc...
