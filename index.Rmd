@@ -83,12 +83,14 @@ Here are a list of topics to review. All topics have equal importance, regardles
 * [Regression assignment](hw/hw10_regression.html) has been re-written and cut down significantly. 
 * Poster prep stage III will not have a peer review
 * Final we be take home, poster presentations will occur during the 2 hour final period. 
+* Exam 2 has been curved, no error assessment will take place.
+    - An optional set of questions on Exam 2 content will be made available in Blackboard during finals week that can be used to make up some points. 
 
 This week, let's ease back into things. Try to come back to "normal", when life is anything but normal.  
 
 * Monday- Section review, recap, reorient
 * Wednesday - Logistic Regression (**RAT** - be sure to watch PDS video ahead of time)
-* Friday - Building interaction models
+* Friday - Building interaction models, some open work time. 
 
 
 
