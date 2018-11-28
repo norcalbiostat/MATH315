@@ -1,12 +1,12 @@
 ---
 title: "Regression Assignment"
 output:
-  pdf_document: default
   html_document:
     highlight: tango
     theme: readable
     toc: yes
     toc_float: yes
+  pdf_document: default
 ---
 
 # Assignment Overview
@@ -20,7 +20,7 @@ The variable types for the coefficients are pre-specified so that you can practi
 
 # Instructions
 
-0. Use the template provided: [[RMD]](10_MLR_template.Rmd) for R users, and [[Word]](10_MLR_template.docx) for SPSS users. 
+0. Use the template provided: [[RMD]](hw10_regression_template.Rmd)
 1. Identify variables under consideration. 
 2. Write the mathematical model being fit by using LaTeX script (example below) directly in the Rmarkdown file. (Not in a code chunk, and yes the two dollar signs are necessary.)
 
@@ -71,7 +71,7 @@ confint(lm.mod)
 
 ```{r, results='asis'}
 library(stargazer) 
-stargazer(lm.mod, type='latex', ci=TRUE, single.row=TRUE, digits=1, omit.stat="rsq")
+stargazer(lm.mod, type='html', ci=TRUE, single.row=TRUE, digits=1, omit.stat="rsq")
 ```
 
 ## 4. Interpret the regression coefficients.
