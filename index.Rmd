@@ -50,18 +50,17 @@ Here are a list of topics to review. All topics have equal importance, regardles
     - from linear and logistic models
     - using continuous and categorical variables
 
-
-### 12/4/17 - Week 15
-* Fill out [This google form](https://goo.gl/forms/o3O43feULJFDGUun2) to provide input as to when I should hold OH during finals week. 
-* Poster presentations MW
-    - Your poster must be printed and ready for class on Monday. 
-    
-* Poster building week! See the project page for instructions. 
-    - Drafts are due Wednesday, reviews due Friday
-    - Suggestions on how to make a nice plot for multivariable models has been added to the project page. 
-
-
 --->
+
+### 12/10/18 - Week 15
+
+* Poster building week! See the project page for instructions. 
+    - Drafts are due Friday 11/14, Peer review on Sunday 12/16
+    - Final version due (as printed) on Thursday
+* Take Home Final exam 
+    - Handed out Wed 12/12 (Estimated) - no later than Friday 12/14. 
+    - Due Friday 12/21
+
 
 ### 12/3/18 - [Week 14](https://norcalbiostat.github.io/MATH315/wk/wk14.html)
 * You should be working on finishing the regression assignment, and Poster Prep Stage III this week. 

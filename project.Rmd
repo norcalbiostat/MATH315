@@ -179,10 +179,19 @@ You are trying to understand the relationship between your explanatory and respo
 * You will transfer all findings into a research poster, print the poster, and then present your research to your classmates. 
     - We will split the class in half. When not presenting, you will be scoring the other half of the class's posters. 
 * All posters must be built in Powerpoint. No exceptions.
-* Use these [poster guidelines](https://norcalbiostat.netlify.com/lec/poster_guidelines/) to see templates and guidance on how to make an effective poster.
+
+## Poster Guidelines: 
+https://norcalbiostat.netlify.com/lec/poster_guidelines/ 
+
+  * Links to poster templates, 
+  * Details on what each section should contain
+  * Guidance on aestetics and printing
+  * Evaluation criteria
+  * Examples of professional and prior student work. 
 
 
 ### Draft version
+
 * This draft is graded on how complete the poster is. You should consider this a draft that you would circulate to your colleagues for final review and comments. 
 * Use the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria) as a guide for what I am looking for.
 * This assignment is graded in Blackboard using a rubric - be sure to look at this before you submit. 
@@ -207,6 +216,7 @@ You are trying to understand the relationship between your explanatory and respo
 
 
 ### Final Version
+
 * Upload your final poster (as printed) to Blackboard Learn
     - PDF preferred. PPTX ok.
 * Scoring will be done via [Google Forms](https://goo.gl/forms/FwFw06eKDrYG0t503). It looks exactly like the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria).
