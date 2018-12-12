@@ -69,7 +69,6 @@ Here are a list of topics to review. All topics have equal importance, regardles
       * Tue 12/11 2-4pm - Community Coding (MLIB 442)
       * Wed 12/12 1-3pm
       * Thu 12/13 10-11am
-      * Mon 12/17 8-9am
       * Tue 12/18 2-3pm
       * Wed 12/19 10-11am
       * Thu 12/20 1-2pm
