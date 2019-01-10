@@ -1,0 +1,95 @@
+---
+title: 'HW 01: Team Formation & Self Regulated Learning'
+author: "STUDENT NAME"
+date: "DATE"
+output:
+  pdf_document: default
+  html_document:
+    theme: readable
+    highlight: tango
+    toc: yes
+    toc_float: yes
+---
+
+# Assignment Overview
+Purpose of this assignment. 
+ 
+# Instructions
+
+
+# Part I: Getting Started with R Studio
+1. Log into R Studio cloud, and click on our class workspace. 
+2. Something about copying the first assignment to their account
+3. Replace your name and date in the header section. 
+4. Write the answers to the questions below directly in the Rmarkdown homework template provided. 
+5. You will compile this document to a PDF format and turn it in to **01 Orientation/Ready for grading** Google Drive folder by the due date. 
+6. Watch this very short tutorial on R Markdown. This is what you will be using to write all assignments in. http://rmarkdown.rstudio.com/lesson-1.html
+
+
+\newpage
+
+# Part II: Becoming a better learner. 
+Because we all have room for improvement, here are a few tasks for you to become a better learner. 
+
+
+### Metacognition 
+From the materials page on the course website, download and read "MAI and academic achievement in college students". 
+Once you are done, download and take the "Metacognition Awareness Inventory" (also available on the materials page). 
+Submit your scores to Google Drive at this link: 
+
+### Procrastination
+Watch this video on creating a cycle of success and tell me **two** concrete plans of action that you already implement, or are willing to give an honest try to do this semester to stay on track and not fall behind.  https://media.csuchico.edu/media/Avoiding+Procrastination/0_wquy9x90
+
+
+### Being good at learning is hard!
+From the articles page on the course website, download and read the "Learning (Your First Job)" article. 
+Answer at least _4_ of the following questions in this document. 
+
+**What was the most important insight you gained from the reading? **
+
+
+**What surprised you most in the reading?**
+
+
+**What did you already know?**
+
+
+**Have you been taught how to learn before?  Where?  What did you learn about learning?**
+
+
+**What will you do differently during a lecture, if anything, given what you read?**
+
+
+**How will you prepare differently for exams, given what you read?**
+
+
+**Can you think of other good learning practices that the reading didn't mention?**
+
+\newpage
+
+# PART III: Data Analysis Topic
+
+### Team Formation
+Yes yes, you hate group work. But having a person to bounce ideas off of, to help you debug your code, 
+to help each other with difficult concepts is an invaluable aspect of learning. So, instead of complaining
+make it a goal to be the best analysis partner! 
+
+If you find yourself unsure how to manage or participate in a group, or you're terrified of working with other people, 
+The [University of Minnesota](http://teamwork.umn.edu/) has a fantastic website devoted to surviving group projects.
+You will have a group for immediate support in this class, but the project will be done in pairs. 
+
+**Team Roster** Using the numbered list below, write the name of each team member and one interesting fact or tidbit you learned about them this week. Indicate who will be working together on the project.
+
+1.
+2. 
+3. 
+4. 
+
+### Area of research interest
+Tell me what data set and topics you are interested in conducting research on and briefly why. If you are using one of the survey data sets (AddHealth, NESARC) that has hundreds or thousands of questions, be specific with the topics and sections that you plan to conduct research in. 
+
+\newpage
+
+# Part IV: Reproducible Research
+
+1. Watch this 1 minute video on R

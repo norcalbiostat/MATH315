@@ -1,5 +1,5 @@
 
-This is the landing page for <span style="color:teal">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com)  in Fall 2018. This landing page is used for posting of regular announcements and information for students of the class. 
+This is the landing page for <span style="color:teal">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com)  in Spring 2019. This landing page is used for posting of regular announcements and information for students of the class. 
 
 ```{r runallwks, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 # source("_render_all_wks.R")
@@ -11,57 +11,6 @@ This is the landing page for <span style="color:teal">**Applied Statistical Meth
 # Announcements
 
 <!--- 
-### 12/14/17 - Final Exam. 8-10am. Tehama 108
-
-<span style="color:red">**Office Hours for Finals Week**</span> 
-
-* Tuesday 2-4pm, Holt 155
-* Wednesday 1-3pm, Holt 202
-* Wednesday 8-9pm, Online Google Hangouts. Over now. Apparently >10 people causes it to crash. I will find another method next time. Much apologies to those who came early but got cut out. 
-
-<span style="color:red">**Allowed Exam Materials**</span> 
-All exam materials (except course notes) will be turned in with the exam. Make sure your name is on everything.  
-
-* The [[OFFICIAL]](https://norcalbiostat.github.io/MATH615/FinalDocs/FinalExam_Fall17_Supplemental.pdf) supplemental information and analyses for the Outlook on Life Survey. 
-    - Print these pages. Ensure that you understand what models are being fit and how to read the output. You are allowed to write notes on these pages.
-    - Be prepared to answer questions about modeling and interpreting these analyses. 
-* A calculator
-* Your course notes
-* An additional 1 page of notes
-
-
-    
-Additional information on this new survey, such as full wording of the question on how the variables were coded can be found in the [[codebook]](https://norcalbiostat.github.io/MATH615/FinalDocs/OOL%20Codebook.pdf) and [[survey questionnaire]](https://norcalbiostat.github.io/MATH615/FinalDocs/OOL%20Questionnaire.pdf). **Do not bring these to the final**. They are for you to use as reference material while you are learning to understand this survey.   
-
-<span style="color:red">**Review List**</span> 
-This final exam is comprehensive in that everything in this class builds upon previous topics. 
-Here are a list of topics to review. All topics have equal importance, regardless of the time that was spent on each topic during class. 
-
-* Probability
-* Creating and interpreting confidence intervals
-* Assumptions for statistical methods to be valid
-* Generalizability, representativeness, bias, sampling frame
-* Statistical Analysis Procedures: 
-    - Two-sample T-tests for means and proportions
-    - ANOVA and $\chi^{2}$ for multiple samples
-    - Linear and Logistic regression.
-* Identifying confounders, moderators and covariates. 
-* Interpreting regression coefficients and making predictions using models. 
-    - from linear and logistic models
-    - using continuous and categorical variables
-
-
-### 12/4/17 - Week 15
-* Fill out [This google form](https://goo.gl/forms/o3O43feULJFDGUun2) to provide input as to when I should hold OH during finals week. 
-* Poster presentations MW
-    - Your poster must be printed and ready for class on Monday. 
-    
-* Poster building week! See the project page for instructions. 
-    - Drafts are due Wednesday, reviews due Friday
-    - Suggestions on how to make a nice plot for multivariable models has been added to the project page. 
-
-
---->
 
 ### 12/3/18 - [Week 14](https://norcalbiostat.github.io/MATH315/wk/wk14.html)
 * You should be working on finishing the regression assignment, and Poster Prep Stage III this week. 
@@ -234,11 +183,13 @@ Be sure to check the weekly schedule (linked above) for details on how to prepar
 * Problem set 2.2 - Blackboard quiz of 10 randomly selected questions from a pool of questions. _(Unlimited attempts)_
 * hw02 - Research codebook assignment (created in Google Drive directly). Will be peer reviewed. 
 
+--->
 
-### 8/27/18 - [Week 1](https://norcalbiostat.github.io/MATH315/wk/wk01.html) Welcome to Fall 18!
+
+### 1/21/19 - [Week 1](https://norcalbiostat.github.io/MATH315/wk/wk01.html) Welcome to Spring 19!
 * This course website contains all materials except the textbook for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.
 * Specifically click on and explore items in the top navigation bar.  
-* Take this survey to help choose when I should hold Office Hours https://goo.gl/forms/qLBv2jMF6fBv3BTR2 
+* Take this survey to help choose when I should hold Office Hours https://goo.gl/forms/kuctI3ktoo1Cpsio1 
 * Check Blackboard for links to the required course materials (also available on the syllabus) 
 * Check week 1 for how to successfully prepare for Monday. 
 
