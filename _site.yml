@@ -61,7 +61,7 @@ navbar:
     href: http://www.norcalbiostat.com/
 output:
   html_document:
-    theme: readable
+    theme: sandstone
     highlight: tango
     lib_dir: site_libs
     self_contained: no
