@@ -1,11 +1,7 @@
 ---
 title: "How to get help"
 date: "Last Updated `r Sys.time()`"
-output:
-  html_document:
-    highlight: tango
-    theme: sandstone
-css: ../css/customh5.css
+output: html_document
 ---
 
 # Where can I get help using R outside of class time? 
@@ -25,6 +21,7 @@ css: ../css/customh5.css
     - **Victoria Coia** vcoia@mail.csuchico.edu 
     - **Mariby Cruz** mcruz27@mail.csuchico.edu 
     - **Ricardo Aguilar** raguilar11@mail.csuchico.edu 
+    - **Eduarod Gomez** egomez42@mail.csuchico.edu 
 * **Math Learning Lab (MLIB 4th floor)** List of tutors TBD
 * **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
 

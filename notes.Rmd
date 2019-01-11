@@ -1,11 +1,8 @@
 ---
 output:
   html_document:
-    highlight: tango
-    theme: readable
     toc: yes
     toc_float: yes
-css: ../css/customh5.css
 ---
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}

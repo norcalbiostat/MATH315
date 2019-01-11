@@ -4,9 +4,7 @@ author: "STUDENT NAME"
 date: "DATE"
 output:
   pdf_document: default
-  html_document:
-    theme: readable
-    highlight: tango
+  html_document: default
     toc: yes
     toc_float: yes
 ---

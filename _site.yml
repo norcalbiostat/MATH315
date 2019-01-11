@@ -65,4 +65,4 @@ output:
     highlight: tango
     lib_dir: site_libs
     self_contained: no
-
+    css: css/sandstone.css

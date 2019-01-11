@@ -1,11 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 date: "Last Updated `r Sys.time()`"
-output:
-  html_document:
-    highlight: tango
-    theme: readable
-css: ../css/customh5.css
+output: html_document
 ---
 
 

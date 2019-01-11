@@ -3,11 +3,8 @@ title: 'Project Information'
 date: "Last Updated `r Sys.time()`"
 output:
   html_document:
-    highlight: tango
-    theme: readable
     toc: yes
     toc_float: yes
-css: css/customh5.css
 ---
 
 Throughout the entire semester you will be analyzing a data set with the end goal of creating a poster presentation to present your research. Often your homework serves as a first draft of exploration into your research questions, and helps you build your story. Homework assignments alone will not be sufficient for a good analysis. 
