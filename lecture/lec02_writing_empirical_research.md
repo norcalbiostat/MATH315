@@ -4,8 +4,9 @@ date: '2017-09-04'
 output:
   pdf_document: default
   html_document: 
-      theme: readable
+      theme: sandstone
       highlight: tango
+  css: css/sandstone.css
 ---
 
 _Taken from Passion Driven Statistics 2014 ibook_

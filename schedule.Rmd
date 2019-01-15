@@ -10,6 +10,19 @@ options(knitr.table.format = "html", knitr.kable.NA = '')
 _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 <br>
 ```{r , echo=FALSE, message=FALSE, warning=FALSE}
+rawdat <- read_xlsx("schedule_315.xlsx", sheet='Sheet2')
+```
+  
+```{r, results='asis', echo=FALSE}
+out <- rawdat %>% select(Topic:`Peer Review`)
+
+knitr::kable(out, align="lccc", escape=FALSE) %>% 
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered"))
+```
+
+----
+
+```{r , echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 rawdat <- read_xlsx("schedule_315.xlsx")
 
 cdat   <- rawdat %>% select(-SLO) %>% 
@@ -46,7 +59,7 @@ cdat$Assignments[evallist] <- gsub(" )", "</b>)", cdat$Assignments[evallist], fi
 
 ```
 
-```{r results='asis', echo=FALSE}
+```{r results='asis', echo=FALSE, eval=FALSE}
 out <- select(cdat, Topics, Prepare, Materials, Assignments)
 
 knitr::kable(out, align="l", escape=FALSE) %>% 
