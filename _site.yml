@@ -5,7 +5,7 @@ navbar:
   left:
   - text: Schedule
     icon: fa-calendar
-    href: schedule.html
+    href: schedule_topics.html
   - text: Materials
     icon: fa-folder-open
     menu:
@@ -14,11 +14,11 @@ navbar:
       href: notes.html
     - text: Course Packet
       icon: fa-file-code
-      href: reading/RAD_course_notes.pdf
+      href: reading/RAD_course_notes_S19.pdf
     - text: Applied Stats Notebook
       icon: fa-book-open
       href: https://norcalbiostat.github.io/AppliedStatistics_notes/
-    - text: Data
+    - text: Small Data sets
       icon: fa-database
       href: https://norcalbiostat.netlify.com/data/
   - text: Projects
