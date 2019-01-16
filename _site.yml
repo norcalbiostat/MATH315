@@ -5,7 +5,7 @@ navbar:
   left:
   - text: Schedule
     icon: fa-calendar
-    href: schedule_topics.html
+    href: schedule.html
   - text: Materials
     icon: fa-folder-open
     menu:
