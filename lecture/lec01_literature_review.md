@@ -2,10 +2,11 @@
 title: "Literature Review"
 date: '2017-08-27'
 output:
-  pdf_document: default
   html_document: 
-      theme: readable
+      theme: sandstone
       highlight: tango
+  pdf_document: default
+  css: css/sandstone.css
 ---
 
 # What is a literature review?

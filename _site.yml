@@ -18,9 +18,6 @@ navbar:
     - text: Applied Stats Notebook
       icon: fa-book-open
       href: https://norcalbiostat.github.io/AppliedStatistics_notes/
-    - text: Collaborative notes for R
-      icon: fa-code
-      href: https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg
     - text: Data
       icon: fa-database
       href: https://norcalbiostat.netlify.com/data/
@@ -30,7 +27,7 @@ navbar:
     - text: Project Instructions
       href: project.html
     - text: Peer Review Assignment
-      href: https://docs.google.com/spreadsheets/d/15BXa0Xx-utXAFUE5wlZDD-Z6ywV2ffLMiY4TThSnDJM/edit#gid=143363767
+      href: https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing
     - text: Project Data (Google Drive)
       href: https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY
   - text: Tools
@@ -38,13 +35,10 @@ navbar:
     menu:
     - text: Google Drive
       icon: fa-google
-      href: https://drive.google.com/drive/folders/13tBCpQye1UJLFcIFfPIhL5uMxrLWnTKk?usp=sharing
-    - text: Hack-MD (code sharing)
-      icon: fa-code
-      href: https://hackmd.io/
+      href: https://drive.google.com/drive/folders/1iy7Wh5iOw2EpyXAQUZlCVSXFH53i_Xdb?usp=sharing
     - text: Slack (class discussions)
       icon: fa-slack
-      href: https://math315.slack.com/
+      href: https://math315-s18.slack.com/
     - text: Zoom (video conference)
       icon: fa-video-camera
       href: https://csuchico.zoom.us/
@@ -57,20 +51,18 @@ navbar:
     icon: fa-question
     menu:
     - text: Syllabus
-      href: syllabus_315_f18.html
+      href: syllabus_315_s19.html
     - text: Submitting homework
       href: help_assignments.html
     - text: R programming
       href: help_R.html
-    - text: Hack MD Notes for F18
-      href: https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg
   - text: Dr. D's website
     icon: fa-paw
     href: http://www.norcalbiostat.com/
 output:
   html_document:
-    theme: readable
+    theme: sandstone
     highlight: tango
     lib_dir: site_libs
     self_contained: no
-
+    css: css/sandstone.css

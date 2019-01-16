@@ -10,21 +10,40 @@ options(knitr.table.format = "html", knitr.kable.NA = '')
 _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 <br>
 ```{r , echo=FALSE, message=FALSE, warning=FALSE}
+rawdat <- read_xlsx("schedule_315.xlsx", sheet='Sheet2')
+```
+  
+```{r, results='asis', echo=FALSE}
+out <- rawdat %>% select(Topic:`Peer Review`)
+
+knitr::kable(out, align="lccc", escape=FALSE) %>% 
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered"))
+```
+
+----
+
+```{r , echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 rawdat <- read_xlsx("schedule_315.xlsx")
 
-cdat   <- rawdat %>% select(-SLO, -Monday, -Wednesday, -Friday) %>% 
+cdat   <- rawdat %>% select(-SLO) %>% 
                      mutate(wknum = str_pad(wk, width=2, side="left", pad="0"),
                             link = paste0("wk/wk", wknum, ".html"), 
-                            Week = paste0("Week ", wknum, ": ",format(Date, format="%b %d")), 
-                            Link = sprintf("[%s](%s)",Week, link))
+                            wk2 = paste0("Week ", wknum, ": ",format(Date, format="%b %d")), 
+                            Week = sprintf("[%s](%s)",wk2, link), 
+                            Date = sprintf("[%s](%s)",format(Date, format="%b %d"), link))
 
-cdat$Link[c(13,17)] <- c("Fall Break", "Finals")
+cdat$Week[c(8,17)] <- c("Spring Break", "Finals")
 
 
 # parse topics
-topiclist <- which(!is.na(cdat$Topics))
-cdat$Topics[topiclist] <- paste0("<ul><li>", cdat$Topics[topiclist], "</li></ul>")
-cdat$Topics[topiclist] <- gsub("\r\n", "</li><li>", cdat$Topics[topiclist])
+cdat$Topics <- paste0(cdat$Date, "<ul><li>", cdat$Topics, "</li></ul>")
+cdat$Topics <- gsub("\r\n", "</li><li>", cdat$Topics)
+
+# parse prep
+preplist <- which(!is.na(cdat$Prepare))
+cdat$Prepare[preplist] <- paste0("<ul><li>", cdat$Prepare[preplist], "</li></ul>")
+cdat$Prepare[preplist] <- gsub("\r\n", "</li><li>", cdat$Prepare[preplist])
+
 
 # parse notes
 mats <- which(!is.na(cdat$Materials))
@@ -40,12 +59,11 @@ cdat$Assignments[evallist] <- gsub(" )", "</b>)", cdat$Assignments[evallist], fi
 
 ```
 
-```{r results='asis', echo=FALSE}
-out <- select(cdat, Link, Topics, Materials, Assignments)
+```{r results='asis', echo=FALSE, eval=FALSE}
+out <- select(cdat, Topics, Prepare, Materials, Assignments)
 
 knitr::kable(out, align="l", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
-  column_spec(1, width="10%") %>% column_spec(2, width="25%") %>% 
-  column_spec(3, width="25%") %>% column_spec(4, width="30%")
+  column_spec(1:4, width = c("15%","25%", "25%", "25%"))
 ```
 

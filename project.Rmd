@@ -3,11 +3,8 @@ title: 'Project Information'
 date: "Last Updated `r Sys.time()`"
 output:
   html_document:
-    highlight: tango
-    theme: readable
     toc: yes
     toc_float: yes
-css: css/customh5.css
 ---
 
 Throughout the entire semester you will be analyzing a data set with the end goal of creating a poster presentation to present your research. Often your homework serves as a first draft of exploration into your research questions, and helps you build your story. Homework assignments alone will not be sufficient for a good analysis. 
@@ -26,7 +23,7 @@ Why do we do peer review instead of just getting feedback from you?
 * This is a delayed version of paired programming - another set of eyeballs can typically help you find your mistake. 
 * I have 10fold more assignments to review than you do. You'll get your peer's reviews back faster than I can get yours back.
 * I will be looking for different things than your peers will be. This is a good thing. They are looking from "untrained eyes", which can be very critical to make sure you are explaining yourself clearly. I can better "figure out" what you are meaning to say  - they are the ones that will best tell you when/where you need to explain your findings better. 
-* You have the _option_ to then take your peer's feedback and revise your homework before you turn it in for grading. 
+* You are expected to read your peer's feedback and revise your work before it is graded. 
 
 
 ## Process
@@ -42,9 +39,6 @@ How do I conduct a Peer Review
     - Minimum four positive comments about what they did well, or should continue to do.
     - Minimum four corrections or suggestions for improvement. If it is reworking/grammer make these edits directly in the document. Explain why what you found was wrong and show how to do it correctly. 
 
-**Revision period**
-
-After you receive your peer feedback you have the _option_ of revising your work before I grade it. Turn in the final version in Blackboard learn 
     
 ## Feedback 
 
@@ -72,7 +66,7 @@ As I do my reviews on the same document, I will be reading and assessing your pe
 
 You will organize your research in stages by building a "powerpoint" type presentation. This will help you concicely explain your research topic and findings in a way that you can more easily translate (fit) onto a poster. 
 
-## <span style="color:blue">**Setup / Overview**</span>
+## <span style="color:DarkOliveGreen">**Setup / Overview**</span>
 * Create a Google Slides presentation directly into the Project Slides folder in our Google Drive. 
 * Name your file using your analysis pair names: `last_last` only. 
 * The required contents for each slide are listed below under **Stages**
@@ -81,9 +75,6 @@ You will organize your research in stages by building a "powerpoint" type presen
     - Once you have addressed a particular piece of feedback mark it as "resolved" in Google Slides. 
 * Your presentation should be limited to approximately 16-18 slides. The contents of each slide are listed below. 
 
-
-#### <span style="color:blue">**Stage 1: Background and sample characteristics**</span>
-Lecture notes on writing about empirical research: https://norcalbiostat.github.io/MATH615/lecture/lec02b_writing_em.html 
 
 1. Title 
 2. Introduction 
@@ -100,7 +91,7 @@ Lecture notes on writing about empirical research: https://norcalbiostat.github.
 8. Fully describe your main explanatory variable univariately using summary statistics and graphics. 
 9. Fully describe your main response variable univariately using summary statistics and graphics. 
 
-#### <span style="color:blue">**Stage 2: Bivariate analysis**</span>
+## <span style="color:DarkOliveGreen">**Stage 2: Bivariate analysis**</span>
 
 Two analyses, one per slide. Each slide should contain the following:  
 
@@ -109,7 +100,7 @@ Two analyses, one per slide. Each slide should contain the following:
     - This should be a conclusion written in English, includes a confidence interval and a p-value. 
     - You also need to state the name of the test you used. 
 
-#### <span style="color:blue">**Stage 3: Multivariable analysis**</span>
+## <span style="color:DarkOliveGreen">**Stage 3: Multivariable analysis**</span>
 
 You are trying to understand the relationship between your explanatory and response variable, in presence of information contained in other variables. 
 
@@ -119,13 +110,14 @@ You are trying to understand the relationship between your explanatory and respo
     - If you found a moderator: Remove the bivariate graph and write up from your poster and replace with explanation of moderator and graph of significant bivariate at the 3rd variable level.
     - If you did NOT find a moderator: Include a slide stating what relationships you tested for moderation and with what variable to see if it was a moderator, explaining that it was not a moderator. No graphs needed
 
-<!---
+**Slide 13: Testing for confounding relationships**
+
 * Confounding: 
     - If you found a confounder: on slide with bivariate relationship that was confounded put a bullet point that explains what variable confounded the relationship and put the written results that are shown in the confounding assignment on how to write results. Make sure to explain if it helped improve prediction of response variable. 
     - If you did NOT find a confounder: Include a slide stating what relationships you tested for confounds and with what variable to see if it was a confound, explaining that it was not a moderator. Make sure to explain if it helped improve prediction of response variable. 
---->
 
-**Slide 13: Results from a Multivariable Model**
+
+**Slide 14: Results from a Multivariable Model**
 
 * Build a multivariable model by adding additional predictors to the model. 
     - See the lecture notes on model building as guidance. 
@@ -136,21 +128,21 @@ You are trying to understand the relationship between your explanatory and respo
 * At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
 
 
-**Slide 14. Discussion**
+**Slide 15. Discussion**
 
 * Here you will explain what your graphical and inferential results tell you about your topic.
 * Discuss if your research hypothesis was supported, if it was not, why you think that might be
 * Explain the overall story/trend/what you learned when you consider your univariate, bivariate & multivariate results about your topic.
 * Compare your results to previous research results. Do they agree or disagree? 
 
-**Slide 15. Implications**
+**Slide 16. Implications**
 
 * What are the practical implications of your results?
 * What could others do with your findings? 
 * What future research needs to be conducted?
     - This needs to be more specific than "other variables could be explored". Which variables and why? What other research articles indicate that those other variables are relevant? 
 
-**Slide 16. Limitations**
+**Slide 17. Limitations**
 
 * Who are the results of this study generalizable to? (i.e. a subset of individuals?)
 * Were there any model assumptions that were not upheld? 
@@ -158,7 +150,7 @@ You are trying to understand the relationship between your explanatory and respo
 * Are there other factors that could exlain your response variable that you did not include in your model? 
 
 
-**Slide 17. References**  
+**Slide 18. References**  
 
 * You can use smaller font to get all references on one slide.
 * Use references from research plan, and any additional references gathered along the way. 

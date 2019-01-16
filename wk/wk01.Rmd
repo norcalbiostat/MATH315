@@ -8,7 +8,7 @@ output:
 css: ../css/customh5.css
 params:
     w: 1
-    d: '2018-08-27'
+    d: '2019-01-21'
 title: "Week `r params$w`: `r format(as.Date(params$d) ,'%b %d')` - `r format(as.Date(params$d)+6 ,'%b %d')`"
 ---
 
@@ -29,9 +29,9 @@ raw <- read_excel("../schedule_315.xlsx")
 week.w <- filter(raw, wk==params$w)
 
 # update relative paths
-week.w[,5:10] <- gsub("reading/", "../reading/", week.w[,5:10]) 
-week.w[,5:10] <- gsub("lecture/", "../lecture/", week.w[,5:10]) 
-week.w[,5:10] <- gsub("hw/", "../hw/", week.w[,5:10]) 
+week.w[,5:8] <- gsub("reading/", "../reading/", week.w[,5:8]) 
+week.w[,5:8] <- gsub("lecture/", "../lecture/", week.w[,5:8]) 
+week.w[,5:8] <- gsub("hw/", "../hw/", week.w[,5:8]) 
 
   
 # strip columns into separate data sets
@@ -40,9 +40,8 @@ SLO    <- paste("*", str_split(week.w$SLO, "\r\n", simplify=TRUE))
 prep   <- paste("*", str_split(week.w$Prepare, "\r\n", simplify=TRUE))
 mats   <- paste("*", str_split(week.w$Materials, "\r\n", simplify=TRUE))
 hw     <- paste("*", str_split(week.w$Assignments, "\r\n", simplify=TRUE))
-mon    <- t(str_split(week.w$Monday, "\r\n", simplify=TRUE))
-wed    <- t(str_split(week.w$Wednesday, "\r\n", simplify=TRUE))
-fri    <- t(str_split(week.w$Friday, "\r\n", simplify=TRUE))
+dis    <- paste("*", str_split(week.w$Discuss, "\r\n", simplify=TRUE))
+
 ```
 
 ----
@@ -53,11 +52,15 @@ x <- kable(SLO) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 gsub("<thead>.*</thead>", "", x)
 ```
 
-#Prepare
+<br>
+
+# How to Prepare
 ```{r}
 x <- kable(prep) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 gsub("<thead>.*</thead>", "", x)
 ```
+
+<br>
 
 # Materials
 ```{r}
@@ -65,31 +68,18 @@ x <- kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed")
 gsub("<thead>.*</thead>", "", x)
 ```
 
+<br>
+
 # Assignments
 ```{r}
 x <- kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 gsub("<thead>.*</thead>", "", x)
 ```
 
+<br>
 
-----
-
-# Monday: `r topics[1]`
-
+# Discussion
 ```{r}
-kable(mon) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+x <- kable(dis) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+gsub("<thead>.*</thead>", "", x)
 ```
-
-
-# Wednesday: `r topics[2]`
-
-```{r}
-kable(wed) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
-```
-
-# Friday: `r topics[3]`
-
-```{r}
-kable(fri) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
-```
-

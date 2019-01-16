@@ -11,17 +11,14 @@
 
 
 
-<title>Video tutorials</title>
+<title>How to get help</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
 <script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
@@ -57,7 +54,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="../css/customh5.css" type="text/css" />
+<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
 
 </head>
 
@@ -92,34 +89,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 66px;
+  padding-top: 61px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 
 .section h2 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h3 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h4 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h5 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h6 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 </style>
 
@@ -154,101 +151,6 @@ $(document).ready(function () {
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -303,13 +205,6 @@ div.tocify {
       </a>
     </li>
     <li>
-      <a href="https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg">
-        <span class="fa fa-code"></span>
-         
-        Collaborative notes for R
-      </a>
-    </li>
-    <li>
       <a href="https://norcalbiostat.netlify.com/data/">
         <span class="fa fa-database"></span>
          
@@ -331,7 +226,7 @@ div.tocify {
       <a href="project.html">Project Instructions</a>
     </li>
     <li>
-      <a href="https://docs.google.com/spreadsheets/d/15BXa0Xx-utXAFUE5wlZDD-Z6ywV2ffLMiY4TThSnDJM/edit#gid=143363767">Peer Review Assignment</a>
+      <a href="https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing">Peer Review Assignment</a>
     </li>
     <li>
       <a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Project Data (Google Drive)</a>
@@ -348,21 +243,14 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://drive.google.com/drive/folders/13tBCpQye1UJLFcIFfPIhL5uMxrLWnTKk?usp=sharing">
+      <a href="https://drive.google.com/drive/folders/1iy7Wh5iOw2EpyXAQUZlCVSXFH53i_Xdb?usp=sharing">
         <span class="fa fa-google"></span>
          
         Google Drive
       </a>
     </li>
     <li>
-      <a href="https://hackmd.io/">
-        <span class="fa fa-code"></span>
-         
-        Hack-MD (code sharing)
-      </a>
-    </li>
-    <li>
-      <a href="https://math315.slack.com/">
+      <a href="https://math315-s18.slack.com/">
         <span class="fa fa-slack"></span>
          
         Slack (class discussions)
@@ -396,16 +284,13 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="syllabus_315_f18.html">Syllabus</a>
+      <a href="syllabus_315_s19.html">Syllabus</a>
     </li>
     <li>
       <a href="help_assignments.html">Submitting homework</a>
     </li>
     <li>
       <a href="help_R.html">R programming</a>
-    </li>
-    <li>
-      <a href="https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg">Hack MD Notes for F18</a>
     </li>
   </ul>
 </li>
@@ -425,8 +310,8 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Video tutorials</h1>
-<h4 class="date"><em>Last Updated 2018-09-21 17:07:27</em></h4>
+<h1 class="title toc-ignore">How to get help</h1>
+<h4 class="date"><em>Last Updated 2019-01-16 13:21:28</em></h4>
 
 </div>
 
@@ -446,14 +331,15 @@ div.tocify {
 <div id="in-person" class="section level2">
 <h2>In Person:</h2>
 <ul>
-<li><strong>Community Coding</strong> - MLIB 442, Tuesday &amp; Thursday 2-4pm</li>
-<li><strong>Robin Donatello</strong> - Stat professor. Holt 202 Office Hours: M-3pm, W-1pm, R-10am</li>
+<li><strong>Community Coding</strong> - TBD</li>
+<li><strong>Robin Donatello</strong> - Stat professor. Holt 202 Office Hours: TBD</li>
 <li><strong>Edward Roualdes</strong> - Stat professor. Holt 204 - <a href="mailto:eroualdes@csuchico.edu">eroualdes@csuchico.edu</a> Often at community coding.</li>
 <li><strong>Peer Mentors</strong>. Possibly available for private tutoring also.
 <ul>
-<li><strong>Victoria Coia</strong> <a href="mailto:vcoia@mail.csuchico.edu">vcoia@mail.csuchico.edu</a> Occasionally will be in class. You can also ping her on Slack.</li>
-<li><strong>Mariby Cruz</strong> <a href="mailto:mcruz27@mail.csuchico.edu">mcruz27@mail.csuchico.edu</a> Find her in the Math Tutor lab (4th floor of library).</li>
+<li><strong>Victoria Coia</strong> <a href="mailto:vcoia@mail.csuchico.edu">vcoia@mail.csuchico.edu</a></li>
+<li><strong>Mariby Cruz</strong> <a href="mailto:mcruz27@mail.csuchico.edu">mcruz27@mail.csuchico.edu</a></li>
 <li><strong>Ricardo Aguilar</strong> <a href="mailto:raguilar11@mail.csuchico.edu">raguilar11@mail.csuchico.edu</a></li>
+<li><strong>Eduarod Gomez</strong> <a href="mailto:egomez42@mail.csuchico.edu">egomez42@mail.csuchico.edu</a></li>
 </ul></li>
 <li><strong>Math Learning Lab (MLIB 4th floor)</strong> List of tutors TBD</li>
 <li><strong><a href="https://www.meetup.com/Chico-R-Users-Group">R Meetup group</a></strong> Coding over coffee (or adult beverages) anyone?</li>
@@ -501,36 +387,11 @@ div.tocify {
 <li>Data Camp <a href="https://www.datacamp.com/courses/cleaning-data-in-r" class="uri">https://www.datacamp.com/courses/cleaning-data-in-r</a></li>
 <li>Applied Stats Notes Chapter 1 <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html" class="uri">https://norcalbiostat.github.io/AppliedStatistics_notes/index.html</a></li>
 </ul>
-<hr />
 </div>
-</div>
-<div id="using-r-on-campus" class="section level1">
-<h1>Using R on campus</h1>
-<p>What other computers on campus have R?</p>
-<ul>
-<li>The three reserve computers in the first floor library. You have to ask to use these. (Confirmed 8/25/17)</li>
-<li>Butte 211 has an open computer lab.</li>
-</ul>
-<hr />
-<p><em>In Development. Most video does not come with sound</em></p>
-</div>
-<div id="downloading-data" class="section level1">
-<h1>Downloading data</h1>
-<p>How to download the project data, and save it into a recommended file structure. When sharing code and analyses with others, it is essential to have the same or similar paths.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j0hk9itcMgU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
-</div>
-<div id="importing-data-into-r" class="section level1">
-<h1>Importing data into R</h1>
-<p>How to use the import code provided in the collaborative R code notes to import a CSV file into R. This video uses the NESARC data, which has over 3000 variables. This takes a while to load into R. This video also demonstrates how to use the <code>select</code> function within the <code>dplyr</code> package to only select certain variables to save (export) into a “clean” data set that can be used for later analysis.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ywa31gX240k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 

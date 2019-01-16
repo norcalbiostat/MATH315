@@ -1,10 +1,12 @@
 ---
 title: "Preparation questions for Data Management"
+date: '2017-09-04'
 output:
-  html_document:
-    theme: readable
-    highlight: tango
   pdf_document: default
+  html_document: 
+      theme: sandstone
+      highlight: tango
+  css: css/sandstone.css
 ---
 
 You know what variables you want to use, and you've looked over the codebook enough now that you have an idea of some potential data issues that you will have to address. 

@@ -15,13 +15,10 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
 <script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
@@ -57,7 +54,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="../css/customh5.css" type="text/css" />
+<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
 
 </head>
 
@@ -92,34 +89,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 66px;
+  padding-top: 61px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 
 .section h2 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h3 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h4 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h5 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h6 {
-  padding-top: 71px;
-  margin-top: -71px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 </style>
 
@@ -154,101 +151,6 @@ $(document).ready(function () {
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -303,13 +205,6 @@ div.tocify {
       </a>
     </li>
     <li>
-      <a href="https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg">
-        <span class="fa fa-code"></span>
-         
-        Collaborative notes for R
-      </a>
-    </li>
-    <li>
       <a href="https://norcalbiostat.netlify.com/data/">
         <span class="fa fa-database"></span>
          
@@ -331,7 +226,7 @@ div.tocify {
       <a href="project.html">Project Instructions</a>
     </li>
     <li>
-      <a href="https://docs.google.com/spreadsheets/d/15BXa0Xx-utXAFUE5wlZDD-Z6ywV2ffLMiY4TThSnDJM/edit#gid=143363767">Peer Review Assignment</a>
+      <a href="https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing">Peer Review Assignment</a>
     </li>
     <li>
       <a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Project Data (Google Drive)</a>
@@ -348,21 +243,14 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://drive.google.com/drive/folders/13tBCpQye1UJLFcIFfPIhL5uMxrLWnTKk?usp=sharing">
+      <a href="https://drive.google.com/drive/folders/1iy7Wh5iOw2EpyXAQUZlCVSXFH53i_Xdb?usp=sharing">
         <span class="fa fa-google"></span>
          
         Google Drive
       </a>
     </li>
     <li>
-      <a href="https://hackmd.io/">
-        <span class="fa fa-code"></span>
-         
-        Hack-MD (code sharing)
-      </a>
-    </li>
-    <li>
-      <a href="https://math315.slack.com/">
+      <a href="https://math315-s18.slack.com/">
         <span class="fa fa-slack"></span>
          
         Slack (class discussions)
@@ -396,16 +284,13 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="syllabus_315_f18.html">Syllabus</a>
+      <a href="syllabus_315_s19.html">Syllabus</a>
     </li>
     <li>
       <a href="help_assignments.html">Submitting homework</a>
     </li>
     <li>
       <a href="help_R.html">R programming</a>
-    </li>
-    <li>
-      <a href="https://hackmd.io/Ue0ojg6xRWC4fP3Xg3Tveg">Hack MD Notes for F18</a>
     </li>
   </ul>
 </li>
@@ -426,201 +311,75 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Frequently Asked Questions</h1>
-<h4 class="date"><em>Last Updated 2018-09-21 17:07:26</em></h4>
+<h4 class="date"><em>Last Updated 2019-01-16 13:21:27</em></h4>
 
 </div>
 
 
-<div id="how-do-i-complete-the-assignments" class="section level1">
-<h1>How do I complete the assignments?</h1>
+<div id="how-do-i-complete-the-coding-assignments" class="section level1">
+<h1>How do I complete the coding assignments?</h1>
 <ul>
-<li>Most homework assignments will come with a R markdown (<code>*.Rmd</code>) template file to use.</li>
-<li>Write your code and answers directly into the Rmd file. Spellcheck and knit to PDF before submission.</li>
-<li>Links to the templates can be found in the homework assignment itself. A list of all assignment files can be found on the <a href="notes.html">notes</a> page.</li>
+<li>Homework assignments involving coding will be assigned as Projects in R Studio Cloud and will come with a R markdown (<code>*.Rmd</code>) template file to use.</li>
+<li>Write your code and answers directly into the Rmd file.</li>
 </ul>
 </div>
-<div id="howwhere-do-i-turn-in-homework" class="section level1">
-<h1>How/Where do I turn in Homework?</h1>
-<p>Always carefully read the assignment instructions for specific submission instructions.</p>
-<div id="standard-assignments" class="section level2">
-<h2>Standard Assignments</h2>
+<div id="howwhere-do-i-turn-in-assignments" class="section level1">
+<h1>How/Where do I turn in assignments?</h1>
 <p>Unless explicitly stated otherwise,</p>
 <ul>
 <li>The file should be clearly named using this format: <code>assignment_userid.pdf</code>. E.g. <code>univ_graphics_rdonatello.pdf</code></li>
 <li>It should be in PDF format.</li>
-<li>Uploaded to the corresponding assignment in Blackboard learn.</li>
+<li>Uploaded to the corresponding folder in Google Drive.</li>
+<li>Due dates are typically Sunday.</li>
+<li>Some project-specific assignments will be written directly into Google Drive.</li>
 </ul>
 </div>
-<div id="project-assignments" class="section level2">
-<h2>Project Assignments</h2>
+<div id="peer-reviewed-assignments" class="section level1">
+<h1>Peer Reviewed Assignments</h1>
+<p>Many of your assignments will have a round of peer review before they are ready for grading.</p>
+<p>After the submission deadline (often Sunday)</p>
 <ul>
-<li>Write the assignment as a team (analysis pair), directly in Google Docs. Due dates are typically Sunday.</li>
-<li>During Mon &amp; Tue, your assignment will be reviewed by 2 of your peers.</li>
-<li>During Wed &amp; Thu, you have the <em>option</em> of revising your assignment.</li>
-<li>By Friday you should drop a note in the corresponding assignment in Blackboard Learn saying your assignment is ready for review.
+<li>Your assignment will be reviewed by 2 of your peers over a 2 day period (Mon-Tue)</li>
+<li>You then have the option of revising your assignment over a 2 day period (Wed-Thu)</li>
+<li>The final deadline is after this review period.</li>
+<li>Once your assignment is ready for grading, move it into the <code>Ready for review</code> sub-folder in Google Drive.
 <ul>
-<li>You can upload to Blackboard learn the revised assignment, OR you can simply say “Done, see google drive”</li>
+<li>If you do not move the file yourself I will take whatever has been uploaded already and grade it.</li>
+<li>Once I start grading the <code>ready for review</code> folder is locked to editing.</li>
+<li>It is your responsibility to ensure that this is the final version.</li>
+<li>I will not take submissions past the deadline, or by email.</li>
 </ul></li>
 </ul>
-<p>Project assignments should be considered quality work and such refined, reviewed, and absolutely spellchecked before submission.</p>
+<p>Assignments should be refined, reviewed, and absolutely spellchecked before submission. There is a built in spellcheck function in R studio. Use it.</p>
 </div>
-<div id="what-are-you-looking-for-when-you-grade" class="section level2">
-<h2>What are you looking for when you grade?</h2>
+<div id="what-are-you-looking-for-when-you-grade" class="section level1">
+<h1>What are you looking for when you grade?</h1>
 <ul>
-<li>Most assignments include model examples directly in the assignment file itself.</li>
-<li>Correct english grammer, spelling, formatting.</li>
-<li>Concice, clear and complete answers.</li>
-<li>Correct statistical methods used</li>
+<li>That you followed the model example for that problem in the course notes.</li>
+<li>That you followed directions.</li>
+<li>Correct English grammar, spelling, formatting.</li>
+<li>Concise, clear and complete answers.</li>
+<li>Correct graphical and/or statistical methods used.</li>
 <li>That you answered the question posed.</li>
-<li>No extreneous output or code</li>
+<li>No extraneous output or code is showing.</li>
 </ul>
-<!--
-### R / Programming
-
-* I have no background in programing and I think it would be very interesting to learn.Even in my biol 350 class, Fundamentals of Ecology, R programing was mentioned. I would like to know more about how to install R. I believe I did it correctly but not all the different consoles are coming up on mine like they showed in the video.
-    - **I belive you are talking about the windows in R Studio. That may be because when you first open R by itself, you do not have a script or code file open yet. You can see more about this on my software overview [[blog post]](https://norcalbiostat.netlify.com/post/software-overview/)**
-* I am not familiar with R studio. Will we be able to go through codes and other problems in class together?
-    - **Yes. The videos and the course notes demonstrate how to write code to accomplish a specific task. In class we will work through how the code works, then you will work with your group to apply a code concept to a new problem.**
-* I want to know more about writing code in general and what R language is. 
-    - **From [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))** 
-    
-> R is an open source programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
-
-* How straongly do you recommend the R bootcamp before taking or alongside this class? First and one of the only stats classes I'll be taking with my major.
-    - **That R Bootcamp (MATH 130) was designed specifically as a primer for R before taking MATH 315. It is a new course, this fall is it's first official run as MATH 130. I am working with other NS departments and faculty members to advise their students to take this course prior to 315. You can be successfull taking it concurrently as well. The more exposure to R you have early on the more comfortable you will be.**
-* I would like to know more about how the R Language is better suited to learning about data interpretation. I am not a programmer, so learning to draft code seems counter-productive to learning about statistical data analysis.
-    - **Hopefully as we work with data in the upcoming weeks it will make more sense how this all fits together. You're just learning enough programming to analyze your data.**
-    - **Also, data analysis is done in code, not by hand. So you need to lean how to program in a statistical language to do data analysis.**
-* Do we need to bring our computers to class everyday? 
-    - **Except for exam days, yes.**
-* How much of the class is focused on programming and how much is to be more traditional math course work.
-    - **You will do little to no hand calculations. This is not a traditional math class, this is a modern statistics class**
-* i want to know how to use R and what is R used for. How is logistics used in the real world? How does logistics plug into our project?
-    - **R is used for data preparation and analysis across the globe.**
-    - **For examples on how R is used in production, check out a few of these sites**
-      * https://www.r-bloggers.com/
-      * https://www.rstudio.com/products/shiny/shiny-user-showcase/
-      * http://www.rforscience.com/
-* Are you going to be somewhat guiding us through R or are we expected to be able to learn most things on our own?
-    - **Somewhat. The Data Camp modules are all on your own outside of class. I will guide you through many of the processes in class as well, but practice (and you'll need a lot), will come on your own outside of class**
-* How will data from AddHealth be brought into R? Will this include lots of manual data entry, or is there a file that we can read it in from via the read.table() function or something similar?   
-    - **Heck no we won't be doing that much data entry! We're totally going to use `read.csv()`.**
-* I am not familiar with R studio. Will we be able to go through codes and other problems in class together?
-    - **Nearly every day**
-* I would love to learn about how our knowledge of R is going to be applied in our future career opportunities
-    - **Why biology students need to learn how to program [Wired](https://www.wired.com/2009/03/why-biology-students-should-learn-how-to-program/)**
-    
-> solid informatic skills, including at least basic programming and sound statistical knowledge, will make you a far more productive scientist.
-
-* ... and the benefits of learn R versus other computer languages. 
-    - **Common statistical programming languages include SAS, SPSS, STATA, Python and R. I have used nearly every one of these in the past in a career position.**
-    - **R is free, open source, and extremely flexible. Free is not trivial, you can still use it outside of your time as a student**
-    - **R is also growing at rapid speed in the natural sciences [A different Nature paper](https://www.nature.com/news/programming-tools-adventures-with-r-1.16609)**
-    - **SPSS, SAS, Stata are not cheap. Many companies and/or research groups don't have the funding for this.** 
-    
-
-
-### Assignments / grading
-
-* There are different assignments due on the blackboard calender due date page vs the course website weekly outline.
-    - **Please let me know via email any discrepencies. Items that are due to be submitted to Blackboard should have the exact same due date. There are more items listed in the weekly overview (such as reading) that do not have a corresponding submission link in Blackboard, because there is nothing to submit.**
-* I would like to know about how many suggested hours will we need outside of class in order to do well. Also, will it be a big barrier if we do not have a laptop to take to class.
-    - **Every student I have spoken to says that having your own laptop makes this class easier. While we do have loaner laptops for use in class, you cannot check them out. So you must bring a flash drive to save all your work and data files on.**
-* My confusion always comes from the assignments are located, how to access them, and how to turn them in.
-    - **Links to download assignment instructions, and RMD template files are found on the weekly overview for that day. (Not the daily grid, but the more detailed page where you can navigate to each day using the menu bar on the left).**
-    - **Assignments will nearly always be uploaded to Blackboard Learn**
-* I'm a bit unclear of what to expect from this class. In high school we covered things such as chi squared test and I am curious if we will be going over equations like that or if this class will simply be mainly coding.
-    - **We will be talking about some equations, but we will not be doing hand calculations that you may have done in HS. Our goal is to analyze real data using tests like the $\chi^2$ test, and focusing on how to interpret the results.**
-* I would like to know about how many suggested hours will we need outside of class in order to do well. 
-* How much time is expected to be spent practicing using R outside of class/doing homework in order to get an A?
-    - **The general rule of thumb is 3 hours of workload outside of class for every 1 hour in class. This means you are expected to spend 9 hours doing work for this class. How fast you pick up on the R language will impact this time, but the assignments have been strucutred such that learning R should not dramatically increase your workload. The important thing is while you're learning R, to try to learn why something works, not just copy/paste/pray. That way you can apply it to a new problem with minimal errors.**
-* Will credit still be given to those who try to code and still fail?
-    - **I can't say yes here, because your ability to generate analysis results requires successful code.**
-* Will i need to download any additional programs for the class
-    - **The only required programs for this class are R and R Studio. Latex is highly recommended/preferred. **
-How often homework is due?
-    - **Approximately a week after we cover that material in class**
-* I'm hoping before you let us go at the end of the the day you could tell us where everything is, which so much already on the blackboard page I get a bit lost.
-    - **I will always try to give you a reminder regarding what is due and when, and do so by pointing it out explicitly on the class website using the overhead projector. I even have alarm reminders on my fitbit watch to start wrapping things up at 10 min before the class ends. You can help me remember to do this by asking me to recap what is up next before everyone leaves.**
-* I want to know that the tools I need to get every assignment turned in properly are clear.
-    - **So make sure you read instructions early on, and ask clarifying questions so you know exactly what to do**
-* I was wondering if all the at home assignments will be discussed the following class or if we come back to them in later days or weeks.
-    - **We won't discuss the blackboard learn or data camp quizzes directly in class. We will be working on (at least starting) most homework assignments while in class. Most written assignments will be directly related to your project, so you will be coming back to it frequently.**
-* am I suppost to answer all the questions on the [course] notes or is it only the designated Q section. 
-    - **The red Q's, and all blue Example boxes are things that you should prepare answers for before class**
-* Where do RATs factor into grading, if at all? 
-    - **Into your "learning" grade. Check the syllabus under coursework, and under grading**
-
-
-
-
-### Exams
-* will you give us cumulative exams?
-    - **Yes in the sense that you can't explain a more advanced result without knowing the basics first.** 
-* Because statistical analysis is computer based, how will exams be structured?
-* I would like to know more about how the tests are going to be formated, computer based or paper?
-    - **They will be paper exams. I will show a graph or an analysis result and ask you to explain a concept regarding that topic. I could ask you to fill in sample data. I will have a sample Exam 1 to help address this question of exam formatting.**
-* I am curious about how exams would occur in the class and what we would get tested on.
-    - **Interpretations, concepts. Thinking with data. **
-* Will we be able to use out course packets during our exams?
-    - *Yes.*
-
-
-
-
-
-
-### Projects
-* For the group work, are we also graded by our own contributions or just our work as a whole?  
-    - **I intend to assign the same grade to both individuals in the pair.**
-* I want to know more about the "support" groups and whether one is graded as a whole (including everyone in the group) or is one graded individually and how well they participate within the group. Because I'm assuming it might be a bit hard for Dr. Donatello to be checking up on each group and who is participating and whatnot. Also if a group member isn't showing much interest in helping out the group, what should happen? Of course, ask them if they could please participate. But will we have a survey at the end of the semester that each of us can do where we rate whether our group helped equally throughout the semester.
-    - **The "support" groups is the group of people you work together in class.**
-    - **I have done a survey in the past that weighted the project grade based on peer review of participation. I will also do a midterm check in with all teams to assess if all parties are doing OK. Since the project is only team based now (pairs of 2), there is less room for freeloaders. If it still becomes a major problem of non-equal distribution of effort then I can intervene. But for now see the answer to the question above.**
-* how many people per group project?
-    - **You will work in pairs of two**
-* Is it gonna be 10 projects with the same group or multiple different groups?
-    - **The same pair of students will work on one single project the entire semester**
-* I want to learn more about the group model that is being applied to this course and how it can improve our overall experience in the course
-    - **Team based learning (TBL) - [Definition](http://www.teambasedlearning.org/definition/) is considered a high impact practice that has been shown (evidence based) to result in better learning outcomes compared to traditional lectures.**
-    - **Articles on the impact of TBL on academic performance: [Med students](https://www.ncbi.nlm.nih.gov/pubmed/20881827), [Randomized control trial](https://www.ncbi.nlm.nih.gov/pubmed/28331383), [TBL in high schools](http://diginole.lib.fsu.edu/islandora/object/fsu:210481/datastream/PDF/view)**
-    - **It may sound lame, and an old excuse, but you will be working with others in your career. You have to learn how to deal with project management, dissemination of tasks, being responsbile to other peers, holding other people responsible for their work, and yes conflicting personalities**
-    
-  
-    
-    
-    
-    
-### Other
-* I want to know what tactics are used the most for teaching methods? Power points? Projector?
-    - **All the lecture material is formatted as HTML or PDF. Or we are working directly in R. I will talk through code/output using the overhead projector, and supplement the lecture/notes by writing on the board. Most content will come from the videos.**
-* I did want to know more about how our class would be ran, as in for example if the majority of the students are stuck would you lecture in class or would we have to attend office hours to not get behind in class. 
-    - **If the majority of the class is stuck on a particular problem, I will demonstrate how to solve that problem using the projector. If the class is stuck because of lack of preparation, then we will probably end class for the day and let people get caught up on their own before we move on.**
-* I would like to know if there is help offered for the programs we use to do our analysis. 
-* Would there be any extra help in the student service center or will it all be based on the groups you gave us.
-    - **There is no formal tutoring for R on campus. I will have a peer mentor in both classes who will be there to help on heavy coding days.**
-    - **I will also have a peer mentor helping me out during office hours, and three monitoring the Google Group to answer questions.**
-* Will it be a big barrier if we do not have a laptop to take to class.
-    - **I will try to not let it be, but it will be more difficult having to use a flash drive.**
-* it sseems like we have a lot of information for the class scattered in to many places (BBL datacamp that google group and your course page via github). I am worried that as the semester progresses a lot of things are lost when jumping sites for information
-    - **Life uses multiple resources. Not everything is always found in one textbook or website.**
-    - **Everything is centralized on the course website (Hosted by github).**
-        - **HW is submitted in BBLearn.** 
-        - **Questions are asked on the Google group forum**
-        - **Data camp teaches you basics on R synatx**
-* What is the best way to navigate all the links?
-    - **Understand the context of their placement. What am I referring to with that link? Homework? Reading material? Is it data to download?**
-* If you are struggling at first and are slow to learn the R programming is it still possible to get a passing grade?
-    - **Only if you put in the time, effort, and use the resources available to you (OH, peer mentors, google group, support group)**
-    
-    
---->
 </div>
+<div id="how-do-you-grade" class="section level1">
+<h1>How do you grade?</h1>
+<ul>
+<li>Grades are assigned using a rubric in Blackboard Learn.
+<ul>
+<li>It would be a smart idea to check the rubric before you submit to ensure that you earn all possible points.</li>
+</ul></li>
+<li>I will provide comments and feedback as appropriate on your assignment itself (while still in Google Drive)
+<ul>
+<li>This means that feedback is public, but grades are private.</li>
+</ul></li>
+</ul>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 

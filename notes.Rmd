@@ -1,11 +1,8 @@
 ---
 output:
   html_document:
-    highlight: tango
-    theme: readable
     toc: yes
     toc_float: yes
-css: ../css/customh5.css
 ---
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
@@ -51,22 +48,22 @@ gsub("<thead>.*</thead>", "", x)
 ```
 
 ## PDS Videos
-All PDS Videos on YouTube: https://www.youtube.com/channel/UCodqFq53BToGxFrq28I1oYw
 
-* Chapter 01 Course Introduction http://passiondrivenstatistics.com/2015/05/20/chapter-01-course-introduction/
-* Chapter 02 http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/
-* Chapter 04 http://passiondrivenstatistics.com/2015/09/16/chapter-04/ 
-* Chapter 06 http://passiondrivenstatistics.com/2015/12/18/r-chapter-6/
-* Chapter 07 http://passiondrivenstatistics.com/2016/01/08/r-chapter-7/
-* Chapter 08 http://passiondrivenstatistics.com/2016/01/20/r-chapter-8/
-* Chapter 09 http://passiondrivenstatistics.com/2016/03/28/r-chapter-9/
-* Chapter 10 Probability http://passiondrivenstatistics.com/2015/07/15/chapter-10/ 
-* Chapter 11 ANOVA http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/
-* Chapter 12 Test of Proportions http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/
-* Correlation: https://www.youtube.com/playlist?list=PL8nC8L7kjElfc0OjshBv3JXKiqltgh1Ca (Code is in SAS but content is relevant.)
-* Chapter 14 Moderating http://passiondrivenstatistics.com/2016/08/20/r-chapter-14/
-* Chapter 17 Multiple Linear Regression and Logistic Regression http://passiondrivenstatistics.com/2016/10/06/r-chapter-17/
-* Chapter 18 Writing for your poster http://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/
+* Video 01 Introduction to Passion Driven Statistics (5:49) https://youtu.be/_8A0zx51BKs
+* Video 02 Data Sets and Code Books (24:37) https://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/
+* Video 03 Literature Review (7:57) https://vimeo.com/139525602
+* Video 04 Working with Data (33:34) https://vimeo.com/157497682
+* Video 05 Data Management (33:28) https://vimeo.com/151207734
+* Video 06 Graphing: One Variable at a Time (31:33) https://vimeo.com/152493596
+* Video 07 Graphing Relationships (36:11) https://vimeo.com/160477834 
+* Video 08 Hypothesis Testing (30:46) https://passiondrivenstatistics.com/2015/07/15/chapter-10/ 
+* Video 09 ANOVA (29:48) https://vimeo.com/166245557
+* Video 10 Chi-Square Test of Independence (28:36) https://passiondrivenstatistics.com/2016/06/29/r-chapter-12/
+* Video 11 Correlation (13:43) https://passiondrivenstatistics.com/2019/01/08/11-correlation/  
+* Video 12 Moderating (21:29) https://passiondrivenstatistics.com/2016/08/20/r-chapter-14/
+* Video 13 The Question of Causation (14:06) https://passiondrivenstatistics.com/2018/11/13/13-the-question-of-causation/
+* Video 14 Multivariable Models and Confounding (57:43) https://passiondrivenstatistics.com/2016/10/06/r-chapter-17/ 
+* Video 15 Writing for your poster (16:03) https://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/
 
 
 
