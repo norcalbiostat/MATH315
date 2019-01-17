@@ -72,15 +72,15 @@ Setup your poster by doing the following with your partner.
 * Name your file using your analysis pair names: `last_last` only. 
 
 
-You will fill out these slides in 3 stages. The required contents for each slide are listed below under **Stages**
+You will fill out these slides in 4 stages. The required contents for each slide are listed below under **Stages**
 
 * At each stage you should update anything you need to change, such as correctly making graphics, writing results correctly etc. 
 * This includes reviewing the current set of feedback and mak the appropriate corrections. 
     - Once you have addressed a particular piece of feedback mark it as "resolved" in Google Slides. 
-* Your presentation should be limited to approximately 16-18 slides. The contents of each slide are listed below. 
+* Your presentation should be limited to approximately 20 slides. The contents of each slide are specified below. 
 
 
-## <span style="color:DarkOliveGreen">**Stage 1: Setting up the story**</span>
+## <span style="color:DarkOliveGreen">**Stage 1: Setting up the story (Slides 1-11)**</span>
 
 1. Title 
 2. Introduction 
@@ -94,10 +94,13 @@ You will fill out these slides in 3 stages. The required contents for each slide
     - Do NOT talk about applying labels
     - Do NOT use variable names. 
     - Restrict this list to only the variables you are using in your analysis. This is likely not to be more than 4-6. 
-8. Fully describe your main explanatory variable univariately using summary statistics and graphics. 
-9. Fully describe your main response variable univariately using summary statistics and graphics. 
+    
+## <span style="color:DarkOliveGreen">**Stage 2: Exploratory data analysis (Slide 8-11)**</span>
+    
+8-9. Fully describe (summary statistics, plots and words) the two variables mentioned in your research question. 
+10-11. Fully describe (summary statistics, plots and words) two different bivariate relationships that involve variables directly related to your research topic. 
 
-## <span style="color:DarkOliveGreen">**Stage 2: Bivariate analysis**</span>
+## <span style="color:DarkOliveGreen">**Stage 2: Bivariate Inference (Slide 12-13)**</span>
 
 Two analyses, one per slide. Each slide should contain the following:  
 
@@ -110,20 +113,20 @@ Two analyses, one per slide. Each slide should contain the following:
 
 You are trying to understand the relationship between your explanatory and response variable, in presence of information contained in other variables. 
 
-**Slide 12: Testing for moderators**
+**Slide 14: Testing for moderators**
 
 * Moderation:
     - If you found a moderator: Remove the bivariate graph and write up from your poster and replace with explanation of moderator and graph of significant bivariate at the 3rd variable level.
     - If you did NOT find a moderator: Include a slide stating what relationships you tested for moderation and with what variable to see if it was a moderator, explaining that it was not a moderator. No graphs needed
 
-**Slide 13: Testing for confounding relationships**
+**Slide 15: Testing for confounding relationships**
 
 * Confounding: 
     - If you found a confounder: on slide with bivariate relationship that was confounded put a bullet point that explains what variable confounded the relationship and put the written results that are shown in the confounding assignment on how to write results. Make sure to explain if it helped improve prediction of response variable. 
     - If you did NOT find a confounder: Include a slide stating what relationships you tested for confounds and with what variable to see if it was a confound, explaining that it was not a moderator. Make sure to explain if it helped improve prediction of response variable. 
 
 
-**Slide 14: Results from a Multivariable Model**
+**Slide 16: Results from a Multivariable Model**
 
 * Build a multivariable model by adding additional predictors to the model. 
     - See the lecture notes on model building as guidance. 
@@ -134,21 +137,21 @@ You are trying to understand the relationship between your explanatory and respo
 * At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
 
 
-**Slide 15. Discussion**
+**Slide 17. Discussion**
 
 * Here you will explain what your graphical and inferential results tell you about your topic.
 * Discuss if your research hypothesis was supported, if it was not, why you think that might be
 * Explain the overall story/trend/what you learned when you consider your univariate, bivariate & multivariate results about your topic.
 * Compare your results to previous research results. Do they agree or disagree? 
 
-**Slide 16. Implications**
+**Slide 18. Implications**
 
 * What are the practical implications of your results?
 * What could others do with your findings? 
 * What future research needs to be conducted?
     - This needs to be more specific than "other variables could be explored". Which variables and why? What other research articles indicate that those other variables are relevant? 
 
-**Slide 17. Limitations**
+**Slide 19. Limitations**
 
 * Who are the results of this study generalizable to? (i.e. a subset of individuals?)
 * Were there any model assumptions that were not upheld? 
@@ -156,7 +159,7 @@ You are trying to understand the relationship between your explanatory and respo
 * Are there other factors that could exlain your response variable that you did not include in your model? 
 
 
-**Slide 18. References**  
+**Slide 20. References**  
 
 * You can use smaller font to get all references on one slide.
 * Use references from research plan, and any additional references gathered along the way. 

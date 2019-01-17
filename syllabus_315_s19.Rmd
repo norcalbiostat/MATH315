@@ -19,11 +19,13 @@ urlcolor: blue
 * **website:** https://norcalbiostat.github.io/MATH315/ 
 * **Prerequisites:** Basic computer literacy. Recent statistics course such as Math 105. 
 * **Meeting Days and Times:**  Sec01: TR 12:30-1:45, Sec02: MWF 9-10am, HOLT 171
-* **Office Hours:** Holt 202: 
+* **Office Hours:** Holt 202: TBD
+* **Community Coding:** THMA 116, TR 2-4pm
 
-    
 You can download the Syllabus in PDF form by clicking [this link](syllabus_315_s19.pdf).
 
+
+_Need an extra unit? Commit to studying at least one hour each week at Community Coding (Math 290 section 02) and earn a unit!_
 
 ## Learning Outcomes
 
@@ -43,7 +45,7 @@ By the end of the semester students will be able to
 
 * **Textbook**: Open Intro Statistics https://www.openintro.org/stat/textbook.php?stat_book=os 
     - Free PDF or $15 hard copy
-* **Course Notes**: Purchase from Chico Packet Pro for ~$20. Hours and locations in Blackboard. 
+* **Course Notes**: Purchase from Chico Packet Pro for ~$25. Hours and locations in Blackboard. 
     - You will write directly into this inside and outside of class. 
     - A color [PDF](RAD_course_notes.pdf) version available as supplementary material. 
 * **Lecture Videos:** This course uses lecture videos that are linked from the course website. These are an essential part of your learning materials. 

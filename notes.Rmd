@@ -5,67 +5,51 @@ output:
     toc_float: yes
 ---
 
+<br>
+
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(stringr); library(dplyr); library(reshape2)
 library(knitr); library(kableExtra)
-
+options(knitr.kable.NA = '')
 
 lec <- data.frame(filenames = paste0('lecture/', list.files("lecture", pattern='*.pdf|*.html')))
 read <- data.frame(filenames = paste0('reading/', list.files("reading", pattern='*.pdf|*.html')))
-hw <- data.frame(filenames = paste0('hw/', list.files("hw", pattern='*.pdf|*.html')))
+hw <- data.frame(filenames = paste0('hw/', list.files("hw", pattern='template|*.pdf|*.html')))
 
 out.lec <- lec %>% mutate(name = gsub("lecture/",  "", filenames), 
                           type = str_extract(lec$filenames,"\\.[a-z]{3}"),
+                          type = ifelse(type=="tml", "html", type),
                           nam = gsub(".html|.pdf", "", name), 
                           link = sprintf("[%s](%s)",type, filenames))
 
 out.read <- read %>% mutate(name = gsub("reading/",  "", filenames), 
+                            name = gsub(".pdf", "", name),
                             link = sprintf("[%s](%s)",name, filenames))
 
 out.hw <- hw %>% mutate(name = gsub("hw/",  "", filenames), 
-                          type = str_extract(hw$filenames,"\\.[a-z]{3}"),
-                          nam = gsub(".html|.pdf", "", name), 
+                          type = str_extract(hw$filenames,".{3}$"),
+                          type = ifelse(type=="tml", "html", type),
+                          nam = gsub(".html|.pdf|.Rmd", "", name), 
                           link = sprintf("[%s](%s)",type, filenames))
-```
-
-## Lecture Notes
-The [Applied Statistics Notebook](https://norcalbiostat.github.io/AppliedStatistics_notes/index.html) (Abbreviated as **AS Notebook**) is a general set of notes that span multiple topics from 315, 615 and 456.  
-
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
-x = out.lec %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>% 
-    kable(format="html") %>%
-    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive", "bordered"), 
-                  full_width=FALSE,  position = "left")
-gsub("<thead>.*</thead>", "", x)
-```
-
-## Reading Materials
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
-x = out.read %>% select(link) %>% kable(format="html") %>%
-    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive" ,"bordered"), 
-                  full_width=FALSE,  position = "left")
-gsub("<thead>.*</thead>", "", x)
 ```
 
 ## PDS Videos
 
 * Video 01 Introduction to Passion Driven Statistics (5:49) https://youtu.be/_8A0zx51BKs
 * Video 02 Data Sets and Code Books (24:37) https://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/
-* Video 03 Literature Review (7:57) https://vimeo.com/139525602
-* Video 04 Working with Data (33:34) https://vimeo.com/157497682
-* Video 05 Data Management (33:28) https://vimeo.com/151207734
-* Video 06 Graphing: One Variable at a Time (31:33) https://vimeo.com/152493596
-* Video 07 Graphing Relationships (36:11) https://vimeo.com/160477834 
-* Video 08 Hypothesis Testing (30:46) https://passiondrivenstatistics.com/2015/07/15/chapter-10/ 
-* Video 09 ANOVA (29:48) https://vimeo.com/166245557
+* Video 03 Literature Review (7:57) https://passiondrivenstatistics.com/2015/09/16/chapter-04/
+* Video 04 Working with Data (33:34) https://passiondrivenstatistics.com/2015/12/18/04r/
+* Video 05 Data Management (33:28) https://passiondrivenstatistics.com/2016/01/08/r-chapter-7/
+* Video 06 Graphing: One Variable at a Time (31:33) https://passiondrivenstatistics.com/2016/01/20/r-chapter-8/
+* Video 07 Graphing Relationships (36:11) https://passiondrivenstatistics.com/2016/03/28/r-chapter-9/
+* Video 08 Hypothesis Testing (30:46) https://passiondrivenstatistics.com/2015/07/15/chapter-10/
+* Video 09 ANOVA (29:48) https://passiondrivenstatistics.com/2016/05/11/r-chapter-11/
 * Video 10 Chi-Square Test of Independence (28:36) https://passiondrivenstatistics.com/2016/06/29/r-chapter-12/
 * Video 11 Correlation (13:43) https://passiondrivenstatistics.com/2019/01/08/11-correlation/  
 * Video 12 Moderating (21:29) https://passiondrivenstatistics.com/2016/08/20/r-chapter-14/
 * Video 13 The Question of Causation (14:06) https://passiondrivenstatistics.com/2018/11/13/13-the-question-of-causation/
 * Video 14 Multivariable Models and Confounding (57:43) https://passiondrivenstatistics.com/2016/10/06/r-chapter-17/ 
 * Video 15 Writing for your poster (16:03) https://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/
-
-
 
 
 ## Homework
@@ -78,5 +62,25 @@ x = out.hw %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>%
 gsub("<thead>.*</thead>", "", x)
 ```
 
+
+## Additional Lecture Notes
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+x = out.lec %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>% 
+    kable(format="html") %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive", "bordered"), 
+                  full_width=FALSE,  position = "left")
+gsub("<thead>.*</thead>", "", x)
+```
+
+Also available is the [Applied Statistics Notebook](https://norcalbiostat.github.io/AppliedStatistics_notes/index.html) (Abbreviated as **AS Notebook**) is a general set of notes that span multiple topics from 315, 615 and 456.  
+
+
+## Reading Materials
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+x = out.read %>% select(link) %>% kable(format="html") %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive" ,"bordered"), 
+                  full_width=FALSE,  position = "left")
+gsub("<thead>.*</thead>", "", x)
+```
 
 

@@ -15,10 +15,7 @@ navbar:
     - text: Course Packet
       icon: fa-file-code
       href: reading/RAD_course_notes_S19.pdf
-    - text: Applied Stats Notebook
-      icon: fa-book-open
-      href: https://norcalbiostat.github.io/AppliedStatistics_notes/
-    - text: Small Data sets
+    - text: Data from course packet
       icon: fa-database
       href: https://norcalbiostat.netlify.com/data/
   - text: Projects
@@ -38,7 +35,7 @@ navbar:
       href: https://drive.google.com/drive/folders/1iy7Wh5iOw2EpyXAQUZlCVSXFH53i_Xdb?usp=sharing
     - text: Slack (class discussions)
       icon: fa-slack
-      href: https://math315-s18.slack.com/
+      href: https://math315-s19.slack.com/
     - text: Zoom (video conference)
       icon: fa-video-camera
       href: https://csuchico.zoom.us/

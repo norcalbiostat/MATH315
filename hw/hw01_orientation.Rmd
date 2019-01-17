@@ -1,12 +1,10 @@
 ---
-title: 'HW 01: Team Formation & Self Regulated Learning'
+title: "HW 01 Team Formation and Self Regulated Learning"
 author: "STUDENT NAME"
 date: "DATE"
 output:
-  pdf_document: default
-  html_document: default
-    toc: yes
-    toc_float: yes
+  html_document:
+    df_print: paged
 ---
 
 # Assignment Overview

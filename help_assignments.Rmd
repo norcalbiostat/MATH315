@@ -1,5 +1,5 @@
 ---
-title: "Frequently Asked Questions"
+title: "FAQ about Assignments"
 date: "Last Updated `r Sys.time()`"
 output: html_document
 ---
@@ -7,8 +7,8 @@ output: html_document
 
 # How do I complete the coding assignments? 
 
-* Homework assignments involving coding will be assigned as Projects in R Studio Cloud and will come with a R markdown (`*.Rmd`)  template file to use.
-* Write your code and answers directly into the Rmd file. 
+* A homework template file (`*.Rmd`)  will be provided for most to all assignments. 
+* You will write your code and answers directly into the Rmd file, and "compile" or "knit" this file into a PDF for submission. 
 
 # How/Where do I turn in assignments?
 Unless explicitly stated otherwise, 
@@ -16,19 +16,17 @@ Unless explicitly stated otherwise,
 * The file should be clearly named using this format: `assignment_userid.pdf`. E.g. `univ_graphics_rdonatello.pdf`
 * It should be in PDF format. 
 * Uploaded to the corresponding folder in Google Drive. 
-* Due dates are typically Sunday.
-* Some project-specific assignments will be written directly into Google Drive. 
+* Due dates are typically Saturday, but check the course website to confirm.
 
 # Peer Reviewed Assignments
-Many of your assignments will have a round of peer review before they are ready for grading. 
+All project centered assignments will have a round of peer review before they are ready for grading. 
+Here is the process that we will follow: 
 
-After the submission deadline (often Sunday)  
-
-* Your assignment will be reviewed by 2 of your peers over a 2 day period (Mon-Tue)
-* You then have the option of revising your assignment over a 2 day period (Wed-Thu)
-* The final deadline is after this review period. 
-* Once your assignment is ready for grading, move it into the `Ready for review` sub-folder in Google Drive. 
-    - If you do not move the file yourself I will take whatever has been uploaded already and grade it. 
+* Your assignment is due on a Tuesday. 
+* Your assignment will be reviewed by 2 of your classmates and one peer mentor over a 2 day period (Wed-Thu)
+* You then have the option of revising your assignment over a 2 day period (Fri-Sat)
+* The final deadline is after this review period (Saturday). Upload your final version to the `Ready for review` sub-folder for that assignment. 
+    - If you do not move the file yourself I will take whatever has been uploaded already and move it to the `Ready for review` folder. 
     - Once I start grading the `ready for review` folder is locked to editing. 
     - It is your responsibility to ensure that this is the final version. 
     - I will not take submissions past the deadline, or by email. 

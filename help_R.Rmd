@@ -1,8 +1,23 @@
 ---
-title: "How to get help"
+title: "FAQ about R"
 date: "Last Updated `r Sys.time()`"
 output: html_document
 ---
+
+
+# Where do I get acccess to R and R Studio?
+* Option 1: Use R Studio in the cloud. 
+    - Free account that you can access anywhere. 
+    - I have setup the basic environment for you already. Ready to go immediately. 
+* Option 2: Download and install R, R Studio, and a lightweight version of LaTeX. 
+    - Need help? Check out the DataCamp lesson on working with R Studio (Orientation chapter only) https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1 
+    - You will then have to install all the necessary packages that we use in this class. 
+    - You will also have to set the following preferences: 
+        - In RStudio the file menu go to Tools then Global Options.
+        - Uncheck "Restore .RData into workspace at startup" and "Always save history""
+        - Where it says "Save workspace to .RData on exit:" Select "Never""
+        - Click apply then ok.
+
 
 # Where can I get help using R outside of class time? 
 
@@ -14,7 +29,7 @@ output: html_document
 * R Cheat Sheets https://www.rstudio.com/resources/cheatsheets/
 
 ## In Person: 
-* **Community Coding** - TBD
+* **Community Coding** - TR 2-4pm, THMA 116
 * **Robin Donatello** - Stat professor. Holt 202 Office Hours: TBD
 * **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
 * **Peer Mentors**. Possibly available for private tutoring also. 
