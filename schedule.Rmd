@@ -29,7 +29,7 @@ rawdat <- read_xlsx("schedule_315.xlsx", sheet='topic_overview')
 ```
   
 ```{r, results='asis', echo=FALSE}
-out <- rawdat %>% select(Week:`Peer Review`)
+out <- rawdat %>% select(Week:`Data Camp`)
 testrows <- grep("midterm|final", out$Topic, ignore.case=TRUE)
 
 knitr::kable(out, align="clcccc", escape=FALSE) %>% 

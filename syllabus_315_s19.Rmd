@@ -11,28 +11,39 @@ geometry: margin=0.75in
 urlcolor: blue
 ---
 
-# Logistics
+
+> "Statistics in the service of research"
+
+This course introduces you to modern statistical data analysis techniques so that you can make data-informed decisions. At the end of the semester you will present your research findings in a poster presentation format to your peers. 
+
+In this project-based course, you will have the opportunity to answer questions that you feel passionately about through independent research based on existing data. The course offers a lot of one-on-one support, directed opportunities to work with other students, and training in the skills required to complete a project of your own design. We will use collaborative tools and software that are common in many workplaces and research labs. These skills will prepare you for many different career types. 
+
+
+
+## Logistics
+
 * **Instructor:** Dr. Robin Donatello  
 * **Office Location:** Holt 202  
 * **Phone Number:** 898-5767  
 * **E-mail:** rdonatello@csuchico.edu 
-* **website:** https://norcalbiostat.github.io/MATH315/ 
-* **Prerequisites:** Basic computer literacy. Recent statistics course such as Math 105. 
+* **website:** http://norcalbiostat.github.io/MATH315/ 
+* **Slack Channel:** http://math315-s19.slack.com 
+* **Prerequisites:** Basic computer literacy. Recent statistics course such as Math 105. Math 130 is recommended. 
 * **Meeting Days and Times:**  Sec01: TR 12:30-1:45, Sec02: MWF 9-10am, HOLT 171
-* **Office Hours:** Holt 202: TBD
-* **Community Coding:** THMA 116, TR 2-4pm
+* **Office Hours:** Holt 202: TBD (See website for confirmed times)
+* **Community Coding:** THMA 116, TR 2-4pm: _Need an extra unit? Commit to studying at least one hour each week at Community Coding (Math 290 section 02) and earn a unit!_
+ 
+Best method of contact? Slack! (Then email.)
 
 You can download the Syllabus in PDF form by clicking [this link](syllabus_315_s19.pdf).
 
 
-_Need an extra unit? Commit to studying at least one hour each week at Community Coding (Math 290 section 02) and earn a unit!_
-
-## Learning Outcomes
+### Learning Outcomes
 
 By the end of the semester students will be able to 
 
 * Develop a testable research question. 
-* Create and Understand how to use a codebook to identify data relevant to that question. 
+* Create and understand how to use a codebook to identify data relevant to that question. 
 * Process, screen, recode, transform, and clean data.
 * Describe data using visualizations and words. 
 * Select and carry out an appropriate statistical analysis.
@@ -41,80 +52,112 @@ By the end of the semester students will be able to
 * Become a data nerd (Optional, but recommended).
 
 
-## Required Materials
 
-* **Textbook**: Open Intro Statistics https://www.openintro.org/stat/textbook.php?stat_book=os 
-    - Free PDF or $15 hard copy
+## Required Materials (the "stuff")
+
+* **Lecture Videos:** This course uses lecture videos from a program called Passion Driven Statistics. These are essential part of your learning materials. Plan to bring headphones in case you need to watch these during class. 
 * **Course Notes**: Purchase from Chico Packet Pro for ~$25. Hours and locations in Blackboard. 
     - You will write directly into this inside and outside of class. 
-    - A color [PDF](RAD_course_notes.pdf) version available as supplementary material. 
-* **Lecture Videos:** This course uses lecture videos that are linked from the course website. These are an essential part of your learning materials. 
+    - A color PDF version available as supplementary material on the course website. 
 * **Reliable Laptop with internet connectivity**: Required to bring every day. Contact me if this poses a problem or concern for you. 
-* **Headphones:** In case you forget to watch a required video before class you may be asked to do so in class. 
-* **Computer Software:** All required software is free. We will start out using cloud based programs, but eventually you may want to install the programs on your own computer. Assistant will be available if needed. 
-    
-## Online accounts and materials
+* **Computer Software:** We will be using R Studio in the cloud. A working platform has been nearly fully setup for you. You are welcome to install these programs on your laptop if you choose. Help is available for this setup. 
+* **Open Intro Statistics textbook** https://www.openintro.org/stat/textbook.php?stat_book=os. 
+    - Optional, but very very highly recommended. 
+    - A very good resource for digging deeper into topics or simply having another method of explanation and demonstration.
+    - Free PDF or $15 hard copy
+
+  
+### Online platforms
+
 * **Course Website:** Everything! Schedule, syllabus, videos, notes, readings, homework etc. 
 * **Blackboard Learn Use:** Grades, due dates, and quizzes. 
-* **Google Drive** Surveys, data collection, written assignment submission, peer review and assignment feedback. 
+* **Google Drive** Surveys, data collection, quizzes, written assignment submission, peer review and assignment feedback. 
 * **Required Accounts** 
     - R Studio cloud. Use the link in Blackboard to join our workspace. 
-    - Slack: http://math315-s18.slack.com. Use the link in Blackboard to join our workspace. 
+    - Slack: An asynchronous discussion platform with a lot of collaborative functionality. 
+        - Workspace URL: http://math315-s19.slack.com. Use the link in Blackboard to join our workspace. 
         - Download either the desktop app or the phone app. 
-        - Turn on notifications (they are not on automatically)
         - This is where I will make announcements and share assignment files as needed. 
-    - Data Camp: An invitationto join will be sent to your campus email before the semester starts. 
-        - If you already have a DataCamp account email me to let me know and I will manually add you to our classroom. 
+        - All coding questions must go here. 
+    - Data Camp: An invitation to join will be sent to your campus email before the semester starts. 
+        - If you already have a DataCamp account it should automtically add you to the new classroom and your work will transfer over. 
 
+## Class Format (how do we use that stuff?)
+
+You've heard of a "flipped classroom" before right? Well this is kinda that. This course provides a series of lessons and assignments aimed at preparing students conceptually and technically for the various steps taken in completing their research project. You are expected to make marked progress each week and to come to class prepared with questions and planned next steps. It is important to note that to really learn the material and skills presented in this course, you will need to devote a substantial amount of out of class time working on this class.
+
+### Before class
+* Watch the videos and complete the DataCamp modules where assigned. 
+* Read through the course packet and fill in the blanks
+* Take the corresponding quiz (1-2/week). 
+
+### During class
+* We will briefly review the topic for the day
+* Go over any quiz questions that were very low scoring
+* Then it's your turn to work on your research project with the support of me and peer mentors. 
+* Work with others, seek additional support and clarification, and provide and receive help from peers.
+
+
+## Mututal Expectations
+
+I am a very personable individual who likes to get to know my students as well as let the students get to know me. I am a fair instructor, but I realize that not everyone digs my teaching style. In full acknowledgement of this I provide as many resources for success as possible; therefore, success in this course is accomplishable if you do your part. The quizzes, assignments, and project are a challenge, therefore, ample time preparing is necessary. 
+
+The peer mentors and I are here for you, but you have to use your voice and speak with me about any concerns you may have. The best way to contact me is through Slack, or email. To keep students informed about the course I send out weekly updates through Slack. 
+
+It's important to note that this Spring I will be teaching 2 sections of the same course on ENTIRELY different schedules (MWF & TR). So I am going to forget who I told what too, I will strive to keep due dates separate but I expect to mess up at least once. I will do my best to be as organized as possible to make things smooth for you. I need you to understand that I am only human (omg!), and to have patience and understanding with me. Broken links on the website? Mixed up dates in blackboard? Tell me so I can fix it! 
 
 \newpage
 
-## Coursework
+## Coursework Specifics (what are you graded on?)
 
-There are a variety types of assignments that I use to help you learn, and to assess how well you have
-learned the material and can synthesize information. 
+1. **Attendance**: Daily attendance is mandatory unless you talk to me ahead of time. You cannot take advantage of the learning time if you are not present. Each day I will mark attendance early on during the class session. I start promptly and late arrivals are very disruptive. To receive credit for the day you must do TWO things. 
+    - You must attend class for the entire class. 
+    - You must actively participate in class by answering questions, contributing to discussion, asking questions, paying attention, and participating in activities
+    - 3-5 days absent 10% penalty, 5-10 days absent 50% penalty, 10+ days absent earns no credit. 
 
-1. **Attendance**: Daily attendance is mandatory unless you talk to me ahead of time. You cannot take advantage of the learning time if you are not present. 
-    - On days where we have open work day, you are still expected to stay and work. 
-    - 1-2 days absent no penalty, 3-5 days absent 10% penalty, 5-10 days absent 50% penalty.
-    - More than 10 days absent you earn no credit for attendance. 
 2. **Participation & learning**: These activities are designed to foster peer learning and collaboration in and outside the classroom. 
-    - You will be conducting peer reviews for nearly every assignment throughout the semester. 
-    - Regular participation in Slack conversations. By asking and answering questions you can contribute to quality class-wide generation. Helping each other is more valuable than waiting for a response from me.
-    - You must attend at least one community coding session, and visit me once during Office hours during the semester. 
-3. **Quizzes**: Designed to ensure you are prepared for class and reinforce concepts we covered in class. 
-    - Typically conceptual, sometimes computational.
-    - Primarily administered through Blackboard Learn
-    - Some are timed, some have unlimited attempts to earn the score you desire. 
+    - You will be conducting peer reviews for all project assignment throughout the semester. 
+    - Being a contributing member in our Slack community. Ask and answer questions. Share code and ideas. Share silly math jokes and interesting articles. 
+    - You must attend at least one community coding session, and visit me once during office hours during the semester. 
+    
+3. **Quizzes**: Designed to ensure you are prepared for class and to help me learn what topics need clarification. 
+    - Administered online and to be completed prior to class. 
+    
 4. **Data Camp (DC)**: We will use Data Camp as a way to start to learn R outside of class. 
     - You must be logged in to the Data Camp classroom to get access to the lessons. 
     - You must use the link emailed to you to join this classroom. 
     - There will be a corresponding BBLearn learn quiz associated with each lesson. 
     - You will have multiple (but not unlimited) attempts at these quizzes. 
     - Questions can be conceptual, interpreting results, and asking you to write code to demonstrate a task that was covered in the lesson. 
+    
 6. **Written**: Written assignments are methods to demonstrate you can apply the material that you learned to a new problem.
+    - Assignments will build to the completion of a project that will be presented at the end of the semester as a poster. 
+
 7. **Exams:** There will one midterm and one final exam. 
     - An Error Analysis can be conducted on the midterm to earn back up to half the credit missed. 
     - This is where you get back your exam, fix your mistakes, and explain your corrections verbally to either me or a tutor. 
+    
 8. **Project:** You will be working in pairs on a project throughout the term. 
     - Written assignments throughout the semester are specifically geared towards progressing your analysis project. 
     - You will present your work as a poster at the end of the semester. 
+    - You will have two opportunities to provide feedback and critique of your research partner to ensure the contributions to work do not become imbalanced. 
   
 
 **Late work:** 
 
 * Unless otherwise specified, you have roughly a week to do each assignment. 
-    - Recall the due dates can be found in the BBL Calendar, or on the main schedule page. 
+* Pay close attention to due dates, if there are any discrepancies between what Blackboard is showing and what the course calendar on the website is showing, notify me immediately. 
 * **Late work is not accepted** 
  
 
 ## Grading
 
-* Your final grade will be a straight sum of points earned and will be displayed as a running total in Blackboard Learn.  
+* Your final grade will almost be a straight sum of points earned and will be displayed as a running total in Blackboard Learn.  (Almost, because I will drop the X lowest quiz scores)
 * The approximate contributions per category are: Participation and learning X%, Quizzes X\%, Written assignments X\%, Exams X\%, and the Project X\%.   
 * I use a standard grade cutoff of 100-90\%: A, 89-80\%: B, 79-70\%: C, 69-60\%: D, 0-59\%: F Plusses and minuses will be as displayed on Blackboard Learn. 
 
 # Topic Overview
+A detailed schedule can be found on the course website. 
 
 * Data Collection and recording
 * Preparing data for analysis
@@ -155,6 +198,7 @@ All students are welcomed to visit the Pantry located in the Student Service Cen
 Please visit the Chico State Basic Needs website http://www.csuchico.edu/basic-needs for more information.
 
  
+-----
 
 _Last updated: `r format(Sys.time(), "%a %b %d %Y %X")`_
 

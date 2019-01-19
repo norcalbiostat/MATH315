@@ -1,25 +1,43 @@
 ---
-title: "HW 01 Team Formation and Self Regulated Learning"
-author: "STUDENT NAME"
-date: "DATE"
+title: "HW 01) Orientation to the class, self regulated learning and research team formation"
 output:
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 # Assignment Overview
-Purpose of this assignment. 
+The purpose of this assignment is to get you connected with R Studio in the cloud, to do a little self reflection and examination of your learning habits, and to get to know the members of your class and support group. 
  
-# Instructions
 
+# Part I: Getting Started with online tools
 
-# Part I: Getting Started with R Studio
-1. Log into R Studio cloud, and click on our class workspace. 
-2. Something about copying the first assignment to their account
-3. Replace your name and date in the header section. 
-4. Write the answers to the questions below directly in the Rmarkdown homework template provided. 
-5. You will compile this document to a PDF format and turn it in to **01 Orientation/Ready for grading** Google Drive folder by the due date. 
-6. Watch this very short tutorial on R Markdown. This is what you will be using to write all assignments in. http://rmarkdown.rstudio.com/lesson-1.html
+## Slack
+1. Go to http://math315-s19.slack.com and make an account to join our workspace. 
+2. Download either the desktop app or the phone app. 
+3. Post an introduction to yourself in the #introductions channel. Tell us a little about you! Year, major, hometown, any extracurricular activities, one thing you are hoping to get out of this class, and one concern you have about this class. Oh.. and of course any mention of pets should include a photo!
+        
+## Data Camp
+An invitation to join DataCamp will be sent to your campus email before the semester starts. If you already have a DataCamp account email me to let me know and I will manually add you to our classroom. _You must be added to our classroom to get credit_. 
+
+1. Log in to DataCamp and complete the "Working with R Studio IDE" lesson. 
+
+## R Studio in the cloud.
+1. Watch this very short tutorial on R Markdown. This is what you will be using to write all assignments in. http://rmarkdown.rstudio.com/lesson-1.html
+2. Log into R Studio cloud, and click on our class workspace. 
+3. Click on the `stats_project`. This will create a copy the R project into your own workspace. 
+    - An "R project" is a pre-configured R environment along with a collection of files. 
+4. In the lower right corner click the `hw01_orientation_template.Rmd` to open this R Markdown file. 
+5. Replace your name and date in the header section. 
+    - Don't delete the quotation marks. 
+6. Write the answers to the questions below directly in the Rmarkdown homework template provided. 
+7. To see what the final report will look like, click the down arrow next to the `Knit` button and choose PDF. 
+    - This turns your code file into a PDF report.
+    - Do this often to make sure that your code and output is working as intended. 
+8. When you are done, spellcheck your work using the spellcheck button in R Studio (2 icons to the left of Knit). 
+9. Knit the final document. When it opens, click the download icon in the upper right corner. 
+10. Rename this file as `hw01_username`, and Upload this PDF to to **01 Orientation/Ready for grading** Google Drive folder by the due date. 
+
 
 
 \newpage
@@ -31,14 +49,18 @@ Because we all have room for improvement, here are a few tasks for you to become
 ### Metacognition 
 From the materials page on the course website, download and read "MAI and academic achievement in college students". 
 Once you are done, download and take the "Metacognition Awareness Inventory" (also available on the materials page). 
-Submit your scores to Google Drive at this link: 
+Submit your scores to Google Drive at this link: https://goo.gl/forms/FYgjJk72T3147e7f1 
+
+
 
 ### Procrastination
-Watch this video on creating a cycle of success and tell me **two** concrete plans of action that you already implement, or are willing to give an honest try to do this semester to stay on track and not fall behind.  https://media.csuchico.edu/media/Avoiding+Procrastination/0_wquy9x90
+Watch this video on creating a cycle of success and tell me **one** concrete plans of action that you already implement, or are willing to give an honest try to do this semester to stay on track and not fall behind.  https://media.csuchico.edu/media/Avoiding+Procrastination/0_wquy9x90
+
+
 
 
 ### Being good at learning is hard!
-From the articles page on the course website, download and read the "Learning (Your First Job)" article. 
+From the reading materials page on the course website, download and read the "Learning (Your First Job)" article. 
 Answer at least _4_ of the following questions in this document. 
 
 **What was the most important insight you gained from the reading? **
@@ -68,7 +90,7 @@ Answer at least _4_ of the following questions in this document.
 ### Team Formation
 Yes yes, you hate group work. But having a person to bounce ideas off of, to help you debug your code, 
 to help each other with difficult concepts is an invaluable aspect of learning. So, instead of complaining
-make it a goal to be the best analysis partner! 
+make it a goal to be the best analysis partner EVAR! 
 
 If you find yourself unsure how to manage or participate in a group, or you're terrified of working with other people, 
 The [University of Minnesota](http://teamwork.umn.edu/) has a fantastic website devoted to surviving group projects.
@@ -84,8 +106,4 @@ You will have a group for immediate support in this class, but the project will 
 ### Area of research interest
 Tell me what data set and topics you are interested in conducting research on and briefly why. If you are using one of the survey data sets (AddHealth, NESARC) that has hundreds or thousands of questions, be specific with the topics and sections that you plan to conduct research in. 
 
-\newpage
 
-# Part IV: Reproducible Research
-
-1. Watch this 1 minute video on R
