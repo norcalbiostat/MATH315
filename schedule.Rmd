@@ -13,14 +13,14 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 <button type="button" class="btn btn-secondary">
   Topic Overview
 </button>
-<button type="button" class="btn btn-secondary disabled">
+<button type="button" class="btn btn-outline-secondary">
   <a href="schedule_details.html" style="color:inherit"> Details </a>
 </button>
-<button type="button" class="btn btn-secondary disabled">
-  <a href="cal_mwf.html" style="color:inherit"> Calendar -- MWF </a>
+<button type="button" class="btn btn-secondary">
+  <a href="https://calendar.google.com/calendar?cid=bWFpbC5jc3VjaGljby5lZHVfMTZzajc3c2ZlbXA5a3FnaXMyZzg5ajkxZTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" style="color:inherit"> Calendar -- MWF </a>
 </button>
-<button type="button" class="btn btn-secondary disabled">
-  <a href="cal_tr.html" style="color:inherit"> Calendar -- TR </a>
+<button type="button" class="btn btn-secondary">
+  <a href="https://calendar.google.com/calendar?cid=bWFpbC5jc3VjaGljby5lZHVfbmM2NnBhamk1bHFxbWQ2dXFmdTFzZGZ2bHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" style="color:inherit"> Calendar -- TR </a>
 </button>
 
 <br>
