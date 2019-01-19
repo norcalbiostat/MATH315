@@ -17,10 +17,10 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
   <a href="schedule_details.html" style="color:inherit"> Details </a>
 </button>
 <button type="button" class="btn btn-secondary disabled">
-  <a href="https://calendar.google.com/calendar?cid=bWFpbC5jc3VjaGljby5lZHVfMTZzajc3c2ZlbXA5a3FnaXMyZzg5ajkxZTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" style="color:inherit"> Calendar -- MWF </a>
+  <a href="cal_mwf.html" style="color:inherit"> Calendar -- MWF </a>
 </button>
 <button type="button" class="btn btn-secondary disabled">
-  <a href="https://calendar.google.com/calendar?cid=bWFpbC5jc3VjaGljby5lZHVfbmM2NnBhamk1bHFxbWQ2dXFmdTFzZGZ2bHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" style="color:inherit"> Calendar -- TR </a>
+  <a href="cal_tr.html" style="color:inherit"> Calendar -- TR </a>
 </button>
 
 <br>
@@ -32,7 +32,7 @@ rawdat <- read_xlsx("schedule_315.xlsx", sheet='topic_overview')
 out <- rawdat %>% select(Week:`Data Camp`)
 testrows <- grep("midterm|final", out$Topic, ignore.case=TRUE)
 
-knitr::kable(out, align="clcccc", escape=FALSE) %>% 
+knitr::kable(out, align="clccccc", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
   row_spec(testrows, background = "BurlyWood")
 ```
