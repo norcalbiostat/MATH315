@@ -17,10 +17,10 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
   <a href="schedule_details.html" style="color:inherit"> Details </a>
 </button>
 <button type="button" class="btn btn-secondary">
-  <a href="cal_mwf.html" style="color:inherit"> Calendar -- MWF </a>
+  <a href="cal_mwf.html" style="color:inherit"> Calendar -- MWF (02) </a>
 </button>
 <button type="button" class="btn btn-secondary">
-  <a href="cal_tr.html" style="color:inherit"> Calendar -- TR </a>
+  <a href="cal_tr.html" style="color:inherit"> Calendar -- TR (01) </a>
 </button>
 
 <br>
@@ -29,12 +29,13 @@ rawdat <- read_xlsx("schedule_315.xlsx", sheet='topic_overview')
 ```
   
 ```{r, results='asis', echo=FALSE}
-out <- rawdat %>% select(Week:`Data Camp`)
+out <- rawdat %>% select(Week:Due)
 testrows <- grep("midterm|final", out$Topic, ignore.case=TRUE)
 
-knitr::kable(out, align="clccccc", escape=FALSE) %>% 
+knitr::kable(out, align="clcccccc", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
   row_spec(testrows, background = "BurlyWood")
 ```
 
+*_This assignment is subject to peer review and revision_
 

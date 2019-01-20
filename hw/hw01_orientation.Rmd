@@ -1,14 +1,29 @@
 ---
-title: "HW 01) Orientation to the class, self regulated learning and research team formation"
+title: "HW 01- Orientation to the class, self regulated learning and research team formation"
 output:
   html_document:
-    df_print: paged
+    theme: sandstone
+    highlight: tango
+    toc: yes
+    toc_float: yes
+    css: ../css/sandstone.css
   pdf_document: default
 ---
 
 # Assignment Overview
 The purpose of this assignment is to get you connected with R Studio in the cloud, to do a little self reflection and examination of your learning habits, and to get to know the members of your class and support group. 
  
+
+# Instructions
+The specific details for each step are described below. 
+
+* This is an individual assignment
+* You will answer the questions directly in the Rmarkdown template file provided in R Studio Cloud. See part I below to get access to this document. 
+* When you are done, spellcheck your work using the spellcheck button in R Studio (2 icons to the left of Knit). 
+* Knit the final document. When it opens, click the download icon in the upper right corner. 
+* Rename this file `hw01_username` i.e. `hw01_donatello.pdf` 
+* Upload this file to Google Drive in the **01 Orientation** folder for your section. 
+
 
 # Part I: Getting Started with online tools
 
@@ -30,14 +45,10 @@ An invitation to join DataCamp will be sent to your campus email before the seme
 4. In the lower right corner click the `hw01_orientation_template.Rmd` to open this R Markdown file. 
 5. Replace your name and date in the header section. 
     - Don't delete the quotation marks. 
-6. Write the answers to the questions below directly in the Rmarkdown homework template provided. 
+6. Complete the rest of the assignment below by writing the answers directly in the template. 
 7. To see what the final report will look like, click the down arrow next to the `Knit` button and choose PDF. 
     - This turns your code file into a PDF report.
     - Do this often to make sure that your code and output is working as intended. 
-8. When you are done, spellcheck your work using the spellcheck button in R Studio (2 icons to the left of Knit). 
-9. Knit the final document. When it opens, click the download icon in the upper right corner. 
-10. Rename this file as `hw01_username`, and Upload this PDF to to **01 Orientation/Ready for grading** Google Drive folder by the due date. 
-
 
 
 \newpage

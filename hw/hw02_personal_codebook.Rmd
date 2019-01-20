@@ -1,12 +1,13 @@
 ---
-title: "Research Question and personal codebook assignment"
+title: "HW02 - Research Question and personal codebook assignment"
 output:
   pdf_document: default
   html_document:
-    theme: readable
+    theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
+    css: ../css/sandstone.css
 ---
 
 # Overview
@@ -21,11 +22,10 @@ Now it is time for you to formulate your own Research Question. This will guide 
 # Instructions
 The specific details for each step are described below. You will write the assignment in a Google document. 
 
-* This is a peer-reivewed team assignment. 
+* This is a paired project assignment
 * Use header formats to clearly denote steps 1-3.
-* Write your assignment directly in Google Docs in the `02 Research Question` folder. 
-* Name this file `rq_pairname` i.e. `rq_donatello_coia.pdf` 
-* Drop a note in Blackboard to say that your file is ready for grading. 
+* Write your assignment directly in a Google Document in the **02 Research Question and Codebook** folder for your section. 
+* Name this file `rq_pairname` i.e. `rq_donatello_aguilar.pdf` 
 
 
 
@@ -42,12 +42,18 @@ Create your personal codebook. You will create a trimmed down version of the cod
 * In your personal codebook, include the questions/items/variables from the full data codebook that measure your selected topics. 
 * Choose between 10 and 20 variables. This is just a starting point, you can modify anytime later. 
 * **Do not go overboard here. Excessive variables being chosen indicate lack of thought and will not be reviewed highly**
-* You can do this by taking little screenshots with the snipping tool. In the pdf file, go to Edit, Take a Snap Shot, then click and drag over what you want. If you are on a MAC, press Shift+Command+Ctrl+4 to get the snip tool.
+* Do this by taking little screenshots with the snipping tool or using copy/paste. In the pdf file, go to Edit, Take a Snap Shot, then click and drag over what you want. If you are on a MAC, press Shift+Command+Ctrl+4 to get the snip tool.
+* **Do not attempt to re-write the codebook manually**
 
 
 ## Step 3: Research Questions: 
 
 Now that you have a few topics and picked out variables for each topic, what questions are you interested in trying to answer about your topics? One of the simplest research questions that can be asked is whether two constructs are associated.
+Your research questions should be written as 
+
+* a relationship between two measurements
+* a testable hypothesis (can you answer yes or no to the question?)
+
 
 > Questions example:  
 > a) Does smoking quantity relate to nicotine dependence?  

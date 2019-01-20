@@ -16,10 +16,10 @@ Unless explicitly stated otherwise,
 * The file should be clearly named using this format: `assignment_userid.pdf`. E.g. `univ_graphics_rdonatello.pdf`
 * It should be in PDF format. 
 * Uploaded to the corresponding folder in Google Drive. 
-* Due dates are typically Saturday, but check the course website to confirm.
+* Due dates are typically Saturday, but check the course calendar (on the website) to confirm.
 
 # Peer Reviewed Assignments
-All project centered assignments will have a round of peer review before they are ready for grading. 
+Some project centered assignments will have a round of peer review before they are ready for grading. 
 Here is the process that we will follow: 
 
 * Your assignment is due on a Tuesday. 
