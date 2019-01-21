@@ -2,11 +2,7 @@
 title: "Syllabus for Applied Statistical Methods I"
 author: "Dr. Robin Donatello"
 date: "MATH 315-01 & -02, Spring 2019"
-output:
-  pdf_document: default
-  html_document:     
-    highlight: tango
-    theme: sandstone
+output: pdf_document
 geometry: margin=0.75in
 urlcolor: blue
 ---
@@ -31,11 +27,20 @@ In this project-based course, you will have the opportunity to answer questions 
 * **Prerequisites:** Basic computer literacy. Recent statistics course such as Math 105. Math 130 is recommended. 
 * **Meeting Days and Times:**  Sec01: TR 12:30-1:45, Sec02: MWF 9-10am, HOLT 171
 * **Office Hours:** Holt 202: TBD (See website for confirmed times)
-* **Community Coding:** THMA 116, TR 2-4pm: _Need an extra unit? Commit to studying at least one hour each week at Community Coding (Math 290 section 02) and earn a unit!_
- 
+
+
 Best method of contact? Slack! (Then email.)
 
 You can download the Syllabus in PDF form by clicking [this link](syllabus_315_s19.pdf).
+
+
+## Additional Support
+
+* The Data Science Initiative offers year-round training workshops and seminars on data-science related topics including R. See http://datascience.csuchico.edu for more information and a schedule of events.  
+* Community Coding: TR 2-4pm, THMA 116 [[flyer]](cc_flyer_s19.pdf)
+    - Students, staff, faculty, and the public are invited to join our Community Coding sessions. Bring your computer, coding projects, and your questions to this open working environment. 
+    - Commit to studying 1 hr. per week for your (not necessarily CS) programming course and earn credit. Enroll in MATH 290-02 (5854), a 1 unit credit/no-credit course.  Credit is earned by attending at least 10 times.
+
 
 
 ### Learning Outcomes

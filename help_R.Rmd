@@ -1,7 +1,9 @@
 ---
 title: "FAQ about R"
+output:
+  pdf_document: default
+  html_document: default
 date: "Last Updated `r Sys.time()`"
-output: html_document
 ---
 
 

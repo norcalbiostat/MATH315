@@ -30,6 +30,9 @@ navbar:
   - text: Tools
     icon: fa-wrench
     menu:
+    - text: R Studio Cloud
+      icon: fa-code
+      href: https://rstudio.cloud/spaces/8317/projects 
     - text: Google Drive
       icon: fa-google
       href: https://drive.google.com/drive/folders/1iy7Wh5iOw2EpyXAQUZlCVSXFH53i_Xdb?usp=sharing
