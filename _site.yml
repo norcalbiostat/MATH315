@@ -49,6 +49,8 @@ navbar:
     menu:
     - text: Syllabus
       href: syllabus_315_s19.html
+    - text: Peer Mentors
+      href: peer_mentors.html
     - text: Submitting homework
       href: help_assignments.html
     - text: R programming

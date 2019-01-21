@@ -3,10 +3,10 @@ title: "Syllabus for Applied Statistical Methods I"
 author: "Dr. Robin Donatello"
 date: "MATH 315-01 & -02, Spring 2019"
 output:
+  pdf_document: default
   html_document:     
     highlight: tango
     theme: sandstone
-  pdf_document: default
 geometry: margin=0.75in
 urlcolor: blue
 ---
@@ -176,9 +176,30 @@ A detailed schedule can be found on the course website.
 
 # Policies
 
+## Late Assignments
+
+All assignments are to be completed upon the due date as announced by the instructor. All assignments that are turned in after the deadline has passed will receive NO CREDIT, however, students will receive feedback. No exceptions will be made. In cases of emergency, please contact your instructor immediately.
+
+## Academic Integrity
+
+Academic integrity is defined as "a commitment, even in the face of adversity, to five fundamental values: honesty, trust, fairness, respect, and responsibility". From these values flow principles of behavior that enable academic communities to translate ideals to action. Academic integrity is expected and required. No forms of cheating or plagiarism will be tolerated. Please see your student handbook at https://www.csuchico.edu/scrr/integrity.shtml if you have questions about the meaning of these terms or the consequences of violating academic integrity. 
+
+## Scientific Integrity
+
+The rules of science should be carefully upheld in everything that you do. The following behavior is absolutely unacceptable: Data fabrication, selective reporting, omission, suppression or distortion. Please be mindful that there is no such thing as a "little scientific misdemeanor." 
+
+
+## Plagiarism
+
+Using someone else's words or ideas without properly citing them is plagiarism. The CSU academic integrity policy distinguishes between misuse of sources and intentional plagiarism. If a student makes an attempt to "identify and credit his or her source, but does so improperly, he or she will not be penalized according to our policy.
+However, students should make every effort to learn the proper format for correctly citing sources, since this is an essential aspect of academic work.
+
+Intentional plagiarism occurs when the student "deliberately uses someone else's language, ideas, or other original (not common knowledge) material without acknowledging its source"" and in so doing represents them as his or her own. This includes borrowing another's phrases or sentences without using quotation marks or citations; cutting and pasting whole paragraphs (or papers) from websites without acknowledgement; or borrowing ideas from someone without citing them.
+
+
 ## Adding and Dropping the course
 
-This course only runs for a few weeks and all materials are available on the course website. It will be difficult to get caught up if you add the class after the first week. The last day to add or drop classes without special permission by the instructor is 2/15/19. No adds or drops are allowed after 2/1/18 without a serious and compelling reason approved by the instructor, department chair, and college dean.
+The last day to add or drop classes without special permission by the instructor is 2/1/19. No adds or drops are allowed after 2/15/19 without a serious and compelling reason approved by the instructor, department chair, and college dean.
 
 
 ## Americans with Disabilities Act
