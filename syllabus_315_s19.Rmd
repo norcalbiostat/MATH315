@@ -2,7 +2,9 @@
 title: "Syllabus for Applied Statistical Methods I"
 author: "Dr. Robin Donatello"
 date: "MATH 315-01 & -02, Spring 2019"
-output: pdf_document
+output: 
+    pdf_document: default
+    html_document: default
 geometry: margin=0.75in
 urlcolor: blue
 ---
@@ -94,11 +96,11 @@ You've heard of a "flipped classroom" before right? Well this is kinda that. Thi
 ### Before class
 * Watch the videos and complete the DataCamp modules where assigned. 
 * Read through the course packet and fill in the blanks
-* Take the corresponding quiz (1-2/week). 
+* Take the corresponding individual quiz (1-2/week). 
 
 ### During class
 * We will briefly review the topic for the day
-* Go over any quiz questions that were very low scoring
+* Go over any quiz questions that were very low scoring as a group. 
 * Then it's your turn to work on your research project with the support of me and peer mentors. 
 * Work with others, seek additional support and clarification, and provide and receive help from peers.
 
@@ -148,7 +150,7 @@ It's important to note that this Spring I will be teaching 2 sections of the sam
     - Written assignments throughout the semester are specifically geared towards progressing your analysis project. 
     - You will present your work as a poster at the end of the semester. 
     - You will have two opportunities to provide feedback and critique of your research partner to ensure the contributions to work do not become imbalanced. 
-    - **I reserve the right to adjust your grade up or down based on your peer evals and my observations of your engagement in the project.
+    - **I reserve the right to adjust your grade up or down based on your peer evals and my observations of your engagement in the project.**
   
 
 ## Grading
