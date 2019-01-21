@@ -1,8 +1,6 @@
 ---
 title: "FAQ about R"
-output:
-  pdf_document: default
-  html_document: default
+output: html_document
 date: "Last Updated `r Sys.time()`"
 ---
 
@@ -11,6 +9,7 @@ date: "Last Updated `r Sys.time()`"
 * Option 1: Use R Studio in the cloud. 
     - Free account that you can access anywhere. 
     - I have setup the basic environment for you already. Ready to go immediately. 
+    - The link to our class working environment can be found in blackboard. 
 * Option 2: Download and install R, R Studio, and a lightweight version of LaTeX. 
     - Need help? Check out the DataCamp lesson on working with R Studio (Orientation chapter only) https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1 
     - You will then have to install all the necessary packages that we use in this class. 
@@ -31,15 +30,11 @@ date: "Last Updated `r Sys.time()`"
 * R Cheat Sheets https://www.rstudio.com/resources/cheatsheets/
 
 ## In Person: 
-* **Community Coding** - TR 2-4pm, THMA 116
+* **Community Coding** - TR 2-4pm, THMA 116 [[flyer]](cc_flyer_s19.pdf)
 * **Robin Donatello** - Stat professor. Holt 202 Office Hours: TBD
 * **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
-* **Peer Mentors**. Possibly available for private tutoring also. 
-    - **Victoria Coia** vcoia@mail.csuchico.edu 
-    - **Mariby Cruz** mcruz27@mail.csuchico.edu 
-    - **Ricardo Aguilar** raguilar11@mail.csuchico.edu 
-    - **Eduarod Gomez** egomez42@mail.csuchico.edu 
-* **Math Learning Lab (MLIB 4th floor)** List of tutors TBD
+* **Peer Mentors** -See [[Peer mentor]](peer_mentor.html) page for contact info. 
+* **Math Learning Lab (MLIB 4th floor)** List of S19 tutors TBD
 * **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
 
 # Help with...
