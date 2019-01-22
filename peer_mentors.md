@@ -5,7 +5,7 @@
 <style>
     table {
       table-layout: fixed;
-      width: 300px;
+      width: 600px;
     }
 </style>
    
@@ -14,10 +14,10 @@
 
 <tr>
   <td width="200"></td>
-  <td></td>
-  <td width="200"></td>
   <td width="50"></td>
   <td width="200"></td>
+  <td width="50"></td>
+  <td width="400"></td>
 </tr>
   
 <tr></tr>
@@ -53,7 +53,7 @@
     <strong>Attending: </strong> TR 12:30-2 <br> 
     <strong>Contact: </strong> jfogliasso@mail.csuchico.edu <br> </td>
 <td></td>
-<td>Bio here.</td>
+<td>I'm a math major in the general option, with a minor in statistics. I was born and raised in Redding, CA, and I commute to school from there every day. Besides doing math, also love all kinds of music, from playing percussion for the Shasta Symphony Orchestra to riffing on my guitar. This is my final semester at Chico State before I move on to a Master's program in mathematics.</td>
 </tr>
 
 <tr></tr>
