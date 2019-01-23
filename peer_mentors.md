@@ -39,9 +39,9 @@
 <td></td>
 <td><strong>Known for: </strong>  <br> 
     <strong>Attending: </strong> MWF 9-10am <br> 
-    <strong>Contact: </strong> egome42@mail.csuchico.edu <br> </td>
+    <strong>Contact: </strong> egomez42@mail.csuchico.edu <br> </td>
 <td></td>
-<td>Bio here.</td>
+<td>I am current in my last semester, doubling majoring in Statistics and Applied Math and I'm getting a certificate in Data Science. On my free time, I enjoy watching movies and reading at Bidwell Park.</td>
 </tr>
 
 <tr></tr>
