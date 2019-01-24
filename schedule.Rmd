@@ -6,7 +6,7 @@ output: html_document
 library(dplyr);library(readxl); library(kableExtra);library(stringr)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
 ```
-_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")`_
 <br>
 
 
@@ -23,6 +23,9 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
   <a href="cal_tr.html" style="color:inherit"> Calendar -- TR (01) </a>
 </button>
 
+<br>
+Unless specified otherwise, all assignments are due at midnight on the due date listed  
+Times listed next to video numbers is the approximate minutes into the video at which that topic starts. 
 <br>
 ```{r , echo=FALSE, message=FALSE, warning=FALSE}
 rawdat <- read_xlsx("schedule_315.xlsx", sheet='topic_overview')
