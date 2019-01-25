@@ -8,15 +8,31 @@ output: html_document
 # How do I complete the coding assignments? 
 
 * A homework template file (`*.Rmd`)  will be provided for most to all assignments. 
+    - Templates can be found on by going to `Materials --> Lecture Notes/Homework/Reading`. Scroll down to **Homework**. Click the `.Rmd` column to download the code file for the homework template to your computer. 
+    - If you are working in R Studio Cloud, upload this file to your project. 
+    - If you are working on your own installation, put this file into your Math 315 folder. 
+
 * You will write your code and answers directly into the Rmd file, and "compile" or "knit" this file into a PDF for submission. 
 
+## How do I create a PDF out of my code file? 
+
+* Click the `knit` button in R Studio above your code file. Use the down arrow to ensure that PDF is selected. 
+* Revisit this help page for more information: https://rmarkdown.rstudio.com/lesson-9.html 
+
 # How/Where do I turn in assignments?
-Unless explicitly stated otherwise, 
+Unless explicitly stated otherwise assignments are to be uploaded to Google Drive. 
 
 * The file should be clearly named using this format: `assignment_userid.pdf`. E.g. `univ_graphics_rdonatello.pdf`
 * It should be in PDF format. 
 * Uploaded to the corresponding folder in Google Drive. 
 * Due dates are typically Saturday, but check the course calendar (on the website) to confirm.
+
+## How do I get to Google Drive
+
+* In the navigation bar select `Tools --> Google Drive`.
+    - I suggest you bookmark this page, star this folder, or add this folder to your drive. 
+
+----
 
 # Peer Reviewed Assignments
 Some project centered assignments will have a round of peer review before they are ready for grading. 

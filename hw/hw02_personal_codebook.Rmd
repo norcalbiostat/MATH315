@@ -20,23 +20,35 @@ Now it is time for you to formulate your own Research Question. This will guide 
 
 
 # Instructions
-The specific details for each step are described below. You will write the assignment in a Google document. 
+The specific details for each step are described below. You will write the assignment directly in a Google document. 
 
 * This is a paired project assignment
 * Use header formats to clearly denote steps 1-3.
-* Write your assignment directly in a Google Document in the **02 Research Question and Codebook** folder for your section. 
+* Write your assignment directly in a Google Document in the **02 Research Question and Codebook** folder. 
 * Name this file `rq_pairname` i.e. `rq_donatello_aguilar.pdf` 
 
+## Peer Review
+This assignment will be subject to peer review, but with no revision period. 
+After the due date, check the [[Peer review assignment sheet]](https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing) for your assignment(s). 
+In Google Docs directly, use the commenting feature to provide feedback on this assignment. 
+Check the [[project]](../project.html) page for instructions on how to provide a review. 
+
+What specifically to look for: 
+
+* Is the topic area statement clearly stated? Do you understand what they are investigating? 
+* Do the variables chosen match the stated topic area? 
+* Will the variables chosen actually measure or describe the variables in the research question? 
+* Are the research questions stated as clear hypotheses? 
 
 
-## Step 1: Topic area statement: 
+# Step 1: Topic area statement: 
 Thoroughly review the codebook for your dataset of choice and make note of topics that interest you. Use this as a brainstorming session and identify as much as you can. Write a statement similar to the one below regarding what topic(s) you are interested in. You should also explain WHY you are interested in your topic. 
 
 > Example:
 After looking through the codebook for the U.S. Longitudinal Study of Adolescent to Adult Health study database, I have decided that I am particularly interested in nicotine dependence. I am not sure which variables I will use regarding nicotine dependence (e.g. symptoms or diagnosis) so for now I will include all of the relevant variables in my personal codebook. While nicotine dependence is a good starting point, I need to determine what it is about nicotine dependence that I am interested in. It strikes me that friends and acquaintances that I have known through the years that became hooked on cigarettes did so across very different periods of time. Some seemed to be dependent soon after their first few experiences with smoking and others after many years of generally irregular smoking behavior. I decided that I am most interested in exploring the association between level of smoking and nicotine dependence. Below I have added to my codebook variables reflecting smoking levels (e.g. smoking quantity and frequency). If my topic is too vague, I would like to bring suicide in. I would be interested to see if there is any relationship between level of smoking with nicotine dependence and suicide.
 
 
-## Step 2: Personal Codebook: 
+# Step 2: Personal Codebook: 
 Create your personal codebook. You will create a trimmed down version of the codebook to help you not get overwhelmed with the larger pool of available questions. 
 
 * In your personal codebook, include the questions/items/variables from the full data codebook that measure your selected topics. 
@@ -46,7 +58,7 @@ Create your personal codebook. You will create a trimmed down version of the cod
 * **Do not attempt to re-write the codebook manually**
 
 
-## Step 3: Research Questions: 
+# Step 3: Research Questions: 
 
 Now that you have a few topics and picked out variables for each topic, what questions are you interested in trying to answer about your topics? One of the simplest research questions that can be asked is whether two constructs are associated.
 Your research questions should be written as 

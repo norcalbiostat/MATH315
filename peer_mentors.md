@@ -7,7 +7,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <style>
     table {
       table-layout: fixed;
-      width: 300px;
+      width: 600px;
     }
 </style>
    
@@ -16,10 +16,10 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 
 <tr>
   <td width="200"></td>
-  <td></td>
-  <td width="200"></td>
   <td width="50"></td>
   <td width="200"></td>
+  <td width="50"></td>
+  <td width="400"></td>
 </tr>
   
 <tr></tr>
@@ -43,9 +43,9 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <td><strong>Known for: </strong>  <br> 
     <strong>Attending: </strong> MWF 9-10am <br> 
     <strong>OH: </strong> M 11-12pm <br> 
-    <strong>Contact: </strong> egome42@mail.csuchico.edu <br> </td>
+    <strong>Contact: </strong> egomez42@mail.csuchico.edu <br> </td>
 <td></td>
-<td>Bio here.</td>
+<td>I am current in my last semester, doubling majoring in Statistics and Applied Math and I'm getting a certificate in Data Science. On my free time, I enjoy watching movies and reading at Bidwell Park.</td>
 </tr>
 
 <tr></tr>
@@ -58,7 +58,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
     <strong>OH: </strong> M 3-4pm <br> 
     <strong>Contact: </strong> jfogliasso@mail.csuchico.edu <br> </td>
 <td></td>
-<td>Bio here.</td>
+<td>I'm a math major in the general option, with a minor in statistics. I was born and raised in Redding, CA, and I commute to school from there every day. Besides doing math, also love all kinds of music, from playing percussion for the Shasta Symphony Orchestra to riffing on my guitar. This is my final semester at Chico State before I move on to a Master's program in mathematics.</td>
 </tr>
 
 <tr></tr>

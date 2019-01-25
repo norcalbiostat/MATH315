@@ -6,7 +6,7 @@ output: html_document
 library(dplyr);library(readxl); library(kableExtra);library(stringr)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
 ```
-_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")`_
 <br>
 
 
@@ -24,17 +24,30 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 </button>
 
 <br>
+Unless specified otherwise, all assignments are due at midnight on the due date listed  
+Times listed next to video numbers is the approximate minutes into the video at which that topic starts. 
+<br>
 ```{r , echo=FALSE, message=FALSE, warning=FALSE}
 rawdat <- read_xlsx("schedule_315.xlsx", sheet='topic_overview')
+
+toshow <- rawdat[which(rawdat$Order==1.1):nrow(rawdat), ]
 ```
   
 ```{r, results='asis', echo=FALSE}
-out <- rawdat %>% select(Week:Due)
+out <- toshow %>% select(Week:Assignments)
 testrows <- grep("midterm|final", out$Topic, ignore.case=TRUE)
 
-knitr::kable(out, align="clcccccc", escape=FALSE) %>% 
+
+out$Assignments <- gsub(" (", " (<b>", out$Assignments, fixed=TRUE)
+out$Assignments <- gsub(" )", "</b>)", out$Assignments, fixed=TRUE)
+out$Quiz <- gsub(" (", " (<b>", out$Quiz, fixed=TRUE)
+out$Quiz <- gsub(" )", "</b>)", out$Quiz, fixed=TRUE)
+
+
+knitr::kable(out, align="clcccc", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
-  row_spec(testrows, background = "BurlyWood")
+  row_spec(testrows, background = "BurlyWood") %>% 
+  column_spec(5, width = "15%")
 ```
 
 *_This assignment is subject to peer review and revision_

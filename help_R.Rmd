@@ -31,7 +31,7 @@ date: "Last Updated `r Sys.time()`"
 
 ## In Person: 
 * **Community Coding** - TR 2-4pm, THMA 116 [[flyer]](cc_flyer_s19.pdf)
-* **Robin Donatello** - Stat professor. Holt 202 Office Hours: TBD
+* **Robin Donatello** - Stat professor. Holt 202 Office Hours: M 10-11am, T: 11-12noon, F 12-1pm
 * **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
 * **Peer Mentors** -See [[Peer mentor]](peer_mentor.html) page for contact info. 
 * **Math Learning Lab (MLIB 4th floor)** List of S19 tutors TBD

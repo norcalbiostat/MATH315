@@ -176,29 +176,30 @@ You have 2 assignments to turn in this week 1) is your data management RMD code 
 * This is your last chance to get all your R/R Studio bugs resolved. Next week we're hitting the coding ground hard. 
 
 
+--->
 
-### 9/04/18 - [Week 2](https://norcalbiostat.github.io/MATH315/wk/wk02.html) Data entry and import
+### 1/28/19 - [Week 2](https://norcalbiostat.github.io/MATH315/wk/wk02.html) Generating research questions
 
-Office hours (Holt 202) M: 3p-4m, W: 1-2pm, R: 10-11am
-(_this weeks Wed hours are cancelled_)
+Office hours (Holt 202) M 10-11am, T: 11-12noon, F 12-1pm.
+Peer mentor office hours have been posted on the [peer mentor page](peer_mentors.html)
 
-This week we're going to be talking about data, doing some data entry and importing data into R.
-You'll start to choose specific variables to address your research questions, create your own team mini-codebook and participate in our first project based assignment that comes with a peer review. 
+> I am out of town this week starting at 1pm on Thursday. 
 
-Two great seminars lined up this week, one in Statistics one in Biology. Both are worth some EC if you attend. They're at the same time, so you can only attend one (obv.) Flyers with details are in Slack. 
+On Thursday/Friday you will be meeting with a research librarian who will help you use our Library resources to find primary source articles to support your research. 
 
-Be sure to check the weekly schedule (linked above) for details on how to prepare for the week. 
+**Upcoming Quizzes**:
+
+* Data architecture & Codebooks (pre-class quiz)
+* Literature review (post-class quiz)
 
 **Upcoming Assignments**:
 
-* Two (2) DataCamp chapters. This course module is written by the authors of the Open Intro Statistics textbook, the course title in Data Camp is "Data Analysis and Statistical Inference". In the Assignments tab in DataCamp, you will only see the chapter title. 
-    - Introduction to R
-    - Introduction to data
-* Corresponding Blackboard Learn quizzes. _(2 attempts)_
-* Problem set 2.2 - Blackboard quiz of 10 randomly selected questions from a pool of questions. _(Unlimited attempts)_
+* Two (2) DataCamp assignments 
+    - **Intro to Basics**. The first chapter of the Introduction to R course in Data Camp)
+    - **Introduction to R**. This course module is written by the authors of the Open Intro Statistics textbook, the course title in Data Camp is "Data Analysis and Statistical Inference". In the Assignments tab in DataCamp, you will only see the chapter title. 
+* Both of these have corresponding Blackboard Learn quizzes. _(2 attempts)_
 * hw02 - Research codebook assignment (created in Google Drive directly). Will be peer reviewed. 
 
---->
 
 
 ### 1/21/19 - [Week 1](https://norcalbiostat.github.io/MATH315/wk/wk01.html) Welcome to Spring 19!
@@ -207,7 +208,7 @@ Be sure to check the weekly schedule (linked above) for details on how to prepar
 * Take this survey to help choose when I should hold Office Hours https://goo.gl/forms/kuctI3ktoo1Cpsio1 
 * Check Blackboard for links to the required course materials (also available on the syllabus) 
 * Watch this intro video for an overview of the class and how to successfully prepare for week 1! https://670832.kaf.kaltura.com/media/Welcome+intro+video+sp19/0_non0k1h7 
-
+* Course Materials [[overview sheet]](315_materials_overview.pdf). Also posted on Slack, and BBL. 
 
 
 
