@@ -66,12 +66,12 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <tr>
 <td>Ricardo Aguilar<img src="mentors/ricardo.jpg" alt="" /></td>
 <td></td>
-<td><strong>Known for: </strong>  <br> 
+<td><strong>Known for: </strong> Adopting too many animals <br> 
     <strong>Attending: </strong> TR 12:30-2 <br> 
-    <strong>OH: </strong> TBD <br> 
+    <strong>OH: </strong> F 12-1pm <br> 
     <strong>Contact: </strong> raguilar11@mail.csuchico.edu <br> </td>
 <td></td>
-<td>Bio here.</td>
+<td>I’m majoring in Statistics and getting a certificate in Data Science. This is my last semester at Chico State, so I’m currently applying to graduate programs for Statistics and Biostatistics. I enjoy spending time with friends, family, and my pets. </td>
 </tr>
 
 </tbody>
