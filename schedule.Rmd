@@ -47,7 +47,8 @@ out$Quiz <- gsub(" )", "</b>)", out$Quiz, fixed=TRUE)
 knitr::kable(out, align="clcccc", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
   row_spec(testrows, background = "BurlyWood") %>% 
-  column_spec(5, width = "15%")
+  column_spec(5, width = "15%") %>% 
+  column_spec(5, width = "14%")
 ```
 
 *_This assignment is subject to peer review and revision_
