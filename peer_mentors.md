@@ -40,7 +40,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <tr>
 <td>Eduardo Gomez<img src="mentors/eduardo.jpg" alt="" /></td>
 <td></td>
-<td><strong>Known for: </strong>  <br> 
+<td><strong>Known for:  </strong> making a better than average poached egg <br> 
     <strong>Attending: </strong> MWF 9-10am <br> 
     <strong>OH: </strong> M 4-5pm <br> 
     <strong>Contact: </strong> egomez42@mail.csuchico.edu <br> </td>
