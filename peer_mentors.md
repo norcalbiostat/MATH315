@@ -29,10 +29,10 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <td></td>
 <td><strong>Known for: </strong> Being an athlete Scholar <br> 
     <strong>Attending: </strong> TR 12:30-2 <br> 
-    <strong>OH: </strong> TBD <br> 
+    <strong>OH: </strong> F 3-4pm <br> 
     <strong>Contact: </strong> ajones102@mail.csuchico.edu <br> </td>
 <td></td>
-<td>Bio here.</td>
+<td> I am a junior working towards a Biology degree with an emphasis in EEO. I as well play for the women's soccer team here at Chico State. In my free time I love to hang out with my newly adopted pitbull Phoebe or binge watch documentaries on Netflix. I know statistics will be very helpful in my future career field and it just so happens that I also enjoy it very much!</td>
 </tr>
 
 <tr></tr>
@@ -42,7 +42,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <td></td>
 <td><strong>Known for: </strong>  <br> 
     <strong>Attending: </strong> MWF 9-10am <br> 
-    <strong>OH: </strong> M 11-12pm <br> 
+    <strong>OH: </strong> M 4-5pm <br> 
     <strong>Contact: </strong> egomez42@mail.csuchico.edu <br> </td>
 <td></td>
 <td>I am current in my last semester, doubling majoring in Statistics and Applied Math and I'm getting a certificate in Data Science. On my free time, I enjoy watching movies and reading at Bidwell Park.</td>
