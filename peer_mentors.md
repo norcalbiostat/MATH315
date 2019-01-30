@@ -21,7 +21,8 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
   <td width="50"></td>
   <td width="400"></td>
 </tr>
-  
+
+
 <tr></tr>
 
 <tr>
@@ -34,6 +35,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <td></td>
 <td> I am a junior working towards a Biology degree with an emphasis in EEO. I as well play for the women's soccer team here at Chico State. In my free time I love to hang out with my newly adopted pitbull Phoebe or binge watch documentaries on Netflix. I know statistics will be very helpful in my future career field and it just so happens that I also enjoy it very much!</td>
 </tr>
+
 
 <tr></tr>
 
@@ -48,6 +50,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <td>I am current in my last semester, doubling majoring in Statistics and Applied Math and I'm getting a certificate in Data Science. On my free time, I enjoy watching movies and reading at Bidwell Park.</td>
 </tr>
 
+ 
 <tr></tr>
 
 <tr>
@@ -64,6 +67,20 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <tr></tr>
 
 <tr>
+<td>Mariby Cruz<img src="mentors/mariby.jpg" alt="" /></td>
+<td></td>
+<td><strong>Known for: </strong>  <br> 
+    <strong>Attending: </strong> MW 9-10 <br> 
+    <strong>OH: </strong> TBD <br> 
+    <strong>Contact: </strong> mcruz@mail.csuchico.edu <br> </td>
+<td></td>
+<td>bio here </td>
+</tr>
+
+ 
+<tr></tr>
+
+<tr>
 <td>Ricardo Aguilar<img src="mentors/ricardo.jpg" alt="" /></td>
 <td></td>
 <td><strong>Known for: </strong> Adopting too many animals <br> 
@@ -73,6 +90,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <td></td>
 <td>I’m majoring in Statistics and getting a certificate in Data Science. This is my last semester at Chico State, so I’m currently applying to graduate programs for Statistics and Biostatistics. I enjoy spending time with friends, family, and my pets. </td>
 </tr>
+
 
 </tbody>
 </table>
