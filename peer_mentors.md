@@ -55,7 +55,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <td></td>
 <td><strong>Known for: </strong> Looking underage <br> 
     <strong>Attending: </strong> TR 12:30-2 <br> 
-    <strong>OH: </strong> M 3-4pm <br> 
+    <strong>OH: </strong> M 2-3pm <br> 
     <strong>Contact: </strong> jfogliasso@mail.csuchico.edu <br> </td>
 <td></td>
 <td>I'm a math major in the general option, with a minor in statistics. I was born and raised in Redding, CA, and I commute to school from there every day. Besides doing math, also love all kinds of music, from playing percussion for the Shasta Symphony Orchestra to riffing on my guitar. This is my final semester at Chico State before I move on to a Master's program in mathematics.</td>
