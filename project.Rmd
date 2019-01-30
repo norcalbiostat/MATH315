@@ -21,7 +21,6 @@ Why do we do peer review instead of just getting feedback from you?
 * Co-authoring and reviewing your peers work is part of a professional research position. 
 * Learning how to provide good feedback will make you a better collaborator
 * This is a delayed version of paired programming - another set of eyeballs can typically help you find your mistake. 
-* I have 10fold more assignments to review than you do. You'll get your peer's reviews back faster than I can get yours back.
 * I will be looking for different things than your peers will be. This is a good thing. They are looking from "untrained eyes", which can be very critical to make sure you are explaining yourself clearly. I can better "figure out" what you are meaning to say  - they are the ones that will best tell you when/where you need to explain your findings better. 
 * You are expected to read your peer's feedback and revise your work before it is graded. 
 
