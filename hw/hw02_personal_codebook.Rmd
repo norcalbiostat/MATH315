@@ -1,13 +1,13 @@
 ---
 title: "HW02 - Research Question and personal codebook assignment"
 output:
-  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
+  pdf_document: default
 ---
 
 # Overview
@@ -56,6 +56,13 @@ Create your personal codebook. You will create a trimmed down version of the cod
 * **Do not go overboard here. Excessive variables being chosen indicate lack of thought and will not be reviewed highly**
 * Do this by taking little screenshots with the snipping tool or using copy/paste. In the pdf file, go to Edit, Take a Snap Shot, then click and drag over what you want. If you are on a MAC, press Shift+Command+Ctrl+4 to get the snip tool.
 * **Do not attempt to re-write the codebook manually**
+
+
+> Example Codebook screenshots
+
+![](cb1.png)
+
+![](cb2.png)
 
 
 # Step 3: Research Questions: 
