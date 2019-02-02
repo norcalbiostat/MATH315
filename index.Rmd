@@ -176,6 +176,7 @@ We'll talk about how to identify features of data that will need to be changed p
 2. Demonstration of data management code (individual). ([Homework 04](hw/hw04_data_management.html)). 
 
 We are starting to code in R this week. You must have completed the Data Camp assignments from last week to be ready for this. 
+In class you will work with your partner to take a closer look at your codebook to identify what types of data management you will have to do. The `lec03_dm_prep_questions` lecture notes that can be found on the materials page contain questions to help guide this process. 
 
 Here are some videos to see how to get your data into R Studio. 
 
