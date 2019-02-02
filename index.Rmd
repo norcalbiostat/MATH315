@@ -166,17 +166,39 @@ This will help you from having to hunt through the full codebook when trying to 
 
 We'll talk about how to identify features of data that will need to be changed prior to analysis. We can't cover them all, nor would you remember them all. This is a place where experience and repetition will be the true learning method. In the meantime, I provide a number of resources to help you identify what to look for. 
 
-You have 2 assignments to turn in this week 1) is your data management RMD code file, the other is a Graphing assignment. Be sure to carefully read the submission instructinos for each. 
-
-
-### 9/3/18 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html)
-* You should have been watching and following along with the PDS videos for about a week now. If you are not, do this ASAP or you will fall behind. Think of these as lecture, and in class as practice time. 
-* You're going to be refining your research questions this week by conducting a literature review to see what the current state of knowledge is about your project. 
-* Then we'll spend some time in the course notes learning how to describe the distribution of data using words, summary statistics and appropriate graphics.
-* This is your last chance to get all your R/R Studio bugs resolved. Next week we're hitting the coding ground hard. 
-
 --->
 
+### 2/4/19 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html) Hello R!
+
+**You have 2 assignments to turn in this week!** Read the instructions of each carefully to ensure that they are completed and submitted correctly. 
+
+1. A literature review (pair). ([Homework 03](hw/hw03_lit_review.html))  
+2. Demonstration of data management code (individual). ([Homework 04](hw/hw04_data_management.html)). 
+
+We are starting to code in R this week. You must have completed the Data Camp assignments from last week to be ready for this. 
+
+Here are some videos to see how to get your data into R Studio. 
+
+* R Studio Cloud [LINK TBD]
+* R Studio on your desktop [LINK TBD]
+
+You may feel like this in the next couple weeks: 
+
+<center><img src="img/hard.jpg" width="400" height="400" align='center'/></center>
+<br>
+
+But if you use the references in the course notes, the peer mentors, videos and engage in the most effective way of learning a new programming language, 
+
+<center><img src="img/orly-changestuff.jpg" width="400" height="400" /></center>
+<br>
+
+then you will learn how to dominate debugging and come out a stronger and more capable of being able to answer research questions using data. 
+
+<center><img src="img/debugging.jpg" width="600"/></center>
+
+
+
+<br>
 
 ### 1/28/19 - [Week 2](https://norcalbiostat.github.io/MATH315/wk/wk02.html) Generating research questions
 
