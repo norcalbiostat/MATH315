@@ -1,8 +1,10 @@
-<br>
+---
+title: "Announcements"
+---
 
 This is the course website for <span style="color:teal">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com) in Spring 2019. This landing page is used for posting of regular announcements and information for students of the class. 
 
-# Announcements
+<br>
 
 <!--- 
 

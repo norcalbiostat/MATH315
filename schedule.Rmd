@@ -1,4 +1,5 @@
 ---
+title: "Topics and Schedule"
 output: html_document
 ---
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -6,8 +7,7 @@ library(dplyr);library(readxl); library(kableExtra);library(stringr)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
 ```
 
-# Topics and Schedule {.tabset .tabset-fade .tabset-pills}
-_Last Updated: `r format(Sys.time(), "%a %b %d %X")`_
+# Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
 
 ## Weekly
 

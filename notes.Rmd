@@ -1,4 +1,5 @@
 ---
+title: "Course Materials"
 output:
   html_document:
     toc: yes
