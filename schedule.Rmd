@@ -1,33 +1,18 @@
 ---
-title: 'Topics and Schedule'
 output: html_document
 ---
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(dplyr);library(readxl); library(kableExtra);library(stringr)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
 ```
+
+# Topics and Schedule {.tabset .tabset-fade .tabset-pills}
 _Last Updated: `r format(Sys.time(), "%a %b %d %X")`_
-<br>
 
-<style type="text/css">
-.tg  {border-collapse:separate;border-spacing:15px;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 10px; 
-       border-style:none;overflow:hidden;word-break:normal}
-
-.tg .tg-mwf{font-size:14px;background-color:#6793db;text-align:center;vertical-align:center}
-.tg .tg-tr{font-size:14px;background-color:#8e5ec9;text-align:center;vertical-align:center}
-</style>
-
-<div class="tg-wrap"><table class="tg">
-  <tr>
-    <td class="tg-mwf"><a href="cal_mwf.html" style="color:inherit" target="_blank"> Calendar -- MWF (02) </a></td>
-    <td class="tg-tr"><a href="cal_tr.html"   style="color:inherit" target="_blank"> Calendar -- TR (01) </a></td>
-  </tr>
-</table></div>
-
+## Weekly
 
 <br>
-Unless specified otherwise, all assignments are due at midnight on the due date listed. 
+Unless specified otherwise, all assignments are due at midnight on the due date listed.  
 Times listed next to video numbers is the approximate minutes into the video at which that topic starts. 
 <br>
 ```{r , echo=FALSE, message=FALSE, warning=FALSE}
@@ -56,3 +41,12 @@ knitr::kable(out, align="clcccc", escape=FALSE) %>%
 
 *_This assignment is subject to peer review and revision_
 
+
+
+## Calendar - MWF
+
+<iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;height=800&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mail.csuchico.edu_16sj77sfemp9kqgis2g89j91e0%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
+
+## Calendar -TR 
+
+<iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;height=800&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mail.csuchico.edu_nc66paji5lqqmd6uqfu1sdfvls%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no"></iframe>

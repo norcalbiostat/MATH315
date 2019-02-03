@@ -168,20 +168,24 @@ We'll talk about how to identify features of data that will need to be changed p
 
 --->
 
-### 2/4/19 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html) Hello R!
+### 2/4/19 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html) - Hello R!
 
-**You have 2 assignments to turn in this week!** Read the instructions of each carefully to ensure that they are completed and submitted correctly. 
+#### You have 2 assignments to turn in this week!
+Read the instructions of each carefully to ensure that they are completed and submitted correctly. 
 
-1. A literature review (pair). ([Homework 03](hw/hw03_lit_review.html))  
-2. Demonstration of data management code (individual). ([Homework 04](hw/hw04_data_management.html)). 
+1. A literature review [[Homework 03]](hw/hw03_lit_review.html).
+2. Demonstration of data management code [[Homework 04]](hw/hw04_data_management.html). 
 
 We are starting to code in R this week. You must have completed the Data Camp assignments from last week to be ready for this. 
-In class you will work with your partner to take a closer look at your codebook to identify what types of data management you will have to do. The `lec03_dm_prep_questions` lecture notes that can be found on the materials page contain questions to help guide this process. 
+In class you will work with your partner to take a closer look at your codebook to identify what types of data management you will have to do. The `lec03_dm_prep_questions` lecture notes that can be found on the [[course materials page]](notes.html) contain questions to help guide this process. 
 
-Here are some videos to see how to get your data into R Studio. 
+#### Extra Materials
 
-* R Studio Cloud [LINK TBD]
-* R Studio on your desktop [LINK TBD]
+* I have created a video to see [[how to get your data into R Studio]](https://670832.kaf.kaltura.com/media/How+to+import+data+into+R/0_w6buqbaw) 
+    - All new videos will also be posted on the [[course materials page]](notes.html) page, below the list of PDS videos. 
+* The [[Help with R]](help_R.html) page has been updated to include more info such as useful functions and how to navigate data. 
+
+#### Entering a challenging time
 
 You may feel like this in the next couple weeks: 
 
@@ -201,11 +205,13 @@ then you will learn how to dominate debugging and come out a stronger and more c
 
 <br>
 
+----
+
 ### 1/28/19 - [Week 2](https://norcalbiostat.github.io/MATH315/wk/wk02.html) Generating research questions
 
 My office hours (Holt 202)-  M 10-11am, T: 11-12noon, F 12-1pm.
 
-Peer mentor office hours have been posted on the [peer mentor page](peer_mentors.html)
+Peer mentor office hours have been posted on the [[peer mentor page]](peer_mentors.html)
 
 > I am out of town this week starting at 1pm on Thursday. 
 
@@ -227,6 +233,7 @@ On Thursday/Friday you will be meeting with a research librarian who will help y
 * hw02 - Research codebook assignment (created in Google Drive directly). Will be peer reviewed. 
 
 
+----
 
 ### 1/21/19 - [Week 1](https://norcalbiostat.github.io/MATH315/wk/wk01.html) Welcome to Spring 19!
 * This course website contains all materials except the textbook for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.

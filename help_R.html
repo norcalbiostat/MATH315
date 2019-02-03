@@ -11,7 +11,7 @@
 
 
 
-<title>FAQ about R</title>
+<title>Getting Help with Programming in R</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
 <script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
@@ -151,6 +154,101 @@ $(document).ready(function () {
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -313,14 +411,16 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">FAQ about R</h1>
-<h4 class="date"><em>Last Updated 2019-01-30 21:54:37</em></h4>
+<h1 class="title toc-ignore">Getting Help with Programming in R</h1>
+<h4 class="date"><em>Last Updated 2019-02-03 12:23:27</em></h4>
 
 </div>
 
 
-<div id="where-do-i-get-acccess-to-r-and-r-studio" class="section level1">
-<h1>Where do I get acccess to R and R Studio?</h1>
+<div id="getting-access-to-r" class="section level1">
+<h1>Getting Access To R</h1>
+<div id="where-do-i-get-acccess-to-r-and-r-studio" class="section level2">
+<h2>Where do I get acccess to R and R Studio?</h2>
 <ul>
 <li>Option 1: Use R Studio in the cloud.
 <ul>
@@ -342,8 +442,9 @@ $(document).ready(function () {
 </ul></li>
 </ul>
 </div>
-<div id="where-can-i-get-help-using-r-outside-of-class-time" class="section level1">
-<h1>Where can I get help using R outside of class time?</h1>
+</div>
+<div id="help-locations" class="section level1">
+<h1>Help locations</h1>
 <div id="online" class="section level2">
 <h2>Online</h2>
 <ul>
@@ -355,7 +456,7 @@ $(document).ready(function () {
 </ul>
 </div>
 <div id="in-person" class="section level2">
-<h2>In Person:</h2>
+<h2>In Person</h2>
 <ul>
 <li><strong>Community Coding</strong> - TR 2-4pm, THMA 116 <a href="cc_flyer_s19.pdf">[flyer]</a></li>
 <li><strong>Robin Donatello</strong> - Stat professor. Holt 202 Office Hours: M 10-11am, T: 11-12noon, F 12-1pm</li>
@@ -366,28 +467,70 @@ $(document).ready(function () {
 </ul>
 </div>
 </div>
-<div id="help-with" class="section level1">
-<h1>Help with…</h1>
-<div id="general-r-programming" class="section level2">
-<h2>General R Programming</h2>
-<ul>
-<li>Base R Cheatsheet <a href="http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf" class="uri">http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf</a></li>
-<li>PDS Common errors <a href="R_Resources/Common%20Errors%20in%20R.docx">[DOCX]</a></li>
-<li>PDS Useful functions <a href="R_Resources/Useful%20functions%20in%20R.docx">[DOCX]</a></li>
-<li>PDS Navigataing data sets <a href="R_Resources/Navigating%20datasets%20in%20R.docx">[DOCX]</a></li>
-<li>R Cookbook <a href="http://www.cookbook-r.com/" class="uri">http://www.cookbook-r.com/</a></li>
-<li>Quick-R <a href="http://www.statmethods.net/" class="uri">http://www.statmethods.net/</a></li>
-</ul>
-</div>
-<div id="r-studio-r-markdown" class="section level2">
-<h2>R Studio &amp; R Markdown</h2>
+<div id="r-studio-r-markdown" class="section level1">
+<h1>R Studio &amp; R Markdown</h1>
 <ul>
 <li>R Studio Cheatsheet <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf</a></li>
 <li>R Markdown Cheatsheet <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf</a></li>
 </ul>
 </div>
-<div id="graphics" class="section level2">
-<h2>Graphics</h2>
+<div id="general-r-programming" class="section level1">
+<h1>General R Programming</h1>
+<ul>
+<li>Base R Cheatsheet <a href="http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf" class="uri">http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf</a></li>
+<li>PDS Common errors <a href="R_Resources/Common%20Errors%20in%20R.docx">[DOCX]</a></li>
+<li>R Cookbook <a href="http://www.cookbook-r.com/" class="uri">http://www.cookbook-r.com/</a></li>
+<li>Quick-R <a href="http://www.statmethods.net/" class="uri">http://www.statmethods.net/</a></li>
+</ul>
+</div>
+<div id="navigating-data-sets" class="section level1">
+<h1>Navigating data sets</h1>
+<p>Data matrices in R are 2-dimensional, with observations or subjects in the rows, and variables in the columns. Each column contains a name, which is the name of the variable. Let’s say your 2D data matrix is stored in an object called <code>data.</code></p>
+<ul>
+<li>To look at all the variable names in your data matrix: <code>names(data)</code></li>
+<li>To access or print out a particular variable (e.g. age) in your data matrix, use the $ sign: <code>data$age</code>
+<ul>
+<li>Important: names in R are case-sensitive (so <code>data$Age</code> won’t work)</li>
+</ul></li>
+<li>You can also access parts of your data matrix using brackets <code>[]</code> and numbers (this is called subsetting). The syntax for subsetting datasets is <code>data[rows, columns]</code>. In other words, commas separate the 2 dimensions of the matrix (rows from columns), with rows first and columns second.
+<ul>
+<li>To select all values of a dimension (i.e. you are NOT subsetting rows or NOT subsetting columns), simply leave a blank in the appropriate place (i.e. either before or after the comma).</li>
+<li>To print out the whole first column:<code>data[,1]</code></li>
+<li>To print out the first ten rows: <code>data[1:10,]</code></li>
+</ul></li>
+<li>Can subset both rows and columns at the same time:
+<ul>
+<li>To print out the first ten rows and columns 11-15: <code>data[1:10,11:15]</code></li>
+</ul></li>
+<li>You can use logical statements in combination with [] to subset your dataset. A logical statement usually involves ==, !=, &gt;, &lt;, etc., and returns TRUE or FALSE. You will use this if you are only investigating a subset of your observations (e.g. only male participants).</li>
+<li>To select all variables, but only males (<code>data$SEX==2</code>) in the dataset: <code>data[data$SEX==2,]</code>. This selects all columns (variables) for every row (subject) that has a value of 2 in variable SEX. Make sure the right dimensions are in the []!!</li>
+<li>To select only values of cigarettes per day that are not NA: <code>data$S3AQ3B1[!is.na(data$S3AQ3B1)]</code></li>
+</ul>
+</div>
+<div id="useful-functions" class="section level1">
+<h1>Useful functions</h1>
+<p>Useful functions in R</p>
+<ul>
+<li><code>a:b</code> : generates a sequence of numbers from a to b. E.g. <code>1:10</code> gives 1,2,3,4,5,6,7,8,9,10.</li>
+<li><code>is.na()</code> : tests whether a value is NA and returns <code>TRUE</code> or <code>FALSE</code>. Can be useful when you’re recoding variables or evaluating a logical statement with NA’s. R cannot evaluate a statement with an NA and will throw an error. You can avoid this problem by adding “!is.na(x)” (in English: x is not NA) in your if statement or logical statement.</li>
+<li><code>names()</code>: Returns the variable (column) names in a dataset. This lets you look at the variable names and rename them if you wish.</li>
+<li><code>c()</code> : concatenates, or makes a collection of items. You can do this using with numbers, strings, or whatever you need.
+<ul>
+<li>E.g. Let’s say you want to repeatedly select 5 specific columns (e.g. column numbers 6, 7, 8, 15, and 18) from a larger dataset. You can save yourself time by writing <code>my.index &lt;- c(5,7,8,15,18)</code> and then selecting only these 5 columns by writing <code>data[,my.index]</code></li>
+<li>E.g. For renaming variables/columns to something more meaningful. For example, say you want to rename variables <code>S3AQ8B1</code> through <code>S3AQ8B14</code> as <code>NDS1</code> through <code>NDS17</code> because they each represent different nicotine dependence symptoms. You can call the names of your dataset and reassign them to a concatenation of new strings: <code>names(data) &lt;- c("NDS1", "NDS2", ..., "NDS17")</code></li>
+</ul></li>
+<li><code>rep()</code>: Takes a value or a string and repeats it a specified number of times. Takes 2 inputs: the thing to repeat, and how many times to repeat it.</li>
+<li><code>length()</code> : gives the length of an object, e.g. length(data$id) to see how many subjects</li>
+<li><code>dim()</code> : gives the dimensions of an object (doesn’t work for one-dimensional objects). E.g. dim(data) returns two numbers: first the number of rows (subjects) and then the number of columns (variables) in your data set.</li>
+<li><code>as.numeric()</code>: If you are recoding or creating a new variable, this makes it a quantitative variable</li>
+<li><code>as.factor()</code>: If you are recoding or creating a new variable, this makes it a categorical variable</li>
+<li><code>mean()</code>: Returns the mean/average of the input (usually a variable/column in dataset)</li>
+<li><code>sd()</code>: Returns the standard deviation of the input (usually a variable/column in dataset)</li>
+<li><code>summary()</code>: Returns a summary of the distribution of the input (or, returns a model summary if the input is a statistical model, e.g. a regression)</li>
+</ul>
+</div>
+<div id="graphics" class="section level1">
+<h1>Graphics</h1>
 <ul>
 <li>Data Visualization using ggplot <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf</a></li>
 <li>PDS Graphing in GGplot <a href="R_Resources/QC201_Rgraphing.pdf">[PDF]</a></li>
@@ -400,18 +543,19 @@ $(document).ready(function () {
 <li>R Graph Gallery <a href="https://www.r-graph-gallery.com/" class="uri">https://www.r-graph-gallery.com/</a></li>
 </ul>
 </div>
-<div id="data-cleaning" class="section level2">
-<h2>Data Cleaning</h2>
+<div id="data-cleaning" class="section level1">
+<h1>Data Cleaning</h1>
 <ul>
 <li>Data Transformation using dplyr <a href="https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf</a></li>
 <li>Data Camp <a href="https://www.datacamp.com/courses/cleaning-data-in-r" class="uri">https://www.datacamp.com/courses/cleaning-data-in-r</a></li>
 <li>Applied Stats Notes Chapter 1 <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html" class="uri">https://norcalbiostat.github.io/AppliedStatistics_notes/index.html</a></li>
 </ul>
 </div>
+
+
+
 </div>
-
-
-
+</div>
 
 </div>
 

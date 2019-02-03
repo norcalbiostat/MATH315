@@ -33,7 +33,8 @@ out.hw <- hw %>% mutate(name = gsub("hw/",  "", filenames),
                           link = sprintf("[%s](%s)",type, filenames))
 ```
 
-## PDS Videos
+
+# PDS Videos
 
 * Video 01 Introduction to Passion Driven Statistics (5:49) https://youtu.be/_8A0zx51BKs
 * Video 02 Data Sets and Code Books (24:37) https://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/
@@ -51,8 +52,14 @@ out.hw <- hw %>% mutate(name = gsub("hw/",  "", filenames),
 * Video 14 Multivariable Models and Confounding (57:43) https://passiondrivenstatistics.com/2016/10/06/r-chapter-17/ 
 * Video 15 Writing for your poster (16:03) https://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/
 
+# Donatello's Videos
 
-## Homework
+* Welcome to Spring 19 https://670832.kaf.kaltura.com/media/Welcome+intro+video+sp19/0_non0k1h7
+* Importing Data into R https://670832.kaf.kaltura.com/media/How+to+import+data+into+R/0_w6buqbaw
+
+----
+
+# Homework 
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 x = out.hw %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>% 
@@ -62,8 +69,9 @@ x = out.hw %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>%
 gsub("<thead>.*</thead>", "", x)
 ```
 
+----
 
-## Additional Lecture Notes
+# Additional Lecture Notes
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 x = out.lec %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>% 
     kable(format="html") %>%
@@ -75,7 +83,7 @@ gsub("<thead>.*</thead>", "", x)
 Also available is the [Applied Statistics Notebook](https://norcalbiostat.github.io/AppliedStatistics_notes/index.html) (Abbreviated as **AS Notebook**) is a general set of notes that span multiple topics from 315, 615 and 456.  
 
 
-## Reading Materials
+# Articles
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 x = out.read %>% select(link) %>% kable(format="html") %>%
     kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive" ,"bordered"), 

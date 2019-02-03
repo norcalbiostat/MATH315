@@ -1,11 +1,16 @@
 ---
-title: "FAQ about R"
-output: html_document
+title: "Getting Help with Programming in R"
+output: 
+  html_document: 
+    toc: yes
+    toc_float: yes
 date: "Last Updated `r Sys.time()`"
 ---
 
 
-# Where do I get acccess to R and R Studio?
+# Getting Access To R 
+
+## Where do I get acccess to R and R Studio?
 * Option 1: Use R Studio in the cloud. 
     - Free account that you can access anywhere. 
     - I have setup the basic environment for you already. Ready to go immediately. 
@@ -19,8 +24,7 @@ date: "Last Updated `r Sys.time()`"
         - Where it says "Save workspace to .RData on exit:" Select "Never""
         - Click apply then ok.
 
-
-# Where can I get help using R outside of class time? 
+# Help locations
 
 ## Online
 * Chico [R User Group](https://groups.google.com/forum/#!forum/chico-rug)
@@ -29,7 +33,7 @@ date: "Last Updated `r Sys.time()`"
 * R Examples repository http://dwoll.de/rexrepos/index.html 
 * R Cheat Sheets https://www.rstudio.com/resources/cheatsheets/
 
-## In Person: 
+## In Person
 * **Community Coding** - TR 2-4pm, THMA 116 [[flyer]](cc_flyer_s19.pdf)
 * **Robin Donatello** - Stat professor. Holt 202 Office Hours: M 10-11am, T: 11-12noon, F 12-1pm
 * **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
@@ -37,23 +41,56 @@ date: "Last Updated `r Sys.time()`"
 * **Math Learning Lab (MLIB 4th floor)** List of S19 tutors TBD
 * **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
 
-# Help with...
+# R Studio & R Markdown
+* R Studio Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
+* R Markdown Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
 
-## General R Programming
+# General R Programming
 * Base R Cheatsheet http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf
 * PDS Common errors [[DOCX]](R_Resources/Common Errors in R.docx)
-* PDS Useful functions [[DOCX]](R_Resources/Useful functions in R.docx)
-* PDS Navigataing data sets [[DOCX]](R_Resources/Navigating datasets in R.docx)
 * R Cookbook http://www.cookbook-r.com/
 * Quick-R http://www.statmethods.net/
 
 
-## R Studio & R Markdown
-* R Studio Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
-* R Markdown Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
+# Navigating data sets
+
+Data matrices in R are 2-dimensional, with observations or subjects in the rows, and variables in the columns.  Each column contains a name, which is the name of the variable.  Let's say your 2D data matrix is stored in an object called `data.`
+
+* To look at all the variable names in your data matrix: `names(data)`
+* To access or print out a particular variable (e.g. age) in your data matrix, use the $ sign: `data$age`
+    - Important: names in R are case-sensitive (so `data$Age` won’t work)
+* You can also access parts of your data matrix using brackets `[]` and numbers (this is called subsetting).  The syntax for subsetting datasets is `data[rows, columns]`.  In other words, commas separate the 2 dimensions of the matrix (rows from columns), with rows first and columns second.
+    - To select all values of a dimension (i.e. you are NOT subsetting rows or NOT subsetting columns), simply leave a blank in the appropriate place (i.e. either before or after the comma).
+    - To print out the whole first column:`data[,1]`
+    - To print out the first ten rows: `data[1:10,]`
+* Can subset both rows and columns at the same time:
+    - To print out the first ten rows and columns 11-15: `data[1:10,11:15]`
+* You can use logical statements in combination with [] to subset your dataset.  A logical statement usually involves ==, !=, >, <, etc., and returns TRUE or FALSE.  You will use this if you are only investigating a subset of your observations (e.g. only male participants).
+* To select all variables, but only males (`data$SEX==2`) in the dataset: `data[data$SEX==2,]`.  This selects all columns (variables) for every row (subject) that has a value of 2 in variable SEX.  Make sure the right dimensions are in the []!!
+* To select only values of cigarettes per day that are not NA: `data$S3AQ3B1[!is.na(data$S3AQ3B1)]`
 
 
-## Graphics
+# Useful functions
+Useful functions in R
+
+* `a:b` : generates a sequence of numbers from a to b.  E.g. `1:10` gives 1,2,3,4,5,6,7,8,9,10.
+* `is.na()` : tests whether a value is NA and returns `TRUE` or `FALSE`.  Can be useful when you’re recoding variables or evaluating a logical statement with NA’s. R cannot evaluate a statement with an NA and will throw an error.  You can avoid this problem by adding “!is.na(x)” (in English: x is not NA) in your if statement or logical statement.
+* `names()`: Returns the variable (column) names in a dataset.  This lets you look at the variable names and rename them if you wish.
+* `c()` : concatenates, or makes a collection of items.  You can do this using with numbers, strings, or whatever you need.
+    - E.g. Let’s say you want to repeatedly select 5 specific columns (e.g. column numbers 6, 7, 8, 15, and 18) from a larger dataset.  You can save yourself time by writing `my.index <- c(5,7,8,15,18)` and then selecting only these 5 columns by writing `data[,my.index]`
+    - E.g. For renaming variables/columns to something more meaningful.  For example, say you want to rename variables `S3AQ8B1` through `S3AQ8B14` as `NDS1` through `NDS17` because they each represent different nicotine dependence symptoms.  You can call the names of your dataset and reassign them to a concatenation of new strings: `names(data) <- c("NDS1", "NDS2", ..., "NDS17")`
+* `rep()`: Takes a value or a string and repeats it a specified number of times.  Takes 2 inputs: the thing to repeat, and how many times to repeat it.
+* `length()` : gives the length of an object, e.g. length(data$id) to see how many subjects
+* `dim()` : gives the dimensions of an object (doesn’t work for one-dimensional objects).  E.g. dim(data) returns two numbers: first the number of rows (subjects) and then the number of columns (variables) in your data set.
+* `as.numeric()`: If you are recoding or creating a new variable, this makes it a quantitative variable
+* `as.factor()`: If you are recoding or creating a new variable, this makes it a categorical variable
+* `mean()`: Returns the mean/average of the input (usually a variable/column in dataset)
+* `sd()`: Returns the standard deviation of the input (usually a variable/column in dataset)
+* `summary()`: Returns a summary of the distribution of the input (or, returns a model summary if the input is a statistical model, e.g. a regression)
+
+
+
+# Graphics
 * Data Visualization using ggplot https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf
 * PDS Graphing in GGplot [[PDF]](R_Resources/QC201_Rgraphing.pdf)
 * PDS Bivariate graphing [[PDF]](R_Resources/R_Bivariate_Graphing_Handout.pdf)
@@ -64,7 +101,7 @@ date: "Last Updated `r Sys.time()`"
 * Data Camp  https://www.datacamp.com/courses/data-visualization-with-ggplot2-1 
 * R Graph Gallery https://www.r-graph-gallery.com/ 
 
-## Data Cleaning
+# Data Cleaning
 * Data Transformation using dplyr https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
 * Data Camp https://www.datacamp.com/courses/cleaning-data-in-r 
 * Applied Stats Notes Chapter 1 https://norcalbiostat.github.io/AppliedStatistics_notes/index.html 
