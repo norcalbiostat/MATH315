@@ -55,6 +55,7 @@ out.hw <- hw %>% mutate(name = gsub("hw/",  "", filenames),
 
 # Donatello's Videos
 
+#### As of Mon 2/4 you have to access these through Blackboard. 
 * Welcome to Spring 19 https://670832.kaf.kaltura.com/media/Welcome+intro+video+sp19/0_non0k1h7
 * Importing Data into R https://670832.kaf.kaltura.com/media/How+to+import+data+into+R/0_w6buqbaw
 

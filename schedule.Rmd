@@ -12,13 +12,13 @@ options(knitr.table.format = "html", knitr.kable.NA = '')
 ## Weekly
 
 <br>
-Unless specified otherwise, all assignments are due at midnight on the due date listed.  
-Times listed next to video numbers is the approximate minutes into the video at which that topic starts. 
+Unless specified otherwise, all assignments are due at midnight on the due date listed.
+Times listed next to video numbers is the approximate minutes into the video at which that topic starts.
 <br>
 ```{r , echo=FALSE, message=FALSE, warning=FALSE}
 rawdat <- read_xlsx("schedule_315.xlsx", sheet='topic_overview')
 
-toshow <- rawdat[which(rawdat$Order==2.1):nrow(rawdat), ]
+toshow <- rawdat[which(rawdat$Order==1.4):nrow(rawdat), ]
 ```
   
 ```{r, results='asis', echo=FALSE}
@@ -30,7 +30,6 @@ out$Assignments <- gsub(" (", " (<b>", out$Assignments, fixed=TRUE)
 out$Assignments <- gsub(" )", "</b>)", out$Assignments, fixed=TRUE)
 out$Quiz <- gsub(" (", " (<b>", out$Quiz, fixed=TRUE)
 out$Quiz <- gsub(" )", "</b>)", out$Quiz, fixed=TRUE)
-
 
 knitr::kable(out, align="clcccc", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
@@ -47,6 +46,6 @@ knitr::kable(out, align="clcccc", escape=FALSE) %>%
 
 <iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;height=800&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mail.csuchico.edu_16sj77sfemp9kqgis2g89j91e0%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
 
-## Calendar -TR 
+## Calendar -TR
 
 <iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;height=800&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mail.csuchico.edu_nc66paji5lqqmd6uqfu1sdfvls%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
