@@ -172,10 +172,10 @@ We'll talk about how to identify features of data that will need to be changed p
 
 ### 2/4/19 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html) - Hello R!
 
-> OH Monday cancelled. I will be available 11-11:30am, 12-2pm and possibly 4-5pm instead. 
+> OH Monday cancelled. I will be available 12-2pm and possibly 4-5pm instead. 
 
 
-#### You have 2 assignments to turn in this week!
+#### You have 2 assignments (and 2 quizes) to turn in this week!
 Read the instructions of each carefully to ensure that they are completed and submitted correctly. 
 
 1. A literature review [[Homework 03]](hw/hw03_lit_review.html).
@@ -184,7 +184,7 @@ Read the instructions of each carefully to ensure that they are completed and su
 We are starting to code in R this week. You must have completed the Data Camp assignments from last week to be ready for this. 
 In class you will work with your partner to take a closer look at your codebook to identify what types of data management you will have to do. The `lec03_dm_prep_questions` lecture notes that can be found on the [[course materials page]](notes.html) contain questions to help guide this process. 
 
-#### Extra Materials
+#### Extra Helpful Materials
 
 * I have created a video to see [[how to get your data into R Studio]](https://670832.kaf.kaltura.com/media/How+to+import+data+into+R/0_w6buqbaw) 
     - All new videos will also be posted on the [[course materials page]](notes.html) page, below the list of PDS videos. 
