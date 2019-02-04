@@ -1,5 +1,5 @@
 ---
-title: "Announcements"
+title: "Math 315 homepage"
 ---
 
 This is the course website for <span style="color:teal">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com) in Spring 2019. This landing page is used for posting of regular announcements and information for students of the class. 
@@ -171,6 +171,9 @@ We'll talk about how to identify features of data that will need to be changed p
 --->
 
 ### 2/4/19 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html) - Hello R!
+
+> OH Monday cancelled. I will be available 11-11:30am, 12-2pm and possibly 4-5pm instead. 
+
 
 #### You have 2 assignments to turn in this week!
 Read the instructions of each carefully to ensure that they are completed and submitted correctly. 
