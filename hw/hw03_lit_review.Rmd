@@ -1,13 +1,13 @@
 ---
 title: "HW03 - Literature Review"
 output:
+  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
-  pdf_document: default
 ---
 
 # Overview
@@ -22,7 +22,7 @@ For each article, you will complete steps 1-3, in other words 4 times. Then comp
 
 * This is a paired project assignment
 * Write your assignment directly in Google Docs in the **03 Citation Assignment** folder for your section.  
-* Name this file `citation_pairname` i.e. `citation_donatello_aguilar.pdf` 
+* Name this file `citation_pairname` i.e. `citation_donatello_aguilar` 
 
 
 ## Step 1: 
