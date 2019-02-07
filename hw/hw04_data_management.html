@@ -120,9 +120,6 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
 }
@@ -270,33 +267,65 @@ div.tocify {
 <ul>
 <li>Put this file in a folder named <code>data</code>.</li>
 </ul></li>
-<li>Read in raw data into a data frame named <code>raw</code> in the first code chunk.</li>
+<li>In the first code chunk:
+<ul>
+<li>Read in raw data into a data frame named <code>raw</code></li>
+<li>Load the <code>dplyr</code> library in the first code chunk by typing</li>
+</ul></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">raw &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/OOL_PDS.csv&quot;</span>, <span class="dt">header=</span><span class="ot">TRUE</span>)</code></pre></div>
-<p>or</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">load</span>(<span class="st">&quot;data/nesarc_pds.RData&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">echo =</span> <span class="ot">TRUE</span>)
+<span class="kw">library</span>(dplyr)
+raw &lt;-<span class="st"> </span><span class="kw">read.delim</span>(<span class="st">&quot;https://norcalbiostat.netlify.com/data/depress_081217.txt&quot;</span>, 
+                  <span class="dt">sep=</span><span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>,  <span class="dt">header=</span><span class="ot">TRUE</span>)</code></pre></div>
 <ol start="4" style="list-style-type: decimal">
-<li>Load the <code>dplyr</code> library in the first code chunk also.</li>
+<li>Make a new object called <code>mydata</code> that contains only the few variables that you have identified in your personal codebook that you may want to use.
+<ul>
+<li>Choose 2 categorical and 2 continuous variables.</li>
+</ul></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mydata  &lt;-<span class="st"> </span>raw <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(age, marital, cesd, health)</code></pre></div>
+<ol start="5" style="list-style-type: decimal">
 <li>Do some data cleaning.
 <ul>
 <li>You must explain at each step what you are doing and why you are doing it.</li>
 <li>Write these explanations outside the R code chunks as normal text.</li>
 <li>Don’t forget to confirm that any changes you make actually work.</li>
-</ul></li>
-<li>Restrict the variables to only the ones you are investigating.
-<ul>
-<li>Suggested to use the <code>select</code> statement found in the <code>dplyr</code> package</li>
-<li>Example, if you recoded the variable <code>SEX</code> from “m” and “f” to be an indicator of <code>female</code> (1/0), you want to analyze the new variable <code>female</code> and not use the old variable named <code>SEX</code>.</li>
+<li>See this example: <a href="https://norcalbiostat.netlify.com/data/dm_addhlth" class="uri">https://norcalbiostat.netlify.com/data/dm_addhlth</a></li>
 </ul></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">clean_ah &lt;-<span class="st"> </span>raw <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>( list the variables to <span class="kw">keep</span> (or drop) here)</code></pre></div>
+<blockquote>
+<p>The variable <code>health</code> currently is numeric (values 1-4), but the codebook states that this is a categorical variable where 1=Excellent, 2=Good, 3=Fair, 4=Poor. So I need to convert this numeric variable to a factor variable.</p>
+</blockquote>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mydata<span class="op">$</span>health_cat &lt;-<span class="st"> </span><span class="kw">factor</span>(mydata<span class="op">$</span>health, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Excellent&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Fair&quot;</span>, <span class="st">&quot;Poor&quot;</span>))</code></pre></div>
+<blockquote>
+<p>Confirm that the recode worked by making a table.</p>
+</blockquote>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(mydata<span class="op">$</span>health, mydata<span class="op">$</span>health_cat, <span class="dt">useNA=</span><span class="st">&quot;always&quot;</span>)</code></pre></div>
+<pre><code>##       
+##        Excellent Good Fair Poor &lt;NA&gt;
+##   1          130    0    0    0    0
+##   2            0  115    0    0    0
+##   3            0    0   35    0    0
+##   4            0    0    0   14    0
+##   &lt;NA&gt;         0    0    0    0    0</code></pre>
+<blockquote>
+<p>All 1’s are now ‘excellent’, 4’s ‘poor’ and so forth.</p>
+</blockquote>
+<ol start="6" style="list-style-type: decimal">
+<li>Restrict the variables to only the ones you are investigating.
+<ul>
+<li>Similar to how you trimmed down <code>raw</code> into <code>mydata</code>, now you want to only keep the variables that you want to save into your analysis data set.</li>
+<li>e.g. I only want to keep the categorical version of <code>health</code>.</li>
+</ul></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">clean &lt;-<span class="st"> </span>mydata <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(age, marital, cesd, health_cat)</code></pre></div>
 <ol start="7" style="list-style-type: decimal">
 <li>Save the resulting data set to your <code>data</code> folder as <code>datasetname_clean.Rdata</code> e.g. <code>addhealth_clean.Rdata</code>.
 <ul>
 <li>This will serve as your analysis data set to do all your subsequent assignments on.</li>
 </ul></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write</span>(clean_ah, <span class="st">&quot;data/addhealth_clean.Rdata&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">save</span>(clean, <span class="dt">file=</span><span class="st">&quot;depression_clean.Rdata&quot;</span>)</code></pre></div>
 </div>
 <div id="submission-instructions" class="section level1">
 <h1>Submission instructions</h1>

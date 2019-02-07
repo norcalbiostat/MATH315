@@ -25,35 +25,54 @@ You are **not** expected to have completed data management for every one of your
     - Save this into your class folder
 2. Download your chosen analysis data set from Google Drive. 
     - Put this file in a folder named `data`. 
-3. Read in raw data into a data frame named `raw` in the first code chunk. 
+3. In the first code chunk: 
+    - Read in raw data into a data frame named `raw` 
+    - Load the `dplyr` library in the first code chunk by typing
+```{r, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+raw <- read.delim("https://norcalbiostat.netlify.com/data/depress_081217.txt", 
+                  sep="\t",  header=TRUE)
+```
 
-```r
-raw <- read.csv("data/OOL_PDS.csv", header=TRUE)
+4. Make a new object called `mydata` that contains only the few variables that you have identified in your personal codebook that you may want to use. 
+    - Choose 2 categorical and 2 continuous variables.  
+```{r}
+mydata  <- raw %>% select(age, marital, cesd, health)
 ```
-or 
-```r
-load("data/nesarc_pds.RData")
-```
-4. Load the `dplyr` library in the first code chunk also.
+
 5. Do some data cleaning. 
     - You must explain at each step what you are doing and why you are doing it. 
     - Write these explanations outside the R code chunks as normal text. 
     - Don't forget to confirm that any changes you make actually work. 
-    
-6. Restrict the variables to only the ones you are investigating. 
-    - Suggested to use the `select` statement found in the `dplyr` package
-    - Example, if you recoded the variable `SEX` from "m" and "f" to be an indicator of `female` (1/0), 
-      you want to analyze the new variable `female` and not use the old variable named `SEX`. 
+    - See this example: https://norcalbiostat.netlify.com/data/dm_addhlth 
 
-```r
-clean_ah <- raw %>% select( list the variables to keep (or drop) here)
+> The variable `health` currently is numeric (values 1-4), but the codebook states that this is a categorical variable where 1=Excellent, 2=Good, 3=Fair, 4=Poor. 
+> So I need to convert this numeric variable to a factor variable. 
+
+```{r}
+mydata$health_cat <- factor(mydata$health, labels=c("Excellent", "Good", "Fair", "Poor"))
+```
+
+> Confirm that the recode worked by making a table. 
+```{r}
+table(mydata$health, mydata$health_cat, useNA="always")
+```
+> All 1's are now 'excellent', 4's 'poor' and so forth. 
+
+6. Restrict the variables to only the ones you are investigating. 
+    - Similar to how you trimmed down `raw` into `mydata`, now you want to only keep the variables that you want to save into your analysis data set. 
+    - e.g. I only want to keep the categorical version of `health`. 
+
+```{r}
+clean <- mydata %>% select(age, marital, cesd, health_cat)
 ```
 
 7. Save the resulting data set to your `data` folder as `datasetname_clean.Rdata` e.g. `addhealth_clean.Rdata`. 
     - This will serve as your analysis data set to do all your subsequent assignments on. 
 
-```r
-write(clean_ah, "data/addhealth_clean.Rdata")
+```{r, eval=FALSE}
+save(clean, file="depression_clean.Rdata")
 ```
 
 # Submission instructions
