@@ -28,7 +28,7 @@ In this project-based course, you will have the opportunity to answer questions 
 * **Slack Channel:** http://math315-s19.slack.com 
 * **Prerequisites:** Basic computer literacy. Recent statistics course such as Math 105. Math 130 is recommended. 
 * **Meeting Days and Times:**  Sec01: TR 12:30-1:45, Sec02: MWF 9-10am, HOLT 171
-* **Office Hours:** Holt 202: TBD (See website for confirmed times)
+* **Office Hours:** Holt 202: M 10-11am, T: 11-12noon, F 12-1pm
 
 
 Best method of contact? Slack! (Then email.)
