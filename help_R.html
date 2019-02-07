@@ -372,7 +372,21 @@ div.tocify {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
+        <li>
+  <a href="peer_mentors.html">
+    <span class="fa fa-users"></span>
+     
+    Peer Mentors
+  </a>
+</li>
+<li>
+  <a href="help_R.html">
+    <span class="fa fa-registered"></span>
+     
+    R programming
+  </a>
+</li>
+<li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-question"></span>
      
@@ -385,13 +399,7 @@ div.tocify {
       <a href="syllabus_315_s19.html">Syllabus</a>
     </li>
     <li>
-      <a href="peer_mentors.html">Peer Mentors</a>
-    </li>
-    <li>
       <a href="help_assignments.html">Submitting homework</a>
-    </li>
-    <li>
-      <a href="help_R.html">R programming</a>
     </li>
   </ul>
 </li>
@@ -412,7 +420,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Getting Help with Programming in R</h1>
-<h4 class="date"><em>Last Updated 2019-02-03 12:23:27</em></h4>
+<h4 class="date"><em>Last Updated 2019-02-07 09:32:35</em></h4>
 
 </div>
 
@@ -435,12 +443,13 @@ div.tocify {
 <li>You will also have to set the following preferences:
 <ul>
 <li>In RStudio the file menu go to Tools then Global Options.</li>
-<li>Uncheck “Restore .RData into workspace at startup” and “Always save history”"</li>
-<li>Where it says “Save workspace to .RData on exit:” Select “Never”"</li>
+<li>Uncheck “Restore .RData into workspace at startup” and “Always save history”&quot;</li>
+<li>Where it says “Save workspace to .RData on exit:” Select “Never”&quot;</li>
 <li>Click apply then ok.</li>
 </ul></li>
 </ul></li>
 </ul>
+<hr />
 </div>
 </div>
 <div id="help-locations" class="section level1">
@@ -460,28 +469,33 @@ div.tocify {
 <ul>
 <li><strong>Community Coding</strong> - TR 2-4pm, THMA 116 <a href="cc_flyer_s19.pdf">[flyer]</a></li>
 <li><strong>Robin Donatello</strong> - Stat professor. Holt 202 Office Hours: M 10-11am, T: 11-12noon, F 12-1pm</li>
-<li><strong>Edward Roualdes</strong> - Stat professor. Holt 204 - <a href="mailto:eroualdes@csuchico.edu" class="email">eroualdes@csuchico.edu</a> Often at community coding.</li>
+<li><strong>Edward Roualdes</strong> - Stat professor. Holt 204 - <a href="mailto:eroualdes@csuchico.edu">eroualdes@csuchico.edu</a> Often at community coding.</li>
 <li><strong>Peer Mentors</strong> -See <a href="peer_mentor.html">[Peer mentor]</a> page for contact info.</li>
-<li><strong>Math Learning Lab (MLIB 4th floor)</strong> List of S19 tutors TBD</li>
+<li><strong>Math Learning Lab (MLIB 4th floor)</strong></li>
 <li><strong><a href="https://www.meetup.com/Chico-R-Users-Group">R Meetup group</a></strong> Coding over coffee (or adult beverages) anyone?</li>
 </ul>
+<hr />
 </div>
 </div>
-<div id="r-studio-r-markdown" class="section level1">
-<h1>R Studio &amp; R Markdown</h1>
+<div id="r-markdown-r-studio" class="section level1">
+<h1>R Markdown &amp; R Studio</h1>
 <ul>
+<li>R Markdown <a href="https://rmarkdown.rstudio.com/lesson-1.html" class="uri">https://rmarkdown.rstudio.com/lesson-1.html</a></li>
 <li>R Studio Cheatsheet <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf</a></li>
 <li>R Markdown Cheatsheet <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf</a></li>
 </ul>
+<hr />
 </div>
 <div id="general-r-programming" class="section level1">
 <h1>General R Programming</h1>
 <ul>
 <li>Base R Cheatsheet <a href="http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf" class="uri">http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf</a></li>
+<li>Guides available in R Studio Cloud</li>
 <li>PDS Common errors <a href="R_Resources/Common%20Errors%20in%20R.docx">[DOCX]</a></li>
 <li>R Cookbook <a href="http://www.cookbook-r.com/" class="uri">http://www.cookbook-r.com/</a></li>
 <li>Quick-R <a href="http://www.statmethods.net/" class="uri">http://www.statmethods.net/</a></li>
 </ul>
+<hr />
 </div>
 <div id="navigating-data-sets" class="section level1">
 <h1>Navigating data sets</h1>
@@ -506,6 +520,7 @@ div.tocify {
 <li>To select all variables, but only males (<code>data$SEX==2</code>) in the dataset: <code>data[data$SEX==2,]</code>. This selects all columns (variables) for every row (subject) that has a value of 2 in variable SEX. Make sure the right dimensions are in the []!!</li>
 <li>To select only values of cigarettes per day that are not NA: <code>data$S3AQ3B1[!is.na(data$S3AQ3B1)]</code></li>
 </ul>
+<hr />
 </div>
 <div id="useful-functions" class="section level1">
 <h1>Useful functions</h1>
@@ -517,7 +532,7 @@ div.tocify {
 <li><code>c()</code> : concatenates, or makes a collection of items. You can do this using with numbers, strings, or whatever you need.
 <ul>
 <li>E.g. Let’s say you want to repeatedly select 5 specific columns (e.g. column numbers 6, 7, 8, 15, and 18) from a larger dataset. You can save yourself time by writing <code>my.index &lt;- c(5,7,8,15,18)</code> and then selecting only these 5 columns by writing <code>data[,my.index]</code></li>
-<li>E.g. For renaming variables/columns to something more meaningful. For example, say you want to rename variables <code>S3AQ8B1</code> through <code>S3AQ8B14</code> as <code>NDS1</code> through <code>NDS17</code> because they each represent different nicotine dependence symptoms. You can call the names of your dataset and reassign them to a concatenation of new strings: <code>names(data) &lt;- c("NDS1", "NDS2", ..., "NDS17")</code></li>
+<li>E.g. For renaming variables/columns to something more meaningful. For example, say you want to rename variables <code>S3AQ8B1</code> through <code>S3AQ8B14</code> as <code>NDS1</code> through <code>NDS17</code> because they each represent different nicotine dependence symptoms. You can call the names of your dataset and reassign them to a concatenation of new strings: <code>names(data) &lt;- c(&quot;NDS1&quot;, &quot;NDS2&quot;, ..., &quot;NDS17&quot;)</code></li>
 </ul></li>
 <li><code>rep()</code>: Takes a value or a string and repeats it a specified number of times. Takes 2 inputs: the thing to repeat, and how many times to repeat it.</li>
 <li><code>length()</code> : gives the length of an object, e.g. length(data$id) to see how many subjects</li>
@@ -528,6 +543,16 @@ div.tocify {
 <li><code>sd()</code>: Returns the standard deviation of the input (usually a variable/column in dataset)</li>
 <li><code>summary()</code>: Returns a summary of the distribution of the input (or, returns a model summary if the input is a statistical model, e.g. a regression)</li>
 </ul>
+<hr />
+</div>
+<div id="data-cleaning" class="section level1">
+<h1>Data Cleaning</h1>
+<ul>
+<li>Data Transformation using dplyr <a href="https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf</a></li>
+<li>Data Camp <a href="https://www.datacamp.com/courses/cleaning-data-in-r" class="uri">https://www.datacamp.com/courses/cleaning-data-in-r</a></li>
+<li>Applied Stats Notes Chapter 1 <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html" class="uri">https://norcalbiostat.github.io/AppliedStatistics_notes/index.html</a></li>
+</ul>
+<hr />
 </div>
 <div id="graphics" class="section level1">
 <h1>Graphics</h1>
@@ -541,14 +566,6 @@ div.tocify {
 <li>STHDA <a href="http://www.sthda.com/english/wiki/data-visualization" class="uri">http://www.sthda.com/english/wiki/data-visualization</a></li>
 <li>Data Camp <a href="https://www.datacamp.com/courses/data-visualization-with-ggplot2-1" class="uri">https://www.datacamp.com/courses/data-visualization-with-ggplot2-1</a></li>
 <li>R Graph Gallery <a href="https://www.r-graph-gallery.com/" class="uri">https://www.r-graph-gallery.com/</a></li>
-</ul>
-</div>
-<div id="data-cleaning" class="section level1">
-<h1>Data Cleaning</h1>
-<ul>
-<li>Data Transformation using dplyr <a href="https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf</a></li>
-<li>Data Camp <a href="https://www.datacamp.com/courses/cleaning-data-in-r" class="uri">https://www.datacamp.com/courses/cleaning-data-in-r</a></li>
-<li>Applied Stats Notes Chapter 1 <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html" class="uri">https://norcalbiostat.github.io/AppliedStatistics_notes/index.html</a></li>
 </ul>
 </div>
 

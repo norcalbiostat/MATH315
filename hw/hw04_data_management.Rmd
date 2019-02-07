@@ -1,13 +1,13 @@
 ---
 title: "hw04 - Data Management Assignment"
 output:
-  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
+  pdf_document: default
 ---
 
 # Assignment Overview
@@ -21,22 +21,26 @@ You are **not** expected to have completed data management for every one of your
 # Instructions 
 > For all coding assignments: Any reference of "Math 315 folder" or "class folder" means either a folder on your laptop where you keep all files for this class, OR your `stats_project` in R Studio cloud. 
 
-1. Create a new Rmarkdown file named `dm_dataname.Rmd`. (e.g. `dm_addhealth.Rmd`  or `dm_caterpillar.Rmd`). 
-    - Save this into your class folder (i.e. or upload to R Studio cloud). 
+1. Create a new Rmarkdown file named `dm_dataname_rdonatello.Rmd`. (e.g. `dm_addhealth_rdonatello.Rmd`  or `dm_caterpillar_rdonatello.Rmd`). 
+    - Save this into your class folder
 2. Download your chosen analysis data set from Google Drive. 
     - Put this file in a folder named `data`. 
 3. Read in raw data into a data frame named `raw` in the first code chunk. 
 
 ```r
-raw <- read.csv(path to data)
+raw <- read.csv("data/OOL_PDS.csv", header=TRUE)
 ```
-
-4. Do some data cleaning. 
+or 
+```r
+load("data/nesarc_pds.RData")
+```
+4. Load the `dplyr` library in the first code chunk also.
+5. Do some data cleaning. 
     - You must explain at each step what you are doing and why you are doing it. 
     - Write these explanations outside the R code chunks as normal text. 
     - Don't forget to confirm that any changes you make actually work. 
     
-5. Restrict the variables to only the ones you are investigating. 
+6. Restrict the variables to only the ones you are investigating. 
     - Suggested to use the `select` statement found in the `dplyr` package
     - Example, if you recoded the variable `SEX` from "m" and "f" to be an indicator of `female` (1/0), 
       you want to analyze the new variable `female` and not use the old variable named `SEX`. 
@@ -45,7 +49,7 @@ raw <- read.csv(path to data)
 clean_ah <- raw %>% select( list the variables to keep (or drop) here)
 ```
 
-6. Save the resulting data set to your `data` folder as `datasetname_clean.Rdata` e.g. `addhealth_clean.Rdata`. 
+7. Save the resulting data set to your `data` folder as `datasetname_clean.Rdata` e.g. `addhealth_clean.Rdata`. 
     - This will serve as your analysis data set to do all your subsequent assignments on. 
 
 ```r
@@ -56,15 +60,10 @@ write(clean_ah, "data/addhealth_clean.Rdata")
 
 * This is an individual project assignment
 * You will compile your RMD code to create a PDF file (knit to PDF)
-* Rename your PDF `dm_datasetname_username` e.g. `dm_addhealth_rdonatello`
 * Upload your PDF file to the **hw04 Data Management** folder in Google Drive. 
 
 
 # Example
 
-Here are a few examples of data management / data cleaning files on other data sets. 
-
-* Any of the Data Management files listed here: https://norcalbiostat.netlify.com/data/raw_data/ 
-* Data set on depression https://norcalbiostat.github.io/AppliedStatistics_notes/import-data.html 
-
+* https://norcalbiostat.netlify.com/data/dm_addhlth
 

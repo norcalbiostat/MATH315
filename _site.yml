@@ -45,19 +45,21 @@ navbar:
     - text: Data Camp (Learn to code)
       icon: fa-institution
       href: https://www.datacamp.com/
+      
   right:
-
+  - text: Peer Mentors
+    icon: fa-users
+    href: peer_mentors.html
+  - text: R programming
+    icon: fa-registered
+    href: help_R.html    
   - text: Help
     icon: fa-question
     menu:
     - text: Syllabus
       href: syllabus_315_s19.html
-    - text: Peer Mentors
-      href: peer_mentors.html
     - text: Submitting homework
       href: help_assignments.html
-    - text: R programming
-      href: help_R.html
   - text: Dr. D's website
     icon: fa-paw
     href: http://www.norcalbiostat.com/

@@ -24,6 +24,8 @@ date: "Last Updated `r Sys.time()`"
         - Where it says "Save workspace to .RData on exit:" Select "Never""
         - Click apply then ok.
 
+----
+
 # Help locations
 
 ## Online
@@ -38,19 +40,28 @@ date: "Last Updated `r Sys.time()`"
 * **Robin Donatello** - Stat professor. Holt 202 Office Hours: M 10-11am, T: 11-12noon, F 12-1pm
 * **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
 * **Peer Mentors** -See [[Peer mentor]](peer_mentor.html) page for contact info. 
-* **Math Learning Lab (MLIB 4th floor)** List of S19 tutors TBD
+* **Math Learning Lab (MLIB 4th floor)** 
 * **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
 
-# R Studio & R Markdown
+----
+
+# R Markdown & R Studio
+
+* R Markdown https://rmarkdown.rstudio.com/lesson-1.html 
 * R Studio Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
 * R Markdown Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
 
+----
+
 # General R Programming
+
 * Base R Cheatsheet http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf
+* Guides available in R Studio Cloud
 * PDS Common errors [[DOCX]](R_Resources/Common Errors in R.docx)
 * R Cookbook http://www.cookbook-r.com/
 * Quick-R http://www.statmethods.net/
 
+----
 
 # Navigating data sets
 
@@ -69,6 +80,7 @@ Data matrices in R are 2-dimensional, with observations or subjects in the rows,
 * To select all variables, but only males (`data$SEX==2`) in the dataset: `data[data$SEX==2,]`.  This selects all columns (variables) for every row (subject) that has a value of 2 in variable SEX.  Make sure the right dimensions are in the []!!
 * To select only values of cigarettes per day that are not NA: `data$S3AQ3B1[!is.na(data$S3AQ3B1)]`
 
+----
 
 # Useful functions
 Useful functions in R
@@ -88,7 +100,15 @@ Useful functions in R
 * `sd()`: Returns the standard deviation of the input (usually a variable/column in dataset)
 * `summary()`: Returns a summary of the distribution of the input (or, returns a model summary if the input is a statistical model, e.g. a regression)
 
+----
 
+# Data Cleaning
+* Data Transformation using dplyr https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
+* Data Camp https://www.datacamp.com/courses/cleaning-data-in-r 
+* Applied Stats Notes Chapter 1 https://norcalbiostat.github.io/AppliedStatistics_notes/index.html 
+
+
+----
 
 # Graphics
 * Data Visualization using ggplot https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf
@@ -100,11 +120,6 @@ Useful functions in R
 * STHDA http://www.sthda.com/english/wiki/data-visualization
 * Data Camp  https://www.datacamp.com/courses/data-visualization-with-ggplot2-1 
 * R Graph Gallery https://www.r-graph-gallery.com/ 
-
-# Data Cleaning
-* Data Transformation using dplyr https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
-* Data Camp https://www.datacamp.com/courses/cleaning-data-in-r 
-* Applied Stats Notes Chapter 1 https://norcalbiostat.github.io/AppliedStatistics_notes/index.html 
 
 
 
