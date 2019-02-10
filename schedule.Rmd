@@ -18,7 +18,7 @@ Times listed next to video numbers is the approximate minutes into the video at 
 ```{r , echo=FALSE, message=FALSE, warning=FALSE}
 rawdat <- read_xlsx("schedule_315.xlsx", sheet='topic_overview')
 
-toshow <- rawdat[which(rawdat$Order==1.4):nrow(rawdat), ]
+toshow <- rawdat[which(rawdat$Order==2.1):nrow(rawdat), ]
 ```
   
 ```{r, results='asis', echo=FALSE}
