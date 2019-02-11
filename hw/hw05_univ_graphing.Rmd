@@ -1,15 +1,15 @@
 ---
 title: "Describing distributions of data"
 output:
-  pdf_document: default
-  word_document:
-    toc: yes
   html_document:
     highlight: tango
     theme: readable
     toc: yes
     toc_float: yes
-css: ../css/customh5.css
+  word_document:
+    toc: yes
+  pdf_document: default
+css: ../css/sandstone.css
 ---
 
 ```{r setup, include=FALSE}
@@ -45,9 +45,7 @@ There are a variety of conventional ways to visualize data - tables, histograms,
 
 # Submission
 
-1. Upload the final PDF to `05 Univariate Graphing` folder in Google Drive with the file name: `univ_graphing_userid.pdf` by Sunday EOD
-2. Review your peer's work by Tuesday EOD by commenting in the PDF directly in Google Drive
-3. Revise (optional) your work and submit the final PDF to BBL by Thursday EOD
+1. Upload the final PDF to `05 Univariate Graphing` folder in Google Drive with the file name: `univ_graphing_userid.pdf` by the due date. 
 
 \newpage 
 

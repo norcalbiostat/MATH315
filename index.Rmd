@@ -146,6 +146,8 @@ If you haven't done so in a while, you might want to check Slack. Especially the
 
 ### 2/10/19 - [Week 4](https://norcalbiostat.github.io/MATH315/wk/wk04.html) - Making pretty pictures to win friends and influence people!
 
+> No quiz on exploring numeric data. Prepare answers in the course notes section 2.1 instead (for Mon/Tue) and 2.2 (for Wed/Thu).
+
 If there's one take home message for this week, is to describe the distribution of variables you need: 
 
 1. a picture

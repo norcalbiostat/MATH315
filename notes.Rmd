@@ -62,7 +62,7 @@ out.hw <- hw %>% mutate(name = gsub("hw/",  "", filenames),
 ----
 
 # Homework 
-
+To download RMD template files, right click and "save as". Do not open in a browser then save. 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 x = out.hw %>% select(link, type, nam) %>% dcast(nam~type, value.var="link") %>% 
     kable(format="html") %>%
