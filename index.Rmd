@@ -158,6 +158,17 @@ develop as you go on throughout the semester.
 **Advice: Complete the `ggplot2` lesson in DataCamp (and corresponding blackboard learn quiz) EARLY this week. It will make coding in ggplot throughout the week much easier. **
 
 
+#### Events for this week (always free and open to all unless specified)
+
+* "Women Like You" Leadership Symposium (Drop in 10-2pm) https://as.csuchico.edu/women-like-you/ 
+Distinguished female leaders share stories and discuss topics designed to inspire and empower all. With highlights from our own, Chico State faculty and staff will tell their personal stories of success and failure, sharing their journeys of resilience and rise as a woman in today’s social climate. Student attendees can enter to win from a pool of $5000 in textbook scholarship funds. 
+
+* [Data Science Seminar: Spatial is Special](https://csudsi.netlify.com/2019/02/02/2019-02-02-dsi-seminar-spatial-is-special/) (Th 2-3pm, Tehama 116)
+Learn how to start exploring and analyzing geographic data using GIS (Geographic Information Systems) software. http://datascience.csuchico.edu 
+
+----
+<p>
+
 ### 2/4/19 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html) - Hello R!
 
 > OH Monday cancelled. I will be available 12-2pm and possibly 4-5pm instead. 
