@@ -20,9 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -54,7 +53,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
+<link rel="stylesheet" href="css/sandstone.css" type="text/css" />
 
 </head>
 
@@ -83,6 +82,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -97,7 +99,6 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
-
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -117,6 +118,43 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -138,18 +176,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -439,32 +536,36 @@ This week, let's ease back into things. Try to come back to "normal", when life 
 * This week is a lot of "book work". You will learn by reading and participating in class, your assignments are all assigned through Blackboard Learn. 
 * Problem set 3.1 and 3.2 should have been officially assigned last week, they are set for being due EOD on Monday. 
     - Reminder: These due dates are so YOU are keeping up with the class. They will stay open until Exam 2, but the sooner you do them the better off you will be in class. 
-* The rest of the schedule for the semester has been set. Plan your time accordingly. These assignments will take longer than one evening to complete.
-    - I will be working over the next few days to open the rest of the assignments in Blackboard Learn so that they show up on the calendar. 
-* There will be no more required peer review of normal assignments directly, you will be reviewing the team's project analysis work. 
-    - You will submit HW through Blackboard Learn 
-    - I will comment on the documents directly and post to Google Drive for shared learning
-    - Your grade is still confidential and will be graded using a rubric in Blackboard learn. 
+
 
 
 ### 10/1/18 - [Week 6](https://norcalbiostat.github.io/MATH315/wk/wk06.html)
 
 * Monday: Next steps for the project - starting your poster slides. 
-* Wednesday: Exam 1. A sample exam is linked on the materials, and posted in Slack over the weekend. 
 * Friday: Probability. This is a very brief overview, refer to the OpenIntro textbook and PDS videos for more learning. 
-
-There has been some modifications to the assignments. The research propsal assignment has been cancelled, and the weight of the individual homework assignments has been increased. Be mindful of due dates, and peer review problems. 
 
 If you haven't done so in a while, you might want to check Slack. Especially the #assignments channel. I share important information on there. 
 
-### 9/18/17 - [Week 5](https://norcalbiostat.github.io/MATH315/wk/wk05.html)
-* This week we will discuss how to create visualizations to assess the relationship between two variables. 
-* Open work days are not optional, your attendance is expected. 
-* The bivariate graphing assignment is an individual submission that is peer reviewed- but you do **NOT** get a chance to revise your assignment. This is so I can get it graded and back to you in time for the exam. 
-* You should also be working on your project poster preparation slides. The homework assignments are training grounds for you to practice how to create and interpret graphics to explore your research question. The graphs you make for the homework may or may not be directly related to your research question. 
-
-
 --->
+<div id="week-5---exploring-relationships" class="section level3">
+<h3>2/18/19 - <a href="https://norcalbiostat.github.io/MATH315/wk/wk05.html">Week 5</a> - Exploring Relationships</h3>
+<ul>
+<li>This week we will discuss how to create visualizations to assess the relationship between two variables.</li>
+<li>The homework assignments are training grounds for you to practice how to create and interpret graphics to explore your research question. The graphs you make for the homework may or may not be directly related to your research question.</li>
+<li>You may have to go back to your raw data and pull in new measures. Or adjust your variables (like collapsing levels) based on what you observed in last week’s assignment.</li>
+</ul>
+<div id="items-due-this-week" class="section level4">
+<h4>Items due this week:</h4>
+<ul>
+<li>HW 06 - Bivariate Graphing</li>
+<li>Data Camp - Intro to Data (practice data management with R)
+<ul>
+<li>Don’t forget to do the corresponding BBL quiz.</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
 <div id="week-4---making-pretty-pictures-to-win-friends-and-influence-people" class="section level3">
 <h3>2/10/19 - <a href="https://norcalbiostat.github.io/MATH315/wk/wk04.html">Week 4</a> - Making pretty pictures to win friends and influence people!</h3>
 <blockquote>

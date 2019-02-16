@@ -21,9 +21,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -55,7 +54,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
+<link rel="stylesheet" href="css/sandstone.css" type="text/css" />
 
 </head>
 
@@ -84,6 +83,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -98,7 +100,6 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
-
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -118,6 +119,43 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -139,18 +177,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -327,8 +424,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="last-updated-sat-feb-09-91040-pm" class="section level1 tabset tabset-fade tabset-pills">
-<h1>Last Updated: Sat Feb 09 9:10:40 PM</h1>
+<div id="last-updated-fri-feb-15-225954" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Last Updated: Fri Feb 15 22:59:54</h1>
 <div id="weekly" class="section level2">
 <h2>Weekly</h2>
 <p><br> Unless specified otherwise, all assignments are due at midnight on the due date listed. Times listed next to video numbers is the approximate minutes into the video at which that topic starts. <br></p>
@@ -356,59 +453,6 @@ Assignments
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center;">
-2 (1/27)
-</td>
-<td style="text-align:left;">
-Data architecture and codebooks
-</td>
-<td style="text-align:center;">
-<a href="https://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/">2 (12 min)</a>
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-<a href="https://goo.gl/forms/KN93z88tA6xeFtrH3">MWF</a> (<b>Due 1/27) <a href="https://goo.gl/forms/Lwvtje8u9bM3EnKq1">TR</a> (<b>Due 1/28) </b></b>
-</td>
-<td style="text-align:center;">
-<a href="hw/hw02_personal_codebook.html">hw02_codebook*</a> (<b>Due 2/2, PR 2/4) </b>
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-</td>
-<td style="text-align:left;">
-Using R for Data Analysis
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-</td>
-<td style="text-align:center;">
-Data Camp: Intro to R (<b>BBL Quiz Due 2/2) </b>
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-</td>
-<td style="text-align:left;">
-Literature review
-</td>
-<td style="text-align:center;">
-<a href="https://passiondrivenstatistics.com/2015/09/16/chapter-04/">3</a>
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-<a href="https://goo.gl/forms/dR2PqvSZRqRk3SB32">MWF</a> (<b>Due 2/1) <a href="https://goo.gl/forms/vR1hVhjph6m06bJZ2">TR</a> (<b>Due 1/31) </b></b>
-</td>
-<td style="text-align:center;">
-<a href="hw/hw03_lit_review.html">hw03_lit_review</a> (<b>Due 2/9) </b>
-</td>
-</tr>
 <tr>
 <td style="text-align:center;">
 3 (2/3)
@@ -461,10 +505,9 @@ Exploring numerical variables
 2.1
 </td>
 <td style="text-align:center;width: 15%; width: 14%; ">
-<a href="https://goo.gl/forms/FhMugyEyHGMGMsPC3">MWF</a> (<b>Due 2/10) <a href="https://goo.gl/forms/xn8yJ3c8uCCjQXjj1">TR</a> (<b>Due 2/11) </b></b>
 </td>
 <td style="text-align:center;">
-hw05_univ_graphing (<b>Due 2/16) </b>
+<a href="hw/hw05_univariate_graphing.html">hw05_univ_graphing</a> (<b>Due 2/16) </b>
 </td>
 </tr>
 <tr>
@@ -480,7 +523,7 @@ Exploring categorical variables
 2.2
 </td>
 <td style="text-align:center;width: 15%; width: 14%; ">
-<a href="https://goo.gl/forms/g61lVP845nAkxNEY2">MWF</a> (<b>Due 2/12) <a href="https://goo.gl/forms/tRfwIzTVGhuI2oK82">TR</a> (<b>Due 2/113 </b></b>
+<a href="https://goo.gl/forms/g61lVP845nAkxNEY2">MWF</a> (<b>Due 2/12) <a href="https://goo.gl/forms/tRfwIzTVGhuI2oK82">TR</a> (<b>Due 2/13) </b></b>
 </td>
 <td style="text-align:center;">
 </td>
@@ -506,7 +549,7 @@ Data Camp: Introduction to ggplot (<b>BBL Quiz Due 2/16) </b>
 5 (2/17)
 </td>
 <td style="text-align:left;">
-Bivariate graphing
+Graphing relationships
 </td>
 <td style="text-align:center;">
 <a href="https://passiondrivenstatistics.com/2016/03/28/r-chapter-9/">7</a>
@@ -515,10 +558,10 @@ Bivariate graphing
 2.3
 </td>
 <td style="text-align:center;width: 15%; width: 14%; ">
-x
+<a href="https://goo.gl/forms/goNiCOkv4GDGA4zD2">MWF</a> (<b>Due 2/17) <a href="https://goo.gl/forms/O7hRABzSHJr8miJ43">TR</a> (<b>Due 2/18) </b></b>
 </td>
 <td style="text-align:center;">
-hw06_biv_graphing (<b>Due 2/23) </b>
+<a href="hw/hw06_biv_graphing.html">hw06_biv_graphing</a> (<b>Due 2/23) </b>
 </td>
 </tr>
 <tr>
@@ -549,7 +592,7 @@ Writing about empirical research
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;width: 15%; width: 14%; ">
-x
+<a href="https://goo.gl/forms/LHreCiFU4XeRvZif2">MWF</a> (<b>Due 2/24) <a href="https://goo.gl/forms/TIGOp92bDrFmXodz1">TR</a> (<b>Due 2/25) </b></b>
 </td>
 <td style="text-align:center;">
 </td>
@@ -565,9 +608,26 @@ Research Proposal
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;width: 15%; width: 14%; ">
+x
 </td>
 <td style="text-align:center;">
-hw07_proposal* (<b>Draft Due 3/5, PR 3/7, Final 3/9) </b>
+hw07_proposal* (<b>Draft Due 3/5, PR 3/7, Final 3/9) Quiz is on HW07 and PPI </b>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+</td>
+<td style="text-align:left;">
+Setting up the story: Stage I
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;width: 15%; width: 14%; ">
+</td>
+<td style="text-align:center;">
+Poster prep Stage I* (<b>Draft Due 3/12, PR 3/14, Final 3/16) </b>
 </td>
 </tr>
 <tr>
@@ -604,22 +664,6 @@ Point estimates and the CLT
 <td style="text-align:center;width: 15%; width: 14%; ">
 </td>
 <td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-</td>
-<td style="text-align:left;">
-Setting up the story: Stage I
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-</td>
-<td style="text-align:center;">
-Poster prep Stage I* (<b>Draft Due 3/12, PR 3/14, Final 3/16) </b>
 </td>
 </tr>
 <tr>

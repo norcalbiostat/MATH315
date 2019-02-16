@@ -1,15 +1,15 @@
 ---
 title: "Graphing Bivariate Relationships"
 output:
+  pdf_document: default
+  word_document:
+    toc: yes
   html_document:
     highlight: tango
     theme: readable
     toc: yes
     toc_float: yes
-  word_document:
-    toc: yes
-  pdf_document: default
-css: ../css/customh5.css
+css: ../css/sandstone.css
 ---
 
 # Overview
@@ -29,14 +29,13 @@ Before you start,
     * You should use variables that are relevant to your research topic. 
     * If you have not yet identified both a quantitative, a binary, and a categorical variable that you are interested in, now is the time to go back to the codebook and figure this out. 
 2. Recode variables as needed. 
-    * If your response variable is categorical with many levels, you may want to collapse it down to fewer than 5 levels. 
+    * If your response variable is categorical with many levels, you must collapse the levels down to fewer than 5 levels. 
     * It is perfectly acceptable to recode variables temporarily for exploratory purposes and not put it in your data management file.
 
 
 # Instructions
 
-0. Use the template provided: [[RMD]](bivariate_graphing_template.Rmd). Rename this file name to: _biv_graph_userid.pdf_
-
+0. Use the template provided: [[RMD]](hw06_bivariate_graphing_template.Rmd). Replace the `template` in the file name with your username. 
 
 For each bivariate relationship under consideration you will do the following: 
 
@@ -62,7 +61,7 @@ For each bivariate relationship under consideration you will do the following:
         - Does one combination of categorical levels (C~C) seem to hold most the data? 
         - Are there any outlying data points? Don't list off each one, just state if there is and where approximately it's at. 
 
-5. Submit your knitted PDF to the **05 Bivariate Graphics** folder in Google Drive, **AND** to the corresponding Blackboard learn assignment. 
+5. Submit your knitted PDF to the **05 Bivariate Graphics** folder in Google Drive
 
 ## Example
 In these examples I use `ggplot2` for plotting, `dplyr` for data management and to create summary statistics, `knitr` to create nice tables, `gridExtra` to put plots side by side, and `scales` to format the y axis with percentages. (You do not need to report this information in your assignment. This is for your knowledge only.) I also explain what I'm doing in code here for you to learn. you do not need to explain your own code. 

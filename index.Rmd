@@ -117,32 +117,30 @@ This week, let's ease back into things. Try to come back to "normal", when life 
 * This week is a lot of "book work". You will learn by reading and participating in class, your assignments are all assigned through Blackboard Learn. 
 * Problem set 3.1 and 3.2 should have been officially assigned last week, they are set for being due EOD on Monday. 
     - Reminder: These due dates are so YOU are keeping up with the class. They will stay open until Exam 2, but the sooner you do them the better off you will be in class. 
-* The rest of the schedule for the semester has been set. Plan your time accordingly. These assignments will take longer than one evening to complete.
-    - I will be working over the next few days to open the rest of the assignments in Blackboard Learn so that they show up on the calendar. 
-* There will be no more required peer review of normal assignments directly, you will be reviewing the team's project analysis work. 
-    - You will submit HW through Blackboard Learn 
-    - I will comment on the documents directly and post to Google Drive for shared learning
-    - Your grade is still confidential and will be graded using a rubric in Blackboard learn. 
+
 
 
 ### 10/1/18 - [Week 6](https://norcalbiostat.github.io/MATH315/wk/wk06.html)
 
 * Monday: Next steps for the project - starting your poster slides. 
-* Wednesday: Exam 1. A sample exam is linked on the materials, and posted in Slack over the weekend. 
 * Friday: Probability. This is a very brief overview, refer to the OpenIntro textbook and PDS videos for more learning. 
-
-There has been some modifications to the assignments. The research propsal assignment has been cancelled, and the weight of the individual homework assignments has been increased. Be mindful of due dates, and peer review problems. 
 
 If you haven't done so in a while, you might want to check Slack. Especially the #assignments channel. I share important information on there. 
 
-### 9/18/17 - [Week 5](https://norcalbiostat.github.io/MATH315/wk/wk05.html)
-* This week we will discuss how to create visualizations to assess the relationship between two variables. 
-* Open work days are not optional, your attendance is expected. 
-* The bivariate graphing assignment is an individual submission that is peer reviewed- but you do **NOT** get a chance to revise your assignment. This is so I can get it graded and back to you in time for the exam. 
-* You should also be working on your project poster preparation slides. The homework assignments are training grounds for you to practice how to create and interpret graphics to explore your research question. The graphs you make for the homework may or may not be directly related to your research question. 
-
-
 --->
+
+### 2/18/19 - [Week 5](https://norcalbiostat.github.io/MATH315/wk/wk05.html) - Exploring Relationships
+* This week we will discuss how to create visualizations to assess the relationship between two variables. 
+* The homework assignments are training grounds for you to practice how to create and interpret graphics to explore your research question. The graphs you make for the homework may or may not be directly related to your research question. 
+* You may have to go back to your raw data and pull in new measures. Or adjust your variables (like collapsing levels) based on what you observed in last week's assignment. 
+
+#### Items due this week:
+* HW 06 - Bivariate Graphing
+* Data Camp - Intro to Data (practice data management with R)
+    - Don't forget to do the corresponding BBL quiz.
+    
+
+----
 
 ### 2/10/19 - [Week 4](https://norcalbiostat.github.io/MATH315/wk/wk04.html) - Making pretty pictures to win friends and influence people!
 

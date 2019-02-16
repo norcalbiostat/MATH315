@@ -72,8 +72,8 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
   <td width="250"><img src="mentors/mariby.jpg" alt="" /></td>
   <td width="50"></td>
   <td width="250"><strong>Known for: Taking classes she's not required to take </strong>  <br> 
-      <strong>Attending: </strong> MW 9-10 <br> 
-      <strong>OH: </strong> Wed 4-5pm <br> 
+      <strong>Attending: </strong> MW 9-10  <br> 
+      <strong>OH: </strong> Upon Request <br> 
       <strong>Contact: </strong> mcruz@mail.csuchico.edu <br> </td>
   <td width="50"></td>
   <td width="350"> I was born in Los Angeles and I currently reside in Inglewood when I'm not in school.  I'll be graduating this May with a BS in Biology and a minor in Applied Statistics.  My goal is to help you understand the basics of 'R' and most importantly what your results mean (among other things in MATH315).  Here's a [[link to a video]](https://www.facebook.com/sirenasdiving.costarica/videos/1593710070726854/) showing you what I do for fun in the summer.</td>
