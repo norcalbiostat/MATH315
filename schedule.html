@@ -21,8 +21,9 @@
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 
 
@@ -54,7 +55,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css/sandstone.css" type="text/css" />
+<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
 
 </head>
 
@@ -83,9 +84,6 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
-summary {
-  display: list-item;
-}
 </style>
 
 
@@ -100,6 +98,7 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
+
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -119,43 +118,6 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -177,77 +139,18 @@ $(document).ready(function () {
 });
 </script>
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
 </script>
 
 <!-- code folding -->
+
 
 
 
@@ -424,8 +327,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="last-updated-fri-feb-15-225954" class="section level1 tabset tabset-fade tabset-pills">
-<h1>Last Updated: Fri Feb 15 22:59:54</h1>
+<div id="last-updated-sun-feb-17-24810-pm" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Last Updated: Sun Feb 17 2:48:10 PM</h1>
 <div id="weekly" class="section level2">
 <h2>Weekly</h2>
 <p><br> Unless specified otherwise, all assignments are due at midnight on the due date listed. Times listed next to video numbers is the approximate minutes into the video at which that topic starts. <br></p>
@@ -507,7 +410,7 @@ Exploring numerical variables
 <td style="text-align:center;width: 15%; width: 14%; ">
 </td>
 <td style="text-align:center;">
-<a href="hw/hw05_univariate_graphing.html">hw05_univ_graphing</a> (<b>Due 2/16) </b>
+<a href="hw/hw05_univ_graphing.html">hw05_univ_graphing</a> (<b>Due 2/16) </b>
 </td>
 </tr>
 <tr>
