@@ -146,6 +146,10 @@ Don't risk falling behind, you will struggle to catch up and may not pass. There
 * Data Camp - Intro to Data (practice data management with R)
     - Don't forget to do the corresponding BBL quiz.
     
+#### Events for this week (always free and open to all unless specified)
+
+* [Data Science Seminar: Merging data from multiple tables using SQL](https://csudsi.netlify.com/2019/02/02/2019-02-02-dsi-seminar-spatial-is-special/) (Th 3-4pm, Tehama 116)
+SQL is a powerful database language that is used to link information together across multiple tables. http://datascience.csuchico.edu 
 
 ----
 

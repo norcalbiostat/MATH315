@@ -23,8 +23,9 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 
 
@@ -56,7 +57,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css/sandstone.css" type="text/css" />
+<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
 
 </head>
 
@@ -85,9 +86,6 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
-summary {
-  display: list-item;
-}
 </style>
 
 
@@ -102,6 +100,7 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
+
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -121,43 +120,6 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -179,77 +141,18 @@ $(document).ready(function () {
 });
 </script>
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
 </script>
 
 <!-- code folding -->
+
 
 
 
@@ -517,7 +420,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Getting Help with Programming in R</h1>
-<h4 class="date"><em>Last Updated 2019-02-15 22:59:51</em></h4>
+<h4 class="date"><em>Last Updated 2019-02-17 18:32:44</em></h4>
 
 </div>
 
@@ -540,8 +443,8 @@ div.tocify {
 <li>You will also have to set the following preferences:
 <ul>
 <li>In RStudio the file menu go to Tools then Global Options.</li>
-<li>Uncheck “Restore .RData into workspace at startup” and “Always save history”&quot;</li>
-<li>Where it says “Save workspace to .RData on exit:” Select “Never”&quot;</li>
+<li>Uncheck “Restore .RData into workspace at startup” and “Always save history”"</li>
+<li>Where it says “Save workspace to .RData on exit:” Select “Never”"</li>
 <li>Click apply then ok.</li>
 </ul></li>
 </ul></li>
@@ -566,7 +469,7 @@ div.tocify {
 <ul>
 <li><strong>Community Coding</strong> - TR 2-4pm, THMA 116 <a href="cc_flyer_s19.pdf">[flyer]</a></li>
 <li><strong>Robin Donatello</strong> - Stat professor. Holt 202 Office Hours: M 10-11am, T: 11-12noon, F 12-1pm</li>
-<li><strong>Edward Roualdes</strong> - Stat professor. Holt 204 - <a href="mailto:eroualdes@csuchico.edu">eroualdes@csuchico.edu</a> Often at community coding.</li>
+<li><strong>Edward Roualdes</strong> - Stat professor. Holt 204 - <a href="mailto:eroualdes@csuchico.edu" class="email">eroualdes@csuchico.edu</a> Often at community coding.</li>
 <li><strong>Peer Mentors</strong> -See <a href="peer_mentor.html">[Peer mentor]</a> page for contact info.</li>
 <li><strong>Math Learning Lab (MLIB 4th floor)</strong></li>
 <li><strong><a href="https://www.meetup.com/Chico-R-Users-Group">R Meetup group</a></strong> Coding over coffee (or adult beverages) anyone?</li>
@@ -629,7 +532,7 @@ div.tocify {
 <li><code>c()</code> : concatenates, or makes a collection of items. You can do this using with numbers, strings, or whatever you need.
 <ul>
 <li>E.g. Let’s say you want to repeatedly select 5 specific columns (e.g. column numbers 6, 7, 8, 15, and 18) from a larger dataset. You can save yourself time by writing <code>my.index &lt;- c(5,7,8,15,18)</code> and then selecting only these 5 columns by writing <code>data[,my.index]</code></li>
-<li>E.g. For renaming variables/columns to something more meaningful. For example, say you want to rename variables <code>S3AQ8B1</code> through <code>S3AQ8B14</code> as <code>NDS1</code> through <code>NDS17</code> because they each represent different nicotine dependence symptoms. You can call the names of your dataset and reassign them to a concatenation of new strings: <code>names(data) &lt;- c(&quot;NDS1&quot;, &quot;NDS2&quot;, ..., &quot;NDS17&quot;)</code></li>
+<li>E.g. For renaming variables/columns to something more meaningful. For example, say you want to rename variables <code>S3AQ8B1</code> through <code>S3AQ8B14</code> as <code>NDS1</code> through <code>NDS17</code> because they each represent different nicotine dependence symptoms. You can call the names of your dataset and reassign them to a concatenation of new strings: <code>names(data) &lt;- c("NDS1", "NDS2", ..., "NDS17")</code></li>
 </ul></li>
 <li><code>rep()</code>: Takes a value or a string and repeats it a specified number of times. Takes 2 inputs: the thing to repeat, and how many times to repeat it.</li>
 <li><code>length()</code> : gives the length of an object, e.g. length(data$id) to see how many subjects</li>
