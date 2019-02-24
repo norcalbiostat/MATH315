@@ -1,20 +1,20 @@
 ---
 title: "HW 07 - Research Proposal"
 output:
-  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
+  pdf_document: default
 ---
 
 # Overview
 
-Your research proposal is an important component of your final research project. This assignment is worth twice that a normal homework and . You will spend the next two weeks writing your proposal, using the outline template below to help organize your writing. 
+Your research proposal is an important component of your final research project. This assignment is worth twice that a normal homework and comes with a review period. You will spend the next two weeks writing your proposal, using the outline template below to help organize your writing. 
 
-You should start this assignment immediately and work on it every day until complete. Reread it and edit for clarity and readability before you turn it in. 
+You should start this assignment immediately and work on it every day until complete. Reread it and edit for clarity and readability before you turn it in.
 
 # Instructions
 You will write the assignment directly in a Google document. 
@@ -41,7 +41,7 @@ After the review period you have 2 days to make any necessary revisions.
 * Make a copy of your assignment and move it into the **07Research Proposal/Final** folder. 
 * Review all comments provided. Mark the issues as "resolved" as you address them. 
 * Do not feel compelled to take every single piece of advice, unless it comes from the instructor or a peer mentor. 
-
+* Check your work against the rubric in Blackboard learn to ensure you are meeting the grading criteria. 
 
 # Examples
 
