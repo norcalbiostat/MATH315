@@ -1,12 +1,13 @@
 ---
 title: "Writing about empirical research"
-date: '2017-09-04'
 output:
   pdf_document: default
-  html_document: 
-      theme: sandstone
-      highlight: tango
-  css: css/sandstone.css
+  html_document:
+    theme: sandstone
+    highlight: tango
+    toc: yes
+    toc_float: yes
+    css: ../css/sandstone.css
 ---
 
 _Taken from Passion Driven Statistics 2014 ibook_
@@ -45,9 +46,12 @@ Thus, the beginning of your introduction and end of your discussion should conta
 # Sections
 
 ## Title
+Using what you know now about your project and the model title in the reading, develop a working title fully knowing it is going to probably change. 
+
 * A title should summarize the main idea of your research question. 
 * It should be a concise statement of the main topic and should identify the actual variables under investigation and the relationship between them. 
     - An example of a good title is _The association between weather patterns and caterpillar reproduction_. 
+* Include the terms “association between” or “relationship between” in your title to join your variables of interest.  
 * A title should be fully explanatory when standing alone. 
 * Avoid words that serve no useful purpose. 
     - The words "method" and "results" do not normally appear in a title
@@ -56,7 +60,7 @@ Thus, the beginning of your introduction and end of your discussion should conta
     - "the impact of", "the effect of", etc. 
 * Avoid using abbreviations in a title.
 
-##### Model Title:
+#### Model Title:
 > The Association between Nicotine Dependence and Major Depression at Different Levels of Smoking Exposure
 
 
@@ -75,7 +79,8 @@ The introduction describes the question you intend to investigate and how your r
 * The literature review summarizes the state of the field you investigate. 
 * Each statement in the literature review should build to the justification of your own research by identifying a hole in existing scholarship. 
 * Emphasize major findings and key conclusions rather than citing tangentially related works. 
-* Assume your reader is basically knowledgeable about your topic rather than writing an exhaustive review. 
+* Assume your reader is basically knowledgeable about your topic rather than writing an exhaustive review.
+* Include proper in-text citations
 
 The following is a successful section of a literature review:
 
@@ -107,8 +112,8 @@ Your introduction should build to and conclude with the research questions or st
 
 
 ## Methods
-The methods section describes how the research was conducted. 
-* It comprises discussions of your sample, measures, and procedures.
+The methods section describes how the research was conducted. It comprises discussions of your sample, measures, and procedures.
+This should **not**  be an exact copy of the information found in the codebook. You must rephrase this into your own words. 
 
 ### Sample
 * Identify who or what was studied (people, animals, etc.).
@@ -159,11 +164,12 @@ This measures discussion is successful because it indicates how attitudes were m
 > 
 > The sample from the first wave of the National Epidemiologic Survey on Alcohol and Related Conditions (NESARC) represents the civilian, non-institutionalized adult population of the United States, and includes persons living in households, military personnel living off base, and persons residing in the following group quarters: boarding or rooming houses, non-transient hotels and motels, shelters, facilities for housing workers, college quarters, and group homes. The NESARC included over sampling of Blacks, Hispanics and young adults aged 18 to 24 years. The sample included 43,093 participants.
 > 
+> _Procedure_
+>
+>One adult was selected for interview in each household, and face-toface computer assisted interviews were conducted in respondents’' homes following informed consent procedures.
 > 
-Procedure
-One adult was selected for interview in each household, and face-toface computer assisted interviews were conducted in respondents’' homes following informed consent procedures.
-> 
-> Measures
+> _Measures_
+>
 > Lifetime major depression (i.e. those experienced in the past 12 months and prior to the past 12 months) were assessed using the NIAAA, Alcohol Use Disorder and Associated Disabilities Interview Schedule – DSM-IV (AUDADIS-IV) (Grant et al., 2003; Grant, Harford, Dawson, & Chou, 1995). The tobacco module of the AUDADIS-IV contains detailed questions on the frequency, quantity, and patterning of tobacco use as well as symptom criteria for DSMIV nicotine dependence. Current smoking was evaluated through both smoking frequency ("About how often did you usually smoke in the past year?") coded dichotomously in terms of the presence or absence of daily smoking, and quantity ("On the days that you smoked in the last year, about how many cigarettes did you usually smoke?").
 
 ## Predicted Results or Implications
@@ -177,7 +183,7 @@ One adult was selected for interview in each household, and face-toface computer
 > While chronic use is a key feature in the development of dependence, the present study will evaluate whether individual differences in nicotine dependence exist above and beyond level of exposure. If individuals with major depression are more sensitive to the development of nicotine dependence regardless of how much they smoke, they would represent an important population subgroup for targeted smoking intervention programs.
 
 
-##### References
+## References
 
 * Reference citations document statements made in your paper. 
 * All citations in the research plan should appear in the reference list, and all references should be cited in text. 

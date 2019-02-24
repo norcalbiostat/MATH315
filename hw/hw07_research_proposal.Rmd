@@ -1,0 +1,56 @@
+---
+title: "HW 07 - Research Proposal"
+output:
+  pdf_document: default
+  html_document:
+    theme: sandstone
+    highlight: tango
+    toc: yes
+    toc_float: yes
+    css: ../css/sandstone.css
+---
+
+# Overview
+
+Your research proposal is an important component of your final research project. This assignment is worth twice that a normal homework and . You will spend the next two weeks writing your proposal, using the outline template below to help organize your writing. 
+
+You should start this assignment immediately and work on it every day until complete. Reread it and edit for clarity and readability before you turn it in. 
+
+# Instructions
+You will write the assignment directly in a Google document. 
+
+* This is a paired project assignment
+* Use the sections found in the lecture notes [[writing about empirical research]](../lecture/lec02_writing_empirical_research_html) to organize your proposal and to help guide your writing style. 
+    - Each of these sections must be present in your proposal. 
+* Write your assignment directly in a Google Document in the **07Research Proposal/Draft** folder. 
+* Name this file `rq_pairname` i.e. `rq_donatello_gomez.pdf` 
+
+
+## Peer Review
+
+### Draft
+
+* This assignment will be subject to peer review. 
+* After the due date, check the [[Peer review assignment sheet]](https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing) for your assignment(s). 
+* In Google Docs directly, use the commenting feature to provide feedback on this assignment. 
+* Check the [[project]](../project.html) page for instructions on how to provide a review. 
+
+### Final Revision
+After the review period you have 2 days to make any necessary revisions. 
+
+* Make a copy of your assignment and move it into the **07Research Proposal/Final** folder. 
+* Review all comments provided. Mark the issues as "resolved" as you address them. 
+* Do not feel compelled to take every single piece of advice, unless it comes from the instructor or a peer mentor. 
+
+
+# Examples
+
+Here are links to two example research proposals from prior students, complete with grading comments. 
+Also use the model sections found in the lecture notes as guidance. 
+
+* [Example proposal 1](../lecture/ex_proposal_1.pdf)
+* [Example proposal 2](../lecture/ex_proposal_2.pdf)
+
+
+
+

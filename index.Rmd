@@ -118,16 +118,34 @@ This week, let's ease back into things. Try to come back to "normal", when life 
 * Problem set 3.1 and 3.2 should have been officially assigned last week, they are set for being due EOD on Monday. 
     - Reminder: These due dates are so YOU are keeping up with the class. They will stay open until Exam 2, but the sooner you do them the better off you will be in class. 
 
-
-
-### 10/1/18 - [Week 6](https://norcalbiostat.github.io/MATH315/wk/wk06.html)
-
-* Monday: Next steps for the project - starting your poster slides. 
-* Friday: Probability. This is a very brief overview, refer to the OpenIntro textbook and PDS videos for more learning. 
-
-If you haven't done so in a while, you might want to check Slack. Especially the #assignments channel. I share important information on there. 
-
 --->
+
+### 2/24/19 - [Week 6](https://norcalbiostat.github.io/MATH315/wk/wk06.html)
+
+Now that you've had a chance to learn what your data looks like, exploring relationships and learning more about the variables that you are interested in researching, let's take a step back and look at the big picture. You will use lecture notes on writing empirical research (found on the materials page of this website) to guide the writing of a research proposal. 
+
+Applied statistics is used to support research. Numbers and measures don't stand on their own. It is important that you understand how to use data to support scienctific research. 
+
+So far you have been conducting an exploratory data analysis to learn the distributions of your measures, and to assess for any possible relationships in your research. You cannot make any statistical claims about whether or not a relationship is significant at this point. That is under the realm of _inferential statistics_ and will be the topic of the class after Spring break. 
+
+To understand why inferential statistics can be used to make valid claims, we have to learn a little bit about _Probability_ first. This topic is only briefly covered in the PDS videos. You will have to spend more time in the course packet, AND in the OpenIntro textbook if you have never taken a statistics course before. 
+
+This is a much more mathematical section of the course, so be sure to plan your time accordingly. Over the next two weeks you should be writing your research proposal, working on your poster preparation slides, and filling out the notes and examples in the course packet. We will be working heavily out of the course packet, so it is essential that you read the material ahead of time so the examples we work through in class are meaningful. 
+
+#### Three quizzes this week
+* Beginning of week: Writing about empirical research. Based on these [lecture notes](lecture/lec02_writing_empirical_research.html). 
+* Mid week: Probability distributions. Based on PDS video 8 (only up to 14 minutes), AND the course packet chapter 3
+* Saturday: Upcoming assignments. Making sure you know the expectations for the Research proposal and poster prep stage I. 
+
+
+#### Events for this week (always free and open to all unless specified)
+
+* Thursday 2-4pm, Tehama 116: [Data Science Seminar: Getting Started with R and Python]() Are you ready to install R onto your own laptop? Do you want to try out Python? Come drop in and get help getting started with either of these two languages. 
+* Saturday 3/2: Women in Business Summit https://www.csuchico.edu/cob/events/women-in-business.shtml 
+* Monday 3/4: Women in Data Science technical conference. Live stream of the global conference out of Stanford, lunchtime career panel featuring local women in Data Science, and an opportunity to present your research in our "local women sympoisum" https://csudsi.netlify.com/2019/02/23/2019-02-23-wids/ 
+
+
+----
 
 ### 2/18/19 - [Week 5](https://norcalbiostat.github.io/MATH315/wk/wk05.html) - Exploring Relationships
 
