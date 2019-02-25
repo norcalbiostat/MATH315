@@ -133,8 +133,8 @@ To understand why inferential statistics can be used to make valid claims, we ha
 This is a much more mathematical section of the course, so be sure to plan your time accordingly. Over the next two weeks you should be writing your research proposal, working on your poster preparation slides, and filling out the notes and examples in the course packet. We will be working heavily out of the course packet, so it is essential that you read the material ahead of time so the examples we work through in class are meaningful. 
 
 #### Three quizzes this week
-* Beginning of week: Writing about empirical research. Based on these [lecture notes](lecture/lec02_writing_empirical_research.html). 
-* Mid week: Probability distributions. Based on PDS video 8 (only up to 14 minutes), AND the course packet chapter 3
+* Sun/Mon: Writing about empirical research. Based on these [lecture notes](lecture/lec02_writing_empirical_research.html). 
+* Tue/Wed: Probability distributions. Based primarily on course packet chapter 3, and on PDS video 8 (only up to 14 minutes). 
 * Saturday: Upcoming assignments. Making sure you know the expectations for the Research proposal and poster prep stage I. 
 
 

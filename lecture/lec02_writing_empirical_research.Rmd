@@ -1,13 +1,13 @@
 ---
 title: "Writing about empirical research"
 output:
-  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
+  pdf_document: default
 ---
 
 _Taken from Passion Driven Statistics 2014 ibook_
@@ -63,6 +63,7 @@ Using what you know now about your project and the model title in the reading, d
 #### Model Title:
 > The Association between Nicotine Dependence and Major Depression at Different Levels of Smoking Exposure
 
+----
 
 ## Introduction
 
@@ -110,6 +111,7 @@ Your introduction should build to and conclude with the research questions or st
 > 
 > A complementary or alternate role that major depression may play is as a cause or signal of greater sensitivity to nicotine dependence, over and above an individual's level of smoking exposure. While major depression has been shown to increase an individual’s probability of smoking initiation, regular use and nicotine dependence, it remains unclear whether it may signal greater sensitivity for nicotine dependence regardless of smoking quantity. The present study will examine young adults from the National Epidemiologic Survey of Alcohol and Related Conditions (NESARC). The goals of the analysis will include 1) establishing the relationship between major depression and nicotine dependence; and 2) determining whether or not the relationship between major depression and nicotine dependence exists above and beyond smoking quantity.
 
+----
 
 ## Methods
 The methods section describes how the research was conducted. It comprises discussions of your sample, measures, and procedures.
@@ -178,8 +180,9 @@ This measures discussion is successful because it indicates how attitudes were m
 >
 > Lifetime major depression (i.e. those experienced in the past 12 months and prior to the past 12 months) were assessed using the NIAAA, Alcohol Use Disorder and Associated Disabilities Interview Schedule – DSM-IV (AUDADIS-IV) (Grant et al., 2003; Grant, Harford, Dawson, & Chou, 1995). The tobacco module of the AUDADIS-IV contains detailed questions on the frequency, quantity, and patterning of tobacco use as well as symptom criteria for DSMIV nicotine dependence. Current smoking was evaluated through both smoking frequency ("About how often did you usually smoke in the past year?") coded dichotomously in terms of the presence or absence of daily smoking, and quantity ("On the days that you smoked in the last year, about how many cigarettes did you usually smoke?").
 
-<!---
-## Predicted Results or Implications
+----
+
+## Implications
 
 * It is important that this section includes real implications linked to possible results. 
 * Often writers use this section to merely state their research question. 
@@ -188,13 +191,17 @@ This measures discussion is successful because it indicates how attitudes were m
 ##### Model Implications:
 
 > While chronic use is a key feature in the development of dependence, the present study will evaluate whether individual differences in nicotine dependence exist above and beyond level of exposure. If individuals with major depression are more sensitive to the development of nicotine dependence regardless of how much they smoke, they would represent an important population subgroup for targeted smoking intervention programs.
--->
+
 
 ## Predicted Results
 
 Using appropriate graphing and summary methods, write a statement that describes what you have learned about your research topic thus far. Explain what this finding tells you about your research question. Describe what you expect to find in subsequent statistical analysis. What are you going to do with this information? 
 
+##### Model Predicted Results:
+
 > After exploring the relationship between smoking status and depression using side by side barcharts, I found that individuals with signs of major depression (N=, % of sample) report on average a greater number of nicotine dependence episodes (mean=, sd=) compared to those not exibiting signs (N=, % of sample, mean=, sd=). This indicates that my hypothesis that depression contributes to the severity of nicotine dependence may be upheld. Furthermore, using a contingency table I found that a greater number of females report depressive symptoms (%=, number depressed/number females) compared to males (%=, number depressed/number males). I need to check if there is a difference in smoking status between males and females as well, this could be an important factor for my research. 
+
+----
 
 ## References
 
