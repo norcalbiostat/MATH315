@@ -1,13 +1,13 @@
 ---
 title: "HW 07 - Research Proposal"
 output:
+  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
-  pdf_document: default
 ---
 
 # Overview
@@ -20,7 +20,7 @@ You should start this assignment immediately and work on it every day until comp
 You will write the assignment directly in a Google document. 
 
 * This is a paired project assignment
-* Use the sections found in the lecture notes [[writing about empirical research]](../lecture/lec02_writing_empirical_research_html) to organize your proposal and to help guide your writing style. 
+* Use the sections found in the lecture notes [[writing about empirical research]](../lecture/lec02_writing_empirical_research.html) to organize your proposal and to help guide your writing style. 
     - Each of these sections must be present in your proposal. 
 * Write your assignment directly in a Google Document in the **07Research Proposal/Draft** folder. 
 * Name this file `rq_pairname` i.e. `rq_donatello_gomez.pdf` 
