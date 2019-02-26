@@ -140,9 +140,9 @@ This is a much more mathematical section of the course, so be sure to plan your 
 
 #### Events for this week (always free and open to all unless specified)
 
-* Thursday 2-4pm, Tehama 116: [Data Science Seminar: Getting Started with R and Python]() Are you ready to install R onto your own laptop? Do you want to try out Python? Come drop in and get help getting started with either of these two languages. 
+* Thursday 2-4pm, Tehama 116: **Data Science Seminar: Getting Started with R and Python** Are you ready to install R onto your own laptop? Do you want to try out Python? Come drop in and get help getting started with either of these two languages. 
 * Saturday 3/2: Women in Business Summit https://www.csuchico.edu/cob/events/women-in-business.shtml 
-* Monday 3/4: Women in Data Science technical conference. Live stream of the global conference out of Stanford, lunchtime career panel featuring local women in Data Science, and an opportunity to present your research in our "local women sympoisum" https://csudsi.netlify.com/2019/02/23/2019-02-23-wids/ 
+* Monday 3/4: Women in Data Science technical conference. Live stream of the global conference out of Stanford, lunchtime career panel featuring local women in Data Science, and an opportunity to present your research in our "local women sympoisum" https://wids-chico.netlify.com/event/ 
 
 
 ----
