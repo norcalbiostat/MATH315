@@ -71,7 +71,7 @@ Setup your poster by doing the following with your partner.
 * Name your file using your analysis pair names: `last_last` only. 
 
 
-You will fill out these slides in 4 stages. The required contents for each slide are listed below under **Stages**
+You will fill out these slides in 3 stages. The required contents for each slide are listed below under **Stages**
 
 * At each stage you should update anything you need to change, such as correctly making graphics, writing results correctly etc. 
 * This includes reviewing the current set of feedback and mak the appropriate corrections. 
@@ -79,7 +79,7 @@ You will fill out these slides in 4 stages. The required contents for each slide
 * Your presentation should be limited to approximately 20 slides. The contents of each slide are specified below. 
 
 
-## <span style="color:DarkOliveGreen">**Stage 1: Setting up the story (Slides 1-11)**</span>
+## <span style="color:DarkOliveGreen">**Stage 1a: Setting up the story (Slides 1-11)**</span>
 
 1. Title 
 2. Introduction 
@@ -94,10 +94,12 @@ You will fill out these slides in 4 stages. The required contents for each slide
     - Do NOT use variable names. 
     - Restrict this list to only the variables you are using in your analysis. This is likely not to be more than 4-6. 
     
-## <span style="color:DarkOliveGreen">**Stage 2: Exploratory data analysis (Slide 8-11)**</span>
+## <span style="color:DarkOliveGreen">**Stage 1b: Exploratory data analysis (Slide 8-11)**</span>
     
 8-9. Fully describe (summary statistics, plots and words) the two variables mentioned in your research question. 
 10-11. Fully describe (summary statistics, plots and words) two different bivariate relationships that involve variables directly related to your research topic. 
+
+----
 
 ## <span style="color:DarkOliveGreen">**Stage 2: Bivariate Inference (Slide 12-13)**</span>
 
@@ -107,6 +109,8 @@ Two analyses, one per slide. Each slide should contain the following:
 2. The results of an appropriate bivariate analysis. 
     - This should be a conclusion written in English, includes a confidence interval and a p-value. 
     - You also need to state the name of the test you used. 
+
+----
 
 ## <span style="color:DarkOliveGreen">**Stage 3: Multivariable analysis**</span>
 
