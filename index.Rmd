@@ -109,16 +109,24 @@ This week, let's ease back into things. Try to come back to "normal", when life 
 * Majority of learning statistical content will come from PDS videos. 
     - In class is a recap, highlights, and open work time
 
-
-
-### 10/8/18 - [Week 7](https://norcalbiostat.github.io/MATH315/wk/wk07.html)
-
-* Exam 1 handed back on Monday - after some brief comments we'll start talking about point estimates. 
-* This week is a lot of "book work". You will learn by reading and participating in class, your assignments are all assigned through Blackboard Learn. 
-* Problem set 3.1 and 3.2 should have been officially assigned last week, they are set for being due EOD on Monday. 
-    - Reminder: These due dates are so YOU are keeping up with the class. They will stay open until Exam 2, but the sooner you do them the better off you will be in class. 
-
 --->
+
+
+### 3/4/19 - [Week 7](https://norcalbiostat.github.io/MATH315/wk/wk07.html)
+
+Monday I will be at the WiDS conference (across the creek) and so Kathy Gray will cover class for me.
+You will be covering material in the course packet 4.1-4.4, foundations for inference. Also be sure to watch the PDS video, the relevant content starts at 14 minutes and goes until about 16 minutes.  
+
+* Two worksheets will be worked on during class time, and 1 quiz mid-week. 
+* Draft of your research proposal is due on Tuesday, peer review Thursday, final version due Saturday. 
+
+#### Events for this week (always free and open to all unless specified)
+
+* Monday 3/4: Women in Data Science technical conference. Live stream of the global conference out of Stanford, lunchtime career panel featuring local women in Data Science, and an opportunity to present your research in our "local women sympoisum" https://wids-chico.netlify.com/event/ 
+* Tuesday 3/5: DSI seminar on strategies to manage big data. 2-3pm, Tehama 116. 
+
+----
+
 
 ### 2/24/19 - [Week 6](https://norcalbiostat.github.io/MATH315/wk/wk06.html)
 

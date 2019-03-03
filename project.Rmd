@@ -65,6 +65,13 @@ As I do my reviews on the same document, I will be reading and assessing your pe
 
 You will organize your research in stages by building a "powerpoint" type presentation. This will help you concicely explain your research topic and findings in a way that you can more easily translate (fit) onto a poster. 
 
+## Code managemement
+
+Create a new `project.Rmd` file in your Math 315 folder. Put all code that you use to create summary statistics, tables, graphics and analyses into this file. This is to keep it separate from your homework. 
+
+This `project.Rmd` file, AND your data management file (from homewok 04) will be turned in at the end of the semester along with your project. I should be able to repliacte any graphic that ends up in your poster using these two code files. 
+
+## Poster setup
 Setup your poster by doing the following with your partner. 
 
 * Create a Google Slides presentation directly into the Project Slides folder in our Google Drive. 
@@ -79,7 +86,7 @@ You will fill out these slides in 3 stages. The required contents for each slide
 * Your presentation should be limited to approximately 20 slides. The contents of each slide are specified below. 
 
 
-## <span style="color:DarkOliveGreen">**Stage 1a: Setting up the story (Slides 1-11)**</span>
+## Stage 1a: Setting up the story
 
 1. Title 
 2. Introduction 
@@ -94,14 +101,14 @@ You will fill out these slides in 3 stages. The required contents for each slide
     - Do NOT use variable names. 
     - Restrict this list to only the variables you are using in your analysis. This is likely not to be more than 4-6. 
     
-## <span style="color:DarkOliveGreen">**Stage 1b: Exploratory data analysis (Slide 8-11)**</span>
+## Stage 1b: Exploratory data analysis (Slide 8-11)
     
 8-9. Fully describe (summary statistics, plots and words) the two variables mentioned in your research question. 
 10-11. Fully describe (summary statistics, plots and words) two different bivariate relationships that involve variables directly related to your research topic. 
 
 ----
 
-## <span style="color:DarkOliveGreen">**Stage 2: Bivariate Inference (Slide 12-13)**</span>
+## Stage 2: Bivariate Inference (Slide 12-13)
 
 Two analyses, one per slide. Each slide should contain the following:  
 
@@ -112,7 +119,11 @@ Two analyses, one per slide. Each slide should contain the following:
 
 ----
 
+<!---
 ## <span style="color:DarkOliveGreen">**Stage 3: Multivariable analysis**</span>
+--->
+
+## Stage 3: Multivariable analysis
 
 You are trying to understand the relationship between your explanatory and response variable, in presence of information contained in other variables. 
 

@@ -21,8 +21,9 @@
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 
 
@@ -54,7 +55,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css/sandstone.css" type="text/css" />
+<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
 
 </head>
 
@@ -83,9 +84,6 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
-summary {
-  display: list-item;
-}
 </style>
 
 
@@ -100,6 +98,7 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
+
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -119,43 +118,6 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -177,77 +139,18 @@ $(document).ready(function () {
 });
 </script>
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
 </script>
 
 <!-- code folding -->
+
 
 
 
@@ -424,8 +327,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="last-updated-tue-feb-26-163728" class="section level1 tabset tabset-fade tabset-pills">
-<h1>Last Updated: Tue Feb 26 16:37:28</h1>
+<div id="last-updated-sat-mar-02-52732-pm" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Last Updated: Sat Mar 02 5:27:32 PM</h1>
 <div id="weekly" class="section level2">
 <h2>Weekly</h2>
 <p><br> Unless specified otherwise, all assignments are due at midnight on the due date listed. Times listed next to video numbers is the approximate minutes into the video at which that topic starts. <br></p>
@@ -453,42 +356,6 @@ Assignments
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center;">
-5 (2/17)
-</td>
-<td style="text-align:left;">
-Graphing relationships
-</td>
-<td style="text-align:center;">
-<a href="https://passiondrivenstatistics.com/2016/03/28/r-chapter-9/">7</a>
-</td>
-<td style="text-align:center;">
-2.3
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-<a href="https://goo.gl/forms/goNiCOkv4GDGA4zD2">MWF</a> (<b>Due 2/17) <a href="https://goo.gl/forms/O7hRABzSHJr8miJ43">TR</a> (<b>Due 2/18) </b></b>
-</td>
-<td style="text-align:center;">
-<a href="hw/hw06_biv_graphing.html">hw06_biv_graphing</a> (<b>Due 2/23) </b>
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-</td>
-<td style="text-align:left;">
-Practice managing data in R
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-</td>
-<td style="text-align:center;">
-Data Camp: Intro to Data (<b>BBL Quiz Due 2/23) </b>
-</td>
-</tr>
 <tr>
 <td style="text-align:center;">
 6 (2/24)
@@ -546,7 +413,7 @@ Research Proposal
 <td style="text-align:center;">
 </td>
 <td style="text-align:left;">
-Setting up the story: Stage 1a, Exploratory Data Analysis: Stage 1b
+Poster Prep Stage I: Setting up the story &amp; exploratory data analysis
 </td>
 <td style="text-align:center;">
 </td>
@@ -574,6 +441,7 @@ Point estimates and the CLT
 <td style="text-align:center;width: 15%; width: 14%; ">
 </td>
 <td style="text-align:center;">
+Worksheets on identifying <a href="hw/Parameters_v_Statistics.docx">parameters vs statistics</a> and the <a href="hw/Discovering_the_CLT.docx">CLT</a>.
 </td>
 </tr>
 <tr>
@@ -591,12 +459,27 @@ Interval estimates
 x
 </td>
 <td style="text-align:center;">
-foundations worksheet (<b>Due with midterm) </b>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+8 (3/10)
+</td>
+<td style="text-align:left;">
+Foundations for Inference
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;width: 15%; width: 14%; ">
+</td>
+<td style="text-align:center;">
+<a href="hw/foundations_worksheet.docx">foundations worksheet</a> (<b>Due with midterm) </b>
 </td>
 </tr>
 <tr>
 <td style="text-align:center;background-color: BurlyWood;">
-8 (3/10)
 </td>
 <td style="text-align:left;background-color: BurlyWood;">
 Midterm
@@ -608,7 +491,7 @@ Midterm
 <td style="text-align:center;background-color: BurlyWood;width: 15%; width: 14%; ">
 </td>
 <td style="text-align:center;background-color: BurlyWood;">
-3/14 (<b>02) &amp; 3/15 (<b>01) </b></b>
+3/14 (<b>02) &amp; 3/15 (<b>01) <a href="reading/sample_exam_1.pdf">Sample exam</a> available. </b></b>
 </td>
 </tr>
 <tr>
