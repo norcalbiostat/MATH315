@@ -1,13 +1,13 @@
 ---
 title: "HW 07 - Research Proposal"
 output:
-  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
+  pdf_document: default
 ---
 
 # Overview
@@ -33,7 +33,23 @@ You will write the assignment directly in a Google document.
 * This assignment will be subject to peer review. 
 * After the due date, check the [[Peer review assignment sheet]](https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing) for your assignment(s). 
 * In Google Docs directly, use the commenting feature to provide feedback on this assignment. 
-* Check the [[project]](../project.html) page for instructions on how to provide a review. 
+
+
+### Guidance for Reviews
+Your responsibility for this review is to ensure that the proposal "makes sense". Act as if you were assigned to grade their work using the same evaluation criteria that you will be graded on. Your job is to help them get full credit. 
+
+You should check for and comment on; 
+
+* spelling and grammar
+* Overall flow and readability. Was it hard to understand what they were talking about? 
+* Did they introduce the story sufficiently? Most of you will review a project that is on data different than the one you are working on. 
+* Does the background they provide help set the stage and lead you from what is known, to what is not known, and thus their research topic? 
+* Did the variables they choose match their topic (title,background)
+* Did they complete all required sections? 
+* Does this sound like a reasonable project? i.e. Do you think they'll be able to answer their research question given the data provided? 
+
+
+
 
 ### Final Revision
 After the review period you have 2 days to make any necessary revisions. 
