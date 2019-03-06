@@ -117,8 +117,16 @@ This week, let's ease back into things. Try to come back to "normal", when life 
 Monday I will be at the WiDS conference (across the creek) and so Kathy Gray will cover class for me.
 You will be covering material in the course packet 4.1-4.4, foundations for inference. Also be sure to watch the PDS video, the relevant content starts at 14 minutes and goes until about 16 minutes.  
 
-* Two worksheets will be worked on during class time, and 1 quiz mid-week. 
+
+#### Due this week 
+
+* Worksheets on discovering the Central Limit Theorem
+    - Both worksheets (parameters vs statistics and the CLT) can be found on the materials page under homework
+    - Worked on in class on Monday/Tuesday, turned in Wednesday/Thursday 
+    - Quiz on interval estimates due Wednesday (for TR) or Thursday (for MWF)
+        - Review Course packet section 4.5 for this material
 * Draft of your research proposal is due on Tuesday, peer review Thursday, final version due Saturday. 
+    - Read the peer review instructions in Homework 7 carefully. (they were updated Tuesday AM)
 
 #### Events for this week (always free and open to all unless specified)
 
