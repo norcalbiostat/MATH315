@@ -28,7 +28,7 @@ out.read <- read %>% mutate(name = gsub("reading/",  "", filenames),
                             name = gsub(".pdf", "", name),
                             link = sprintf("[%s](%s)",name, filenames))
 
-out.hw <- hw %>% mutate(name = gsub("hw/",  "", filenames), 
+out.hw <- hw %>% mutate(name = gsub("hw/|_template",  "", filenames), 
                           type = str_extract(hw$filenames,".{3}$"),
                           type = ifelse(type=="tml", "html", type),
                           type = ifelse(type=="ocx", "docx", type),

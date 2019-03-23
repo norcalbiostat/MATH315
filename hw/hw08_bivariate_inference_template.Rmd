@@ -1,8 +1,7 @@
 ---
-title: "Bivariate Analysis Assignment"
+title: "Bivariate Inference"
 author: "your name here"
 output:
-  word_document: default
   pdf_document: default
   html_document:
     highlight: tango

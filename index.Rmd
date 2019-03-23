@@ -99,17 +99,30 @@ This week, let's ease back into things. Try to come back to "normal", when life 
 * Exam 2 on Statistical Inference next Friday. 
 
 
-### 10/15/18 - [Week 8](https://norcalbiostat.github.io/MATH315/wk/wk08.html)
-* This week is all about Bivariate inference.
-    - Hypothesis testing with R on Monday
-    - Two sample t-test on Wednesday
-    - ANOVA on Friday -- Corresponding PDS video
-* RAT on Wednesday (not Monday) 
-* BIG assignment! Has multiple parts. Procrastinate and be doomed. 
-* Majority of learning statistical content will come from PDS videos. 
-    - In class is a recap, highlights, and open work time
-
 --->
+
+### 3/25/19 - [Week 9](https://norcalbiostat.github.io/MATH315/wk/wk09.html)
+
+The rest of the semester is all about Inference! This is what you've been training for, and waiting for. This week we'll start out with setting the foundations of the process on 1 variable, then quickly move into testing relationships between two variables. 
+
+#### Due this week
+* Hypothesis testing quiz on Tue/Wed
+* HW 8 BIG assignment! Has multiple parts. Procrastinate and be doomed. 
+
+#### Midterm Error Assessment (Optional - Due 4/5/19)
+As an opportunity to look for patterns in your test taking and to develop strategies to perform better in the future, there is an optional error assessment that you can complete. If you do so you can earn up to half the points missed on the exam back. To do this you must use the [Analyzing exam errors form](reading/Analyzing exam errors.pdf) available on the materials page. Using this form you will: 
+
+* Classify the types of errors you made (where you lost points). 
+    - Identify common patterns or themes.
+* On a separate paper, correctly re-work every problem you missed. 
+* Go over your corrections with a tutor (or me). 
+    - Explain what you did wrong and why your corrections are right.
+    - Discuss strategies to perform better on future exams. 
+
+
+---
+
+
 ### 3/11/19 - [Week 8](https://norcalbiostat.github.io/MATH315/wk/wk08.html)
 
 Office Hours for this week:
@@ -134,7 +147,7 @@ Office Hours for this week:
     - A calculator is not needed, but you may want one. 
     - Only your course packet is allowed on the exam. 
 
-
+----
 
 ### 3/4/19 - [Week 7](https://norcalbiostat.github.io/MATH315/wk/wk07.html)
 
