@@ -21,9 +21,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -55,7 +54,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
+<link rel="stylesheet" href="css/sandstone.css" type="text/css" />
 
 </head>
 
@@ -84,6 +83,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -98,7 +100,6 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
-
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -118,6 +119,43 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -139,18 +177,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -327,8 +424,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="last-updated-fri-mar-22-101113-pm" class="section level1 tabset tabset-fade tabset-pills">
-<h1>Last Updated: Fri Mar 22 10:11:13 PM</h1>
+<div id="last-updated-sun-apr-07-215311" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Last Updated: Sun Apr 07 21:53:11</h1>
 <div id="weekly" class="section level2">
 <h2>Weekly</h2>
 <p><br> Unless specified otherwise, all assignments are due at midnight on the due date listed. Times listed next to video numbers is the approximate minutes into the video at which that topic starts. <br></p>
@@ -356,98 +453,6 @@ Assignments
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center;">
-9 (3/24)
-</td>
-<td style="text-align:left;">
-Hypothesis testing
-</td>
-<td style="text-align:center;">
-<a href="https://passiondrivenstatistics.com/2015/07/15/chapter-10/">8 (16 min)</a>
-</td>
-<td style="text-align:center;">
-4.7, 4.8, 5
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-<a href="https://forms.gle/SkG7sNacETBg4hBJ7">MWF</a> (<b>Due 3/26) <a href="https://forms.gle/eZYwXz2fLPfzfGUE6">TR</a> (<b>Due 3/27) </b></b>
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-</td>
-<td style="text-align:left;">
-T-test
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;">
-6.1
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-</td>
-<td style="text-align:center;">
-hw08_bivariate_inference (<b>Due 4/13) </b>
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-10 (3/31)
-</td>
-<td style="text-align:left;">
-ANOVA
-</td>
-<td style="text-align:center;">
-<a href="https://passiondrivenstatistics.com/2016/05/11/r-chapter-11/">9</a>
-</td>
-<td style="text-align:center;">
-6.2
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-<a href="https://forms.gle/BPMNSru5v1PQehH79">MWF</a> (<b>Due 4/1) <a href="https://forms.gle/TKe3mXfnGk747xuF9">TR</a> (<b>Due 4/2) </b></b>
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-</td>
-<td style="text-align:left;">
-Chi-squared
-</td>
-<td style="text-align:center;">
-<a href="https://passiondrivenstatistics.com/2016/06/29/r-chapter-12/">10</a>
-</td>
-<td style="text-align:center;">
-6.3
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-<a href="https://forms.gle/3YwhabYMKUivRQjm8">MWF</a> (<b>Due 4/4) <a href="https://forms.gle/GKufAjyti7cGfHoUA">TR</a> (<b>Due 4/3) </b></b>
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-11 (4/7)
-</td>
-<td style="text-align:left;">
-Correlation
-</td>
-<td style="text-align:center;">
-<a href="https://passiondrivenstatistics.com/2019/01/08/11-correlation/">11</a>
-</td>
-<td style="text-align:center;">
-6.4
-</td>
-<td style="text-align:center;width: 15%; width: 14%; ">
-x
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
 <tr>
 <td style="text-align:center;">
 </td>
@@ -659,18 +664,18 @@ Poster Presentation
 </td>
 </tr>
 <tr>
-<td style="text-align:center;background-color: BurlyWood;">
+<td style="text-align:center;background-color: BurlyWood !important;">
 </td>
-<td style="text-align:left;background-color: BurlyWood;">
+<td style="text-align:left;background-color: BurlyWood !important;">
 Final
 </td>
-<td style="text-align:center;background-color: BurlyWood;">
+<td style="text-align:center;background-color: BurlyWood !important;">
 </td>
-<td style="text-align:center;background-color: BurlyWood;">
+<td style="text-align:center;background-color: BurlyWood !important;">
 </td>
-<td style="text-align:center;background-color: BurlyWood;width: 15%; width: 14%; ">
+<td style="text-align:center;background-color: BurlyWood !important;width: 15%; width: 14%; ">
 </td>
-<td style="text-align:center;background-color: BurlyWood;">
+<td style="text-align:center;background-color: BurlyWood !important;">
 Take home final exam (<b>Due 5/15-tentative) </b>
 </td>
 </tr>

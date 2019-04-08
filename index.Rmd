@@ -101,6 +101,21 @@ This week, let's ease back into things. Try to come back to "normal", when life 
 
 --->
 
+### 4/8/19 - [Week 11](https://norcalbiostat.github.io/MATH315/wk/wk09.html)
+
+DataFest is over and so I'm back 100% with you!
+
+We're finishing up Bivariate Inference this week. 
+
+* Correlation & Regression - similar, but different purposes. 
+* HW 8 due this Saturday
+* Think about which inferential tools you are going to want to use on your personal research questions. 
+
+### 4/1/19 - [Week 10](https://norcalbiostat.github.io/MATH315/wk/wk09.html)
+
+This week got lost in the post-sickness & pre-DataFest ether. 
+
+
 ### 3/25/19 - [Week 9](https://norcalbiostat.github.io/MATH315/wk/wk09.html)
 
 The rest of the semester is all about Inference! This is what you've been training for, and waiting for. This week we'll start out with setting the foundations of the process on 1 variable, then quickly move into testing relationships between two variables. 
