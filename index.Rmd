@@ -111,6 +111,8 @@ We're finishing up Bivariate Inference this week.
 * HW 8 due this Saturday
 * Think about which inferential tools you are going to want to use on your personal research questions. 
 
+Self and peer evaluation form available: Due Sunday https://forms.gle/Vrhf9FEqwiWYPD4N9
+
 ### 4/1/19 - [Week 10](https://norcalbiostat.github.io/MATH315/wk/wk09.html)
 
 This week got lost in the post-sickness & pre-DataFest ether. 
