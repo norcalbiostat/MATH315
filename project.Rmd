@@ -110,6 +110,8 @@ You will fill out these slides in 3 stages. The required contents for each slide
 
 ## Stage 2: Bivariate Inference (Slide 12-13)
 
+Revise and update all prior slides. 
+
 Two analyses, one per slide. Each slide should contain the following:  
 
 1. A fully labeled and cleaned up plot demonstrating the bivariate relationship under consideration.
@@ -124,6 +126,8 @@ Two analyses, one per slide. Each slide should contain the following:
 --->
 
 ## Stage 3: Multivariable analysis
+
+Revise and update all prior slides. 
 
 You are trying to understand the relationship between your explanatory and response variable, in presence of information contained in other variables. 
 
