@@ -134,12 +134,16 @@ At some point you need to move beyond "copy-paste-pray" and into understanding w
 * Don't copy/paste large and complex code chunks that have graphics that contain a lot of bells and whistles or code you don't understand. Take it one line at a time and work to understand (by looking at what changes in the output) what that line of code actualy does. Just make the minimal graph first to ensure it works before you prettify it up
 * When you start a new file, make sure your working environment is cleaned out. Don't let old variables hanging out in your environment mess up your new work. 
 
+
+
 ----
 
 # Common error mesages
 
 
-When errors occur, because they always will, start to read the error messages with an intent to understand what they are saying. Here are some common examples
+When errors occur, because they always will, start to read the error messages with an intent to understand what they are saying. Always search the discussion board for similar problems before posting, and always post in a public channel so others can benefit from learning the solution/debugging strategy. 
+
+Here are some common error messages: 
 
 * `function not found` --> You forgot to load the library. Don't know what library the function is in? Google it. _what package is the R function XX in_
 * `object not found` --> The variable you are trying to reference does not exist in the manner you are trying to reference it. Check spelling/capitalization, $ sign notation, visually look at the data set using `names()` or `str()` to confirm that the variable is actually there. 
