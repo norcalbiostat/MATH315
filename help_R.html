@@ -420,7 +420,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Getting Help with Programming in R</h1>
-<h4 class="date"><em>Last Updated 2019-02-17 18:32:44</em></h4>
+<h4 class="date"><em>Last Updated 2019-04-21 08:34:53</em></h4>
 
 </div>
 
@@ -566,6 +566,28 @@ div.tocify {
 <li>STHDA <a href="http://www.sthda.com/english/wiki/data-visualization" class="uri">http://www.sthda.com/english/wiki/data-visualization</a></li>
 <li>Data Camp <a href="https://www.datacamp.com/courses/data-visualization-with-ggplot2-1" class="uri">https://www.datacamp.com/courses/data-visualization-with-ggplot2-1</a></li>
 <li>R Graph Gallery <a href="https://www.r-graph-gallery.com/" class="uri">https://www.r-graph-gallery.com/</a></li>
+</ul>
+<hr />
+</div>
+<div id="good-coding-practices" class="section level1">
+<h1>Good Coding Practices</h1>
+<p>At some point you need to move beyond “copy-paste-pray” and into understanding what the code is saying so you can apply it to other situations. Here are some guidelines to work with.</p>
+<ul>
+<li>When working in a RMD file, Knit after every code chunk. When something breaks, you have a better idea of what you just added that could have caused it to break.</li>
+<li>Unicode errors in knitting imply that you copy/pasted some symbol from outside of R studio that cannot be translated. Greek symbols are often to blame.</li>
+<li>Don’t copy/paste large and complex code chunks that have graphics that contain a lot of bells and whistles or code you don’t understand. Take it one line at a time and work to understand (by looking at what changes in the output) what that line of code actualy does. Just make the minimal graph first to ensure it works before you prettify it up</li>
+<li>When you start a new file, make sure your working environment is cleaned out. Don’t let old variables hanging out in your environment mess up your new work.</li>
+</ul>
+<hr />
+</div>
+<div id="common-error-mesages" class="section level1">
+<h1>Common error mesages</h1>
+<p>When errors occur, because they always will, start to read the error messages with an intent to understand what they are saying. Here are some common examples</p>
+<ul>
+<li><code>function not found</code> –&gt; You forgot to load the library. Don’t know what library the function is in? Google it. <em>what package is the R function XX in</em></li>
+<li><code>object not found</code> –&gt; The variable you are trying to reference does not exist in the manner you are trying to reference it. Check spelling/capitalization, $ sign notation, visually look at the data set using <code>names()</code> or <code>str()</code> to confirm that the variable is actually there.</li>
+<li><code>continuous value applied to a discrete scale</code> - you are trying to <code>fill</code>, <code>color</code> or do something that requires a categorical variable, but the variable you are giving it is continuous. Look in the data set you’re working on right then and check the data type using <code>str()</code> or <code>class()</code>. If it is <code>int</code> or <code>num</code> then its not a factor variable!</li>
+<li><code>something has length 0</code> or <code>all variables have to have the same lengths</code> –&gt; One of the variables that you are referencing does not exist (and thus has length 0)</li>
 </ul>
 </div>
 

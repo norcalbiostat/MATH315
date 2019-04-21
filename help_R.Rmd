@@ -122,7 +122,27 @@ Useful functions in R
 * R Graph Gallery https://www.r-graph-gallery.com/ 
 
 
+----
+
+# Good Coding Practices
+
+At some point you need to move beyond "copy-paste-pray" and into understanding what the code is saying so you can apply it to other situations. Here are some guidelines to work with. 
 
 
+* When working in a RMD file, Knit after every code chunk. When something breaks, you have a better idea of what you just added that could have caused it to break. 
+* Unicode errors in knitting imply that you copy/pasted some symbol from outside of R studio that cannot be translated. Greek symbols are often to blame. 
+* Don't copy/paste large and complex code chunks that have graphics that contain a lot of bells and whistles or code you don't understand. Take it one line at a time and work to understand (by looking at what changes in the output) what that line of code actualy does. Just make the minimal graph first to ensure it works before you prettify it up
+* When you start a new file, make sure your working environment is cleaned out. Don't let old variables hanging out in your environment mess up your new work. 
 
+----
+
+# Common error mesages
+
+
+When errors occur, because they always will, start to read the error messages with an intent to understand what they are saying. Here are some common examples
+
+* `function not found` --> You forgot to load the library. Don't know what library the function is in? Google it. _what package is the R function XX in_
+* `object not found` --> The variable you are trying to reference does not exist in the manner you are trying to reference it. Check spelling/capitalization, $ sign notation, visually look at the data set using `names()` or `str()` to confirm that the variable is actually there. 
+* `continuous value applied to a discrete scale` - you are trying to `fill`, `color` or do something that requires a categorical variable, but the variable you are giving it is continuous. Look in the data set you're working on right then and check the data type using `str()` or `class()`. If it is `int` or `num` then its not a factor variable! 
+* `something has length 0` or `all variables have to have the same lengths` --> One of the variables that you are referencing does not exist (and thus has length 0)
     
