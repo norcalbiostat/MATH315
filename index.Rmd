@@ -6,61 +6,32 @@ This is the course website for <span style="color:teal">**Applied Statistical Me
 
 <br>
 
-<!--- 
+
 
 ### 12/10/18 - Week 15
 
-* Poster building week! See the project page for instructions. 
-    - Drafts are due Friday 11/14, Peer review on Sunday 12/16
-    - Final version due (as printed) on Thursday
+* Poster building week! **Due dates are FIRM**
+    - Instructions are on [the project page.]( https://norcalbiostat.github.io/MATH315/project.html#posters_presentations)
+    - Guidelines and templates are here: https://norcalbiostat.netlify.com/lec/poster_guidelines/ 
+    - Drafts are due Wednesday 5/8 at 5pm
+    - Peer review Friday 5/10 EOD
+    - Final version due Monday 5/13 at 2pm
 * Take Home Final exam 
-    - Handed out Wed 12/12 (Estimated) - no later than Friday 12/14. 
-    - Due Friday 12/21
-* **Office Hours**
-    - Victoria (Poster design): 
-      * Tue 10-10:45 MLIB Math tutor lab (4th floor)
-      * Thu 12:45-1:45 Holt 155  
-    - Me (Holt 202)
-      * Mon 12/10 3-4pm
-      * Tue 12/11 2-4pm - Community Coding (MLIB 442)
-      * Wed 12/12 1-3pm
-      * Thu 12/13 10-11am
-      * Tue 12/18 2-3pm
-      * Wed 12/19 10-11am
-      * Thu 12/20 1-2pm
-      
-
+    - Distributed Wed 5/8 (Estimated) via Slack. 
+    - Due Wednesday 5/15 EOD. 
+        - [Upload your **RMD code** file to this link.](https://www.dropbox.com/request/HNPJtln9HcqxVgM7omDD)
+        
+#### Expanded Office Hours - 11 hours!!!
+* Monday: 10-11am, 3-4pm 
+* Tuesday: 10-12pm, 2-4pm (Tehama 116)
+* Thursday: 10-11am, 2-4pm (Tehama 116)
+* Friday: 11-12pm, 2-3pm
+   
+<!--- 
 ### 12/3/18 - [Week 14](https://norcalbiostat.github.io/MATH315/wk/wk14.html)
 * You should be working on finishing the regression assignment, and Poster Prep Stage III this week. 
 * You will be building models, and having to decide which model fits the data best using different criteria. 
     - Textbook references: Open Intro 8.2, Applied Statistics Notebook Section 7.7
-
-
-### 11/26/18 - [Week 13](https://norcalbiostat.github.io/MATH315/wk/wk13.html)
-<span style="color:red">**Summary of schedule updates**</span>   
-
-* [Regression assignment](hw/hw10_regression.html) has been re-written and cut down significantly. 
-* Poster prep stage III will not have a peer review
-* Final we be take home, poster presentations will occur during the 2 hour final period. 
-* Exam 2 has been curved, no error assessment will take place.
-    - An optional set of questions on Exam 2 content will be made available in Blackboard during finals week that can be used to make up some points. 
-
-This week, let's ease back into things. Try to come back to "normal", when life is anything but normal.  
-
-* Monday- Section review, recap, reorient
-* Wednesday - Logistic Regression (**RAT** - be sure to watch PDS video ahead of time)
-* Friday - Building interaction models, some open work time. 
-
-
-
-### 11/19/18 - Fall Break. 
-* Don't think about school, assignments or anything. 
-* Please take some time to be among your family and practice self care in this incredibly stressful time. 
-
-### 11/12/18 - Week 12 - Campus closed due to the Camp Fire
-* Please check in with me on Slack or email to let me know you're OK (or if you're not OK. I want to know that too!)
-* If you lived in the fire affected area please let me know. I want to support you in any way I can to finish the semester. Please check out campus resources: https://www.csuchico.edu/campfire/assistance.shtml 
-* If you were not affected, please consider volunteering to help out those that have been, and/or helping raise funds through the Wildcats Rise Fire recovery fund https://app.mobilecause.com/vf/WildcatsRise 
 
 --->
 

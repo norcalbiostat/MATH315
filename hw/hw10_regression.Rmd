@@ -7,6 +7,10 @@ output:
     theme: readable
 ---
 
+<!---
+put confounding back in here
+--->
+
 # Assignment Overview
 
 You will perform <span style="color:blue">3</span> regression analyses in this assignment. 
