@@ -6,9 +6,24 @@ This is the course website for <span style="color:teal">**Applied Statistical Me
 
 <br>
 
+### 5/12/19 - Finals Week
+
+* Common Final (Both classes): *Tehama 116 4-6pm*
+* Office Hours: MW 9:30-11:30, T 9:11am
+
+Final assignments (Due Friday 5/17)
+
+* MAI Post assessment - Google Form
+* Post-course survey from Lisa Dierker (will be emailed to you this week)
+* Post assessment in R - Google Form
+* Any remaining extra credit
+
+Good luck with all of your finals, and congratulations to those who are graduating on Saturday!
 
 
-### 12/10/18 - Week 15
+---
+
+### 5/6/19 - Week 15
 
 * Poster building week! **Due dates are FIRM**
     - Instructions are on [the project page.]( https://norcalbiostat.github.io/MATH315/project.html#posters_presentations)
