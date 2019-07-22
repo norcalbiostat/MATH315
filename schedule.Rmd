@@ -1,51 +1,180 @@
 ---
-title: "Topics and Schedule"
+title: "Schedule"
 output: html_document
 ---
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-library(dplyr);library(readxl); library(kableExtra);library(stringr)
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(kableExtra);library(stringr); library(pander)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
 ```
 
 # Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
 
-## Weekly
+## Overview
 
-<br>
+<p>
 Unless specified otherwise, all assignments are due at midnight on the due date listed.
-Times listed next to video numbers is the approximate minutes into the video at which that topic starts.
-<br>
-```{r , echo=FALSE, message=FALSE, warning=FALSE}
-rawdat <- read_xlsx("schedule_315.xlsx", sheet='topic_overview')
+</p>
+```{r}
+# Read in schedule
+rawdat <- read_xlsx("schedule_315.xlsx", sheet='weekly_schedule')
 
-toshow <- rawdat[which(rawdat$Order==16.0):nrow(rawdat), ]
-```
-  
-```{r, results='asis', echo=FALSE}
-out <- toshow %>% select(Week:Assignments)
-testrows <- grep("midterm|final", out$Topic, ignore.case=TRUE)
+# Set semester start date and format weeks nicely
+start.date <- as.Date("2019-08-19")
+wn <- which(!is.na(rawdat$wknum)) # which rows have week numbers
+wkdt <- rawdat$wknum[wn]*7 + start.date # get the week dates
+weekdates <- paste0("Week ", rawdat$wknum[wn], " (", format(wkdt, "%m/%d") , ")") # format the display
+#link <- paste0("wk/wk", rawdat$wknum, ".html") # create link to weekly detail webpage
+#week_details <- sprintf("[%s](%s)",rawdat$Week[wn], link[wn]) # put it together
 
+# Filter rows to display on schedule
+out <- rawdat[which(rawdat$Order==1.1):nrow(rawdat), ]%>% select(Topic:Assignments)
 
+#week <- grep("midterm|final", out$Topic, ignore.case=TRUE)
+
+# add bullets to materials
+#mats <- which(!is.na(out$Materials))
+#out$Materials[mats] <- paste0("<ul><li>", out$Materials[mats], "</li></ul>")
+#out$Materials[mats] <- gsub("\r\n", "</li><li>", out$Materials[mats])
+
+# add bold to due dates
 out$Assignments <- gsub(" (", " (<b>", out$Assignments, fixed=TRUE)
 out$Assignments <- gsub(" )", "</b>)", out$Assignments, fixed=TRUE)
 out$Quiz <- gsub(" (", " (<b>", out$Quiz, fixed=TRUE)
 out$Quiz <- gsub(" )", "</b>)", out$Quiz, fixed=TRUE)
 
-knitr::kable(out, align="clcccc", escape=FALSE) %>% 
-  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
-  row_spec(testrows, background = "BurlyWood") %>% 
-  column_spec(5, width = "15%") %>% 
-  column_spec(5, width = "14%")
+wk.labs <-  "background-color: #4d6600; color: #fff;"
 ```
 
-*_This assignment is subject to peer review and revision_
+```{r, results='asis'}
+out %>% 
+  kable(align="lccclc", escape=FALSE) %>% 
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
+  pack_rows(weekdates[1], wn[1],  wn[2]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[2], wn[2],  wn[3]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[3], wn[3],  wn[4]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[4], wn[4],  wn[5]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[5], wn[5],  wn[6]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[6], wn[6],  wn[7]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[7], wn[7],  wn[8]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[8], wn[8],  wn[9]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[9], wn[9],  wn[10]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[10], wn[10],  wn[11]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[11], wn[11],  wn[12]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[12], wn[12],  wn[13]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[13], wn[13],  wn[14]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[14], wn[14],  wn[15]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[15], wn[15],  wn[16]-1, label_row_css =wk.labs) %>%
+  pack_rows(paste0("Finals Week (", weekdates[16], ")"), wn[16],  nrow(rawdat), 
+            label_row_css =wk.labs) %>%
+  column_spec(1, width = "35%") %>% 
+  column_spec(2, width = "10%") %>%
+  column_spec(3, width = "10%") %>%
+  column_spec(4, width = "10%") %>% 
+  column_spec(5, width = "35%")
+```
+
+## Details
+
+Click each link to expand or contract the details for that week. 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Read in schedule
+raw_detail <- read_excel("schedule_315.xlsx", sheet="slo_detail")
+
+# Function to extract week and display data
+details <- function(w){
+  wd <- filter(raw_detail, wk==w) %>% select(SLO, Prepare, Monday, Wednesday, Friday)  
+  # strip data columns into separate lists
+  SLO  <- as.list(str_split(wd$SLO, "\r\n", simplify=TRUE))
+  prep <- as.list(str_split(wd$Prepare, "\r\n", simplify=TRUE))
+  mon  <- as.list(str_split(wd$Monday, "\r\n", simplify=TRUE))
+  wed  <- as.list(str_split(wd$Wednesday, "\r\n", simplify=TRUE))
+  fri  <- as.list(str_split(wd$Friday, "\r\n", simplify=TRUE))
+  
+  return(list(SLO=SLO, prep=prep, mon=mon, wed=wed, fri=fri))
+}
+
+```
+
+### <a href="#week1" data-toggle="collapse">Week 1: Getting Started with data</a>
+<div id="week1" class="collapse">
+
+#### Learning Objectives
+By the end of the week, learners will be able to: 
+```{r}
+w1 <- details(1)
+pander(w1$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w1$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w1$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w1$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w1$fri)
+```
+
+</div>
 
 
 
-## Calendar - MWF
 
-<iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;height=800&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mail.csuchico.edu_16sj77sfemp9kqgis2g89j91e0%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
+### <a href="#week2" data-toggle="collapse">Week 2: Choosing a Research Project</a>
+<div id="week2" class="collapse">
 
-## Calendar -TR
+#### Learning Objectives
+```{r}
+w2 <- details(2)
+pander(w2$SLO)
+```
 
-<iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;height=800&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mail.csuchico.edu_nc66paji5lqqmd6uqfu1sdfvls%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
+#### How to prepare
+```{r}
+pander(w2$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w2$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w2$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w2$fri)
+```
+
+</div>
+
+
+
+
+
+
+
+
+## Calendar
+
+For those of you that like the calendar view of your schedule. Due to schedule adjustments during
+the semester these dates may not match exactly with the schedule. In those cases please bring any 
+descrepencies to my attention via Slack. 
+
+<iframe src="https://calendar.google.com/calendar/embed?src=mail.csuchico.edu_16sj77sfemp9kqgis2g89j91e0%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+

@@ -1,0 +1,102 @@
+---
+title: "HW 01- Introduction to the class, using data, self regulated learning and research team formation"
+output:
+  html_document:
+    theme: sandstone
+    highlight: tango
+    toc: yes
+    toc_float: yes
+    css: ../css/sandstone.css
+  pdf_document: default
+---
+
+# Assignment Overview
+The purpose of this assignment is to get you connected with R Studio in the cloud, to do a little self reflection and examination of your learning habits, and to get to know the members of your clas
+ 
+
+# Instructions
+The specific details for each step are described below. 
+
+* You will answer the questions directly in the Rmarkdown template file provided. 
+    - This file is called `hw01_introduction` and is downloaded from the course website. 
+    - This must be put in your class folder. Do not click on the file and open it from your browser window. 
+* When you are done, spellcheck your work using the spellcheck button in R Studio (2 icons to the left of Knit). 
+* Knit the final document. When it opens, click the download icon in the upper right corner. 
+* Rename this file `hw01_username` i.e. `hw01_rdonatello.pdf` 
+* Upload this file to Google Drive in the **01 Introduction** folder for your section. 
+
+
+# Part I: Getting Started with research tools
+
+## Slack
+1. Go to http://math315-f19.slack.com and make an account to join our workspace. 
+2. Download either the desktop app or the phone app. 
+3. Post an introduction to yourself in the #introductions channel. Tell us a little about you! Year, major, hometown, any extracurricular activities, one thing you are hoping to get out of this class, and one concern you have about this class. Oh.. and of course any mention of pets should include a photo!
+        
+## R and R Studio
+You have two choices for using R this semester. You can install the necessary programs on your personal computer, or you can use R studio cloud. If you have already taken or are concurrently enrolled in Math 130 you should install these programs on your own computer. 
+### Install R and R Studio
+* Follow the instructions from Math 130 to install and get started with R and R Studio. https://norcalbiostat.github.io/MATH130/notes/02_setup.html
+* Complete all steps (including watching the video and organizing your working directory)
+
+
+* If you are using R Studio in the cloud, follow these additional steps: 
+1. Log into R Studio cloud, and click on our class workspace. 
+2. Click on the `stats_project`. This will create a copy the R project into your own workspace. 
+    - An "R project" is a pre-configured R environment along with a collection of files. 
+3. Download the `hw01_introduction_template` from the class website, then upload
+4. Replace your name and date in the header section. 
+    - Don't delete the quotation marks. 
+5. Complete the rest of the assignment below by writing the answers directly in the template. 
+7. To see what the final report will look like, click the down arrow next to the `Knit` button and choose PDF. 
+    - This turns your code file into a PDF report.
+    - Do this often to make sure that your code and output is working as intended. 
+
+
+\newpage
+
+# Part II: Becoming a better learner. 
+Because we all have room for improvement, here are a few tasks for you to become a better learner. 
+
+
+### Metacognition 
+From the materials page on the course website, download and read "MAI and academic achievement in college students". 
+Once you are done, download and take the "Metacognition Awareness Inventory" (also available on the materials page). 
+Submit your scores to Google Drive at this link: https://goo.gl/forms/FYgjJk72T3147e7f1 
+
+
+
+### Procrastination
+Watch this video on creating a cycle of success and tell me **one** concrete plans of action that you already implement, or are willing to give an honest try to do this semester to stay on track and not fall behind.  https://media.csuchico.edu/media/Avoiding+Procrastination/0_wquy9x90
+
+
+
+
+### Being good at learning is hard!
+From the reading materials page on the course website, download and read the "Learning (Your First Job)" article. 
+Answer at least _4_ of the following questions in this document. 
+
+**What was the most important insight you gained from the reading? **
+
+
+**What surprised you most in the reading?**
+
+
+**What did you already know?**
+
+
+**Have you been taught how to learn before?  Where?  What did you learn about learning?**
+
+
+**What will you do differently during a lecture, if anything, given what you read?**
+
+
+**How will you prepare differently for exams, given what you read?**
+
+
+**Can you think of other good learning practices that the reading didn't mention?**
+
+\newpage
+
+# Part III: Introduction to R
+

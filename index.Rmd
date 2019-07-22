@@ -2,10 +2,15 @@
 title: "Math 315 homepage"
 ---
 
-This is the course website for <span style="color:teal">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com) in Spring 2019. This landing page is used for posting of regular announcements and information for students of the class. 
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+wk1.date <- as.Date("2019-08-26")
+```
+
+This is the course website for <span style="color:teal">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com) in Fall 2019. This landing page is used for posting of regular announcements and information for students of the class. 
 
 <br>
 
+<!---
 ### 5/12/19 - Finals Week
 
 * Common Final (Both classes): *Tehama 116 4-6pm*
@@ -51,7 +56,6 @@ Good luck with all of your finals, and congratulations to those who are graduati
 * You will be building models, and having to decide which model fits the data best using different criteria. 
     - Textbook references: Open Intro 8.2, Applied Statistics Notebook Section 7.7
 
---->
 
 ### 4/15/19 - [Week 12](https://norcalbiostat.github.io/MATH315/wk/wk12.html)
 
@@ -301,22 +305,20 @@ On Thursday/Friday you will be meeting with a research librarian who will help y
 
 **Upcoming Assignments**:
 
-* Two (2) DataCamp assignments 
-    - **Intro to Basics**. The first chapter of the Introduction to R course in Data Camp)
-    - **Introduction to R**. This course module is written by the authors of the Open Intro Statistics textbook, the course title in Data Camp is "Data Analysis and Statistical Inference". In the Assignments tab in DataCamp, you will only see the chapter title. 
-* Both of these have corresponding Blackboard Learn quizzes. _(2 attempts)_
-* hw02 - Research codebook assignment (created in Google Drive directly). Will be peer reviewed. 
-
+--->
 
 ----
 
-### 1/21/19 - [Week 1](https://norcalbiostat.github.io/MATH315/wk/wk01.html) Welcome to Spring 19!
+### `r format(wk1.date, "%m-%d-%Y")`: Welcome to Fall 19!
+
 * This course website contains all materials except the textbook for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.
-* Specifically click on and explore items in the top navigation bar.  
-* Take this survey to help choose when I should hold Office Hours https://goo.gl/forms/kuctI3ktoo1Cpsio1 
-* Check Blackboard for links to the required course materials (also available on the syllabus) 
-* Watch this intro video for an overview of the class and how to successfully prepare for week 1! https://670832.kaf.kaltura.com/media/Welcome+intro+video+sp19/0_non0k1h7 
-* Course Materials [[overview sheet]](315_materials_overview.pdf). Also posted on Slack, and BBL. 
+* Specifically click on and explore items in the top navigation bar. 
+* Take this survey to help choose when I should hold Office Hours: https://forms.gle/6ZTSfrJ2WbyKMfk39 
+* We will use Slack to faciliate outside of class discussion, and to replace emails. 
+    - Use the link under 'Tools' in the navigation boar of this page to go to our Slack workspace, make an account using your @mail.csuchico.edu email address. 
+    - You must download either the desktop app, or the phone app, or both. Do not rely on the browser based version. 
+
+
 
 
 
