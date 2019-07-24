@@ -68,8 +68,8 @@ out %>%
   pack_rows(paste0("Finals Week (", weekdates[16], ")"), wn[16],  nrow(rawdat), 
             label_row_css =wk.labs) %>%
   column_spec(1, width = "35%") %>% 
-  column_spec(2, width = "10%") %>%
-  column_spec(3, width = "10%") %>%
+  column_spec(2, width = "7%") %>%
+  column_spec(3, width = "7%") %>%
   column_spec(4, width = "10%") %>% 
   column_spec(5, width = "35%")
 ```
@@ -498,7 +498,7 @@ pander(w12$fri)
 
 
 
-### <a href="#week13 data-toggle="collapse">Week 13: Logistic Regression</a>
+### <a href="#week13" data-toggle="collapse">Week 13: Logistic Regression</a>
 <div id="week13" class="collapse">
 
 #### Learning Objectives
@@ -532,7 +532,7 @@ pander(w13$fri)
 
 
 
-### <a href="#week14 data-toggle="collapse">Week 14: Model building strategies</a>
+### <a href="#week14" data-toggle="collapse">Week 14: Model building strategies</a>
 <div id="week14" class="collapse">
 
 #### Learning Objectives
@@ -566,7 +566,7 @@ pander(w14$fri)
 
 
 
-### <a href="#week15 data-toggle="collapse">Week 15: Disseminating Research</a>
+### <a href="#week15" data-toggle="collapse">Week 15: Disseminating Research</a>
 <div id="week15" class="collapse">
 
 #### Learning Objectives

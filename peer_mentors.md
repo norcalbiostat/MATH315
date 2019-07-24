@@ -6,14 +6,17 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 
 <br>
 
+> Now recruting peer mentors for Fall 19! You do NOT have to have completed Dr. Donatello's Math 315 class. 
+> Anyone who has completed Math 315 is welcome to apply. Contact Dr. Donatello for more information. 
+
 ----
 
 ### Abbie Jones
 <table>
 <tr>
-  <td width="250"><img src="mentors/abbie.jpg" alt="" /></td>
+  <td width="250"><img src="mentors/abbie.jpg" alt="Abbie Jones" /></td>
   <td width="50"></td>
-  <td width="250"><strong>Known for: </strong> Being an athlete Scholar <br> 
+  <td width="250"><strong>Known for: </strong> Being an Athlete Scholar <br> 
     <strong>Attending: </strong> TR 12:30-2 <br> 
     <strong>OH: </strong> F 3-4pm <br> 
     <strong>Contact: </strong> ajones102@mail.csuchico.edu <br> </td>
@@ -31,7 +34,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 ### Eduardo Gomez
 <table>
 <tr>
-  <td width="250"><img src="mentors/eduardo.jpg" alt="" /></td>
+  <td width="250"><img src="mentors/eduardo.jpg" alt="Eduardo Gomez" /></td>
   <td width="50"></td>
   <td width="250"><strong>Known for:</strong> making a better than average poached egg <br> 
     <strong>Attending: </strong> MWF 9-10am <br> 
@@ -50,7 +53,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 ### Jack Fogliasso
 <table>
 <tr>
-  <td width="250"><img src="mentors/jack.jpg" alt="" /></td>
+  <td width="250"><img src="mentors/jack.jpg" alt="Jack Fogliasso" /></td>
   <td width="50"></td>
   <td width="250"><strong>Known for: </strong> Looking underage <br> 
     <strong>Attending: </strong> TR 12:30-2 <br> 
@@ -69,7 +72,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 ### Mariby Cruz
 <table>
 <tr>
-  <td width="250"><img src="mentors/mariby.jpg" alt="" /></td>
+  <td width="250"><img src="mentors/mariby.jpg" alt="Mariby Cruz" /></td>
   <td width="50"></td>
   <td width="250"><strong>Known for: Taking classes she's not required to take </strong>  <br> 
       <strong>Attending: </strong> MW 9-10  <br> 
@@ -88,7 +91,7 @@ Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th f
 <table>
 
 <tr>
-  <td width="250"><img src="mentors/ricardo.jpg" alt="" /></td>
+  <td width="250"><img src="mentors/ricardo.jpg" alt="Ricardo Aguilar" /></td>
   <td width="50"></td>
   <td width="250"><strong>Known for: </strong> Adopting too many animals <br> 
       <strong>Attending: </strong> TR 12:30-2 <br> 
