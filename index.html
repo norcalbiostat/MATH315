@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Math 315 homepage</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 315</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="schedule.html">
+    <span class="fa fa-calendar"></span>
+     
+    Schedule
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Materials
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="notes.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Lecture Notes/Homework/Reading
+      </a>
+    </li>
+    <li>
+      <a href="reading/RAD_course_notes_S19.pdf">
+        <span class="fa fa-file-code"></span>
+         
+        Course Packet
+      </a>
+    </li>
+    <li>
+      <a href="https://norcalbiostat.netlify.com/data/">
+        <span class="fa fa-database"></span>
+         
+        Data from course packet
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-bar-chart"></span>
+     
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="project.html">Project Instructions</a>
+    </li>
+    <li>
+      <a href="https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing">Peer Review Assignment</a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Project Data (Google Drive)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://rstudio.cloud/spaces/8317/projects">
+        <span class="fa fa-code"></span>
+         
+        R Studio Cloud
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/drive/folders/1iy7Wh5iOw2EpyXAQUZlCVSXFH53i_Xdb?usp=sharing">
+        <span class="fa fa-google"></span>
+         
+        Google Drive
+      </a>
+    </li>
+    <li>
+      <a href="https://math315-s19.slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.datacamp.com/">
+        <span class="fa fa-institution"></span>
+         
+        Data Camp (Learn to code)
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="peer_mentors.html">
+    <span class="fa fa-users"></span>
+     
+    Peer Mentors
+  </a>
+</li>
+<li>
+  <a href="help_R.html">
+    <span class="fa fa-registered"></span>
+     
+    R programming
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="syllabus_315_s19.html">Syllabus</a>
+    </li>
+    <li>
+      <a href="help_assignments.html">Submitting homework</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's website
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Math 315 homepage</h1>
+
+</div>
+
+
+<p>This is the course website for <span style="color:teal"><strong>Applied Statistical Methods 1</strong></span> course taught by <a href="www.norcalbiostat.com">Dr. Robin Donatello</a> in Fall 2019. This landing page is used for posting of regular announcements and information for students of the class.</p>
+<p><br></p>
+<!---
+### 5/12/19 - Finals Week
+
+* Common Final (Both classes): *Tehama 116 4-6pm*
+* Poster peer review Google Form: https://forms.gle/169KD9x43T5YKHGh6 
+    - Some paper copies will be available. 
+    - You will be expected to review 10 posters during the final session. 
+* Office Hours: MW 9:30-11:30, T 9:11am
+
+Final assignments (Due Friday 5/17)
+
+* MAI Post assessment - Google Form
+* Post-course survey from Lisa Dierker (will be emailed to you this week)
+* Post assessment in R - Google Form
+* Any remaining extra credit
+
+Good luck with all of your finals, and congratulations to those who are graduating on Saturday!
+
+
+---
+
+### 5/6/19 - Week 15
+
+* Poster building week! **Due dates are FIRM**
+    - Instructions are on [the project page.]( https://norcalbiostat.github.io/MATH315/project.html#posters_presentations)
+    - Guidelines and templates are here: https://norcalbiostat.netlify.com/lec/poster_guidelines/ 
+    - Drafts are due Wednesday 5/8 at 5pm
+    - Peer review Friday 5/10 EOD
+    - Final version due Monday 5/13 at 2pm
+* Take Home Final exam 
+    - Distributed Wed 5/8 (Estimated) via Slack. 
+    - Due Wednesday 5/15 EOD. 
+        - [Upload your **RMD code** file to this link.](https://www.dropbox.com/request/HNPJtln9HcqxVgM7omDD)
+        
+#### Expanded Office Hours - 11 hours!!!
+* Monday: 10-11am, 3-4pm 
+* Tuesday: 10-12pm, 2-4pm (Tehama 116)
+* Thursday: 10-11am, 2-4pm (Tehama 116)
+* Friday: 11-12pm, 2-3pm
+   
+<!--- 
+### 12/3/18 - [Week 14](https://norcalbiostat.github.io/MATH315/wk/wk14.html)
+* You should be working on finishing the regression assignment, and Poster Prep Stage III this week. 
+* You will be building models, and having to decide which model fits the data best using different criteria. 
+    - Textbook references: Open Intro 8.2, Applied Statistics Notebook Section 7.7
+
+
+### 4/15/19 - [Week 12](https://norcalbiostat.github.io/MATH315/wk/wk12.html)
+
+SET's this week. Please be present. 
+
+We're starting to talk about multivariable models this week. This involves
+understanding how to think about simultaneous relationships between multiple variables. 
+
+Life isn't bivariate. We "know" there is more to how big a caterpillar is than simply the species. What about the temperature? was it a drought year? what type of tree is it on? How heavy is the bird predation in that area? What other species are on the same tree that could be competing for resources? To understand the singular effect of bird predation on caterpillar size, we must consider how all other factors affect caterpillar size, and how those other factors might be related to each other as well. 
+
+The course notes is a "cliff notes" version of the lecture material for this coures. If you're not watching the videos (even on 1.5x speed) you are missing critical information that I will not lecture on in class, but that you will be responsible for on the homework and exam. 
+
+**Due this week**
+
+* HW09 - Moderation
+* Poster prep stage II - this includes a full revision of all stage 1 slides, and adding slides for two bivariate analyses. 
+
+
+### 4/8/19 - [Week 11](https://norcalbiostat.github.io/MATH315/wk/wk11.html)
+
+DataFest is over and so I'm back 100% with you!
+
+We're finishing up Bivariate Inference this week. 
+
+* Correlation & Regression - similar, but different purposes. 
+* HW 8 due this Saturday
+* Think about which inferential tools you are going to want to use on your personal research questions. 
+
+Self and peer evaluation form available: Due Sunday https://forms.gle/Vrhf9FEqwiWYPD4N9
+
+### 4/1/19 - [Week 10](https://norcalbiostat.github.io/MATH315/wk/wk10.html)
+
+This week got lost in the post-sickness & pre-DataFest ether. 
+
+
+### 3/25/19 - [Week 9](https://norcalbiostat.github.io/MATH315/wk/wk09.html)
+
+The rest of the semester is all about Inference! This is what you've been training for, and waiting for. This week we'll start out with setting the foundations of the process on 1 variable, then quickly move into testing relationships between two variables. 
+
+#### Due this week
+* Hypothesis testing quiz on Tue/Wed
+* HW 8 BIG assignment! Has multiple parts. Procrastinate and be doomed. 
+
+#### Midterm Error Assessment (Optional - Due 4/5/19)
+As an opportunity to look for patterns in your test taking and to develop strategies to perform better in the future, there is an optional error assessment that you can complete. If you do so you can earn up to half the points missed on the exam back. To do this you must use the [Analyzing exam errors form](reading/Analyzing exam errors.pdf) available on the materials page. Using this form you will: 
+
+* Classify the types of errors you made (where you lost points). 
+    - Identify common patterns or themes.
+* On a separate paper, correctly re-work every problem you missed. 
+* Go over your corrections with a tutor (or me). 
+    - Explain what you did wrong and why your corrections are right.
+    - Discuss strategies to perform better on future exams. 
+
+
+---
+
+
+### 3/11/19 - [Week 8](https://norcalbiostat.github.io/MATH315/wk/wk08.html)
+
+Office Hours for this week:
+
+  - Mon 10-11 Holt 202
+  - Tue 11-12 Holt 202, Community Coding 2-4pm Tehama 116
+  - Wed 10-12 Holt 202
+  - Thu Community Coding 2-4pm Tehama 116
+  - Fri 12-1 Holt 202
+
+#### Due this week
+* Poster Prep Stage I: Setting the Stage & Exploratory Data Analysis. 
+    - Draft due Tuesday, Peer Review by Thursday, Final by Saturday
+* Foundations worksheet. Practice setting up inference on your research question
+    - Done in class, docx available on Materials page.
+    - Come prepared! Choose 1 binary and 1 quantitative variable from your data set. 
+        - Create a frquency table for the binary catgorical
+        - Calculate the mean, sd, and number of valid records for the quantitative. 
+    - Due with Midterm
+* Midterm Thursday/Friday
+    - Sample exam posted on the Materials page. Shows you the structure of the exam. 
+    - A calculator is not needed, but you may want one. 
+    - Only your course packet is allowed on the exam. 
+
+----
+
+### 3/4/19 - [Week 7](https://norcalbiostat.github.io/MATH315/wk/wk07.html)
+
+Monday I will be at the WiDS conference (across the creek) and so Kathy Gray will cover class for me.
+You will be covering material in the course packet 4.1-4.4, foundations for inference. Also be sure to watch the PDS video, the relevant content starts at 14 minutes and goes until about 16 minutes.  
+
+
+#### Due this week 
+
+* Worksheets on discovering the Central Limit Theorem
+    - Both worksheets (parameters vs statistics and the CLT) can be found on the materials page under homework
+    - Worked on in class on Monday/Tuesday, turned in Wednesday/Thursday 
+    - Quiz on interval estimates due Wednesday (for TR) or Thursday (for MWF)
+        - Review Course packet section 4.5 for this material
+* Draft of your research proposal is due on Tuesday, peer review Thursday, final version due Saturday. 
+    - Read the peer review instructions in Homework 7 carefully. (they were updated Tuesday AM)
+
+#### Events for this week (always free and open to all unless specified)
+
+* Monday 3/4: Women in Data Science technical conference. Live stream of the global conference out of Stanford, lunchtime career panel featuring local women in Data Science, and an opportunity to present your research in our "local women sympoisum" https://wids-chico.netlify.com/event/ 
+* Tuesday 3/5: DSI seminar on strategies to manage big data. 2-3pm, Tehama 116. 
+
+----
+
+
+### 2/24/19 - [Week 6](https://norcalbiostat.github.io/MATH315/wk/wk06.html)
+
+Now that you've had a chance to learn what your data looks like, exploring relationships and learning more about the variables that you are interested in researching, let's take a step back and look at the big picture. You will use lecture notes on writing empirical research (found on the materials page of this website) to guide the writing of a research proposal. 
+
+Applied statistics is used to support research. Numbers and measures don't stand on their own. It is important that you understand how to use data to support scienctific research. 
+
+So far you have been conducting an exploratory data analysis to learn the distributions of your measures, and to assess for any possible relationships in your research. You cannot make any statistical claims about whether or not a relationship is significant at this point. That is under the realm of _inferential statistics_ and will be the topic of the class after Spring break. 
+
+To understand why inferential statistics can be used to make valid claims, we have to learn a little bit about _Probability_ first. This topic is only briefly covered in the PDS videos. You will have to spend more time in the course packet, AND in the OpenIntro textbook if you have never taken a statistics course before. 
+
+This is a much more mathematical section of the course, so be sure to plan your time accordingly. Over the next two weeks you should be writing your research proposal, working on your poster preparation slides, and filling out the notes and examples in the course packet. We will be working heavily out of the course packet, so it is essential that you read the material ahead of time so the examples we work through in class are meaningful. 
+
+#### Three quizzes this week
+* Sun/Mon: Writing about empirical research. Based on these [lecture notes](lecture/lec02_writing_empirical_research.html). 
+* Tue/Wed: Probability distributions. Based primarily on course packet chapter 3, and on PDS video 8 (only up to 14 minutes). 
+* Saturday: Upcoming assignments. Making sure you know the expectations for the Research proposal and poster prep stage I. 
+
+
+#### Events for this week (always free and open to all unless specified)
+
+* Thursday 2-4pm, Tehama 116: **Data Science Seminar: Getting Started with R and Python** Are you ready to install R onto your own laptop? Do you want to try out Python? Come drop in and get help getting started with either of these two languages. 
+* Saturday 3/2: Women in Business Summit https://www.csuchico.edu/cob/events/women-in-business.shtml 
+* Monday 3/4: Women in Data Science technical conference. Live stream of the global conference out of Stanford, lunchtime career panel featuring local women in Data Science, and an opportunity to present your research in our "local women sympoisum" https://wids-chico.netlify.com/event/ 
+
+
+----
+
+### 2/18/19 - [Week 5](https://norcalbiostat.github.io/MATH315/wk/wk05.html) - Exploring Relationships
+
+
+> It's ok to struggle, it's not OK to not do anything. If you are having trouble with coding, you need to ask for help. 
+This class builds on each assignment. You can't do HW05 well if you didn't do HW04. You won't be able to do HW06 if you can't do HW05. 
+Don't risk falling behind, you will struggle to catch up and may not pass. There are five of us available to help you with a combined total 10 hours of office hours. You can make appointments with any of us outside of our scheduled hours as well. 
+
+* This week we will discuss how to create visualizations to assess the relationship between two variables. 
+* The homework assignments are training grounds for you to practice how to create and interpret graphics to explore your research question. The graphs you make for the homework may or may not be directly related to your research question. 
+* You may have to go back to your raw data and pull in new measures. Or adjust your variables (like collapsing levels) based on what you observed in last week's assignment. 
+* Typo in the course notes on page 40. Be sure to get notes & the in-class worksheet from someone to make sure your book is updated. 
+
+#### Items due this week:
+* HW 06 - Bivariate Graphing
+* Data Camp - Intro to Data (practice data management with R)
+    - Don't forget to do the corresponding BBL quiz.
+    
+#### Events for this week (always free and open to all unless specified)
+
+* [Data Science Seminar: Merging data from multiple tables using SQL](https://csudsi.netlify.com/2019/02/02/2019-02-02-dsi-seminar-spatial-is-special/) (Tu 2/19 3-4pm, Tehama 116)
+SQL is a powerful database language that is used to link information together across multiple tables. http://datascience.csuchico.edu 
+
+----
+
+### 2/10/19 - [Week 4](https://norcalbiostat.github.io/MATH315/wk/wk04.html) - Making pretty pictures to win friends and influence people!
+
+> No quiz on exploring numeric data. Prepare answers in the course notes section 2.1 instead (for Mon/Tue) and 2.2 (for Wed/Thu).
+
+If there's one take home message for this week, is to describe the distribution of variables you need: 
+
+1. a picture
+2. summary statistics
+3. a complete sentence interpretation
+
+While your goal should be to make figures stand alone, you won't be there quite yet. Your coding skills will
+develop as you go on throughout the semester. 
+
+**Advice: Complete the `ggplot2` lesson in DataCamp (and corresponding blackboard learn quiz) EARLY this week. It will make coding in ggplot throughout the week much easier. **
+
+
+#### Events for this week (always free and open to all unless specified)
+
+* "Women Like You" Leadership Symposium (Drop in 10-2pm) https://as.csuchico.edu/women-like-you/ 
+Distinguished female leaders share stories and discuss topics designed to inspire and empower all. With highlights from our own, Chico State faculty and staff will tell their personal stories of success and failure, sharing their journeys of resilience and rise as a woman in today’s social climate. Student attendees can enter to win from a pool of $5000 in textbook scholarship funds. 
+
+* [Data Science Seminar: Spatial is Special](https://csudsi.netlify.com/2019/02/02/2019-02-02-dsi-seminar-spatial-is-special/) (Th 2-3pm, Tehama 116)
+Learn how to start exploring and analyzing geographic data using GIS (Geographic Information Systems) software. http://datascience.csuchico.edu 
+
+----
+<p>
+
+### 2/4/19 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html) - Hello R!
+
+> OH Monday cancelled. I will be available 12-2pm and possibly 4-5pm instead. 
+
+#### Second chance at Blackboard learn quizzes connected to DataCamp.
+* The quizzes in Blackboard that correspond to DataCamp quizzes will be re-opened for partial credit this week. 
+
+#### You have 2 assignments (and 2 pre-class video quizes) to turn in this week!
+Read the instructions of each carefully to ensure that they are completed and submitted correctly. 
+
+1. A literature review [[Homework 03]](hw/hw03_lit_review.html).
+2. Demonstration of data management code [[Homework 04]](hw/hw04_data_management.html). 
+
+We are starting to code in R this week. You must have completed the Data Camp assignments from last week to be ready for this. 
+In class you will work with your partner to take a closer look at your codebook to identify what types of data management you will have to do. The [[lec03_dm_prep_questions]](notes/lec03_dm_prep_notes.html) lecture notes that can be found on the course materials page contain questions to help guide this process. 
+
+#### Extra Materials
+
+* I have created a video to walk you through how to get your data into R Studio. 
+    - Right now this can only be acessed through Blackboard Learn. 
+    - Watch this before class on Wednesday/Thursday
+* The [[Help with R]](help_R.html) page has been updated to include more info such as useful functions and how to navigate data. 
+
+#### Entering a challenging time
+
+You may feel like this in the next couple weeks: 
+
+<center><img src="img/hard.JPG" width="400" height="400" align='center'/></center>
+<br>
+
+But if you use the references in the course notes, the peer mentors, videos and engage in the most effective way of learning a new programming language, 
+
+<center><img src="img/orly-changestuff.jpg" width="400" height="400" /></center>
+<br>
+
+then you will learn how to dominate debugging and come out a stronger and more capable of being able to answer research questions using data. 
+
+<center><img src="img/debugging.jpg" width="600"/></center>
+
+
+
+<br>
+
+----
+
+### 1/28/19 - [Week 2](https://norcalbiostat.github.io/MATH315/wk/wk02.html) Generating research questions
+
+My office hours (Holt 202)-  M 10-11am, T: 11-12noon, F 12-1pm.
+
+Peer mentor office hours have been posted on the [[peer mentor page]](peer_mentors.html)
+
+> I am out of town this week starting at 1pm on Thursday. 
+
+On Thursday/Friday you will be meeting with a research librarian who will help you use our Library resources to find primary source articles to support your research. 
+
+> Class will meet in MLIB 226
+
+**Upcoming Quizzes**:
+
+* Data architecture & Codebooks (pre-class quiz)
+* Literature review (post-class quiz)
+
+**Upcoming Assignments**:
+
+--->
+<hr />
+<div id="welcome-to-fall-19" class="section level3">
+<h3>08-26-2019: Welcome to Fall 19!</h3>
+<ul>
+<li>This course website contains all materials except the textbook for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.</li>
+<li>Specifically click on and explore items in the top navigation bar.</li>
+<li>Take this survey to help choose when I should hold Office Hours: <a href="https://forms.gle/6ZTSfrJ2WbyKMfk39" class="uri">https://forms.gle/6ZTSfrJ2WbyKMfk39</a></li>
+<li>We will use Slack to faciliate outside of class discussion, and to replace emails.
+<ul>
+<li>Use the link under ‘Tools’ in the navigation boar of this page to go to our Slack workspace, make an account using your <span class="citation">@mail.csuchico.edu</span> email address.</li>
+<li>You must download either the desktop app, or the phone app, or both. Do not rely on the browser based version.</li>
+</ul></li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

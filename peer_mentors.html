@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>peer_mentors.utf8.md</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 315</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="schedule.html">
+    <span class="fa fa-calendar"></span>
+     
+    Schedule
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Materials
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="notes.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Lecture Notes/Homework/Reading
+      </a>
+    </li>
+    <li>
+      <a href="reading/RAD_course_notes_S19.pdf">
+        <span class="fa fa-file-code"></span>
+         
+        Course Packet
+      </a>
+    </li>
+    <li>
+      <a href="https://norcalbiostat.netlify.com/data/">
+        <span class="fa fa-database"></span>
+         
+        Data from course packet
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-bar-chart"></span>
+     
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="project.html">Project Instructions</a>
+    </li>
+    <li>
+      <a href="https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing">Peer Review Assignment</a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Project Data (Google Drive)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://rstudio.cloud/spaces/8317/projects">
+        <span class="fa fa-code"></span>
+         
+        R Studio Cloud
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/drive/folders/1iy7Wh5iOw2EpyXAQUZlCVSXFH53i_Xdb?usp=sharing">
+        <span class="fa fa-google"></span>
+         
+        Google Drive
+      </a>
+    </li>
+    <li>
+      <a href="https://math315-s19.slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.datacamp.com/">
+        <span class="fa fa-institution"></span>
+         
+        Data Camp (Learn to code)
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="peer_mentors.html">
+    <span class="fa fa-users"></span>
+     
+    Peer Mentors
+  </a>
+</li>
+<li>
+  <a href="help_R.html">
+    <span class="fa fa-registered"></span>
+     
+    R programming
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="syllabus_315_s19.html">Syllabus</a>
+    </li>
+    <li>
+      <a href="help_assignments.html">Submitting homework</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's website
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><br></p>
+<div id="peer-mentors-for-spring-19" class="section level1">
+<h1>Peer Mentors for Spring 19</h1>
+<p>Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th floor of Miriam Library.</p>
+<p><br></p>
+<hr />
+<div id="abbie-jones" class="section level3">
+<h3>Abbie Jones</h3>
+<table>
+<tr>
+<td width="250">
+<img src="mentors/abbie.jpg" alt="" />
+</td>
+<td width="50">
+</td>
+<td width="250">
+<strong>Known for: </strong> Being an athlete Scholar <br> <strong>Attending: </strong> TR 12:30-2 <br> <strong>OH: </strong> F 3-4pm <br> <strong>Contact: </strong> <a href="mailto:ajones102@mail.csuchico.edu" class="email">ajones102@mail.csuchico.edu</a> <br>
+</td>
+<td width="50">
+</td>
+<td width="350">
+I am a junior working towards a Biology degree with an emphasis in EEO. I as well play for the women’s soccer team here at Chico State. In my free time I love to hang out with my newly adopted pitbull Phoebe or binge watch documentaries on Netflix. I know statistics will be very helpful in my future career field and it just so happens that I also enjoy it very much!
+</td>
+</tr>
+</table>
+<p><br></p>
+<hr />
+</div>
+<div id="eduardo-gomez" class="section level3">
+<h3>Eduardo Gomez</h3>
+<table>
+<tr>
+<td width="250">
+<img src="mentors/eduardo.JPG" alt="" />
+</td>
+<td width="50">
+</td>
+<td width="250">
+<strong>Known for:</strong> making a better than average poached egg <br> <strong>Attending: </strong> MWF 9-10am <br> <strong>OH: </strong> M 4-5pm <br> <strong>Contact: </strong> <a href="mailto:egomez42@mail.csuchico.edu" class="email">egomez42@mail.csuchico.edu</a> <br>
+</td>
+<td width="50">
+</td>
+<td width="350">
+I am current in my last semester, doubling majoring in Statistics and Applied Math and I’m getting a certificate in Data Science. On my free time, I enjoy watching movies and reading at Bidwell Park.
+</td>
+</tr>
+</table>
+<p><br></p>
+<hr />
+</div>
+<div id="jack-fogliasso" class="section level3">
+<h3>Jack Fogliasso</h3>
+<table>
+<tr>
+<td width="250">
+<img src="mentors/jack.jpg" alt="" />
+</td>
+<td width="50">
+</td>
+<td width="250">
+<strong>Known for: </strong> Looking underage <br> <strong>Attending: </strong> TR 12:30-2 <br> <strong>OH: </strong> M 2-3pm <br> <strong>Contact: </strong> <a href="mailto:jfogliasso@mail.csuchico.edu" class="email">jfogliasso@mail.csuchico.edu</a> <br>
+</td>
+<td width="50">
+</td>
+<td width="350">
+I’m a math major in the general option, with a minor in statistics. I was born and raised in Redding, CA, and I commute to school from there every day. Besides doing math, also love all kinds of music, from playing percussion for the Shasta Symphony Orchestra to riffing on my guitar. This is my final semester at Chico State before I move on to a Master’s program in mathematics.
+</td>
+</tr>
+</table>
+<p><br></p>
+<hr />
+</div>
+<div id="mariby-cruz" class="section level3">
+<h3>Mariby Cruz</h3>
+<table>
+<tr>
+<td width="250">
+<img src="mentors/mariby.jpg" alt="" />
+</td>
+<td width="50">
+</td>
+<td width="250">
+<strong>Known for: Taking classes she’s not required to take </strong> <br> <strong>Attending: </strong> MW 9-10 <br> <strong>OH: </strong> Upon Request <br> <strong>Contact: </strong> <a href="mailto:mcruz@mail.csuchico.edu" class="email">mcruz@mail.csuchico.edu</a> <br>
+</td>
+<td width="50">
+</td>
+<td width="350">
+I was born in Los Angeles and I currently reside in Inglewood when I’m not in school. I’ll be graduating this May with a BS in Biology and a minor in Applied Statistics. My goal is to help you understand the basics of ‘R’ and most importantly what your results mean (among other things in MATH315). Here’s a <a href="https://www.facebook.com/sirenasdiving.costarica/videos/1593710070726854/">[link to a video]</a> showing you what I do for fun in the summer.
+</td>
+</tr>
+</table>
+<p><br></p>
+<hr />
+</div>
+<div id="ricardo-aguilar" class="section level3">
+<h3>Ricardo Aguilar</h3>
+<table>
+<tr>
+<td width="250">
+<img src="mentors/ricardo.JPG" alt="" />
+</td>
+<td width="50">
+</td>
+<td width="250">
+<strong>Known for: </strong> Adopting too many animals <br> <strong>Attending: </strong> TR 12:30-2 <br> <strong>OH: </strong> F 12-1pm <br> <strong>Contact: </strong> <a href="mailto:raguilar11@mail.csuchico.edu" class="email">raguilar11@mail.csuchico.edu</a> <br>
+</td>
+<td width="50">
+</td>
+<td width="350">
+I’m majoring in Statistics and getting a certificate in Data Science. This is my last semester at Chico State, so I’m currently applying to graduate programs for Statistics and Biostatistics. I enjoy spending time with friends, family, and my pets.
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

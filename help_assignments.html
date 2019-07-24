@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>FAQ about Assignments</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 315</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="schedule.html">
+    <span class="fa fa-calendar"></span>
+     
+    Schedule
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Materials
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="notes.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Lecture Notes/Homework/Reading
+      </a>
+    </li>
+    <li>
+      <a href="reading/RAD_course_notes_S19.pdf">
+        <span class="fa fa-file-code"></span>
+         
+        Course Packet
+      </a>
+    </li>
+    <li>
+      <a href="https://norcalbiostat.netlify.com/data/">
+        <span class="fa fa-database"></span>
+         
+        Data from course packet
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-bar-chart"></span>
+     
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="project.html">Project Instructions</a>
+    </li>
+    <li>
+      <a href="https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing">Peer Review Assignment</a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Project Data (Google Drive)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://rstudio.cloud/spaces/8317/projects">
+        <span class="fa fa-code"></span>
+         
+        R Studio Cloud
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/drive/folders/1iy7Wh5iOw2EpyXAQUZlCVSXFH53i_Xdb?usp=sharing">
+        <span class="fa fa-google"></span>
+         
+        Google Drive
+      </a>
+    </li>
+    <li>
+      <a href="https://math315-s19.slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.datacamp.com/">
+        <span class="fa fa-institution"></span>
+         
+        Data Camp (Learn to code)
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="peer_mentors.html">
+    <span class="fa fa-users"></span>
+     
+    Peer Mentors
+  </a>
+</li>
+<li>
+  <a href="help_R.html">
+    <span class="fa fa-registered"></span>
+     
+    R programming
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="syllabus_315_s19.html">Syllabus</a>
+    </li>
+    <li>
+      <a href="help_assignments.html">Submitting homework</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's website
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">FAQ about Assignments</h1>
+<h4 class="date">Last Updated 2019-07-23 19:01:28</h4>
+
+</div>
+
+
+<div id="how-do-i-complete-the-coding-assignments" class="section level1">
+<h1>How do I complete the coding assignments?</h1>
+<ul>
+<li>A homework template file (<code>*.Rmd</code>) will be provided for most to all assignments.
+<ul>
+<li>Templates can be found on by going to <code>Materials --&gt; Lecture Notes/Homework/Reading</code>. Scroll down to <strong>Homework</strong>. Click the <code>.Rmd</code> column to download the code file for the homework template to your computer.</li>
+<li>If you are working in R Studio Cloud, upload this file to your project.</li>
+<li>If you are working on your own installation, put this file into your Math 315 folder.</li>
+</ul></li>
+<li>You will write your code and answers directly into the Rmd file, and “compile” or “knit” this file into a PDF for submission.</li>
+</ul>
+<div id="how-do-i-create-a-pdf-out-of-my-code-file" class="section level2">
+<h2>How do I create a PDF out of my code file?</h2>
+<ul>
+<li>Click the <code>knit</code> button in R Studio above your code file. Use the down arrow to ensure that PDF is selected.</li>
+<li>Revisit this help page for more information: <a href="https://rmarkdown.rstudio.com/lesson-9.html" class="uri">https://rmarkdown.rstudio.com/lesson-9.html</a></li>
+</ul>
+</div>
+</div>
+<div id="howwhere-do-i-turn-in-assignments" class="section level1">
+<h1>How/Where do I turn in assignments?</h1>
+<p>Unless explicitly stated otherwise assignments are to be uploaded to Google Drive.</p>
+<ul>
+<li>The file should be clearly named using this format: <code>assignment_userid.pdf</code>. E.g. <code>univ_graphics_rdonatello.pdf</code></li>
+<li>It should be in PDF format.</li>
+<li>Uploaded to the corresponding folder in Google Drive.</li>
+<li>Due dates are typically Saturday, but check the course calendar (on the website) to confirm.</li>
+</ul>
+<div id="how-do-i-get-to-google-drive" class="section level2">
+<h2>How do I get to Google Drive</h2>
+<ul>
+<li>In the navigation bar select <code>Tools --&gt; Google Drive</code>.
+<ul>
+<li>I suggest you bookmark this page, star this folder, or add this folder to your drive.</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="peer-reviewed-assignments" class="section level1">
+<h1>Peer Reviewed Assignments</h1>
+<p>Some project centered assignments will have a round of peer review before they are ready for grading. Here is the process that we will follow:</p>
+<ul>
+<li>Your assignment is due on a Tuesday.</li>
+<li>Your assignment will be reviewed by 2 of your classmates and one peer mentor over a 2 day period (Wed-Thu)</li>
+<li>You then have the option of revising your assignment over a 2 day period (Fri-Sat)</li>
+<li>The final deadline is after this review period (Saturday). Upload your final version to the <code>Ready for review</code> sub-folder for that assignment.
+<ul>
+<li>If you do not move the file yourself I will take whatever has been uploaded already and move it to the <code>Ready for review</code> folder.</li>
+<li>Once I start grading the <code>ready for review</code> folder is locked to editing.</li>
+<li>It is your responsibility to ensure that this is the final version.</li>
+<li>I will not take submissions past the deadline, or by email.</li>
+</ul></li>
+</ul>
+<p>Assignments should be refined, reviewed, and absolutely spellchecked before submission. There is a built in spellcheck function in R studio. Use it.</p>
+</div>
+<div id="what-are-you-looking-for-when-you-grade" class="section level1">
+<h1>What are you looking for when you grade?</h1>
+<ul>
+<li>That you followed the model example for that problem in the course notes.</li>
+<li>That you followed directions.</li>
+<li>Correct English grammar, spelling, formatting.</li>
+<li>Concise, clear and complete answers.</li>
+<li>Correct graphical and/or statistical methods used.</li>
+<li>That you answered the question posed.</li>
+<li>No extraneous output or code is showing.</li>
+</ul>
+</div>
+<div id="how-do-you-grade" class="section level1">
+<h1>How do you grade?</h1>
+<ul>
+<li>Grades are assigned using a rubric in Blackboard Learn.
+<ul>
+<li>It would be a smart idea to check the rubric before you submit to ensure that you earn all possible points.</li>
+</ul></li>
+<li>I will provide comments and feedback as appropriate on your assignment itself (while still in Google Drive)
+<ul>
+<li>This means that feedback is public, but grades are private.</li>
+</ul></li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -169,6 +169,437 @@ pander(w2$fri)
 
 
 
+### <a href="#week3" data-toggle="collapse">Week 3: Working with Data</a>
+<div id="week3" class="collapse">
+
+#### Learning Objectives
+```{r}
+w3 <- details(3)
+pander(w3$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w3$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w3$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w3$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w3$fri)
+```
+
+</div>
+
+### <a href="#week4" data-toggle="collapse">Week 4: Describing Data</a>
+<div id="week4" class="collapse">
+
+#### Learning Objectives
+```{r}
+w4 <- details(4)
+pander(w4$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w4$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w4$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w4$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w4$fri)
+```
+
+</div>
+
+
+### <a href="#week5" data-toggle="collapse">Week 5: Graphing Relationships</a>
+<div id="week5" class="collapse">
+
+#### Learning Objectives
+```{r}
+w5 <- details(5)
+pander(w5$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w5$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w5$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w5$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w5$fri)
+```
+
+</div>
+
+
+### <a href="#week6" data-toggle="collapse">Week 6: Writing about research, probability, midterm</a>
+<div id="week6" class="collapse">
+
+#### Learning Objectives
+```{r}
+w6 <- details(6)
+pander(w6$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w6$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w6$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w6$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w6$fri)
+```
+
+</div>
+
+
+### <a href="#week7" data-toggle="collapse">Week 7: Estimating Parameters with uncertainty</a>
+<div id="week7" class="collapse">
+
+#### Learning Objectives
+```{r}
+w7 <- details(7)
+pander(w7$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w7$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w7$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w7$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w7$fri)
+```
+
+</div>
+
+
+### <a href="#week8" data-toggle="collapse">Week 8: Inferential Analysis</a>
+<div id="week8" class="collapse">
+
+#### Learning Objectives
+```{r}
+w8 <- details(8)
+pander(w8$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w8$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w8$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w8$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w8$fri)
+```
+
+</div>
+
+
+
+
+### <a href="#week9" data-toggle="collapse">Week 9: Bivariate Inference</a>
+<div id="week9" class="collapse">
+
+#### Learning Objectives
+```{r}
+w9 <- details(9)
+pander(w9$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w9$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w9$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w9$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w9$fri)
+```
+
+</div>
+
+
+
+
+### <a href="#week10" data-toggle="collapse">Week 10: Regression Modeling</a>
+<div id="week10" class="collapse">
+
+#### Learning Objectives
+```{r}
+w10 <- details(10)
+pander(w10$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w10$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w10$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w10$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w10$fri)
+```
+
+</div>
+
+
+
+
+### <a href="#week11" data-toggle="collapse">Week 11: Considering additional measures</a>
+<div id="week11" class="collapse">
+
+#### Learning Objectives
+```{r}
+w11 <- details(11)
+pander(w11$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w11$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w11$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w11$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w11$fri)
+```
+
+</div>
+
+
+
+
+### <a href="#week12" data-toggle="collapse">Week 12: Multivariable Regression analysis</a>
+<div id="week12" class="collapse">
+
+#### Learning Objectives
+```{r}
+w12 <- details(12)
+pander(w12$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w12$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w12$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w12$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w12$fri)
+```
+
+</div>
+
+
+
+
+### <a href="#week13 data-toggle="collapse">Week 13: Logistic Regression</a>
+<div id="week13" class="collapse">
+
+#### Learning Objectives
+```{r}
+w13 <- details(13)
+pander(w13$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w13$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w13$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w13$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w13$fri)
+```
+
+</div>
+
+
+
+
+### <a href="#week14 data-toggle="collapse">Week 14: Model building strategies</a>
+<div id="week14" class="collapse">
+
+#### Learning Objectives
+```{r}
+w14 <- details(14)
+pander(w14$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w14$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w14$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w14$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w14$fri)
+```
+
+</div>
+
+
+
+
+### <a href="#week15 data-toggle="collapse">Week 15: Disseminating Research</a>
+<div id="week15" class="collapse">
+
+#### Learning Objectives
+```{r}
+w15 <- details(15)
+pander(w15$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w15$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w15$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w15$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w15$fri)
+```
+
+</div>
+
+
+
+
 
 ## Calendar
 
