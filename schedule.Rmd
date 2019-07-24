@@ -20,12 +20,18 @@ Unless specified otherwise, all assignments are due at midnight on the due date 
 rawdat <- read_xlsx("schedule_315.xlsx", sheet='weekly_schedule')
 
 # Set semester start date and format weeks nicely
-start.date <- as.Date("2019-08-19")
-wn <- which(!is.na(rawdat$wknum)) # which rows have week numbers
-wkdt <- rawdat$wknum[wn]*7 + start.date # get the week dates
-weekdates <- paste0("Week ", rawdat$wknum[wn], " (", format(wkdt, "%m/%d") , ")") # format the display
-#link <- paste0("wk/wk", rawdat$wknum, ".html") # create link to weekly detail webpage
-#week_details <- sprintf("[%s](%s)",rawdat$Week[wn], link[wn]) # put it together
+start.date <- as.Date("2019-08-25")
+
+# which rows have week numbers (manually add line number for break week and finals)
+wn <- c(which(!is.na(rawdat$wknum)),40, 45) %>% sort() 
+
+# generate list of weekdates
+wkdt <- seq.Date(start.date, start.date+7*16, by='week')
+
+# format for display
+weekdates <- paste0("Week ", rawdat$wknum[wn], " (", format(wkdt, "%m/%d") , ")") 
+weekdates[14] <- "Fall Break (11/24)"
+weekdates[17] <- "Finals Week (12/15)"
 
 # Filter rows to display on schedule
 out <- rawdat[which(rawdat$Order==1.1):nrow(rawdat), ]%>% select(Topic:Assignments)
@@ -44,6 +50,7 @@ out$Quiz <- gsub(" (", " (<b>", out$Quiz, fixed=TRUE)
 out$Quiz <- gsub(" )", "</b>)", out$Quiz, fixed=TRUE)
 
 wk.labs <-  "background-color: #4d6600; color: #fff;"
+hlt.wks <-  "background-color: #754b13; color: #fff;"
 ```
 
 ```{r, results='asis'}
@@ -55,7 +62,7 @@ out %>%
   pack_rows(weekdates[3], wn[3],  wn[4]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[4], wn[4],  wn[5]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[5], wn[5],  wn[6]-1, label_row_css =wk.labs) %>%
-  pack_rows(weekdates[6], wn[6],  wn[7]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[6], wn[6],  wn[7]-1, label_row_css =hlt.wks) %>%
   pack_rows(weekdates[7], wn[7],  wn[8]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[8], wn[8],  wn[9]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[9], wn[9],  wn[10]-1, label_row_css =wk.labs) %>%
@@ -63,13 +70,13 @@ out %>%
   pack_rows(weekdates[11], wn[11],  wn[12]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[12], wn[12],  wn[13]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[13], wn[13],  wn[14]-1, label_row_css =wk.labs) %>%
-  pack_rows(weekdates[14], wn[14],  wn[15]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[14], wn[14],  wn[15]-1, label_row_css =hlt.wks) %>%
   pack_rows(weekdates[15], wn[15],  wn[16]-1, label_row_css =wk.labs) %>%
-  pack_rows(paste0("Finals Week (", weekdates[16], ")"), wn[16],  nrow(rawdat), 
-            label_row_css =wk.labs) %>%
-  column_spec(1, width = "35%") %>% 
-  column_spec(2, width = "7%") %>%
-  column_spec(3, width = "7%") %>%
+  pack_rows(weekdates[16], wn[16],  wn[17]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[17], wn[17],  wn[17], label_row_css =hlt.wks) %>%
+  column_spec(1, width = "30%") %>% 
+  column_spec(2, width = "10%") %>%
+  column_spec(3, width = "10%") %>%
   column_spec(4, width = "10%") %>% 
   column_spec(5, width = "35%")
 ```
