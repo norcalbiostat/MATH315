@@ -55,11 +55,13 @@ out.hw <- hw %>% mutate(name = gsub("hw/|_template",  "", filenames),
 * Video 14 Multivariable Models and Confounding (57:43) https://passiondrivenstatistics.com/2016/10/06/r-chapter-17/ 
 * Video 15 Writing for your poster (16:03) https://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/
 
+<!---
 # Donatello's Videos
 
-#### As of Mon 2/4 you have to access these through Blackboard. 
+
 * Welcome to Spring 19 https://670832.kaf.kaltura.com/media/Welcome+intro+video+sp19/0_non0k1h7
 * Importing Data into R https://670832.kaf.kaltura.com/media/How+to+import+data+into+R/0_w6buqbaw
+--->
 
 ----
 
