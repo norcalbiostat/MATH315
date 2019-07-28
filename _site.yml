@@ -32,7 +32,7 @@ navbar:
     menu:
     - text: R Studio Cloud
       icon: fa-code
-      href: https://rstudio.cloud/spaces/21783/projects 
+      href: https://rstudio.cloud/
     - text: Google Drive
       icon: fa-google
       href: https://drive.google.com/drive/folders/12ra-OprzeMOhokBwgPeQ66RnHmnToMoO?usp=sharing

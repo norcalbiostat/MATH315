@@ -4,62 +4,21 @@ output:
   html_document: 
     toc: yes
     toc_float: yes
+    css: ../css/sandstone.css
 date: "Last Updated `r Sys.time()`"
 ---
 
 
-# Getting Access To R 
-
-## Where do I get acccess to R and R Studio?
-* Option 1: Use R Studio in the cloud. 
-    - Free account that you can access anywhere. 
-    - I have setup the basic environment for you already. Ready to go immediately. 
-    - The link to our class working environment can be found in blackboard. 
-* Option 2: Download and install R, R Studio, and a lightweight version of LaTeX. 
-    - Need help? Check out the DataCamp lesson on working with R Studio (Orientation chapter only) https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1 
-    - You will then have to install all the necessary packages that we use in this class. 
-    - You will also have to set the following preferences: 
-        - In RStudio the file menu go to Tools then Global Options.
-        - Uncheck "Restore .RData into workspace at startup" and "Always save history""
-        - Where it says "Save workspace to .RData on exit:" Select "Never""
-        - Click apply then ok.
-
-----
-
-# Help locations
-
-## Online
-* Chico [R User Group](https://groups.google.com/forum/#!forum/chico-rug)
-* UCLA IDRE https://stats.idre.ucla.edu/r/ 
-* Cookbook for R http://www.cookbook-r.com/
-* R Examples repository http://dwoll.de/rexrepos/index.html 
-* R Cheat Sheets https://www.rstudio.com/resources/cheatsheets/
-
-## In Person
-* **Community Coding** - TR 2-4pm, THMA 116 [[flyer]](cc_flyer_s19.pdf)
-* **Robin Donatello** - Stat professor. Holt 202 Office Hours: M 10-11am, T: 11-12noon, F 12-1pm
-* **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
-* **Peer Mentors** -See [[Peer mentor]](peer_mentor.html) page for contact info. 
-* **Math Learning Lab (MLIB 4th floor)** 
-* **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
-
-----
-
-# R Markdown & R Studio
-
-* R Markdown https://rmarkdown.rstudio.com/lesson-1.html 
-* R Studio Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
-* R Markdown Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
-
-----
-
-# General R Programming
-
-* Base R Cheatsheet http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf
-* Guides available in R Studio Cloud
-* PDS Common errors [[DOCX]](R_Resources/Common Errors in R.docx)
-* R Cookbook http://www.cookbook-r.com/
-* Quick-R http://www.statmethods.net/
+# Accessing R and R Studio
+* Option 1: Download and install the programs on your computer. 
+    - Advantage is that you will always have access to these programs. 
+    - You will have more "ownership" of your program
+    - Follow [these lecture notes](https://norcalbiostat.github.io/MATH130/notes/02_setup.html) to walk you through the installation.
+* Option 2: Use R Studio in the cloud. 
+    - Free account that you can access from any computer
+    - Sign up link in the `assignments` channel description in [Slack](https://math315-s19.slack.com/). 
+    - Requires solid internet connection
+    - Still in beta testing, but I have no major complaints yet. 
 
 ----
 
@@ -93,35 +52,12 @@ Useful functions in R
     - E.g. For renaming variables/columns to something more meaningful.  For example, say you want to rename variables `S3AQ8B1` through `S3AQ8B14` as `NDS1` through `NDS17` because they each represent different nicotine dependence symptoms.  You can call the names of your dataset and reassign them to a concatenation of new strings: `names(data) <- c("NDS1", "NDS2", ..., "NDS17")`
 * `rep()`: Takes a value or a string and repeats it a specified number of times.  Takes 2 inputs: the thing to repeat, and how many times to repeat it.
 * `length()` : gives the length of an object, e.g. length(data$id) to see how many subjects
-* `dim()` : gives the dimensions of an object (doesn’t work for one-dimensional objects).  E.g. dim(data) returns two numbers: first the number of rows (subjects) and then the number of columns (variables) in your data set.
+* `dim()` : gives the dimensions of an object (doesn't work for one-dimensional objects).  E.g. dim(data) returns two numbers: first the number of rows (subjects) and then the number of columns (variables) in your data set.
 * `as.numeric()`: If you are recoding or creating a new variable, this makes it a quantitative variable
 * `as.factor()`: If you are recoding or creating a new variable, this makes it a categorical variable
 * `mean()`: Returns the mean/average of the input (usually a variable/column in dataset)
 * `sd()`: Returns the standard deviation of the input (usually a variable/column in dataset)
 * `summary()`: Returns a summary of the distribution of the input (or, returns a model summary if the input is a statistical model, e.g. a regression)
-
-----
-
-# Data Cleaning
-* Data Transformation using dplyr https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
-* Data Camp https://www.datacamp.com/courses/cleaning-data-in-r 
-* Applied Stats Notes Chapter 1 https://norcalbiostat.github.io/AppliedStatistics_notes/index.html 
-
-
-----
-
-# Graphics
-* Data Visualization using ggplot https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf
-* PDS Graphing in GGplot [[PDF]](R_Resources/QC201_Rgraphing.pdf)
-* PDS Bivariate graphing [[PDF]](R_Resources/R_Bivariate_Graphing_Handout.pdf)
-* Math 130 https://norcalbiostat.github.io/MATH130/full_data_viz_tutorial.html 
-* R Graphics Cookbook http://www.cookbook-r.com/Graphs/
-* Quick R https://www.statmethods.net/graphs/index.html
-* STHDA http://www.sthda.com/english/wiki/data-visualization
-* Data Camp  https://www.datacamp.com/courses/data-visualization-with-ggplot2-1 
-* R Graph Gallery https://www.r-graph-gallery.com/ 
-
-
 
 
 ----
@@ -133,7 +69,7 @@ At some point you need to move beyond "copy-paste-pray" and into understanding w
 
 * When working in a RMD file, Knit after every code chunk. When something breaks, you have a better idea of what you just added that could have caused it to break. 
 * Unicode errors in knitting imply that you copy/pasted some symbol from outside of R studio that cannot be translated. Greek symbols are often to blame. 
-* Don't copy/paste large and complex code chunks that have graphics that contain a lot of bells and whistles or code you don't understand. Take it one line at a time and work to understand (by looking at what changes in the output) what that line of code actualy does. Just make the minimal graph first to ensure it works before you prettify it up
+* Don't copy/paste large and complex code chunks that have graphics that contain a lot of bells and whistles or code you don't understand. Take it one line at a time and work to understand (by looking at what changes in the output) what that line of code actually does. Just make the minimal graph first to ensure it works before you prettify it up
 * When you start a new file, make sure your working environment is cleaned out. Don't let old variables hanging out in your environment mess up your new work. 
 * Open and look at your homework PDF file before submitting. Does your code run off the page? Do all your graphics show up? 
 
@@ -141,7 +77,7 @@ Break up your code chunks into smaller pieces. If you do 10 things inside one co
 
 ----
 
-# Common error mesages
+# Common error messages
 
 
 When errors occur, because they always will, start to read the error messages with an intent to understand what they are saying. Always search the discussion board for similar problems before posting, and always post in a public channel so others can benefit from learning the solution/debugging strategy. 
@@ -154,5 +90,70 @@ Here are some common error messages:
 * `something has length 0` or `all variables have to have the same lengths` --> One of the variables that you are referencing does not exist (and thus has length 0)
     
     
+# Seeking Additional Help
+Also refer to the guidelines/instructions on how to seek help from the [Math 130 lecture notes](https://norcalbiostat.github.io/MATH130/notes/02_setup.html#seeking_help)
+
+
+## Online
+* R Studio Cloud has built in guides, primers, and cheat sheets. 
+* UCLA IDRE https://stats.idre.ucla.edu/r/ 
+* Cookbook for R http://www.cookbook-r.com/
+* R Examples repository http://dwoll.de/rexrepos/index.html 
+* R Cheat Sheets https://www.rstudio.com/resources/cheatsheets/
+
+## Discussion Forums
+* R Studio community discussion board https://community.rstudio.com/
+* Chico [R User Group](https://groups.google.com/forum/#!forum/chico-rug)
+* Stack Overflow https://stackoverflow.com/questions/tagged/r
+* Reddit https://www.reddit.com/r/rstats/ 
+* Twitter #rstats 
+
+## In Person
+* **Community Coding** - TWR 2-4pm, YOLO 206 [[flyer]](cc_flyer_s19.pdf)
+* **Robin Donatello** - Stat professor. Holt 202 Office Hours: TBD
+* **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
+* **Peer Mentors** -See [[Peer mentor]](peer_mentor.html) page for contact info. 
+* **Math Learning Lab (MLIB 4th floor)** 
+* **[R Meetup group](https://www.meetup.com/Chico-R-Users-Group)** Coding over coffee (or adult beverages) anyone? 
+
+----
+
+## R Markdown & R Studio
+
+* R Markdown https://rmarkdown.rstudio.com/lesson-1.html 
+* R Studio Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
+* R Markdown Cheatsheet https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
+
+----
+
+## General R Programming
+
+* Base R Cheatsheet http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf
+* Guides available in R Studio Cloud
+* PDS Common errors [[DOCX]](R_Resources/Common Errors in R.docx)
+* R Cookbook http://www.cookbook-r.com/
+* Quick-R http://www.statmethods.net/
+
+----
+
+## Data Cleaning
+* Data Transformation using dplyr https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
+* Applied Stats Notes Chapter 1 https://norcalbiostat.github.io/AppliedStatistics_notes/index.html 
+
+
+----
+
+## Graphics
+* Data Visualization using ggplot https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf
+* PDS Graphing in GGplot [[PDF]](R_Resources/QC201_Rgraphing.pdf)
+* PDS Bivariate graphing [[PDF]](R_Resources/R_Bivariate_Graphing_Handout.pdf)
+* Math 130 https://norcalbiostat.github.io/MATH130/full_data_viz_tutorial.html 
+* R Graphics Cookbook http://www.cookbook-r.com/Graphs/
+* Quick R https://www.statmethods.net/graphs/index.html
+* STHDA http://www.sthda.com/english/wiki/data-visualization
+* R Graph Gallery https://www.r-graph-gallery.com/ 
+
+
+
 
     

@@ -56,7 +56,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
+<link rel="stylesheet" href="..\css\sandstone.css" type="text/css" />
 
 
 
@@ -392,7 +392,7 @@ div.tocify {
       </a>
     </li>
     <li>
-      <a href="reading/RAD_course_notes_S19.pdf">
+      <a href="reading/RAD_course_notes_F19.pdf">
         <span class="fa fa-file-code"></span>
          
         Course Packet
@@ -419,9 +419,7 @@ div.tocify {
     <li>
       <a href="project.html">Project Instructions</a>
     </li>
-    <li>
-      <a href="https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing">Peer Review Assignment</a>
-    </li>
+    <li class="dropdown-header">Peer Review Assignment</li>
     <li>
       <a href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Project Data (Google Drive)</a>
     </li>
@@ -437,21 +435,21 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://rstudio.cloud/spaces/8317/projects">
+      <a href="https://rstudio.cloud/">
         <span class="fa fa-code"></span>
          
         R Studio Cloud
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/drive/folders/1iy7Wh5iOw2EpyXAQUZlCVSXFH53i_Xdb?usp=sharing">
+      <a href="https://drive.google.com/drive/folders/12ra-OprzeMOhokBwgPeQ66RnHmnToMoO?usp=sharing">
         <span class="fa fa-google"></span>
          
         Google Drive
       </a>
     </li>
     <li>
-      <a href="https://math315-s19.slack.com/">
+      <a href="https://math315-f19.slack.com/">
         <span class="fa fa-slack"></span>
          
         Slack (class discussions)
@@ -462,13 +460,6 @@ div.tocify {
         <span class="fa fa-video-camera"></span>
          
         Zoom (video conference)
-      </a>
-    </li>
-    <li>
-      <a href="https://www.datacamp.com/">
-        <span class="fa fa-institution"></span>
-         
-        Data Camp (Learn to code)
       </a>
     </li>
   </ul>
@@ -499,7 +490,7 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="syllabus_315_s19.html">Syllabus</a>
+      <a href="syllabus_315_f19.html">Syllabus</a>
     </li>
     <li>
       <a href="help_assignments.html">Submitting homework</a>
@@ -523,80 +514,27 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Getting Help with Programming in R</h1>
-<h4 class="date">Last Updated 2019-07-23 19:01:29</h4>
+<h4 class="date">Last Updated 2019-07-28 06:30:18</h4>
 
 </div>
 
 
-<div id="getting-access-to-r" class="section level1">
-<h1>Getting Access To R</h1>
-<div id="where-do-i-get-acccess-to-r-and-r-studio" class="section level2">
-<h2>Where do I get acccess to R and R Studio?</h2>
+<div id="accessing-r-and-r-studio" class="section level1">
+<h1>Accessing R and R Studio</h1>
 <ul>
-<li>Option 1: Use R Studio in the cloud.
+<li>Option 1: Download and install the programs on your computer.
 <ul>
-<li>Free account that you can access anywhere.</li>
-<li>I have setup the basic environment for you already. Ready to go immediately.</li>
-<li>The link to our class working environment can be found in blackboard.</li>
+<li>Advantage is that you will always have access to these programs.</li>
+<li>You will have more “ownership” of your program</li>
+<li>Follow <a href="https://norcalbiostat.github.io/MATH130/notes/02_setup.html">these lecture notes</a> to walk you through the installation.</li>
 </ul></li>
-<li>Option 2: Download and install R, R Studio, and a lightweight version of LaTeX.
+<li>Option 2: Use R Studio in the cloud.
 <ul>
-<li>Need help? Check out the DataCamp lesson on working with R Studio (Orientation chapter only) <a href="https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1" class="uri">https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1</a></li>
-<li>You will then have to install all the necessary packages that we use in this class.</li>
-<li>You will also have to set the following preferences:
-<ul>
-<li>In RStudio the file menu go to Tools then Global Options.</li>
-<li>Uncheck “Restore .RData into workspace at startup” and “Always save history”"</li>
-<li>Where it says “Save workspace to .RData on exit:” Select “Never”"</li>
-<li>Click apply then ok.</li>
+<li>Free account that you can access from any computer</li>
+<li>Sign up link in the <code>assignments</code> channel description in <a href="https://math315-s19.slack.com/">Slack</a>.</li>
+<li>Requires solid internet connection</li>
+<li>Still in beta testing, but I have no major complaints yet.</li>
 </ul></li>
-</ul></li>
-</ul>
-<hr />
-</div>
-</div>
-<div id="help-locations" class="section level1">
-<h1>Help locations</h1>
-<div id="online" class="section level2">
-<h2>Online</h2>
-<ul>
-<li>Chico <a href="https://groups.google.com/forum/#!forum/chico-rug">R User Group</a></li>
-<li>UCLA IDRE <a href="https://stats.idre.ucla.edu/r/" class="uri">https://stats.idre.ucla.edu/r/</a></li>
-<li>Cookbook for R <a href="http://www.cookbook-r.com/" class="uri">http://www.cookbook-r.com/</a></li>
-<li>R Examples repository <a href="http://dwoll.de/rexrepos/index.html" class="uri">http://dwoll.de/rexrepos/index.html</a></li>
-<li>R Cheat Sheets <a href="https://www.rstudio.com/resources/cheatsheets/" class="uri">https://www.rstudio.com/resources/cheatsheets/</a></li>
-</ul>
-</div>
-<div id="in-person" class="section level2">
-<h2>In Person</h2>
-<ul>
-<li><strong>Community Coding</strong> - TR 2-4pm, THMA 116 <a href="cc_flyer_s19.pdf">[flyer]</a></li>
-<li><strong>Robin Donatello</strong> - Stat professor. Holt 202 Office Hours: M 10-11am, T: 11-12noon, F 12-1pm</li>
-<li><strong>Edward Roualdes</strong> - Stat professor. Holt 204 - <a href="mailto:eroualdes@csuchico.edu" class="email">eroualdes@csuchico.edu</a> Often at community coding.</li>
-<li><strong>Peer Mentors</strong> -See <a href="peer_mentor.html">[Peer mentor]</a> page for contact info.</li>
-<li><strong>Math Learning Lab (MLIB 4th floor)</strong></li>
-<li><strong><a href="https://www.meetup.com/Chico-R-Users-Group">R Meetup group</a></strong> Coding over coffee (or adult beverages) anyone?</li>
-</ul>
-<hr />
-</div>
-</div>
-<div id="r-markdown-r-studio" class="section level1">
-<h1>R Markdown &amp; R Studio</h1>
-<ul>
-<li>R Markdown <a href="https://rmarkdown.rstudio.com/lesson-1.html" class="uri">https://rmarkdown.rstudio.com/lesson-1.html</a></li>
-<li>R Studio Cheatsheet <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf</a></li>
-<li>R Markdown Cheatsheet <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf</a></li>
-</ul>
-<hr />
-</div>
-<div id="general-r-programming" class="section level1">
-<h1>General R Programming</h1>
-<ul>
-<li>Base R Cheatsheet <a href="http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf" class="uri">http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf</a></li>
-<li>Guides available in R Studio Cloud</li>
-<li>PDS Common errors <a href="R_Resources/Common%20Errors%20in%20R.docx">[DOCX]</a></li>
-<li>R Cookbook <a href="http://www.cookbook-r.com/" class="uri">http://www.cookbook-r.com/</a></li>
-<li>Quick-R <a href="http://www.statmethods.net/" class="uri">http://www.statmethods.net/</a></li>
 </ul>
 <hr />
 </div>
@@ -648,45 +586,21 @@ div.tocify {
 </ul>
 <hr />
 </div>
-<div id="data-cleaning" class="section level1">
-<h1>Data Cleaning</h1>
-<ul>
-<li>Data Transformation using dplyr <a href="https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf</a></li>
-<li>Data Camp <a href="https://www.datacamp.com/courses/cleaning-data-in-r" class="uri">https://www.datacamp.com/courses/cleaning-data-in-r</a></li>
-<li>Applied Stats Notes Chapter 1 <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html" class="uri">https://norcalbiostat.github.io/AppliedStatistics_notes/index.html</a></li>
-</ul>
-<hr />
-</div>
-<div id="graphics" class="section level1">
-<h1>Graphics</h1>
-<ul>
-<li>Data Visualization using ggplot <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf</a></li>
-<li>PDS Graphing in GGplot <a href="R_Resources/QC201_Rgraphing.pdf">[PDF]</a></li>
-<li>PDS Bivariate graphing <a href="R_Resources/R_Bivariate_Graphing_Handout.pdf">[PDF]</a></li>
-<li>Math 130 <a href="https://norcalbiostat.github.io/MATH130/full_data_viz_tutorial.html" class="uri">https://norcalbiostat.github.io/MATH130/full_data_viz_tutorial.html</a></li>
-<li>R Graphics Cookbook <a href="http://www.cookbook-r.com/Graphs/" class="uri">http://www.cookbook-r.com/Graphs/</a></li>
-<li>Quick R <a href="https://www.statmethods.net/graphs/index.html" class="uri">https://www.statmethods.net/graphs/index.html</a></li>
-<li>STHDA <a href="http://www.sthda.com/english/wiki/data-visualization" class="uri">http://www.sthda.com/english/wiki/data-visualization</a></li>
-<li>Data Camp <a href="https://www.datacamp.com/courses/data-visualization-with-ggplot2-1" class="uri">https://www.datacamp.com/courses/data-visualization-with-ggplot2-1</a></li>
-<li>R Graph Gallery <a href="https://www.r-graph-gallery.com/" class="uri">https://www.r-graph-gallery.com/</a></li>
-</ul>
-<hr />
-</div>
 <div id="good-coding-practices" class="section level1">
 <h1>Good Coding Practices</h1>
 <p>At some point you need to move beyond “copy-paste-pray” and into understanding what the code is saying so you can apply it to other situations. Here are some guidelines to work with.</p>
 <ul>
 <li>When working in a RMD file, Knit after every code chunk. When something breaks, you have a better idea of what you just added that could have caused it to break.</li>
 <li>Unicode errors in knitting imply that you copy/pasted some symbol from outside of R studio that cannot be translated. Greek symbols are often to blame.</li>
-<li>Don’t copy/paste large and complex code chunks that have graphics that contain a lot of bells and whistles or code you don’t understand. Take it one line at a time and work to understand (by looking at what changes in the output) what that line of code actualy does. Just make the minimal graph first to ensure it works before you prettify it up</li>
+<li>Don’t copy/paste large and complex code chunks that have graphics that contain a lot of bells and whistles or code you don’t understand. Take it one line at a time and work to understand (by looking at what changes in the output) what that line of code actually does. Just make the minimal graph first to ensure it works before you prettify it up</li>
 <li>When you start a new file, make sure your working environment is cleaned out. Don’t let old variables hanging out in your environment mess up your new work.</li>
 <li>Open and look at your homework PDF file before submitting. Does your code run off the page? Do all your graphics show up?</li>
 </ul>
 <p>Break up your code chunks into smaller pieces. If you do 10 things inside one code chunk and get an error, how do you know where the error is? If they all work smoothly/without error then you can put each piece into the same code chunk for readability.</p>
 <hr />
 </div>
-<div id="common-error-mesages" class="section level1">
-<h1>Common error mesages</h1>
+<div id="common-error-messages" class="section level1">
+<h1>Common error messages</h1>
 <p>When errors occur, because they always will, start to read the error messages with an intent to understand what they are saying. Always search the discussion board for similar problems before posting, and always post in a public channel so others can benefit from learning the solution/debugging strategy.</p>
 <p>Here are some common error messages:</p>
 <ul>
@@ -695,6 +609,83 @@ div.tocify {
 <li><code>continuous value applied to a discrete scale</code> - you are trying to <code>fill</code>, <code>color</code> or do something that requires a categorical variable, but the variable you are giving it is continuous. Look in the data set you’re working on right then and check the data type using <code>str()</code> or <code>class()</code>. If it is <code>int</code> or <code>num</code> then its not a factor variable!</li>
 <li><code>something has length 0</code> or <code>all variables have to have the same lengths</code> –&gt; One of the variables that you are referencing does not exist (and thus has length 0)</li>
 </ul>
+</div>
+<div id="seeking-additional-help" class="section level1">
+<h1>Seeking Additional Help</h1>
+<p>Also refer to the guidelines/instructions on how to seek help from the <a href="https://norcalbiostat.github.io/MATH130/notes/02_setup.html#seeking_help">Math 130 lecture notes</a></p>
+<div id="online" class="section level2">
+<h2>Online</h2>
+<ul>
+<li>R Studio Cloud has built in guides, primers, and cheat sheets.</li>
+<li>UCLA IDRE <a href="https://stats.idre.ucla.edu/r/" class="uri">https://stats.idre.ucla.edu/r/</a></li>
+<li>Cookbook for R <a href="http://www.cookbook-r.com/" class="uri">http://www.cookbook-r.com/</a></li>
+<li>R Examples repository <a href="http://dwoll.de/rexrepos/index.html" class="uri">http://dwoll.de/rexrepos/index.html</a></li>
+<li>R Cheat Sheets <a href="https://www.rstudio.com/resources/cheatsheets/" class="uri">https://www.rstudio.com/resources/cheatsheets/</a></li>
+</ul>
+</div>
+<div id="discussion-forums" class="section level2">
+<h2>Discussion Forums</h2>
+<ul>
+<li>R Studio community discussion board <a href="https://community.rstudio.com/" class="uri">https://community.rstudio.com/</a></li>
+<li>Chico <a href="https://groups.google.com/forum/#!forum/chico-rug">R User Group</a></li>
+<li>Stack Overflow <a href="https://stackoverflow.com/questions/tagged/r" class="uri">https://stackoverflow.com/questions/tagged/r</a></li>
+<li>Reddit <a href="https://www.reddit.com/r/rstats/" class="uri">https://www.reddit.com/r/rstats/</a></li>
+<li>Twitter #rstats</li>
+</ul>
+</div>
+<div id="in-person" class="section level2">
+<h2>In Person</h2>
+<ul>
+<li><strong>Community Coding</strong> - TWR 2-4pm, YOLO 206 <a href="cc_flyer_s19.pdf">[flyer]</a></li>
+<li><strong>Robin Donatello</strong> - Stat professor. Holt 202 Office Hours: TBD</li>
+<li><strong>Edward Roualdes</strong> - Stat professor. Holt 204 - <a href="mailto:eroualdes@csuchico.edu" class="email">eroualdes@csuchico.edu</a> Often at community coding.</li>
+<li><strong>Peer Mentors</strong> -See <a href="peer_mentor.html">[Peer mentor]</a> page for contact info.</li>
+<li><strong>Math Learning Lab (MLIB 4th floor)</strong></li>
+<li><strong><a href="https://www.meetup.com/Chico-R-Users-Group">R Meetup group</a></strong> Coding over coffee (or adult beverages) anyone?</li>
+</ul>
+<hr />
+</div>
+<div id="r-markdown-r-studio" class="section level2">
+<h2>R Markdown &amp; R Studio</h2>
+<ul>
+<li>R Markdown <a href="https://rmarkdown.rstudio.com/lesson-1.html" class="uri">https://rmarkdown.rstudio.com/lesson-1.html</a></li>
+<li>R Studio Cheatsheet <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf</a></li>
+<li>R Markdown Cheatsheet <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf</a></li>
+</ul>
+<hr />
+</div>
+<div id="general-r-programming" class="section level2">
+<h2>General R Programming</h2>
+<ul>
+<li>Base R Cheatsheet <a href="http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf" class="uri">http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf</a></li>
+<li>Guides available in R Studio Cloud</li>
+<li>PDS Common errors <a href="R_Resources/Common%20Errors%20in%20R.docx">[DOCX]</a></li>
+<li>R Cookbook <a href="http://www.cookbook-r.com/" class="uri">http://www.cookbook-r.com/</a></li>
+<li>Quick-R <a href="http://www.statmethods.net/" class="uri">http://www.statmethods.net/</a></li>
+</ul>
+<hr />
+</div>
+<div id="data-cleaning" class="section level2">
+<h2>Data Cleaning</h2>
+<ul>
+<li>Data Transformation using dplyr <a href="https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf</a></li>
+<li>Applied Stats Notes Chapter 1 <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html" class="uri">https://norcalbiostat.github.io/AppliedStatistics_notes/index.html</a></li>
+</ul>
+<hr />
+</div>
+<div id="graphics" class="section level2">
+<h2>Graphics</h2>
+<ul>
+<li>Data Visualization using ggplot <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf</a></li>
+<li>PDS Graphing in GGplot <a href="R_Resources/QC201_Rgraphing.pdf">[PDF]</a></li>
+<li>PDS Bivariate graphing <a href="R_Resources/R_Bivariate_Graphing_Handout.pdf">[PDF]</a></li>
+<li>Math 130 <a href="https://norcalbiostat.github.io/MATH130/full_data_viz_tutorial.html" class="uri">https://norcalbiostat.github.io/MATH130/full_data_viz_tutorial.html</a></li>
+<li>R Graphics Cookbook <a href="http://www.cookbook-r.com/Graphs/" class="uri">http://www.cookbook-r.com/Graphs/</a></li>
+<li>Quick R <a href="https://www.statmethods.net/graphs/index.html" class="uri">https://www.statmethods.net/graphs/index.html</a></li>
+<li>STHDA <a href="http://www.sthda.com/english/wiki/data-visualization" class="uri">http://www.sthda.com/english/wiki/data-visualization</a></li>
+<li>R Graph Gallery <a href="https://www.r-graph-gallery.com/" class="uri">https://www.r-graph-gallery.com/</a></li>
+</ul>
+</div>
 </div>
 
 

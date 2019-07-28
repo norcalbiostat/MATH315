@@ -1,5 +1,5 @@
 ---
-title: "HW 01- Introduction to the class, using data, self regulated learning and research team formation"
+title: "HW 01- Introduction to the class."
 output:
   html_document:
     theme: sandstone
@@ -11,7 +11,7 @@ output:
 ---
 
 # Assignment Overview
-The purpose of this assignment is to get you connected with R Studio in the cloud, to do a little self reflection and examination of your learning habits, and to get to know the members of your clas
+The purpose of this assignment is to get you working in R Studio, to do a little self reflection and examination of your learning habits, and to recognize the amount of resources to learn R you have available to you. 
  
 
 # Instructions
@@ -19,9 +19,10 @@ The specific details for each step are described below.
 
 * You will answer the questions directly in the Rmarkdown template file provided. 
     - This file is called `hw01_introduction` and is downloaded from the course website. 
-    - This must be put in your class folder. Do not click on the file and open it from your browser window. 
+    - This must be put in your `homework` folder. Do not click on the file and open it from your browser window. 
 * When you are done, spellcheck your work using the spellcheck button in R Studio (2 icons to the left of Knit). 
-* Knit the final document. When it opens, click the download icon in the upper right corner. 
+* Knit the final document. It will automatically open in a new window. 
+    - You can knit to html while working on the assignment, but the final document must be a PDF. 
 * Rename this file `hw01_username` i.e. `hw01_rdonatello.pdf` 
 * Upload this file to Google Drive in the **01 Introduction** folder for your section. 
 
@@ -35,23 +36,19 @@ The specific details for each step are described below.
         
 ## R and R Studio
 You have two choices for using R this semester. You can install the necessary programs on your personal computer, or you can use R studio cloud. If you have already taken or are concurrently enrolled in Math 130 you should install these programs on your own computer. 
-### Install R and R Studio
-* Follow the instructions from Math 130 to install and get started with R and R Studio. https://norcalbiostat.github.io/MATH130/notes/02_setup.html
-* Complete all steps (including watching the video and organizing your working directory)
+
+1. Install R and R Studio
+    * Follow the instructions from Math 130 to install and get started with R and R Studio. https://norcalbiostat.github.io/MATH130/notes/02_setup.html
+    * Complete all steps (including installing packages and reading on how to get help)
+    * You must install `LaTeX` via the `tinytex` package to turn your homework into PDF. 
 
 
-* If you are using R Studio in the cloud, follow these additional steps: 
-1. Log into R Studio cloud, and click on our class workspace. 
-2. Click on the `stats_project`. This will create a copy the R project into your own workspace. 
-    - An "R project" is a pre-configured R environment along with a collection of files. 
-3. Download the `hw01_introduction_template` from the class website, then upload
-4. Replace your name and date in the header section. 
-    - Don't delete the quotation marks. 
-5. Complete the rest of the assignment below by writing the answers directly in the template. 
-7. To see what the final report will look like, click the down arrow next to the `Knit` button and choose PDF. 
-    - This turns your code file into a PDF report.
-    - Do this often to make sure that your code and output is working as intended. 
+2. Everyone learns differently, and the resources that are required in this class (PDS videos, course notes) may not quite work to explain a particular topic. **Find 3 different types of resources to learn R and Statistics. At least 2 must be chosen from provided resources from one of my websites**. These could include a video series other than the ones assigned with the course (passion drive stats), cheatsheets, discussion boards, books, course notes from a different class, etc. For each source: 
+    * Explain where you found it (include URL as applicable)
+    * When was it last updated (how real time is your source)
+    * Describe how you will use this source
 
+3. Using the code chunk provided, calculate `2+2`
 
 \newpage
 
@@ -96,7 +93,4 @@ Answer at least _4_ of the following questions in this document.
 
 **Can you think of other good learning practices that the reading didn't mention?**
 
-\newpage
-
-# Part III: Introduction to R
 

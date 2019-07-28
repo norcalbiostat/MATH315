@@ -5,7 +5,28 @@ date: "Date"
 output: pdf_document
 ---
 
+# Part I: Resources for learning R
 
+1. Resource 1: 
+    * Found at: 
+    * Last updated:
+    * How to used:
+
+2. Resource 2: 
+    * Found at: 
+    * Last updated:
+    * How to used:
+
+3. Resource 3: 
+    * Found at: 
+    * Last updated:
+    * How to used:
+  
+Type `2+2` in the code chunk below. 
+```{r}
+
+```
+  
 # Part II: Becoming a better learner. 
 
 ### Procrastination
@@ -34,21 +55,3 @@ Answer at least _4_ of the following questions from the reading.
 
 
 **Can you think of other good learning practices that the reading didn't mention?**
-
-\newpage
-
-# PART III: Data Analysis Topic
-
-### Team Formation
-
-**Team Roster** 
-
-1.
-2. 
-3. 
-4. 
-
-\newpage
-
-### Area of research interest
-
