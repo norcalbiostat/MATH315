@@ -47,12 +47,14 @@ navbar:
   - text: Peer Mentors
     icon: fa-users
     href: peer_mentors.html
-  - text: R programming
-    icon: fa-registered
-    href: help_R.html    
   - text: Help
     icon: fa-question
     menu:
+    - text: R programming
+      href: help_R.html    
+    - text: R - Cheat Sheets
+      icon: 
+      href: https://www.rstudio.com/resources/cheatsheets/
     - text: Syllabus
       href: syllabus_315_f19.html
     - text: Submitting homework
