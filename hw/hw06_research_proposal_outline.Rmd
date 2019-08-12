@@ -1,0 +1,94 @@
+---
+title: "HW 06 - Research Proposal (outline)"
+output:
+  html_document:
+    theme: sandstone
+    highlight: tango
+    toc: yes
+    toc_float: yes
+    css: ../css/sandstone.css
+  pdf_document: default
+---
+
+# Overview
+
+Good statistics starts with good science. Determining which inferential analysis procedure is appropriate for your research question is dependent on a good research question. To help you really clarify and solidify what it is you are researching, why it's important and why others should care about your work you are going to write a research proposal (outline). This will help you start to frame your story, so when you get to the final presentation you have a solid understanding of the background and current knowledge about your subject. 
+
+
+# Instructions
+You will write the assignment directly in a Google document. 
+
+* This is a paired project assignment
+* Use the sections found in the lecture notes [[writing about empirical research]](../lecture/lec02_writing_empirical_research.html) to organize your proposal and to help guide your writing style. 
+* Write your assignment directly in a Google Document in the **06Research Proposal Outline** folder. 
+    - You must use the sections and bullet points listed below. 
+* Name this file `rq_pairname` i.e. `rq_donatello_gomez.pdf` 
+* Since this is an outline, bullet points are acceptable. You are welcome to write in paragraph form if you choose. 
+
+---
+
+## Step 1: Title
+* Your title should summarize the main idea of your research question.
+    - Must include the variables under investigation.
+    - Must be fully explanatory when standing alone.
+* Include the terms “association between” or “relationship between” in your title to join your variables of interest.  
+
+ 
+## Step 2: Introduction (literature review)
+* Introduce your topic and rationale for your research questions. (at least 3 outline points)
+    - Include an opening statement about your main topic. 
+    - What statistic(s) will you use to show the importance of your topic? (cite articles)
+    - What is the problem you are trying to address? (cite articles)
+* Why should we care about this topic? (at least 3 outline points)
+    - What is known about your topics of interest and their relationship (cite articles)? 
+    - Needs to serve as a justification for your research. 
+    - Use specific examples and major findings from your articles.
+* What is known about the association between your main topic and the second topic you have chosen? (at least 2 outline points)
+    - Is the evidence clear?
+    - Is the evidence equivocal?
+    - Are there any gaps in the literature that you will be able to fill?
+    - How will your analysis contribute to filling this gap? (at least 3 outline points)
+    - What is the purpose/goal of your research?
+    - How will your study help the knowledge on your topic?
+    - State your research question. (Do not use causal language)
+ 
+## Step 3: Methods
+* Sample 
+    - Name the dataset.
+    - Why is it a representative sample?
+    - How many participants are in your sample? (Not necessarily the same as the data set.)
+* Measures
+    - How was the data collected from the participants? Don't plagerize from the codebook or any other study documentation.
+    - What are the main constructs/topics of your variables? (response and explanatory variables)
+    - For each main construct, summarize the variables that you are using to measure the topic. 
+    - For each main construct, summarize how those variables are measured. (_i.e. smoking status was measured by asking if the participant has smoked in the past year_)
+        - continuous/categorical, level of measurement, response options
+        - Briefly describe the distribution for each main construct: N and % for categorical, mean/sd/shape for continuous
+    - Explain how created secondary variables, if you did.
+    - Did you collapse response options?
+    - How did you treat variables for missing values?
+
+## Step 4: Implications/Predicted Results
+* State how you think your variables will be related/associated. (at least 2 outline points)
+    - Look back to your research questions and think about “answering” them. 
+* Explain how the findings of your research could be important to real-life issues. 
+
+
+
+## Step 5: References
+* Following APA format (review your citation feedback) list your primary sources references.
+    - Start these on a new page, center the heading, double space the entire page, do not forget the hanging right indent.
+
+
+----
+
+# Examples
+
+Here are links to two example research proposals from prior students, complete with grading comments.
+These are examples of full research proposals, not just an outline. 
+You can also use the model sections found in the lecture notes as guidance. 
+
+* [Example proposal 1](../lecture/ex_proposal_1.pdf)
+* [Example proposal 2](../lecture/ex_proposal_2.pdf)
+
+
