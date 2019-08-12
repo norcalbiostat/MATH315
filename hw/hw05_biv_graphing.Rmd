@@ -1,14 +1,14 @@
 ---
 title: "Graphing Bivariate Relationships"
 output:
+  pdf_document: default
+  word_document:
+    toc: yes
   html_document:
     highlight: tango
     theme: readable
     toc: yes
     toc_float: yes
-  word_document:
-    toc: yes
-  pdf_document: default
 css: ../css/sandstone.css
 ---
 
@@ -35,7 +35,7 @@ Before you start,
 
 # Instructions
 
-0. Use the template provided: [[RMD]](hw06_biv_graphing_template.Rmd). Replace the `template` in the file name with your username. 
+0. Use the template provided: [[RMD]](hw05_biv_graphing_template.Rmd). Replace the `template` in the file name with your username. 
 
 For each bivariate relationship under consideration you will do the following: 
 

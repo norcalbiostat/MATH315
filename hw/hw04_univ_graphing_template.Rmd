@@ -2,14 +2,11 @@
 title: "Univariate Graphing Assignment"
 author: "your name here"
 output:
-  html_document:
-    highlight: tango
-    theme: flatly
+  html_document: default
   pdf_document: default
-  word_document: default
 ---
 
-```{r setup, include=FALSE}
+```{r,warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 ```
 
