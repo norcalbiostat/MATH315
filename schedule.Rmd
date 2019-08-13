@@ -25,7 +25,7 @@ rawdat <- read_xlsx("schedule_315.xlsx", sheet='weekly_schedule')
 start.date <- as.Date("2019-08-25")
 
 # which rows have week numbers (manually add line number for break week and finals)
-wn <- c(which(!is.na(rawdat$wknum)),40, 45) %>% sort() 
+wn <- c(which(!is.na(rawdat$wknum)),41, 46) %>% sort() 
 
 # generate list of weekdates
 wkdt <- seq.Date(start.date, start.date+7*16, by='week')
@@ -439,7 +439,7 @@ pander(w10$fri)
 
 
 
-### <a href="#week11" data-toggle="collapse">Week 11: </a>
+### <a href="#week11" data-toggle="collapse">Week 11: Moderation and the question of Causality</a>
 <div id="week11" class="collapse">
 
 #### Learning Objectives
@@ -473,7 +473,7 @@ pander(w11$fri)
 
 
 
-### <a href="#week12" data-toggle="collapse">Week 12: Multivariable Regression analysis</a>
+### <a href="#week12" data-toggle="collapse">Week 12: Multivariable Regression analysis and Confounding</a>
 <div id="week12" class="collapse">
 
 #### Learning Objectives
