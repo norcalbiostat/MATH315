@@ -1,12 +1,12 @@
 ---
 title: "Moderation Assignment Instructions"
 output:
-  pdf_document: default
   html_document:
     highlight: tango
     theme: readable
     toc: yes
     toc_float: yes
+  pdf_document: default
 ---
 
 # Submission Guidelines
