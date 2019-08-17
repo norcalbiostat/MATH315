@@ -312,11 +312,9 @@ On Thursday/Friday you will be meeting with a research librarian who will help y
 ### `r format(wk1.date, "%m-%d-%Y")`: Welcome to Fall 19!
 
 * This course website contains all materials except the textbook for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.
-* Specifically click on and explore items in the top navigation bar. 
+* I have created a handy [[Materials Overview]](reading/Materials overview.pdf) that walks you through the components of this class. 
 * Take this survey to help choose when I should hold Office Hours: https://forms.gle/6ZTSfrJ2WbyKMfk39 
-* We will use Slack to faciliate outside of class discussion, and to replace emails. 
-    - Use the link under 'Tools' in the navigation boar of this page to go to our Slack workspace, make an account using your @mail.csuchico.edu email address. 
-    - You must download either the desktop app, or the phone app, or both. Do not rely on the browser based version. 
+
 
 
 

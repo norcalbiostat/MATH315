@@ -3,8 +3,8 @@ title: "Syllabus for Applied Statistical Methods I"
 author: "Dr. Robin Donatello"
 date: "MATH 315-01 & -02, Fall 2019"
 output: 
-    html_document: default
     pdf_document: default
+    html_document: default
 geometry: margin=0.75in
 urlcolor: blue
 ---
@@ -20,9 +20,9 @@ In this project-based course, you will have the opportunity to answer questions 
 
 ## Logistics
 
-* **Instructor:** Dr. Robin Donatello  
-* **Office Location:** Holt 202  
-* **Phone Number:** 898-5767  
+* **Instructor:** Dr. Robin Donatello
+* **Office Location:** Holt 202
+* **Phone Number:** 898-5767
 * **E-mail:** rdonatello@csuchico.edu 
 * **website:** http://norcalbiostat.github.io/MATH315/ 
 * **Slack Channel:** http://math315-f19.slack.com 
@@ -34,16 +34,6 @@ In this project-based course, you will have the opportunity to answer questions 
 Best method of contact? Slack! (Then email.)
 
 You can download the Syllabus in PDF form by clicking [this link](syllabus_315_f19.pdf).
-
-
-## Additional Support
-
-* The Data Science Initiative offers year-round training workshops and seminars on data-science related topics including R. See http://datascience.csuchico.edu for more information and a schedule of events.  
-* Community Coding: TWR 2-4pm, YOLO 206 [[flyer]](cc_flyer_s19.pdf)
-    - Students, staff, faculty, and the public are invited to join our Community Coding (CC) sessions. Bring your computer, coding projects, and your questions to this open working environment. 
-    - Commit to dedicating 1 hr. per week to this course in a collaborative envrionment and earn credit. Enroll in MATH 290-02 (5837), a 1 unit credit/no-credit course. Credit is earned by attending at least 10 times. 
-    - Even if you don't enroll you are required to show up to CC at least once throughout the semester as part of your grade. 
-
 
 
 ### Learning Outcomes
@@ -110,7 +100,19 @@ I am a very personable individual who likes to get to know my students as well a
 
 The peer mentors and I are here for you, but you have to use your voice and speak with me about any concerns you may have. The best way to contact me is through Slack, or email. To keep students informed about the course I send out weekly updates through Slack. 
 
-It's important to note that this Fall I will be teaching 2 sections of the same course. That means I *will* forget who I told what to. I will do my best to be as organized as possible to make things smooth for you. I need you to understand that I am only human (omg!), and to have patience and understanding with me. Broken links on the website? Mixed up dates in blackboard? Tell me so I can fix it! 
+It's important to note that I teach multiple sections of the same course. That means I *will* forget who I told what to. I will do my best to be as organized as possible to make things smooth for you. I need you to understand that I am only human (omg!), and to have patience and understanding with me. Broken links on the website? Mixed up dates somewhere? Tell me so I can fix it! 
+
+
+
+## Additional Support
+
+* The Data Science Initiative offers year-round training workshops and seminars on data-science related topics including R. See http://datascience.csuchico.edu for more information and a schedule of events.  
+* Community Coding: TWR 2-4pm, YOLO 206 [[flyer]](cc_flyer_s19.pdf)
+    - Students, staff, faculty, and the public are invited to join our Community Coding (CC) sessions. Bring your computer, coding projects, and your questions to this open working environment. 
+    - Commit to dedicating 1 hr. per week to this course in a collaborative envrionment and earn credit. Enroll in MATH 290-02 (5837), a 1 unit credit/no-credit course. Credit is earned by attending at least 10 times. 
+    - Even if you don't enroll you are required to show up to CC at least once throughout the semester as part of your grade. 
+
+
 
 \newpage
 
@@ -165,11 +167,10 @@ A detailed schedule can be found on the course website.
 * Preparing data for analysis
 * Data Visualization
 * Foundations for Inference: Random variables, Parameters vs. Statistic, Confidence Intervals, Hypothesis Testing
-* Inference for a single sample (t-tests, $\chi^{2}$ tests)
 * Inference comparing multiple samples (t-tests, ANOVA, $\chi^{2}$ tests)
 * Linear regression analysis
 * Logistic Regression analysis
-* Multivariable Model Building (moderators, interactions, categorical predictors, model fit)
+* Multivariable Model Building (moderators, confounding, categorical predictors, model fit)
 
 
 ----
@@ -178,7 +179,7 @@ A detailed schedule can be found on the course website.
 
 ## Late Assignments
 
-All assignments are to be completed upon the due date as announced by the instructor. All assignments that are turned in after the deadline has passed will be graded and get feedback, but receive HALF CREDIT. Exceptionally late assigments are graded at the instructors discretion and there is no guarantee that the assignment will be returned in a timely manner. Just like you have your deadlines, I have mine. No exceptions will be made. In cases of emergency, please contact your instructor immediately.
+All assignments are to be completed upon the due date as announced by the instructor. All assignments have a portion of the grade dedicated to timeliness. Exceptionally late assigments are graded at the instructors discretion and there is no guarantee that the assignment will be returned in a timely manner. Just like you have your deadlines, I have mine. No exceptions will be made. In cases of emergency, please contact your instructor immediately.
 
 ## Academic Integrity
 
@@ -191,8 +192,7 @@ The rules of science should be carefully upheld in everything that you do. The f
 
 ## Plagiarism
 
-Using someone else's words or ideas without properly citing them is plagiarism. The CSU academic integrity policy distinguishes between misuse of sources and intentional plagiarism. If a student makes an attempt to "identify and credit his or her source, but does so improperly, he or she will not be penalized according to our policy.
-However, students should make every effort to learn the proper format for correctly citing sources, since this is an essential aspect of academic work.
+Using someone else's words or ideas without properly citing them is plagiarism. The CSU academic integrity policy distinguishes between misuse of sources and intentional plagiarism. If a student makes an attempt to "identify and credit his or her source, but does so improperly, he or she will not be penalized according to our policy. However, students should make every effort to learn the proper format for correctly citing sources, since this is an essential aspect of academic work.
 
 Intentional plagiarism occurs when the student "deliberately uses someone else's language, ideas, or other original (not common knowledge) material without acknowledging its source"" and in so doing represents them as his or her own. This includes borrowing another's phrases or sentences without using quotation marks or citations; cutting and pasting whole paragraphs (or papers) from websites without acknowledgement; or borrowing ideas from someone without citing them.
 

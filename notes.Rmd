@@ -89,7 +89,7 @@ gsub("<thead>.*</thead>", "", x)
 Also available is the [Applied Statistics Notebook](https://norcalbiostat.github.io/AppliedStatistics_notes/index.html) (Abbreviated as **AS Notebook**) is a general set of notes that span multiple topics from 315, 615 and 456.  
 
 
-# Articles
+# Reading Materials
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 x = out.read %>% select(link) %>% kable(format="html") %>%
     kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive" ,"bordered"), 
