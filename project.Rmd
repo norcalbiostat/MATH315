@@ -29,7 +29,7 @@ Why do we do peer review instead of just getting feedback from you?
 
 How do I conduct a Peer Review
 
-1. Check the [Peer Review Rotation-TBD]() spreadsheet to see who you are scheduled to review. 
+1. Check the [Peer Review Rotation](https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing) spreadsheet to see who you are scheduled to review. 
 2. Open the assignment file in Google Drive directly. 
 3. Change from "editing" to "suggesting" in the top right. 
     - If the assignment was uploaded as a PDF then use the comment tool in the top right to leave your comments. 
