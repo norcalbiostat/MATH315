@@ -1,13 +1,13 @@
 ---
 title: "HW 01- Introduction to the class."
 output:
-  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
+  pdf_document: default
 ---
 
 # Assignment Overview
@@ -50,28 +50,35 @@ You have two choices for using R this semester. You can install the necessary pr
 
 3. Using the code chunk provided, calculate `2+2`
 
-\newpage
 
 # Part II: Becoming a better learner. 
 Because we all have room for improvement, here are a few tasks for you to become a better learner. 
 
+First I want you to create a "Learning Journal". This could be a composition notebook, a smaller 5x7 
+journal, loose papers in a binder or an electronic document on your computer/cloud. We will be engaging
+in several activities throughout the semseter aimed to help you become active and effective learners. 
+I will do several check-ins on your journal throughout the semester to ensure that it is being used. 
+
+Some of these tasks will ask you to reflect on a reading. Here is a link to help you understand more
+about what that actually means and how to write a reflection. 
+https://www.quora.com/What-does-it-mean-to-reflect-on-reading
 
 ### Metacognition 
-From the materials page on the course website, download and read "MAI and academic achievement in college students". 
-Once you are done, download and take the "Metacognition Awareness Inventory" (also available on the materials page). 
-Submit your scores to Google Drive at this link: https://goo.gl/forms/FYgjJk72T3147e7f1 
 
+From the materials page on the course website, download and read "MAI and academic achievement in college students". Once you are done, download and take the "Metacognition Awareness Inventory" (also available on the materials page). Submit your scores to Google Drive at this link: https://goo.gl/forms/FYgjJk72T3147e7f1 
+
+Write a reflection on this reading. Were you surprised by the results? 
 
 
 ### Procrastination
 Watch this video on creating a cycle of success and tell me **one** concrete plans of action that you already implement, or are willing to give an honest try to do this semester to stay on track and not fall behind.  https://media.csuchico.edu/media/Avoiding+Procrastination/0_wquy9x90
 
 
+Write this plan in your learning journal. 
 
 
 ### Being good at learning is hard!
-From the reading materials page on the course website, download and read the "Learning (Your First Job)" article. 
-Answer at least _4_ of the following questions in this document. 
+From the reading materials page on the course website, download and read the "Learning (Your First Job)" article. Answer at least _4_ of the following questions in this document. Choose one of these to put into your learning journal. 
 
 **What was the most important insight you gained from the reading? **
 
