@@ -14,7 +14,7 @@ navbar:
       href: notes.html
     - text: Course Packet
       icon: fa-file-code
-      href: reading/RAD_course_notes_F19.pdf
+      href: reading/RAD_course_notes_f19.pdf
     - text: Data from course packet
       icon: fa-database
       href: https://norcalbiostat.netlify.com/data/
