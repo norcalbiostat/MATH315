@@ -47,6 +47,9 @@ navbar:
   - text: Peer Mentors
     icon: fa-users
     href: peer_mentors.html
+  - text: Community Coding
+    icon: fa-group
+    href: http://bit.ly/cc_hours
   - text: Help
     icon: fa-question
     menu:

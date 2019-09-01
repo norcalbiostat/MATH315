@@ -56,11 +56,9 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="../css/sandstone.css" type="text/css" />
+<link rel="stylesheet" href="..\css\sandstone.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -178,8 +176,6 @@ $(document).ready(function () {
   menuAnchor.closest('li.dropdown').addClass('active');
 });
 </script>
-
-<div class="container-fluid main-container">
 
 <!-- tabsets -->
 
@@ -338,6 +334,16 @@ div.tocify {
 
 </style>
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
 <div class="col-xs-12 col-sm-4 col-md-3">
@@ -469,6 +475,13 @@ div.tocify {
     Peer Mentors
   </a>
 </li>
+<li>
+  <a href="http://bit.ly/cc_hours">
+    <span class="fa fa-group"></span>
+     
+    Community Coding
+  </a>
+</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-question"></span>
@@ -509,7 +522,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Getting Help with Programming in R</h1>
-<h4 class="date"><em>Last Updated 2019-08-28 14:27:31</em></h4>
+<h4 class="date">Last Updated 2019-09-01 10:12:20</h4>
 
 </div>
 
@@ -568,7 +581,7 @@ div.tocify {
 <li><code>c()</code> : concatenates, or makes a collection of items. You can do this using with numbers, strings, or whatever you need.
 <ul>
 <li>E.g. Let’s say you want to repeatedly select 5 specific columns (e.g. column numbers 6, 7, 8, 15, and 18) from a larger dataset. You can save yourself time by writing <code>my.index &lt;- c(5,7,8,15,18)</code> and then selecting only these 5 columns by writing <code>data[,my.index]</code></li>
-<li>E.g. For renaming variables/columns to something more meaningful. For example, say you want to rename variables <code>S3AQ8B1</code> through <code>S3AQ8B14</code> as <code>NDS1</code> through <code>NDS17</code> because they each represent different nicotine dependence symptoms. You can call the names of your dataset and reassign them to a concatenation of new strings: <code>names(data) &lt;- c(&quot;NDS1&quot;, &quot;NDS2&quot;, ..., &quot;NDS17&quot;)</code></li>
+<li>E.g. For renaming variables/columns to something more meaningful. For example, say you want to rename variables <code>S3AQ8B1</code> through <code>S3AQ8B14</code> as <code>NDS1</code> through <code>NDS17</code> because they each represent different nicotine dependence symptoms. You can call the names of your dataset and reassign them to a concatenation of new strings: <code>names(data) &lt;- c("NDS1", "NDS2", ..., "NDS17")</code></li>
 </ul></li>
 <li><code>rep()</code>: Takes a value or a string and repeats it a specified number of times. Takes 2 inputs: the thing to repeat, and how many times to repeat it.</li>
 <li><code>length()</code> : gives the length of an object, e.g. length(data$id) to see how many subjects</li>
@@ -633,7 +646,7 @@ div.tocify {
 <ul>
 <li><strong>Community Coding</strong> - TWR 2-4pm, YOLO 206 <a href="cc_flyer_s19.pdf">[flyer]</a></li>
 <li><strong>Robin Donatello</strong> - Stat professor. Holt 202 Office Hours: TBD</li>
-<li><strong>Edward Roualdes</strong> - Stat professor. Holt 204 - <a href="mailto:eroualdes@csuchico.edu">eroualdes@csuchico.edu</a> Often at community coding.</li>
+<li><strong>Edward Roualdes</strong> - Stat professor. Holt 204 - <a href="mailto:eroualdes@csuchico.edu" class="email">eroualdes@csuchico.edu</a> Often at community coding.</li>
 <li><strong>Peer Mentors</strong> -See <a href="peer_mentor.html">[Peer mentor]</a> page for contact info.</li>
 <li><strong>Math Learning Lab (MLIB 4th floor)</strong></li>
 <li><strong><a href="https://www.meetup.com/Chico-R-Users-Group">R Meetup group</a></strong> Coding over coffee (or adult beverages) anyone?</li>

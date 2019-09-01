@@ -285,31 +285,29 @@ then you will learn how to dominate debugging and come out a stronger and more c
 <br>
 
 ----
-
-### 1/28/19 - [Week 2](https://norcalbiostat.github.io/MATH315/wk/wk02.html) Generating research questions
-
-My office hours (Holt 202)-  M 10-11am, T: 11-12noon, F 12-1pm.
-
-Peer mentor office hours have been posted on the [[peer mentor page]](peer_mentors.html)
-
-> I am out of town this week starting at 1pm on Thursday. 
-
-On Thursday/Friday you will be meeting with a research librarian who will help you use our Library resources to find primary source articles to support your research. 
-
-> Class will meet in MLIB 226
-
-**Upcoming Quizzes**:
-
-* Data architecture & Codebooks (pre-class quiz)
-* Literature review (post-class quiz)
-
-**Upcoming Assignments**:
-
 --->
+
+
+### `r format(wk1.date+7, "%m-%d-%Y")` Week 2: Generating research questions
+
+Hope everyone had a relaxing 3day weekend. Office hours have been set. Thank you for contributing! 
+
+* Monday 2-3pm Holt 202
+* Tuesday 10-11am Holt  202
+* Wednesday 2-4pm PHSC 213 (Community Coding)
+* Thursday 2-4pm MLIB 442 (Community Coding)
+
+This week we're going to cover the basic data types, how to formulate a testable research hypotheses on your selected data, and setting up a reproducible research pipeline to prepare data for analysis. 
+
+Haven't selected a [[research data set]](https://drive.google.com/open?id=1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY) yet? 
+Look at the [[sign up sheet]](https://docs.google.com/spreadsheets/d/1kyRCJMYQ4fa3RveUOH1EgwZyzOvRLzNy0uQajEEtarg/edit?usp=sharing) to see what's left and sign up to analyze a data set. If you don't have a partner yet, put your name down by a data set you are interested in analyzing, or post in the #assignments channel in slack that you're looking for a partner. 
+
+<span style="color:red">**Quiz 2 due Tuesday**</span> Don't forget this week we start having Quizzes on the upcoming week material. You must watch the videos and look through the course notes to be prepared for these quizzes!
+
 
 ----
 
-### `r format(wk1.date, "%m-%d-%Y")`: Welcome to Fall 19!
+### `r format(wk1.date, "%m-%d-%Y")` Week 1: Welcome to Fall 19!
 
 * This course website contains all materials except the textbook for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.
 * I have created a handy [[Materials Overview]](reading/Materials overview.pdf) that walks you through the components of this class. 
