@@ -297,6 +297,8 @@ Hope everyone had a relaxing 3day weekend. Office hours have been set. Thank you
 * Wednesday 2-4pm PHSC 213 (Community Coding)
 * Thursday 2-4pm MLIB 442 (Community Coding)
 
+Due to a glitch in the system, Quiz 1 is going to be considered a "trial run" and not count towards your grade. 
+
 This week we're going to cover the basic data types, how to formulate a testable research hypotheses on your selected data, and setting up a reproducible research pipeline to prepare data for analysis. 
 
 Haven't selected a [[research data set]](https://drive.google.com/open?id=1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY) yet? 
