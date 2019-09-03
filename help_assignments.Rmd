@@ -32,6 +32,10 @@ Unless explicitly stated otherwise assignments are to be uploaded to Google Driv
 * In the navigation bar select `Tools --> Google Drive`.
     - I suggest you bookmark this page, star this folder, or add this folder to your drive. 
 
+> Video walk through (no sound) https://youtu.be/4zpnZgfhuLU 
+
+
+
 ----
 
 # Peer Reviewed Assignments
