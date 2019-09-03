@@ -109,8 +109,10 @@ Also refer to the guidelines/instructions on how to seek help from the [Math 130
 * Twitter #rstats 
 
 ## In Person
-* **Community Coding** - TWR 2-4pm, YOLO 206 [[flyer]](cc_flyer_s19.pdf)
-* **Robin Donatello** - Stat professor. Holt 202 Office Hours: TBD
+* **Community Coding** [[flyer]](http://bit.ly/cc_hours)
+    - TR 2-4pm, MLIB 442
+    - W 2-4pm, PHSC 213
+* **Robin Donatello** - Stat professor. See homepage for OH. http://www.norcalbiostat.com/ 
 * **Edward Roualdes** - Stat professor. Holt 204 - eroualdes@csuchico.edu Often at community coding. 
 * **Peer Mentors** -See [[Peer mentor]](peer_mentor.html) page for contact info. 
 * **Math Learning Lab (MLIB 4th floor)** 
