@@ -239,30 +239,21 @@ Distinguished female leaders share stories and discuss topics designed to inspir
 Learn how to start exploring and analyzing geographic data using GIS (Geographic Information Systems) software. http://datascience.csuchico.edu 
 
 ----
-<p>
 
-### 2/4/19 - [Week 3](https://norcalbiostat.github.io/MATH315/wk/wk03.html) - Hello R!
+--->
 
-> OH Monday cancelled. I will be available 12-2pm and possibly 4-5pm instead. 
+### `r format(wk1.date+2*7, "%m-%d-%Y")` Week 3: Hello R!
 
-#### Second chance at Blackboard learn quizzes connected to DataCamp.
-* The quizzes in Blackboard that correspond to DataCamp quizzes will be re-opened for partial credit this week. 
+> I may be late to my OH on Tuesday. I have to take my dog `r emo::ji('dog')` to the vet :( 
 
-#### You have 2 assignments (and 2 pre-class video quizes) to turn in this week!
-Read the instructions of each carefully to ensure that they are completed and submitted correctly. 
 
-1. A literature review [[Homework 03]](hw/hw03_lit_review.html).
-2. Demonstration of data management code [[Homework 04]](hw/hw04_data_management.html). 
+* We are starting to code in R this week. You should follow along with the coding that is done in the PDS video. Practicing typing commands and mimicking the output that is in the video is very important and will contribute to your learning. 
 
-We are starting to code in R this week. You must have completed the Data Camp assignments from last week to be ready for this. 
-In class you will work with your partner to take a closer look at your codebook to identify what types of data management you will have to do. The [[lec03_dm_prep_questions]](notes/lec03_dm_prep_notes.html) lecture notes that can be found on the course materials page contain questions to help guide this process. 
+* In class on Monday you will work with your partner to take a closer look at your codebook to identify what types of data management you will have to do. 
 
-#### Extra Materials
+* I have created a [[video]](https://youtu.be/fv2NLL3dYYQ) to walk you through how to get your data into R Studio. 
 
-* I have created a video to walk you through how to get your data into R Studio. 
-    - Right now this can only be acessed through Blackboard Learn. 
-    - Watch this before class on Wednesday/Thursday
-* The [[Help with R]](help_R.html) page has been updated to include more info such as useful functions and how to navigate data. 
+* The [[Help with R]](help_R.html) page has more info such as useful functions and how to navigate data. 
 
 #### Entering a challenging time
 
@@ -280,12 +271,10 @@ then you will learn how to dominate debugging and come out a stronger and more c
 
 <center><img src="img/debugging.jpg" width="600"/></center>
 
-
-
 <br>
 
 ----
---->
+
 
 
 ### `r format(wk1.date+7, "%m-%d-%Y")` Week 2: Generating research questions

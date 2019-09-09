@@ -2,12 +2,11 @@
 
 # Peer Mentors for Spring 19
 
-Scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th floor of Miriam Library.
+Unless specified otherwise, scheduled office hours for Peer Mentors are held in the Math tutoring lab, 4th floor of Miriam Library. They also are part of our Slack workspace. 
 
+
+You can request help outside their regular office hours _at their discretion_ by asking in the #tutor-request channel in Slack. 
 <br>
-
-> Now recruting peer mentors for Fall 19! You do NOT have to have completed Dr. Donatello's Math 315 class. 
-> Anyone who has completed Math 315 is welcome to apply. Contact Dr. Donatello for more information. 
 
 
 ----
@@ -75,14 +74,14 @@ Just like you I am a student so my "office hours" will go around my own class sc
 ### Nicole Paulson
 <table>
 <tr>
-  <td width="250"><img src="mentors/nicole.jpg" alt="Nicole Paulson" /></td>
+  <td width="250"><img src="mentors/nicole.png" alt="Nicole Paulson" /></td>
   <td width="50"></td>
-  <td width="250"><strong>Known for: </strong> <br> 
+  <td width="250"><strong>Known for: working on quantitative and environmental economic projects </strong> <br> 
     <strong>Attending: </strong> F 12-1pm <br> 
-    <strong>OH: </strong> TBD <br> 
+    <strong>OH: </strong> TR 2-3pm at Community Coding <br> 
     <strong>Contact: </strong> npaulson1@mail.csuchico.edu <br> </td>
   <td width="50"></td>
-  <td width="350"> </td>
+  <td width="350"> I love cooking, swimming and hiking at Bidwell, reading, and traveling with friends. I have worked at the Center for Economic Development, as an ambassador for the College of Behavioral and Social Sciences, and am planning to get my master's in public policy. </td>
 </tr>
 </table>
 

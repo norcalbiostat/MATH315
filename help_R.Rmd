@@ -22,6 +22,16 @@ date: "Last Updated `r Sys.time()`"
 
 ----
 
+# Importing Data into R
+
+* Download your data from Google Drive into your `math315/data` folder. 
+    - If you're working in the cloud, you will have to upload your data to your cloud folder also. 
+    - If you are having trouble doing this, watch this video: https://youtu.be/fv2NLL3dYYQ 
+* Review [[Math 130 Lesson 05]](https://norcalbiostat.github.io/MATH130/notes/05_import.html) for detailed instructions on what codes to use to import data into R. 
+
+
+----
+
 # Navigating data sets
 
 Data matrices in R are 2-dimensional, with observations or subjects in the rows, and variables in the columns.  Each column contains a name, which is the name of the variable.  Let's say your 2D data matrix is stored in an object called `data.`

@@ -1,13 +1,13 @@
 ---
 title: "hw03 - Data Preparation"
 output:
-  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
+  pdf_document: default
 ---
 
 # Assignment Overview
@@ -26,53 +26,80 @@ You are **not** expected to have completed data management for every one of your
 2. Download your chosen analysis data set from Google Drive. 
     - Put this file in a folder named `data`. 
 3. In the first code chunk: 
+    - Load the `dplyr` and `descr` libraries. 
     - Read in raw data into a data frame named `raw` 
-    - Load the `dplyr` library in the first code chunk by typing
+It should look similar to the following code below: 
+
 ```{r, warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
+library(descr)
 raw <- read.delim("https://norcalbiostat.netlify.com/data/depress_081217.txt", 
                   sep="\t",  header=TRUE)
 ```
 
-4. Make a new object called `mydata` that contains only the few variables that you have identified in your personal codebook that you may want to use. 
+4. Click the green play button in the top right corner of the code chunk to execute the code in that chunk. 
+
+> STOP. Did you get an error message saying <span style="color:red">Error in library(dply) : there is no package called ‘descr’</span>? 
+
+If so, then you have not installed the `descr` package yet. Do this by typing `install.packages("descr")` in the console (NOT IN YOUR SCRIPT FILE). Once it is done, rerun that code chunk. The same comment goes for all packages we use in this class. 
+
+> Do you see an object called `raw` in your *Environment*? (Top right panel in R studio). If so, then proceed. 
+
+
+5. Make a new object called `mydata` that contains only the few variables that you have identified in your personal codebook that you may want to use. 
     - Choose *at minimum* 2 categorical and 2 continuous variables.  
 ```{r}
 mydata  <- raw %>% select(age, marital, cesd, health)
 ```
 
-5. Do some data cleaning. 
-    - You must explain at each step what you are doing and why you are doing it. 
-    - Write these explanations outside the R code chunks as normal text. 
-    - Don't forget to confirm that any changes you make actually work. 
+6. Check each variable for necessary adjustments. Complete each of the following steps for each variable.
+    - First explain in english what the variable name is and what it measures. 
+    - Then examine the variable using the `freq` function in the `descr` package. 
+    - Identify the data type of the variable using `class`. Does this match with the intended data type? 
+    - Recode the data as necessary (See section 1.4 in the course packet)
+    - Always confirm your recodes worked as intended by creating another table or summary. 
 
-> The variable `health` currently is numeric (values 1-4), but the codebook states that this is a categorical variable where 1=Excellent, 2=Good, 3=Fair, 4=Poor. 
-> So I need to convert this numeric variable to a factor variable. 
+(See example at bottom of page)
 
-```{r}
-mydata$health_cat <- factor(mydata$health, labels=c("Excellent", "Good", "Fair", "Poor"))
-```
-
-> Confirm that the recode worked by making a table. 
-```{r}
-table(mydata$health, mydata$health_cat, useNA="always")
-```
-> All 1's are now 'excellent', 4's 'poor' and so forth. 
-
-6. Restrict the variables to only the ones you are investigating. 
+7. Restrict the variables to only the ones you are investigating. 
     - Similar to how you trimmed down `raw` into `mydata`, now you want to only keep the variables that you want to save into your analysis data set. 
     - e.g. I only want to keep the categorical version of `health`. 
 
-```{r}
+```{r, eval=FALSE}
 clean <- mydata %>% select(age, marital, cesd, health_cat)
 ```
 
-7. Save the resulting data set to your `data` folder as `datasetname_clean.Rdata` e.g. `addhealth_clean.Rdata`. 
+8. Save the resulting data set to your `data` folder as `datasetname_clean.Rdata` e.g. `addhealth_clean.Rdata`. 
     - This will serve as your analysis data set to do all your subsequent assignments on. 
 
 ```{r, eval=FALSE}
 save(clean, file="depression_clean.Rdata")
 ```
+
+# Example
+
+The variable `health` records a persons perceived general health as being either Excellent, Good, Fair or Poor. This is considered an ordinal categorical variable. 
+
+```{r}
+freq(mydata$health)
+class(mydata$health)
+```
+
+The variable `health` currently is an integer with numeric values 1-4, but the codebook states that this is a categorical variable where 1=Excellent, 2=Good, 3=Fair, 4=Poor. 
+So I need to convert this numeric variable to a factor variable. There are no values outside the 1-4 range, such as a -9 that codes for missing data so I do not need to make any further adjustments (You want to code out missing before you convert variables to factors)
+
+```{r}
+mydata$health_cat <- factor(mydata$health, labels=c("Excellent", "Good", "Fair", "Poor"))
+```
+
+I will confirm that the recode worked by making a two-way `table`
+```{r}
+table(mydata$health, mydata$health_cat, useNA="always")
+```
+This shows that all 1's are now 'excellent', 4's are now 'poor' and so forth. 
+
+
 
 # Submission instructions
 
