@@ -1628,16 +1628,16 @@ div.tocify {
 <ol style="list-style-type: decimal">
 <li>Create a new Rmarkdown file named <code>dm_dataname_rdonatello.Rmd</code>. (e.g. <code>dm_addhealth_rdonatello.Rmd</code> or <code>dm_caterpillar_rdonatello.Rmd</code>).
 <ul>
-<li>Save this into your class folder</li>
+<li>Save this into your <strong>math315/data</strong> folder</li>
 </ul></li>
 <li>Download your chosen analysis data set from Google Drive.
 <ul>
-<li>Put this file in a folder named <code>data</code>.</li>
+<li>Put this file also in your <strong>math315/data</strong> folder</li>
 </ul></li>
 <li>In the first code chunk:
 <ul>
 <li>Load the <code>dplyr</code> and <code>descr</code> libraries.</li>
-<li>Read in raw data into a data frame named <code>raw</code> It should look similar to the following code below:</li>
+<li>Read in raw data into a data frame named <code>raw</code>. The import code for this is written in the data documentation in Google Drive for each data set separately. It should look similar to the following code below:</li>
 </ul></li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">echo =</span> <span class="ot">TRUE</span>)</a>
@@ -1715,20 +1715,20 @@ div.tocify {
 ##   4            0    0    0   14    0
 ##   &lt;NA&gt;         0    0    0    0    0</code></pre>
 <p>This shows that all 1’s are now ‘excellent’, 4’s are now ‘poor’ and so forth.</p>
+<div id="example-2" class="section level2">
+<h2>Example 2</h2>
+<p>Here is an example data management file for the Add Health data: <a href="https://norcalbiostat.netlify.com/data/dm_addhlth.html" class="uri">https://norcalbiostat.netlify.com/data/dm_addhlth.html</a> as an example. <em>Warning, do not copy this code from the HTML file directly. It will contain special characters that will prevent your code from working. Plus the sleep variable didn’t quite work the way we intended.</em></p>
+</div>
 </div>
 <div id="submission-instructions" class="section level1">
 <h1>Submission instructions</h1>
+<p>This is an individual assignment using your project data</p>
+<p>Upload your <span style="color:red">RMD code</span> file only to the <strong>hw03 Data Management</strong> folder in Google Drive.</p>
 <ul>
-<li>This is an individual project assignment</li>
-<li>You will compile your RMD code to create a PDF file (knit to PDF)</li>
-<li>Upload your PDF file to the <strong>hw03 Data Management</strong> folder in Google Drive.</li>
+<li>I will download this file and run it on my computer.</li>
+<li>It must run for credit. If it compiles to PDF for you then this should be no problem for me.</li>
 </ul>
-</div>
-<div id="example-1" class="section level1">
-<h1>Example</h1>
-<ul>
-<li><a href="https://norcalbiostat.netlify.com/data/dm_addhlth" class="uri">https://norcalbiostat.netlify.com/data/dm_addhlth</a></li>
-</ul>
+<p>Check the rubric in Blackboard learn for more grade specific details.</p>
 </div>
 
 

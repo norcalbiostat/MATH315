@@ -1,13 +1,13 @@
 ---
 title: "hw03 - Data Preparation"
 output:
+  pdf_document: default
   html_document:
     theme: sandstone
     highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
-  pdf_document: default
 ---
 
 # Assignment Overview
@@ -22,12 +22,12 @@ You are **not** expected to have completed data management for every one of your
 > For all coding assignments: Any reference of "Math 315 folder" or "class folder" means either a folder on your laptop where you keep all files for this class, OR your workspace in R Studio cloud. 
 
 1. Create a new Rmarkdown file named `dm_dataname_rdonatello.Rmd`. (e.g. `dm_addhealth_rdonatello.Rmd`  or `dm_caterpillar_rdonatello.Rmd`). 
-    - Save this into your class folder
+    - Save this into your **math315/data** folder
 2. Download your chosen analysis data set from Google Drive. 
-    - Put this file in a folder named `data`. 
+    - Put this file also in your **math315/data** folder
 3. In the first code chunk: 
     - Load the `dplyr` and `descr` libraries. 
-    - Read in raw data into a data frame named `raw` 
+    - Read in raw data into a data frame named `raw`. The import code for this is written in the data documentation in Google Drive for each data set separately. 
 It should look similar to the following code below: 
 
 ```{r, warning=FALSE, message=FALSE}
@@ -100,15 +100,22 @@ table(mydata$health, mydata$health_cat, useNA="always")
 This shows that all 1's are now 'excellent', 4's are now 'poor' and so forth. 
 
 
+## Example 2
+
+Here is an example data management file for the Add Health data: https://norcalbiostat.netlify.com/data/dm_addhlth.html as an example. _Warning, do not copy this code from the HTML file directly. It will contain special characters that will prevent your code from working. Plus the sleep variable didn't quite work the way we intended._ 
+
 
 # Submission instructions
 
-* This is an individual project assignment
-* You will compile your RMD code to create a PDF file (knit to PDF)
-* Upload your PDF file to the **hw03 Data Management** folder in Google Drive. 
+This is an individual assignment using your project data
+
+Upload your <span style="color:red">RMD code</span> file only to the **hw03 Data Management** folder in Google Drive. 
+  
+* I will download this file and run it on my computer.
+* It must run for credit. If it compiles to PDF for you then this should be no problem for me. 
 
 
-# Example
 
-* https://norcalbiostat.netlify.com/data/dm_addhlth
+Check the rubric in Blackboard learn for more grade specific details. 
+
 
