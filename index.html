@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,7 +70,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -229,18 +229,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -608,34 +596,21 @@ This is a much more mathematical section of the course, so be sure to plan your 
 
 
 ----
-
-### 2/18/19 - [Week 5](https://norcalbiostat.github.io/MATH315/wk/wk05.html) - Exploring Relationships
-
-
-> It's ok to struggle, it's not OK to not do anything. If you are having trouble with coding, you need to ask for help. 
-This class builds on each assignment. You can't do HW05 well if you didn't do HW04. You won't be able to do HW06 if you can't do HW05. 
-Don't risk falling behind, you will struggle to catch up and may not pass. There are five of us available to help you with a combined total 10 hours of office hours. You can make appointments with any of us outside of our scheduled hours as well. 
-
-* This week we will discuss how to create visualizations to assess the relationship between two variables. 
-* The homework assignments are training grounds for you to practice how to create and interpret graphics to explore your research question. The graphs you make for the homework may or may not be directly related to your research question. 
-* You may have to go back to your raw data and pull in new measures. Or adjust your variables (like collapsing levels) based on what you observed in last week's assignment. 
-* Typo in the course notes on page 40. Be sure to get notes & the in-class worksheet from someone to make sure your book is updated. 
-
-#### Items due this week:
-* HW 06 - Bivariate Graphing
-* Data Camp - Intro to Data (practice data management with R)
-    - Don't forget to do the corresponding BBL quiz.
-    
-#### Events for this week (always free and open to all unless specified)
-
-* [Data Science Seminar: Merging data from multiple tables using SQL](https://csudsi.netlify.com/2019/02/02/2019-02-02-dsi-seminar-spatial-is-special/) (Tu 2/19 3-4pm, Tehama 116)
-SQL is a powerful database language that is used to link information together across multiple tables. http://datascience.csuchico.edu 
-
-----
-
 --->
-<div id="week-3-describing-distributions-of-data" class="section level3">
-<h3>09-16-2019 Week 3: Describing Distributions of Data</h3>
+<div id="week-5-describing-relationships" class="section level3">
+<h3>09-23-2019 Week 5: Describing Relationships</h3>
+<blockquote>
+<p>It’s ok to struggle, it’s not OK to not do anything. If you are having trouble with coding, you need to ask for help. This class builds on each assignment. You can’t do HW05 well if you didn’t do HW04. You won’t be able to do HW06 if you can’t do HW05. Don’t risk falling behind, you will struggle to catch up and may not pass. There are five of us available to help you during office hours and Community Coding. You can make appointments with any of us outside of our scheduled hours as well.</p>
+</blockquote>
+<ul>
+<li>This week we will discuss how to create visualizations to assess the relationship between two variables.</li>
+<li>The homework assignments are training grounds for you to practice how to create and interpret graphics to explore your research question. The graphs you make for the homework may or may not be directly related to your research question.</li>
+<li>You may have to go back to your raw data and pull in new measures. Or adjust your variables (like collapsing levels) based on what you observed in last week’s assignment.</li>
+</ul>
+<hr />
+</div>
+<div id="week-4-describing-distributions-of-data" class="section level3">
+<h3>09-16-2019 Week 4: Describing Distributions of Data</h3>
 <p>I’m alive!</p>
 <blockquote>
 <p>OH Cancelled Monday. Sorry, lot of Drs appts in the upcoming weeks that were scheduled months ago. Additional OH Wednesday at 9am</p>
@@ -731,6 +706,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

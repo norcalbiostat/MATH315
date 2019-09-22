@@ -1,20 +1,20 @@
 ---
 title: "Graphing Bivariate Relationships"
 output:
-  pdf_document: default
-  word_document:
-    toc: yes
   html_document:
     highlight: tango
     theme: readable
     toc: yes
     toc_float: yes
+  word_document:
+    toc: yes
+  pdf_document: default
 css: ../css/sandstone.css
 ---
 
 # Overview
 
-To fully explore the relationship between two variables both summary statistics and visualizations are important. For this assignment you will describe the relationship between these four specific combinations of data types: 
+To fully explore the relationship between two variables both summary statistics and visualizations are important. For this assignment you will describe the relationship between these **four** specific combinations of data types: 
 
 * Categorical explanatory and categorical explanatory variable. (C ~ C)
 * Quantitative explanatory and categorical explanatory variable. (Q ~ C)
@@ -31,6 +31,8 @@ Before you start,
 2. Recode variables as needed. 
     * If your response variable is categorical with many levels, you must collapse the levels down to fewer than 5 levels. 
     * It is perfectly acceptable to recode variables temporarily for exploratory purposes and not put it in your data management file.
+
+If you do not already have a binary (B) variable in your clean data you can either a) go back and edit your `dm` file to include a binary varible, or b) dichotomize one of your categorical (C) varibles into two levels. (Make a new variable, don't overwrite your categorical variable).   
 
 
 # Instructions
@@ -64,9 +66,10 @@ For each bivariate relationship under consideration you will do the following:
 5. Submit your knitted PDF to the **05 Bivariate Graphics** folder in Google Drive
 
 ## Example
-In these examples I use `ggplot2` for plotting, `dplyr` for data management and to create summary statistics, `knitr` to create nice tables, `gridExtra` to put plots side by side, and `scales` to format the y axis with percentages. (You do not need to report this information in your assignment. This is for your knowledge only.) I also explain what I'm doing in code here for you to learn. you do not need to explain your own code. 
+In these examples I use a combination of `ggplot2` and `sjPlot` for plotting, `dplyr` for data management and to create summary statistics, `knitr` to create nice tables, `gridExtra` to put plots side by side. You do not need to report this information in your assignment. This is for your knowledge only. I also explain what I'm doing in code here for you to learn. you do not need to explain your own code. 
 ```{r, message=FALSE, warning=FALSE}
-library(ggplot2); library(dplyr); library(knitr); library(scales); library(gridExtra)
+library(ggplot2); library(dplyr); library(knitr); 
+library(scales); library(gridExtra); library(sjPlot)
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 ```
 
@@ -74,7 +77,7 @@ knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 For this example I am using the `NC Births` data set, data on 1000 births in 2004 from North Carolina. 
 This example explores the association between the smoking status of the mother (`habit`) and whether or not the baby was born prematurely (`premie`). 
 
-```{r}
+```{r, echo=FALSE}
 nc <- read.csv("https://norcalbiostat.netlify.com/data/NCbirths.csv", header=TRUE)
 ```
 
@@ -84,40 +87,11 @@ kable(addmargins(table(nc$habit, nc$premie)))
 kable(prop.table(table(nc$habit, nc$premie), margin=1)*100, digits=1)
 ```
 
-I then create a new data set `nc.nomiss` that contains only the variables I want to plot, and then call `na.omit()` on it to remove any records with missing data. 
 ```{r}
-nc.nomiss <- nc %>% select(habit, premie) %>% na.omit() # remove missing data before plotting
+sjp.xtab(x=nc$habit, grp=nc$premie, show.total=FALSE, margin='row')
 ```
 
-And I use `dplyr` to create the grouped percentages seen above as output from `prop.table`, so that I can create a barchart with proportions on it. 
-```{r}
-calc.props <- nc.nomiss %>% group_by(habit, premie) %>%
-              summarise(count=n()) %>%
-              mutate(pct=round(count/sum(count),3))
-calc.props
-```
-
-Now I will create two bar charts, one for counts and one for percentages. I can put them side by side using the `grid.arrange()` function contained with the `gridExtra` package. 
-
-Notice for the barplot of percents I'm using `geom_col()`, and specifying `y=pct`, which is the variable from the data set above that contains the desired percentages.
-
-```{r, fig.height=3}
-barplot.counts <- ggplot(nc.nomiss, aes(x=habit, fill=premie)) + 
-                  geom_bar(position="dodge") + theme_bw() + 
-                  scale_fill_brewer(palette="Set1")
-barplot.pcts   <- ggplot(calc.props, aes(x=habit, fill=premie, y=pct)) +
-                  geom_col(position="dodge") + theme_bw() + 
-                  scale_fill_brewer(palette="Set1", guide=FALSE) + 
-                  geom_text(aes(label = paste(pct*100, "%")), 
-                                position = position_dodge(0.9), vjust=-.5) + 
-                  scale_y_continuous(limits=c(0,1), labels=percent)
-                  
-grid.arrange(barplot.counts, barplot.pcts, ncol=2)
-```
-
-
-Contrary to what I was expecting, there is equal proportion of prematurely born babies to non-smokers compared to babies born to smokers (about 15% for each group). There is no association between the smoking status of the mother and the likelihood of the baby being born prematurely. 
-
+Contrary to what I was expecting, there is equal proportion of prematurely born babies to non-smokers (133/739, 15.2%) compared to babies born to smokers (19/107, 15.1%). There is no association between the smoking status of the mother and the likelihood of the baby being born prematurely. 
 
 ### Q ~ C Association
 
