@@ -7,7 +7,6 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -55,9 +54,11 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css\sandstone.css" type="text/css" />
+<link rel="stylesheet" href="css/sandstone.css" type="text/css" />
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -71,6 +72,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -175,6 +177,8 @@ $(document).ready(function () {
 });
 </script>
 
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
 
 <style type="text/css">
@@ -231,17 +235,20 @@ $(document).ready(function () {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -416,8 +423,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="last-updated-sun-sep-22-114121-am" class="section level1 tabset tabset-fade tabset-pills">
-<h1>Last Updated: Sun Sep 22 11:41:21 AM</h1>
+<div id="last-updated-tue-sep-24-093123" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Last Updated: Tue Sep 24 09:31:23</h1>
 <div id="overview" class="section level2">
 <h2>Overview</h2>
 <p>
@@ -748,7 +755,7 @@ Writing about empirical research
 <td style="text-align:center;width: 6%; ">
 </td>
 <td style="text-align:center;width: 18%; ">
-Quiz 06 (<b>Due 09/29</b>) <a href="">[10am]</a> <a href="">[12pm]</a>
+Quiz 06 (<b>Due 09/29</b>) <a href="https://forms.gle/9Vxb5HyC6dzPLyh96">[10am]</a> <a href="https://forms.gle/uEeNikFti8BJx4MJ7">[12pm]</a>
 </td>
 <td style="text-align:left;width: 35%; ">
 <a href="hw/hw06_research_proposal_outline.html">hw06 research proposal outline</a>(Due 10/12)
@@ -1208,7 +1215,7 @@ Poster Presentation
 <td style="text-align:center;width: 18%; ">
 </td>
 <td style="text-align:left;width: 35%; ">
-Time &amp; Location TBD
+Monday 4-6pm ARTS 112
 </td>
 </tr>
 <tr>
@@ -1347,7 +1354,7 @@ Take home final exam (<b>Due x/xx</b>); <a href="https://forms.gle/P8q6hbk6eJaSc
 <li>Watch PDS Video 4 and 5</li>
 <li>These videos use R scripts instead of a RMD file. That’s OK. I want you to use a Rmarkdown file.</li>
 <li>Unfamiliar with Rmarkdown? Check out <a href="https://www.youtube.com/watch?time_continue=4&amp;v=DNS7i2m4sB0">[This youtube video]</a></li>
-<li>It is highly suggested that you follow along with the code in the video by installing the <code>descr</code> package and downloading the NESARC project data and codebook. This is one of those things that will help you to achieve an “A” in this class. Not by points, but by putting effort into learning and practicing. <code>install.packages("descr")</code></li>
+<li>It is highly suggested that you follow along with the code in the video by installing the <code>descr</code> package and downloading the NESARC project data and codebook. This is one of those things that will help you to achieve an “A” in this class. Not by points, but by putting effort into learning and practicing. <code>install.packages(&quot;descr&quot;)</code></li>
 <li>Download your research data and codebook into your <code>project/data</code> folder</li>
 <li>Start a code file called <code>dm.Rmd</code>, save into your <code>project/code</code> folder</li>
 <li></li>
@@ -1857,23 +1864,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
