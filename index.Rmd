@@ -185,18 +185,6 @@ We're going to switch gears here and talk about probability, but before we do th
 
 This week is mostly about prepping for the exam. We will do a probabilty activity on wednesday to get us ready for the next unit.
 
-**Quick week overview**: 
-
-* Reflect, catchup, recap Monday
-* Poster prep stage II (Draft due Tue)
-* Probabilty Wednesday
-    - Only watch the first part of PDS Video 8
-    - But read the course packet carefully
-* <span style="color:red">Midterm Friday</span>. 
-    - Sample exam available
-    - Review session Tuesday night 8-9pm over Zoom (online video conferening program). Use [[this link]](https://csuchico.zoom.us/j/5808362949) to join the conference call You will need a headset or earbuds. The session will be recorded and all info will be posted in the <span style="color:blue">#midterm-review</span> Slack channel 
-* Self and peer reflection due Saturday. 
-
 **Updates** I have cxl'd HW 6 (research proposal). Quiz 6 is still required but will stay open until Monday night. 
 
 

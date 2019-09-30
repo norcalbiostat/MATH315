@@ -273,7 +273,7 @@ pander(w5$fri)
 </div>
 
 
-### <a href="#week6" data-toggle="collapse">Week 6: Writing about research, probability, midterm</a>
+### <a href="#week6" data-toggle="collapse">Week 6: Reflections, probability, midterm</a>
 <div id="week6" class="collapse">
 
 #### Learning Objectives
