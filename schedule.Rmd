@@ -25,7 +25,7 @@ rawdat <- read_xlsx("schedule_315.xlsx", sheet='weekly_schedule')
 start.date <- as.Date("2019-08-25")
 
 # which rows have week numbers (manually add line number for break week and finals)
-wn <- c(which(!is.na(rawdat$wknum)),42, 47) %>% sort() 
+wn <- c(which(!is.na(rawdat$wknum)),43, 48) %>% sort() 
 
 # generate list of weekdates
 wkdt <- seq.Date(start.date, start.date+7*16, by='week')
