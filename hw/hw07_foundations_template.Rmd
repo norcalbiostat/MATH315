@@ -1,27 +1,13 @@
 ---
 title: "Foundations for Inference"
+author: "Student Name"
 output:
-  html_document:
-    highlight: tango
-    theme: readable
   pdf_document: default
-css: ../css/sandstone.css
+  html_document: default
 ---
 
-# Overview
-
-## Submission Instructions:  
-
-1. Use the template provided: [[RMD]](hw07_foundations_template.Rmd). Replace the `template` in the file name with your username. 
-2. Submit your knitted PDF to the **07 Foundations for Inference** folder in Google Drive by the due date
-3. Part of this assignment is done in google drive (Die rolling), another portion is done on paper in class (worksheet). Don't forget to turn in these parts also.
-
-
-----
 
 ## Parameters vs Statistics
-
-For each question mark TRUE or FALSE, and write a justification for your answer 
 
 1. In a study of all 2857 employees at a college, it is found that 45% own a vehicle.
 **TRUE OR FALSE**: The number 45% is a parameter. 
@@ -47,14 +33,19 @@ For each question mark TRUE or FALSE, and write a justification for your answer
 
 
 ## Sampling distributions
-Review Dr. D's analysis of the die rolling exercise. Answer the following questions. Using the die rolling activity to;  
 
 1. explain the difference between a probability distribution and a sampling distribution.
+
+
 2. Describe the concept of sampling variability.
+
+
 3. As the sample size increases, describe what happens to the following features of the sampling distribution
       - mean:
       - standard deviation: 
       - shape
+
+
 4. As the number of samples increases, describe what happens to the following of the sampling distribution
       - mean:
       - standard deviation: 
@@ -62,16 +53,6 @@ Review Dr. D's analysis of the die rolling exercise. Answer the following questi
 
 
 ## Scale up
-
-1. Open a web browser and go to: https://gallery.shinyapps.io/CLT_mean/
-2. Using the slider on the left side, reduce the sample size to 2, and the number of samples to 10. 
-3. How to read this interactive app: 
-    a. The plot in the first tab is the _Population Distribution_ of the x’s. 
-    b. The smaller plots on the _Samples_ tab are the results of random samples drawn from this population. Each data point (x) is shown as a dot, the vertical bar is the sample mean. 
-    c. The green plot at the bottom of the _Sampling Distribution_ tab is a histogram and density plot for the sampling distribution. This is the distribution of the means from each of the samples drawn above.
-
-**Your job:** Pick a shape (non-normal, and not uniform) for the population. If you chose a skewed distribution, play around with both a high and a low skew. If you chose a uniform distribution, play around with upper and lower bounds. 
-
 1.	Adjust the number of samples. What happens to the sampling distribution (location/shape/spread)? 
 
 
@@ -83,8 +64,6 @@ Review Dr. D's analysis of the die rolling exercise. Answer the following questi
 
 4.	What about for a distribution with high skew? 
 
-## Foundations for Inference
-In class [[worksheet]](hw07_foundations_worksheet.docx). Turn this in separately, old school wise (by hand)
 
 ## Explain the Central Limit Theorem
 Using the continuous variable you worked with on the Foundations worksheet, explain to someone else what the Central Limit Theorem tells you about the sampling distribution. But don't use fancy technical terms. For example if you were researching a person's age, describe the distribution of the individual ages, and the distribution of the average age (complete with numbers). 
