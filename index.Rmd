@@ -180,6 +180,9 @@ This is a much more mathematical section of the course, so be sure to plan your 
 
 * Two in class exercises (mon, fri)
 * HW07 due in google drive & worksheet -- Part of this will be due Wednesday
+* Quiz 7 - Quantifying Uncertainty. **Due Thursday**. Group quiz on Friday. 
+    - Relies heavily on PDS video and reading the course notes section 4.5-4.6
+    - Must have a fundamental understanding of how to calculate a confidence interval
 
 
 ----
