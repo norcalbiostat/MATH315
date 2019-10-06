@@ -35,8 +35,9 @@ weekdates <- paste0("Week ", rawdat$wknum[wn], " (", format(wkdt, "%m/%d") , ")"
 weekdates[14] <- "Fall Break (11/24)"
 weekdates[17] <- "Finals Week (12/15)"
 
-# Filter rows to display on schedule
-out <- rawdat[which(rawdat$Order==1.1):nrow(rawdat), ]%>% select(Topic:Assignments)
+# Filter rows to display on schedule - can't do this with the way i have the rows organized
+#out <- rawdat[which(rawdat$Order==1.1):nrow(rawdat), ]%>% select(Topic:Assignments)
+out <- rawdat %>% select(Topic:Assignments)
 
 #week <- grep("midterm|final", out$Topic, ignore.case=TRUE)
 
