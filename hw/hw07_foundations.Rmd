@@ -13,7 +13,7 @@ css: ../css/sandstone.css
 
 * Write your responses directly into a google document in the **07 Foundations for Inference** folder in Google Drive by the due date
 * Name your file `inference_username`. 
-* Don't forget to also turn in the foundations worksheet that we will work on in class to Dr. D. directly. 
+* Don't forget to also turn in the interval estimation worksheet that we will work on in class to Dr. D. directly. 
 
 
 ## Parameters vs Statistics

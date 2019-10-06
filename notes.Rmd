@@ -55,13 +55,12 @@ out.hw <- hw %>% mutate(name = gsub("hw/|_template",  "", filenames),
 * Video 14 Multivariable Models and Confounding (57:43) https://passiondrivenstatistics.com/2016/10/06/r-chapter-17/ 
 * Video 15 Writing for your poster (16:03) https://passiondrivenstatistics.com/2018/06/08/chapter-18-writing-for-your-poster-presentation/
 
-<!---
-# Donatello's Videos
 
+# Dr. D's Videos on YouTube
 
-* Welcome to Spring 19 https://670832.kaf.kaltura.com/media/Welcome+intro+video+sp19/0_non0k1h7
-* Importing Data into R https://670832.kaf.kaltura.com/media/How+to+import+data+into+R/0_w6buqbaw
---->
+* [Using R Studio for Math 315 homework](https://www.youtube.com/watch?v=4zpnZgfhuLU&list=PLgjMQDcxQMF_jRNL0XLX6RzUd9qcrVIYY&index=2&t=0s)
+* [Importing Data into R](https://www.youtube.com/watch?v=fv2NLL3dYYQ&list=PLgjMQDcxQMF_jRNL0XLX6RzUd9qcrVIYY&index=4&t=0s)
+* Course packet Ch 3 - Using the [Normal Distribution](https://youtu.be/Bv9iY8-UzYw)
 
 ----
 

@@ -162,9 +162,9 @@ You will be covering material in the course packet 4.1-4.4, foundations for infe
 
 
 ----
+--->
 
-
-### `r format(wk1.date+4*7, "%m-%d-%Y")` Week 5: Describing Relationships
+### `r format(wk1.date+6*7, "%m-%d-%Y")` Week 7: Simulation, sampling, probability distributions
 
 Now that you've had a chance to learn what your data looks like, exploring relationships and learning more about the variables that you are interested in researching, let's take a step back and look at the big picture. You will use lecture notes on writing empirical research (found on the materials page of this website) to guide the writing of a research proposal. 
 
@@ -176,8 +176,14 @@ To understand why inferential statistics can be used to make valid claims, we ha
 
 This is a much more mathematical section of the course, so be sure to plan your time accordingly. Over the next two weeks you should be writing your research proposal, working on your poster preparation slides, and filling out the notes and examples in the course packet. We will be working heavily out of the course packet, so it is essential that you read the material ahead of time so the examples we work through in class are meaningful. 
 
+*Week overview*
+
+* Two in class exercises (mon, fri)
+* HW07 due in google drive & worksheet -- Part of this will be due Wednesday
+
+
 ----
---->
+
 
 ### `r format(wk1.date+5*7, "%m-%d-%Y")` Week 6: Reflection, Midterm, and new stuff. 
 

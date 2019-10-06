@@ -1,8 +1,8 @@
 ---
 title: 'Activity: Discovering Sampling Distributions'
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 In this activity you will be creating random samples to simulate a probability density distribution. We will create distributions of data (x), and see how they differ from the distribution of the average ($\bar{x}$). 
@@ -11,7 +11,7 @@ In this activity you will be creating random samples to simulate a probability d
 
 * Each group of assigns one person to be a _roller_, one a _recorder_, and a _plotter_. 
 * Get a blank plot from Dr. D. and the number of dice specified in the top right of the page. 
-* The recorder logs into Google drive and opens the designated spreadsheet and identifies the group they are working in. 
+* The recorder logs into Google drive and opens the spreadsheet in the `07 Foundations for Inference/Simulation` folder in Google Drive. Identifies the group they are working in. 
 
 ## Phase 1: Create a random sample of $x$'s
 
