@@ -86,22 +86,19 @@ We're finishing up Bivariate Inference this week.
 
 Self and peer evaluation form available: Due Sunday https://forms.gle/Vrhf9FEqwiWYPD4N9
 
-### 4/1/19 - [Week 10](https://norcalbiostat.github.io/MATH315/wk/wk10.html)
-
-This week got lost in the post-sickness & pre-DataFest ether. 
-
-
-#### Midterm Error Assessment (Optional - Due 4/5/19)
-As an opportunity to look for patterns in your test taking and to develop strategies to perform better in the future, there is an optional error assessment that you can complete. If you do so you can earn up to half the points missed on the exam back. To do this you must use the [Analyzing exam errors form](reading/Analyzing exam errors.pdf) available on the materials page. Using this form you will: 
-
-* Classify the types of errors you made (where you lost points). 
-    - Identify common patterns or themes.
-* On a separate paper, correctly re-work every problem you missed. 
-* Go over your corrections with a tutor (or me). 
-    - Explain what you did wrong and why your corrections are right.
-    - Discuss strategies to perform better on future exams. 
-
 --->
+
+
+### `r format(wk1.date+7*8, "%m-%d-%Y")` Week 9: Bivariate Inference
+
+* See below for quiz schedule.
+* Covering 3 core statistical tests
+        - ANVOA: Q ~ C
+        - Chi-Squared: C ~ C
+        - Correlation: Q~Q
+* Be sure to fully watch and take notes on the PDS videos. 
+* Fully worked out examples are provided in the course packet. 
+* I highly encourage you to get the 1:1 extra R help available - link below. 
 
 
 ### `r format(wk1.date+7*7, "%m-%d-%Y")` Week 8: Statistical Inference via Hypothesis Testing
