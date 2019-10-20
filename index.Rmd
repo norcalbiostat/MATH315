@@ -92,13 +92,13 @@ Self and peer evaluation form available: Due Sunday https://forms.gle/Vrhf9FEqwi
 ### `r format(wk1.date+7*8, "%m-%d-%Y")` Week 9: Bivariate Inference
 
 * See below for quiz schedule.
-* Covering 3 core statistical tests
-        - ANVOA: Q ~ C
-        - Chi-Squared: C ~ C
-        - Correlation: Q~Q
-* Be sure to fully watch and take notes on the PDS videos. 
-* Fully worked out examples are provided in the course packet. 
-* I highly encourage you to get the 1:1 extra R help available - link below. 
+* Covering 3 core statistical tests  
+        - ANVOA: Q ~ C  
+        - Chi-Squared: C ~ C  
+        - Correlation: Q~Q  
+* Questions come from the PDS video AND the course packet. 
+* To be on track, you should have the first question in Hw8 (2-sample T-Test) complete before class on Monday. 
+* I highly encourage you to get the 1:1 extra R help available. Link below. 
 
 
 ### `r format(wk1.date+7*7, "%m-%d-%Y")` Week 8: Statistical Inference via Hypothesis Testing
