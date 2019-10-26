@@ -57,36 +57,25 @@ Good luck with all of your finals, and congratulations to those who are graduati
     - Textbook references: Open Intro 8.2, Applied Statistics Notebook Section 7.7
 
 
-### 4/15/19 - [Week 12](https://norcalbiostat.github.io/MATH315/wk/wk12.html)
+### `r format(wk1.date+7*11, "%m-%d-%Y")` Week 11: Moderation
 
-SET's this week. Please be present. 
 
 We're starting to talk about multivariable models this week. This involves
 understanding how to think about simultaneous relationships between multiple variables. 
 
 Life isn't bivariate. We "know" there is more to how big a caterpillar is than simply the species. What about the temperature? was it a drought year? what type of tree is it on? How heavy is the bird predation in that area? What other species are on the same tree that could be competing for resources? To understand the singular effect of bird predation on caterpillar size, we must consider how all other factors affect caterpillar size, and how those other factors might be related to each other as well. 
 
-The course notes is a "cliff notes" version of the lecture material for this coures. If you're not watching the videos (even on 1.5x speed) you are missing critical information that I will not lecture on in class, but that you will be responsible for on the homework and exam. 
+The course notes is a "cliff notes" version of the lecture material for this coures. If you're not watching the videos (even on 1.5x speed) you are missing critical information that I will not lecture on in class, but that you will be responsible for on the homework and exam. You will do poorly on Quiz 12 if you have not watched the videos and taken your own set of notes. 
 
-**Due this week**
+--->
 
-* HW09 - Moderation
-* Poster prep stage II - this includes a full revision of all stage 1 slides, and adding slides for two bivariate analyses. 
-
-
-### 4/8/19 - [Week 11](https://norcalbiostat.github.io/MATH315/wk/wk11.html)
-
-DataFest is over and so I'm back 100% with you!
+### `r format(wk1.date+7*9, "%m-%d-%Y")` Week 10: Regression Analysis
 
 We're finishing up Bivariate Inference this week. 
 
-* Correlation & Regression - similar, but different purposes. 
+* Simple Linear Regression - similar to correlation, but now we care about _how_ much the response variable changes as the explanatory varible changes. 
 * HW 8 due this Saturday
 * Think about which inferential tools you are going to want to use on your personal research questions. 
-
-Self and peer evaluation form available: Due Sunday https://forms.gle/Vrhf9FEqwiWYPD4N9
-
---->
 
 
 ### `r format(wk1.date+7*8, "%m-%d-%Y")` Week 9: Bivariate Inference

@@ -49,28 +49,6 @@ You can request help outside their regular office hours _at their discretion_ by
 
 ----
 
-### Lily Trejo
-<table>
-<tr>
-  <td width="250"><img src="mentors/lily.jpg" alt="Lily Trejo" /></td>
-  <td width="50"></td>
-  <td width="250"><strong>Known for: being an easy going/mellow person.</strong>  <br> 
-    <strong>Attending: </strong> None <br> 
-    <strong>OH: </strong>  <br> 
-    <strong>Contact: </strong> lptrejo@mail.csuchico.edu <br> </td>
-  <td width="50"></td>
-  <td width="350">Hi Math 315 students,
-My name is Lilly! I am a senior standing student here at CSU Chico majoring in Environmental Science: Applied Ecology. I come from a beautiful beach town called Carpinteria in Southern California. I love spending time outdoors and I have a huge appreciation for outdoor education/ research. Some of my outdoor hobbies include snowboarding, scuba diving, and hiking. While my indoor hobbies include binging shows, making cat toys, and cooking delicious meals. I am fairly new to the R programming world, but I am here to help you succeed  through this course! 
-
-Just like you I am a student so my "office hours" will go around my own class schedule. I will be on campus every day of the week so I am willing to meet out side of "office hours" during a time that works best for you or a group of you. Another possibility is that we can schedule random times/ days after 5pm by reaching out to me on SLACK. Also, you can always message me anytime on SLACK if you have any questions or concerns about the class in general.</td>
-</tr>
-</table>
-
-<br>
-
-
-----
-
 ### Nicole Paulson
 <table>
 <tr>

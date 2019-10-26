@@ -12,7 +12,7 @@ output:
 # Submission Guidelines
 
 * Use the template provided: [[RMD]](hw09_moderation_template.Rmd)
-* This is an individual assignment. I expect you to work with your team/partner on this, but each person must submit their own work, and own writing. 
+* This is an individual assignment. I understand that you to work with your team/partner on this, but each person must submit their own work, and own writing. 
 * Upload to the corresponding assignment to Google Drive by the due date. 
     
 
