@@ -96,4 +96,31 @@ x = out.read %>% select(link) %>% kable(format="html") %>%
 gsub("<thead>.*</thead>", "", x)
 ```
 
+----
+
+# Extra Credit 
+
+Only one EC submission per person. 
+No "fluff" pieces. Find something that interests _you_. 
+One page summary of the topic, and how it relates to the statistics you are learning or the statistics you will use in your field. 
+
+## In Person
+
+* Edward Roualdes Biology Seminar Talk
+* My Math Seminar talk on Missing Data. Friday 11/8, 4pm. Holt 175
+
+## Online
+
+* Ted Talks: You must watch at least an hour's worth of these and report on each (1pg total). A second page containing titles, URL and lenght of video is required. 
+    - Hans Rosling's Ted Talks. https://www.ted.com/playlists/474/the_best_hans_rosling_talks_yo 
+    - Why you should love Statistics, Alan Smith. https://www.youtube.com/watch?v=ogeGJS0GEF4
+    - Other Ted Talks are acceptable as long as they are about data or statistics. 
+
+* Career talks
+  - Bioinformatics: https://www.youtube.com/results?search_query=bioinformatics
+  - Business Analytics: https://www.youtube.com/results?search_query=business+analytics
+  - Data driven Agriculture: https://www.youtube.com/results?search_query=data+science+in+agriculture
+  - Data science and the Environment: https://www.youtube.com/results?search_query=data+science+for+the+environment
+  - Others? Data science in ___
+  
 
