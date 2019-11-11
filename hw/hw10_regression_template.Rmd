@@ -1,9 +1,10 @@
 ---
-title: "Regression Assignment"
+title: "Multiple Regression Assignment"
 author: "YOUR NAME HERE"
-date: "Last Updated `r Sys.time()`"
 output:
-  word_document: default
+  html_document:
+    highlight: tango
+    theme: readable
   pdf_document: default
 ---
 
@@ -16,75 +17,97 @@ library(pander) # Used for printing nice linear model tables
 panderOptions("digits", 3)
 ```
 
-# Multiple Linear Regression (Q ~ Q + B)
+# Multiple Linear Regression
 
 ## 1. Identify variables
-* Quantitative response variable ($y$): 
-* Quantitative explanatory variable ($x_{1}$):
-* Covariate (controlling variable) ($x_{2}$): 
+* Quantitative outcome: 
+* Quantitative predictor: 
+* Binary confounder: 
+ 
 
-## 2. Write the mathematical model
+## 2. State the research Hypothesis
+
+* Null hypothesis: 
+* Alternative hypothesis:
+* Confounding hypothesis: 
+
+## 3. Fit the simple model
 
 
+## 4. Fit the multivariable model
 
-## 3. Fit the multivariable model
+## 5. Interpret the regression coefficients.
 
-
-## 4. Interpret each regression coefficient EXCEPT the intercept.
-
+* $b_{0}$: 
 * $b_{1}$: 
 * $b_{2}$: 
 
-
+## 6. Conclusion
 
 ----
- 
-# Logistic Regression (logit(B) ~ Q + B)
+
+# Logistic Regression
 
 
 ## 1. Identify variables
 
-* Binary response variable ($y$): 
-* Explanatory variable ($x_{1}$):
-* Covariate (controlling variable) ($x_{2}$): 
-
-## 2. Write the mathematical model
-> Since this is a binary outcome, make sure you use the correct logit transformation: $logit(y{i})$. 
+* Binary outcome:  
+* Quantitative predictor: 
+* Binary confounder: 
+ 
 
 
+## 2. State hypotheses
 
-## 3. Fit the Logistic regression model
+* Null hypothesis: 
+* Alternative hypothesis:
+* Confounding hypothesis: 
+
+## 3. Fit the simple model
 
 
 
-## 4. Calculate and interpret the Odds Ratio estimates
+## 4. Fit the multivariable model
 
+
+## 5. Interpret the Odds Ratio estimates
+
+
+## 6. Conclusion
 
 ----
 
-# Categorical predictors (Q ~ Q + B + C)
+# Categorical predictors
 
 
-## 1. Identify variables and their data types. 
-* Response variable ($y$):
-* Categorical predictor (in words):
+## 1. Identify variables and their data type
+* Outcome:
+* Predictor: 
+* Predictor: 
  
-Define each level of the categorical predictor: State what group is the reference group. 
+## 2. Write the mathematical model. 
+Define what each $x$ is, and write the mathematical model. You may have to add $x's$. R users, make sure they are wrapped in dollar signs. 
+State what group is the reference group. 
 
 * Let $x_{1}$ be 
-* Let $x_{2}=1$ when
-* let $x_{3}=1$ when
-* The reference group is: 
+* Let $x_{2}=1$ when  
+* let $x_{3}=1$ when  
 
 
-## 2. Write the mathematical model. 
+The reference group is: 
+
+The mathematical model would look like: 
+
+$$ Y \sim \beta_{0} + \beta_{1}*x_{1} + \beta_{2}x_{2} + \beta_{3}x_{3} + \beta_{4}x_{4} + \beta_{5}x_{5} $$
+
+## 3. Fit the multivariable model with both predictors. 
 
 
-## 3. Fit the multivariable model. 
+## 4. Interpret the regression coefficients. 
 
-
-## 4. Interpret each regression coefficient EXCEPT the intercept.
-
+* $b_{0}$: 
 * $b_{1}$: 
 * $b_{2}$: 
-* etc...
+* $b_{3}$:
+
+## 5. Conclusion

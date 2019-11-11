@@ -1,0 +1,32 @@
+---
+title: "Regression Assignment"
+output:
+  html_document:
+    highlight: tango
+    theme: readable
+  pdf_document: default
+---
+
+
+
+# Assignment Overview
+
+You will perform <span style="color:blue">3</span> regression analyses in this assignment. 
+The variable types for the coefficients are pre-specified so that you can practice interpretations of different types of variables. **You must use the variable types listed here**
+
+1. Multiple Linear Regression: $Q \sim Q + B$ (one quantitative and one binary predictor)
+2. Logistic Regression: $logit(B) \sim Q + B$ 
+3. Either of the two above analyses (or a new model) add a third categorical (more than 2 levels) variable e.g.: $Q \sim  Q + B + C$. (one quantitative, one binary, one categorical)
+
+# Instructions
+
+0. Use the template provided: [[RMD]](hw10_regression_template.Rmd)
+1. Identify variables under consideration. 
+2. Write the mathematical model being fit by using LaTeX script (example below) directly in the Rmarkdown file. (Not in a code chunk, and yes the two dollar signs are necessary.)
+
+`$$y_{i} \sim \beta_{0} + \beta_{1}x_{1i} + \beta_{2}x_{2i} + \epsilon_{i}$$`
+
+3. Fit the model and calculate confidence intervals for the coefficients.
+4. Interpret all regression coefficients except the intercept. 
+    - For logistic regression, calculate and interpret the Odds Ratios
+

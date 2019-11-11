@@ -50,24 +50,29 @@ Good luck with all of your finals, and congratulations to those who are graduati
 * Thursday: 10-11am, 2-4pm (Tehama 116)
 * Friday: 11-12pm, 2-3pm
    
-<!--- 
-### 12/3/18 - [Week 14](https://norcalbiostat.github.io/MATH315/wk/wk14.html)
-* You should be working on finishing the regression assignment, and Poster Prep Stage III this week. 
-* You will be building models, and having to decide which model fits the data best using different criteria. 
-    - Textbook references: Open Intro 8.2, Applied Statistics Notebook Section 7.7
+--->
+
+### `r format(wk1.date+7*11, "%m-%d-%Y")` Week 12: Multivariable Regression Modeling
+
+* Writing and interpreting multivariable models
+* How else can tertiary variable muck up an observed bivariate relationship? Confounding. 
+
+**TWO THINGS TO WORK ON THIS WEEK**
+
+* Homework 10
+* Poster prep stage III - Take your bivariate relationship and add an appropriate analysis. 
+
 
 
 ### `r format(wk1.date+7*11, "%m-%d-%Y")` Week 11: Moderation
-
 
 We're starting to talk about multivariable models this week. This involves
 understanding how to think about simultaneous relationships between multiple variables. 
 
 Life isn't bivariate. We "know" there is more to how big a caterpillar is than simply the species. What about the temperature? was it a drought year? what type of tree is it on? How heavy is the bird predation in that area? What other species are on the same tree that could be competing for resources? To understand the singular effect of bird predation on caterpillar size, we must consider how all other factors affect caterpillar size, and how those other factors might be related to each other as well. 
 
-The course notes is a "cliff notes" version of the lecture material for this coures. If you're not watching the videos (even on 1.5x speed) you are missing critical information that I will not lecture on in class, but that you will be responsible for on the homework and exam. You will do poorly on Quiz 12 if you have not watched the videos and taken your own set of notes. 
+The course notes is a "cliff notes" version of the lecture material for this coures. If you're not watching the videos (even on 1.5x speed) you are missing critical information that I will not lecture on in class, but that you will be responsible for on the homework and exam. You will do poorly on the quizzes if you have not watched the videos and taken your own set of notes. 
 
---->
 
 ### `r format(wk1.date+7*9, "%m-%d-%Y")` Week 10: Regression Analysis
 
