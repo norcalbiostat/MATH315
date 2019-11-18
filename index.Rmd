@@ -52,6 +52,18 @@ Good luck with all of your finals, and congratulations to those who are graduati
    
 --->
 
+### `r format(wk1.date+7*12, "%m-%d-%Y")` Week 13: Categorical Variables & Logistic Regression
+
+* Swapping ordering of topics - Categorical variables first on Monday, Logistic regression starts Wednesday
+* Quiz 13 (on both categorical variables and logistic regression) due Tuesday night. 
+* Homework 10 due Saturday before you go off on fall Break. 
+* My Math Seminar talk on Missing Data video has been posted on the [notes](notes.html) page. 
+        - Any EC is due by 12/6
+
+
+> Other schedule updates: No more quizzes after break. Gradebook total has been adjusted to dropping the lowest 2 quiz scores. 
+
+
 ### `r format(wk1.date+7*11, "%m-%d-%Y")` Week 12: Multivariable Regression Modeling
 
 * Writing and interpreting multivariable models
