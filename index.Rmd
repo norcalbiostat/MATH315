@@ -64,6 +64,10 @@ Good luck with all of your finals, and congratulations to those who are graduati
     - propose further work: What can someone *DO* with the information you've found?
 
 
+### `r format(wk1.date+7*13, "%m-%d-%Y")` Fall Break
+Relax, get caught up on sleep. 
+
+
 ### `r format(wk1.date+7*12, "%m-%d-%Y")` Week 13: Categorical Variables & Logistic Regression
 
 * Swapping ordering of topics - Categorical variables first on Monday, Logistic regression starts Wednesday
