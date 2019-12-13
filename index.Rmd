@@ -10,47 +10,47 @@ This is the course website for <span style="color:teal">**Applied Statistical Me
 
 <br>
 
-<!---
-### 5/12/19 - Finals Week
 
-* Common Final (Both classes): *Tehama 116 4-6pm*
+### `r format(wk1.date+7*16, "%m-%d-%Y")` Week 16: Finals Week
+
+* Poster Session: *Monday 4-6pm Tehama 116*
 * Poster peer review Google Form: https://forms.gle/169KD9x43T5YKHGh6 
     - Some paper copies will be available. 
     - You will be expected to review 10 posters during the final session. 
-* Office Hours: MW 9:30-11:30, T 9:11am
 
-Final assignments (Due Friday 5/17)
+Final take home exam Due Wednesday 12/18 - midnight.
 
-* MAI Post assessment - Google Form
+Final assignments (Due Friday 5/20)
+
+* [MAI Post assessment](https://forms.gle/7CaYePDMpRuZohzJ9)
 * Post-course survey from Lisa Dierker (will be emailed to you this week)
-* Post assessment in R - Google Form
-* Any remaining extra credit
-
-Good luck with all of your finals, and congratulations to those who are graduating on Saturday!
+* [Post assessment in R](https://forms.gle/FWAZjanJ31hTrSKK8)
 
 
----
 
-### 5/6/19 - Week 15
+> OH for Finals Week: All hours will be held in Holt 202   
+- Mon: 9-10am, 2-3pm  
+- Tue:  10:30-11:30, 3pm-5pm  
+- Wed: 9:30-11am   
+
+
+
+### `r format(wk1.date+7*15, "%m-%d-%Y")` Week 15: Poster building!
 
 * Poster building week! **Due dates are FIRM**
     - Instructions are on [the project page.]( https://norcalbiostat.github.io/MATH315/project.html#posters_presentations)
     - Guidelines and templates are here: https://norcalbiostat.netlify.com/lec/poster_guidelines/ 
-    - Drafts are due Wednesday 5/8 at 5pm
-    - Peer review Friday 5/10 EOD
-    - Final version due Monday 5/13 at 2pm
+    - Draft due 12/11
+    - Peer Review due 12/13
+    - Final due 12/16 noon.
+    
 * Take Home Final exam 
-    - Distributed Wed 5/8 (Estimated) via Slack. 
-    - Due Wednesday 5/15 EOD. 
-        - [Upload your **RMD code** file to this link.](https://www.dropbox.com/request/HNPJtln9HcqxVgM7omDD)
-        
-#### Expanded Office Hours - 11 hours!!!
-* Monday: 10-11am, 3-4pm 
-* Tuesday: 10-12pm, 2-4pm (Tehama 116)
-* Thursday: 10-11am, 2-4pm (Tehama 116)
-* Friday: 11-12pm, 2-3pm
-   
---->
+    - Distributed Wed 12/11 via Slack. 
+    - Due Wednesday 12/18 EOD. 
+    - All links to files and for submission in Slack post. 
+
+* Makeup Midterm - In class on Friday. Otherwise, open work day. 
+
 
 ### `r format(wk1.date+7*14, "%m-%d-%Y")` Week 14: Model building / Model fit
 
