@@ -14,7 +14,7 @@ This is the course website for <span style="color:teal">**Applied Statistical Me
 ### `r format(wk1.date+7*16, "%m-%d-%Y")` Week 16: Finals Week
 
 * Poster Session: *Monday 4-6pm Tehama 116*
-* Poster peer review Google Form: https://forms.gle/169KD9x43T5YKHGh6 
+* Poster peer review Google Form: https://forms.gle/QWu3YMZtiAbjzxj29
     - Some paper copies will be available. 
     - You will be expected to review 10 posters during the final session. 
 

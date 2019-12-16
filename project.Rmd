@@ -234,9 +234,9 @@ https://norcalbiostat.netlify.com/lec/poster_guidelines/
 
 * Upload your final poster (as printed) to the `Google Drive/Project Poster Final Version` folder. 
     - PDF preferred. PPTX ok.
-* Scoring will be done via [Google Forms](https://goo.gl/forms/FwFw06eKDrYG0t503). It looks exactly like the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria).
+* Scoring will be done via [Google Forms](https://forms.gle/QWu3YMZtiAbjzxj29). It looks exactly like the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria).
     - When not presenting, you will walk around and learn about others research. Ask them questions, fill out the evaluation on your phone as you go. Printed copies will be available upon request so you can submit later. 
 * The final grade will be determined by
-    - Base score = **30%** student score + **70%** instructor score **+ bonus pts** for best in show awards **- 1** point penalty for each day late. 
+    - Base score = **30%** student score + **70%** instructor score **+ bonus pts** for best in show awards. 
 
 
