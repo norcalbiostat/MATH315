@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.319">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>MATH 315 - Research Project</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="twitter:title" content="MATH 315 - Research Project">
+<meta name="twitter:description" content="">
+<meta name="twitter:creator" content="@norcalbiostat">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">MATH 315</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="dropdown-header">
+ <span class="menu-text">Modules</span></li>
+  <li class="nav-item">
+    <a class="nav-link" href="./hw.html" rel="" target="">
+ <span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./project.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Project</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-other-materials" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Other Materials</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-other-materials">    
+        <li class="dropdown-header">syllabus.qmd</li>
+        <li>
+    <a class="dropdown-item" href="https://norcalbiostat.github.io/AppliedStatistics_notes/" rel="" target="">
+ <span class="dropdown-text">Applied Stats Notebook</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://openintro-ims.netlify.app/" rel="" target="">
+ <span class="dropdown-text">Intro to Modern Stats</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tbd" rel="" target=""><i class="bi bi-google" role="img">
+</i> 
+ <span class="dropdown-text">Google Drive</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./help.qmd" rel="" target="">
+ <span class="menu-text">Help!</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#general-notes" id="toc-general-notes" class="nav-link" data-scroll-target="#general-notes">General Notes</a></li>
+  </ul></li>
+  <li><a href="#stage-1-choose-a-data-set-and-identify-a-few-research-topics" id="toc-stage-1-choose-a-data-set-and-identify-a-few-research-topics" class="nav-link" data-scroll-target="#stage-1-choose-a-data-set-and-identify-a-few-research-topics">Stage 1: Choose a data set and identify a few research topics</a></li>
+  <li><a href="#stage-2-introduce-your-research-question-and-variables-of-interest" id="toc-stage-2-introduce-your-research-question-and-variables-of-interest" class="nav-link" data-scroll-target="#stage-2-introduce-your-research-question-and-variables-of-interest">Stage 2: Introduce your research question and variables of interest</a></li>
+  <li><a href="#stage-3-exploratory-data-analysis" id="toc-stage-3-exploratory-data-analysis" class="nav-link" data-scroll-target="#stage-3-exploratory-data-analysis">Stage 3: Exploratory data analysis</a></li>
+  <li><a href="#stage-4-bivariate-inference" id="toc-stage-4-bivariate-inference" class="nav-link" data-scroll-target="#stage-4-bivariate-inference">Stage 4: Bivariate Inference</a></li>
+  <li><a href="#stage-5-multivariable-modeling-summarizing-findings" id="toc-stage-5-multivariable-modeling-summarizing-findings" class="nav-link" data-scroll-target="#stage-5-multivariable-modeling-summarizing-findings">Stage 5: Multivariable modeling &amp; summarizing findings</a></li>
+  <li><a href="#stage-6-posters-presentations" id="toc-stage-6-posters-presentations" class="nav-link" data-scroll-target="#stage-6-posters-presentations">Stage 6: Posters Presentations</a>
+  <ul class="collapse">
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a></li>
+  <li><a href="#presentations-evaluations" id="toc-presentations-evaluations" class="nav-link" data-scroll-target="#presentations-evaluations">Presentations &amp; Evaluations</a></li>
+  <li><a href="#poster-guidelines" id="toc-poster-guidelines" class="nav-link" data-scroll-target="#poster-guidelines">Poster Guidelines</a></li>
+  <li><a href="#draft-version" id="toc-draft-version" class="nav-link" data-scroll-target="#draft-version">Draft version</a></li>
+  <li><a href="#final-version" id="toc-final-version" class="nav-link" data-scroll-target="#final-version">Final Version</a></li>
+  </ul></li>
+  <li><a href="#grading-method" id="toc-grading-method" class="nav-link" data-scroll-target="#grading-method">Grading Method</a>
+  <ul class="collapse">
+  <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
+  <li><a href="#but-points" id="toc-but-points" class="nav-link" data-scroll-target="#but-points">… but points!??</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/norcalbiostat/math315/edit/main/project.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/norcalbiostat/math315/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Research Project</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Throughout the entire semester you will be analyzing a data set with the end goal of creating a poster presentation to present your research. Your assignments will serve as a first draft of exploration into your research questions, and helps you build your story. Homework assignments alone will not be sufficient for a good analysis.</p>
+<p>You will build up your project in stages, revising multiple times. The end goal is a research poster that you will present during finals week. You will be summarizing your findings using Google Slides. This will help you concisely explain your research topic and findings in a way will be easier to translate (fit) onto a poster. Here is the general outline, with each stage is explained in detail further below.</p>
+<ul>
+<li>Stage 1: Choose a data set and identify a few research topics</li>
+<li>Stage 2: Introduce your project and variables of interest</li>
+<li>Stage 3: Explore your data and relationships</li>
+<li>Stage 4: Analyze bivariate relationships</li>
+<li>Stage 5: Multivariable modeling &amp; summarizing findings</li>
+<li>Stage 6: Poster Creation &amp; Presentation</li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Peer Review
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Stages 2-6 are subject to peer review. See the <a href="help.html#peer-review">help with peer review</a> page for details.</p>
+<p>Once you have addressed a particular piece of feedback mark it as “resolved” in Google Slides.</p>
+<p><span class="emoji" data-emoji="warning">⚠️</span> <em>Do Not Delete Feedback until notified that it is okay</em></p>
+</div>
+</div>
+<section id="general-notes" class="level3">
+<h3 class="anchored" data-anchor-id="general-notes">General Notes</h3>
+<ul>
+<li>At each reviewed stage you should update anything you need to change based on feedback, such as correctly making graphics, writing results correctly etc.</li>
+<li>The contents of each slide are specified in the slide template and explained below.
+<ul>
+<li>You are welcome to have “staging” slides where you can dump content, thoughts, analyses that you <em>may</em> end up using. <strong>These extra slides should be at the END of the required slides.</strong></li>
+</ul></li>
+<li>There are also <a href="https://drive.google.com/drive/folders/1JoRVyt_F4IqleTZFCnsPjOaFYDVNJPzP">example slides</a> from prior students as a references.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dr.&nbsp;D’s interpretation of your research
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I will be using <a href="https://docs.google.com/spreadsheets/d/10O0Fasbpo_3KgC5Z7-P4YDAnZu70bYn_WFPR6vRX4O0">this Google file</a> to summarize your research progress as I do my reviews. I may ask you to review it and address critical questions.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="stage-1-choose-a-data-set-and-identify-a-few-research-topics" class="level2">
+<h2 class="anchored" data-anchor-id="stage-1-choose-a-data-set-and-identify-a-few-research-topics">Stage 1: Choose a data set and identify a few research topics</h2>
+<ul>
+<li>Project data you can choose from can be found in this <a href="https://drive.google.com/drive/u/0/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Google Drive folder</a>.</li>
+<li>Browse through the available data sets, read the summaries and skim the codebooks.</li>
+<li>Add your name to <a href="https://docs.google.com/spreadsheets/d/10O0Fasbpo_3KgC5Z7-P4YDAnZu70bYn_WFPR6vRX4O0">Dr D’s summary of your research</a> once you have chosen a topic.</li>
+<li>Download the data and codebook to your <code>Math615/data</code> folder.</li>
+<li>You will work through writing out a few research questions as part of Homework 02.</li>
+</ul>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Consideration of other data sources
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Under only very strict certain circumstances I will allow for other data sets to be used (this includes your graduate thesis data). You must make an appointment to meet with me to go over your data, codebook and research question for this to be a consideration.</p>
+<p><strong>Criteria for proposing new data sets</strong></p>
+<ul>
+<li>File type must be a .txt, .csv, .xlsx or .xls file</li>
+<li>File size is less than 1 Gig</li>
+<li>A codebook or data dictionary that fully explains what each variable means is available.</li>
+<li>There are at least 200 rows (observations), but ideally between 500-1000.</li>
+<li>There are 20 or more variables
+<ul>
+<li>At least 4 quantitative variables</li>
+<li>At least 1 categorical variable</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="stage-2-introduce-your-research-question-and-variables-of-interest" class="level2">
+<h2 class="anchored" data-anchor-id="stage-2-introduce-your-research-question-and-variables-of-interest">Stage 2: Introduce your research question and variables of interest</h2>
+<ul>
+<li>Make a copy of this <a href="https://docs.google.com/presentation/d/1M98PL_S1TzHjXs00Ir86imfr1mO801tyWawk30RH0r4">Template</a> and save it in the <code>Project -00 Poster prep</code> folder in our Google Drive.</li>
+<li>Name your file using your username only</li>
+</ul>
+<p>These slides for this stage are pale yellow in the template.</p>
+<ul>
+<li><strong>Slide 01</strong>. Title</li>
+<li><strong>Slide 02</strong>. Introduction</li>
+<li><strong>Slide 03</strong>. Background &amp; lit review.</li>
+<li><strong>Slide 04</strong>. Explain the research problem / topic area</li>
+<li><strong>Slide 05</strong>. State your Research Question as a testable hypothesis.</li>
+<li><strong>Slide 06</strong>. Introduce the data. Where does it come from, how was it collected. How many records?</li>
+<li><strong>Slide 07</strong>. Description of measures (variables) being used.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="emoji" data-emoji="warning">⚠️</span> <strong>Pay attention to slide Numbers!</strong></p>
+<ul>
+<li>Please ensure that all content is on the slide as expected.</li>
+<li>Slides will not be filled in in direct numerical order.</li>
+<li>Check the template if you are confused. I have added slide background coloring to help you keep you on track</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="stage-3-exploratory-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="stage-3-exploratory-data-analysis">Stage 3: Exploratory data analysis</h2>
+<p>These slides are pale blue in the template.</p>
+<ul>
+<li><strong>Slide 09</strong>. Fully describe your primary response variable</li>
+<li><strong>Slide 10</strong>. Fully describe your primary explanatory variable</li>
+<li><strong>Slide 11</strong>. Fully describe the relationship between your primary explanatory and primary response variables</li>
+<li><strong>Slide 13</strong>. Fully describe the relationship of a third variable to either your explanatory or response variables</li>
+</ul>
+<p>All using appropriate summary statistics, graphic and an explanatory sentence.</p>
+</section>
+<section id="stage-4-bivariate-inference" class="level2">
+<h2 class="anchored" data-anchor-id="stage-4-bivariate-inference">Stage 4: Bivariate Inference</h2>
+<p>These slides are pale purple in the template.</p>
+<ul>
+<li><p><strong>Slide 08</strong>. Describe in a few sentences what analysis tools you will use to answer your research question</p></li>
+<li><p><strong>Slide 12</strong>. Analyze the relationship discussed in slides 11</p></li>
+<li><p><strong>Slide 14</strong>. Analyze the relationship discussed in slides 13</p></li>
+<li><p>This should be a conclusion written in English, in the context of the problem, includes summary statistics, confidence interval and a p-value.</p></li>
+</ul>
+</section>
+<section id="stage-5-multivariable-modeling-summarizing-findings" class="level2">
+<h2 class="anchored" data-anchor-id="stage-5-multivariable-modeling-summarizing-findings">Stage 5: Multivariable modeling &amp; summarizing findings</h2>
+<p>You are trying to understand the relationship between your explanatory and response variable, in presence of information contained in other variables.</p>
+<p>These slides are pale green in the template.</p>
+<p><strong>Slide 15: Model Building</strong></p>
+<ul>
+<li>Build a multivariable model by adding additional predictors to the model.</li>
+<li>Explain your model building process in a few bullet points.
+<ul>
+<li>What variables did you test as other explanatory variables?</li>
+<li>Which ones did you examine as confounders, or as effect moderators?</li>
+<li>How did you determine your final model?</li>
+</ul></li>
+<li>See the lecture notes (<a href="https://norcalbiostat.github.io/AppliedStatistics_notes/model-building.html">ASCN Ch 10</a>) on model building as guidance.</li>
+<li>Include any variables that were found to be significantly associated with the outcome</li>
+<li>If you found a moderator, your model should include an interaction term with your moderating variable.</li>
+<li>If you have a confounding variable, you still need to keep your primary explanatory variable in the model.</li>
+</ul>
+<p><strong>Slide 16: Multivariable Model - Summary of results</strong></p>
+<ul>
+<li>A table or plot of the regression coefficients (or Odds Ratios) must be presented.</li>
+<li>At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem.</li>
+</ul>
+<p><strong>Slide 17. Model Assessment</strong></p>
+<ul>
+<li>If using a linear or log-linear model;
+<ul>
+<li>present and interpret the model diagnostic plots</li>
+<li>report and interpret <span class="math inline">\(R^{2}\)</span></li>
+</ul></li>
+<li>If using a logistic regression model;
+<ul>
+<li>report the results of a test for goodness of fit</li>
+<li>report and interpret the model accuracy, and the cutpoint used. (<a href="https://norcalbiostat.github.io/AppliedStatistics_notes/model-performance.html">Ref: ASCN Ch 12.5</a>)</li>
+</ul></li>
+</ul>
+<p><strong>Slide 18. Discussion</strong></p>
+<ul>
+<li>Here you will explain what your graphical and inferential results tell you about your topic.</li>
+<li>Discuss if your research hypothesis was supported, if it was not, why you think that might be</li>
+<li>Explain the overall story/trend/what you learned when you consider your univariate, bivariate &amp; multivariate results about your topic.</li>
+<li>Compare your results to previous research results. Do they agree or disagree?</li>
+</ul>
+<p><strong>Slide 19. Implications</strong></p>
+<ul>
+<li>What are the practical implications of your results?</li>
+<li>What could others do with your findings?</li>
+<li>What future research needs to be conducted?
+<ul>
+<li>This needs to be more specific than “other variables could be explored”. Which variables and why? What other research articles indicate that those other variables are relevant?</li>
+</ul></li>
+</ul>
+<p><strong>Slide 20. Limitations</strong></p>
+<ul>
+<li>Who are the results of this study generalizable to? (i.e.&nbsp;a subset of individuals?)</li>
+<li>Were there any model assumptions that were not upheld?</li>
+<li>If this is an observational study, you should make a statement about the findings are associations and not causal in nature</li>
+<li>Are there other factors that could explain your response variable that you did not include in your model?</li>
+</ul>
+<p><strong>Slide 21. References</strong></p>
+<ul>
+<li>You can use smaller font to get all references on one slide.</li>
+<li>Use references from research plan, and any additional references gathered along the way.</li>
+<li>Make sure these are correctly done in APA format.</li>
+<li>Proper citations for
+<ul>
+<li><a href="http://www.cpc.unc.edu/projects/addhealth/faqs/addhealth#how-do-i-cite-the-add-health-contractual-data-">Add Health</a></li>
+<li><em>R</em>: Type <code>citation()</code></li>
+<li><a href="https://support.rstudio.com/hc/en-us/articles/206212048-Citing-RStudio">R Studio</a></li>
+<li><a href="http://www-01.ibm.com/support/docview.wss?uid=swg21476197">SPSS</a></li>
+<li><a href="http://blog.apastyle.org/apastyle/2015/01/how-to-cite-software-in-apa-style.html">How to cite software in Text</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="stage-6-posters-presentations" class="level2">
+<h2 class="anchored" data-anchor-id="stage-6-posters-presentations">Stage 6: Posters Presentations</h2>
+<section id="reproducibility" class="level3">
+<h3 class="anchored" data-anchor-id="reproducibility">Reproducibility</h3>
+<ul>
+<li>You will transfer all findings into a research poster, print the poster, and then present your research to your classmates.</li>
+<li>You will create a new script file, named <code>userid_poster.qmd</code> that replicates all the findings, graphs and analysis done for your poster.
+<ul>
+<li>You will also turn in your data management file (<code>userid_dm.qmd</code>) along with this script file.</li>
+<li>I should be able to reproduce every finding in your poster with the raw data, and these two script files.</li>
+<li>The more code I have to change to get your script to run, or if I can’t reproduce a finding the lower your score</li>
+</ul></li>
+<li>Submit the poster file itself (as PDF) into the <code>Project-02 Poster Final</code> Google Drive folder, and the code in the <code>Poster code submision</code> subfolder.</li>
+</ul>
+</section>
+<section id="presentations-evaluations" class="level3">
+<h3 class="anchored" data-anchor-id="presentations-evaluations">Presentations &amp; Evaluations</h3>
+<ul>
+<li>We will split the class in half. When not presenting, you will be scoring the other half of the class’s posters using <a href="https://forms.gle/SWBM96MjcEmMDHGo9">this scoring sheet</a></li>
+<li>Posters can be in powerpoint (the standard format for research posters), or Google Slides (once appropriately sized)
+<ul>
+<li>Regardless of the file type, you must use a template. Do not try to reinvent the wheel.</li>
+</ul></li>
+</ul>
+</section>
+<section id="poster-guidelines" class="level3">
+<h3 class="anchored" data-anchor-id="poster-guidelines">Poster Guidelines</h3>
+<p>See the full guidelines <a href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/">in this blog post</a>. This post includes:</p>
+<ul>
+<li><a href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#templates">Links to poster templates</a></li>
+<li><a href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#content">Details on what each section should contain</a></li>
+<li>Guidance on <a href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#aesthetics">aesthetics</a> and <a href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#printing">printing</a></li>
+<li><a href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#examples">Examples of professional and prior student work.</a></li>
+</ul>
+</section>
+<section id="draft-version" class="level3">
+<h3 class="anchored" data-anchor-id="draft-version">Draft version</h3>
+<ul>
+<li>This draft is graded on a 1-10 scale on how complete the poster is. You should consider this a draft that you would circulate to your colleagues for final review and comments.
+<ul>
+<li>Basically the more work I think you need to put into your poster to make it presentable, the lower the points you get for the draft.</li>
+</ul></li>
+<li>Use the <a href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#evaluation-criteria">evaluation criteria</a> as a guide for what I am looking for.</li>
+</ul>
+<p><strong>Submission and Peer Review Instructions</strong></p>
+<ul>
+<li>Save your poster as a PDF and upload to the <code>Google Drive/Project Poster Drafts</code> folder.</li>
+<li>To conduct your peer review, open the PDF from Google Drive directly in your browser.
+<ul>
+<li>Use the comment feature to write the comments directly into the poster file itself.</li>
+<li>provide at least two specific comments for each
+<ul>
+<li>something that can be improved</li>
+<li>something that is good</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="final-version" class="level3">
+<h3 class="anchored" data-anchor-id="final-version">Final Version</h3>
+<ul>
+<li>Upload your final poster (as printed) to the <code>Google Drive/Project Poster Final Version</code> folder.
+<ul>
+<li>PDF preferred. PPTX ok.</li>
+</ul></li>
+<li>Scoring will be done via <a href="https://forms.gle/oFMQ2hqtthZFPq7T7">Google Forms</a>. It looks exactly like the <a href="https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria">evaluation criteria</a>.
+<ul>
+<li>When not presenting, you will walk around and learn about others research. Ask them questions, fill out the evaluation on your phone as you go. Printed copies will be available upon request so you can submit later.</li>
+</ul></li>
+<li>The final grade will be determined by
+<ul>
+<li>Base score = <strong>30%</strong> student score + <strong>70%</strong> instructor score <strong>+ bonus pts</strong> for best in show awards.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="grading-method" class="level2">
+<h2 class="anchored" data-anchor-id="grading-method">Grading Method</h2>
+<p>Instead of assigning specific points to each stage and adding up the points for an overall score, this work will be done through a series of revisions gaining feedback from both your peers and the instructor at each stage.</p>
+<ul>
+<li>For each slide to be assessed you will be marked as either “needing revision”, “meeting expectation”, or “exemplary”.</li>
+<li>I will update your status column for the slides that are being assessed at that stage.
+<ul>
+<li>I will also check on any prior slides that are at ‘needs revision’ stage.</li>
+</ul></li>
+<li>You can request a reassessment of prior work at (nearly) any time. (You can ask for it, I just may not get to it until the next time I’m reviewing slides.)</li>
+<li><strong>You are responsible for keeping track of your status!</strong> Suggestion - use conditional formatting on column F in your sheet. This is the color scheme I use:
+<ul>
+<li>Go to “Format –&gt; Conditional Formatting”</li>
+<li>Single color, apply to range F2:F22</li>
+<li>Format cells if
+<ul>
+<li><code>Text contains Not Assessible</code> (Red)</li>
+<li><code>Text contains ME</code> (light green)</li>
+<li><code>Text is exactly E</code> (dark green)</li>
+<li><code>Text contains NR</code> (yellow)</li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="rubric" class="level3">
+<h3 class="anchored" data-anchor-id="rubric">Rubric</h3>
+<p>This is a method of ‘ungrading’ that I have been wanting to try for a while. At the math congress (camping conference) I attended the first week of October a math educator discussed this method with us and so I was inspired to finally test it out. This project is a perfect opportunity to do so.</p>
+<p>This means that the Assessment item descriptions are a work in progress. Right now they are slightly modified from the old grading rubric. I may add, combine, or reword items as I do my revisions to better fit what I am actually looking for.</p>
+<p>Each person has their own ‘project assessment’ Google spreadsheet (same location as your poster) that shows you what achievement stage you are at for each item. It is locked to only view mode and only you and I have access to it.</p>
+</section>
+<section id="but-points" class="level3">
+<h3 class="anchored" data-anchor-id="but-points">… but points!??</h3>
+<p>In the end this still has to be converted to a point value/letter grade right? So here’s how I’m going to do it. The poster prep slides make up 80 out of the 110 points for the project.</p>
+<ul>
+<li>If you have <span class="math inline">\(\geq\)</span> 90% of assessment items at ‘exemplary’ and none at ‘needs revision’, that’s “A” work and you get the full 80 pts.</li>
+<li>If you have <span class="math inline">\(\geq\)</span> 90% of assessment items at ‘meets expectation’ and no more than 1 at ‘needs revision’, that’s “B” work and you get 72 pts. Note ‘meeting expectation’ does not correspond to <em>A</em> level work</li>
+<li>If you have <span class="math inline">\(\geq\)</span> 80% of assessment items at ‘meets expectation’ and no more than 2 at ‘needs revision’, that’s “C” work and you get 64 pts.</li>
+</ul>
+<p>This is a graduate level class, so anything below a C is considered not passing. I don’t expect anyone to be at that stage by the end of the semester.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">This site is built with 💚 and <a href="https://quarto.org/">Quarto</a> by <a href="www.norcalbiostat.com">Robin Donatello</a>.</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

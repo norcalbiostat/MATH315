@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 
 # Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
 
-## Overview
+## Module Overview
 
 <p>
 Unless specified otherwise, all assignments are due at midnight on the due date listed.  
@@ -84,7 +84,7 @@ out %>%
   column_spec(5, width = "35%")
 ```
 
-## Details
+## Weekly Details
 
 Click each link to expand or contract the details for that week. 
 
@@ -607,15 +607,4 @@ pander(w15$fri)
 
 </div>
 
-
-
-
-
-## Calendar
-
-For those of you that like the calendar view of your schedule. Due to schedule adjustments during
-the semester these dates may not match exactly with the schedule. In those cases please bring any 
-descrepencies to my attention via Slack. 
-
-<iframe src="https://calendar.google.com/calendar/embed?src=mail.csuchico.edu_16sj77sfemp9kqgis2g89j91e0%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 

@@ -1,0 +1,165 @@
+---
+format: html
+title: "HW 00: Getting setup"
+subtitle: "Getting all the materials and tools for the class"
+---
+
+
+# Assignment Overview
+The purpose of this assignment is to get you working in R Studio, to do a little self reflection and examination of your learning habits, and to recognize the amount of resources to learn R you have available to you. 
+
+# Instructions
+The specific details for each step are described below. 
+
+* You will answer the questions directly in the Quarto template provided (downloaded in step 3). 
+* When you are done, spellcheck your work using the ✔️ button in RStudio (2 icons to the left of `Render`). 
+* Upload this file to Canvas by the due date. 
+
+
+# Part I: Getting Started with collaborative research tools
+
+## 1. Discord
+
+Click this link to join the Math & Stats Discord server [https://discord.gg/xCQTAgu8bE](https://discord.gg/xCQTAgu8bE). This is a student led support platform where student office hours will be held and personalized channels can be made. 
+
+:::{.callout-important}
+### This is the defacto method of communication for this class
+I get way too many emails that it's easy to miss one from you. Got questions about an assignment? Need help understanding a code error? Ask here and get help not just from me, but from your classmates as well. This is a collaborative not competitive class.
+:::
+
+a. [Download the Desktop app](https://discord.com/download). <span style="color:red">**You should not rely on remembering to log in using the web version.**</span> Chances are very high that you will miss out on important announcements and bonus activities. There also is a Discord phone app that you may want to consider. 
+b. You are welcome to have any username you choose as long as it's suitable for school. 
+c. Once you join the server and accept the code of conduct, go to the `#class-selection` channel (left side bar) and click the icon that'll add you to our class folder. 
+d. Post an introduction in the `#315-class-chat` channel. Include the following:
+    * major
+    * Any pets (include pics!)
+    * what fictional family would you like to belong to? 
+    * your biggest concern about the class
+e. Take a screenshot of this 
+
+<br>
+
+<a href = "https://twitter.com/kara_woo/status/1374132865370234881">
+<img class="circle" src="images/hw00_slack_pets.png"
+width="500px" 
+alt="Tweet from Kara Woo saying Onboarding step 1: Find the slack channels where people post pet pictures" 
+title = "Onboarding step 1: Find the slack channels where people post pet pictures"/>
+</a>
+
+
+## 2. Analysis Software 
+
+You have two choices. 
+
+:::{.callout-tip icon=true}
+### Option 1. Install R and R Studio on your laptop.
+If you have already taken or are concurrently enrolled in Math 130 you should choose this option. 
+
+1. Follow the instructions from Math 130 to install and get started with R and R Studio. https://norcalbiostat.github.io/MATH130/notes/02_setup.html
+2. Complete all steps (including installing packages and reading on how to get help)
+3. You must install `LaTeX` via the `tinytex` package to turn your homework into PDF. 
+:::
+
+
+:::{.callout-tip icon=true}
+### Option 2. Use Rstudio in the Cloud ($5/month)
+If you only have a Chromebook or Ipad you will need to choose this option *OR* see if you can get a loaner laptop from ITSS for the entire semester (and then go with option 1)
+
+1. Create an account on Posit Cloud
+2. ...
+3. Profit
+
+:::
+
+
+
+
+
+## 2. Get Organized
+
+Using a consistent folder structure across your projects will help keep things organized, and will also make it easy to find/file things in the future. This can be especially helpful when you have multiple projects. In general, you may create directories (folders) for **scripts**, **data**, and **reports**.
+
+You need to choose a naming convention for your folders and try to stick with it. Recommended options are: 
+
+* ALL CAPS (MATH315)
+* no caps (math315)
+* snake_case (math_315) 
+* CamelCase (Math315) 
+
+Create this class folder along with the following three subfolders: 
+
+* `data` - your data set and codebook go in here
+* `homework` - all assignment script files
+* `project`- code related to your research project
+
+Your working directory should now look similar to this:
+
+<center><img src="images/hw00_folder_org.png" width="350px"></center>
+
+:::{.callout-important}
+### Do not let everything live in your downloads folder.
+This means when you download a file, right click and "Save as" or "Save target as" and **actively choose** where to download this file. Practice this now by downloading the [Quarto template](_templates/hw00-setup_template.qmd) for this assignment and put it in your `homework` folder. 
+:::
+
+Add a screenshot of your homework folder 
+
+
+2. Everyone learns differently, and the resources that are required in this class (PDS videos, course notes) may not quite work to explain a particular topic. **Find 3 different types of resources to learn R and Statistics. At least 2 must be chosen from provided resources from one of my websites**. These could include a video series other than the ones assigned with the course (passion drive stats), cheatsheets, discussion boards, books, course notes from a different class, etc. For each source: 
+    * Explain where you found it (include URL as applicable)
+    * When was it last updated (how real time is your source)
+    * Describe how you will use this source
+
+3. Using the code chunk provided, calculate `2+2`
+
+
+# Part II: Becoming a better learner. 
+
+Because we all have room for improvement, here are a few tasks for you to become a better learner. 
+
+
+> First I want you to create a "Learning Journal". This could be a composition notebook, a smaller 5x7 
+journal, loose papers in a binder or an electronic document on your computer/cloud. We will be engaging
+in several activities throughout the semseter aimed to help you become active and effective learners. 
+I will do several check-ins on your journal throughout the semester to ensure that it is being used. 
+
+Some of these tasks will ask you to reflect on a reading. Here is a link to help you understand more
+about what that actually means and how to write a reflection. 
+https://www.quora.com/What-does-it-mean-to-reflect-on-reading
+
+### Metacognition 
+
+From the materials page on the course website, download and read "MAI and academic achievement in college students". Once you are done, download and take the "Metacognition Awareness Inventory" (also available on the materials page). Submit your scores to Google Drive at this link: https://goo.gl/forms/FYgjJk72T3147e7f1 
+
+Write a reflection on this reading. Were you surprised by the results? 
+
+
+### Procrastination
+Watch this video on creating a cycle of success and tell me **one** concrete plans of action that you already implement, or are willing to give an honest try to do this semester to stay on track and not fall behind.  https://media.csuchico.edu/media/Avoiding+Procrastination/0_wquy9x90
+
+
+Write this plan in your learning journal. 
+
+
+### Being good at learning is hard!
+From the reading materials page on the course website, download and read the "Learning (Your First Job)" article. Answer at least _4_ of the following questions in this document. Choose one of these to put into your learning journal. 
+
+**What was the most important insight you gained from the reading? **
+
+
+**What surprised you most in the reading?**
+
+
+**What did you already know?**
+
+
+**Have you been taught how to learn before?  Where?  What did you learn about learning?**
+
+
+**What will you do differently during a lecture, if anything, given what you read?**
+
+
+**How will you prepare differently for exams, given what you read?**
+
+
+**Can you think of other good learning practices that the reading didn't mention?**
+
