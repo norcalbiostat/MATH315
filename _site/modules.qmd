@@ -10,6 +10,7 @@ library(kableExtra)
 
 #options(knitr.kable.NA = '') 
 
+ 
 # Import data & create new variables
 mod <- googlesheets4::read_sheet("1JyPeMAAHb3yrCzxDpnWqB7k-KsCTkULIPILAAsfai78", 
                                  sheet="module_overview") 

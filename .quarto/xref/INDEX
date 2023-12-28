@@ -1,0 +1,20 @@
+{
+  "index.qmd": {
+    "index.html": "e356f103"
+  },
+  "hw/hw00-setup.qmd": {
+    "hw00-setup.html": "a4584547"
+  },
+  "hw/hw01_introduction.Rmd": {
+    "hw01_introduction.html": "0a4574db"
+  },
+  "hw.qmd": {
+    "hw.html": "23aceb74"
+  },
+  "project.qmd": {
+    "project.html": "80eba0a8"
+  },
+  "modules.qmd": {
+    "modules.html": "e24ec8e4"
+  }
+}

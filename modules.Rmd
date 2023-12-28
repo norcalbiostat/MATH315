@@ -1,15 +1,17 @@
 ---
-title: "Module Schedule"
+title: "Module Overview"
 ---
 
-Schedule goes here
-
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 library(tidyverse)
 library(kableExtra)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
+```
 
-#options(knitr.kable.NA = '') 
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")`_ 
 
+```{r}
 # Import data & create new variables
 mod <- googlesheets4::read_sheet("1JyPeMAAHb3yrCzxDpnWqB7k-KsCTkULIPILAAsfai78", 
                                  sheet="module_overview") 
@@ -29,7 +31,7 @@ for(t in 1:max(tn$tnum)){
 
 out <- content %>%
   mutate(Date = format(Date,"%m/%d")) %>%
-  select(Date, Topic, Notes, Read, Watch, Practice = Do, Assess=quiz) 
+  select(Date, Topic, Notes, Read, Watch, Practice = hw, Assess=quiz) 
 
 
 # highlight rows
@@ -38,11 +40,11 @@ hlt.col <-  "background-color: #806000; color: #fff;"
 ```
 
 ```{r, results='asis'}
-out %>% kbl(align = "l", escape=TRUE, format = "markdown") %>% 
-  # kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
-  # pack_rows(tn$Topic[1], tn$start[1],   tn$end[1], label_row_css =mod.col) %>% 
-  # pack_rows(tn$Topic[2], tn$start[2],   tn$end[2], label_row_css =mod.col) %>%
-  # pack_rows(tn$Topic[3], tn$start[3],   tn$end[3], label_row_css =hlt.col) %>%
+out %>% kbl(align = "l", escape=TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
+  pack_rows(tn$Topic[1], tn$start[1],   tn$end[1], label_row_css =mod.col) %>% 
+  pack_rows(tn$Topic[2], tn$start[2],   tn$end[2], label_row_css =mod.col) %>%
+  pack_rows(tn$Topic[3], tn$start[3],   tn$end[3], label_row_css =hlt.col) %>%
   # pack_rows(tn$Topic[4], tn$start[4],   tn$end[4], label_row_css =mod.col) %>%
   # pack_rows(tn$Topic[5], tn$start[5],   tn$end[5], label_row_css =mod.col) %>%
   # pack_rows(tn$Topic[6], tn$start[6],   tn$end[6], label_row_css =hlt.col) %>%
@@ -57,5 +59,6 @@ out %>% kbl(align = "l", escape=TRUE, format = "markdown") %>%
   column_spec(6, width = "15%") %>%
   column_spec(7, width = "15%")
 ```
+
 
 

@@ -1,0 +1,48 @@
+---
+title: "Math 315"
+---
+
+
+## Statistics in the service of research
+
+This course introduces you to modern statistical data analysis techniques so that you can make data-informed decisions. At the end of the semester you will present your research findings in a poster presentation format to your peers. 
+
+In this project-based course, you will have the opportunity to answer questions that you feel passionately about through independent research based on existing data. The course offers a lot of one-on-one support, directed opportunities to work with other students, and training in the skills required to complete a project of your own design. We will use collaborative tools and software that are common in many workplaces and research labs. These skills will prepare you for many different career types. 
+
+
+<br>
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="33%"}
+### Course details
+
+📅 &nbsp; MWF  
+🕓 &nbsp; Time  
+🏛 &nbsp; Loc  
+👥️ &nbsp; In Person
+
+:::
+
+::: {.column width="33%"}
+### Pre-reqs
+Update
+
+### Student Drop in Hours
+
+Update on Zoom (link in Canvas)
+:::
+
+::: {.column width="33%"}
+### Instructor
+
+🐾 &nbsp; [Dr. Robin Donatello](https://www.norcalbiostat.com)  
+🚪 &nbsp; Holt 202  
+📧 &nbsp; <a href="mailto:rdonatello@csuchico.edu">rdonatello@csuchico.edu</a>  
+🙋 &nbsp; [Schedule an appointment](https://dr-donatello.youcanbook.me/)
+:::
+
+::::
+
