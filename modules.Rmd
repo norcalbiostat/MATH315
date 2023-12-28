@@ -7,15 +7,18 @@ library(tidyverse)
 library(kableExtra)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
+
+# Import data
+mod <- googlesheets4::read_sheet("1JyPeMAAHb3yrCzxDpnWqB7k-KsCTkULIPILAAsfai78", 
+                                 sheet="module_overview", 
+                                 col_types = c("nnDcccccc")) 
 ```
 
+⚠️ Details are subject to change. See Canvas for due dates. 
 _Last Updated: `r format(Sys.time(), "%a %b %d %X")`_ 
 
-```{r}
-# Import data & create new variables
-mod <- googlesheets4::read_sheet("1JyPeMAAHb3yrCzxDpnWqB7k-KsCTkULIPILAAsfai78", 
-                                 sheet="module_overview") 
 
+```{r}
 # content rows
 content  <- mod %>% filter(is.na(tnum))
 
@@ -40,7 +43,7 @@ hlt.col <-  "background-color: #806000; color: #fff;"
 ```
 
 ```{r, results='asis'}
-out %>% kbl(align = "l", escape=TRUE) %>%
+out %>% kbl(align = "clccccc", escape=TRUE) %>%
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
   pack_rows(tn$Topic[1], tn$start[1],   tn$end[1], label_row_css =mod.col) %>% 
   pack_rows(tn$Topic[2], tn$start[2],   tn$end[2], label_row_css =mod.col) %>%
@@ -52,10 +55,10 @@ out %>% kbl(align = "l", escape=TRUE) %>%
   # pack_rows(tn$Topic[8], tn$start[8],   tn$end[8], label_row_css =mod.col) %>%
   # pack_rows(tn$Topic[9], tn$start[9],   tn$end[9], label_row_css =hlt.col) %>%
   column_spec(1, width = "5%") %>% 
-  column_spec(2, width = "22%") %>%
-  column_spec(3, width = "15%") %>%
-  column_spec(4, width = "3%") %>% 
-  column_spec(5, width = "25%") %>%
+  column_spec(2, width = "20%") %>%
+  column_spec(3, width = "10%") %>%
+  column_spec(4, width = "10%") %>% 
+  column_spec(5, width = "20%") %>%
   column_spec(6, width = "15%") %>%
   column_spec(7, width = "15%")
 ```

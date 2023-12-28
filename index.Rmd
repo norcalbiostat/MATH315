@@ -22,7 +22,8 @@ In this project-based course, you will have the opportunity to answer questions 
 📅 &nbsp; MWF  
 🕓 &nbsp; Time  
 🏛 &nbsp; Loc  
-👥️ &nbsp; In Person
+👥️ &nbsp; In Person.
+💻 &nbsp; Laptop Required
 
 :::
 
@@ -39,7 +40,7 @@ Update on Zoom (link in Canvas)
 ### Instructor
 
 🐾 &nbsp; [Dr. Robin Donatello](https://www.norcalbiostat.com)  
-🚪 &nbsp; Holt 202  
+🚪 &nbsp; Office: Holt 202  
 📧 &nbsp; <a href="mailto:rdonatello@csuchico.edu">rdonatello@csuchico.edu</a>  
 🙋 &nbsp; [Schedule an appointment](https://dr-donatello.youcanbook.me/)
 :::

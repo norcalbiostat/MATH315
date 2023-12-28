@@ -21,44 +21,31 @@ navbar:
       href: notes.html
   - text: Projects
     icon: fa-bar-chart
-    menu:
-    - text: Project Instructions
-      href: project.html
-    - text: Peer Review Assignment
-      href: 
-    - text: Project Files (Google Drive)
-      href: 
   - text: Tools
     icon: fa-wrench
     menu:
     - text: Google Drive
       icon: fa-google
-      href: 
+      href: https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM
     - text: Discord (class discussions)
       icon: fa-discord
-      href: 
-      
+      href: https://discord.gg/xCQTAgu8bE
+
+    
   right:
-  - text: Peer Mentors
-    icon: fa-users
-    href: peer_mentors.html
   - text: Community Coding
     icon: fa-group
     href: http://bit.ly/cc_hours
   - text: Help
     icon: fa-question
     menu:
+    - text: Peer Mentors
+      href: peer_mentors.html
     - text: R programming
       href: help_R.html    
     - text: R - Cheat Sheets
-      icon: 
       href: https://www.posit.co/resources/cheatsheets/
-    
-    
-  - text: "Dr. D's website"
-    icon: fa-paw
-    href: http://www.norcalbiostat.com/
-    
+
 output:
   html_document:
     theme: sandstone

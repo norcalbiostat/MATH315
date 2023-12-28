@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Weekly Details</title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/sandstone.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 315</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="modules.html">Modules</a>
+</li>
+<li>
+  <a href="weekly.html">
+    <span class="fa fa-calendar"></span>
+     
+    Weekly Details
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Materials
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://norcalbiostat.netlify.com/data/">
+        <span class="fa fa-database"></span>
+         
+        Data from course packet
+      </a>
+    </li>
+    <li>
+      <a href="syllabus_315_s24.html">Syllabus</a>
+    </li>
+    <li>
+      <a href="notes.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Everything
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown-header">Projects</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Google Drive</li>
+    <li class="dropdown-header">Discord (class discussions)</li>
+  </ul>
+</li>
+<li>
+  <a href="http://bit.ly/cc_hours">
+    <span class="fa fa-group"></span>
+     
+    Community Coding
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="peer_mentors.html">Peer Mentors</a>
+    </li>
+    <li>
+      <a href="help_R.html">R programming</a>
+    </li>
+    <li>
+      <a href="https://www.posit.co/resources/cheatsheets/">R - Cheat Sheets</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Weekly Details</h1>
+
+</div>
+
+
+<div
+id="click-each-link-to-expand-or-contract-the-details-for-that-week."
+class="section level2">
+<h2>Click each link to expand or contract the details for that
+week.</h2>
+<p>⚠️ Details are subject to change. <em>Last Updated: Wed Dec 27
+8:04:23 PM</em></p>
+<div id="week-1-introduction-to-the-class" class="section level3">
+<h3><a href="#week1" data-toggle="collapse">Week 1: Introduction to the
+class</a></h3>
+<div id="week1" class="collapse">
+<div id="learning-objectives" class="section level4">
+<h4>Learning Objectives</h4>
+<p>By the end of the week, learners will be able to:</p>
+<ul>
+<li>Describe how they can ensure their success in this class</li>
+<li>Understand how they currently learn, and learn at least one new
+technique for learning.</li>
+<li>Post a message to the Slack discussion board</li>
+<li>Use R studio to create a reproducible analysis document.</li>
+<li>Explain how Statistics is used in the service of science</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Familiarize yourself with the required <a
+href="reading/Materials%20overview.pdf">course materials</a></li>
+<li>Join the Slack workspace and post an introduction</li>
+<li>Install R, R Studio and associated packages onto your computer using
+the <a
+href="https://norcalbiostat.github.io/MATH130/notes/02_setup.html">Math
+130 lesson on installing R</a> <b>-OR-</b></li>
+<li>If using R Studio Cloud - make an account, join our workspace
+(posted in Slack), click the “New Project” button and replace “Untitled
+Project” with your name (first and last)</li>
+<li>Watch PDS Video 1 (link on <a
+href="https://norcalbiostat.github.io/MATH315/notes.html">notes
+page</a>)</li>
+<li>Prepare your Learning Journal before wed (See <a
+href="hw/hw01_introduction.html">HW01</a>)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Introduction to the instructor, class structure, materials,
+requirements, expectations and resources.</li>
+<li>Online materials (google drive, website, textbook)</li>
+<li>Course structure and due dates (Canvas)</li>
+<li>Physical materials (course notes)</li>
+<li>New tools (Discord, R, R Studio, R Studio cloud)</li>
+<li>Learning Techniques (metacognition, quizzes, error assessments, peer
+reviews)</li>
+<li>Support structures (tutoring, community coding, Discord, Peer
+mentors, OH, Math 130)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>321 Bridge exercise - Learning how to Learn.</li>
+<li><ul>
+<li>Let them eat cake??</li>
+</ul></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>In class quiz on this week’s topics</li>
+<li>Introduction to the semester long project</li>
+<li>Learn how to use R to do and turn in homework (test markdown file,
+hw1 template)</li>
+<li>Set up an organized class folder</li>
+<li>Introduction to class resources on how to learn R. (PDS Videos,
+textbook(s), Course Notes, Math 130, R-help page on class website)</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-2-introduction-to-data-statistics" class="section level3">
+<h3><a href="#week2" data-toggle="collapse">Week 2: Introduction to Data
+&amp; Statistics</a></h3>
+<div id="week2" class="collapse">
+<div id="learning-objectives-1" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Distinguish between categorical and continuous data types</li>
+<li>Formulate a testable research hypothesis</li>
+<li>Differentiate between primary and secondary research sources</li>
+<li>Properly cite relevant research</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-1" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Watch PDS Video 2 and 3</li>
+<li>Look through the <a
+href="https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">research
+data</a> available and pick a data set that you want to work with.</li>
+<li>Identify a research area and a partner to work with. Partner
+(optional).</li>
+<li>Schedule a time outside of class to work with your analysis partner
+on a weekly basis.</li>
+<li>Optional but helpful: <a
+href="https://media.csuchico.edu/media/Developing+a+Research+Question+that+Interests+You/0_rxvxwbas">Video
+on developing a research topic that interests you</a></li>
+<li>Read: How to read a journal article</li>
+<li>Read: Conducting a literature review</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-1" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-1" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Week 2 group quiz</li>
+<li>How data is stored in spreadsheets</li>
+<li>Formulating testable hypothesis</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-1" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Learn more about your topic area by conducting a literature
+review.</li>
+<li>What is already known, what questions have not yet been
+explored?</li>
+<li>The idea is to find an area where you can contribute to new
+research.</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-3-working-with-data" class="section level3">
+<h3><a href="#week3" data-toggle="collapse">Week 3: Working with
+Data</h3>
+Describing data using summary statistics Basic data management</a>
+<div id="week3" class="collapse">
+<div id="learning-objectives-2" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Import data into R using code</li>
+<li>Identify data types in R</li>
+<li>Conduct a peer review in Google Drive</li>
+<li>Explain why data preparation takes the majority of your time, but is
+crucially important</li>
+<li>Identify mistakes and missing data in data using tables and
+summaries</li>
+<li>Perform basic data management tasks such as creating new variables,
+renaming and recoding existing variables</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-2" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Watch PDS Video 4 and 5</li>
+<li>These videos use R scripts instead of a RMD file. That’s OK. I want
+you to use a Rmarkdown file.</li>
+<li>Unfamiliar with Rmarkdown? Check out <a
+href="https://www.youtube.com/watch?time_continue=4&amp;v=DNS7i2m4sB0">[This
+youtube video]</a></li>
+<li>It is highly suggested that you follow along with the code in the
+video by installing the <code>descr</code> package and downloading the
+NESARC project data and codebook. This is one of those things that will
+help you to achieve an “A” in this class. Not by points, but by putting
+effort into learning and practicing.
+<code>install.packages("descr")</code></li>
+<li>Download your research data and codebook into your
+<code>project/data</code> folder</li>
+<li>Start a code file called <code>dm.Rmd</code>, save into your
+<code>project/code</code> folder</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-2" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Week 3 group quiz</li>
+<li>More often than not you will have to do some level of data
+transformation or cleaning before you can conduct an analysis.</li>
+<li>What do you need to do to prepare your data for analysis?</li>
+<li>Every data set is different. Variables within data sets can be quite
+different.</li>
+<li>Identify what needs to be changed, why does it need to be changed,
+and what does it need to be changed to.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-2" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Discuss how to summarize data using summary statistics</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-2" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-4-visualizing-and-describing-univariate-data"
+class="section level3">
+<h3><a href="#week4" data-toggle="collapse">Week 4: Visualizing and
+describing univariate data</a></h3>
+<div id="week4" class="collapse">
+<div id="learning-objectives-3" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Learn how to create univariate data graphics and summary statistics
+in R</li>
+<li>Describe the distribution of a single variable in sentence form
+using summary statistics and pointing out specific features of the
+graphics as evidence to support your interpretation</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-3" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Watch PDS Video 6. As always, follow along on your computer for the
+best results.</li>
+<li>Read the instructions for the research project - Poster preparation
+slides</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-3" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Week 4 Group quiz</li>
+<li>Introduce the Poster prep assignments</li>
+<li>Discuss how to summarize numerical data using summary statistics,
+plots and words.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-3" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Discuss how to summarize categorical data using summary statistics,
+plots and words.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-3" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>We will briefly talk about the issue with factor variables, and data
+management using the <code>dplyr</code> package.</li>
+<li>The point is to orient you to what you should be looking for, and
+point you to resources on how to fix the problems you need to fix.</li>
+<li>It is completely impossible for me to lecture/demonstrate how to fix
+every single one of the problems you are going to encounter. All I can
+do is guide you to potential solutions.</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-5-analyzing-relationships" class="section level3">
+<h3><a href="#week5" data-toggle="collapse">Week 5: Analyzing
+relationships</h3>
+Grouped summary statistics</a>
+<div id="week5" class="collapse">
+<div id="learning-objectives-4" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Create appropriate plots to visualize the relationship between two
+variables</li>
+<li>Calculate appropriate grouped summary statistics</li>
+<li>Describe the relationship between two variables in plain
+English</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-4" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Watch PDS video 7</li>
+<li>Review feedback on your Hw04 so you don’t make the same mistakes
+again.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-4" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Week 5 group quiz</li>
+<li>Discuss methods to visualize associations between two categorical
+variables.</li>
+<li>Contingency tables - not nearly as simple as you think they
+are.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-4" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Assess and describe the association between a continuous variable
+and a categorical variable.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-4" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Robin is out of town (Class NOT cancelled)</li>
+<li>Discuss how to quantify and describe associations between two
+quantitative variables</li>
+<li>Explore the <a href="https://itsalocke.com/datasaurus/">Datasaurus
+dozen</a> - or, why you should always plot your data.</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-6-bridging-your-learning" class="section level3">
+<h3><a href="#week6" data-toggle="collapse">Week 6: Bridging your
+learning</h3>
+Catching up Midterm Probability Distributions</a>
+<div id="week6" class="collapse">
+<div id="learning-objectives-5" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Calculate a simple probability of an event.</li>
+<li>Describe a probability distribution</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-5" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Read the poster prep stage II instructions. Choose the plots that
+you want to showcase. (Draft due Tue)</li>
+<li>Review and take the sample exam.</li>
+<li>Have questions ready for the midterm review session (Tue at 8-9pm)
+<a href="https://csuchico.zoom.us/j/5808362949">[Zoom link]</a>. You
+will need a headset or earbuds. The session will be recorded and all
+info will be posted in the <span
+style="color:blue">#midterm-review</span> Slack channel</li>
+<li>Watch the PDS video 8 (up to about 10 minutes)</li>
+<li>Read the course packet Section 3.1-3.2</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-5" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Learning journal work: Creating learning bridges. Reflect and update
+on your prior bridge entry.</li>
+<li>Poster prep stage II - Describing relationships</li>
+<li>Catching up!</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-5" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Week 6 group quiz</li>
+<li>Introduction of probability by means of exploding kittens.</li>
+<li>Discuss probability distributions (CP 3.1, 3.2)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-5" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Midterm</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-7-sampling-distributions" class="section level3">
+<h3><a href="#week7" data-toggle="collapse">Week 7: Sampling
+distributions</h3>
+Normal and T distributions Central Limit Theorem Interval estimates</a>
+<div id="week7" class="collapse">
+<div id="learning-objectives-6" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Calculate a point estimate on a data set</li>
+<li>Describe the behavior of a point estimate as sample size
+increases</li>
+<li>Construct and interpret a confidence interval</li>
+<li>Calculate and explain the Margin of Error</li>
+<li>Calculate and explain what the standard error of the mean is, and
+explain how it is different from a standard deviation</li>
+<li>Explain what can make the width of a confidence interval larger or
+smaller</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-6" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Watch <a href="https://youtu.be/Bv9iY8-UzYw">[Dr.D’s video]</a>,
+fill out course packet 3.3-3.5 (Wed).</li>
+<li>Complete the “Scale Up” sections of HW 07 before Wed</li>
+<li>Identify one binary and one continuous variable in your data set of
+interest. (Fri)</li>
+<li>Be ready and able to calculate summary statistics for each (n, #
+missing values, #yes, mean, sd)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-6" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Simulating distributions of random variables <a
+href="hw/activity_samp_dist.html">[In class activity]</a></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-6" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Discovering the Central Limit Theorem</li>
+<li>Calculating probabilities of an average. <a
+href="https://gallery.shinyapps.io/dist_calc/">[Online probability
+calculator]</a></li>
+<li>Jigsaw Lecture - param and stats, pop and samples, bias</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-6" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Point estimates as a “best guess”</li>
+<li>Group quiz on confidence intervals</li>
+<li>Interval estimation - in class activity</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-8-hypothesis-testing-framework" class="section level3">
+<h3><a href="#week8" data-toggle="collapse">Week 8: Hypothesis Testing
+Framework</h3>
+Univariate Inference Bivariate inference: T-tests</a>
+<div id="week8" class="collapse">
+<div id="learning-objectives-7" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Explain the difference between practical and statistical
+significance</li>
+<li>Distinguish between a Type I and Type II error</li>
+<li>Explain the concept of p-hacking</li>
+<li>Conduct a hypothesis test in R</li>
+<li>Identify an appropriate analysis depending on the data types in
+question</li>
+<li>Conduct and interpret a two-sample T-test</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-7" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Watch an expert walk through an analysis. <a
+href="https://www.youtube.com/watch?v=go5Au01Jrvs">[Video]</a>. This is
+the guy that <em>created</em> ggplot, dplyr and many other
+transformative packages for R. Things to note is that he makes mistakes
+(quite a few). He shrugs it off, fixes it and continues. His coding is
+like a stream of consciousness narrative. This helps you (and he)
+understand not just what he’s doing, but why he’s doing it. He takes
+notes on what he’s doing, this is super important!</li>
+<li>Read the course notes sections in order, before the day we discuss
+that topic.</li>
+<li>Read the instructions for the Bivariate inference assignment</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-7" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Group quiz on Hypothesis Testing</li>
+<li>Example of a single sample hypothesis test</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-7" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Overview of HW08</li>
+<li>Type I and II errors</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-7" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Using Hypothesis testing for difference of two means</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-9-spring-break" class="section level3">
+<h3><a href="#week9" data-toggle="collapse">Week 9: Spring
+Break</a></h3>
+<div id="week9" class="collapse">
+<div id="learning-objectives-8" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-8" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-8" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-8" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-8" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-10-bivariate-inference---linear-regression"
+class="section level3">
+<h3><a href="#week10" data-toggle="collapse">Week 10: Bivariate
+Inference - Linear Regression</a></h3>
+<div id="week10" class="collapse">
+<div id="learning-objectives-9" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Define Moderation and identify when third variable is a
+moderator.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-9" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Fully complete the Anova, Chi square, and correlation analysis in
+HW08</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-9" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Linear regression modeling. Fit and interpretation</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-9" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Final thoughts on linear regression models (model fit, predictions,
+outliers)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-9" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>open work day</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-11-moderation-causation-and-study-design"
+class="section level3">
+<h3><a href="#week11" data-toggle="collapse">Week 11: Moderation,
+causation and study design</a></h3>
+<div id="week11" class="collapse">
+<div id="learning-objectives-10" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Identify the difference between an observational study and an
+experiment</li>
+<li>Distinguish between the population and a sample</li>
+<li>Explain why causal conclusions can’t be made from an observational
+study</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-10" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-10" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Cesar Chavez Day - Campus closed</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-10" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Multivariable analysis - How does a third variable modify an
+existing relationship between a response and explanatory variable?</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-10" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Causation and study design</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-12-no-school-monday" class="section level3">
+<h3><a href="#week12" data-toggle="collapse">Week 12: No School
+Monday</h3>
+Multiple regression and confounding</a>
+<div id="week12" class="collapse">
+<div id="learning-objectives-11" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-11" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-11" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-11" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>How to write multiple regression models mathematically</li>
+<li>How to interpret multiple regression coefficients</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-11" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Confounding</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-13-logistic-regression" class="section level3">
+<h3><a href="#week13" data-toggle="collapse">Week 13: Logistic
+regression</h3>
+Categorical predictors</a>
+<div id="week13" class="collapse">
+<div id="learning-objectives-12" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Fit a model on a binary outcome</li>
+<li>Interpret regression coefficients from a multiple regression
+model</li>
+<li>Interpret an Odds Ratio</li>
+<li>Interpret coefficients for a categorical variable</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-12" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-12" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>What is “linear” about a generalized linear model?</li>
+<li>What is the logistic function?</li>
+<li>How do you calculate an Odds Ratio</li>
+<li>How do you interpret an Odds Ratio</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-12" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Categorical predictors</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-12" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-14-assessing-model-fit" class="section level3">
+<h3><a href="#week14" data-toggle="collapse">Week 14: Assessing Model
+Fit</h3>
+Model Building strategies and techniques</a>
+<div id="week14" class="collapse">
+<div id="learning-objectives-13" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Build several competing models and use various measures of model fit
+to compare between models</li>
+<li>Identify when a model has structural problems</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-13" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-13" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Measures of model fit (R2, AIC, BIC)</li>
+<li>Testing multiple variables via ANOVA</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-13" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Variable selection</li>
+<li>How to tell when your model is unstable (mathematically)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-13" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>open work day</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-15-develop-research-poster" class="section level3">
+<h3><a href="#week15" data-toggle="collapse">Week 15: Develop research
+poster</a></h3>
+<div id="week15" class="collapse">
+<div id="learning-objectives-14" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>How to design an informative poster to tell an analysis story</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-14" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-14" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Poster presentation overview</li>
+<li>Guidance on good poster development</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-14" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>open work day</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-14" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>open work day</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
