@@ -1,1 +1,1 @@
-Sitemap: https://norcalbiostat.github.io/MATH315/sitemap.xml
+Sitemap: https://math315.netlify.app/sitemap.xml

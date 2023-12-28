@@ -67,7 +67,7 @@
     "href": "hw.html",
     "title": "Assignments",
     "section": "",
-    "text": "Assignment\n\n\nLearning Objective\n\n\n\n\n\n\nHW 00: Getting setup\n\n\nGetting all the materials and tools for the class\n\n\n\n\nHW 01- Introduction to the class.\n\n\nundefined\n\n\n\n\n\n\nNo matching items"
+    "text": "Assignment\n\n\nLearning Objective\n\n\n\n\n\n\nHW 00: Getting setup\n\n\nGetting all the materials and tools for the class\n\n\n\n\nHW 01- Introduction to the class.\n\n\nundefined\n\n\n\n\nHW02 - Formulating a research question\n\n\nundefined\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "project.html",
@@ -137,6 +137,76 @@
     "href": "modules.html",
     "title": "Module Schedule",
     "section": "",
-    "text": "Schedule goes here"
+    "text": "Schedule goes here\n\n\n\n\nDate\nTopic\nNotes\nRead\nWatch\nPractice\nAssess\n\n\n\n\n01/22\nIntroduction to the class\nIntro\nSyllabus\n\n\n\n\n\nInstalling R and R Studio\nWelcome Video\n\n\n\n\n\n\n\n\nHow to use Learn R Tutorials How to do HW1|HW 01: Setup|Quiz 00| |NA |Statistics in the service of science |NULL |NA |PDS 1 |NA |NA | |NA |Working with R and RStudio |NULL |NA |NA |NA |NA | |NA |Thinking about Learning |NULL |NA |NA |NA |NA | |NA |Populations vs Samples, bias, representation |1.1 |NA |2|hw/hw02-rq_formulation |Quiz 01 | |NA |Explanatory vs Response |1.2 |NA |NA |NA |NA | |NA |Data types |1.3 |NA |2 (7min)|NA |NA | |NA |Data architecture and codebooks |NULL |NA |2 (12min)|NA |NA | |NA |Formulating testable hypothesis |NULL |NA |NA |NA |NA | |NA |Literature review |NULL |NA |3|NA |NA | |NA |Working with data |1.4 |NA |4 |NA |NA | |NA |Data management |NULL |NA |5|NA |NA |"
+  },
+  {
+    "objectID": "hw/hw01-setup.html",
+    "href": "hw/hw01-setup.html",
+    "title": "HW 01- Introduction to the class.",
+    "section": "",
+    "text": "The purpose of this assignment is to get you working in R Studio, to do a little self reflection and examination of your learning habits, and to recognize the amount of resources to learn R you have available to you."
+  },
+  {
+    "objectID": "hw/hw01-setup.html#slack",
+    "href": "hw/hw01-setup.html#slack",
+    "title": "HW 01- Introduction to the class.",
+    "section": "Slack",
+    "text": "Slack\n\nGo to http://math315-f19.slack.com and make an account to join our workspace.\nDownload either the desktop app or the phone app.\nPost an introduction to yourself in the #introductions channel. Tell us a little about you! Year, major, hometown, any extracurricular activities, one thing you are hoping to get out of this class, and one concern you have about this class. Oh.. and of course any mention of pets should include a photo!"
+  },
+  {
+    "objectID": "hw/hw01-setup.html#r-and-r-studio",
+    "href": "hw/hw01-setup.html#r-and-r-studio",
+    "title": "HW 01- Introduction to the class.",
+    "section": "R and R Studio",
+    "text": "R and R Studio\nYou have two choices for using R this semester. You can install the necessary programs on your personal computer, or you can use R studio cloud. If you have already taken or are concurrently enrolled in Math 130 you should install these programs on your own computer.\n\nInstall R and R Studio\n\nFollow the instructions from Math 130 to install and get started with R and R Studio. https://norcalbiostat.github.io/MATH130/notes/02_setup.html\nComplete all steps (including installing packages and reading on how to get help)\nYou must install LaTeX via the tinytex package to turn your homework into PDF.\n\nEveryone learns differently, and the resources that are required in this class (PDS videos, course notes) may not quite work to explain a particular topic. Find 3 different types of resources to learn R and Statistics. At least 2 must be chosen from provided resources from one of my websites. These could include a video series other than the ones assigned with the course (passion drive stats), cheatsheets, discussion boards, books, course notes from a different class, etc. For each source:\n\nExplain where you found it (include URL as applicable)\nWhen was it last updated (how real time is your source)\nDescribe how you will use this source\n\nUsing the code chunk provided, calculate 2+2"
+  },
+  {
+    "objectID": "hw/hw02-rq_formulation.html",
+    "href": "hw/hw02-rq_formulation.html",
+    "title": "HW02 - Formulating a research question",
+    "section": "",
+    "text": "Now it is time for you to formulate your own Research Question and refine it using current literature. This will guide your focus for the rest of the semester. In this assignment you will\n\nDecide on a specific research topic\nChoose variables that relate to your topic\nFormulate a Research Question\nConduct a literature review to learn more about your topic"
+  },
+  {
+    "objectID": "hw/hw02-rq_formulation.html#peer-review",
+    "href": "hw/hw02-rq_formulation.html#peer-review",
+    "title": "HW02 - Formulating a research question",
+    "section": "Peer Review",
+    "text": "Peer Review\nThis assignment will be subject to peer review, but with no revision period. After the due date, check the [Peer review assignment sheet for your assignment(s). In Google Docs directly, use the commenting feature to provide feedback on this assignment. Check the [project] page for instructions on how to provide a review.\nWhat specifically to look for:\n\nIs the topic area statement clearly stated? Do you understand what they are investigating?\nDo the variables chosen match the stated topic area?\nWill the variables chosen actually measure or describe the variables in the research question?\nAre the research questions stated as clear hypotheses?\nAre the sources cited all primary research articles?\nDo the sources inform the stated research question?"
+  },
+  {
+    "objectID": "hw/hw02-rq_formulation.html#step-1",
+    "href": "hw/hw02-rq_formulation.html#step-1",
+    "title": "HW02 - Formulating a research question",
+    "section": "Step 1:",
+    "text": "Step 1:\n\nPut the reference for the article in APA style. Here is a link to Purdue Owl APA style references that will guide you. https://owl.english.purdue.edu/owl/resource/560/05/\nNOTE: If you use a citation creator you still need to compare each part of all your references to make sure it was done correctly. The citation creator usually messes up on something.\nGood/suggested bibliography managers\n\nBibDesk (Mac) http://bibdesk.sourceforge.net/\nZotero (in browser) https://www.zotero.org/\nMendeley (download) https://www.mendeley.com/\n\nUsing reference managers such as zotero and *.bib files with R Markdown\n\nhttps://tclavelle.github.io/blog/reference_tips/\nhttp://svmiller.com/blog/2016/02/svm-r-markdown-manuscript/\nhttp://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#citations_for_pdf_output"
+  },
+  {
+    "objectID": "hw/hw02-rq_formulation.html#step-2",
+    "href": "hw/hw02-rq_formulation.html#step-2",
+    "title": "HW02 - Formulating a research question",
+    "section": "Step 2:",
+    "text": "Step 2:\nRead an article, type up a brief summary (a few sentences) of what you learned about your topic from introduction/lit review and the discussion. This summary should convey the main themes and findings overall for the literature review and discussion in your own words."
+  },
+  {
+    "objectID": "hw/hw02-rq_formulation.html#step-3",
+    "href": "hw/hw02-rq_formulation.html#step-3",
+    "title": "HW02 - Formulating a research question",
+    "section": "Step 3:",
+    "text": "Step 3:\nThen explain how the article is going to help you with writing up your project. This is an explanation of what the article contributes to your project, not a restating of the summary. For example, is it going to help explain one or both of your topics, does it explain a key theory, what argument does it help you build for your project?"
+  },
+  {
+    "objectID": "hw/hw02-rq_formulation.html#example",
+    "href": "hw/hw02-rq_formulation.html#example",
+    "title": "HW02 - Formulating a research question",
+    "section": "Example",
+    "text": "Example\nMy research question is: Is self-efficacy associated with parent relations and academic performance?\nWeiser, D. A., & Riggio, H. R. (2010). Family background and academic achievement: Does self-efficacy mediate outcomes? Social Psychology of Education: An International Journal, 13(3), 367-383.\n\nThis article discusses whether self-efficacy mediates the relationship between family background and academic achievement. This is very similar to my topic but I feel that the component of mediation changes it slightly. I found that family predictors did not correlate with academic achievement as much as self-efficacy correlates with parent’s expectation of academic success. Self-efficacy is linked to grade point average and academic success expectations.\nThis information will be vital to understanding the extent to which self-efficacy is related to academic performance. With the correlation being weak for family background and academic performance, it will do less to determine the connection of parental relations to self-efficacy.\n\nTurner, E. A., Chandler, M., & Heffer, R. W. (2009). The influence of parenting styles, achievement motivation, and self-efficacy on academic performance in college students. Journal of College Student Development, 50(3), 337-346.\n\nThis study looks at how parenting styles, authoritative in particular, relate to academic performance, self-efficacy, and intrinsic motivation in college students. It claims that all factors, academic performance, self-efficacy, and intrinsic motivation, are all influenced by authoritative parenting. What I learned about my topic is this study did find that self-efficacy was not significantly linked to authoritative parenting.\nThis article will help explain how this specific type of parenting, authoritative, has little affect of self-efficacy. It does not however, claim that parenting, as a whole has not effect on self-efficacy. This study does confirm that parenting does reflect on academic performance.\n\nJunttila, N., Vauras, M., & Laakkonen, E. (2007). The role of parenting self-efficacy in children’s social and academic behavior. European Journal of Psychology of Education, 22(1), 41-61.\n\nThis article looks at parenting self-efficacy. This is a little different from my topic but there are aspects of it that will be useful. It tested Finnish mothers and fathers to test for loneliness, parent self-efficacy, their child’s peer evaluated social competence, self-evaluated loneliness and academic skills. It found that parents loneliness reflected in their self-efficacy. The relationship between parent self-efficacy and the child’s academic achievement were evaluated through the child’s social competence. What I learned from this article that I can use is that parent’s self-efficacy can be reflected in the children.\nThis article is gong to help me tie in influences in the parent relations with the children to determine self-efficacy. This is an interesting perspective that wasn’t originally in my research question but I believe it will give valuable insight."
+  },
+  {
+    "objectID": "modules2.html",
+    "href": "modules2.html",
+    "title": "Module Schedule",
+    "section": "",
+    "text": "Schedule goes here\n\n\n\n\nDate\nTopic\nNotes\nRead\nWatch\nPractice\nAssess\n\n\n\n\n01/22\nIntroduction to the class\nIntro\nSyllabus\n\n\n\n\n\nInstalling R and R Studio\nWelcome Video\n\n\n\n\n\n\n\n\nHow to use Learn R Tutorials How to do HW1|HW 01: Setup|Quiz 00| | NA |Statistics in the service of science |NULL |NA |PDS 1 | NA | NA | | NA |Working with R and RStudio |NULL |NA |NA | NA | NA | | NA |Thinking about Learning |NULL |NA |NA | NA | NA | | NA |Populations vs Samples, bias, representation |1.1 |NA |2| hw/hw02-rq_formulation | Quiz 01 | | NA |Explanatory vs Response |1.2 |NA |NA | NA | NA | | NA |Data types |1.3 |NA |2 (7min)| NA | NA | | NA |Data architecture and codebooks |NULL |NA |2 (12min)| NA | NA | | NA |Formulating testable hypothesis |NULL |NA |NA | NA | NA | | NA |Literature review |NULL |NA |3| NA | NA | | NA |Working with data |1.4 |NA |4 | NA | NA | | NA |Data management |NULL |NA |5| NA | NA |"
   }
 ]

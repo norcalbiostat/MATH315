@@ -21,10 +21,9 @@ website:
 
   navbar: 
     pinned: true
-    background: "#505050"
+    background: "#295629"
     left: 
       - text: "Modules"
-        file: modules.qmd
       - text: "Weekly Details"
       - text: "Assignments"
         file: hw.qmd
