@@ -9,12 +9,10 @@ website:
   page-navigation: true
   title: "MATH 315"
   description: "Homepage for MATH 315 Spring 24"
-  site-url: "https://norcalbiostat.github.io/MATH315"
+  site-url: "https://math315.netlify.app/"
   
-  repo-url: https://github.com/norcalbiostat/math315
-  repo-actions: [edit, issue]
-  twitter-card: 
-    creator: "@norcalbiostat"
+  #repo-url: https://github.com/norcalbiostat/math315
+  #repo-actions: [edit, issue]
   
   page-footer:
     #background: light

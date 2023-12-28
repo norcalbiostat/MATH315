@@ -7,14 +7,17 @@ execute:
 Schedule goes here
 
 ```{r}
-# Read in schedule
-rawdat <- read_xlsx("_math350_schedule.xlsx", sheet='weekly_schedule') 
+library(tidyverse)
+library(gt)
+# Import data & create new variables
+mod <- googlesheets4::read_sheet("1JyPeMAAHb3yrCzxDpnWqB7k-KsCTkULIPILAAsfai78", 
+                                 sheet="module_overview") 
 
 # content rows
-content  <- rawdat %>% filter(is.na(tnum))
+content  <- mod %>% filter(is.na(tnum))
 
 # which rows have topic numbers 
-tn <- rawdat %>% filter(!is.na(tnum)) %>% 
+tn <- mod %>% filter(!is.na(tnum)) %>% 
         select(tnum, Topic) %>%
         mutate(start=0, end=0)
 
