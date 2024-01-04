@@ -7,7 +7,7 @@ navbar:
     href: modules.html
   - text: Weekly Details
     icon: fa-calendar
-    href: weekly.html
+    href: weekly_details.html
   - text: Materials
     icon: fa-folder-open
     menu:
@@ -15,7 +15,7 @@ navbar:
       icon: fa-database
       href: https://norcalbiostat.netlify.com/data/
     - text: Syllabus
-      href: syllabus_315_s24.html
+      href: syllabus_315.html
     - text: Everything
       icon: fa-file-alt
       href: notes.html
@@ -27,9 +27,7 @@ navbar:
     - text: Google Drive
       icon: fa-google
       href: https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM
-    - text: Discord (class discussions)
-      icon: fa-discord
-      href: https://discord.gg/xCQTAgu8bE
+    
 
     
   right:
