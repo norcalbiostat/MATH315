@@ -19,8 +19,9 @@ navbar:
     - text: Everything
       icon: fa-file-alt
       href: notes.html
-  - text: Projects
+  - text: Project
     icon: fa-bar-chart
+    href: project.html
   - text: Tools
     icon: fa-wrench
     menu:

@@ -2,8 +2,6 @@
 title: "HW 01- Introduction to the class."
 output:
   html_document:
-    theme: sandstone
-    highlight: tango
     toc: yes
     toc_float: yes
     css: ../css/sandstone.css
