@@ -14,6 +14,11 @@ output:
 
 Now it is time for you to formulate your own Research Question and refine it using current literature. This will guide your focus for the rest of the semester. In this assignment you will
 
+Learn more about your topic area by conducting a literature review. 
+ What is already known, what questions have not yet been explored? 
+ The idea is to find an area where you can contribute to new research.
+ 
+ 
 1. Decide on a specific research topic
 2. Choose variables that relate to your topic
 3. Formulate a Research Question

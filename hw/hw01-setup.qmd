@@ -1,0 +1,131 @@
+---
+title: "HW 01: Getting setup"
+subtitle: "Getting all the materials and tools for the class"
+format: 
+  html: 
+    toc: true
+---
+
+
+# Assignment Overview
+
+The purpose of this assignment is to get you fully prepared to work with the tools working in R Studio, to do a little self reflection and examination of your learning habits, and to recognize the amount of resources to learn R you have available to you. 
+
+
+# Submission Instructions
+
+This assignment is a checklist of tasks for you to do to prepare for learning in this class. Some items ask you to submit a screenshot, some ask you to write a sentence or two. The details are in the corresponding "HW00 Checklist" in Canvas. For the most part these items can be done in any order, but I suggest you do them in the order that I have listed below. 
+
+
+
+# Part I: Getting Started with collaborative research tools
+
+## 1. Discord
+
+Join our Discord workspace by clicking here: [https://discord.com/invite/9tQyTKC3cE](https://discord.com/invite/9tQyTKC3cE) , reviewing and agreeing to the code of conduct. 
+
+:::{.callout-important}
+### This is the defacto method of communication for this class
+I get way too many emails that it's easy to miss one from you. Got questions about an assignment? Need help understanding a code error? Ask here and get help not just from me, but from your classmates as well. This is a collaborative not competitive class.
+:::
+
+* Have an existing Discord account? Feel free to use it, but change your name on this server to your preferred name that you want us to call you by. 
+The invite takes you to the `#class-selection` page. Choose your pronouns and click the computer 💻️ icon to add the Math 315 role. This will let you see our class channels. 
+* [Download the Desktop app](https://discord.com/download). <span style="color:red">**You should not rely on remembering to log in using the web version.**</span> 
+    - Chances are very high that you will miss out on important announcements and bonus activities. There also is a Discord phone app that you may want to consider. 
+* Post an introduction in the `#DrD-class-chat` channel. Include the following:
+    * major
+    * Any pets (include pics!)
+    * what fictional family would you like to belong to? 
+    * your biggest concern about the class
+
+<a href = "https://twitter.com/kara_woo/status/1374132865370234881">
+<img class="circle" src="images/hw00_slack_pets.png"
+width="500px" 
+alt="Tweet from Kara Woo saying Onboarding step 1: Find the slack channels where people post pet pictures" 
+title = "Onboarding step 1: Find the slack channels where people post pet pictures"/>
+</a>
+
+
+## 2. R & R Studio
+
+To ensure a common computing system for the entire class, and make your setup life much, much easier, everyone will be using R Studio through Posit Cloud. 
+
+I try my absolute best to keep the cost of this course as low as possible. 
+
+:::{.callout-important}
+### Additional Cost $5/month
+
+There are two options here. 
+
+* **Posit Cloud ($5/month).** This is a "no setup" option for you. You can log into the cloud wherever you have a browser and do not have to deal with program or package installation. I have setup R Studio projects for you. 
+
+* **Your own computer.** R and R Studio are both free programs. If you , and if you are interested in continuing to conduct research outside of this class you will want to have access to these programs on your own computer. 
+
+It is my preference that the class uses Posit Cloud
+:::
+
+> Add expandable section here for each installation type. 
+
+
+<a href="#cloud" data-toggle="collapse">Posit Cloud Setup Instructions</a>
+
+<div id="cloud" class="collapse">
+
+1. Create a **Cloud Student** account on [Posit Cloud](https://posit.cloud/plans/student) using your campus email (`@mail.csuchico.edu`). 
+2. Join Dr. D's[Math 315-S24 Workspace](https://posit.cloud/spaces/466257/join?access_code=CJBtbhV72o3pELwuol4pUWNdp6-_Tas4tGazkJlR)
+3. Make a copy of the [Homework](https://posit.cloud/spaces/466257/content/7359199) R Project
+4. Open this project if it does not automatically do so. 
+    - The `install_packages.R` file should be open. If not, click in the lower right to open it.
+    - Click `Source` at the top right to run this code. 
+</div>
+
+
+
+
+
+
+## 3. Quarto
+
+1. Read about what Quarto is here: https://quarto.org/docs/get-started/hello/rstudio.html
+2. Log into Posit Cloud and open `hello.qmd` file. 
+3. Render this file then return to the tutorial in step 1 to see how the parts of this document take R code, and normal text and turn it into a wonderful document. 
+4. Change the `format: html` at the top of this document to `format: pdf`.
+5. Add a new line in this YAML header for your name `author: yourname`
+6. Render again. 
+7. Download the resulting PDF and upload to Canvas. [How to video](https://www.youtube.com/watch?v=cAHCMpPJx3k)
+
+## 4. Google Drive
+
+* You have been added to our shared [Google Drive](https://drive.google.com/drive/u/0/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM) using your chico state (@mail.csuchico.edu) email address. 
+* ⚠️ If you are logged into a personal Google account _before_ you log into your Chico State account, then when you click on links for items in our class Google Drive, it will automatically try to access that file/folder with your personal account. 
+* Starring (⭐ ) this folder allows you to log into Google Drive from whatever account you are logged into, then switch to your Chico State account, and you will be able to easily find the folder in your starred section. 
+
+
+
+ 
+
+
+# Part II: Becoming a better learner. 
+
+We will spend time in this class intentionally examining or reflecting on how we learn and how we think. 
+
+:::{.callout-warning icon=false}
+Sometimes you will be asked to write a reflection on a reading you have done. Here is an article to help you understand [how to write a reflection](https://www.quora.com/What-does-it-mean-to-reflect-on-reading)
+
+You will also be writing in a Learning Journal. Here is an article that can help explain [why writing in a journal can ultimately help you think](https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/)
+:::
+
+
+1. Create your Learning Journal (LJ) by making a copy of the template found in the **Learning Journals** folder in our Google Drive.
+    - When you make a copy of this template document, make sure the copy stays in this shared folder.
+    - Rename this file with your name (First, Last)
+    - Click the **SHARE** button in the top right and remove everyone _except_ yourself and Dr. D as collaborators. 
+    - Your first entry is dated for you, and asks you to reflect on the reading you just did. 
+
+2. Download and read [MAI and academic achievement in college students](reading/MAI and academic achievement in college students.pdf). 
+    - Write a reflection on this reading in your Learning Journal. Were you surprised by the results? 
+    - Download and take the [Metacognition Awareness Inventory](reading/Metacognition Awareness Inventory.pdf). 
+    - Submit your scores in this [Google Form](https://goo.gl/forms/FYgjJk72T3147e7f1)
+
+
