@@ -1,302 +1,49 @@
 ---
-title: "Math 315 homepage"
+title: "Math 315"
 ---
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-wk1.date <- as.Date("2019-08-26")
-```
 
-This is the course website for <span style="color:teal">**Applied Statistical Methods 1**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com) in Fall 2019. This landing page is used for posting of regular announcements and information for students of the class. 
+## Statistics in the service of research
+
+This course introduces you to modern statistical data analysis techniques so that you can make data-informed decisions. At the end of the semester you will present your research findings in a poster presentation format to your peers. 
+
+In this project-based course, you will have the opportunity to answer questions that you feel passionately about through independent research based on existing data. The course offers a lot of one-on-one support, directed opportunities to work with other students, and training in the skills required to complete a project of your own design. We will use collaborative tools and software that are common in many workplaces and research labs. These skills will prepare you for many different career types. 
+
 
 <br>
 
+<hr>
 
-### `r format(wk1.date+7*16, "%m-%d-%Y")` Week 16: Finals Week
+:::: {.columns}
 
-* Poster Session: *Monday 4-6pm Tehama 116*
-* Poster peer review Google Form: https://forms.gle/QWu3YMZtiAbjzxj29
-    - Some paper copies will be available. 
-    - You will be expected to review 10 posters during the final session. 
+::: {.column width="33%"}
+### Course details
 
-Final take home exam Due Wednesday 12/18 - midnight.
+📅 &nbsp; MWF  
+🕓 &nbsp; 12-12:50pm  
+🏛 &nbsp; Holt 291 
+👥️ &nbsp; In Person.
+💻 &nbsp; Laptop Required
 
-Final assignments (Due Friday 5/20)
+:::
 
-* [MAI Post assessment](https://forms.gle/7CaYePDMpRuZohzJ9)
-* Post-course survey from Lisa Dierker (will be emailed to you this week)
-* [Post assessment in R](https://forms.gle/FWAZjanJ31hTrSKK8)
+::: {.column width="33%"}
+### Pre-reqs
+Pre-requisites: MATH 105, MATH 109, or MATH 120, or faculty permission. 
 
+### Student Drop in Hours
 
+Mon, Fri 2-3pm. Wed 1:30-3 at [Community Coding](https://www.csuchico.edu/datascience/community-coding.shtml)
+:::
 
-> OH for Finals Week: All hours will be held in Holt 202   
-- Mon: 9-10am, 2-3pm  
-- Tue: 10:30-11:30, 8-9pm  (Zoom link in Slack)
-- Wed: 9:30-11am   
+::: {.column width="33%"}
+### Instructor
 
+🐾 &nbsp; [Dr. Robin Donatello](https://www.norcalbiostat.com)  
+🚪 &nbsp; Office: Holt 202  
+📧 &nbsp; <a href="mailto:rdonatello@csuchico.edu">rdonatello@csuchico.edu</a>  
+🙋 &nbsp; [Schedule an appointment](https://dr-donatello.youcanbook.me/)
+:::
 
-
-### `r format(wk1.date+7*15, "%m-%d-%Y")` Week 15: Poster building!
-
-* Poster building week! **Due dates are FIRM**
-    - Instructions are on [the project page.]( https://norcalbiostat.github.io/MATH315/project.html#posters_presentations)
-    - Guidelines and templates are here: https://norcalbiostat.netlify.com/lec/poster_guidelines/ 
-    - Draft due 12/11
-    - Peer Review due 12/13
-    - Final due 12/16 noon.
-    
-* Take Home Final exam 
-    - Distributed Wed 12/11 via Slack. 
-    - Due Wednesday 12/18 EOD. 
-    - All links to files and for submission in Slack post. 
-
-* Makeup Midterm - In class on Friday. Otherwise, open work day. 
-
-
-### `r format(wk1.date+7*14, "%m-%d-%Y")` Week 14: Model building / Model fit
-
-* You've been exploring relationships on variables related to your individual research question all semester. Now is time to bring all this information together and build a 'final' model. 
-     - Build a final multivariable model. y ~ x1 + x2 + ...
-     - The goal is to explain the variabilty in your response variable, using multiple predictor variables. 
-* Model building is cyclical, we'll go over some criteria this week on how to know when to stop and how to compare different models. 
-* Poster prep stage IV is due this week - this is the final stage before you build your posters. Pay close attention to the requirement details on the project page. 
-    - wrapping up your 'story'
-    - describe the limitations to your study
-    - propose further work: What can someone *DO* with the information you've found?
-
-
-### `r format(wk1.date+7*13, "%m-%d-%Y")` Fall Break
-Relax, get caught up on sleep. 
-
-
-### `r format(wk1.date+7*12, "%m-%d-%Y")` Week 13: Categorical Variables & Logistic Regression
-
-* Swapping ordering of topics - Categorical variables first on Monday, Logistic regression starts Wednesday
-* Quiz 13 (on both categorical variables and logistic regression) due Tuesday night. 
-* Homework 10 due Saturday before you go off on fall Break. 
-* My Math Seminar talk on Missing Data video has been posted on the [notes](notes.html) page. 
-        - Any EC is due by 12/6
-
-
-> Other schedule updates: No more quizzes after break. Gradebook total has been adjusted to dropping the lowest 2 quiz scores. 
-
-
-### `r format(wk1.date+7*11, "%m-%d-%Y")` Week 12: Multivariable Regression Modeling
-
-* Writing and interpreting multivariable models
-* How else can tertiary variable muck up an observed bivariate relationship? Confounding. 
-
-**TWO THINGS TO WORK ON THIS WEEK**
-
-* Homework 10
-* Poster prep stage III - Take your bivariate relationship and add an appropriate analysis. 
-
-
-
-### `r format(wk1.date+7*11, "%m-%d-%Y")` Week 11: Moderation
-
-We're starting to talk about multivariable models this week. This involves
-understanding how to think about simultaneous relationships between multiple variables. 
-
-Life isn't bivariate. We "know" there is more to how big a caterpillar is than simply the species. What about the temperature? was it a drought year? what type of tree is it on? How heavy is the bird predation in that area? What other species are on the same tree that could be competing for resources? To understand the singular effect of bird predation on caterpillar size, we must consider how all other factors affect caterpillar size, and how those other factors might be related to each other as well. 
-
-The course notes is a "cliff notes" version of the lecture material for this coures. If you're not watching the videos (even on 1.5x speed) you are missing critical information that I will not lecture on in class, but that you will be responsible for on the homework and exam. You will do poorly on the quizzes if you have not watched the videos and taken your own set of notes. 
-
-
-### `r format(wk1.date+7*9, "%m-%d-%Y")` Week 10: Regression Analysis
-
-We're finishing up Bivariate Inference this week. 
-
-* Simple Linear Regression - similar to correlation, but now we care about _how_ much the response variable changes as the explanatory varible changes. 
-* HW 8 due this Saturday
-* Think about which inferential tools you are going to want to use on your personal research questions. 
-
-
-### `r format(wk1.date+7*8, "%m-%d-%Y")` Week 9: Bivariate Inference
-
-* See below for quiz schedule.
-* Covering 3 core statistical tests  
-        - ANVOA: Q ~ C  
-        - Chi-Squared: C ~ C  
-        - Correlation: Q~Q  
-* Questions come from the PDS video AND the course packet. 
-* To be on track, you should have the first question in Hw8 (2-sample T-Test) complete before class on Monday. 
-* I highly encourage you to get the 1:1 extra R help available. Link below. 
-
-
-### `r format(wk1.date+7*7, "%m-%d-%Y")` Week 8: Statistical Inference via Hypothesis Testing
-
-The rest of the semester is all about Inference! This is what you've been training for, and waiting for. This week we'll start out with setting the foundations of the process on 1 variable, then quickly move into testing relationships between two variables. 
-
-
-* HW 8 BIG assignment! Has multiple parts. 
-* Extra 1:1 help with R available, Sunday-Thursday, 4-6PM at https://zoom.us/j/536236069
-
-#### Midterm handed back Friday. 
-* Change in exam wrapper. Not going to do error assessment. 
-* [[Exam reflection handout]](reading/Exam wrapper.pdf). 
-    - Hard copies handed out in class. 
-    - Hard copy due next Friday 10/25
-
-#### <span style="color:red">Temporary change in quiz protocol</span>
-Next week we are covering ANOVA, $\chi^{2}$, and Correlation. Quiz 09 covered topics on all three. 
-
-* Quiz09 will be split into three smaller quizzes. 
-* Due the night before the topic is covered in class. 
-    - ANOVA due Sun 10/20
-    - $\chi^{2}$ due Tue 10/22
-    - Correlation due Thu 10/24
-* I will pick the 1 lowest scoring question to do as a group quiz that next day.
-* Scores will be re-combined into a Quiz09 score. 
-
-
-
-
-----
-
-### `r format(wk1.date+6*7, "%m-%d-%Y")` Week 7: Simulation, sampling, probability distributions
-
-Now that you've had a chance to learn what your data looks like, exploring relationships and learning more about the variables that you are interested in researching, let's take a step back and look at the big picture. You will use lecture notes on writing empirical research (found on the materials page of this website) to guide the writing of a research proposal. 
-
-Applied statistics is used to support research. Numbers and measures don't stand on their own. It is important that you understand how to use data to support scienctific research. 
-
-So far you have been conducting an exploratory data analysis to learn the distributions of your measures, and to assess for any possible relationships in your research. You cannot make any statistical claims about whether or not a relationship is significant at this point. That is under the realm of _inferential statistics_ and will be the topic of the class after Spring break. 
-
-To understand why inferential statistics can be used to make valid claims, we have to learn a little bit about _Probability_ first. This topic is only briefly covered in the PDS videos. You will have to spend more time in the course packet, AND in the OpenIntro textbook if you have never taken a statistics course before. 
-
-This is a much more mathematical section of the course, so be sure to plan your time accordingly. Over the next two weeks you should be writing your research proposal, working on your poster preparation slides, and filling out the notes and examples in the course packet. We will be working heavily out of the course packet, so it is essential that you read the material ahead of time so the examples we work through in class are meaningful. 
-
-*Week overview*
-
-* Two in class exercises (mon, fri)
-* HW07 due in google drive & worksheet -- Part of this will be due Wednesday
-* Quiz 7 - Quantifying Uncertainty. **Due Thursday**. Group quiz on Friday. 
-    - Relies heavily on PDS video and reading the course notes section 4.5-4.6
-    - Must have a fundamental understanding of how to calculate a confidence interval
-
-
-----
-
-
-### `r format(wk1.date+5*7, "%m-%d-%Y")` Week 6: Reflection, Midterm, and new stuff. 
-
-We're going to switch gears here and talk about probability, but before we do that let's take a step back and think about what we've learned so far and consider how our thoughts about Statistics has changed due to this new information. It's also a time for self reflection. How are you doing in this class? Are you happy with your grade? What can you do differently? 
-
-This week is mostly about prepping for the exam. We will do a probabilty activity on wednesday to get us ready for the next unit.
-
-**Updates** I have cxl'd HW 6 (research proposal). Quiz 6 is still required but will stay open until Monday night. 
-
-
-
-### `r format(wk1.date+4*7, "%m-%d-%Y")` Week 5: Describing Relationships
-
-
-> It's ok to struggle, it's not OK to not do anything. If you are having trouble with coding, you need to ask for help. 
-This class builds on each assignment. You can't do HW05 well if you didn't do HW04. You won't be able to do HW06 if you can't do HW05. 
-Don't risk falling behind, you will struggle to catch up and may not pass. There are five of us available to help you during office hours and Community Coding. You can make appointments with any of us outside of our scheduled hours as well. 
-
-* This week we will discuss how to create visualizations to assess the relationship between two variables. 
-* The homework assignments are training grounds for you to practice how to create and interpret graphics to explore your research question. The graphs you make for the homework may or may not be directly related to your research question. 
-* You may have to go back to your raw data and pull in new measures. Or adjust your variables (like collapsing levels) based on what you observed in last week's assignment. 
-
-* Monday 2pm OH cancelled this week. Extra OH Monday at 9, and Wed at 9am. 
-
-----
-
-
-### `r format(wk1.date+3*7, "%m-%d-%Y")` Week 4: Describing Distributions of Data
-
-I'm alive!
-
-> OH Cancelled Monday. Sorry, lot of Drs appts in the upcoming weeks that were scheduled months ago. 
-> Additional OH Wednesday at 9am
-
-If there's one take home message for this week, is to describe the distribution of variables you need: 
-
-1. a picture
-2. summary statistics
-3. a complete sentence interpretation
-
-While your goal should be to make figures stand alone, you won't be there quite yet. Your coding skills will
-develop as you go on throughout the semester. 
-
-* You will also start the work to build your research poster. See the [project instructions](project.html) page for details. This means you have *two* assignments due this Friday. Procrastinate at your own peril. 
-
-> Re: Homework 03. I will adjusted the grading rubric to downweight the data management portion. 
-> This is a wakeup call for all of you who tried to start the HW on Saturday evening. You won't be able
-> to do HW for this class in an evening. There is a reason we work on it all week in class. I advise going and
-> reading the [[advice from last year's students]](reading/Advice from prior Math 315 students.pdf). 
-
-<span style="color:red">**HW03 is a critical assignment**</span> You can't complete any remaining homework until you get this file working. If you were unsuccessful this week, your goal is to work with your resources (each other, tutors, peer mentors, office hours, community coding) until you get it working. 
-
-----
-
-
-
-### `r format(wk1.date+2*7, "%m-%d-%Y")` Week 3: Hello R! - Preparing Data for Analysis. 
-
-> I may be late to my OH on Tuesday. I have to take my dog `r emo::ji('dog')` to the vet :( 
-
-
-* We are starting to code in R this week. You should follow along with the coding that is done in the PDS video. Practicing typing commands and mimicking the output that is in the video is very important and will contribute to your learning. 
-
-* In class on Monday you will work with your partner to take a closer look at your codebook to identify what types of data management you will have to do. 
-
-* I have created a [[video]](https://youtu.be/fv2NLL3dYYQ) to walk you through how to get your data into R Studio. 
-
-* The [[Help with R]](help_R.html) page has more info such as useful functions and how to navigate data. 
-
-#### Entering a challenging time
-
-You may feel like this in the next couple weeks: 
-
-<center><img src="img/hard.jpg" width="400" height="400" align='center'/></center>
-<br>
-
-But if you use the references in the course notes, the peer mentors, videos and engage in the most effective way of learning a new programming language, 
-
-<center><img src="img/orly-changestuff.jpg" width="400" height="400" /></center>
-<br>
-
-then you will learn how to dominate debugging and come out a stronger and more capable of being able to answer research questions using data. 
-
-<center><img src="img/debugging.jpg" width="600"/></center>
-
-<br>
-
-----
-
-
-
-### `r format(wk1.date+7, "%m-%d-%Y")` Week 2: Generating research questions
-
-Hope everyone had a relaxing 3day weekend. Office hours have been set. Thank you for contributing! 
-
-* Monday 2-3pm Holt 202
-* Tuesday 10-11am Holt  202
-* Wednesday 2-4pm PHSC 213 (Community Coding)
-* Thursday 2-4pm MLIB 442 (Community Coding)
-
-Due to a glitch in the system, Quiz 1 is going to be considered a "trial run" and not count towards your grade. 
-
-This week we're going to cover the basic data types, how to formulate a testable research hypotheses on your selected data, and setting up a reproducible research pipeline to prepare data for analysis. 
-
-Haven't selected a [[research data set]](https://drive.google.com/open?id=1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY) yet? 
-Look at the [[sign up sheet]](https://docs.google.com/spreadsheets/d/1kyRCJMYQ4fa3RveUOH1EgwZyzOvRLzNy0uQajEEtarg/edit?usp=sharing) to see what's left and sign up to analyze a data set. If you don't have a partner yet, put your name down by a data set you are interested in analyzing, or post in the #assignments channel in slack that you're looking for a partner. 
-
-<span style="color:red">**Quiz 2 due Tuesday**</span> Don't forget this week we start having Quizzes on the upcoming week material. You must watch the videos and look through the course notes to be prepared for these quizzes!
-
-
-----
-
-### `r format(wk1.date, "%m-%d-%Y")` Week 1: Welcome to Fall 19!
-
-* This course website contains all materials except the textbook for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.
-* I have created a handy [[Materials Overview]](reading/Materials overview.pdf) that walks you through the components of this class. 
-    - I even [[recorded a video]](https://youtu.be/ln3HSIMbhXk) going over it for ya'all! 
-* Take this survey to help choose when I should hold Office Hours: https://forms.gle/6ZTSfrJ2WbyKMfk39 
-
-
-
-
-
+::::
 

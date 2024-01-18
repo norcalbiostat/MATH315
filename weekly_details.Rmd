@@ -1,0 +1,105 @@
+---
+title: "Weekly Details"
+---
+
+## Click each link to expand or contract the details for that week. 
+
+⚠️ Details are subject to change. 
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")`_ 
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(pander); library(dplyr)
+library(stringr)
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
+
+# Read in schedule
+raw_slo_detail <- googlesheets4::read_sheet("1JyPeMAAHb3yrCzxDpnWqB7k-KsCTkULIPILAAsfai78", 
+                                 sheet="weekly_details", 
+                                 col_types = c("nDcccccc")) 
+
+# Function to extract week and display data
+details <- function(w){
+  wd <- filter(raw_slo_detail, wk==w) %>% 
+        select(Topics, SLO, Prepare, Monday, Wednesday, Friday)  
+  # strip data columns into separate lists
+  Topic <- gsub("\r\n", "", wd$Topics)
+  SLO  <- as.list(str_split(wd$SLO, "\n", simplify=TRUE))
+  prep <- as.list(str_split(wd$Prepare, "\n", simplify=TRUE))
+  mon  <- as.list(str_split(wd$Monday, "\n", simplify=TRUE))
+  wed  <- as.list(str_split(wd$Wednesday, "\n", simplify=TRUE))
+  fri  <- as.list(str_split(wd$Friday, "\n", simplify=TRUE))
+ 
+  return(list(Topic=Topic, SLO=SLO, prep=prep, mon=mon, wed=wed, fri=fri))
+}
+```
+
+
+
+```{r}
+w1 <- details(1)
+```
+### <a href="#week1" data-toggle="collapse">Week 1: `r w1$Topic`</a>
+<div id="week1" class="collapse">
+
+#### Learning Objectives
+By the end of the week, learners will be able to: 
+```{r}
+pander(w1$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w1$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w1$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w1$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w1$fri)
+```
+
+</div>
+
+
+```{r}
+w2 <- details(2)
+```
+### <a href="#week2" data-toggle="collapse">Week 2: `r w2$Topic`</a>
+<div id="week2" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w2$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w2$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w2$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w2$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w2$fri)
+```
+
+</div>

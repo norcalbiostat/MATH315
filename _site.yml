@@ -1,70 +1,51 @@
 name: Robin Donatello
-output_dir: '.'
+output_dir: '/_site'
 navbar:
   title: MATH 315
   left:
-  - text: Schedule
+  - text: Modules
+    href: modules.html
+  - text: Weekly Details
     icon: fa-calendar
-    href: schedule.html
-  - text: Materials
-    icon: fa-folder-open
-    menu:
-    - text: Lecture Notes/Homework/Reading
-      icon: fa-file-alt
-      href: notes.html
-    - text: Course Packet
-      icon: fa-file-code
-      href: reading/RAD_course_notes_f19.pdf
-    - text: Data from course packet
-      icon: fa-database
-      href: https://norcalbiostat.netlify.com/data/
-  - text: Projects
+    href: weekly_details.html
+
+  - text: Project
     icon: fa-bar-chart
-    menu:
-    - text: Project Instructions
-      href: project.html
-    - text: Peer Review Assignment
-      href: https://drive.google.com/open?id=1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg 
-    - text: Project Data (Google Drive)
-      href: https://drive.google.com/drive/u/3/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY
+    href: project.html
   - text: Tools
     icon: fa-wrench
     menu:
-    - text: R Studio Cloud
-      icon: fa-code
-      href: https://rstudio.cloud/
     - text: Google Drive
       icon: fa-google
-      href: https://drive.google.com/drive/folders/12ra-OprzeMOhokBwgPeQ66RnHmnToMoO?usp=sharing
-    - text: Slack (class discussions)
-      icon: fa-slack
-      href: https://math315-f19.slack.com/
-    - text: Zoom (video conference)
-      icon: fa-video-camera
-      href: https://csuchico.zoom.us/
-      
+      href: https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM
+    - text: Posit Cloud
+      href: https://posit.cloud/spaces/466257/
+    
+
+    
   right:
-  - text: Peer Mentors
-    icon: fa-users
-    href: peer_mentors.html
-  - text: Community Coding
-    icon: fa-group
-    href: http://bit.ly/cc_hours
+  - text: Learning Tools
+    href: learning_tools.html
+  - text: Syllabus
+    href: syllabus.html
   - text: Help
     icon: fa-question
     menu:
-    - text: R programming
-      href: help_R.html    
+    - text: Community Coding
+      icon: fa-group
+      href: http://bit.ly/cc_hours
+    - text: Posit Community
+      icon: fa-comment
+      href: https://community.rstudio.com/ 
+    - text: Stack Overflow/r
+      icon: fa-stack-overflow
+      href: https://stackoverflow.com/questions/tagged/r
+    - text: R Cookbook
+      icon: fa-area-chart
+      href: https://rc2e.com/   
     - text: R - Cheat Sheets
-      icon: 
-      href: https://www.rstudio.com/resources/cheatsheets/
-    - text: Syllabus
-      href: syllabus_315_f19.html
-    - text: Submitting homework
-      href: help_assignments.html
-  - text: Dr. D's website
-    icon: fa-paw
-    href: http://www.norcalbiostat.com/
+      href: https://www.posit.co/resources/cheatsheets/
+
 output:
   html_document:
     theme: sandstone

@@ -1,0 +1,116 @@
+---
+title: "Schedule of Topics"
+output: 
+  html_document: 
+    highlight: default
+    css: style.css
+---
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse);library(readxl); library(kableExtra);library(stringr); library(pander)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
+```
+
+# _Last Updated: `r format(Sys.time(), "%a %b %d %X")`_ {.tabset .tabset-fade .tabset-pills}
+
+## Overview
+
+<p>
+Unless specified otherwise, all assignments are due at midnight on the due date listed.  
+
+Lecture/practice notes will be released *after* the topic is completed in class. This gives you time to fill out the course packet out of your own brain first (recall), then you can review these notes to catch something you missed. 
+
+Current status of the [PDF notes - sec 01](course_packet/_book/packet_sec01.pdf) that I write in during the 2pm class & most videos. These [PDF notes - sec02](course_packet/_book/packet_sec02.pdf) contain live notes that I take during the 3:30 pm class.
+
+<br>
+
+Some videos linked were created by Dr. Gray in fall for her section of 350. Most examples she works through should be identical to the ones in the course packet, but there likely will be deviations. 
+
+<a href="https://forms.gle/D86w12njtjgX7yBN7"><button type="button">Anonymous Feedback Form</button> </a>
+
+</p>
+
+```{r}
+# Read in schedule
+rawdat <- read_xlsx("_math350_schedule.xlsx", sheet='weekly_schedule') 
+
+# content rows
+content  <- rawdat %>% filter(is.na(tnum))
+
+# which rows have topic numbers 
+tn <- rawdat %>% filter(!is.na(tnum)) %>% 
+        select(tnum, Topic) %>%
+        mutate(start=0, end=0)
+
+for(t in 1:max(tn$tnum)){
+  tn$start[t] <- min(which(floor(content$Order)==t))
+  tn$end[t]   <- max(which(floor(content$Order)==t))
+}
+
+out <- content %>%
+  # wrangle hw links
+  separate(col=Do, into=c("hw.name", "hw.link", "hw.due"), sep="-| ") %>%
+  mutate(Date = format(Date,"%m/%d"),
+         hw.due = gsub("(", "<b> \r\n Due (", hw.due, fixed=TRUE), 
+         hw.due = gsub(")", ")</b>" , hw.due, fixed=TRUE),
+         hw.sol = ifelse(!is.na(sol), sol, ""), 
+         Do = ifelse(!is.na(hw.name), 
+                     paste0(sprintf("[%s](%s)", hw.name, hw.link), 
+                            "<br>", hw.due, "<br>", hw.sol), 
+                     NA), 
+         Notes = ifelse(!is.na(Notes),Notes, NA)) %>%
+  select(Date, Topic, Notes, Read, Watch, Practice = Do, Assess=quiz) 
+
+
+# highlight rows
+wk.labs <-  "background-color: #bb9457; color: #fff;"
+hlt.wks <-  "background-color: #6f1d1b; color: #fff;"
+```
+
+```{r, results='asis'}
+out %>% 
+  kable(align="cllllcc", escape=FALSE) %>% 
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
+  pack_rows(tn$Topic[1], tn$start[1],   tn$end[1], label_row_css =wk.labs) %>% 
+  pack_rows(tn$Topic[2], tn$start[2],   tn$end[2], label_row_css =wk.labs) %>%
+  pack_rows(tn$Topic[3], tn$start[3],   tn$end[3], label_row_css =hlt.wks) %>%
+  pack_rows(tn$Topic[4], tn$start[4],   tn$end[4], label_row_css =wk.labs) %>%
+  pack_rows(tn$Topic[5], tn$start[5],   tn$end[5], label_row_css =wk.labs) %>%
+  pack_rows(tn$Topic[6], tn$start[6],   tn$end[6], label_row_css =hlt.wks) %>%
+  pack_rows(tn$Topic[7], tn$start[7],   tn$end[7], label_row_css =wk.labs) %>%
+  pack_rows(tn$Topic[8], tn$start[8],   tn$end[8], label_row_css =wk.labs) %>%
+  pack_rows(tn$Topic[9], tn$start[9],   tn$end[9], label_row_css =hlt.wks) %>%
+  column_spec(1, width = "5%") %>% 
+  column_spec(2, width = "22%") %>%
+  column_spec(3, width = "15%") %>%
+  column_spec(4, width = "3%") %>% 
+  column_spec(5, width = "25%") %>%
+  column_spec(6, width = "15%") %>%
+  column_spec(7, width = "15%")
+```
+
+
+
+## Calendar
+
+For those of you that like the calendar view of your schedule. Due to schedule adjustments during the semester these dates may not match exactly with the schedule. In those cases please bring any dependencies to my attention via Discord For your added benefit, the Data Science Inititative Event calendar is also displayed. 
+
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23A79B8E&ctz=America%2FLos_Angeles&src=Y18yMjFsdGYzb2VwbmJrcGRvM2c2dTBnZzA5c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=bWFpbC5jc3VjaGljby5lZHVfOTNyMXBmOThxZ2VzNzlsa2dkb3FpcGV1YW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23b25619&color=%2300b9c6&showCalendars=1&showTabs=1" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+<a href="https://forms.gle/D86w12njtjgX7yBN7"><button type="button">Anonymous Feedback Form</button> </a>
+
+
+```{r, eval=FALSE}
+# Read in schedule
+sec01 <- read_xlsx("C:/Box/Teaching/350/math350_s22_roster.xlsx", sheet=2)
+sec02 <- read_xlsx("C:/Box/Teaching/350/math350_s22_roster.xlsx", sheet=3) 
+
+sec01 %>% select(First, Last,  Group) %>%
+  kable(caption = "Sec 01: 2pm") %>%
+  kable_styling(full_width = F, position = "float_left")
+
+sec02 %>% select(First, Last,  Group) %>%
+  kable(caption = "Sec 02: 3:30pm") %>%
+  kable_styling(full_width = F, position = "right")
+```

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Research Project</title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/sandstone.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 315</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="modules.html">Modules</a>
+</li>
+<li>
+  <a href="weekly_details.html">
+    <span class="fa fa-calendar"></span>
+     
+    Weekly Details
+  </a>
+</li>
+<li>
+  <a href="project.html">
+    <span class="fa fa-bar-chart"></span>
+     
+    Project
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM">
+        <span class="fa fa-google"></span>
+         
+        Google Drive
+      </a>
+    </li>
+    <li>
+      <a href="https://posit.cloud/spaces/466257/">Posit Cloud</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="learning_tools.html">Learning Tools</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://bit.ly/cc_hours">
+        <span class="fa fa-group"></span>
+         
+        Community Coding
+      </a>
+    </li>
+    <li>
+      <a href="https://community.rstudio.com/">
+        <span class="fa fa-comment"></span>
+         
+        Posit Community
+      </a>
+    </li>
+    <li>
+      <a href="https://stackoverflow.com/questions/tagged/r">
+        <span class="fa fa-stack-overflow"></span>
+         
+        Stack Overflow/r
+      </a>
+    </li>
+    <li>
+      <a href="https://rc2e.com/">
+        <span class="fa fa-area-chart"></span>
+         
+        R Cookbook
+      </a>
+    </li>
+    <li>
+      <a href="https://www.posit.co/resources/cheatsheets/">R - Cheat Sheets</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Research Project</h1>
+
+</div>
+
+
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>Throughout the entire semester you will work with a partner to
+analyze a data set and present your research findings as a poster during
+finals week. Your assignments will serve as a first draft of exploration
+into your research questions, and helps you build your story.</p>
+<p>You will build up your project in stages, revising multiple times.
+The end goal is a research poster that you will present during finals
+week. You will be summarizing your findings using Google Slides. This
+will help you concisely explain your research topic and findings in a
+way will be easier to translate (fit) onto a poster. Here is the general
+outline, with each stage is explained in detail further below.</p>
+<ul>
+<li>Stage 1: Choose a data set and identify a few research topics</li>
+<li>Stage 2: Introduce your project and variables of interest</li>
+<li>Stage 3: Explore your data and relationships</li>
+<li>Stage 4: Analyze bivariate relationships</li>
+<li>Stage 5: Multivariable modeling &amp; summarizing findings</li>
+<li>Stage 6: Poster Creation &amp; Presentation</li>
+</ul>
+<div id="peer-review" class="section level3">
+<h3>Peer Review</h3>
+<p>Stages 2-6 are subject to peer review. See the <a
+href="help.html#peer-review">help with peer review</a> page for
+details.</p>
+<p>Once you have addressed a particular piece of feedback mark it as
+“resolved” in Google Slides.</p>
+<p>⚠️ <em>Do Not Delete Feedback until notified that it is okay</em></p>
+</div>
+<div id="general-notes" class="section level3">
+<h3>General Notes</h3>
+<ul>
+<li>At each reviewed stage you should update anything you need to change
+based on feedback, such as correctly making graphics, writing results
+correctly etc.</li>
+<li>The contents of each slide are specified in the slide template and
+explained below.
+<ul>
+<li>You are welcome to have “staging” slides where you can dump content,
+thoughts, analyses that you <em>may</em> end up using. <strong>These
+extra slides should be at the END of the required slides.</strong></li>
+</ul></li>
+<li>There are also <a
+href="https://drive.google.com/drive/folders/1Aaa4Zkn0OHmYu1e_8jJBJ39w-DEdbjSb">example
+slides</a> from prior students as a references. (Note the template may
+have been updated since then.)</li>
+</ul>
+</div>
+</div>
+<div id="stage-1-choose-a-data-set-and-identify-a-few-research-topics"
+class="section level2">
+<h2>Stage 1: Choose a data set and identify a few research topics</h2>
+<ul>
+<li>Project data you can choose from can be found in this <a
+href="https://drive.google.com/drive/u/0/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY">Google
+Drive folder</a>.</li>
+<li>Browse through the available data sets, read the summaries and skim
+the codebooks.</li>
+<li>Add your name to <a
+href="https://docs.google.com/spreadsheets/d/1dNTr0SKnwoT3XBHJY6cGh3fEeJCfxlDmYAUZ10uX89w">Proposed
+Research Topics</a> once you have chosen a topic.</li>
+<li>Download the data and codebook to your <code>Math315/data</code>
+folder.</li>
+<li>You will work through writing out a few research questions as part
+of Homework 02.</li>
+</ul>
+<a href="#otherdata" data-toggle="collapse"><strong>Consideration of
+other data sources</strong></a>
+<div id="otherdata" class="collapse">
+<p>Under only very strict certain circumstances I will allow for other
+data sets to be used (this includes your senior thesis data). You must
+make an appointment to meet with me to go over your data, codebook and
+research question for this to be a consideration.</p>
+<p><strong>Criteria for proposing new data sets</strong></p>
+<ul>
+<li>File type must be a .txt, .csv, .xlsx or .xls file</li>
+<li>File size is less than 1 Gig</li>
+<li>A codebook or data dictionary that fully explains what each variable
+means is available.</li>
+<li>There are at least 200 rows (observations), but ideally between
+500-1000.</li>
+<li>There are 20 or more variables
+<ul>
+<li>At least 4 quantitative variables</li>
+<li>At least 1 categorical variable</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div
+id="stage-2-introduce-your-research-question-and-variables-of-interest"
+class="section level2">
+<h2>Stage 2: Introduce your research question and variables of
+interest</h2>
+<ul>
+<li>Make a copy of the Project Template found in the
+<code>00 Poster Prep</code> folder in our Google Drive.</li>
+<li>Name your file using your team’s first names only
+(e.g. <code>robin_katie</code>)</li>
+</ul>
+<p>These slides for this stage are pale yellow in the template.</p>
+<ul>
+<li><strong>Slide 01</strong>. Title</li>
+<li><strong>Slide 02</strong>. Introduction</li>
+<li><strong>Slide 03</strong>. Background &amp; lit review.</li>
+<li><strong>Slide 04</strong>. Explain the research problem / topic
+area</li>
+<li><strong>Slide 05</strong>. State your Research Question as a
+testable hypothesis.</li>
+<li><strong>Slide 06</strong>. Introduce the data. Where does it come
+from, how was it collected. How many records?</li>
+<li><strong>Slide 07</strong>. Description of measures (variables) being
+used.</li>
+</ul>
+<p>⚠️ <strong>Pay attention to slide Numbers!</strong></p>
+<ul>
+<li>Please ensure that all content is on the slide as expected.</li>
+<li>Slides will not be filled in in direct numerical order.</li>
+<li>Check the template if you are confused. I have added slide
+background coloring to help you keep you on track</li>
+</ul>
+</div>
+<div id="stage-3-exploratory-data-analysis" class="section level2">
+<h2>Stage 3: Exploratory data analysis</h2>
+<p>These slides are pale blue in the template.</p>
+<ul>
+<li><strong>Slide 09</strong>. Fully describe your primary response
+variable</li>
+<li><strong>Slide 10</strong>. Fully describe your primary explanatory
+variable</li>
+<li><strong>Slide 11</strong>. Fully describe the relationship between
+your primary explanatory and primary response variables</li>
+<li><strong>Slide 13</strong>. Fully describe the relationship of a
+third variable to either your explanatory or response variables</li>
+</ul>
+<p>All using appropriate summary statistics, graphic and an explanatory
+sentence.</p>
+</div>
+<div id="stage-4-bivariate-inference" class="section level2">
+<h2>Stage 4: Bivariate Inference</h2>
+<p>These slides are pale purple in the template.</p>
+<ul>
+<li><strong>Slide 08</strong>. Describe in a few sentences what analysis
+tools you will use to answer your research question</li>
+<li><strong>Slide 12</strong>. Analyze the relationship discussed in
+slides 11</li>
+<li><strong>Slide 14</strong>. Analyze the relationship discussed in
+slides 13</li>
+</ul>
+<p>This should be a conclusion written in English, in the context of the
+problem, includes summary statistics, confidence interval and a
+p-value.</p>
+</div>
+<div id="stage-5-multivariable-modeling-summarizing-findings"
+class="section level2">
+<h2>Stage 5: Multivariable modeling &amp; summarizing findings</h2>
+<p>You are trying to understand the relationship between your
+explanatory and response variable, in presence of information contained
+in other variables.</p>
+<p>These slides are pale green in the template.</p>
+<p><strong>Slide 15: Model Building</strong></p>
+<ul>
+<li>Build a multivariable model by adding additional predictors to the
+model.</li>
+<li>Explain your model building process in a few bullet points.
+<ul>
+<li>What variables did you test as other explanatory variables?</li>
+<li>How did you determine your final model?</li>
+</ul></li>
+<li>Include any variables that were found to be significantly associated
+with the outcome</li>
+<li>If you have a confounding variable, you still need to keep your
+primary explanatory variable in the model.</li>
+</ul>
+<p><strong>Slide 16: Multivariable Model - Summary of
+results</strong></p>
+<ul>
+<li>A table or plot of the regression coefficients (or Odds Ratios) must
+be presented.</li>
+<li>At least one coefficient, the primary explanatory variable, must be
+interpreted in context of the problem.</li>
+</ul>
+<p><strong>Slide 17. Model Assessment</strong></p>
+<ul>
+<li>If using a linear or log-linear model;
+<ul>
+<li>present and interpret the model diagnostic plots</li>
+<li>report and interpret <span class="math inline">\(R^{2}\)</span></li>
+</ul></li>
+<li>If using a logistic regression model;
+<ul>
+<li>report the results of a test for goodness of fit</li>
+<li>report and interpret the model accuracy, and the cutpoint used. (<a
+href="https://norcalbiostat.github.io/AppliedStatistics_notes/model-performance.html">Ref:
+ASCN Ch 12.5</a>)</li>
+</ul></li>
+</ul>
+<p><strong>Slide 18. Discussion</strong></p>
+<ul>
+<li>Here you will explain what your graphical and inferential results
+tell you about your topic.</li>
+<li>Discuss if your research hypothesis was supported, if it was not,
+why you think that might be</li>
+<li>Explain the overall story/trend/what you learned when you consider
+your univariate, bivariate &amp; multivariate results about your
+topic.</li>
+<li>Compare your results to previous research results. Do they agree or
+disagree?</li>
+</ul>
+<p><strong>Slide 19. Implications</strong></p>
+<ul>
+<li>What are the practical implications of your results?</li>
+<li>What could others do with your findings?</li>
+<li>What future research needs to be conducted?
+<ul>
+<li>This needs to be more specific than “other variables could be
+explored”. Which variables and why? What other research articles
+indicate that those other variables are relevant?</li>
+</ul></li>
+</ul>
+<p><strong>Slide 20. Limitations</strong></p>
+<ul>
+<li>Who are the results of this study generalizable to? (i.e. a subset
+of individuals?)</li>
+<li>Were there any model assumptions that were not upheld?</li>
+<li>If this is an observational study, you should make a statement about
+the findings are associations and not causal in nature</li>
+<li>Are there other factors that could explain your response variable
+that you did not include in your model?</li>
+</ul>
+<p><strong>Slide 21. References</strong></p>
+<ul>
+<li>You can use smaller font to get all references on one slide.</li>
+<li>Use references from research plan, and any additional references
+gathered along the way.</li>
+<li>Make sure these are correctly done in APA format.</li>
+<li>Proper citations for
+<ul>
+<li><a
+href="http://www.cpc.unc.edu/projects/addhealth/faqs/addhealth#how-do-i-cite-the-add-health-contractual-data-">Add
+Health</a></li>
+<li><em>R</em>: Type <code>citation()</code></li>
+<li><a
+href="https://support.rstudio.com/hc/en-us/articles/206212048-Citing-RStudio">R
+Studio</a></li>
+<li><a
+href="http://www-01.ibm.com/support/docview.wss?uid=swg21476197">SPSS</a></li>
+<li><a
+href="http://blog.apastyle.org/apastyle/2015/01/how-to-cite-software-in-apa-style.html">How
+to cite software in Text</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="stage-6-posters-presentations" class="section level2">
+<h2>Stage 6: Posters Presentations</h2>
+<ul>
+<li>During our scheduled finals time, analysis teams will present their
+research posters in a poster symposium setting. Half the teams will be
+up at a time. When not presenting, you will be scoring your peer’s
+class’s posters using <a href="https://forms.gle/SWBM96MjcEmMDHGo9">this
+scoring sheet</a></li>
+<li>Posters can be in powerpoint (the standard format for research
+posters), or Google Slides (once appropriately sized)
+<ul>
+<li>Regardless of the file type, you must use a template. Do not try to
+reinvent the wheel.</li>
+</ul></li>
+</ul>
+<div id="poster-guidelines" class="section level3">
+<h3>Poster Guidelines</h3>
+<p>See the full guidelines <a
+href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/">in
+this blog post</a>. This post includes:</p>
+<ul>
+<li><a
+href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#templates">Links
+to poster templates</a></li>
+<li><a
+href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#content">Details
+on what each section should contain</a></li>
+<li>Guidance on <a
+href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#aesthetics">aesthetics</a>
+and <a
+href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#printing">printing</a></li>
+<li><a
+href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#examples">Examples
+of professional and prior student work.</a></li>
+</ul>
+</div>
+<div id="draft-version" class="section level3">
+<h3>Draft version</h3>
+<ul>
+<li>This draft is graded on a 1-10 scale on how complete the poster is.
+You should consider this a draft that you would circulate to your
+colleagues for final review and comments.
+<ul>
+<li>Basically the more work I think you need to put into your poster to
+make it presentable, the lower the points you get for the draft.</li>
+</ul></li>
+<li>Use the <a
+href="https://www.norcalbiostat.com/post/2022-11-26-poster-guidelines/#evaluation-criteria">evaluation
+criteria</a> as a guide for what I am looking for.</li>
+</ul>
+<p><strong>Submission and Peer Review Instructions</strong></p>
+<ul>
+<li>Save your poster as a PDF and upload to the
+<code>Google Drive/Project Poster Drafts</code> folder.</li>
+<li>To conduct your peer review, open the PDF from Google Drive directly
+in your browser.
+<ul>
+<li>Use the comment feature to write the comments directly into the
+poster file itself.</li>
+<li>provide at least two specific comments for each
+<ul>
+<li>something that can be improved</li>
+<li>something that is good</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="final-version" class="section level3">
+<h3>Final Version</h3>
+<ul>
+<li>Upload your final poster (as printed) to the
+<code>Google Drive/Project Poster Final Version</code> folder.
+<ul>
+<li>PDF preferred. PPTX ok.</li>
+</ul></li>
+<li>Scoring will be done via <a
+href="https://forms.gle/oFMQ2hqtthZFPq7T7">Google Forms</a>. It looks
+exactly like the <a
+href="https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria">evaluation
+criteria</a>.
+<ul>
+<li>When not presenting, you will walk around and learn about others
+research. Ask them questions, fill out the evaluation on your phone as
+you go. Printed copies will be available upon request so you can submit
+later.</li>
+</ul></li>
+<li>The final grade will be determined by
+<ul>
+<li>Base score = <strong>30%</strong> student score +
+<strong>70%</strong> instructor score <strong>+ bonus pts</strong> for
+best in show awards.</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="grading-method" class="section level2">
+<h2>Grading Method</h2>
+<p>Instead of assigning specific points to each stage and adding up the
+points for an overall score, this work will be done through a series of
+revisions gaining feedback from both your peers and the instructor at
+each stage.</p>
+<ul>
+<li>For each slide to be assessed you will be marked as either “needing
+revision”, “meeting expectation”, or “exemplary”.</li>
+<li>I will update your status column for the slides that are being
+assessed at that stage.
+<ul>
+<li>I will also check on any prior slides that are at ‘needs revision’
+stage.</li>
+</ul></li>
+<li>You can request a reassessment of prior work at (nearly) any time.
+(You can ask for it, I just may not get to it until the next time I’m
+reviewing slides.)</li>
+<li><strong>You are responsible for keeping track of your
+status!</strong> Suggestion - use conditional formatting on column F in
+your sheet. This is the color scheme I use:
+<ul>
+<li>Go to “Format –&gt; Conditional Formatting”</li>
+<li>Single color, apply to range F2:F22</li>
+<li>Format cells if
+<ul>
+<li><code>Text contains Not Assessible</code> (Red)</li>
+<li><code>Text contains ME</code> (light green)</li>
+<li><code>Text is exactly E</code> (dark green)</li>
+<li><code>Text contains NR</code> (yellow)</li>
+</ul></li>
+</ul></li>
+</ul>
+<div id="rubric" class="section level3">
+<h3>Rubric</h3>
+<p>This is a method of ‘ungrading’ that I have been wanting to try for a
+while. At the math congress (camping conference) I attended the first
+week of October a math educator discussed this method with us and so I
+was inspired to finally test it out. This project is a perfect
+opportunity to do so.</p>
+<p>This means that the Assessment item descriptions are a work in
+progress. Right now they are slightly modified from the old grading
+rubric. I may add, combine, or reword items as I do my revisions to
+better fit what I am actually looking for.</p>
+<p>Each person has their own ‘project assessment’ Google spreadsheet
+(same location as your poster) that shows you what achievement stage you
+are at for each item. It is locked to only view mode and only you and I
+have access to it.</p>
+</div>
+<div id="but-points" class="section level3">
+<h3>… but points!??</h3>
+<p>In the end this still has to be converted to a point value/letter
+grade right? So here’s how I’m going to do it. The poster prep slides
+make up 80 out of the 110 points for the project.</p>
+<ul>
+<li>If you have <span class="math inline">\(\geq\)</span> 90% of
+assessment items at ‘exemplary’ and none at ‘needs revision’, that’s “A”
+work and you get the full 80 pts.</li>
+<li>If you have <span class="math inline">\(\geq\)</span> 90% of
+assessment items at ‘meets expectation’ and no more than 1 at ‘needs
+revision’, that’s “B” work and you get 72 pts. Note ‘meeting
+expectation’ does not correspond to <em>A</em> level work</li>
+<li>If you have <span class="math inline">\(\geq\)</span> 80% of
+assessment items at ‘meets expectation’ and no more than 2 at ‘needs
+revision’, that’s “C” work and you get 64 pts.</li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

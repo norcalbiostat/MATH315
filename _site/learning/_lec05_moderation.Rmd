@@ -1,0 +1,321 @@
+---
+title: "Moderation"
+output:
+  pdf_document: default
+  html_document:
+    highlight: tango
+    theme: readable
+    toc: yes
+    toc_float: yes
+    toc_depth: 2
+css: ../css/customh5.css
+---
+
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _  
+Back to the [[Schedule]](../schedule.html)
+<br>
+
+# Introduction
+
+Moderation occurs when the relationship between two variables depends on a third variable.
+
+* The third variable is referred to as the moderating variable or simply the moderator. 
+* The moderator affects the direction and/or strength of the relation between your explanatory and response variable.
+* When testing a potential moderator, we are asking the question whether there is an association between two constructs, **but separately for different subgroups within the sample.**
+    - This is also called a _stratified_ model, or a _subgroup analysis_.
+
+
+## How to determine if a variable is a moderator 
+
+* What you are looking for first depends on which of the 3 scenarios below describe your original analysis (i.e., your original ANOVA test). 
+* Whether your third variable is a moderator depends on what you see happening in your moderator analysis (i.e., the second ANOVA test split by your third variable).  
+* If ANY of the 3 scenarios explained below occur in your analysis then your Third Variable IS a Moderator of the Bivariate Relationship. 
+
+**Scenario 1** - Significant relationship at bivariate level (i.e., ANOVA, Chi-Square, Correlation) (saying expect the effect to exist in the entire population) then when test for moderation the third variable is a moderator if the strength (i.e., p-value is Non-Significant) of the relationship changes. Could just change strength for one level of third variable, not necessarily all levels of the third variable.
+
+**Scenario 2** - Non-significant relationship at bivariate level (i.e., ANOVA, Chi-Square, Correlation) (saying do not expect the effect to exist in the entire population) then when test for moderation the third variable is a moderator if the relationship becomes significant (saying expect to see it in at least one of the sub-groups or levels of third variable, but not in entire population because was not significant before tested for moderation). Could just become significant in one level of the third variable, not necessarily all levels of the third variable.
+
+**Scenario 3** - Significant relationship at bivariate level (i.e., ANOVA, Chi-Square, Correlation) (saying expect the effect to exist in the entire population) then when test for moderation the third variable is a moderator if the direction (i.e., means change order/direction) of the relationship changes. Could just change direction for one level of third variable, not necessarily all levels of the third variable.
+ 
+## What to look for in each type of analysis.
+
+**ANOVA** - look at the p-value, r-squared, means, and the graph of the ANOVA and compare to those values in the Moderation (i.e., each level of third variable) output to determine if third variable is a moderator or not.
+
+**Chi-Square** - look at the p-value, the percents for the columns in the cross tabs table, and the graph for the Chi-Square and compare to those values in the Moderation (i.e., each level of third variable) output to determine if third variable is a moderator or not.
+
+**Correlation** - look at the correlation coefficient (r), p-value, calculate the r-squared, and the graph for the Correlation and compare to those values in the Moderation (i.e., each level of third variable) output to determine if third variable is a moderator or not.
+ 
+ 
+\newpage
+
+# Examples
+
+```{r, warning=FALSE, message=FALSE}
+library(knitr)
+opts_chunk$set(warning=FALSE, message=FALSE) 
+library(dplyr)
+library(ggplot2); library(gridExtra)
+library(pander) # Used for printing nice linear model tables
+panderOptions("digits", 3)
+iris<-iris # only used to run sample code
+load("~/Box Sync/Data/AddHealth/addhealth_clean.Rdata")
+```
+
+
+## ANOVA
+
+1. **Identify response, explanatory, and moderating variables**
+
+* Categorical explanatory variable = Perceived General Health (variable `genhealth`)
+* Quantitative response variable = Body Mass Index (variable `BMI`)
+* Categorical Potential Moderator = Ever smoked (variable `eversmoke_c`)
+
+
+2. **Visualize and summarise the potential effect of the moderator** 
+
+_These plots are modified for readability in several ways. These modifications may not apply to your situation. When running into trouble start taking off the fancy layers._
+1. `scale_x_discrete` is used to reverse the display order of the limits on general health.
+2. `coord_flip` is used to turn the boxplots horizontal, thereby removing the overlapping category labels. 
+3. `scale_fill_brewer` is used to apply a red-yellow-green color palette to the categories of general health. This is applicable because general health is an ordinal variable that has an interpretation of "good" to "bad". 
+```{r, fig.width=8, fig.height=4, fig.align='center'}
+bmi.plot <- addhealth %>% select(genhealth, BMI, eversmoke_c) %>% na.omit()
+
+twoway.boxplot <- ggplot(bmi.plot, aes(x=genhealth, y=BMI, fill=genhealth)) + 
+                  geom_boxplot(width=.4) + geom_violin(alpha=.3) + 
+                  stat_summary(fun.y="mean", geom="point", size=3, pch=17, 
+                  position=position_dodge(width=0.75)) + theme_bw() + 
+                  labs(x="General Health", y="BMI") + 
+                  scale_x_discrete(limits=rev(levels(bmi.plot$genhealth)))+ 
+                  scale_fill_brewer(guide=FALSE, palette="RdYlGn", direction=-1) +
+                  theme(legend.position = "top")+ coord_flip()
+
+threeway.boxplot <- ggplot(bmi.plot, aes(x=genhealth, y=BMI, fill=genhealth)) + 
+                  geom_boxplot(width=.4) + geom_violin(alpha=.3) + 
+                  stat_summary(fun.y="mean", geom="point", size=3, pch=17, 
+                  position=position_dodge(width=0.75)) + theme_bw() + 
+                  facet_wrap(~eversmoke_c)+
+                  labs(x="", y="BMI") + 
+                  scale_x_discrete(limits=rev(levels(bmi.plot$genhealth)))+ 
+                  scale_fill_brewer(guide=FALSE, palette="RdYlGn", direction=-1) +
+                  theme(legend.position = "top")+ coord_flip()
+
+grid.arrange(twoway.boxplot, threeway.boxplot, ncol=2)
+```
+
+```{r}
+bmi.plot %>% group_by(eversmoke_c, genhealth) %>%
+             summarise(mean=mean(BMI)) %>%
+             tidyr::spread(genhealth, mean) %>% 
+              kable(digits=1, caption = "Average BMI per general health category, for smokers and non smokers separately")
+```
+
+_note the code above uses the `spread` function in `tidyr` package to turn the table of means on it's side_
+
+The average BMI for those reporting excellent health is basically the same between smokers and non-smokers. As perceived general health decreases, the average BMI increases, but it seems to do so at a faster rate in non-smokers compare to smokers. There seems to be more high end outlying points that are smokers compared to non-smokers. Otherwise the relationship between BMI and general health appears the same within each smoking group. 
+
+
+3. **Write the relationship you want to examine in the form of a research question - including a statement about the modifier**
+
+Does ever smoking change the relationship between perceived general health and BMI? 
+Is the distribution of BMI the same across perceived general health status, for both smokers and non-smokers? 
+
+4. **Fit both the original, and stratified models.**
+
+The `pander()` function prints these as nice tables. This is not required, just recommended. 
+
+```{r}
+twoway.anova <- summary(aov(BMI ~ genhealth, data=addhealth))
+pander(twoway.anova, caption="Original model")
+```
+
+```{r}
+pander(summary(aov(BMI ~ genhealth, 
+                   data=filter(addhealth, eversmoke_c=="Smoked at least once"))), 
+       caption="Model for Smokers")
+
+pander(summary(aov(BMI ~ genhealth, 
+                   data=filter(addhealth, eversmoke_c=="Never Smoked"))), 
+       caption="Model for Non-Smokers")
+```
+
+5. **Determine if the Third Variable is a moderator or not.**
+
+Both the original ANOVA and the stratified ANOVA models for smokers and non-smokers separately are highly significant. There is not a clear difference in the relationship between BMI and general health status between smokers and non-smokers, so ever being a smoker is not a moderating variable for this relationship. 
+
+---- 
+
+## Chi-Square
+
+1. **Identify response and explanatory variables**
+
+
+* Categorical explanatory variable = Gender (variable `female_c`)
+* Categorical response variable = General Health (variable `genhealth`)
+* Categorical Potential Moderator = Ever smoked (variable `eversmoke_c`)
+
+2. **Visualize and summarise the potential effect of the moderator** 
+
+Set up the two and three way tables for printing, and as a data frame for plotting. 
+
+For the two way table, I put `female_c` as rows and `genhealth` as columns. So when calculating proportions of females within each general health category, I want the column margins (`margin=2`).
+```{r}
+crosstab.gender.genhealth <- table(addhealth$female_c, addhealth$genhealth) 
+proptab.gender.genhealth  <- prop.table(crosstab.gender.genhealth, margin=2)
+plot.crostab <- data.frame(proptab.gender.genhealth)
+kable(proptab.gender.genhealth, digits=2)
+```
+
+Here I create a three way table: `female_c` as rows (1), `genhealth` as columns (2), and then stratified by `eversmoke_c` (3).
+```{r}
+freq.gend.health.smoke <- table(addhealth$female_c, addhealth$genhealth, addhealth$eversmoke_c) 
+```
+
+To get the correct column proportions within each level of `eversmoke_c`, I put `c(3,2)` for the margin argument: calculate the proportions within variable (3), and then across (2). 
+```{r}
+prop.gend.health.smoke <- prop.table(freq.gend.health.smoke, margin=c(3,2))
+plot.threeway <- data.frame(prop.gend.health.smoke)
+kable(prop.gend.health.smoke[,,1], digits=2, caption="General Health by Gender - for Non Smokers")
+kable(prop.gend.health.smoke[,,2], digits=2, caption="General Health by Gender - for Smokers")
+```
+
+
+```{r, fig.align='center', fig.height=4, fig.width=10}
+biv.crosstab <- ggplot(plot.crostab, aes(x=Var2, y=Freq, fill=Var1)) + 
+              geom_col(position = position_dodge()) + theme_bw() + 
+              geom_text(aes(y=Freq+.02, label=round(Freq,2)), 
+                        position = position_dodge(width=1)) + 
+              labs(x="General health", y="Proportion") + 
+               scale_fill_manual(name="Gender",  
+                                 values=c("firebrick", "goldenrod")) +
+              theme(legend.position = "top") + 
+              scale_y_continuous(limits=c(0,1))
+
+threeway.crosstab <- ggplot(plot.threeway, aes(x=Var2, y=Freq, fill=Var1)) + 
+              geom_col(position = position_dodge()) + theme_bw() + facet_wrap(~Var3) + 
+              geom_text(aes(y=Freq+.02, label=round(Freq,2)), position = position_dodge(width=1)) + 
+              labs(x="General health", y="Proportion") + 
+               scale_fill_manual(guide=FALSE, values=c("firebrick", "goldenrod")) +
+              scale_y_continuous(limits=c(0,1))
+
+grid.arrange(biv.crosstab,threeway.crosstab, ncol=2)
+```
+
+The gender difference across levels of general health seems to be due to the non-smokers. With the exception of those reporting excellent, or poor health, the proportions of male and females seem equal within each general health category for the smokers. For the non-smokers, as perceived general health worsens, the proportion of females in that category increases. 
+
+There is likely reason to believe that smokers have a different view on their general health compared to non-smokers, and this viewpoint is pretty similar between males and females. 
+
+
+Since this our explanatory variable is only two levels we can plot the proportion of "yes" values - here it would be females only. This makes for a more easily understood plot. Additional color names can be found here: http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf 
+
+```{r, fig.align='center', fig.height=4, fig.width=10}
+female.only_2 <- filter(plot.crostab, Var1=="Female")
+
+plot2 <- ggplot(female.only_2, aes(x=Var2, y=Freq)) + 
+              geom_col(position = position_dodge()) + theme_bw() + 
+              geom_text(aes(y=Freq+.02, label=round(Freq,2)), 
+                        position = position_dodge(width=1)) + 
+              labs(x="General health", y="Proportion of Females") + 
+              scale_y_continuous(limits=c(0,1))
+
+female.only_3 <- filter(plot.threeway, Var1=="Female")
+
+plot3 <- ggplot(female.only_3, aes(x=Var2, y=Freq, fill=Var3)) + 
+              geom_col(position = position_dodge()) + theme_bw() + 
+              geom_text(aes(y=Freq+.02, label=round(Freq,2)), position = position_dodge(width=1)) + 
+              labs(x="General health", y="Proportion of Females") + 
+              theme(legend.position = "top") + 
+              scale_fill_manual(name="Smoking Status", values=c("darkolivegreen3", "deepskyblue3")) +
+              scale_y_continuous(limits=c(0,1))
+
+grid.arrange(plot2,plot3, ncol=2)
+```
+
+
+
+3. **Write the relationship you want to examine in the form of a research question - including a statement about the modifier**
+
+Does ever smoking change the relationship between gender and general health? 
+Is the distribution of gender (proportion of females) equal across all levels of general health, for both smokers and non smokers? 
+
+4. **Fit both the original, and stratified models.**
+
+```{r}
+chisq.test(addhealth$female_c, addhealth$genhealth)
+by(addhealth, addhealth$eversmoke_c, function(x) chisq.test(x$female_c, x$genhealth))
+```
+
+5. **Determine if the Third Variable is a moderator or not.**
+
+The relationship between gender and general health is significant in both the main effects and the stratified model. The distribution of females across general health categories differs greatly between smokers and non-smokers. This fits into **Scenario 3**, so Smoking is a significant moderator. 
+
+
+----
+
+## Linear Regression
+
+1. **Identify response, explanatory, and moderating variables**
+
+* Quantitative explanatory variable = Sepal Length (variable `Sepal.Length`)
+* Quantitative response variable = Petal Length (variable `Petal.Length`)
+* Categorical Potential Moderator = Species (variable `Species`)
+
+2. **Visualize and summarise the potential effect of the moderator** 
+
+Plot your original bivariate plot on the left, 
+```{r, fig.align='center', fig.height=4}
+linreg.plot <- ggplot(iris, aes(x=Sepal.Length, y=Petal.Length)) + 
+                geom_point() + geom_smooth(se=FALSE) + 
+                theme_bw()
+
+linreg.modifier.plot <- ggplot(iris, 
+                               aes(x=Sepal.Length, y=Petal.Length, col=Species)) + 
+                          geom_point() + geom_smooth(se=FALSE) + 
+                          theme_bw() + theme(legend.position="top")
+
+grid.arrange(linreg.plot, linreg.modifier.plot , ncol=2)
+```
+
+```{r}
+cor(iris$Sepal.Length, iris$Petal.Length)
+by(iris, iris$Species, function(x) cor(x$Sepal.Length, x$Petal.Length))
+```
+
+There is a strong, positive, linear relationship between the sepal length of the flower and the petal length when ignoring the species. The correlation coefficient $r$ for _virginica_ and _veriscolor_ are similar to the overall $r$ value, 0.86 and 0.75 respectively compared to 0.87. However the correlation between sepal and petal length for species _setosa_ is only 0.26. 
+
+The points are clearly clustered by species, the slope of the lowess line between _virginica_ and _versicolor_ appear similar in strength, whereas the slope of the line for _setosa_ is closer to zero. This would imply that petal length for _Setosa_ may not be affected by the length of the sepal.  
+
+3. **Write the relationship you want to examine in the form of a research question - including a statement about the modifier**
+
+Does the species of the flower change or modify the linear relationship between the length of the flower's sepal and it's petal? 
+
+4. **Fit both the original, and stratified models.**
+
+Fit the Main effects model, print the regression table of coefficients. The `pander()` function prints these as nice tables. This is not required, just recommended. 
+
+```{r}
+iris.linear.model <- lm(Petal.Length ~ Sepal.Length, data=iris)
+pander(iris.linear.model)
+```
+
+Fit the stratified model, print the regression table of coefficients. 
+```{r}
+setosa.model     <- lm(Petal.Length ~ Sepal.Length, data=filter(iris, Species=="setosa"))
+veriscolor.model <- lm(Petal.Length ~ Sepal.Length, data=filter(iris, Species=="versicolor"))
+virginica.model  <- lm(Petal.Length ~ Sepal.Length, data=filter(iris, Species=="virginica"))
+pander(setosa.model)
+pander(veriscolor.model)
+pander(virginica.model)
+```
+
+5. **Determine if the Third Variable is a moderator or not.**
+
+The estimate for sepal length in the original model is 1.85, p-value <.0001. 
+- For _setosa_ the estimate is 0.13, pvalue of 0.06
+- For _versicolor_ the estimate is 0.69, pvalue <.0001
+- For _virginica_ the estimate is 0.75, pvalue <.0001
+
+Within the _setosa_ species, there is little to no relationship between sepal and petal length. For _veriscolor_ and _virginica_ the relationship is still signficantly positive. This is **Scenario 1**, so Species moderates the effect of sepal length on petal length. 
+
+
+
+

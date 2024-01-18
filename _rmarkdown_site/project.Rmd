@@ -1,0 +1,242 @@
+---
+title: 'Project Information'
+date: "Last Updated `r Sys.time()`"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+---
+
+Throughout the entire semester you will be analyzing a data set with the end goal of creating a poster presentation to present your research. Often your homework serves as a first draft of exploration into your research questions, and helps you build your story. Homework assignments alone will not be sufficient for a good analysis. 
+
+# Peer Review
+
+Project based assignments are subject to peer review. 
+
+## Purpose
+
+Why do we do peer review instead of just getting feedback from you? 
+
+* Everyone has different thought processes and may have approached the question from a different perspective that can help you learn the material. 
+* Co-authoring and reviewing your peers work is part of a professional research position. 
+* Learning how to provide good feedback will make you a better collaborator
+* This is a delayed version of paired programming - another set of eyeballs can typically help you find your mistake. 
+* I will be looking for different things than your peers will be. This is a good thing. They are looking from "untrained eyes", which can be very critical to make sure you are explaining yourself clearly. I can better "figure out" what you are meaning to say  - they are the ones that will best tell you when/where you need to explain your findings better. 
+* You are expected to read your peer's feedback and revise your work before it is graded. 
+
+
+## Process
+
+How do I conduct a Peer Review
+
+1. Check the [Peer Review Rotation](https://docs.google.com/spreadsheets/d/1NiObY57XpWdaFzPfOMS4HpsvRYml3PikLvYyIxxxDJg/edit?usp=sharing) spreadsheet to see who you are scheduled to review. 
+2. Open the assignment file in Google Drive directly. 
+3. Change from "editing" to "suggesting" in the top right. 
+    - If the assignment was uploaded as a PDF then use the comment tool in the top right to leave your comments. 
+4. By editing the veribiage directly, or using comment bubbles, provide feedback to your peers. 
+    - Be specific. Give the type of feedback that you want to recieve. 
+    - Minimum four corrections or suggestions for improvement. If it is reworking/grammer make these edits directly in the document. Explain why what you found was wrong and show how to do it correctly. 
+    - Extra credit for providing detailed and correct assistance and going above the minimum effort required. 
+
+    
+## Feedback 
+
+How to give good feedback
+
+* Compliment the author. What did you like about their writing? 
+* Make specific suggestions regarding things like word choices, use of details, organization, topic
+* Mark corrections such as spelling, grammer, punctuation, analysis methods, coding errors
+* Don't try to turn their paper or style into your style. 
+* If you find a claim that is not supported by data in the document (or cited) be sure to point it out. 
+
+Other resources (i'm always looking for more)
+
+* https://blog.scholasticahq.com/post/how-to-write-helpful-peer-review-comments/
+* Look at the questions posed in the bubbles for each section. https://violentmetaphors.com/2013/12/13/how-to-become-good-at-peer-review-a-guide-for-young-scientists/ 
+* https://blog.cengage.com/top_blog/suggested-guidelines-for-student-peer-review/
+
+
+## Grading of peer reviews
+
+As I do my reviews on the same document, I will be reading and assessing your peer review. If I find your review is not providing quality feedback to the author you will not recieve credit for that review. You may see the cells in the peer review spreadsheet changing color as I check off your review. 
+
+
+# Poster preparation
+
+You will organize your research in stages by putting only relevant information into a slide deck. This will help you concicely explain your research topic and findings in a way that you can more easily translate (fit) onto a poster. 
+
+## Code managemement
+
+Create a new `project.Rmd` file in your Math 315 folder. Put all code that you use to create summary statistics, tables, graphics and analyses into this file. This is to keep it separate from your homework. 
+
+
+## Poster setup
+Setup your poster by doing the following with your partner. 
+
+* Create a Google Slides presentation directly into the Project Slides folder in our Google Drive. 
+* Name your file using your analysis pair names: `last_last` only. 
+
+
+You will fill out these slides in 4 stages. The required contents for each slide are listed below under **Stages**
+
+* At each stage you should update anything you need to change, such as correctly making graphics, writing results correctly etc. 
+* There is an example slide deck in Google Drive named `AAA Example/Template`
+* There is a grading rubric in Blackboard that you can self-check your submission against prior to grading. 
+* This includes reviewing the current set of feedback and mak the appropriate corrections. 
+    - Once you have addressed a particular piece of feedback mark it as "resolved" in Google Slides. 
+* Your presentation should be limited to approximately 20 slides. The contents of each slide are specified below. 
+
+
+## Stage 1: Setting up the story (Slides 1-7)
+
+1. Title 
+2. Introduction 
+3. Background & lit review. 
+4. Explain the research problem / topic area
+5. State your Research Question as a testable hypothesis. 
+6. Introduce the data. Where does it come from, how was it collected. How many records? 
+7. Description of measures (variables) being used. Explain any recoding and/or altering that was done. 
+    - This refers to significant changes to the data (making new variables, dichotomizing or categorizing existing variables)
+    - Do NOT discuss setting missing codes such as 98 and 99 to `NA`. 
+    - Do NOT talk about applying labels
+    - Do NOT use variable names. 
+    - Restrict this list to only the variables you are using in your analysis. This is likely not to be more than 4-6. 
+    
+## Stage 2: Exploratory data analysis (Slide 8-11)
+    
+8. Fully describe your primary outcome (response) variable ...
+9. Fully describe your primary explanatory variable ...
+10. Fully describe the relationship between your primary explanatory and primary response variables ....
+11. Fully describe the relationship of a third variable to either your explanatory or response variables ...
+
+... All using appropriate summary statistics, graphic and an explanatory sentence. 
+
+----
+
+## Stage 3: Bivariate Inference (Slide 12-13)
+
+Revise and update all prior slides. 
+
+Two analyses, one per slide. Each slide should contain the following:  
+
+1. A fully labeled and cleaned up plot demonstrating the bivariate relationship under consideration.
+2. The results of an appropriate bivariate analysis. 
+    - This should be a conclusion written in English, includes a confidence interval and a p-value. 
+    - You also need to state the name of the test you used. 
+
+----
+
+## Stage 4: Multivariable analysis
+
+Revise and update all prior slides. 
+
+You are trying to understand the relationship between your explanatory and response variable, in presence of information contained in other variables. 
+
+**Slide 14: Testing for moderators**
+
+* Moderation:
+    - If you found a moderator: Remove the bivariate graph and write up from your poster and replace with explanation of moderator and graph of significant bivariate at the 3rd variable level.
+    - If you did NOT find a moderator: Include a slide stating what relationships you tested for moderation and with what variable to see if it was a moderator, explaining that it was not a moderator. No graphs needed
+
+**Slide 15: Testing for confounding relationships**
+
+* Confounding: 
+    - If you found a confounder: on slide with bivariate relationship that was confounded put a bullet point that explains what variable confounded the relationship and put the written results that are shown in the confounding assignment on how to write results. Make sure to explain if it helped improve prediction of response variable. 
+    - If you did NOT find a confounder: Include a slide stating what relationships you tested for confounds and with what variable to see if it was a confound, explaining that it was not a moderator. Make sure to explain if it helped improve prediction of response variable. 
+
+
+**Slide 16: Results from a Multivariable Model**
+
+* Build a multivariable model by adding additional predictors to the model. 
+    - See the lecture notes on model building as guidance. 
+    - Include any variables that were found to be significantly associated with the outcome
+    - If you found a moderator, your model should include an interaction term with your moderating variable.
+* A table or a graphic of the regression coefficients (or Odds Ratios) must be presented. 
+    - Make tables in Excel or Powerpoint directly. Do not copy R output
+* At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
+
+
+**Slide 17. Discussion**
+
+* Here you will explain what your graphical and inferential results tell you about your topic.
+* Discuss if your research hypothesis was supported, if it was not, why you think that might be
+* Explain the overall story/trend/what you learned when you consider your univariate, bivariate & multivariate results about your topic.
+* Compare your results to previous research results. Do they agree or disagree? 
+
+**Slide 18. Implications**
+
+* What are the practical implications of your results?
+* What could others do with your findings? 
+* What future research needs to be conducted?
+    - This needs to be more specific than "other variables could be explored". Which variables and why? What other research articles indicate that those other variables are relevant? 
+
+**Slide 19. Limitations**
+
+* Who are the results of this study generalizable to? (i.e. a subset of individuals?)
+* Were there any model assumptions that were not upheld? 
+* If this is an observational study, you should make a statement about the findings are associations and not causal in nature
+* Are there other factors that could exlain your response variable that you did not include in your model? 
+
+
+**Slide 20. References**  
+
+* You can use smaller font to get all references on one slide.
+* Use references from research plan, and any additional references gathered along the way. 
+* Make sure these are correctly done in APA format.
+* Proper citations for 
+    - [Add Health](http://www.cpc.unc.edu/projects/addhealth/faqs/addhealth#how-do-i-cite-the-add-health-contractual-data-)
+    - *R*: Type `citation()`
+    - [R Studio](https://support.rstudio.com/hc/en-us/articles/206212048-Citing-RStudio)
+    - [SPSS](http://www-01.ibm.com/support/docview.wss?uid=swg21476197)
+    - [How to cite software in Text](http://blog.apastyle.org/apastyle/2015/01/how-to-cite-software-in-apa-style.html)
+    
+
+----
+
+
+# Posters Presentations
+
+* You will transfer all findings into a research poster, print the poster, and then present your research to your classmates. 
+    - We will split the class in half. When not presenting, you will be scoring the other half of the class's posters. 
+* Posters can be in powerpoint (the standard format for research posters), or Google Slides (once appropriately sized)
+    - Regardless of the file type, you must use a template. Do not try to reinvent the wheel. 
+
+## Poster Guidelines: 
+https://norcalbiostat.netlify.com/lec/poster_guidelines/ 
+
+  * Links to poster templates, 
+  * Details on what each section should contain
+  * Guidance on aestetics and printing
+  * Evaluation criteria
+  * Examples of professional and prior student work. 
+
+
+### Draft version
+
+* This draft is graded on how complete the poster is. You should consider this a draft that you would circulate to your colleagues for final review and comments. 
+* Use the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria) as a guide for what I am looking for.
+*  **This assignment is graded in Blackboard using a rubric** - be sure to look at this before you submit. 
+    - Points are awarded based off how close to presentation quality your poster is by the time the draft is due. 
+    - Basically the more work I think you need to put into your poster to make it presentable, the lower the points you get for the draft. 
+
+
+**Submission and Peer Review Instructions**
+
+* Save your poster as a PDF and upload to the `Google Drive/Project Poster Drafts` folder. 
+* To conduct your peer review, open the PDF from Google Drive directly in your browser. 
+    - Use the comment feature to write the comments directly into the poster file itself. 
+    - provide at least two specific comments for each
+        - something that can be improved
+        - something that is good
+    
+
+### Final Version
+
+* Upload your final poster (as printed) to the `Google Drive/Project Poster Final Version` folder. 
+    - PDF preferred. PPTX ok.
+* Scoring will be done via [Google Forms](https://forms.gle/QWu3YMZtiAbjzxj29). It looks exactly like the [evaluation criteria](https://norcalbiostat.netlify.com/lec/poster_guidelines/#evaluation-criteria).
+    - When not presenting, you will walk around and learn about others research. Ask them questions, fill out the evaluation on your phone as you go. Printed copies will be available upon request so you can submit later. 
+* The final grade will be determined by
+    - Base score = **30%** student score + **70%** instructor score **+ bonus pts** for best in show awards. 
+
+

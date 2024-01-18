@@ -1,0 +1,64 @@
+project:
+  type: website
+  output-dir: _site
+  preview:
+    port: 4200
+    browser: true
+    
+website:
+  page-navigation: true
+  title: "MATH 315"
+  description: "Homepage for MATH 315 Spring 24"
+  site-url: "https://math315.netlify.app/"
+  
+  #repo-url: https://github.com/norcalbiostat/math315
+  #repo-actions: [edit, issue]
+  
+  page-footer:
+    #background: light
+    left: "This site is built with 💚 and [Quarto](https://quarto.org/) by [Robin Donatello](www.norcalbiostat.com)."
+    
+
+  navbar: 
+    pinned: true
+    background: "#295629"
+    left: 
+      - text: "Modules"
+      - text: "Weekly Details"
+      - text: "Assignments"
+        file: hw.qmd
+      - text: "Project"
+        file: project.qmd
+        
+    right: 
+      - text: "Other Materials"
+        menu: 
+          - syllabus.qmd
+          - text: "Applied Stats Notebook"
+            href: https://norcalbiostat.github.io/AppliedStatistics_notes/
+          - text: "Intro to Modern Stats"
+            href: "https://openintro-ims.netlify.app/"
+          - icon: google
+            href: "tbd"
+            text: Google Drive
+      - text: "Help!"
+
+
+from: markdown+emoji
+format:
+  html:
+    highlight-style: a11y
+    theme: 
+      light: flatly
+      dark: darkly
+    highlight: pygments
+    toc: true
+    code-copy: true
+    code-overflow: scroll
+    
+
+execute:
+  freeze: auto # re-render only when source changes
+  echo: false
+  warning: false
+  message: false
