@@ -20,8 +20,8 @@ In this project-based course, you will have the opportunity to answer questions 
 ### Course details
 
 📅 &nbsp; MWF  
-🕓 &nbsp; Time  
-🏛 &nbsp; Loc  
+🕓 &nbsp; 12-12:50pm  
+🏛 &nbsp; Holt 291 
 👥️ &nbsp; In Person.
 💻 &nbsp; Laptop Required
 
@@ -29,11 +29,11 @@ In this project-based course, you will have the opportunity to answer questions 
 
 ::: {.column width="33%"}
 ### Pre-reqs
-Update
+Pre-requisites: MATH 105, MATH 109, or MATH 120, or faculty permission. 
 
 ### Student Drop in Hours
 
-Update on Zoom (link in Canvas)
+Mon, Fri 2-3pm. Wed 1:30-3 at [Community Coding](https://www.csuchico.edu/datascience/community-coding.shtml)
 :::
 
 ::: {.column width="33%"}

@@ -1,13 +1,9 @@
 ---
 title: "Literature Review"
-date: '2017-08-27'
-output:
-  html_document: 
-      theme: sandstone
-      highlight: tango
-  pdf_document: default
-  css: css/sandstone.css
+output: html_document
 ---
+
+[Corresponding PDS Video](https://youtu.be/ZmkUvbX-qlI)
 
 # What is a literature review?
 

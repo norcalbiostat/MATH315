@@ -21,7 +21,21 @@ This assignment is a checklist of tasks for you to do to prepare for learning in
 
 # Part I: Getting Started with collaborative research tools
 
-## 1. Discord
+## 1. Textbooks
+
+There are two required textbooks for this class. 
+
+1. **Open Intro Statistics textbook** https://www.openintro.org/stat/textbook.php?stat_book=os. 
+    - Free PDF
+    - A very good resource for digging deeper into topics or simply having another method of explanation and demonstration.
+    
+    
+2. **Course packet**: Purchase from [Chico Packet Pro](https://www.chicopacketpro.com/) for ~$27. 
+    - They are only open for the first week. Online ordering & shipping takes forever! Don't wait to get this. 
+    - You will write directly into this inside and outside of class. 
+
+
+## 2. Discord
 
 Join our Discord workspace by clicking here: [https://discord.com/invite/9tQyTKC3cE](https://discord.com/invite/9tQyTKC3cE) , reviewing and agreeing to the code of conduct. 
 
@@ -49,7 +63,7 @@ title = "Onboarding step 1: Find the slack channels where people post pet pictur
 </a>
 
 
-## 2. R & R Studio
+## 3. R & R Studio
 
 To ensure a common computing system for the entire class, allow for simultaneous collaboration on code files between research partners, and make your setup life much, much easier, I am requesting that we all access R & R Studio through Posit Cloud ($5/month, $20 total). 
 
@@ -87,7 +101,7 @@ These are my reasons for why I would like us all to use the cloud this semester.
 
 
 
-## 3. Quarto
+## 4. Quarto
 
 1. Read about [what Quarto is](https://quarto.org/docs/get-started/hello/rstudio.html)
 2. Log into Posit Cloud, your Homework project, and then open `hello.qmd` file. 
@@ -99,7 +113,7 @@ These are my reasons for why I would like us all to use the cloud this semester.
 8. Render again.
 7. Download the resulting PDF and upload to Canvas. [How to video](https://www.youtube.com/watch?v=cAHCMpPJx3k)
 
-## 4. Google Drive
+## 5. Google Drive
 
 * You have been added to our shared [Google Drive](https://drive.google.com/drive/u/0/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM) using your chico state (@mail.csuchico.edu) email address. 
 * ⚠️ If you are logged into a personal Google account _before_ you log into your Chico State account, then when you click on links for items in our class Google Drive, it will automatically try to access that file/folder with your personal account. 
@@ -114,6 +128,7 @@ These are my reasons for why I would like us all to use the cloud this semester.
 We will spend time in this class intentionally examining or reflecting on how we learn and how we think. 
 
 :::{.callout-warning icon=false}
+### Writing Reflections
 Sometimes you will be asked to write a reflection on a reading you have done. Here is an article to help you understand [how to write a reflection](https://www.quora.com/What-does-it-mean-to-reflect-on-reading)
 
 You will also be writing in a Learning Journal. Here is an article that can help explain [why writing in a journal can ultimately help you think](https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/)

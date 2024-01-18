@@ -15,6 +15,7 @@ mod <- googlesheets4::read_sheet("1JyPeMAAHb3yrCzxDpnWqB7k-KsCTkULIPILAAsfai78",
 ```
 
 ⚠️ Details are subject to change. See Canvas for due dates. 
+
 Acronyms: **OI** Open Intro, **PDS**: Passion Driven Stats, **CP**: Course Packet
 
 _Last Updated: `r format(Sys.time(), "%a %b %d %X")`_ 

@@ -8,10 +8,7 @@ navbar:
   - text: Weekly Details
     icon: fa-calendar
     href: weekly_details.html
-  - text: Materials
-    icon: fa-folder-open
-  - text: Learning Tools
-    href: learning_tools.html
+
   - text: Project
     icon: fa-bar-chart
     href: project.html
@@ -27,21 +24,25 @@ navbar:
 
     
   right:
+  - text: Learning Tools
+    href: learning_tools.html
   - text: Syllabus
     href: syllabus.html
-  
   - text: Help
     icon: fa-question
     menu:
     - text: Community Coding
       icon: fa-group
       href: http://bit.ly/cc_hours
-    - text: Discord
-      href: 
-    - text: Peer Mentors
-      href: peer_mentors.html
-    - text: R programming
-      href: help_R.html    
+    - text: Posit Community
+      icon: fa-comment
+      href: https://community.rstudio.com/ 
+    - text: Stack Overflow/r
+      icon: fa-stack-overflow
+      href: https://stackoverflow.com/questions/tagged/r
+    - text: R Cookbook
+      icon: fa-area-chart
+      href: https://rc2e.com/   
     - text: R - Cheat Sheets
       href: https://www.posit.co/resources/cheatsheets/
 

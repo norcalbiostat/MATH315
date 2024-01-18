@@ -1,15 +1,19 @@
 ---
-title: 'Syllabus for MATH 456 - Applied Statistics II'
+title: 'Syllabus for MATH 315 - Applied Statistics I'
 author: "Spring 2024"
 output:
-  pdf_document: default
   html_document: 
       toc: yes
       toc_float: true
+  pdf_document: default
 ---
 
-# Course Description
-_Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other majors._
+> "Statistics in the service of research"
+
+This course introduces you to modern statistical data analysis techniques so that you can make data-informed decisions. At the end of the semester you will present your research findings in a poster presentation format to your peers. 
+
+In this project-based course, you will have the opportunity to answer questions that you feel passionately about through independent research based on existing data. The course offers a lot of one-on-one support, directed opportunities to work with other students, and training in the skills required to complete a project of your own design. We will use collaborative tools and software that are common in many workplaces and research labs. These skills will prepare you for many different career types. 
+
 
 # Logistics
 
@@ -20,57 +24,73 @@ _Advanced topics in applied statistics including multiple regression, multivaria
 **Office Hours:** MF 2-3pm Holt 202, Wed 1:30-3 at [Community Coding](https://www.csuchico.edu/datascience/community-coding.shtml) or [by appointment](https://dr-donatello.youcanbook.me/)  
 **Zoom link:** In Canvas. 
 
-#### About the Course
-**Meeting pattern & location:** MWF 10-11am, Holt 171  
-**Prerequisites:** MATH 314/315/615 at Chico State or instructor permission.  
-**Course Website:** http://norcalbiostat.github.io/MATH456/  
-**Mode of Instruction:** In Person  
-**Use of Canvas:** Due dates, assignment submission, collaborative discussions
+Best method of contact? Discord! 
 
-## Required Materials
-* **Textbook**: _Practical Multivariate Analysis 6th Edition_. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226 
-  - Several copies are available in the library. More can be made available if needed. 
-* **Reliable Laptop**: Expect to bring it daily. Contact me if this poses a problem or concern for you. 
-* **Reliable internet** connection while on and off campus. ITSS can help you get this setup. 
-* **Computer Software:** (Free) R and R Studio
-* **Accounts:** (Free) 
-    - Campus Google account. This uses your <span style="color:blue">(@mail.csuchico.edu)</span> email.
-    - Discord for class conversation. Sign up instructions are in HW0. 
+#### About the Course
+**Meeting pattern & location:** MWF 12-1pm, Holt 291
+**Prerequisites:** MATH 105, MATH 109, or MATH 120, or faculty permission.   
+**Course Website:** https://math315.netlify.app/ 
+**Mode of Instruction:** In Person  
+**Use of Canvas:** Due dates, assignment submission. 
+
+----
 
 # Learning Outcomes
 Upon successful completion of this course, students will be able to:  
 
--   Prepare data for analysis by cleaning and transforming raw data in a reproducible manner.
--   Apply advanced statistical analysis methodologies to complex and multivariate data.
--   Build statistical models to explain and interpret the effect of multiple predictors on a single outcome.
--   Use multiple measures of model fit to choose between several candidate models.
--   Identify, impute, and analyze data in the presence of missing values.
--   Report the results of the analysis in plain language.
+* Develop a testable research question. 
+* Understand how to use a codebook to identify data relevant to that question. 
+* Process, screen, recode, transform, and clean data.
+* Describe data using visualizations and words. 
+* Select and carry out an appropriate statistical analysis.
+* Explain study results and limitations to a non-technical audience. 
+* Understand and implement a reproducible research pipeline. 
+* Become a data nerd (Optional, but recommended).
 
 
-# Tentative topic list
+## Tentative topic list
 
-* Multiple Linear Regression Model building 
-    - categorical variables, reference coding
-    - moderators, confounders, interactions, stratification
-    - Variable selection methods
-* Classification & Prediction
-    - Sensitivity/specificity/accuracy
-* Multivariate statistics / Dimension Reduction
-    - Principle Component Analysis
-    - Factor Analysis
-* Missing Data: Identification & Imputation
-* Correlated Outcomes / Hierarchical Modeling
-* Special topics - Student led
+* Writing testable research questions
+* Preparing data for analysis
+* Describing distributions of data - in numbers, words and pictures
+* Bivariate statistical inference
+* Multiple regression modeling - linear and logistic
 
-We will spend 2 weeks on each topic and do the following activities: 
+----
 
--   Opening Question Formulation
--   Homework Assignment (Draft & Final)
--   Peer review of the Homework draft
--   Contribute to a topic discussion board
--   Reflections on Learning
--   Content knowledge Quiz (Individual and Group)
+# Required Materials (the "stuff")
+
+* **Textbook**: [Open Intro Statistics](https://www.openintro.org/stat/textbook.php?stat_book=os). Free PDF
+* **Course Notes**: Purchase from Chico Packet Pro for ~$27. Hours and locations in Hw0 
+* **Lecture Videos**: This course uses lecture videos from a program called Passion Driven Statistics. These are essential part of your learning materials. Plan to bring headphones in case you need to watch these during class. 
+* **Reliable Laptop**: Expect to bring it daily. Contact me if this poses a problem or concern for you. 
+* **Reliable internet**: connection while on and off campus. ITSS can help you get this setup. 
+* **Computer Software**: R and R Studio through Posit Cloud. $5/month
+* **Accounts**: (Free) 
+    - Campus Google account. This uses your <span style="color:blue">(@mail.csuchico.edu)</span> email.
+    - Discord for class conversation. Sign up instructions are in HW0. 
+
+----
+
+# Class Format (how do we use that stuff?)
+
+You've heard of a "flipped classroom" before right? Well this is kinda that. This course provides a series of lessons and assignments aimed at preparing students conceptually and technically for the various steps taken in completing their research project. You are expected to make marked progress each week and to come to class prepared with questions and planned next steps. It is important to note that to really learn the material and skills presented in this course, you will need to devote a substantial amount of out of class time working on this class.
+
+### Before class
+
+* Watch the Passion Driven Statistics videos where assigned. 
+* Read through the course packet and fill in the blanks. 
+* Take the corresponding individual quiz. These quizes make up 20% of your grade and will be taken directly from the videos and course packet notes. 
+
+### During class
+
+* We will briefly review the topic for the day
+* (Monday) Go over any quiz questions that were very low scoring as a group. 
+* Then it's your turn to work on your research project with the support of me and peer mentors. 
+* Work with others, seek additional support and clarification, and provide and receive help from peers.
+
+----
+
 
 # Assignments / graded items
 
@@ -79,21 +99,34 @@ Your final grade will be a weighted sum of 4 content areas as described below. Y
 
 #### Exams (20%)
 * 2 Exams
-* An Exam [Error Assessment](learning_tools.html#Exam_Error_Assessment) is available for at least Exam 1. 
+* An Exam [Error Assessment](learning_tools.html#Exam_Error_Assessment) is available for Exam 1. 
 
-#### Assignments (30%)
-* 6 Standard homework assignments on the topics listed above. Drafts submitted through Google Drive, Final versions for grading submitted through Canvas. 
+#### Research Project (20%)
+* You will be working in pairs on a project throughout the term. 
+* Written assignments throughout the semester are specifically geared towards progressing your analysis project. 
+* You will present your work as a poster at the end of the semester.
+* You will have two opportunities to provide feedback and critique of your research partner to ensure the contributions to work do not become imbalanced. 
+* I reserve the right to adjust your grade up or down based on your peer evals and my observations of your engagement in the project.
+  
+
+#### Assignments (20%)
+* 10 Written assignments done in R/Quarto and submitted through Canvas. 
 
 #### Quizzes (20%)
 * Individual + Group quizzes for each module. Administered through Google Forms. Lowest score dropped. 
 
-#### Active Learning (30%)
+#### Active Learning (20%)
 * Various active or reflective [learning activities](learning_tools.html) during/outside of class.
 * Peer reviews (PR) of assignments. Because helping others helps you learn. 
 * Working collaboratively with your classmates during class to solve problems and discuss topics. 
-* Special topic presentation/guest lecture. You get to teach class for a day!
 * Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **2** times. This can be to check in on your grade, ask clarifying questions, or chat about life and graduate school.
-* Discussion boards & Discord participation. Contributing to our learning community by asking and answering questions about assignments, code, etc in Discord is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
+
+
+#### Extra Credit Policy
+
+There will be opportunities for EC on occasion. Examples include attending seminars, job talks, and actively answering your peer's questions on Discord. 
+
+----
 
 
 # General Guidance on Homework
@@ -165,7 +198,7 @@ If you consistently do not turn in draft assignments that is complete enough for
 
 As an instructor I recognize there are a variety of AI programs available to assist in creating text and writing code. However, I want to stress that, AI programs are not a replacement for human creativity, originality, and critical thinking. Writing (text and code) is a skill that you must nurture over time in order to develop your own individual voice, style, and view.  
 
-The use of chat GPT is allowed/encouraged **to help you learn how to code** but all code used must be fully explained in text. We will cover what this means and how to do this when we start data management around week 3. [How ChatGPT can help you write code](https://www.zdnet.com/article/how-to-use-chatgpt-to-write-code/)
+The use of chat GPT is allowed/encouraged **to help you learn how to code** but all code used must be fully explained in text. We will cover what this means and how to do this when we start data management. [How ChatGPT can help you write code](https://www.zdnet.com/article/how-to-use-chatgpt-to-write-code/)
 
 You are responsible for fact checking the accuracy of statements composed by AI language models. 
 
