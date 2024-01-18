@@ -1,0 +1,39 @@
+---
+title: "Learning journal prompts"
+output:
+  pdf_document: default
+  html_document:
+    theme: sandstone
+    highlight: tango
+    css: ../css/sandstone.css
+---
+
+# Purpose
+
+This assignment emphasizes the significance of reflection in the learning process. 
+
+Reflection (thinking again about past experiences) is a natural aspect of learning that often occurs spontaneously through discussion and collaboration. 
+
+The brain's initial experience of an event may not accurately perceive it, as various factors such as perspective, mindset, and emotions influence the interpretation. 
+Think of the last time you watching a movie for the second time, and how your perception of the movie and what you took away from it differed from the first viewing. 
+
+Repeated exposure can lead to different perceptions of the same story, emphasizing the dynamic nature of learning and understanding. 
+
+The following prompts come from this [TeachThought ](https://www.teachthought.com/learning/metacognitive-prompts/) article, and are designed specifically help you reflect on your _learning_. 
+
+# Instructions
+
+You will complete this work in your Learning Journal. You are expected to reflect on one question every two weeks, for a total of 8 questions (of your choice) throughout the semester. 
+
+# Prompts
+
+1. Do I see patterns in what I did?
+2. Were the strategies and skills I used effective for this assignment?
+3. How did my mindset affect how I approached my work?
+4. Did I do an effective job of communicating with others before, during, or after learning?
+5. What have I learned about my strengths and my areas in need of improvement?
+6. How am I progressing as a learner?
+7. What can/should I do next?
+8. How can I best use my strengths to learn?
+9. What steps should I take or resources should I use to meet my challenges?
+10. How can my learning environment be improved?

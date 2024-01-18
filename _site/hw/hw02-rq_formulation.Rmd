@@ -24,6 +24,9 @@ Learn more about your topic area by conducting a literature review.
 3. Formulate a Research Question
 4. Conduct a literature review to learn more about your topic
 
+Corresponding PDS Videos
+* Choosing a data set [PDS 2](https://youtu.be/FduVJ4tDsVo). Start at 19min.
+* Conducting a literature review [PDS 3](https://youtu.be/ZmkUvbX-qlI)
 
 # Instructions
 The specific details for each step are described below. You will write the assignment directly in a Google document. 

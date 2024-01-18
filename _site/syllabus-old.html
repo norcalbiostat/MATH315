@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Dr. Robin Donatello" />
+
+
+<title>Syllabus for Applied Statistical Methods I</title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 315</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="modules.html">Modules</a>
+</li>
+<li>
+  <a href="weekly_details.html">
+    <span class="fa fa-calendar"></span>
+     
+    Weekly Details
+  </a>
+</li>
+<li class="dropdown-header">Materials</li>
+<li>
+  <a href="learning_tools.html">Learning Tools</a>
+</li>
+<li>
+  <a href="project.html">
+    <span class="fa fa-bar-chart"></span>
+     
+    Project
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM">
+        <span class="fa fa-google"></span>
+         
+        Google Drive
+      </a>
+    </li>
+    <li>
+      <a href="https://posit.cloud/spaces/466257/">Posit Cloud</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://bit.ly/cc_hours">
+        <span class="fa fa-group"></span>
+         
+        Community Coding
+      </a>
+    </li>
+    <li class="dropdown-header">Discord</li>
+    <li>
+      <a href="peer_mentors.html">Peer Mentors</a>
+    </li>
+    <li>
+      <a href="help_R.html">R programming</a>
+    </li>
+    <li>
+      <a href="https://www.posit.co/resources/cheatsheets/">R - Cheat Sheets</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Syllabus for Applied Statistical Methods
+I</h1>
+<h4 class="author">Dr. Robin Donatello</h4>
+<h4 class="date">MATH 315, Spring 2024</h4>
+
+</div>
+
+
+<blockquote>
+<p>“Statistics in the service of research”</p>
+</blockquote>
+<p>This course introduces you to modern statistical data analysis
+techniques so that you can make data-informed decisions. At the end of
+the semester you will present your research findings in a poster
+presentation format to your peers.</p>
+<p>In this project-based course, you will have the opportunity to answer
+questions that you feel passionately about through independent research
+based on existing data. The course offers a lot of one-on-one support,
+directed opportunities to work with other students, and training in the
+skills required to complete a project of your own design. We will use
+collaborative tools and software that are common in many workplaces and
+research labs. These skills will prepare you for many different career
+types.</p>
+<div id="logistics" class="section level2">
+<h2>Logistics</h2>
+<ul>
+<li><strong>Instructor:</strong> Dr. Robin Donatello</li>
+<li><strong>Office Location:</strong> Holt 202</li>
+<li><strong>Phone Number:</strong> 898-5767</li>
+<li><strong>E-mail:</strong> <a href="mailto:rdonatello@csuchico.edu"
+class="email">rdonatello@csuchico.edu</a></li>
+<li><strong>website:</strong> <a
+href="http://norcalbiostat.github.io/MATH315/"
+class="uri">http://norcalbiostat.github.io/MATH315/</a></li>
+<li><strong>Slack Channel:</strong> <a
+href="http://math315-f19.slack.com"
+class="uri">http://math315-f19.slack.com</a></li>
+<li><strong>Prerequisites:</strong> Basic computer literacy. Recent
+statistics course such as Math 105. Math 130 is recommended.</li>
+<li><strong>Meeting Days and Times:</strong> Sec01: MWF 12-1pm Holt 171,
+Sec02: MWF 10-11am, HOLT 189</li>
+<li><strong>Office Hours:</strong> Community Coding: TWR 2-4pm YOLO 206.
+Additional times in Holt 202 TBD.</li>
+</ul>
+<p>Best method of contact? Slack! (Then email.)</p>
+<p>You can download the Syllabus in PDF form by clicking <a
+href="syllabus_315_f19.pdf">this link</a>.</p>
+<div id="learning-outcomes" class="section level3">
+<h3>Learning Outcomes</h3>
+<p>By the end of the semester students will be able to</p>
+<ul>
+<li>Develop a testable research question.</li>
+<li>Create and understand how to use a codebook to identify data
+relevant to that question.</li>
+<li>Process, screen, recode, transform, and clean data.</li>
+<li>Describe data using visualizations and words.</li>
+<li>Select and carry out an appropriate statistical analysis.</li>
+<li>Explain study results and limitations to a non-technical
+audience.</li>
+<li>Understand and implement a reproducible research pipeline.</li>
+<li>Become a data nerd (Optional, but recommended).</li>
+</ul>
+</div>
+</div>
+<div id="required-materials-the-stuff" class="section level2">
+<h2>Required Materials (the “stuff”)</h2>
+<ul>
+<li><strong>Lecture Videos:</strong> This course uses lecture videos
+from a program called Passion Driven Statistics. These are essential
+part of your learning materials. Plan to bring headphones in case you
+need to watch these during class.</li>
+<li><strong>Course Notes</strong>: Purchase from Chico Packet Pro for
+~$25. Hours and locations in Blackboard.
+<ul>
+<li>You will write directly into this inside and outside of class.</li>
+<li>A color PDF version available as supplementary material on the
+course website.</li>
+</ul></li>
+<li><strong>Reliable Laptop with internet connectivity</strong>:
+Required to bring every day. Contact me if this poses a problem or
+concern for you.</li>
+<li><strong>Computer Software:</strong> We will be using R and R Studio.
+You can install these programs on your own computer or you can use R
+Studio in the cloud. A working cloud platform has been nearly fully
+setup for you. You are welcome to install these programs on your laptop
+if you choose. Help is available for this setup.</li>
+<li><strong>Open Intro Statistics textbook</strong> <a
+href="https://www.openintro.org/stat/textbook.php?stat_book=os"
+class="uri">https://www.openintro.org/stat/textbook.php?stat_book=os</a>.
+<ul>
+<li>Optional, but very very highly recommended.</li>
+<li>A very good resource for digging deeper into topics or simply having
+another method of explanation and demonstration.</li>
+<li>Free PDF or $20 hard copy</li>
+</ul></li>
+</ul>
+<div id="online-platforms" class="section level3">
+<h3>Online platforms</h3>
+<ul>
+<li><strong>Course Website:</strong> Everything! Schedule, syllabus,
+videos, notes, readings, homework etc.</li>
+<li><strong>Blackboard Learn Use:</strong> Grades.</li>
+<li><strong>Google Drive</strong> Surveys, data collection, quizzes,
+written assignment submission, peer review and assignment feedback.</li>
+<li><strong>Slack:</strong> An asynchronous discussion platform with a
+lot of collaborative functionality.
+<ul>
+<li>Workspace URL: <a href="http://math315-f19.slack.com"
+class="uri">http://math315-f19.slack.com</a>. Sign up with your <span
+class="citation">@mail.csuchico.edu</span> email address.</li>
+<li>Download either the desktop app or the phone app.</li>
+<li>This is where I will make announcements and share assignment files
+as needed.</li>
+<li>All coding questions must go here.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="class-format-how-do-we-use-that-stuff" class="section level2">
+<h2>Class Format (how do we use that stuff?)</h2>
+<p>You’ve heard of a “flipped classroom” before right? Well this is
+kinda that. This course provides a series of lessons and assignments
+aimed at preparing students conceptually and technically for the various
+steps taken in completing their research project. You are expected to
+make marked progress each week and to come to class prepared with
+questions and planned next steps. It is important to note that to really
+learn the material and skills presented in this course, you will need to
+devote a substantial amount of out of class time working on this
+class.</p>
+<div id="before-class" class="section level3">
+<h3>Before class</h3>
+<ul>
+<li>Watch the Passion Driven Statistics videos where assigned.</li>
+<li>Read through the course packet and fill in the blanks</li>
+<li>Take the corresponding individual quiz (Due sunday night). These
+quizes make up almost 30% of your grade and will be taken directly from
+the videos and coures packet notes.</li>
+</ul>
+</div>
+<div id="during-class" class="section level3">
+<h3>During class</h3>
+<ul>
+<li>We will briefly review the topic for the day</li>
+<li>(Monday) Go over any quiz questions that were very low scoring as a
+group.</li>
+<li>Then it’s your turn to work on your research project with the
+support of me and peer mentors.</li>
+<li>Work with others, seek additional support and clarification, and
+provide and receive help from peers.</li>
+</ul>
+<p>This class is an implementation of a program called “Passion Driven
+Statistics” developed at Wesleyan university and dissemenated nationwide
+as part of a NSF Grant. You can learn more about this program here: <a
+href="https://passiondrivenstatistics.com/"
+class="uri">https://passiondrivenstatistics.com/</a>. As a student in
+this class, you may be contacted by Lisa Dierker at Wesleyan to
+participate in a pre- and post-course survey. If you choose not to
+participate it will not affect your grade but I will give a few extra
+points towards participation if you choose to respond. Your input in
+assessing this program is is valued.</p>
+</div>
+</div>
+<div id="mututal-expectations" class="section level2">
+<h2>Mututal Expectations</h2>
+<p>I am a very personable individual who likes to get to know my
+students as well as let the students get to know me. I am a fair
+instructor, but I realize that not everyone digs my teaching style. In
+full acknowledgement of this I provide as many resources for success as
+possible; therefore, success in this course is accomplishable if you do
+your part. The quizzes, assignments, and project are a challenge,
+therefore, ample time preparing is necessary.</p>
+<p>The peer mentors and I are here for you, but you have to use your
+voice and speak with me about any concerns you may have. The best way to
+contact me is through Slack, or email. To keep students informed about
+the course I send out weekly updates through Slack.</p>
+<p>It’s important to note that I teach multiple sections of the same
+course. That means I <em>will</em> forget who I told what to. I will do
+my best to be as organized as possible to make things smooth for you. I
+need you to understand that I am only human (omg!), and to have patience
+and understanding with me. Broken links on the website? Mixed up dates
+somewhere? Tell me so I can fix it!</p>
+</div>
+<div id="additional-support" class="section level2">
+<h2>Additional Support</h2>
+<ul>
+<li>The Data Science Initiative offers year-round training workshops and
+seminars on data-science related topics including R. See <a
+href="http://datascience.csuchico.edu"
+class="uri">http://datascience.csuchico.edu</a> for more information and
+a schedule of events.<br />
+</li>
+<li>Community Coding: TWR 2-4pm, YOLO 206 <a
+href="cc_flyer_s19.pdf">[flyer]</a>
+<ul>
+<li>Students, staff, faculty, and the public are invited to join our
+Community Coding (CC) sessions. Bring your computer, coding projects,
+and your questions to this open working environment.</li>
+<li>Commit to dedicating 1 hr. per week to this course in a
+collaborative envrionment and earn credit. Enroll in MATH 290-02 (5837),
+a 1 unit credit/no-credit course. Credit is earned by attending at least
+10 times.</li>
+<li>Even if you don’t enroll you are required to show up to CC at least
+once throughout the semester as part of your grade.</li>
+</ul></li>
+</ul>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="coursework-specifics-what-are-you-graded-on"
+class="section level2">
+<h2>Coursework Specifics (what are you graded on?)</h2>
+<ol style="list-style-type: decimal">
+<li><strong>Participation</strong>: Daily attendance is mandatory unless
+you talk to me ahead of time. You cannot take advantage of the learning
+time if you are not present. Each day I will mark attendance early on
+during the class session. I start promptly and late arrivals are very
+disruptive. To receive credit for the day you must do TWO things.
+<ul>
+<li>You must attend class for the entire class.</li>
+<li>You must actively participate in class by answering questions,
+contributing to discussion, asking questions, paying attention, and
+participating in activities</li>
+<li>3-5 days absent 10% penalty, 5-10 days absent 50% penalty, 10+ days
+absent earns no credit.</li>
+</ul></li>
+<li><strong>Community &amp; Learning</strong>: These activities are
+designed to foster learning and peer collaboration in and outside the
+classroom.
+<ul>
+<li>You will be conducting peer reviews for all project assignment
+throughout the semester.</li>
+<li>Being a contributing member in our Slack community. Ask and answer
+questions. Share code and ideas. Share silly math jokes and interesting
+articles.</li>
+<li>You also must attend at least one community coding session, and
+visit me once in my office during the semester.</li>
+</ul></li>
+<li><strong>Weekly Quizzes</strong>: Designed to ensure you are prepared
+for class and to help me learn what topics need clarification.</li>
+</ol>
+<ul>
+<li>Administered online through Google Forms and to be completed prior
+to class individually.</li>
+<li>Group quizzes’s will occur at the beginning of class to clarify and
+discuss commonly missed questions.</li>
+<li>Lowest 3 quiz scores will be dropped.</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>Written HW</strong>: Written assignments are methods to
+demonstrate you can apply the material that you learned to a new
+problem.
+<ul>
+<li>Assignments will build to the completion of a project that will be
+presented at the end of the semester as a poster.</li>
+</ul></li>
+<li><strong>Exams:</strong> There will one midterm and one final exam.
+<ul>
+<li>An Error Analysis can be conducted on the midterm to earn back up to
+half the credit missed.</li>
+<li>This is where you get back your exam, fix your mistakes, and explain
+your corrections verbally to either me or a tutor.</li>
+</ul></li>
+<li><strong>Project:</strong> You will be working in pairs on a project
+throughout the term.
+<ul>
+<li>Written assignments throughout the semester are specifically geared
+towards progressing your analysis project.</li>
+<li>You will present your work as a poster at the end of the
+semester.</li>
+<li>You will have two opportunities to provide feedback and critique of
+your research partner to ensure the contributions to work do not become
+imbalanced.</li>
+<li><strong>I reserve the right to adjust your grade up or down based on
+your peer evals and my observations of your engagement in the
+project.</strong></li>
+</ul></li>
+</ol>
+</div>
+<div id="grading" class="section level2">
+<h2>Grading</h2>
+<ul>
+<li>Your grade will be displayed as a running total in Blackboard
+Learn.<br />
+</li>
+<li>The approximate contributions per category are:
+<ul>
+<li>Participation 5%</li>
+<li>Community and learning 10%</li>
+<li>Quizzes 28%</li>
+<li>Written Assignments 28%</li>
+<li>Exams 23%</li>
+<li>Project 23%</li>
+</ul></li>
+<li>I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C,
+69-60%: D, 0-59%: F Plusses and minuses will be as displayed on
+Blackboard Learn. I reserve the right to round up if borderline
+(i.e. 89.6% to a 90%) based on in-class attitude and general engagement
+in the class. I will not round very heavily, don’t ask.</li>
+</ul>
+</div>
+<div id="topic-overview" class="section level1">
+<h1>Topic Overview</h1>
+<p>A detailed schedule can be found on the course website.</p>
+<ul>
+<li>Data Collection and recording</li>
+<li>Preparing data for analysis</li>
+<li>Data Visualization</li>
+<li>Foundations for Inference: Random variables, Parameters
+vs. Statistic, Confidence Intervals, Hypothesis Testing</li>
+<li>Inference comparing multiple samples (t-tests, ANOVA, <span
+class="math inline">\(\chi^{2}\)</span> tests)</li>
+<li>Linear regression analysis</li>
+<li>Logistic Regression analysis</li>
+<li>Multivariable Model Building (moderators, confounding, categorical
+predictors, model fit)</li>
+</ul>
+<hr />
+</div>
+<div id="policies" class="section level1">
+<h1>Policies</h1>
+<div id="late-assignments" class="section level2">
+<h2>Late Assignments</h2>
+<p>All assignments are to be completed upon the due date as announced by
+the instructor. All assignments have a portion of the grade dedicated to
+timeliness. Exceptionally late assigments are graded at the instructors
+discretion and there is no guarantee that the assignment will be
+returned in a timely manner. Just like you have your deadlines, I have
+mine. No exceptions will be made. In cases of emergency, please contact
+your instructor immediately.</p>
+</div>
+<div id="academic-integrity" class="section level2">
+<h2>Academic Integrity</h2>
+<p>Academic integrity is defined as “a commitment, even in the face of
+adversity, to five fundamental values: honesty, trust, fairness,
+respect, and responsibility”. From these values flow principles of
+behavior that enable academic communities to translate ideals to action.
+Academic integrity is expected and required. No forms of cheating or
+plagiarism will be tolerated. Please see your student handbook at <a
+href="https://www.csuchico.edu/scrr/integrity.shtml"
+class="uri">https://www.csuchico.edu/scrr/integrity.shtml</a> if you
+have questions about the meaning of these terms or the consequences of
+violating academic integrity.</p>
+</div>
+<div id="scientific-integrity" class="section level2">
+<h2>Scientific Integrity</h2>
+<p>The rules of science should be carefully upheld in everything that
+you do. The following behavior is absolutely unacceptable: Data
+fabrication, selective reporting, omission, suppression or distortion.
+Please be mindful that there is no such thing as a “little scientific
+misdemeanor.”</p>
+</div>
+<div id="plagiarism" class="section level2">
+<h2>Plagiarism</h2>
+<p>Using someone else’s words or ideas without properly citing them is
+plagiarism. The CSU academic integrity policy distinguishes between
+misuse of sources and intentional plagiarism. If a student makes an
+attempt to “identify and credit his or her source, but does so
+improperly, he or she will not be penalized according to our policy.
+However, students should make every effort to learn the proper format
+for correctly citing sources, since this is an essential aspect of
+academic work.</p>
+<p>Intentional plagiarism occurs when the student “deliberately uses
+someone else’s language, ideas, or other original (not common knowledge)
+material without acknowledging its source”” and in so doing represents
+them as his or her own. This includes borrowing another’s phrases or
+sentences without using quotation marks or citations; cutting and
+pasting whole paragraphs (or papers) from websites without
+acknowledgement; or borrowing ideas from someone without citing
+them.</p>
+<p>This is a generally open / community learning environment. Blatent
+code plagerism is not only obvious, greatly hinders your ability to
+learn, and is not tolerated. Sharing code is encouraged, but sharing
+words/explanatory text is not allowed. Both parties will recieve a 0 for
+whatever assignment is at stake.</p>
+</div>
+<div id="adding-and-dropping-the-course" class="section level2">
+<h2>Adding and Dropping the course</h2>
+<p>The last day to add or drop classes without special permission by the
+instructor is 9/6/19. No adds or drops are allowed after 9/20/19 without
+a serious and compelling reason approved by the instructor, department
+chair, and college dean.</p>
+</div>
+<div id="americans-with-disabilities-act" class="section level2">
+<h2>Americans with Disabilities Act</h2>
+<p>If you need course adaptations or accommodations because of a
+disability or chronic illness, or if you need to make special
+arrangements in case the building must be evacuated, please make an
+appointment with me as soon as possible, or see me during office hours.
+Please also contact Accessibility Resource Center (ARC) as they are the
+designated department responsible for approving and coordinating
+reasonable accommodations and services for students with disabilities.
+ARC will help you understand your rights and responsibilities under the
+Americans with Disabilities Act and provide you further assistance with
+requesting and arranging accommodations.</p>
+<p>Accessibility Resource Center<br />
+530-898-5959<br />
+Student Services Center 170<br />
+<a href="mailto:arcdept@csuchico.edu"
+class="email">arcdept@csuchico.edu</a></p>
+</div>
+<div id="chico-state-basic-needs-project" class="section level2">
+<h2>Chico State Basic Needs Project</h2>
+<p>The <strong>Hungry Wildcat Food Pantry</strong> provides supplemental
+food, fresh produce, CalFresh application assistance and basic needs
+referral services for students experiencing food and housing
+insecurity.</p>
+<p>All students are welcomed to visit the Pantry located in the Student
+Service Center 196, open Monday-Friday, 11am-4pm or call
+530-898-4098.</p>
+<p>Please visit the Chico State Basic Needs website <a
+href="http://www.csuchico.edu/basic-needs"
+class="uri">http://www.csuchico.edu/basic-needs</a> for more
+information.</p>
+<hr />
+<p><em>Last updated: Wed Jan 17 2024 5:34:42 PM</em></p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

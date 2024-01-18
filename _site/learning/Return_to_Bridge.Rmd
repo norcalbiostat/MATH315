@@ -1,0 +1,53 @@
+---
+title: "Creating a learning bridge"
+output:
+  pdf_document: default
+  html_document:
+    theme: sandstone
+    highlight: tango
+    css: ../css/sandstone.css
+---
+
+# Purpose
+This routine invites learners to uncover their initial thoughts, ideas, questions, and
+understandings about a topic, and then, after engaging in learning experiences and
+experiencing some instruction, to connect these to new thinking and ideas
+
+You will complete this work in your Learning Journal. 
+
+> This time the goal is to compare your prior understanding to current thinking. 
+
+# Instructions
+Take 1 minute to find your prior entry and review what you wrote. Make a new entry and title & date it. 
+
+### Phase 1: Compare 3 words
+Review the words you wrote previously, then write down 3 words that come to mind now when you think of the topic. If your words change that's fine, if they don't change, that's also fine. 
+
+_Consider and write down why the words have or have not changed_
+
+### Phase 2: Compare 2 questions
+Review your original questions. Have they been answered yet? Write down new questions that have arisen.  
+
+### Phase 3: Review the analogy / metaphor. 
+
+---
+
+### Discuss with a peer
+Thinking about learning is important. Writing down your thoughts about learning is even more important. 
+Discussing your thoughts with others is critical. Not only do you get another chance to refine your thoughts and ideas, but putting them into spoken words helps solidify and make these thoughts and ideas real. 
+
+Remember, there is absolutely no judging in this class. All ideas and thoughts are equally valid and respected. 
+
+Use these prompts to start the conversation
+
+* What changes did you make or not make? 
+* What prompted the changes? 
+* What made changes unnecessary? 
+* How has your thinking about the topic evolved or deepened? 
+
+
+
+
+
+
+

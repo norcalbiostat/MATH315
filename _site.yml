@@ -10,15 +10,8 @@ navbar:
     href: weekly_details.html
   - text: Materials
     icon: fa-folder-open
-    menu:
-    - text: Data from course packet
-      icon: fa-database
-      href: https://norcalbiostat.netlify.com/data/
-    - text: Syllabus
-      href: syllabus_315.html
-    - text: Everything
-      icon: fa-file-alt
-      href: notes.html
+  - text: Learning Tools
+    href: learning_tools.html
   - text: Project
     icon: fa-bar-chart
     href: project.html
@@ -28,16 +21,23 @@ navbar:
     - text: Google Drive
       icon: fa-google
       href: https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM
+    - text: Posit Cloud
+      href: https://posit.cloud/spaces/466257/
     
 
     
   right:
-  - text: Community Coding
-    icon: fa-group
-    href: http://bit.ly/cc_hours
+  - text: Syllabus
+    href: syllabus.html
+  
   - text: Help
     icon: fa-question
     menu:
+    - text: Community Coding
+      icon: fa-group
+      href: http://bit.ly/cc_hours
+    - text: Discord
+      href: 
     - text: Peer Mentors
       href: peer_mentors.html
     - text: R programming

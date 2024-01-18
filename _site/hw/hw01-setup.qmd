@@ -4,6 +4,7 @@ subtitle: "Getting all the materials and tools for the class"
 format: 
   html: 
     toc: true
+    css: ../css/sandstone.css
 ---
 
 
@@ -14,7 +15,7 @@ The purpose of this assignment is to get you fully prepared to work with the too
 
 # Submission Instructions
 
-This assignment is a checklist of tasks for you to do to prepare for learning in this class. Some items ask you to submit a screenshot, some ask you to write a sentence or two. The details are in the corresponding "HW00 Checklist" in Canvas. For the most part these items can be done in any order, but I suggest you do them in the order that I have listed below. 
+This assignment is a checklist of tasks for you to do to prepare for learning in this class. Some items ask you to submit a screenshot, some ask you to write a sentence or two. The details are in the corresponding "HW01 Checklist" in Canvas. For the most part these items can be done in any order, but I suggest you do them in the order that I have listed below. 
 
 
 
@@ -31,13 +32,14 @@ I get way too many emails that it's easy to miss one from you. Got questions abo
 
 * Have an existing Discord account? Feel free to use it, but change your name on this server to your preferred name that you want us to call you by. 
 The invite takes you to the `#class-selection` page. Choose your pronouns and click the computer 💻️ icon to add the Math 315 role. This will let you see our class channels. 
+    - Note! We are sharing this discord channel with Dr. Lytal's Math 315 class. We're going to be collaborating with them anyhow this term, so might as well get to know each other. 
 * [Download the Desktop app](https://discord.com/download). <span style="color:red">**You should not rely on remembering to log in using the web version.**</span> 
     - Chances are very high that you will miss out on important announcements and bonus activities. There also is a Discord phone app that you may want to consider. 
-* Post an introduction in the `#DrD-class-chat` channel. Include the following:
-    * major
-    * Any pets (include pics!)
-    * what fictional family would you like to belong to? 
-    * your biggest concern about the class
+* Post an introduction in the `#introductions` channel. Include the following:
+    1. Major (or desired career)
+    2. Any pets (include pics!)
+    3. What fictional family would you like to belong to? 
+    4. Your biggest concern about the class. 
 
 <a href = "https://twitter.com/kara_woo/status/1374132865370234881">
 <img class="circle" src="images/hw00_slack_pets.png"
@@ -49,50 +51,52 @@ title = "Onboarding step 1: Find the slack channels where people post pet pictur
 
 ## 2. R & R Studio
 
-To ensure a common computing system for the entire class, and make your setup life much, much easier, everyone will be using R Studio through Posit Cloud. 
-
-I try my absolute best to keep the cost of this course as low as possible. 
-
-:::{.callout-important}
-### Additional Cost $5/month
-
-There are two options here. 
-
-* **Posit Cloud ($5/month).** This is a "no setup" option for you. You can log into the cloud wherever you have a browser and do not have to deal with program or package installation. I have setup R Studio projects for you. 
-
-* **Your own computer.** R and R Studio are both free programs. If you , and if you are interested in continuing to conduct research outside of this class you will want to have access to these programs on your own computer. 
-
-It is my preference that the class uses Posit Cloud
-:::
-
-> Add expandable section here for each installation type. 
+To ensure a common computing system for the entire class, allow for simultaneous collaboration on code files between research partners, and make your setup life much, much easier, I am requesting that we all access R & R Studio through Posit Cloud ($5/month, $20 total). 
 
 
-<a href="#cloud" data-toggle="collapse">Posit Cloud Setup Instructions</a>
+#### Posit Cloud Setup Instructions
 
-<div id="cloud" class="collapse">
+On day 1 you made a Free Posit Cloud account using your campus email. If you missed that activity, the link in step 1 will take you to the same place to make an account. 
 
-1. Create a **Cloud Student** account on [Posit Cloud](https://posit.cloud/plans/student) using your campus email (`@mail.csuchico.edu`). 
-2. Join Dr. D's[Math 315-S24 Workspace](https://posit.cloud/spaces/466257/join?access_code=CJBtbhV72o3pELwuol4pUWNdp6-_Tas4tGazkJlR)
+1. Upgrade your plan to the [Cloud Student plan](https://posit.cloud/plans/student). 
+2. Join Dr. D's[Math 315-S24 Workspace](https://posit.cloud/spaces/466257/join?access_code=CJBtbhV72o3pELwuol4pUWNdp6-_Tas4tGazkJlR) with this account. 
 3. Make a copy of the [Homework](https://posit.cloud/spaces/466257/content/7359199) R Project
 4. Open this project if it does not automatically do so. 
     - The `install_packages.R` file should be open. If not, click in the lower right to open it.
     - Click `Source` at the top right to run this code. 
-</div>
 
 
+I try my absolute best to keep the cost of this course as low as possible, and recognize that this is an yet another additional cost. I wish, more than you know, that our campus would get their crap together and setup a campus owned R Studio server so that this would be free. If this cost is a burden please let me know and we'll find an alternative plan.
 
+::: {.callout-important collapse="true"}
+### But I thought R was free? 
+
+Yes. R and R Studio are both free programs. Using the cloud is not a long-term solution. You may have already installed these programs for another class. If you are using R for another class after this, you are highly encouraged to _eventually_ install these programs on your computer. 
+
+However...
+
+* Not everyone has equal access to computers where this software can be installed
+* The cloud provides additional benefits such as
+    - shared projects and code within analysis teams
+    - installation and setup has been done for you
+    - less worry about poor file management systems (e.g. letting everything live in your downloads folder)
+    - less issues with 
+
+These are my reasons for why I would like us all to use the cloud this semester. 
+:::
 
 
 
 ## 3. Quarto
 
-1. Read about what Quarto is here: https://quarto.org/docs/get-started/hello/rstudio.html
-2. Log into Posit Cloud and open `hello.qmd` file. 
+1. Read about [what Quarto is](https://quarto.org/docs/get-started/hello/rstudio.html)
+2. Log into Posit Cloud, your Homework project, and then open `hello.qmd` file. 
 3. Render this file then return to the tutorial in step 1 to see how the parts of this document take R code, and normal text and turn it into a wonderful document. 
 4. Change the `format: html` at the top of this document to `format: pdf`.
 5. Add a new line in this YAML header for your name `author: yourname`
 6. Render again. 
+7. Add a bit of code as described in the script file under "Hello R". 
+8. Render again.
 7. Download the resulting PDF and upload to Canvas. [How to video](https://www.youtube.com/watch?v=cAHCMpPJx3k)
 
 ## 4. Google Drive
@@ -105,7 +109,6 @@ It is my preference that the class uses Posit Cloud
 
  
 
-
 # Part II: Becoming a better learner. 
 
 We will spend time in this class intentionally examining or reflecting on how we learn and how we think. 
@@ -116,16 +119,27 @@ Sometimes you will be asked to write a reflection on a reading you have done. He
 You will also be writing in a Learning Journal. Here is an article that can help explain [why writing in a journal can ultimately help you think](https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/)
 :::
 
+## 1. Read the syllabus. 
 
-1. Create your Learning Journal (LJ) by making a copy of the template found in the **Learning Journals** folder in our Google Drive.
-    - When you make a copy of this template document, make sure the copy stays in this shared folder.
-    - Rename this file with your name (First, Last)
-    - Click the **SHARE** button in the top right and remove everyone _except_ yourself and Dr. D as collaborators. 
-    - Your first entry is dated for you, and asks you to reflect on the reading you just did. 
+Thoroughly read the [syllabus](syllabus.html) and review this course website. Ask at least one question in the `#drd-class-chat` channel in Discord. See someone else's question that you know the answer to? Reply to them and answer it! 
 
-2. Download and read [MAI and academic achievement in college students](reading/MAI and academic achievement in college students.pdf). 
-    - Write a reflection on this reading in your Learning Journal. Were you surprised by the results? 
-    - Download and take the [Metacognition Awareness Inventory](reading/Metacognition Awareness Inventory.pdf). 
-    - Submit your scores in this [Google Form](https://goo.gl/forms/FYgjJk72T3147e7f1)
+## 2. Start your Learning Journal (LJ)
 
+1. Make a copy of the template found in the **Learning Journals** folder in our Google Drive.
+2. When you make a copy of this template document, make sure the copy stays in this shared folder.
+3. Rename this file with your name (First, Last)
+4. Click the **SHARE** button in the top right and remove everyone _except_ yourself and Dr. D as collaborators. 
+5. Review the [LJ Prompts](learning/metacognition-prompts.html). 
 
+Space and a prompt for the first entry is provided. 
+
+## 3. Metacognition and academic achievement in college students
+
+1. Download and read [MAI and academic achievement in college students](reading/MAI and academic achievement in college students.pdf). 
+2. Write a reflection on this reading in your Learning Journal. Were you surprised by the results? 
+3. Download and take the [Metacognition Awareness Inventory](reading/Metacognition Awareness Inventory.pdf). 
+4. Submit your scores in this [Google Form](https://goo.gl/forms/FYgjJk72T3147e7f1)
+
+## 4. Hear what others have to say
+
+Review the advice from [former Math 315 students](reading/Advice from prior Math 315 students.pdf). How, if at all, does this information help you decide on how you'll approach this class? Are you surprised by anything that was said? 
