@@ -80,27 +80,6 @@ On day 1 you made a Free Posit Cloud account using your campus email. If you mis
     - Click `Source` at the top right to run this code. 
 
 
-I try my absolute best to keep the cost of this course as low as possible, and recognize that this is an yet another additional cost. I wish, more than you know, that our campus would get their crap together and setup a campus owned R Studio server so that this would be free. If this cost is a burden please let me know and we'll find an alternative plan.
-
-::: {.callout-important collapse="true"}
-### But I thought R was free? 
-
-Yes. R and R Studio are both free programs. Using the cloud is not a long-term solution. You may have already installed these programs for another class. If you are using R for another class after this, you are highly encouraged to _eventually_ install these programs on your computer. 
-
-However...
-
-* Not everyone has equal access to computers where this software can be installed
-* The cloud provides additional benefits such as
-    - shared projects and code within analysis teams
-    - installation and setup has been done for you
-    - less worry about poor file management systems (e.g. letting everything live in your downloads folder)
-    - less issues with 
-
-These are my reasons for why I would like us all to use the cloud this semester. 
-:::
-
-
-
 ## 4. Quarto
 
 1. Read about [what Quarto is](https://quarto.org/docs/get-started/hello/rstudio.html)
