@@ -1,6 +1,10 @@
 ---
 title: "HW 04: Describing Distributions"
 subtitle: "Let the data be beautiful"
+format: 
+  html: 
+    toc: true
+    css: ../css/sandstone.css
 execute:
   echo: true
   warning: false
@@ -13,31 +17,6 @@ execute:
 ----
 
 # Instructions 
-
-
-----
-
-# Submission instructions
-
-## Draft
-
-Upload your <span style="color:red">PDF</span> file to the `03 Data Management` folder in Google Drive. 
-
-* R users compile your RMD file to create a PDF (knit to PDF)
-* SPSS users will have to present additional output to demonstrate that the recodes were successful. 
-    - Include the `FREQUENCIES` code in your `dm` file to create tables or summaries of the modified variables, so that it shows up in your output window. 
-    - After you are done, close & restart SPSS by opening your `dm` file. Click "Run all" 
-    - Export your **output** file as PDF and upload it to Google Drive
-
-### Peer Review instructions
-
-As a reviewer, this is what you're checking for: 
-
-
-
-## Final
-Upload your <span style="color:red">code</span> file to the `03 Data Management/code` folder in Google Drive. 
-
 
 
 ----

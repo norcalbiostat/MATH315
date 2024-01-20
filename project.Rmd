@@ -22,7 +22,7 @@ You will build up your project in stages, revising multiple times. The end goal 
 
 ### Peer Review
 
-Stages 2-6 are subject to peer review. See the [help with peer review](help.html#peer-review) page for details.
+Stages 2-6 are subject to peer review. See the [Peer review](learning_tools#Peer_Review_(PR)) section of the Learning Tools page for details.
 
 Once you have addressed a particular piece of feedback mark it as "resolved" in Google Slides. 
 
@@ -42,12 +42,14 @@ Once you have addressed a particular piece of feedback mark it as "resolved" in 
 
 * Project data you can choose from can be found in this [Google Drive folder](https://drive.google.com/drive/u/0/folders/1jULudBjRbHdW-uLIvmMbxRBEJJkq9crY). 
 * Browse through the available data sets, read the summaries and skim the codebooks.
-* Add your name to [Proposed Research Topics](https://docs.google.com/spreadsheets/d/1dNTr0SKnwoT3XBHJY6cGh3fEeJCfxlDmYAUZ10uX89w) once you have chosen a topic.
-* Download the data and codebook to your `Math315/data` folder. 
+* Add your names to [Proposed Research Topics](https://docs.google.com/spreadsheets/d/1dNTr0SKnwoT3XBHJY6cGh3fEeJCfxlDmYAUZ10uX89w) once you have chosen a topic.
+    - Some data sets are limited to only 1 or a few analysis pairs working on the same data set. Those have set rows, do not add more rows. 
+    - If your chosen data is not listed, add a row for it. 
+* Download the codebook to your class folder. 
 * You will work through writing out a few research questions as part of Homework 02. 
 
 
-<a href="#otherdata" data-toggle="collapse">**Consideration of other data sources**</a>
+<a href="#otherdata" data-toggle="collapse">**Consideration of other data sources** (click to expand)</a>
 <div id="otherdata" class="collapse">
 
 Under only very strict certain circumstances I will allow for other data sets to be used (this includes your senior thesis data). You must make an appointment to meet with me to go over your data, codebook and research question for this to be a consideration.
@@ -64,7 +66,7 @@ Under only very strict certain circumstances I will allow for other data sets to
 
 </div>
 
-
+<br>
 
 ## Stage 2: Introduce your research question and variables of interest
 
