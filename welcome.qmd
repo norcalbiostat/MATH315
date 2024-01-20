@@ -1,0 +1,219 @@
+---
+title: "Welcome to MATH 315"
+subtitle: "Applied Statistics I - Spring 2024"
+author: "Dr. Robin Donatello"
+format: 
+  revealjs:
+    theme: moon
+    transition: fade
+    slide-number: true
+---
+
+# Overview
+
+-   Meet your instructor
+-   Course Objectives
+-   Course Materials
+-   Code of Conduct
+
+*These slides do not replace the need to read the Syllabus in detail.*
+
+# Meet your instructor {background-image="Zombatar.jpg" background-size="250px" background-position="95% 15%"}
+
+## Dr. Robin Donatello (she/her) {.smaller}
+
+You can address me as "Robin", "Dr. D", or some other respectful title that you feel comfortable with.
+
+I have a Doctorate in Public Health (DrPH) Biostatistics from UCLA, but I'm a Chico alum. I double majored in Statistics & Biology, with minor in Chemistry, and a first generation college student who started at Butte College.
+
+My campus life consists of training the next generation of Scientists how to harness the power of Statistics and Data in a responsible and ethical manner, leading the Data Science Initiative (DSI) provide training and experiences for students and faculty, and providing analytical support and statistical consulting for many projects on and off campus.
+
+When I'm not on campus, typically I'm growing food for my family, out adventuring with my dogs, or getting some game time in. You can learn more about the projects I'm involved in on my [website](http://www.norcalbiostat.com/).
+
+# What is this class about?
+
+> Statistics in the service of research
+
+## Course Description
+
+This course introduces you to modern statistical data analysis techniques so that you can make data-informed decisions. At the end of the semester you will present your research findings in a poster presentation format to your peers. 
+
+##  Choose your own adventure
+
+In this project-based course, you will have the opportunity to answer questions that you feel passionately about through independent research based on existing data. The course offers a lot of one-on-one support, directed opportunities to work with other students, and training in the skills required to complete a project of your own design. We will use collaborative tools and software that are common in many workplaces and research labs. These skills will prepare you for many different career types. 
+
+## Tentative topic/module list 
+
+* Writing testable research questions
+* Preparing data for analysis
+* Describing distributions of data - in numbers, words and pictures
+* Bivariate statistical inference (T-test, ANOVA, $\chi^2$, Correlation)
+* Multiple regression modeling - linear and logistic
+
+## Learning goals {.smaller}
+
+* Develop a testable research question. 
+* Understand how to use a codebook to identify data relevant to that question. 
+* Process, screen, recode, transform, and clean data.
+* Describe data using visualizations and words. 
+* Select and carry out an appropriate statistical analysis.
+* Explain study results and limitations to a non-technical audience. 
+* Understand and implement a reproducible research pipeline. 
+* Become a data nerd (Optional, but recommended).
+
+
+# General Schedule
+
+> This is a "quasi flipped" class requiring external learning through videos to maximize in class active work time. 
+
+## Outside of class
+
+* Watch the Passion Driven Statistics videos where assigned. 
+* Read through the course packet and fill in the blanks. 
+* Take the corresponding individual quiz. Questions will come from the videos and course packet notes. 
+
+## During class
+
+* We will briefly review the topic for the day
+* On group quiz days - go over any quiz questions that were very low scoring as a group. 
+* Work through exercises together from the course packet. 
+* Then it's your turn to work on your research project with the support of me and peer mentors. 
+
+# Graded Materials
+
+* 10 Written Assignments: R + Quarto --> PDF --> Canvas
+* 10ish Quizzes: Individual + Group
+* Active learning (peer review, learning journal, attending community coding)
+* 2 non-cumulative exams
+* Paired Research Project
+
+_All categories carry equal weight (20%) for your final grade._
+
+
+# Course Materials
+
+## A variety of learning and working tools
+
+-   I use a combination of tools that are most appropriate for the task or outcome at hand.
+-   Homework 1 provides a checklist for getting connected and testing out your tools.
+    -   It is imperative that you fully complete this assignment ASAP and contact me with any problems or barriers.
+
+## Class website
+
+[https://math315.netlify.app/](https://math315.netlify.app/)
+
+
+-   Bookmark this page. You will be here a lot. Going through Canvas each time is a waste of your time and clicks.
+-   Contains a weekly overview, including how to prepare, links to lecture notes, quizzes, homework, shared google folder, other relevant materials.
+-   Sometimes links will be broken. Typo's happen. Notify me via Discord and I'll get to it asap.
+
+I will go over how to navigate the class website later.
+
+## Textbook & Course Packet
+
+* **Textbook**: [Open Intro Statistics](https://www.openintro.org/stat/textbook.php?stat_book=os). Free PDF
+* **Course Notes**: Purchase from Chico Packet Pro for ~$27. 
+
+:::{.callout-important}
+### Only open during week 1
+
+Purchase online now or in person starting Jan 22nd. They accept cash, debit, credit, apple or android pay. They are only open for 1 week 1/22 - 1/26 10am-4pm. 230 Salem Street, Upstairs unit. 
+
+:::
+
+
+## Canvas
+
+-   Used to organizing due dates, assignments, and grades
+-   Submitting homework assignments
+
+## Discord
+
+-   Used for outside class discussions, meme sharing, homework help and general chatter.
+-   EXCELLENT for sharing code problems and helping others debug. 💚 Screenshots
+-   I will not answer most class-content based questions through email.
+-   Download either the phone app or the desktop app (I use both). 
+    -   Do not rely on remembering to log in via the web browser. You will miss important notifications.
+
+## R + R Studio in Posit Cloud
+
+-  We will be using the R programming language, along with R Studio, the Integrated Development Environment through a cloud platform called Posit Cloud. 
+-  This will cost $5/month. 
+
+## But I thought R was free? 
+
+Yes but...
+
+* Not everyone has equal access to computers where this software can be installed
+* The cloud provides additional benefits such as
+    - shared projects and code within analysis teams
+    - installation and setup has been done for you
+    - less worry about poor file management systems (e.g. letting everything live in your downloads folder)
+
+
+## Google Drive
+
+-   Project Preparation
+-   Peer reviews
+-   Quizzes
+
+## So much stuff
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<iframe src="https://giphy.com/embed/APqEbxBsVlkWSuFpth" width="434" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+:::
+
+::: {.column width="50%"}
+<br>
+<br>
+Homework 1 gets you setup with all the things. 
+:::
+
+::::
+
+
+# Code of Conduct & Class Policies
+
+## Everyone is welcome here
+
+It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit.
+
+It is my intent to present materials and activities that are respectful of diversity: gender identity, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, and culture.
+
+## Supportive Learning Environment
+
+I would like to create a learning environment that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.)
+
+## To help accomplish this:
+
+-   Let me know if you have a name and/or set of pronouns that differ from those that appear in your official Chico records.
+-   Help me pronounce your name as accurately as possible. Corrections are welcome.
+-   If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you.
+
+## Mitigating our risk of COVID-19 {.smaller}
+
+-   Like it or not, it's here to stay. We all have different levels of risk we are willing to take ourselves, and different risk management strategies.
+-   Masks will ALWAYS be welcome and respected in this classroom. No questions.
+-   Please keep up to date with available booster shots. You can't learn if you're ill.
+-   If you have COVID symptoms, Do not come to class. I'll turn on Zoom for the day so you can participate.
+-   If you are just generally feeling unwell, please use a mask. I will always have some on hand.
+
+## Collaboration, Plagerism and AI {.smaller}
+
+-   Collaboration on assignments is encouraged.
+-   Collaboration on exams is not allowed.
+-   I recognize there are a variety of AI programs available to assist in creating text and writing code.
+-   However, AI programs are not a replacement for human creativity, originality, and critical thinking. Writing (text and code) is a skill that you must nurture over time in order to develop your own individual voice, style, and view.
+-   The use of chat GPT is allowed/encouraged to help you *learn* how to code but all code used must be fully explained in text.
+
+*See the [Syllabus](syllabus.html) for my official policy on using ChatGPT in this class*
+
+
+# What's next?
+
+-   Read the Syllabus
+-   Watch the video on how to navigate the course website
+-   Get your course packet asap
+-   Start Homework 1

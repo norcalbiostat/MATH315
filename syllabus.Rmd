@@ -65,10 +65,28 @@ Upon successful completion of this course, students will be able to:
 * **Lecture Videos**: This course uses lecture videos from a program called Passion Driven Statistics. These are essential part of your learning materials. Plan to bring headphones in case you need to watch these during class. 
 * **Reliable Laptop**: Expect to bring it daily. Contact me if this poses a problem or concern for you. 
 * **Reliable internet**: connection while on and off campus. ITSS can help you get this setup. 
-* **Computer Software**: R and R Studio through Posit Cloud. $5/month
+* **Computer Software**: R and R Studio through Posit Cloud. $5/month. See note below about this cost. 
 * **Accounts**: (Free) 
     - Campus Google account. This uses your <span style="color:blue">(@mail.csuchico.edu)</span> email.
-    - Discord for class conversation. Sign up instructions are in HW0. 
+    - Discord for class conversation. Sign up instructions are in HW1. 
+    - Posit Cloud 
+    
+    
+I try my absolute best to keep the cost of this course as low as possible, and recognize that this is an yet another additional cost. I wish, more than you know, that our campus would get their crap together and setup a campus owned R Studio server so that this would be free. If this cost is a burden please let me know and we'll find an alternative plan.
+
+**But I thought R was free?**
+
+Yes. R and R Studio are both free programs. Using the cloud is not a long-term solution. You may have already installed these programs for another class. If you are using R for another class after this, you are highly encouraged to _eventually_ install these programs on your computer. 
+
+However...
+
+* Not everyone has equal access to computers where this software can be installed
+* The cloud provides additional benefits such as
+    - shared projects and code within analysis teams
+    - installation and setup has been done for you
+    - less worry about poor file management systems (e.g. letting everything live in your downloads folder)
+
+These are my reasons for why I would like us all to use the cloud this semester. 
 
 ----
 
@@ -80,7 +98,7 @@ You've heard of a "flipped classroom" before right? Well this is kinda that. Thi
 
 * Watch the Passion Driven Statistics videos where assigned. 
 * Read through the course packet and fill in the blanks. 
-* Take the corresponding individual quiz. These quizes make up 20% of your grade and will be taken directly from the videos and course packet notes. 
+* Take the corresponding individual quiz. 
 
 ### During class
 
@@ -113,7 +131,7 @@ Your final grade will be a weighted sum of 4 content areas as described below. Y
 * 10 Written assignments done in R/Quarto and submitted through Canvas. 
 
 #### Quizzes (20%)
-* Individual + Group quizzes for each module. Administered through Google Forms. Lowest score dropped. 
+* Near weekly Individual + Group quizzes for each module. Administered through Google Forms. Lowest score dropped. 
 
 #### Active Learning (20%)
 * Various active or reflective [learning activities](learning_tools.html) during/outside of class.
