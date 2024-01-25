@@ -75,7 +75,7 @@ On day 1 you made a Free Posit Cloud account using your campus email. If you mis
 
 1. Upgrade your plan to the [Cloud Student plan](https://posit.cloud/plans/student). 
 2. Join Dr. D's[Math 315-S24 Workspace](https://posit.cloud/spaces/466257/join?access_code=CJBtbhV72o3pELwuol4pUWNdp6-_Tas4tGazkJlR) with this account. 
-3. Make a copy of the [Homework](https://posit.cloud/spaces/466257/content/7359199) R Project
+3. Click this link to make a copy of the [Homework](https://posit.cloud/spaces/466257/content/7359199) R Project from my workspace, into yours. 
 4. Open this project if it does not automatically do so. 
     - The `install_packages.R` file should be open. If not, click in the lower right to open it.
     - Click `Source` at the top right to run this code. 
@@ -116,7 +116,7 @@ You will also be writing in a Learning Journal. Here is an article that can help
 
 ## 1. Read the syllabus. 
 
-Thoroughly read the [syllabus](syllabus.html) and review this course website. Ask at least one question in the `#drd-class-chat` channel in Discord. See someone else's question that you know the answer to? Reply to them and answer it! 
+Thoroughly read the [syllabus](../syllabus.html) and review this course website. Ask at least one question in the `#drd-class-chat` channel in Discord. See someone else's question that you know the answer to? Reply to them and answer it! 
 
 ## 2. Start your Learning Journal (LJ)
 
@@ -124,17 +124,17 @@ Thoroughly read the [syllabus](syllabus.html) and review this course website. As
 2. When you make a copy of this template document, make sure the copy stays in this shared folder.
 3. Rename this file with your name (First, Last)
 4. Click the **SHARE** button in the top right and remove everyone _except_ yourself and Dr. D as collaborators. 
-5. Review the [LJ Prompts](learning/metacognition-prompts.html). 
+5. Review the [LJ Prompts](https://math315.netlify.app/learning_tools). 
 
 Space and a prompt for the first entry is provided. 
 
 ## 3. Metacognition and academic achievement in college students
 
-1. Download and read [MAI and academic achievement in college students](reading/MAI and academic achievement in college students.pdf). 
+1. Download and read [MAI and academic achievement in college students](https://math315.netlify.app/reading/MAI and academic achievement in college students.pdf). 
 2. Write a reflection on this reading in your Learning Journal. Were you surprised by the results? 
-3. Download and take the [Metacognition Awareness Inventory](reading/Metacognition Awareness Inventory.pdf). 
+3. Download and take the [Metacognition Awareness Inventory](https://math315.netlify.app/reading/Metacognition Awareness Inventory.pdf). 
 4. Submit your scores in this [Google Form](https://goo.gl/forms/FYgjJk72T3147e7f1)
 
 ## 4. Hear what others have to say
 
-Review the advice from [former Math 315 students](reading/Advice from prior Math 315 students.pdf). How, if at all, does this information help you decide on how you'll approach this class? Are you surprised by anything that was said? 
+Review the advice from [former Math 315 students](https://math315.netlify.app/reading/Advice from prior Math 315 students.pdf). How, if at all, does this information help you decide on how you'll approach this class? Are you surprised by anything that was said? 
