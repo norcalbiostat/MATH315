@@ -1,39 +1,4 @@
 
-
-```{r}
-w3 <- details(3)
-```
-
-### <a href="#week3" data-toggle="collapse">Week 3: `r w3$Topic`</a>
-<div id="week3" class="collapse">
-
-#### Learning Objectives
-```{r}
-pander(w3$SLO)
-```
-
-#### How to prepare
-```{r}
-pander(w3$prep)
-```
-
-#### Monday overview
-```{r}
-pander(w3$mon)
-```
-
-#### Wednesday overview
-```{r}
-pander(w3$wed)
-```
-
-#### Friday overview
-```{r}
-pander(w3$fri)
-```
-
-</div>
-
 ```{r}
 w4 <- details(4)
 ```
