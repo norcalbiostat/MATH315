@@ -30,9 +30,9 @@ In this assignment you and your analysis partner will:
     -   Choosing a data set [PDS 2](https://youtu.be/FduVJ4tDsVo). Start at 19min.
     -   Conducting a literature review [PDS 3](https://youtu.be/ZmkUvbX-qlI)
     -   (Optional) [Video on developing a research topic that interests you](https://media.csuchico.edu/media/Developing+a+Research+Question+that+Interests+You/0_rxvxwbas)
-2. Read [How to read a journal article](reading/How to Read a Journal Article.pdf).
+2. Read [How to read a journal article](https://math315.netlify.app/reading/How%20to%20Read%20a%20Journal%20Article.pdf).
     * For this class you only need to read the articles at the Phase I-III (Screen the article, Get the punch line, Understand the approach)
-3.  Make a copy of the [template document](https://docs.google.com/document/d/1b-dmoH9xUNx6SJpD7OibPSP2D9rN_ewU1QGaZYChlm0/edit?usp=sharing) in our `Project Stage 1 (hw 02)` folder in our Google Drive.
+3.  Make a **copy** of the [template document](https://docs.google.com/document/d/1b-dmoH9xUNx6SJpD7OibPSP2D9rN_ewU1QGaZYChlm0/edit?usp=sharing) in our `Project Stage 1 (hw 02)` folder in our Google Drive.
     -   Rename this file `rq_pairname` with both your first names. e.g. `rq_robin_yazmin`
     -   See below for details on how to complete each step.
 
