@@ -27,7 +27,7 @@ Check the rubric in Canvas for more grade specific details.
 
 1. Log in to Posit Cloud
     - Upload your data to your `data` folder
-    - Upload this [starter data management file](hw/dm_dataset.qmd) to your `script` folder
+    - Upload this [starter data management file](dm_dataset.qmd) to your `script` folder
     - Rename this script to use your data set name. E.g. `dm_addhealth` if you are using the Add Health data, or `dm_ool` for the Outlook on Life data set. 
 2. After you load the data, restrict the variables to only the ones you are investigating using the `select()` function. 
 3. Explore and clean at least 2 categorical and 2 numeric variables. One by one, check each variable for necessary adjustments. Complete each of the following steps for each variable.
