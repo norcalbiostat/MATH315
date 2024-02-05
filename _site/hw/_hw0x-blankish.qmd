@@ -1,0 +1,24 @@
+---
+title: "HW 04: Describing Distributions"
+subtitle: "Let the data be beautiful"
+format: 
+  html: 
+    toc: true
+    css: ../css/sandstone.css
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+# Purpose
+
+
+----
+
+# Instructions 
+
+
+----
+
+    
